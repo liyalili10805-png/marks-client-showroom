@@ -38,7 +38,7 @@ const womensImages = [
 ];
 const aboutImages = [
   'displayhall/image_20260108175201_3497_%E5%9B%9B%E6%8A%98%E9%A1%B52-%E5%8D%95%E9%A1%B5%E5%B0%BA%E5%AF%B819cm%C3%9728cm-%E5%B1%95%E5%BC%80%E5%B0%BA%E5%AF%B876cm%C3%9728cm-01/%E5%9B%9B%E6%8A%98%E9%A1%B52-%E5%8D%95%E9%A1%B5%E5%B0%BA%E5%AF%B819cm%C3%9728cm-%E5%B1%95%E5%BC%80%E5%B0%BA%E5%AF%B876cm%C3%9728cm-01.jpg',
-  'displayhall/image_20260108175247_1813_%E5%9B%9B%E6%8A%98%E9%A1%B52-%E5%8D%95%E9%A1%B5%E5%B0%BA%E5%AF%B819cm%C3%9728cm-%E5%B1%95%E5%BC%80%E5%B0%BA%E5%AF%B876cm%C3%9728cm-02/%E5%9B%9B%E6%8A%98%E9%A1%B52-%E5%8D%95%E9%A1%B5%E5%B0%BA%E5%AF%B819cm%C3%9728cm-%E5%BC%80%E5%B1%95%E5%B0%BA%E5%AF%B876cm%C3%9728cm-02.jpg'
+  'displayhall/image_20260108175247_1813_%E5%9B%9B%E6%8A%98%E9%A1%B52-%E5%8D%95%E9%A1%B5%E5%B0%BA%E5%AF%B819cm%C3%9728cm-%E5%B1%95%E5%BC%80%E5%B0%BA%E5%AF%B876cm%C3%9728cm-02/%E5%9B%9B%E6%8A%98%E9%A1%B52-%E5%8D%95%E9%A1%B5%E5%B0%BA%E5%AF%B819cm%C3%9728cm-%E5%B1%95%E5%BC%80%E5%B0%BA%E5%AF%B876cm%C3%9728cm-02.jpg'
 ];
 const store = { get(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } }, set(key, value) { localStorage.setItem(key, JSON.stringify(value)); } };
 let selected = store.get('marks-shortlist', []);
