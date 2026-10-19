@@ -1,44 +1,62 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A curated conversation on modern everyday clothing. Discover the edit, save your favourites and share your point of view.">
-  <meta name="theme-color" content="#f6f4ee">
-  <title>The City Edit — SOHO Fashion for Mark’s</title>
-  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>SOHO-Marks</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip" href="#collection">Skip to collection</a>
-<div class="topline"><span data-t="topline">A NEW PERSPECTIVE ON EVERYDAY STYLE</span><button id="preview-info" data-t="conceptPreview">CONCEPT PREVIEW ↗</button></div>
-<header class="site-header">
-  <a href="#" class="brand" aria-label="SOHO Fashion home"><strong>SOHO<span>FASHION</span></strong><small>CURATED FOR MARK’S</small></a>
-  <nav aria-label="Main navigation"><a href="#collection" data-t="navEdit">The edit</a><a href="#materials" data-t="navDetails">The details</a><a href="#voices" data-t="navVoice">Your point of view</a></nav>
-  <div class="header-tools"><button class="language" id="language" aria-label="Switch language">中文</button><button class="saved-toggle" id="saved-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h12v18l-6-4-6 4V3Z"/></svg><span data-t="myEdit">My edit</span><b id="saved-count">0</b></button></div>
-</header>
-<main>
-  <section class="hero" aria-labelledby="hero-title">
-    <img src="assets/urban-hero.png" alt="Two people wearing modern everyday layers on a city street" fetchpriority="high">
-    <div class="hero-shade"></div>
-    <div class="hero-content"><p class="eyebrow" data-t="heroEyebrow">THE CITY EDIT / NO. 01</p><h1 id="hero-title" data-t="heroTitle">Made for the<br>way you move.</h1><p class="hero-description" data-t="heroDescription">Considered layers. Everyday possibilities.<br>A collection shaped by your point of view.</p><a class="button light" href="#collection"><span data-t="explore">Explore the edit</span><span>↗</span></a></div>
-    <div class="hero-foot"><span data-t="heroSeason">A STUDY IN MODERN EVERYDAY DRESSING</span><a href="#collection" aria-label="Scroll to collection">↓</a><span>SOHO FASHION · 2026</span></div>
-  </section>
-  <section class="intro container"><p class="eyebrow" data-t="introEyebrow">A COLLECTION. A CONVERSATION.</p><h2 data-t="introTitle">Good style starts<br>with listening.</h2><p data-t="introText">Browse the pieces. Save what speaks to you. Tell us what would make them feel right. Your perspective helps shape what comes next.</p><div class="intro-steps"><span><i>01</i><b data-t="step1">Discover</b></span><span><i>02</i><b data-t="step2">Choose</b></span><span><i>03</i><b data-t="step3">Share</b></span></div></section>
-  <section id="collection" class="collection container">
-    <div class="section-heading"><div><p class="eyebrow" data-t="collectionEyebrow">FRESH PERSPECTIVES</p><h2 data-t="collectionTitle">The weekly edit.</h2></div><p class="section-note" data-t="collectionNote">Four concepts to start the conversation.<br>Tell us which ones belong in your everyday.</p></div>
-    <div class="collection-controls"><div class="tabs" role="group" aria-label="Collection categories"><button class="active" data-filter="all" data-t="all">All pieces</button><button data-filter="women" data-t="women">Women</button><button data-filter="men" data-t="men">Men</button><button data-filter="unisex" data-t="unisex">Unisex</button></div><div class="search-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="search" placeholder="Search pieces or fabrics" aria-label="Search pieces or fabrics" data-placeholder="search"></div></div>
-    <div class="results-line"><span id="result-count"></span><label><span class="sr-only" data-t="sort">Sort</span><select id="sort" aria-label="Sort products"><option value="editorial" data-t="sortEditorial">Editorial order</option><option value="saved" data-t="sortSaved">My saved pieces first</option><option value="name" data-t="sortName">Name A–Z</option></select></label></div>
-    <div class="product-grid" id="products"></div><div class="empty" id="no-results" hidden><h3 data-t="noResults">Nothing here just yet.</h3><p data-t="trySearch">Try another search or explore all pieces.</p><button class="button dark" id="clear-filters" data-t="clearFilters">Clear filters</button></div>
-    <p class="disclosure" data-t="collectionDisclosure">CONCEPT COLLECTION — Images and material directions are illustrative, awaiting the confirmed range.</p>
-  </section>
-  <section id="materials" class="material-section"><div class="material-image"><img src="assets/navy-jacket.png" alt="Close detail of a navy canvas jacket" loading="lazy"><span data-t="materialCaption">TEXTURE / FORM / EVERYDAY USE</span></div><div class="material-copy"><p class="eyebrow" data-t="materialEyebrow">LOOK A LITTLE CLOSER</p><h2 data-t="materialTitle">The details<br>make the difference.</h2><p data-t="materialText">A softer hand. The right weight. A shape that moves with you. We’re exploring how useful details can bring a little more ease to the everyday.</p><div class="material-row"><span>01</span><div><h3 data-t="material1">Tactile fabrics</h3><p data-t="material1Text">Canvas, textured knits and softly structured woven fabrics.</p></div></div><div class="material-row"><span>02</span><div><h3 data-t="material2">Versatile silhouettes</h3><p data-t="material2Text">Easy layering and considered proportions, from weekday to weekend.</p></div></div><a href="#voices" class="text-link"><span data-t="materialCta">Tell us what matters to you</span> ↗</a></div></section>
-  <section id="voices" class="voices container"><div><p class="eyebrow" data-t="voiceEyebrow">YOUR POINT OF VIEW</p><h2 data-t="voiceTitle">What makes a piece<br>right for you?</h2><p data-t="voiceText">Choose up to three things you look for.<br>For a particular piece, open its details and join the conversation.</p></div><div class="voice-form"><div class="preference-chips" id="preferences"></div><div class="voice-bottom"><span id="preference-count"></span><button id="save-preferences" class="button dark"><span data-t="saveView">Save my perspective</span>↗</button></div><small data-t="localNote">Interactive preview: your choices and comments are saved on this device.</small></div></section>
-  <section id="newsletter" class="newsletter"><div class="newsletter-inner"><p class="eyebrow" data-t="mailEyebrow">THE WEEKLY EDIT</p><h2 data-t="mailTitle">Fresh ideas.<br>In your inbox.</h2><p data-t="mailText">One considered email each week. A few new pieces,<br>a short introduction, and a link to explore the collection.</p><form id="subscribe-form"><label class="sr-only" for="email">Email address</label><input type="email" id="email" required maxlength="254" autocomplete="email" placeholder="Your email address" data-placeholder="email"><button type="submit" aria-label="Subscribe to weekly edit">↗</button></form><label class="consent"><input type="checkbox" id="email-consent" required form="subscribe-form"><span data-t="consent">I’d like to receive the weekly edit by email.</span></label><div class="mail-links"><button id="email-preview" class="text-link" data-t="previewEmail">Preview the weekly email ↗</button><small data-t="emailDemo">Preview only · no emails are sent yet.</small></div><p id="subscribe-status" role="status"></p></div><div class="newsletter-mark">THE<br>EDIT<span>by SOHO FASHION</span></div></section>
-</main>
-<footer class="site-footer"><div><a href="#" class="footer-logo">SOHO FASHION</a><p data-t="footerText">Considered clothing. Shared perspectives.</p></div><div class="footer-links"><a href="#collection" data-t="navEdit">The edit</a><a href="#voices" data-t="navVoice">Your point of view</a><button id="about-button" data-t="about">About this collection</button></div><div class="footer-bottom"><span>© 2026 SOHO FASHION</span><span data-t="footerNote">Design study for Mark’s · Concept preview</span><a href="https://www.marks.com/en.html" target="_blank" rel="noopener" data-t="official">Visit Mark’s official website ↗</a></div></footer>
-<dialog id="product-dialog" class="product-dialog"><button class="close-dialog" data-close aria-label="Close product details">×</button><div id="product-detail"></div></dialog>
-<dialog id="saved-dialog" class="side-dialog"><button class="close-dialog" data-close aria-label="Close saved pieces">×</button><p class="eyebrow" data-t="personalEdit">YOUR PERSONAL EDIT</p><h2 data-t="savedTitle">Pieces that speak<br>to you.</h2><div id="saved-list"></div><button class="button dark full" id="export-edit" data-t="export">Download my selection</button><small data-t="savedNote">Keep a copy of your selected pieces to continue the conversation.</small></dialog>
-<dialog id="email-dialog" class="email-dialog"><button class="close-dialog" data-close aria-label="Close email preview">×</button><div id="email-content"></div></dialog>
-<dialog id="info-dialog" class="info-dialog"><button class="close-dialog" data-close aria-label="Close information">×</button><p class="eyebrow">SOHO FASHION / MARK’S</p><h2 data-t="infoTitle">A first conversation.</h2><p data-t="infoText">This first concept brings together a weekly collection, a personal shortlist and feedback on each piece. The garments, fabrics and example comments are illustrative. Choices and comments stay on this device; shared feedback and weekly email delivery will be connected for the live service.</p><p data-t="infoText2">Created by SOHO Fashion as a collection proposal for Mark’s. This is not the Mark’s official retail website.</p><button class="button dark" data-close data-t="gotIt">Got it</button></dialog>
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="app">
+    <header class="site-header">
+      <a class="brand" href="#trend" aria-label="SOHO-Marks">SOHO-Marks</a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#trend" data-page="trend">TREND</a>
+        <div class="nav-group">
+          <a href="#products" data-page="products">PRODUCTS</a>
+          <div class="sub-nav">
+            <a href="#mens" data-page="mens">MENS</a>
+            <a href="#womens" data-page="womens">WOMENS</a>
+          </div>
+        </div>
+        <a href="#about" data-page="about">ABOUT US</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="open-shortlist" aria-label="查看已选款">♡<span id="shortlist-count">0</span></button>
+        <button class="icon-button" id="open-subscribe" aria-label="订阅推送">✉</button>
+      </div>
+    </header>
+
+    <main id="page-root" class="page-root" aria-live="polite"></main>
+
+    <aside id="shortlist-panel" class="side-panel" aria-hidden="true">
+      <div class="panel-head"><span>SHORTLIST</span><button class="close-button" data-close-panel>×</button></div>
+      <p class="panel-note">把感兴趣的款式加入选款单，方便和客户一起查看。</p>
+      <div id="shortlist-items" class="shortlist-items"></div>
+      <button class="outline-button" id="download-shortlist">导出选款单</button>
+    </aside>
+
+    <div id="detail-modal" class="modal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+        <button class="modal-close close-button" data-close-modal>×</button>
+        <div id="detail-content"></div>
+      </div>
+    </div>
+
+    <div id="subscribe-modal" class="modal" aria-hidden="true">
+      <div class="modal-card small-card" role="dialog" aria-modal="true">
+        <button class="modal-close close-button" data-close-modal>×</button>
+        <p class="eyebrow">WEEKLY UPDATE</p>
+        <h2>每周收到新一批推款</h2>
+        <p class="muted">订阅后，盛经理可用邮箱收到本周新增款式和选款链接。</p>
+        <form id="subscribe-form" class="subscribe-form">
+          <label>收件邮箱<input id="subscribe-email" type="email" required placeholder="name@company.com"></label>
+          <button class="solid-button" type="submit">确认订阅</button>
+        </form>
+        <p id="subscribe-status" class="form-status" role="status"></p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
