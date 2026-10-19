@@ -6,6 +6,12 @@ First interactive concept, October 2026. This is a supplier's collection proposa
 
 Serve `dist/` with a static HTTP server. No dependencies or build step are needed. Main files are `dist/index.html`, `dist/styles.css`, and `dist/app.js`.
 
+## GitHub Pages
+
+The repository includes a GitHub Actions workflow at `.github/workflows/pages.yml`. Create a public repository named `marks-client-showroom`, push the `main` branch, and enable GitHub Pages with **GitHub Actions** as the source. GitHub will then provide a shareable `https://<account>.github.io/marks-client-showroom/` address.
+
+The Trend page already contains an HTML5 MP4 player. The current clip is loaded from a public Style3D video URL; replace that URL in `dist/app.js` when the final clip is confirmed. For self-hosted clips, place a compressed MP4 in `dist/assets/` and keep it small enough for GitHub's repository and Pages limits.
+
 ## Included
 
 - Responsive editorial homepage in English and Chinese.
@@ -19,7 +25,7 @@ Serve `dist/` with a static HTTP server. No dependencies or build step are neede
 
 This version validates visual direction and browsing/feedback flows. No product prices, exact fabric composition or performance certifications are invented. Example comments are labelled, not presented as real customer feedback.
 
-Saved selections, votes, preferences and new comments use browser localStorage. They are not shared across devices. Subscription inputs are not stored or transmitted, and no mail is sent. Before store-consumer use, connect persistent feedback storage, moderation and privacy controls, consent-based subscription management and an actual weekly email provider; confirm public versus Mark’s-only product fields. The hosted review site is owner-private, not yet a consumer-facing rollout.
+Saved selections, votes, preferences and new comments use browser localStorage. They are not shared across devices. Subscription inputs are not stored or transmitted, and no mail is sent. Before store-consumer use, connect persistent feedback storage, moderation and privacy controls, consent-based subscription management and an actual weekly email provider; confirm public versus Mark’s-only product fields.
 
 Replace all illustrative items with Sheng's confirmed styles, style codes, fabrics, imagery and selling points. Use her answers on client priorities, customer pain points and store feedback to revise the collection taxonomy, product detail emphasis and feedback prompts.
 
