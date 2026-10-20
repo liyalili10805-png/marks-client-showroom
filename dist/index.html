@@ -3,60 +3,114 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>SOHO-Marks</title>
+  <title>SOHO-Marks · 推款展厅</title>
+  <meta name="description" content="SOHO 面向 Marks 的 FW26 推款展厅：TREND、MENS、WOMENS 与品牌资料，可在线选款、记录意见。">
+  <meta property="og:title" content="SOHO-Marks · 推款展厅">
+  <meta property="og:description" content="FW26 趋势与推款，在线选款与意见收集。">
+  <meta property="og:image" content="assets/img/trend-shacket.webp">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="app">
-    <header class="site-header">
-      <a class="brand" href="#trend" aria-label="SOHO-Marks">SOHO-Marks</a>
-      <nav class="main-nav" aria-label="主导航">
-        <a href="#trend" data-page="trend">TREND</a>
-        <div class="nav-group">
-          <a href="#products" data-page="products">PRODUCTS</a>
-          <div class="sub-nav">
-            <a href="#mens" data-page="mens">MENS</a>
-            <a href="#womens" data-page="womens">WOMENS</a>
-          </div>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <a class="brand" href="#trend" aria-label="SOHO-Marks 首页">
+      <span class="brand-mark" aria-hidden="true">SO<span>HO</span></span>
+      <span class="brand-text">苏豪时尚<small>SOHO FASHION</small></span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#trend" data-route="trend">TREND</a>
+      <div class="nav-group">
+        <a href="#products" data-route="products">PRODUCTS</a>
+        <div class="sub-nav">
+          <a href="#mens" data-route="mens">MENS</a>
+          <a href="#womens" data-route="womens">WOMENS</a>
         </div>
-        <a href="#about" data-page="about">ABOUT US</a>
-      </nav>
-      <div class="header-actions">
-        <button class="icon-button" id="open-shortlist" aria-label="查看已选款">♡<span id="shortlist-count">0</span></button>
-        <button class="icon-button" id="open-subscribe" aria-label="订阅推送">✉</button>
       </div>
-    </header>
-
-    <main id="page-root" class="page-root" aria-live="polite"></main>
-
-    <aside id="shortlist-panel" class="side-panel" aria-hidden="true">
-      <div class="panel-head"><span>SHORTLIST</span><button class="close-button" data-close-panel>×</button></div>
-      <p class="panel-note">把感兴趣的款式加入选款单，方便和客户一起查看。</p>
-      <div id="shortlist-items" class="shortlist-items"></div>
-      <button class="outline-button" id="download-shortlist">导出选款单</button>
-    </aside>
-
-    <div id="detail-modal" class="modal" aria-hidden="true">
-      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="detail-title">
-        <button class="modal-close close-button" data-close-modal>×</button>
-        <div id="detail-content"></div>
-      </div>
+      <a href="#about" data-route="about">ABOUT US</a>
+    </nav>
+    <div class="header-tools">
+      <button class="tool-button" id="open-search" type="button" aria-label="搜索款式">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg>
+      </button>
+      <button class="tool-button" id="open-shortlist" type="button" aria-label="查看选款单">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A3.9 3.9 0 0 1 12 8a3.9 3.9 0 0 1 7 2.7C19 15.6 12 20 12 20z"/></svg>
+        <span id="shortlist-count" class="count" hidden>0</span>
+      </button>
+      <button class="tool-button" id="open-subscribe" type="button" aria-label="订阅每周推款">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>
+      </button>
     </div>
+  </header>
 
-    <div id="subscribe-modal" class="modal" aria-hidden="true">
-      <div class="modal-card small-card" role="dialog" aria-modal="true">
-        <button class="modal-close close-button" data-close-modal>×</button>
-        <p class="eyebrow">WEEKLY UPDATE</p>
-        <h2>每周收到新一批推款</h2>
-        <p class="muted">订阅后，盛经理可用邮箱收到本周新增款式和选款链接。</p>
-        <form id="subscribe-form" class="subscribe-form">
-          <label>收件邮箱<input id="subscribe-email" type="email" required placeholder="name@company.com"></label>
-          <button class="solid-button" type="submit">确认订阅</button>
-        </form>
-        <p id="subscribe-status" class="form-status" role="status"></p>
+  <main id="main" class="page-root" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true">SO<span>HO</span></span>
+      <span class="brand-text">苏豪时尚<small>SOHO FASHION</small></span>
+    </div>
+    <div class="footer-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>
+      <a href="mailto:online@saintycorp.com">online@saintycorp.com</a>
+    </div>
+    <div class="footer-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+      <a href="tel:+862552875682">(86) 025-52875682</a>
+    </div>
+    <div class="footer-item footer-address">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      <span>Building B, No.21 Software Avenue,<br>Yuhuatai District, Nanjing, Jiangsu</span>
+    </div>
+  </footer>
+
+  <aside id="shortlist-panel" class="side-panel" aria-hidden="true" aria-label="选款单">
+    <div class="panel-head">
+      <span>SHORTLIST · 选款单</span>
+      <button class="icon-close" type="button" data-close-panel aria-label="关闭">×</button>
+    </div>
+    <p class="panel-note">把想给客户看的款式收进来，导出时按顺序整理成一份清单。</p>
+    <div id="shortlist-items" class="shortlist-items"></div>
+    <button class="outline-button" id="download-shortlist" type="button">导出选款单</button>
+  </aside>
+
+  <div id="search-overlay" class="overlay" aria-hidden="true">
+    <div class="overlay-top">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg>
+        <input id="search-input" type="search" placeholder="搜索款式、品类或季节，例如 SHACKET / JACKET" autocomplete="off">
       </div>
+      <button class="icon-close" type="button" data-close-search aria-label="关闭搜索">×</button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+
+  <div id="detail-modal" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+      <button class="icon-close modal-close" type="button" data-close-modal aria-label="关闭">×</button>
+      <div id="detail-content"></div>
     </div>
   </div>
+
+  <div id="subscribe-modal" class="modal" aria-hidden="true">
+    <div class="modal-card small-card" role="dialog" aria-modal="true" aria-labelledby="subscribe-title">
+      <button class="icon-close modal-close" type="button" data-close-modal aria-label="关闭">×</button>
+      <p class="eyebrow">WEEKLY UPDATE</p>
+      <h2 id="subscribe-title">每周收到新一批推款</h2>
+      <p class="muted">留下邮箱，本周新增款式和选款链接会整理好发给你。当前为演示流程，不会真的发送邮件。</p>
+      <form id="subscribe-form" class="subscribe-form">
+        <label for="subscribe-email">收件邮箱</label>
+        <input id="subscribe-email" type="email" required placeholder="name@company.com">
+        <button class="solid-button" type="submit">确认订阅</button>
+      </form>
+      <p id="subscribe-status" class="form-status" role="status"></p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
   <script src="app.js"></script>
 </body>
 </html>

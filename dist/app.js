@@ -1,69 +1,645 @@
-const ASSET_ROOT = 'https://file.style3d.com/website/Company/b8d4aa61-626f-4d7c-9edc-501b61112de9/';
-const pages = {
-  trend: { title: 'TREND', intro: 'SOHO-Marks · current edit', type: 'trend' },
-  products: { title: 'PRODUCTS', intro: 'Select a category', type: 'products' },
-  mens: { title: 'MENS', intro: 'Mens collection', type: 'mens' },
-  womens: { title: 'WOMENS', intro: 'Womens collection', type: 'womens' },
-  about: { title: 'ABOUT US', intro: 'SOHO · Marks', type: 'about' }
-};
-const trendItems = [
-  { id:'trend-shacket', name:'SHACKET', image:ASSET_ROOT+'displayhall/image_20260403185102_8863_shacket/shacket.png', detail:ASSET_ROOT+'business/dashboard/20260403190945_3402_1775214585984PDF/1775214585984PDF.png' },
-  { id:'trend-shirt', name:'SHIRT', image:ASSET_ROOT+'displayhall/image_20260403195851_7200_shirt/shirt.png', detail:ASSET_ROOT+'business/dashboard/20260403195912_3524_1775217552495PDF/1775217552495PDF.png' },
-  { id:'trend-jacket', name:'JACKET', image:ASSET_ROOT+'displayhall/image_20260403184950_7582_jacket/jacket.png', detail:ASSET_ROOT+'business/dashboard/20260403185509_8111_1775213709122PDF/1775213709122PDF.png' },
-  { id:'trend-coat', name:'COAT', image:ASSET_ROOT+'displayhall/image_20260403192209_8894_coat/coat.png', detail:ASSET_ROOT+'business/dashboard/20260403192303_3759_1775215383666PDF/1775215383666PDF.png' },
-  { id:'trend-trouser', name:'TROUSER', image:ASSET_ROOT+'displayhall/image_20260403211358_3038_trouser/trouser.png', detail:ASSET_ROOT+'business/dashboard/20260403211424_1883_1775222064974PDF/1775222064974PDF.png' },
-  { id:'trend-fabric', name:'FABRIC', image:ASSET_ROOT+'displayhall/image_20260403194032_2493_D6DE74A747357928EAFB3C53127595FD/D6DE74A747357928EAFB3C53127595FD.png', detail:ASSET_ROOT+'business/dashboard/20260403210903_7307_1775221743074PDF/1775221743074PDF.png' }
-];
-const mensImages = [
-  'displayhall/image_20260403184731_6656_1775213251456Thumb/1775213251456Thumb.png',
-  'displayhall/image_20260403152746_8902_E51547FD79A05160DAD09FA6B316A498/E51547FD79A05160DAD09FA6B316A498.jpg',
-  'displayhall/image_20260403143212_4563_1775197932052Thumb/1775197932052Thumb.png',
-  'displayhall/image_20260403143228_4284_1775197948010Thumb/1775197948010Thumb.png',
-  'displayhall/image_20260403143200_8706_1775197920686Thumb/1775197920686Thumb.png',
-  'displayhall/image_20260403152938_6063_1775201378312Thumb/1775201378312Thumb.png',
-  'displayhall/image_20260403164925_3099_1775206165497Thumb/1775206165497Thumb.png',
-  'displayhall/image_20260403152852_1188_1775201332783Thumb/1775201332783Thumb.png',
-  'displayhall/image_20260403152951_2598_1775201391592Thumb/1775201391592Thumb.png'
-];
-const womensImages = [
-  'displayhall/image_20260403170957_2429_DA858E6F988AD6C7BB0FC4F9D2433F92/DA858E6F988AD6C7BB0FC4F9D2433F92.jpg',
-  'displayhall/image_20260403161907_1745_1775204347441Thumb/1775204347441Thumb.png',
-  'displayhall/image_20260403161654_5131_20260403075843-2b5483cb-4a1c93a6/20260403075843-2b5483cb-4a1c93a6.jpg',
-  'displayhall/image_20260403161919_8204_1775204359576Thumb/1775204359576Thumb.png',
-  'displayhall/image_20260403161941_8486_1775204381950Thumb/1775204381950Thumb.png',
-  'displayhall/image_20260403161713_5720_20260403080558-6adda911-94e1baf6/20260403080558-6adda911-94e1baf6.jpg',
-  'displayhall/image_20260403161932_5537_1775204372674Thumb/1775204372674Thumb.png',
-  'displayhall/image_20260403162003_4129_1775204403048Thumb/1775204403048Thumb.png',
-  'displayhall/image_20260403161733_4531_20260403080049-f338555c-8e985bd1/20260403080049-f338555c-8e985bd1.jpg'
-];
-const aboutImages = [
-  'displayhall/image_20260108175201_3497_%E5%9B%9B%E6%8A%98%E9%A1%B52-%E5%8D%95%E9%A1%B5%E5%B0%BA%E5%AF%B819cm%C3%9728cm-%E5%B1%95%E5%BC%80%E5%B0%BA%E5%AF%B876cm%C3%9728cm-01/%E5%9B%9B%E6%8A%98%E9%A1%B52-%E5%8D%95%E9%A1%B5%E5%B0%BA%E5%AF%B819cm%C3%9728cm-%E5%B1%95%E5%BC%80%E5%B0%BA%E5%AF%B876cm%C3%9728cm-01.jpg',
-  'displayhall/image_20260108175247_1813_%E5%9B%9B%E6%8A%98%E9%A1%B52-%E5%8D%95%E9%A1%B5%E5%B0%BA%E5%AF%B819cm%C3%9728cm-%E5%B1%95%E5%BC%80%E5%B0%BA%E5%AF%B876cm%C3%9728cm-02/%E5%9B%9B%E6%8A%98%E9%A1%B52-%E5%8D%95%E9%A1%B5%E5%B0%BA%E5%AF%B819cm%C3%9728cm-%E5%B1%95%E5%BC%80%E5%B0%BA%E5%AF%B876cm%C3%9728cm-02.jpg'
-];
-const store = { get(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } }, set(key, value) { localStorage.setItem(key, JSON.stringify(value)); } };
-let selected = store.get('marks-shortlist', []);
-let comments = store.get('marks-comments', {});
-const root = document.getElementById('page-root');
-const count = document.getElementById('shortlist-count');
-function image(url, alt='') { const el = document.createElement('img'); el.src = url; el.alt = alt; el.loading = 'lazy'; el.onerror = () => { el.style.visibility = 'hidden'; }; return el; }
-function itemFromImage(url, index, category) { return { id:`${category}-${index}`, name:`${category} ${String(index+1).padStart(2,'0')}`, image:ASSET_ROOT+url }; }
-function isSaved(id) { return selected.some(x => x.id === id); }
-function toggleSave(item) { selected = isSaved(item.id) ? selected.filter(x => x.id !== item.id) : [...selected, item]; store.set('marks-shortlist', selected); updateCount(); renderShortlist(); renderPage(location.hash.slice(1) || 'trend'); }
-function updateCount() { count.textContent = selected.length; count.style.display = selected.length ? 'block' : 'none'; }
-function resourceCard(item) { const card=document.createElement('article'); card.className='resource-card'; card.append(image(item.image,item.name)); const meta=document.createElement('div'); meta.className='resource-meta'; const name=document.createElement('span'); name.className='resource-name'; name.textContent=item.name; const actions=document.createElement('div'); actions.className='resource-actions'; const save=document.createElement('button'); save.className=`mini-action ${isSaved(item.id)?'saved':''}`; save.textContent=isSaved(item.id)?'已选':'选款'; save.onclick=e=>{e.stopPropagation();toggleSave(item);}; const view=document.createElement('button'); view.className='mini-action'; view.textContent='查看'; view.onclick=()=>openDetail(item); actions.append(save,view); meta.append(name,actions); card.append(meta); card.onclick=e=>{if(e.target.tagName!=='BUTTON')openDetail(item);}; return card; }
-function renderTrend() { const wrap=document.createElement('div'); const video=document.createElement('div'); video.className='module'; const v=document.createElement('video'); v.controls=true; v.muted=true; v.preload='metadata'; v.poster=trendItems[0].image; const source=document.createElement('source'); source.src=ASSET_ROOT+'displayhall/video_20260407184745_6386_4%E6%9C%883%E6%97%A5/4%E6%9C%883%E6%97%A5.mp4'; source.type='video/mp4'; v.append(source); video.append(v); wrap.append(video); const grid=document.createElement('div'); grid.className='trend-grid'; trendItems.forEach(item=>{const figure=document.createElement('figure');figure.className='trend-card';figure.append(image(item.image,item.name));const cap=document.createElement('figcaption');cap.textContent=item.name;figure.append(cap);figure.onclick=()=>openDetail(item);grid.append(figure);});wrap.append(grid);return wrap; }
-function renderProducts() { const wrap=document.createElement('div'); wrap.innerHTML='<div class="module-grid two"><a class="module category-tile" href="#mens"><div class="caption-bar"><span>MENS</span><span>VIEW COLLECTION</span></div></a><a class="module category-tile" href="#womens"><div class="caption-bar"><span>WOMENS</span><span>VIEW COLLECTION</span></div></a></div>'; const tiles=wrap.querySelectorAll('.category-tile'); tiles[0].prepend(image(ASSET_ROOT+mensImages[0],'MENS')); tiles[1].prepend(image(ASSET_ROOT+womensImages[0],'WOMENS')); return wrap; }
-function renderCollection(list, category) { const wrap=document.createElement('div'); const grid=document.createElement('div'); grid.className='module-grid'; list.forEach((url,i)=>grid.append(resourceCard(itemFromImage(url,i,category)))); wrap.append(grid); return wrap; }
-function renderAbout() { const wrap=document.createElement('div'); const copy=document.createElement('div'); copy.className='about-copy'; copy.innerHTML='<p class="eyebrow">SOHO / MARKS</p><h2>展厅资料</h2><p>这里保留原始展厅的 ABOUT US 页面，用于查看品牌与系列资料。后续素材可直接替换，不需要改变页面结构。</p>'; wrap.append(copy); const grid=document.createElement('div'); grid.className='module-grid two'; aboutImages.forEach((url,i)=>{const m=document.createElement('div');m.className='module';m.append(image(ASSET_ROOT+url,`ABOUT ${i+1}`));grid.append(m);});wrap.append(grid);return wrap; }
-function renderPage(key) { key=pages[key]?key:'trend'; const cfg=pages[key]; root.innerHTML=''; const title=document.createElement('div'); title.className='page-title'; title.innerHTML=`<h1>${cfg.title}</h1><p>${cfg.intro}</p>`; root.append(title); if(cfg.type==='trend')root.append(renderTrend()); if(cfg.type==='products')root.append(renderProducts()); if(cfg.type==='mens')root.append(renderCollection(mensImages,'MENS')); if(cfg.type==='womens')root.append(renderCollection(womensImages,'WOMENS')); if(cfg.type==='about')root.append(renderAbout()); document.querySelectorAll('[data-page]').forEach(a=>a.classList.toggle('active',a.dataset.page===key)); }
-function openDetail(item) { const modal=document.getElementById('detail-modal'); const content=document.getElementById('detail-content'); const list=comments[item.id]||[]; content.innerHTML=''; const layout=document.createElement('div'); layout.className='detail-layout'; layout.append(image(item.detail||item.image,item.name)); const info=document.createElement('div'); info.className='detail-info'; info.innerHTML=`<p class="eyebrow">STYLE3D SHOWROOM</p><h2 id="detail-title">${item.name}</h2><p>保留原展厅的款式展示方式。可在这里记录门店或客户对该款的意见，供后续选款参考。</p>`; const buttons=document.createElement('div'); buttons.className='detail-buttons'; const save=document.createElement('button'); save.className='outline-button'; save.textContent=isSaved(item.id)?'已加入选款单':'加入选款单'; save.onclick=()=>toggleSave(item); const comment=document.createElement('button'); comment.className='solid-button'; comment.textContent='写意见'; comment.onclick=()=>document.getElementById('comment-box').focus(); buttons.append(save,comment); info.append(buttons); layout.append(info); content.append(layout); const commentsBox=document.createElement('div'); commentsBox.className='comment-list'; commentsBox.innerHTML='<p class="eyebrow">COMMENTS</p>'; list.forEach(c=>{const row=document.createElement('div');row.className='comment';row.textContent=c.text;const time=document.createElement('small');time.textContent=c.time;row.append(time);commentsBox.append(row);}); const form=document.createElement('form'); form.className='comment-form'; form.innerHTML='<textarea id="comment-box" placeholder="写下这款在门店查看后的意见"></textarea><button class="outline-button" type="submit">提交意见</button>'; form.onsubmit=e=>{e.preventDefault();const text=form.querySelector('textarea').value.trim();if(!text)return;comments[item.id]=[...(comments[item.id]||[]),{text,time:new Date().toLocaleString('zh-CN')}];store.set('marks-comments',comments);openDetail(item);}; commentsBox.append(form); content.append(commentsBox); modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); }
-function renderShortlist() { const box=document.getElementById('shortlist-items'); box.innerHTML=''; if(!selected.length){box.innerHTML='<p class="muted">还没有加入选款单。</p>';return;} selected.forEach(item=>{const row=document.createElement('div');row.className='shortlist-row';row.append(image(item.image,item.name));const text=document.createElement('div');text.innerHTML=`<strong>${item.name}</strong><small>已选款式</small>`;const remove=document.createElement('button');remove.className='mini-action';remove.textContent='移除';remove.onclick=()=>toggleSave(item);row.append(text,remove);box.append(row);}); }
-function openPanel(){document.getElementById('shortlist-panel').classList.add('open');document.getElementById('shortlist-panel').setAttribute('aria-hidden','false');renderShortlist();}
-function closeAll(){document.querySelectorAll('.modal.open,.side-panel.open').forEach(el=>{el.classList.remove('open');el.setAttribute('aria-hidden','true');});}
-window.addEventListener('hashchange',()=>renderPage(location.hash.slice(1)||'trend'));
-document.getElementById('open-shortlist').onclick=openPanel;
-document.getElementById('open-subscribe').onclick=()=>document.getElementById('subscribe-modal').classList.add('open');
-document.querySelectorAll('[data-close-panel],[data-close-modal]').forEach(btn=>btn.onclick=closeAll);
-document.getElementById('download-shortlist').onclick=()=>{const text=selected.map((x,i)=>`${i+1}. ${x.name}\n${x.image}`).join('\n');const blob=new Blob([`SOHO-Marks 选款单\n\n${text}`],{type:'text/plain;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='SOHO-Marks-选款单.txt';a.click();URL.revokeObjectURL(a.href);};
-document.getElementById('subscribe-form').onsubmit=e=>{e.preventDefault();const email=document.getElementById('subscribe-email').value;document.getElementById('subscribe-status').textContent=`已记录 ${email}，后续可接入实际周报发送。`;};
-updateCount(); renderShortlist(); renderPage(location.hash.slice(1)||'trend');
+(() => {
+  'use strict';
+
+  const IMG = 'assets/img/';
+  const VIDEO = 'https://file.style3d.com/website/Company/b8d4aa61-626f-4d7c-9edc-501b61112de9/displayhall/video_20260407184745_6386_4%E6%9C%883%E6%97%A5/4%E6%9C%883%E6%97%A5.mp4';
+
+  const trend = [
+    { id: 'trend-shacket', no: '01', name: 'SHACKET', meta: 'FW26 Shacket Trend', file: 'trend-shacket.webp' },
+    { id: 'trend-shirt', no: '02', name: 'SHIRT', meta: 'FW26 Shirt Trend', file: 'trend-shirt.webp' },
+    { id: 'trend-jacket', no: '03', name: 'JACKET', meta: 'FW26 Jacket Trend', file: 'trend-jacket.webp' },
+    { id: 'trend-coat', no: '04', name: 'COAT', meta: 'FW26 Coat Trend', file: 'trend-coat.webp' },
+    { id: 'trend-trouser', no: '05', name: 'TROUSER', meta: 'FW26 Trouser Trend', file: 'trend-trouser.webp' },
+    { id: 'trend-fabric', no: '06', name: 'FABRIC', meta: 'FW26 Fabric Trend', file: 'trend-fabric.webp' }
+  ];
+
+  const collections = {
+    mens: {
+      label: 'MENS',
+      banner: 'mens-banner.webp',
+      lineup: 'mens-lineup.webp',
+      groups: [
+        { id: 'mens-coat', name: 'COAT', meta: '棉质风衣 · 侧面 / 背面 / 面料', images: ['mens-look-coat.webp', 'mens-views-coat.webp', 'mens-fabric-coat.webp'] },
+        { id: 'mens-jacket', name: 'JACKET', meta: '绿色夹克 · 侧面 / 背面 / 面料', images: ['mens-look-jacket.webp', 'mens-views-jacket.webp', 'mens-fabric-jacket.webp'] },
+        { id: 'mens-quilted', name: 'QUILTED', meta: '黑色绗缝面料细节', images: ['mens-fabric-quilted.webp'] }
+      ]
+    },
+    womens: {
+      label: 'WOMENS',
+      banner: null,
+      lineup: 'womens-lineup.webp',
+      groups: [
+        { id: 'womens-green', name: 'GREEN', meta: '橄榄绿工装 · 侧面 / 背面 / 面料', images: ['womens-look-green.webp', 'womens-views-green.webp', 'womens-fabric-green.webp'] },
+        { id: 'womens-tan', name: 'TAN', meta: '驼色绗缝 · 侧面 / 背面 / 面料', images: ['womens-look-tan.webp', 'womens-views-tan.webp', 'womens-fabric-tan.webp'] },
+        { id: 'womens-cream', name: 'CREAM', meta: '奶油色套装 · 侧面 / 背面 / 面料', images: ['womens-views-cream.webp', 'womens-fabric-cream.webp'] }
+      ]
+    }
+  };
+
+  const pages = {
+    trend: { title: 'TREND', intro: 'FW26 · SOHO-Marks' },
+    products: { title: 'PRODUCTS', intro: 'Select a category' },
+    mens: { title: 'MENS', intro: 'Mens collection' },
+    womens: { title: 'WOMENS', intro: 'Womens collection' },
+    about: { title: 'ABOUT US', intro: 'SOHO Fashion since 1979' }
+  };
+
+  const store = {
+    get(key, fallback) {
+      try {
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      } catch {
+        return fallback;
+      }
+    },
+    set(key, value) {
+      try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* ignore */ }
+    }
+  };
+
+  let shortlist = store.get('marks-shortlist-v2', []);
+  let comments = store.get('marks-comments-v2', {});
+  let lastFocus = null;
+
+  const main = document.getElementById('main');
+  const detailModal = document.getElementById('detail-modal');
+  const subscribeModal = document.getElementById('subscribe-modal');
+  const searchOverlay = document.getElementById('search-overlay');
+  const shortlistPanel = document.getElementById('shortlist-panel');
+  const countEl = document.getElementById('shortlist-count');
+  const toastEl = document.getElementById('toast');
+
+  const el = (tag, className, text) => {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text != null) node.textContent = text;
+    return node;
+  };
+
+  function imgEl(src, alt, { lazy = true } = {}) {
+    const img = document.createElement('img');
+    img.src = IMG + src;
+    img.alt = alt;
+    img.loading = lazy ? 'lazy' : 'eager';
+    img.decoding = 'async';
+    return img;
+  }
+
+  function toast(message) {
+    toastEl.textContent = message;
+    toastEl.classList.add('show');
+    clearTimeout(toastEl._timer);
+    toastEl._timer = setTimeout(() => toastEl.classList.remove('show'), 1900);
+  }
+
+  function allItems() {
+    const list = trend.map(item => ({
+      id: item.id,
+      name: item.name,
+      meta: item.meta,
+      images: [item.file],
+      kind: 'trend'
+    }));
+    for (const key of ['mens', 'womens']) {
+      const collection = collections[key];
+      for (const group of collection.groups) {
+        list.push({
+          id: group.id,
+          name: group.name,
+          meta: `${collection.label} · ${group.meta}`,
+          images: group.images,
+          kind: 'group',
+          collection: key
+        });
+      }
+    }
+    return list;
+  }
+
+  const ITEMS = allItems();
+  const ITEM_MAP = new Map(ITEMS.map(item => [item.id, item]));
+
+  function isSaved(id) {
+    return shortlist.some(item => item.id === id);
+  }
+
+  function toggleSave(item) {
+    if (isSaved(item.id)) {
+      shortlist = shortlist.filter(entry => entry.id !== item.id);
+      toast('已从选款单移除');
+    } else {
+      shortlist = [...shortlist, { id: item.id, name: item.name, meta: item.meta, image: item.images[0] }];
+      toast('已加入选款单');
+    }
+    store.set('marks-shortlist-v2', shortlist);
+    refreshSaveState();
+  }
+
+  function refreshSaveState() {
+    countEl.textContent = String(shortlist.length);
+    countEl.hidden = shortlist.length === 0;
+    document.querySelectorAll('[data-save-id]').forEach(button => {
+      const saved = isSaved(button.dataset.saveId);
+      button.classList.toggle('saved', saved);
+      if (button.dataset.saveLabel) button.textContent = saved ? '已选' : '选款';
+    });
+    const detailSave = document.querySelector('#detail-content [data-save-detail]');
+    if (detailSave) {
+      const id = detailSave.dataset.saveDetail;
+      detailSave.textContent = isSaved(id) ? '已加入选款单' : '加入选款单';
+    }
+    renderShortlist();
+  }
+
+  /* ---------- page rendering ---------- */
+
+  function pageHead(title, intro) {
+    const head = el('div', 'page-head');
+    head.append(el('h1', null, title), el('p', null, intro));
+    return head;
+  }
+
+  function renderTrend() {
+    const frag = document.createDocumentFragment();
+    frag.append(pageHead('TREND', 'FW26 · SOHO-Marks'));
+
+    const hero = el('div', 'hero');
+    const video = document.createElement('video');
+    video.controls = true;
+    video.playsInline = true;
+    video.preload = 'metadata';
+    video.poster = IMG + 'trend-shacket.webp';
+    video.setAttribute('aria-label', 'SOHO-Marks 预告片');
+    const source = document.createElement('source');
+    source.src = VIDEO;
+    source.type = 'video/mp4';
+    video.append(source);
+    hero.append(video);
+
+    const note = el('div', 'hero-note');
+    note.append(el('span', null, 'SOHO-Marks film'), el('span', null, 'FW26 / 2026'));
+    hero.append(note);
+    frag.append(hero);
+
+    trend.forEach(item => {
+      const block = el('section', 'trend-block');
+      const index = el('div', 'block-index');
+      index.append(el('b', null, item.no), el('span', null, item.name), el('span', null, item.meta));
+      const figure = el('figure');
+      figure.style.margin = '0';
+      const img = imgEl(item.file, `${item.meta} · ${item.name}`);
+      img.dataset.item = item.id;
+      img.dataset.index = '0';
+      img.style.aspectRatio = '2400 / 1418';
+      figure.append(img);
+      block.append(index, figure);
+      frag.append(block);
+    });
+
+    return frag;
+  }
+
+  function renderProducts() {
+    const frag = document.createDocumentFragment();
+    frag.append(pageHead('PRODUCTS', 'Select a category'));
+
+    const grid = el('div', 'categories');
+    for (const key of ['mens', 'womens']) {
+      const data = collections[key];
+      const link = el('a', 'category');
+      link.href = '#' + key;
+      const img = imgEl(data.banner || data.lineup, `${data.label} collection`);
+      img.style.aspectRatio = '2.55 / 1';
+      const label = el('span', 'category-label', data.label);
+      label.append(el('small', null, 'VIEW COLLECTION'));
+      link.append(img, label);
+      grid.append(link);
+    }
+    frag.append(grid);
+    return frag;
+  }
+
+  function renderCollection(key) {
+    const data = collections[key];
+    const frag = document.createDocumentFragment();
+
+    const crumb = el('div', 'breadcrumb');
+    const home = el('a', null, 'PRODUCTS');
+    home.href = '#products';
+    crumb.append(home, document.createTextNode(` / ${data.label}`));
+    frag.append(crumb);
+
+    if (data.banner) {
+      const banner = el('div', 'banner');
+      banner.append(imgEl(data.banner, `${data.label} banner`));
+      frag.append(banner);
+    }
+
+    if (data.lineup) {
+      const lineup = el('div', 'lineup');
+      lineup.append(imgEl(data.lineup, `${data.label} lineup`));
+      frag.append(lineup);
+    }
+
+    for (const group of data.groups) {
+      const row = el('div', 'look-row');
+      group.images.forEach((file, index) => {
+        const figure = el('figure');
+        const img = imgEl(file, `${data.label} ${group.name} ${index + 1}`);
+        img.dataset.item = group.id;
+        img.dataset.index = String(index);
+        const chip = el('button', 'save-chip', '选款');
+        chip.type = 'button';
+        chip.dataset.saveId = group.id;
+        chip.dataset.saveLabel = '1';
+        chip.addEventListener('click', event => {
+          event.stopPropagation();
+          toggleSave(ITEM_MAP.get(group.id));
+        });
+        figure.append(img, chip);
+        row.append(figure);
+      });
+      frag.append(row);
+    }
+
+    return frag;
+  }
+
+  function renderAbout() {
+    const frag = document.createDocumentFragment();
+    frag.append(pageHead('ABOUT US', 'SOHO Fashion since 1979'));
+
+    const copy = el('div', 'about-copy');
+    copy.append(el('h2', null, '苏豪时尚 · SOHO FASHION'));
+    copy.append(el('p', null, '江苏苏豪时尚集团，1979 年成立，业务覆盖纺织服装进出口、国内贸易与服装生产。本页展示品牌与集团资料，可直接用于门店与客户沟通。'));
+    frag.append(copy);
+
+    const stack = el('div', 'about-stack');
+    ['about-01.webp', 'about-02.webp'].forEach((file, index) => {
+      const figure = el('figure');
+      figure.style.margin = '0';
+      const img = imgEl(file, `SOHO 集团介绍 ${index + 1}`);
+      img.style.aspectRatio = '2400 / 885';
+      figure.append(img);
+      stack.append(figure);
+    });
+    frag.append(stack);
+    return frag;
+  }
+
+  function render() {
+    const key = Object.prototype.hasOwnProperty.call(pages, location.hash.slice(1)) ? location.hash.slice(1) : 'trend';
+    const config = pages[key];
+    document.title = `${config.title} · SOHO-Marks`;
+
+    main.innerHTML = '';
+    if (key === 'trend') main.append(renderTrend());
+    if (key === 'products') main.append(renderProducts());
+    if (key === 'mens') main.append(renderCollection('mens'));
+    if (key === 'womens') main.append(renderCollection('womens'));
+    if (key === 'about') main.append(renderAbout());
+
+    document.querySelectorAll('[data-route]').forEach(link => {
+      const active = link.dataset.route === key;
+      link.classList.toggle('active', active);
+      if (active) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+    refreshSaveState();
+  }
+
+  /* ---------- detail ---------- */
+
+  function openDetail(item, startIndex = 0) {
+    const content = document.getElementById('detail-content');
+    content.innerHTML = '';
+    let current = Math.min(Math.max(startIndex, 0), item.images.length - 1);
+
+    const figure = el('figure', 'detail-figure');
+    const image = document.createElement('img');
+    image.alt = item.name;
+    figure.append(image);
+
+    const bar = el('div', 'detail-bar');
+    const barLeft = el('span', null, item.kind === 'trend' ? 'TREND' : item.meta.split('·')[0].trim());
+    const barRight = el('span', null, '');
+    bar.append(barLeft, barRight);
+
+    const thumbs = el('div', 'thumbs');
+    if (item.images.length > 1) {
+      item.images.forEach((file, index) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.setAttribute('aria-label', `查看第 ${index + 1} 张`);
+        const thumb = imgEl(file, '', { lazy: false });
+        button.append(thumb);
+        button.addEventListener('click', () => {
+          current = index;
+          update();
+        });
+        thumbs.append(button);
+      });
+    }
+
+    const info = el('div', 'detail-info');
+    const title = el('h2', null, item.name);
+    title.id = 'detail-title';
+    const meta = el('p', 'detail-meta', item.meta);
+    const actions = el('div', 'detail-actions');
+    const saveButton = el('button', 'outline-button');
+    saveButton.type = 'button';
+    saveButton.dataset.saveDetail = item.id;
+    saveButton.addEventListener('click', () => toggleSave(item));
+    const commentButton = el('button', 'solid-button', '写意见');
+    commentButton.type = 'button';
+    commentButton.addEventListener('click', () => {
+      const box = content.querySelector('#comment-box');
+      if (box) box.focus();
+    });
+    actions.append(saveButton, commentButton);
+    info.append(title, meta, actions);
+
+    const note = el('p', 'detail-note', item.kind === 'trend'
+      ? '这一页是 FW26 趋势提案，可加入选款单，或在这里记录门店与客户的反馈。'
+      : '这一组包含上身、三视图与面料细节。可以加入选款单，也可以记录客户意见。');
+    info.append(note);
+
+    const commentSection = el('div', 'comments');
+    commentSection.append(el('p', 'eyebrow', 'COMMENTS · 意见'));
+    const list = comments[item.id] || [];
+    if (list.length === 0) {
+      commentSection.append(el('p', 'empty-note', '还没有意见。'));
+    } else {
+      list.forEach(entry => {
+        const row = el('div', 'comment');
+        row.append(document.createTextNode(entry.text));
+        row.append(el('small', null, entry.time));
+        commentSection.append(row);
+      });
+    }
+    const form = el('form', 'comment-form');
+    const box = document.createElement('textarea');
+    box.id = 'comment-box';
+    box.placeholder = '写下这款在门店查看后的意见';
+    const submit = el('button', 'outline-button', '提交意见');
+    submit.type = 'submit';
+    form.append(box, submit);
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const text = box.value.trim();
+      if (!text) return;
+      comments[item.id] = [...(comments[item.id] || []), { text, time: new Date().toLocaleString('zh-CN') }];
+      store.set('marks-comments-v2', comments);
+      openDetail(item, current);
+      toast('意见已记录在本机');
+    });
+    commentSection.append(form);
+
+    content.append(figure, bar, thumbs, info, commentSection);
+
+    function update() {
+      image.src = IMG + item.images[current];
+      barRight.textContent = item.images.length > 1 ? `${current + 1} / ${item.images.length}` : '';
+      thumbs.querySelectorAll('button').forEach((button, index) => {
+        button.classList.toggle('active', index === current);
+      });
+      saveButton.textContent = isSaved(item.id) ? '已加入选款单' : '加入选款单';
+    }
+
+    update();
+    openModal(detailModal);
+  }
+
+  function openImage(file, alt) {
+    const content = document.getElementById('detail-content');
+    content.innerHTML = '';
+    const figure = el('figure', 'detail-figure');
+    const image = document.createElement('img');
+    image.src = IMG + file;
+    image.alt = alt;
+    figure.append(image);
+    const heading = el('h2', 'sr-only', alt);
+    heading.id = 'detail-title';
+    content.append(figure, heading);
+    openModal(detailModal);
+  }
+
+  /* ---------- shortlist ---------- */
+
+  function renderShortlist() {
+    const box = document.getElementById('shortlist-items');
+    box.innerHTML = '';
+    if (shortlist.length === 0) {
+      box.append(el('p', 'empty-note', '选款单还是空的。浏览 TREND 或 MENS / WOMENS 时点「选款」加入。'));
+      return;
+    }
+    shortlist.forEach(item => {
+      const row = el('div', 'shortlist-row');
+      const img = imgEl(item.image, item.name);
+      const text = el('div');
+      text.append(el('strong', null, item.name), el('small', null, item.meta));
+      const remove = el('button', 'text-button', '移除');
+      remove.type = 'button';
+      remove.addEventListener('click', () => toggleSave(ITEM_MAP.get(item.id)));
+      row.append(img, text, remove);
+      box.append(row);
+    });
+  }
+
+  function openPanel() {
+    lastFocus = document.activeElement;
+    shortlistPanel.classList.add('open');
+    shortlistPanel.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    renderShortlist();
+    shortlistPanel.querySelector('[data-close-panel]').focus();
+  }
+
+  function closePanel() {
+    shortlistPanel.classList.remove('open');
+    shortlistPanel.setAttribute('aria-hidden', 'true');
+    if (!document.querySelector('.modal.open, .overlay.open')) document.body.classList.remove('modal-open');
+    if (lastFocus) lastFocus.focus();
+  }
+
+  function exportShortlist() {
+    if (shortlist.length === 0) {
+      toast('选款单还是空的');
+      return;
+    }
+    const absolute = file => new URL(IMG + file, location.href).href;
+    const rows = shortlist.map((item, index) => `
+      <li>
+        <img src="${absolute(item.image)}" alt="">
+        <div><strong>${index + 1}. ${item.name}</strong><span>${item.meta}</span></div>
+      </li>`).join('');
+    const html = `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>SOHO-Marks 选款单</title>
+      <style>
+        body{font-family:"Helvetica Neue",Arial,"Microsoft YaHei",sans-serif;color:#222;margin:40px;max-width:820px}
+        h1{font-size:18px;font-weight:400;letter-spacing:.12em;margin:0 0 6px}
+        p{color:#888;font-size:12px;margin:0 0 26px}
+        ol{list-style:none;padding:0;margin:0}
+        li{display:flex;gap:18px;align-items:center;padding:14px 0;border-bottom:1px solid #e8e8e8}
+        img{width:96px;height:120px;object-fit:cover;background:#f4f4f4}
+        strong{display:block;font-weight:500;font-size:14px}
+        span{display:block;margin-top:4px;color:#999;font-size:11px}
+        footer{margin-top:30px;color:#aaa;font-size:11px}
+      </style>
+      <h1>SOHO-Marks 选款单</h1>
+      <p>${new Date().toLocaleDateString('zh-CN')} · 共 ${shortlist.length} 款</p>
+      <ol>${rows}</ol>
+      <footer>SOHO FASHION · online@saintycorp.com</footer>`;
+    const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'SOHO-Marks-选款单.html';
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+    toast('选款单已导出');
+  }
+
+  /* ---------- search ---------- */
+
+  function openSearch() {
+    lastFocus = document.activeElement;
+    searchOverlay.classList.add('open');
+    searchOverlay.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    const input = document.getElementById('search-input');
+    input.value = '';
+    renderSearch('');
+    input.focus();
+  }
+
+  function closeSearch() {
+    searchOverlay.classList.remove('open');
+    searchOverlay.setAttribute('aria-hidden', 'true');
+    if (!document.querySelector('.modal.open, .side-panel.open')) document.body.classList.remove('modal-open');
+    if (lastFocus) lastFocus.focus();
+  }
+
+  function renderSearch(query) {
+    const box = document.getElementById('search-results');
+    box.innerHTML = '';
+    const q = query.trim().toLowerCase();
+    const matches = q
+      ? ITEMS.filter(item => `${item.name} ${item.meta}`.toLowerCase().includes(q))
+      : ITEMS;
+    if (matches.length === 0) {
+      box.append(el('p', 'search-empty', `没有找到「${query}」。试试 SHACKET、JACKET、COAT 或 FABRIC。`));
+      return;
+    }
+    matches.forEach(item => {
+      const card = el('button', 'search-card');
+      card.type = 'button';
+      card.dataset.item = item.id;
+      card.dataset.index = '0';
+      const img = imgEl(item.images[0], item.name);
+      card.append(img, el('strong', null, item.name), el('small', null, item.meta));
+      box.append(card);
+    });
+  }
+
+  /* ---------- modal helpers ---------- */
+
+  function openModal(modal) {
+    lastFocus = document.activeElement;
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    const close = modal.querySelector('[data-close-modal]');
+    if (close) close.focus();
+  }
+
+  function closeModal(modal) {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    if (!document.querySelector('.modal.open, .overlay.open, .side-panel.open')) {
+      document.body.classList.remove('modal-open');
+    }
+    if (lastFocus) lastFocus.focus();
+  }
+
+  function closeAll() {
+    document.querySelectorAll('.modal.open, .side-panel.open').forEach(node => {
+      node.classList.remove('open');
+      node.setAttribute('aria-hidden', 'true');
+    });
+    if (searchOverlay.classList.contains('open')) closeSearch();
+    document.body.classList.remove('modal-open');
+  }
+
+  /* ---------- events ---------- */
+
+  window.addEventListener('hashchange', () => {
+    closeAll();
+    render();
+    window.scrollTo(0, 0);
+  });
+
+  main.addEventListener('click', event => {
+    const target = event.target.closest('[data-item]');
+    if (!target) return;
+    if (event.target.closest('[data-save-id]')) return;
+    const item = ITEM_MAP.get(target.dataset.item);
+    if (item) openDetail(item, Number(target.dataset.index || 0));
+  });
+
+  main.addEventListener('click', event => {
+    const img = event.target.closest('.about-stack img');
+    if (img) openImage(img.src.split('/').pop(), img.alt);
+  });
+
+  document.getElementById('open-shortlist').addEventListener('click', openPanel);
+  document.getElementById('open-subscribe').addEventListener('click', () => openModal(subscribeModal));
+  document.getElementById('open-search').addEventListener('click', openSearch);
+  document.getElementById('download-shortlist').addEventListener('click', exportShortlist);
+
+  document.querySelectorAll('[data-close-panel]').forEach(button => button.addEventListener('click', closePanel));
+  document.querySelectorAll('[data-close-modal]').forEach(button => {
+    button.addEventListener('click', () => closeModal(button.closest('.modal')));
+  });
+  document.querySelector('[data-close-search]').addEventListener('click', closeSearch);
+
+  [detailModal, subscribeModal].forEach(modal => {
+    modal.addEventListener('click', event => {
+      if (event.target === modal) closeModal(modal);
+    });
+  });
+
+  searchOverlay.addEventListener('click', event => {
+    if (event.target === searchOverlay) closeSearch();
+  });
+
+  document.getElementById('search-input').addEventListener('input', event => renderSearch(event.target.value));
+
+  document.getElementById('search-results').addEventListener('click', event => {
+    const card = event.target.closest('[data-item]');
+    if (!card) return;
+    const item = ITEM_MAP.get(card.dataset.item);
+    if (!item) return;
+    closeSearch();
+    openDetail(item, 0);
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    const openModalNode = document.querySelector('.modal.open');
+    if (openModalNode) { closeModal(openModalNode); return; }
+    if (searchOverlay.classList.contains('open')) { closeSearch(); return; }
+    if (shortlistPanel.classList.contains('open')) closePanel();
+  });
+
+  document.getElementById('subscribe-form').addEventListener('submit', event => {
+    event.preventDefault();
+    const email = document.getElementById('subscribe-email').value.trim();
+    const status = document.getElementById('subscribe-status');
+    store.set('marks-subscribe-email', email);
+    status.textContent = `已记录 ${email}。当前为演示流程，不会实际发送邮件。`;
+    toast('订阅信息已记录');
+  });
+
+  /* ---------- init ---------- */
+  render();
+})();
