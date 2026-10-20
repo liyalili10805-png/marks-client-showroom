@@ -101,10 +101,15 @@ svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width:
 .categories { display: grid; gap: 16px; }
 .category { position: relative; display: block; overflow: hidden; background: var(--soft); }
 .category img { display: block; width: 100%; aspect-ratio: 2.55 / 1; object-fit: cover; }
+.category[href="#womens"] img { object-position: center top; }
+.category::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(0,0,0,.12) 0%, rgba(0,0,0,.28) 52%, rgba(0,0,0,.16) 100%);
+}
 .category-label {
-  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  position: absolute; inset: 0; z-index: 1; display: flex; align-items: center; justify-content: center;
   color: #fff; font-size: clamp(44px, 9vw, 148px); font-weight: 300; letter-spacing: .16em;
-  text-shadow: 0 2px 36px rgba(0,0,0,.22); pointer-events: none;
+  text-shadow: 0 2px 36px rgba(0,0,0,.35); pointer-events: none;
 }
 .category-label small { position: absolute; bottom: 18px; left: 0; right: 0; text-align: center; font-size: 10px; letter-spacing: .3em; color: rgba(255,255,255,.85); }
 .category:hover img { transform: scale(1.005); }
