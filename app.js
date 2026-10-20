@@ -190,7 +190,8 @@
     const video = document.createElement('video');
     video.controls = true;
     video.playsInline = true;
-    video.preload = 'metadata';
+    video.preload = 'none';
+    video.poster = IMG + 'hero-poster.webp';
     video.setAttribute('aria-label', 'SOHO-Marks 预告片');
     const source = document.createElement('source');
     source.src = VIDEO;
