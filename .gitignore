@@ -1,5 +1,6 @@
 tmp/
 output/
+_site/
 *.tar.gz
 *.zip
 __pycache__/

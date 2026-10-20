@@ -6,23 +6,23 @@ SOHO 面向 Marks 门店客户的推款展厅。页面沿用原 Style3D 展厅�
 
 ## 本地预览
 
-`dist/` 是纯静态站点，没有构建步骤。启动任意静态服务器即可：
+仓库根目录就是纯静态站点，没有构建步骤。启动任意静态服务器即可：
 
 ```powershell
-python -m http.server 8080 --directory dist
+python -m http.server 8080
 ```
 
-然后打开 <http://localhost:8080/>。直接双击 `dist/index.html` 也能看，但 `file://` 下部分浏览器行为与线上不同，联调时建议用本地服务器。
+然后打开 <http://localhost:8080/>。直接双击 `index.html` 也能看，但 `file://` 下部分浏览器行为与线上不同，联调时建议用本地服务器。
 
 ## 目录
 
 ```
-dist/
-  index.html        页面骨架：头部、页脚、选款单、搜索、弹窗
-  styles.css        版式与响应式样式
-  app.js            路由、内容数据、选款/意见/订阅逻辑
-  favicon.svg
-  assets/img/*.webp 压缩后的展厅图片（共约 2.9 MB）
+index.html        页面骨架：头部、页脚、选款单、搜索、弹窗
+styles.css        版式与响应式样式
+app.js            路由、内容数据、选款/意见/订阅逻辑
+favicon.svg
+assets/img/*.webp 压缩后的展厅图片（共约 2.9 MB）
+.nojekyll         让 GitHub Pages 原样输出，不跑 Jekyll
 ```
 
 没有依赖，没有打包工具，改完文件刷新即可。
@@ -37,13 +37,13 @@ TREND 的 6 张、MENS / WOMENS 的各组图片、ABOUT 的两张长图，都来
 
 `dist/app.js` 顶部的两个数据表就是全部内容配置。
 
-**加一页趋势**：把图放进 `dist/assets/img/`，在 `trend` 数组里加一项：
+**加一页趋势**：把图放进 `assets/img/`，在 `trend` 数组里加一项：
 
 ```js
 { id: 'trend-denim', no: '07', name: 'DENIM', meta: 'FW26 Denim Trend', file: 'trend-denim.webp' }
 ```
 
-**加一组款式**：把图放进 `dist/assets/img/`，在 `collections.mens.groups` 或 `collections.womens.groups` 里加一项：
+**加一组款式**：把图放进 `assets/img/`，在 `collections.mens.groups` 或 `collections.womens.groups` 里加一项：
 
 ```js
 { id: 'mens-denim', name: 'DENIM', meta: '牛仔夹克 · 三视图 / 面料', images: ['mens-look-denim.webp', 'mens-views-denim.webp', 'mens-fabric-denim.webp'] }
@@ -64,7 +64,12 @@ TREND 的 6 张、MENS / WOMENS 的各组图片、ABOUT 的两张长图，都来
 
 ## 部署
 
-仓库已带 GitHub Actions 工作流 `.github/workflows/pages.yml`：推送到 `main` 后自动把 `dist/` 发布到 GitHub Pages。
+站点文件放在仓库根目录，两种发布方式都能直接工作：
+
+- **分支发布**（当前生效）：`Settings → Pages → Source` 选 `Deploy from a branch`，分支 `main`、目录 `/ (root)`。根目录的 `.nojekyll` 会让 Pages 原样输出文件，不做 Jekyll 渲染。
+- **Actions 发布**：`.github/workflows/pages.yml` 会把根目录里的站点文件复制到 `_site` 再上传。如果以后把 Pages Source 切回 `GitHub Actions`，工作流会接管发布。
+
+日常只需要推送：
 
 ```powershell
 git add -A
@@ -72,7 +77,7 @@ git commit -m "描述这次改动"
 git push origin main
 ```
 
-部署进度看 <https://github.com/liyalili10805-png/marks-client-showroom/actions>，成功后刷新线上地址即可。
+推送后等 1–2 分钟，刷新 <https://liyalili10805-png.github.io/marks-client-showroom/>（必要时 `Ctrl + F5`）。部署记录看 <https://github.com/liyalili10805-png/marks-client-showroom/actions>。
 
 ## 本机 git 备注
 

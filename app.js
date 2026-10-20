@@ -4,6 +4,28 @@
   const IMG = 'assets/img/';
   const VIDEO = 'https://file.style3d.com/website/Company/b8d4aa61-626f-4d7c-9edc-501b61112de9/displayhall/video_20260407184745_6386_4%E6%9C%883%E6%97%A5/4%E6%9C%883%E6%97%A5.mp4';
 
+  // intrinsic sizes keep the collection rows at a consistent height without layout shift
+  const DIMS = {
+    'mens-banner.webp': [1920, 738],
+    'mens-lineup.webp': [2200, 1129],
+    'mens-look-coat.webp': [682, 1264],
+    'mens-views-coat.webp': [1466, 1253],
+    'mens-fabric-coat.webp': [848, 1028],
+    'mens-look-jacket.webp': [518, 990],
+    'mens-views-jacket.webp': [1189, 755],
+    'mens-fabric-jacket.webp': [848, 1028],
+    'mens-fabric-quilted.webp': [848, 1028],
+    'womens-lineup.webp': [2200, 1129],
+    'womens-look-green.webp': [790, 1244],
+    'womens-views-green.webp': [1376, 768],
+    'womens-fabric-green.webp': [1148, 768],
+    'womens-look-tan.webp': [746, 1205],
+    'womens-views-tan.webp': [1376, 768],
+    'womens-fabric-tan.webp': [1068, 768],
+    'womens-views-cream.webp': [1376, 768],
+    'womens-fabric-cream.webp': [1068, 768]
+  };
+
   const trend = [
     { id: 'trend-shacket', no: '01', name: 'SHACKET', meta: 'FW26 Shacket Trend', file: 'trend-shacket.webp' },
     { id: 'trend-shirt', no: '02', name: 'SHIRT', meta: 'FW26 Shirt Trend', file: 'trend-shirt.webp' },
@@ -244,8 +266,11 @@
 
     for (const group of data.groups) {
       const row = el('div', 'look-row');
+      if (group.images.length === 1) row.classList.add('single');
       group.images.forEach((file, index) => {
         const figure = el('figure');
+        const dims = DIMS[file] || [4, 3];
+        figure.style.flex = `${(dims[0] / dims[1]).toFixed(3)} 1 0%`;
         const img = imgEl(file, `${data.label} ${group.name} ${index + 1}`);
         img.dataset.item = group.id;
         img.dataset.index = String(index);

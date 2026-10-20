@@ -115,11 +115,11 @@ svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width:
 .lineup { margin: 0 0 16px; }
 .look-row {
   display: flex; gap: 16px; align-items: flex-start; margin: 0 0 16px;
-  overflow-x: auto; scrollbar-width: thin;
 }
-.look-row figure { margin: 0; flex: 0 0 auto; position: relative; }
+.look-row.single { max-width: 620px; }
+.look-row figure { margin: 0; min-width: 0; position: relative; }
 .look-row img {
-  display: block; height: clamp(260px, 33vw, 470px); width: auto; max-width: none;
+  display: block; width: 100%; height: auto;
   background: var(--soft); cursor: zoom-in;
 }
 .look-row img:hover { opacity: .96; }
@@ -276,7 +276,8 @@ body.modal-open { overflow: hidden; }
   .tool-button { width: 34px; }
   .page-head { padding: 20px 0 14px; }
   .category img { aspect-ratio: 1.6 / 1; }
-  .look-row img { height: 240px; }
+  .look-row { flex-direction: column; gap: 10px; max-width: none; }
+  .look-row figure { width: 100%; }
   .site-footer { gap: 16px 26px; padding-bottom: 34px; }
   .footer-address { flex: 1 1 100%; }
 }
@@ -284,8 +285,7 @@ body.modal-open { overflow: hidden; }
   .categories { gap: 10px; }
   .category img { aspect-ratio: 1.35 / 1; }
   .trend-block { margin-top: 18px; }
-  .look-row { gap: 10px; }
-  .look-row img { height: 200px; }
+  .look-row { gap: 8px; }
   .detail-figure img { max-height: 52dvh; }
   .detail-info { padding: 16px 16px 22px; }
   .detail-info h2 { font-size: 18px; }
