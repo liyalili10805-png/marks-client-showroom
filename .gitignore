@@ -1,6 +1,7 @@
 tmp/
 output/
 _site/
+HANDOFF.md
 *.tar.gz
 *.zip
 __pycache__/
