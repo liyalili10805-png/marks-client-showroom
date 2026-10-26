@@ -321,35 +321,57 @@
       }
     },
     {
-      "code": "AE-019",
-      "name": "Black Quilted Jacket",
-      "category": "Men",
-      "fit": "Regular fit",
-      "texture": "Quilted shell",
-      "weight": "Light warmth",
+      "code": "AE-020",
+      "name": "Linen Shirt",
+      "category": "Women",
+      "gender": "women",
+      "type": "top",
+      "material": "Linen",
+      "subtitle": "Crisp white linen shirt",
+      "description": "A relaxed shirt in white linen with a soft collar and a clean placket. Light enough for layering, tidy enough on its own.",
+      "fit": "Relaxed fit",
+      "texture": "Linen weave",
+      "weight": "Light weight",
+      "why": "A white linen shirt is the easiest warm-weather layer: open over a tank or buttoned with denim.",
       "colours": [
         {
-          "name": "Black",
-          "hex": "#222"
+          "name": "White",
+          "hex": "#f1eee6"
         },
         {
-          "name": "Dark olive",
-          "hex": "#4a4b35"
+          "name": "Black",
+          "hex": "#1c1c1c"
         }
       ],
-      "image": "assets/img/mens-look-quilted.webp",
+      "image": "assets/demo/external/linen-shirt-1.webp",
+      "listImage": "assets/demo/external/linen-shirt-1.webp",
       "views": [
-        "assets/img/mens-look-quilted.webp",
-        "assets/img/mens-views-quilted.webp",
-        "assets/img/mens-fabric-quilted.webp"
+        "assets/demo/external/linen-shirt-1.webp",
+        "assets/demo/external/linen-shirt-2.webp",
+        "assets/demo/external/linen-shirt-3.webp",
+        "assets/demo/external/linen-shirt-4.webp"
       ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
       "retail": "To be confirmed",
-      "why": "Lightweight quilting for autumn and winter layering, with a clean, compact silhouette.",
       "materials": [
         {
-          "name": "Quilted shell",
+          "name": "Linen",
+          "hand": "Soft",
+          "structure": "Relaxed",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton blend",
           "hand": "Smooth",
-          "structure": "Compact",
+          "structure": "Regular",
           "composition": "To be confirmed",
           "weight": "To be confirmed",
           "care": "To be tested",
@@ -360,16 +382,138 @@
       ],
       "occasions": [
         "everyday",
-        "outdoor"
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-021",
+      "name": "The Dream Pant",
+      "category": "Women",
+      "gender": "women",
+      "type": "bottom",
+      "material": "Stretch twill",
+      "subtitle": "Pull-on straight trouser",
+      "description": "A pull-on straight-leg trouser in a soft stretch twill, with a flat front and an easy elastic back.",
+      "fit": "Straight leg",
+      "texture": "Stretch twill",
+      "weight": "Mid weight",
+      "why": "The pull-on waist makes it an everyday trouser that still looks polished with a shirt or knit.",
+      "colours": [
+        {
+          "name": "Black",
+          "hex": "#171717"
+        },
+        {
+          "name": "Navy",
+          "hex": "#232a3a"
+        }
       ],
-      "gender": "men",
-      "type": "outerwear",
-      "material": "Quilted shell",
-      "listImage": "assets/img/mens-look-quilted.webp",
+      "image": "assets/demo/external/dream-pant-1.webp",
+      "listImage": "assets/demo/external/dream-pant-1.webp",
+      "views": [
+        "assets/demo/external/dream-pant-1.webp",
+        "assets/demo/external/dream-pant-2.webp",
+        "assets/demo/external/dream-pant-3.webp",
+        "assets/demo/external/dream-pant-4.webp"
+      ],
       "focalPoint": {
         "x": 50,
         "y": 15
-      }
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Stretch twill",
+          "hand": "Soft",
+          "structure": "Straight",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Ponte",
+          "hand": "Smooth",
+          "structure": "Straight",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-022",
+      "name": "The Perform Legging",
+      "category": "Women",
+      "gender": "women",
+      "type": "bottom",
+      "material": "Performance knit",
+      "subtitle": "High-rise performance legging",
+      "description": "A high-rise performance legging in a compressive stretch knit with a wide waistband and a clean ankle length.",
+      "fit": "High rise",
+      "texture": "Performance knit",
+      "weight": "Mid weight",
+      "why": "An everyday base layer that works under tunics and overshirts, or on its own at the weekend.",
+      "colours": [
+        {
+          "name": "Black",
+          "hex": "#111111"
+        },
+        {
+          "name": "Navy",
+          "hex": "#232a3a"
+        }
+      ],
+      "image": "assets/demo/external/perform-legging-1.webp",
+      "listImage": "assets/demo/external/perform-legging-1.webp",
+      "views": [
+        "assets/demo/external/perform-legging-1.webp",
+        "assets/demo/external/perform-legging-2.webp",
+        "assets/demo/external/perform-legging-3.webp",
+        "assets/demo/external/perform-legging-4.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Performance knit",
+          "hand": "Compressive",
+          "structure": "High rise",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton blend",
+          "hand": "Soft",
+          "structure": "High rise",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
     }
   ],
   "occasions": [
