@@ -30,12 +30,12 @@
           "hex": "#3a3a3a"
         }
       ],
-      "image": "assets/demo/weekly-overshirt.webp",
+      "image": "assets/demo/final/ae014-front.webp",
       "views": [
-        "assets/demo/gen/detail-overshirt-front.webp",
-        "assets/demo/gen/detail-overshirt-back.webp",
-        "assets/demo/gen/detail-overshirt-detail.webp",
-        "assets/demo/gen/detail-overshirt-fabric.webp"
+        "assets/demo/final/ae014-front.webp",
+        "assets/demo/final/ae014-side.webp",
+        "assets/demo/final/ae014-back.webp",
+        "assets/demo/final/ae014-detail.webp"
       ],
       "retail": "To be confirmed",
       "why": "Easy to coordinate with everyday outfits, with thoughtful pocket details and a structured collar for a versatile layer.",
@@ -81,7 +81,7 @@
       "gender": "women",
       "type": "outerwear",
       "material": "Cotton twill",
-      "listImage": "assets/img/womens-look-green.webp",
+      "listImage": "assets/demo/final/ae014-front.webp",
       "focalPoint": {
         "x": 50,
         "y": 15
@@ -110,8 +110,13 @@
           "hex": "#222"
         }
       ],
-      "image": "assets/demo/gen/everyday-weekly-knit.webp",
-      "views": [],
+      "image": "assets/demo/final/ae015-front.webp",
+      "views": [
+        "assets/demo/final/ae015-front.webp",
+        "assets/demo/final/ae015-side.webp",
+        "assets/demo/final/ae015-back.webp",
+        "assets/demo/final/ae015-detail.webp"
+      ],
       "retail": "To be confirmed",
       "why": "A clean crew neck that layers under outerwear and still works on its own.",
       "materials": [
@@ -144,7 +149,7 @@
       "gender": "women",
       "type": "top",
       "material": "Cotton knit",
-      "listImage": "assets/demo/gen/list-cream-knit-model.webp",
+      "listImage": "assets/demo/final/ae015-front.webp",
       "focalPoint": {
         "x": 50,
         "y": 20
@@ -169,8 +174,13 @@
           "hex": "#cfc6b6"
         }
       ],
-      "image": "assets/demo/gen/everyday-weekly-jeans.webp",
-      "views": [],
+      "image": "assets/demo/final/ae016-front.webp",
+      "views": [
+        "assets/demo/final/ae016-front.webp",
+        "assets/demo/final/ae016-side.webp",
+        "assets/demo/final/ae016-back.webp",
+        "assets/demo/final/ae016-detail.webp"
+      ],
       "retail": "To be confirmed",
       "why": "A straightforward straight leg in a dark wash, easy to style with knitwear and overshirts.",
       "materials": [
@@ -204,7 +214,7 @@
       "gender": "women",
       "type": "bottom",
       "material": "Denim",
-      "listImage": "assets/demo/gen/list-indigo-jeans-model.webp",
+      "listImage": "assets/demo/final/ae016-front.webp",
       "focalPoint": {
         "x": 50,
         "y": 20

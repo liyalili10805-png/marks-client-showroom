@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   'use strict';
 
   const DATA_URL = 'data/collections.json';
@@ -73,7 +73,7 @@
     img.src = product.image;
     img.alt = product.name;
     img.loading = 'lazy';
-    img.className = ['AE-014', 'AE-015', 'AE-016'].includes(product.code) ? 'fit-contain' : 'fit-top';
+    img.className = 'fit-top';
     media.append(img);
     article.append(media);
 
@@ -601,3 +601,4 @@
       if (root) root.innerHTML = `<p class="empty-note">Could not load collection data: ${escape(error.message)}</p>`;
     });
 })();
+

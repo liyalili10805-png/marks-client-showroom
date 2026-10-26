@@ -1,0 +1,20 @@
+{
+  "AE-014": {
+    "front": "assets/demo/final/ae014-front.webp",
+    "side": "assets/demo/final/ae014-side.webp",
+    "back": "assets/demo/final/ae014-back.webp",
+    "detail": "assets/demo/final/ae014-detail.webp"
+  },
+  "AE-015": {
+    "front": "assets/demo/final/ae015-front.webp",
+    "side": "assets/demo/final/ae015-side.webp",
+    "back": "assets/demo/final/ae015-back.webp",
+    "detail": "assets/demo/final/ae015-detail.webp"
+  },
+  "AE-016": {
+    "front": "assets/demo/final/ae016-front.webp",
+    "side": "assets/demo/final/ae016-side.webp",
+    "back": "assets/demo/final/ae016-back.webp",
+    "detail": "assets/demo/final/ae016-detail.webp"
+  }
+}
