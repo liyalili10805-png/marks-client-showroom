@@ -11,7 +11,7 @@
   "products": [
     {
       "code": "AE-014",
-      "name": "Olive twill overshirt",
+      "name": "Utility Overshirt",
       "category": "Women",
       "fit": "Relaxed fit",
       "texture": "Soft twill texture",
@@ -80,7 +80,7 @@
     },
     {
       "code": "AE-015",
-      "name": "Textured crew knit",
+      "name": "Textured Knit Sweater",
       "category": "Women",
       "fit": "Regular fit",
       "texture": "Textured knit",
@@ -136,7 +136,7 @@
     },
     {
       "code": "AE-016",
-      "name": "Straight-leg trouser",
+      "name": "Straight Leg Jeans",
       "category": "Women",
       "fit": "Straight leg",
       "texture": "Wool touch",
@@ -190,7 +190,7 @@
     },
     {
       "code": "AE-017",
-      "name": "Cotton trench coat",
+      "name": "Cotton Trench Coat",
       "category": "Men",
       "fit": "Relaxed shoulder",
       "texture": "Cotton twill",
@@ -243,7 +243,7 @@
     },
     {
       "code": "AE-018",
-      "name": "Green field jacket",
+      "name": "Green Field Jacket",
       "category": "Men",
       "fit": "Regular fit",
       "texture": "Cotton canvas",
@@ -286,7 +286,7 @@
     },
     {
       "code": "AE-019",
-      "name": "Black quilted jacket",
+      "name": "Black Quilted Jacket",
       "category": "Men",
       "fit": "Regular fit",
       "texture": "Quilted shell",
