@@ -502,7 +502,7 @@
   let collection;
   let products;
 
-  fetch(DATA_URL)
+  fetch(DATA_URL + '?v=' + Date.now())
     .then(response => response.json())
     .then(async payload => {
       data = payload;

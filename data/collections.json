@@ -30,7 +30,7 @@
           "hex": "#3a3a3a"
         }
       ],
-      "image": "assets/img/womens-look-green.webp",
+      "image": "assets/demo/weekly-overshirt.webp",
       "views": [
         "assets/img/womens-look-green.webp",
         "assets/img/womens-views-green.webp",
@@ -99,7 +99,7 @@
           "hex": "#222"
         }
       ],
-      "image": "assets/img/womens-views-cream.webp",
+      "image": "assets/demo/weekly-knit.webp",
       "views": [
         "assets/img/womens-views-cream.webp",
         "assets/img/womens-fabric-cream.webp"
@@ -151,7 +151,7 @@
           "hex": "#cfc6b6"
         }
       ],
-      "image": "assets/img/womens-look-tan.webp",
+      "image": "assets/demo/weekly-jeans.webp",
       "views": [
         "assets/img/womens-look-tan.webp",
         "assets/img/womens-views-tan.webp",
