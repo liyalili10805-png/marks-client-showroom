@@ -30,7 +30,7 @@
           "hex": "#3a3a3a"
         }
       ],
-      "image": "assets/demo/final/ae014-front.webp",
+      "image": "assets/demo/final/ae014-scene.webp",
       "views": [
         "assets/demo/final/ae014-front.webp",
         "assets/demo/final/ae014-side.webp",
@@ -81,7 +81,7 @@
       "gender": "women",
       "type": "outerwear",
       "material": "Cotton twill",
-      "listImage": "assets/demo/final/ae014-front.webp",
+      "listImage": "assets/demo/final/ae014-scene.webp",
       "focalPoint": {
         "x": 50,
         "y": 15
@@ -110,7 +110,7 @@
           "hex": "#222"
         }
       ],
-      "image": "assets/demo/final/ae015-front.webp",
+      "image": "assets/demo/final/ae015-scene.webp",
       "views": [
         "assets/demo/final/ae015-front.webp",
         "assets/demo/final/ae015-side.webp",
@@ -149,7 +149,7 @@
       "gender": "women",
       "type": "top",
       "material": "Cotton knit",
-      "listImage": "assets/demo/final/ae015-front.webp",
+      "listImage": "assets/demo/final/ae015-scene.webp",
       "focalPoint": {
         "x": 50,
         "y": 20
@@ -174,7 +174,7 @@
           "hex": "#cfc6b6"
         }
       ],
-      "image": "assets/demo/final/ae016-front.webp",
+      "image": "assets/demo/final/ae016-scene.webp",
       "views": [
         "assets/demo/final/ae016-front.webp",
         "assets/demo/final/ae016-side.webp",
@@ -214,7 +214,7 @@
       "gender": "women",
       "type": "bottom",
       "material": "Denim",
-      "listImage": "assets/demo/final/ae016-front.webp",
+      "listImage": "assets/demo/final/ae016-scene.webp",
       "focalPoint": {
         "x": 50,
         "y": 20
@@ -245,8 +245,8 @@
           "hex": "#232a3a"
         }
       ],
-      "image": "assets/demo/external/dream-pant-2.webp",
-      "listImage": "assets/demo/external/dream-pant-2.webp",
+      "image": "assets/demo/external/dream-pant-1.webp",
+      "listImage": "assets/demo/external/dream-pant-1.webp",
       "views": [
         "assets/demo/external/dream-pant-1.webp",
         "assets/demo/external/dream-pant-2.webp",
@@ -310,8 +310,8 @@
           "hex": "#232a3a"
         }
       ],
-      "image": "assets/demo/external/perform-legging-2.webp",
-      "listImage": "assets/demo/external/perform-legging-2.webp",
+      "image": "assets/demo/external/perform-legging-1.webp",
+      "listImage": "assets/demo/external/perform-legging-1.webp",
       "views": [
         "assets/demo/external/perform-legging-1.webp",
         "assets/demo/external/perform-legging-2.webp",
