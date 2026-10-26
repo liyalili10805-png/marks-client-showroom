@@ -10,7 +10,7 @@
 .btn-accent { display: inline-block; background: var(--accent); color: #fff; border: 0; padding: 13px 22px; font-size: 14px; letter-spacing: .02em; cursor: pointer; text-decoration: none; text-align: center; }
 .btn-accent:hover { background: #d95a16; }
 .btn-outline { display: inline-block; background: #fff; color: #111; border: 1px solid #111; padding: 12px 20px; font-size: 14px; cursor: pointer; text-align: center; }
-.col-hero-media img { width: 100%; height: auto; display: block; object-fit: cover; background: var(--soft); }
+.col-hero-media img { width: 100%; aspect-ratio: 1.15 / 1; height: auto; display: block; object-fit: cover; object-position: center top; background: var(--soft); }
 
 .col-section { padding: 10px 0 40px; }
 .col-section h2 { font-size: 22px; font-weight: 600; margin: 0 0 16px; color: #111; }
