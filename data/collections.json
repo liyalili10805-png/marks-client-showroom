@@ -31,11 +31,7 @@
         }
       ],
       "image": "assets/demo/weekly-overshirt.webp",
-      "views": [
-        "assets/img/womens-look-green.webp",
-        "assets/img/womens-views-green.webp",
-        "assets/img/womens-fabric-green.webp"
-      ],
+      "views": [],
       "retail": "To be confirmed",
       "why": "Easy to coordinate with everyday outfits, with thoughtful pocket details and a structured collar for a versatile layer.",
       "materials": [
