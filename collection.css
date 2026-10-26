@@ -1,4 +1,4 @@
-:root { --accent: #f26b21; }
+:root { --accent: #fe6e30; }
 
 .subnav-bar { display: flex; justify-content: center; gap: 36px; padding: 14px var(--pad); border-bottom: 1px solid var(--line); font-size: 13px; letter-spacing: .06em; overflow-x: auto; }
 .subnav-bar a { color: #333; padding-bottom: 4px; border-bottom: 2px solid transparent; white-space: nowrap; }
@@ -8,7 +8,7 @@
 .col-hero-copy h1 { font-size: clamp(36px, 4.2vw, 64px); font-weight: 600; line-height: 1.05; margin: 12px 0 18px; letter-spacing: -.01em; color: #111; }
 .col-intro { color: #555; font-size: 16px; line-height: 1.7; max-width: 46ch; margin: 0 0 24px; }
 .btn-accent { display: inline-block; background: var(--accent); color: #fff; border: 0; padding: 13px 22px; font-size: 14px; letter-spacing: .02em; cursor: pointer; text-decoration: none; text-align: center; }
-.btn-accent:hover { background: #d95a16; }
+.btn-accent:hover { background: #e05f25; }
 .btn-outline { display: inline-block; background: #fff; color: #111; border: 1px solid #111; padding: 12px 20px; font-size: 14px; cursor: pointer; text-align: center; }
 .col-hero-media img { width: 100%; aspect-ratio: 1.15 / 1; height: auto; display: block; object-fit: cover; object-position: center top; background: var(--soft); }
 

@@ -1,0 +1,1828 @@
+{
+  "schemaVersion": 1,
+  "description": "Synthetic demo data only. No official Mark’s prices, specifications, authorisations or sales claims.",
+  "createdAt": "2026-10-26T01:00:00Z",
+  "defaultIdentityUserId": "2f0ffe3d-63f9-5607-8eff-e17cde179d7d",
+  "demoIdentities": [
+    {
+      "mode": "demo",
+      "userId": "2f0ffe3d-63f9-5607-8eff-e17cde179d7d",
+      "displayName": "Demo Toronto",
+      "role": "store",
+      "storeId": "a4345c59-d750-565c-b92c-20ea773e3b3a",
+      "allowedCollectionIds": [
+        "4cbccd5f-3319-5408-bb19-481584959419"
+      ],
+      "capabilities": {
+        "canPublishContent": false,
+        "canConfirmPrices": false,
+        "canViewInternalQuotes": false,
+        "canManageMembers": false
+      }
+    },
+    {
+      "mode": "demo",
+      "userId": "1a6abddf-2041-5a80-acba-a3474a7bfd53",
+      "displayName": "Demo Vancouver",
+      "role": "store",
+      "storeId": "64731f1b-177d-51fc-ad56-def0cfce24ce",
+      "allowedCollectionIds": [
+        "4cbccd5f-3319-5408-bb19-481584959419"
+      ],
+      "capabilities": {
+        "canPublishContent": false,
+        "canConfirmPrices": false,
+        "canViewInternalQuotes": false,
+        "canManageMembers": false
+      }
+    },
+    {
+      "mode": "demo",
+      "userId": "c72f8a56-83d1-54b5-893a-90601f1fca46",
+      "displayName": "Demo Calgary",
+      "role": "store",
+      "storeId": "77dee3e9-91ee-56f4-8b0f-d4c33ab1c286",
+      "allowedCollectionIds": [
+        "4cbccd5f-3319-5408-bb19-481584959419"
+      ],
+      "capabilities": {
+        "canPublishContent": false,
+        "canConfirmPrices": false,
+        "canViewInternalQuotes": false,
+        "canManageMembers": false
+      }
+    },
+    {
+      "mode": "demo",
+      "userId": "3259b027-3759-5708-9ead-3a0ffa1561a3",
+      "displayName": "Demo Mark's team",
+      "role": "marks_reviewer",
+      "storeId": null,
+      "allowedCollectionIds": [
+        "4cbccd5f-3319-5408-bb19-481584959419"
+      ],
+      "capabilities": {
+        "canPublishContent": false,
+        "canConfirmPrices": false,
+        "canViewInternalQuotes": false,
+        "canManageMembers": false
+      }
+    },
+    {
+      "mode": "demo",
+      "userId": "de0ef635-8d80-5ca1-aae9-e05aa96a9318",
+      "displayName": "Demo Design editor",
+      "role": "design_editor",
+      "storeId": null,
+      "allowedCollectionIds": [
+        "4cbccd5f-3319-5408-bb19-481584959419"
+      ],
+      "capabilities": {
+        "canPublishContent": false,
+        "canConfirmPrices": false,
+        "canViewInternalQuotes": false,
+        "canManageMembers": false
+      }
+    },
+    {
+      "mode": "demo",
+      "userId": "08e477b6-cc85-527d-bbf8-1d02a1d838a4",
+      "displayName": "Demo Design admin",
+      "role": "admin",
+      "storeId": null,
+      "allowedCollectionIds": [
+        "4cbccd5f-3319-5408-bb19-481584959419"
+      ],
+      "capabilities": {
+        "canPublishContent": true,
+        "canConfirmPrices": true,
+        "canViewInternalQuotes": true,
+        "canManageMembers": true
+      }
+    }
+  ],
+  "siteContent": {
+    "id": "bb941100-14ee-59dc-896a-4d3372d424c8",
+    "revision": 1,
+    "updatedAt": "2026-10-26T01:00:00Z",
+    "isDemo": true,
+    "hero": {
+      "editLabel": "AUTUMN EDIT 01",
+      "titleLines": [
+        "Everyday layers.",
+        "Considered details."
+      ],
+      "intro": "Discover seasonal styles, compare materials and share what works for your store.",
+      "ctaLabel": "Explore the collection",
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "mediaBindingId": "92797a9c-75a5-5900-ad73-cebc8d9848b9"
+    },
+    "weekly": [
+      {
+        "productId": "7e2f428f-cdc6-583b-bd0b-213a01a65333",
+        "mediaBindingId": "17b31018-0665-5366-aaf2-60bed4335195",
+        "sort": 1
+      },
+      {
+        "productId": "c8a1ba64-dd39-505f-802f-8040245efd28",
+        "mediaBindingId": "c4f66812-65ec-58c3-9ce3-cdf7284a4378",
+        "sort": 2
+      },
+      {
+        "productId": "a72dd828-0028-5d78-b3d9-bdfc0b1f91dc",
+        "mediaBindingId": "6ffbafb8-f871-5daa-bfa4-ff475edc7fbf",
+        "sort": 3
+      }
+    ],
+    "occasions": [
+      {
+        "slug": "everyday",
+        "label": "Everyday",
+        "mediaBindingId": "c657378a-ba59-5bdf-97a2-5d87c5d8eafc",
+        "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+        "sort": 0
+      },
+      {
+        "slug": "weekend",
+        "label": "Weekend",
+        "mediaBindingId": "70ed3e4d-b327-56e7-b2b5-e0e2d05cafc8",
+        "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+        "sort": 1
+      },
+      {
+        "slug": "outdoor",
+        "label": "Outdoor",
+        "mediaBindingId": "70368649-4638-5552-ac77-cc89d7a31a2c",
+        "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+        "sort": 2
+      }
+    ],
+    "moduleOrder": [
+      "hero",
+      "weekly",
+      "occasions",
+      "archive"
+    ],
+    "labels": {
+      "weeklyTitle": "This week’s selections",
+      "occasionTitle": "Browse by occasion",
+      "viewAll": "View all styles",
+      "sampleData": "Sample data",
+      "pending": "To be confirmed"
+    },
+    "status": "published"
+  },
+  "collections": [
+    {
+      "id": "4cbccd5f-3319-5408-bb19-481584959419",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "slug": "autumn-edit-01",
+      "name": "Everyday Essentials",
+      "editLabel": "AUTUMN EDIT 01",
+      "intro": "Everyday casual styles selected for store review.",
+      "seasonLabel": "Autumn demo",
+      "coverBindingId": "eef32e3f-922b-55c9-9e97-f5aaafd8b5af",
+      "productLinks": [
+        {
+          "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+          "sort": 0,
+          "whyThisStyle": "Demo recommendation for seasonal store review."
+        },
+        {
+          "productId": "7fcb072a-cb78-5a0a-84c8-87853a5bf9c7",
+          "sort": 1,
+          "whyThisStyle": "Demo recommendation for seasonal store review."
+        },
+        {
+          "productId": "4c18bfe3-bffc-5ef3-a6e4-2326c9dc712d",
+          "sort": 2,
+          "whyThisStyle": "Demo recommendation for seasonal store review."
+        },
+        {
+          "productId": "2c85c514-adbd-5939-8e20-f7c6ead1ac34",
+          "sort": 3,
+          "whyThisStyle": "Demo recommendation for seasonal store review."
+        },
+        {
+          "productId": "88617fc5-a0e1-5559-8caa-8644cc0174a0",
+          "sort": 4,
+          "whyThisStyle": "Demo recommendation for seasonal store review."
+        },
+        {
+          "productId": "7dfc6b63-e575-5303-a6a1-63a4d9800e18",
+          "sort": 5,
+          "whyThisStyle": "Demo recommendation for seasonal store review."
+        }
+      ],
+      "status": "published",
+      "audienceStoreIds": [
+        "a4345c59-d750-565c-b92c-20ea773e3b3a",
+        "64731f1b-177d-51fc-ad56-def0cfce24ce",
+        "77dee3e9-91ee-56f4-8b0f-d4c33ab1c286"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "code": "AE-14",
+      "name": "Olive Twill Overshirt",
+      "gender": "women",
+      "category": "overshirt",
+      "subtitle": "Seasonal style for store review.",
+      "description": "Demo style. Replace this copy and verify specifications before publishing real content.",
+      "features": [
+        "Relaxed fit",
+        "Everyday layering"
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "colours": [
+        {
+          "id": "1261c956-60d6-514f-9baf-fc3c35ef4d36",
+          "name": "Olive",
+          "hex": "#68694E",
+          "mediaBindingIds": [
+            "e14cf367-7136-5e82-b3c3-368567d9dd9e"
+          ]
+        },
+        {
+          "id": "322d564e-7f4f-5557-baa1-de3ed1b3e23b",
+          "name": "Sand",
+          "hex": "#BEAE9C",
+          "mediaBindingIds": [
+            "e14cf367-7136-5e82-b3c3-368567d9dd9e"
+          ]
+        },
+        {
+          "id": "1346d188-9ed2-5cd7-95e9-8e969c1ba638",
+          "name": "Charcoal",
+          "hex": "#333333",
+          "mediaBindingIds": [
+            "e14cf367-7136-5e82-b3c3-368567d9dd9e"
+          ]
+        }
+      ],
+      "materialOptionIds": [
+        "e8e00125-2c59-569b-aab5-6a84c8938383",
+        "51d58848-f15e-541f-a32c-cfb95a4f66f8",
+        "f919c8b0-e3aa-5987-882f-f6691486d26d"
+      ],
+      "mediaBindingIds": [
+        "e14cf367-7136-5e82-b3c3-368567d9dd9e",
+        "cccedf0c-1e97-52c5-9d1c-04854f2b32da",
+        "ba9368a1-93d6-5a47-b218-174d62ffaa43",
+        "423b831b-9284-59c2-bc4e-13186786ff9f"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "7fcb072a-cb78-5a0a-84c8-87853a5bf9c7",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "code": "AE-15",
+      "name": "Textured Knit Sweater",
+      "gender": "women",
+      "category": "knitwear",
+      "subtitle": "Seasonal style for store review.",
+      "description": "Demo style. Replace this copy and verify specifications before publishing real content.",
+      "features": [
+        "Seasonal style"
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "colours": [
+        {
+          "id": "ec7f0df8-358b-5a4e-ad9f-1dfa748d9714",
+          "name": "Natural",
+          "hex": "#E7E3D8",
+          "mediaBindingIds": [
+            "919b5eb9-91ea-524c-bfbb-a5dc7de47e9d"
+          ]
+        },
+        {
+          "id": "b6b88613-2585-5ce2-92fb-54804b2bb283",
+          "name": "Grey",
+          "hex": "#989898",
+          "mediaBindingIds": [
+            "919b5eb9-91ea-524c-bfbb-a5dc7de47e9d"
+          ]
+        },
+        {
+          "id": "1fb5b2be-883a-5429-81c4-d87bf8847a83",
+          "name": "Dark",
+          "hex": "#303039",
+          "mediaBindingIds": [
+            "919b5eb9-91ea-524c-bfbb-a5dc7de47e9d"
+          ]
+        }
+      ],
+      "materialOptionIds": [],
+      "mediaBindingIds": [
+        "919b5eb9-91ea-524c-bfbb-a5dc7de47e9d"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "4c18bfe3-bffc-5ef3-a6e4-2326c9dc712d",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "code": "AE-16",
+      "name": "Straight Leg Jeans",
+      "gender": "women",
+      "category": "denim",
+      "subtitle": "Seasonal style for store review.",
+      "description": "Demo style. Replace this copy and verify specifications before publishing real content.",
+      "features": [
+        "Seasonal style"
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "colours": [
+        {
+          "id": "fb71c7a2-3670-5cab-aab2-8fba0c77a40b",
+          "name": "Indigo",
+          "hex": "#242D43",
+          "mediaBindingIds": [
+            "34c76743-b841-5baa-9da7-94123ab1127b"
+          ]
+        },
+        {
+          "id": "32b56da4-3ae6-5f13-a4bb-540dd47bb55b",
+          "name": "Mid blue",
+          "hex": "#738096",
+          "mediaBindingIds": [
+            "34c76743-b841-5baa-9da7-94123ab1127b"
+          ]
+        },
+        {
+          "id": "47758a95-f37e-5ac9-a509-22a0f1bee394",
+          "name": "Washed blue",
+          "hex": "#A7B2C5",
+          "mediaBindingIds": [
+            "34c76743-b841-5baa-9da7-94123ab1127b"
+          ]
+        }
+      ],
+      "materialOptionIds": [],
+      "mediaBindingIds": [
+        "34c76743-b841-5baa-9da7-94123ab1127b"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "2c85c514-adbd-5939-8e20-f7c6ead1ac34",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "code": "AE-17",
+      "name": "Casual Shirt",
+      "gender": "men",
+      "category": "shirt",
+      "subtitle": "Seasonal style for store review.",
+      "description": "Demo style. Replace this copy and verify specifications before publishing real content.",
+      "features": [
+        "Seasonal style"
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "colours": [
+        {
+          "id": "2450140a-01ac-5b6f-a215-77b933367e23",
+          "name": "Natural",
+          "hex": "#E7E3D8",
+          "mediaBindingIds": [
+            "77001ed5-886e-57c6-8775-27645cfe6286"
+          ]
+        },
+        {
+          "id": "2501bdbc-17ef-5a11-8c2a-2ef6261f73f0",
+          "name": "Grey",
+          "hex": "#989898",
+          "mediaBindingIds": [
+            "77001ed5-886e-57c6-8775-27645cfe6286"
+          ]
+        },
+        {
+          "id": "427d4a22-bbf7-5372-b9d5-6dec92df5526",
+          "name": "Dark",
+          "hex": "#303039",
+          "mediaBindingIds": [
+            "77001ed5-886e-57c6-8775-27645cfe6286"
+          ]
+        }
+      ],
+      "materialOptionIds": [],
+      "mediaBindingIds": [
+        "77001ed5-886e-57c6-8775-27645cfe6286"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "88617fc5-a0e1-5559-8caa-8644cc0174a0",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "code": "AE-18",
+      "name": "Light Jacket",
+      "gender": "men",
+      "category": "jacket",
+      "subtitle": "Seasonal style for store review.",
+      "description": "Demo style. Replace this copy and verify specifications before publishing real content.",
+      "features": [
+        "Seasonal style"
+      ],
+      "occasions": [
+        "weekend",
+        "outdoor"
+      ],
+      "colours": [
+        {
+          "id": "60d16398-7392-55e5-aa56-4e6103655449",
+          "name": "Natural",
+          "hex": "#E7E3D8",
+          "mediaBindingIds": [
+            "8c8df30a-5bb9-5478-a20d-cda7c51e45d1"
+          ]
+        },
+        {
+          "id": "3cb03798-da41-5884-bfae-ee3f4042fd27",
+          "name": "Grey",
+          "hex": "#989898",
+          "mediaBindingIds": [
+            "8c8df30a-5bb9-5478-a20d-cda7c51e45d1"
+          ]
+        },
+        {
+          "id": "ad70d54d-3ab9-58aa-9083-8d3e3f400aaa",
+          "name": "Dark",
+          "hex": "#303039",
+          "mediaBindingIds": [
+            "8c8df30a-5bb9-5478-a20d-cda7c51e45d1"
+          ]
+        }
+      ],
+      "materialOptionIds": [],
+      "mediaBindingIds": [
+        "8c8df30a-5bb9-5478-a20d-cda7c51e45d1"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "7dfc6b63-e575-5303-a6a1-63a4d9800e18",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "code": "AE-19",
+      "name": "Rib Knit Sweater",
+      "gender": "women",
+      "category": "knitwear",
+      "subtitle": "Seasonal style for store review.",
+      "description": "Demo style. Replace this copy and verify specifications before publishing real content.",
+      "features": [
+        "Seasonal style"
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "colours": [
+        {
+          "id": "dcdd328f-ce0d-5888-b1d2-3d77d5adfd8f",
+          "name": "Natural",
+          "hex": "#E7E3D8",
+          "mediaBindingIds": [
+            "1da04d65-b57d-5bc8-bd3c-7f510456bbfc"
+          ]
+        },
+        {
+          "id": "e073a645-6796-538a-8a99-84c6941e51b3",
+          "name": "Grey",
+          "hex": "#989898",
+          "mediaBindingIds": [
+            "1da04d65-b57d-5bc8-bd3c-7f510456bbfc"
+          ]
+        },
+        {
+          "id": "dd7c3cc2-2e14-541a-9b85-1ceca1885423",
+          "name": "Dark",
+          "hex": "#303039",
+          "mediaBindingIds": [
+            "1da04d65-b57d-5bc8-bd3c-7f510456bbfc"
+          ]
+        }
+      ],
+      "materialOptionIds": [],
+      "mediaBindingIds": [
+        "1da04d65-b57d-5bc8-bd3c-7f510456bbfc"
+      ],
+      "status": "published"
+    }
+  ],
+  "materialOptions": [
+    {
+      "id": "e8e00125-2c59-569b-aab5-6a84c8938383",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "optionCode": "A",
+      "name": "Cotton twill",
+      "materialVersionId": "f5d9eeec-e690-5c34-999c-3ff734dc3034",
+      "handFeel": {
+        "value": "Soft",
+        "status": "illustrative"
+      },
+      "structure": {
+        "value": "Relaxed",
+        "status": "illustrative"
+      },
+      "composition": {
+        "value": null,
+        "status": "pending"
+      },
+      "weightGsm": {
+        "value": null,
+        "status": "pending"
+      },
+      "care": {
+        "value": null,
+        "status": "to_test"
+      },
+      "sampleStatus": {
+        "value": null,
+        "status": "pending"
+      },
+      "swatchBindingId": "c25e464f-3d6e-5fdf-a7cf-e01f9e2172ca",
+      "evidenceBindingIds": [],
+      "status": "published"
+    },
+    {
+      "id": "51d58848-f15e-541f-a32c-cfb95a4f66f8",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "optionCode": "B",
+      "name": "Cotton blend",
+      "materialVersionId": "b3db6742-ab6d-5c54-9fff-dafa853cf21f",
+      "handFeel": {
+        "value": "Smooth",
+        "status": "illustrative"
+      },
+      "structure": {
+        "value": "Structured",
+        "status": "illustrative"
+      },
+      "composition": {
+        "value": null,
+        "status": "pending"
+      },
+      "weightGsm": {
+        "value": null,
+        "status": "pending"
+      },
+      "care": {
+        "value": null,
+        "status": "to_test"
+      },
+      "sampleStatus": {
+        "value": null,
+        "status": "pending"
+      },
+      "swatchBindingId": "6be1822a-0b46-527f-8eac-02a10e38b994",
+      "evidenceBindingIds": [],
+      "status": "published"
+    },
+    {
+      "id": "f919c8b0-e3aa-5987-882f-f6691486d26d",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "optionCode": "C",
+      "name": "Textured weave",
+      "materialVersionId": "399731c5-6552-57ce-85a7-f5427ea3a224",
+      "handFeel": {
+        "value": "Textured",
+        "status": "illustrative"
+      },
+      "structure": {
+        "value": "Soft drape",
+        "status": "illustrative"
+      },
+      "composition": {
+        "value": null,
+        "status": "pending"
+      },
+      "weightGsm": {
+        "value": null,
+        "status": "pending"
+      },
+      "care": {
+        "value": null,
+        "status": "to_test"
+      },
+      "sampleStatus": {
+        "value": null,
+        "status": "pending"
+      },
+      "swatchBindingId": "69a76b13-438e-5e3c-828c-8b2749a346f7",
+      "evidenceBindingIds": [],
+      "status": "published"
+    }
+  ],
+  "retailPrices": [
+    {
+      "id": "c8cf69bf-2920-54ef-b8fa-eebd3d0a3c4b",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "materialOptionId": null,
+      "currency": "CAD",
+      "minMinor": null,
+      "maxMinor": null,
+      "status": "pending",
+      "validFrom": null,
+      "validUntil": null,
+      "confirmedBy": null
+    },
+    {
+      "id": "539112a3-9e1e-54f6-a914-7bf436c638d0",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "7fcb072a-cb78-5a0a-84c8-87853a5bf9c7",
+      "materialOptionId": null,
+      "currency": "CAD",
+      "minMinor": null,
+      "maxMinor": null,
+      "status": "pending",
+      "validFrom": null,
+      "validUntil": null,
+      "confirmedBy": null
+    },
+    {
+      "id": "9e00ef64-dad3-58ad-a86c-bae7c2be8899",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "4c18bfe3-bffc-5ef3-a6e4-2326c9dc712d",
+      "materialOptionId": null,
+      "currency": "CAD",
+      "minMinor": null,
+      "maxMinor": null,
+      "status": "pending",
+      "validFrom": null,
+      "validUntil": null,
+      "confirmedBy": null
+    },
+    {
+      "id": "4b9631d4-733e-543e-96ca-fcc76ce54736",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "2c85c514-adbd-5939-8e20-f7c6ead1ac34",
+      "materialOptionId": null,
+      "currency": "CAD",
+      "minMinor": null,
+      "maxMinor": null,
+      "status": "pending",
+      "validFrom": null,
+      "validUntil": null,
+      "confirmedBy": null
+    },
+    {
+      "id": "fec875ca-5649-50b1-9a2a-7a2409f55112",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "88617fc5-a0e1-5559-8caa-8644cc0174a0",
+      "materialOptionId": null,
+      "currency": "CAD",
+      "minMinor": null,
+      "maxMinor": null,
+      "status": "pending",
+      "validFrom": null,
+      "validUntil": null,
+      "confirmedBy": null
+    },
+    {
+      "id": "af9694dc-175d-50ab-86d4-499255494817",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "7dfc6b63-e575-5303-a6a1-63a4d9800e18",
+      "materialOptionId": null,
+      "currency": "CAD",
+      "minMinor": null,
+      "maxMinor": null,
+      "status": "pending",
+      "validFrom": null,
+      "validUntil": null,
+      "confirmedBy": null
+    },
+    {
+      "id": "e6f6b683-208f-584e-aee6-3cda05774f9b",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "materialOptionId": "e8e00125-2c59-569b-aab5-6a84c8938383",
+      "currency": "CAD",
+      "minMinor": null,
+      "maxMinor": null,
+      "status": "pending",
+      "validFrom": null,
+      "validUntil": null,
+      "confirmedBy": null
+    },
+    {
+      "id": "b4c1bf8a-3dd5-50e1-baa6-25f7478ab3fe",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "materialOptionId": "51d58848-f15e-541f-a32c-cfb95a4f66f8",
+      "currency": "CAD",
+      "minMinor": null,
+      "maxMinor": null,
+      "status": "pending",
+      "validFrom": null,
+      "validUntil": null,
+      "confirmedBy": null
+    },
+    {
+      "id": "ad5392b7-3533-517f-a072-2dd8fef0cb02",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "materialOptionId": "f919c8b0-e3aa-5987-882f-f6691486d26d",
+      "currency": "CAD",
+      "minMinor": null,
+      "maxMinor": null,
+      "status": "pending",
+      "validFrom": null,
+      "validUntil": null,
+      "confirmedBy": null
+    }
+  ],
+  "assets": [
+    {
+      "id": "f4f44eda-0fca-5d63-b651-9c1eb6ca3bd3",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "297881dd-389b-5afb-8568-ef89e4aedd1b",
+      "purpose": "hero",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "d77eea8b-c72f-5ef1-938c-d9266ecba4f1",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "2e83570b-23c2-54a9-85c6-6b06020ce929",
+      "purpose": "flatlay",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "8cf98b29-2b68-54af-941b-453a4594e28c",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "5a0fdda8-97a7-513c-8c08-212e36858376",
+      "purpose": "flatlay",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "c2127205-c226-5b92-92b3-773f7f98c540",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "9b38f939-171c-55a7-b73c-a3c5dee1d029",
+      "purpose": "flatlay",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "20732096-eb61-57dd-b771-5e6343403c5d",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "d2d7ea15-96ff-5eb3-a69b-f6642b8da7be",
+      "purpose": "occasion",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "ea3d3779-4757-5db0-846a-77f445bf2bd9",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "fbbb0c57-f4ca-533e-b374-4b1b30f7fd0f",
+      "purpose": "occasion",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "cf7efc68-8ceb-53d1-bc70-4faa7bd10905",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "e1740182-ea31-55df-8204-f0a263ae289f",
+      "purpose": "occasion",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "d31b768f-0718-5b79-a721-abd2aeee3fa9",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "fb6cc55a-93d5-519a-baba-95e6cae60936",
+      "purpose": "front",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "00ac06be-6e82-5ac9-a34d-4cbcb9052da3",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "5b3801cb-16f2-518e-9d1e-1258e9f2bc4e",
+      "purpose": "back",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "0ad419c6-cbf6-5ddb-82d9-783ae2cd8b1e",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "0975f2bc-cf04-5dbb-8c5f-7662fa06b1ce",
+      "purpose": "detail",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "27d9fe86-5bcc-5823-aaa3-ccd2dc2b477a",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "57afea82-3336-5766-b319-feb48b9c9b14",
+      "purpose": "fabric",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "2d71bcfb-baa5-5113-8a2e-bce63d97c7e8",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "b1d7858a-08ac-5330-99cc-904e78e88074",
+      "purpose": "front",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "82a1eff1-9ca6-51d4-aa7d-6c2a519ff29a",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "bcfc9b71-cf9e-531e-92f5-d1ca650687cf",
+      "purpose": "front",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "22a6b255-c6cd-57bd-943e-00dfd0922f66",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "74ef1f78-1cf6-5126-afa2-5ded0dbdf09f",
+      "purpose": "front",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "f22635e9-84f4-558a-91fa-c9ef9625b563",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "c750c293-1176-580b-905a-f5f20ffeb7a2",
+      "purpose": "front",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "36253922-c739-51e7-a531-42817003bdb5",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "d0a7792f-bcab-55fd-b2ca-74ce805816d5",
+      "purpose": "front",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "ae9d283e-f327-5e28-9816-415b8e35942d",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "f7b39a2f-a41e-56c0-ba95-cb5b43cbc1ec",
+      "purpose": "swatch",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "b619aa3f-c769-598b-bff1-b4f767ecd1e8",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "8f1fc017-84e4-587a-a40b-3cca87a938ae",
+      "purpose": "swatch",
+      "visibility": "restricted",
+      "status": "published"
+    },
+    {
+      "id": "4f699b14-4946-53f3-a933-2dcaf3e07e9c",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "currentVersionId": "1118b08f-0be5-5bb3-b419-dcd09db07642",
+      "purpose": "swatch",
+      "visibility": "restricted",
+      "status": "published"
+    }
+  ],
+  "assetVersions": [
+    {
+      "id": "297881dd-389b-5afb-8568-ef89e4aedd1b",
+      "assetId": "f4f44eda-0fca-5d63-b651-9c1eb6ca3bd3",
+      "version": 1,
+      "fileName": "collection-home-hero.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "2e83570b-23c2-54a9-85c6-6b06020ce929",
+      "assetId": "d77eea8b-c72f-5ef1-938c-d9266ecba4f1",
+      "version": 1,
+      "fileName": "product-ae-015-flatlay.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "5a0fdda8-97a7-513c-8c08-212e36858376",
+      "assetId": "8cf98b29-2b68-54af-941b-453a4594e28c",
+      "version": 1,
+      "fileName": "product-ae-014-flatlay.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "9b38f939-171c-55a7-b73c-a3c5dee1d029",
+      "assetId": "c2127205-c226-5b92-92b3-773f7f98c540",
+      "version": 1,
+      "fileName": "product-ae-016-flatlay.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "d2d7ea15-96ff-5eb3-a69b-f6642b8da7be",
+      "assetId": "20732096-eb61-57dd-b771-5e6343403c5d",
+      "version": 1,
+      "fileName": "collection-home-occasion-everyday.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "fbbb0c57-f4ca-533e-b374-4b1b30f7fd0f",
+      "assetId": "ea3d3779-4757-5db0-846a-77f445bf2bd9",
+      "version": 1,
+      "fileName": "collection-home-occasion-weekend.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "e1740182-ea31-55df-8204-f0a263ae289f",
+      "assetId": "cf7efc68-8ceb-53d1-bc70-4faa7bd10905",
+      "version": 1,
+      "fileName": "collection-home-occasion-outdoor.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "fb6cc55a-93d5-519a-baba-95e6cae60936",
+      "assetId": "d31b768f-0718-5b79-a721-abd2aeee3fa9",
+      "version": 1,
+      "fileName": "product-ae-014-front.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "5b3801cb-16f2-518e-9d1e-1258e9f2bc4e",
+      "assetId": "00ac06be-6e82-5ac9-a34d-4cbcb9052da3",
+      "version": 1,
+      "fileName": "product-ae-014-back.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "0975f2bc-cf04-5dbb-8c5f-7662fa06b1ce",
+      "assetId": "0ad419c6-cbf6-5ddb-82d9-783ae2cd8b1e",
+      "version": 1,
+      "fileName": "product-ae-014-detail.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "57afea82-3336-5766-b319-feb48b9c9b14",
+      "assetId": "27d9fe86-5bcc-5823-aaa3-ccd2dc2b477a",
+      "version": 1,
+      "fileName": "product-ae-014-fabric.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "b1d7858a-08ac-5330-99cc-904e78e88074",
+      "assetId": "2d71bcfb-baa5-5113-8a2e-bce63d97c7e8",
+      "version": 1,
+      "fileName": "product-ae-15-front.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "bcfc9b71-cf9e-531e-92f5-d1ca650687cf",
+      "assetId": "82a1eff1-9ca6-51d4-aa7d-6c2a519ff29a",
+      "version": 1,
+      "fileName": "product-ae-16-front.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "74ef1f78-1cf6-5126-afa2-5ded0dbdf09f",
+      "assetId": "22a6b255-c6cd-57bd-943e-00dfd0922f66",
+      "version": 1,
+      "fileName": "product-ae-17-front.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "c750c293-1176-580b-905a-f5f20ffeb7a2",
+      "assetId": "f22635e9-84f4-558a-91fa-c9ef9625b563",
+      "version": 1,
+      "fileName": "product-ae-18-front.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "d0a7792f-bcab-55fd-b2ca-74ce805816d5",
+      "assetId": "36253922-c739-51e7-a531-42817003bdb5",
+      "version": 1,
+      "fileName": "product-ae-19-front.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "f7b39a2f-a41e-56c0-ba95-cb5b43cbc1ec",
+      "assetId": "ae9d283e-f327-5e28-9816-415b8e35942d",
+      "version": 1,
+      "fileName": "material-ae-014-a.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "8f1fc017-84e4-587a-a40b-3cca87a938ae",
+      "assetId": "b619aa3f-c769-598b-bff1-b4f767ecd1e8",
+      "version": 1,
+      "fileName": "material-ae-014-b.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    },
+    {
+      "id": "1118b08f-0be5-5bb3-b419-dcd09db07642",
+      "assetId": "4f699b14-4946-53f3-a933-2dcaf3e07e9c",
+      "version": 1,
+      "fileName": "material-ae-014-c.webp",
+      "mimeType": "image/webp",
+      "byteSize": null,
+      "width": null,
+      "height": null,
+      "checksum": null,
+      "storageProvider": "unprepared",
+      "storagePath": null,
+      "createdAt": "2026-10-26T01:00:00Z",
+      "createdBy": null
+    }
+  ],
+  "mediaBindings": [
+    {
+      "id": "92797a9c-75a5-5900-ad73-cebc8d9848b9",
+      "ownerType": "site",
+      "ownerId": "bb941100-14ee-59dc-896a-4d3372d424c8",
+      "slotKey": "collection.home.hero",
+      "assetVersionId": "297881dd-389b-5afb-8568-ef89e4aedd1b",
+      "alt": "Demo autumn outfit with an olive overshirt",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "17b31018-0665-5366-aaf2-60bed4335195",
+      "ownerType": "product",
+      "ownerId": "7e2f428f-cdc6-583b-bd0b-213a01a65333",
+      "slotKey": "product.ae-015.flatlay",
+      "assetVersionId": "2e83570b-23c2-54a9-85c6-6b06020ce929",
+      "alt": "Demo Textured Knit Sweater",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "contain"
+    },
+    {
+      "id": "c4f66812-65ec-58c3-9ce3-cdf7284a4378",
+      "ownerType": "product",
+      "ownerId": "c8a1ba64-dd39-505f-802f-8040245efd28",
+      "slotKey": "product.ae-014.flatlay",
+      "assetVersionId": "5a0fdda8-97a7-513c-8c08-212e36858376",
+      "alt": "Demo Olive Twill Overshirt",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "contain"
+    },
+    {
+      "id": "6ffbafb8-f871-5daa-bfa4-ff475edc7fbf",
+      "ownerType": "product",
+      "ownerId": "a72dd828-0028-5d78-b3d9-bdfc0b1f91dc",
+      "slotKey": "product.ae-016.flatlay",
+      "assetVersionId": "9b38f939-171c-55a7-b73c-a3c5dee1d029",
+      "alt": "Demo Straight Leg Jeans",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "contain"
+    },
+    {
+      "id": "c657378a-ba59-5bdf-97a2-5d87c5d8eafc",
+      "ownerType": "site",
+      "ownerId": "bb941100-14ee-59dc-896a-4d3372d424c8",
+      "slotKey": "collection.home.occasion.everyday",
+      "assetVersionId": "d2d7ea15-96ff-5eb3-a69b-f6642b8da7be",
+      "alt": "Demo Everyday occasion",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "70ed3e4d-b327-56e7-b2b5-e0e2d05cafc8",
+      "ownerType": "site",
+      "ownerId": "bb941100-14ee-59dc-896a-4d3372d424c8",
+      "slotKey": "collection.home.occasion.weekend",
+      "assetVersionId": "fbbb0c57-f4ca-533e-b374-4b1b30f7fd0f",
+      "alt": "Demo Weekend occasion",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "70368649-4638-5552-ac77-cc89d7a31a2c",
+      "ownerType": "site",
+      "ownerId": "bb941100-14ee-59dc-896a-4d3372d424c8",
+      "slotKey": "collection.home.occasion.outdoor",
+      "assetVersionId": "e1740182-ea31-55df-8204-f0a263ae289f",
+      "alt": "Demo Outdoor occasion",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "eef32e3f-922b-55c9-9e97-f5aaafd8b5af",
+      "ownerType": "collection",
+      "ownerId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "slotKey": "collection.cover",
+      "assetVersionId": "297881dd-389b-5afb-8568-ef89e4aedd1b",
+      "alt": "Autumn Edit 01 demo collection",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "e14cf367-7136-5e82-b3c3-368567d9dd9e",
+      "ownerType": "product",
+      "ownerId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "slotKey": "product.ae-014.front",
+      "assetVersionId": "fb6cc55a-93d5-519a-baba-95e6cae60936",
+      "alt": "Demo olive overshirt front view",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "cccedf0c-1e97-52c5-9d1c-04854f2b32da",
+      "ownerType": "product",
+      "ownerId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "slotKey": "product.ae-014.back",
+      "assetVersionId": "5b3801cb-16f2-518e-9d1e-1258e9f2bc4e",
+      "alt": "Demo olive overshirt back",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "ba9368a1-93d6-5a47-b218-174d62ffaa43",
+      "ownerType": "product",
+      "ownerId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "slotKey": "product.ae-014.detail",
+      "assetVersionId": "0975f2bc-cf04-5dbb-8c5f-7662fa06b1ce",
+      "alt": "Demo olive overshirt detail",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "423b831b-9284-59c2-bc4e-13186786ff9f",
+      "ownerType": "product",
+      "ownerId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+      "slotKey": "product.ae-014.fabric",
+      "assetVersionId": "57afea82-3336-5766-b319-feb48b9c9b14",
+      "alt": "Demo olive overshirt fabric",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "919b5eb9-91ea-524c-bfbb-a5dc7de47e9d",
+      "ownerType": "product",
+      "ownerId": "7fcb072a-cb78-5a0a-84c8-87853a5bf9c7",
+      "slotKey": "product.ae-15.front",
+      "assetVersionId": "b1d7858a-08ac-5330-99cc-904e78e88074",
+      "alt": "Demo Textured Knit Sweater",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "34c76743-b841-5baa-9da7-94123ab1127b",
+      "ownerType": "product",
+      "ownerId": "4c18bfe3-bffc-5ef3-a6e4-2326c9dc712d",
+      "slotKey": "product.ae-16.front",
+      "assetVersionId": "bcfc9b71-cf9e-531e-92f5-d1ca650687cf",
+      "alt": "Demo Straight Leg Jeans",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "77001ed5-886e-57c6-8775-27645cfe6286",
+      "ownerType": "product",
+      "ownerId": "2c85c514-adbd-5939-8e20-f7c6ead1ac34",
+      "slotKey": "product.ae-17.front",
+      "assetVersionId": "74ef1f78-1cf6-5126-afa2-5ded0dbdf09f",
+      "alt": "Demo Casual Shirt",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "8c8df30a-5bb9-5478-a20d-cda7c51e45d1",
+      "ownerType": "product",
+      "ownerId": "88617fc5-a0e1-5559-8caa-8644cc0174a0",
+      "slotKey": "product.ae-18.front",
+      "assetVersionId": "c750c293-1176-580b-905a-f5f20ffeb7a2",
+      "alt": "Demo Light Jacket",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "1da04d65-b57d-5bc8-bd3c-7f510456bbfc",
+      "ownerType": "product",
+      "ownerId": "7dfc6b63-e575-5303-a6a1-63a4d9800e18",
+      "slotKey": "product.ae-19.front",
+      "assetVersionId": "d0a7792f-bcab-55fd-b2ca-74ce805816d5",
+      "alt": "Demo Rib Knit Sweater",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "c25e464f-3d6e-5fdf-a7cf-e01f9e2172ca",
+      "ownerType": "material",
+      "ownerId": "e8e00125-2c59-569b-aab5-6a84c8938383",
+      "slotKey": "material.ae-014.a",
+      "assetVersionId": "f7b39a2f-a41e-56c0-ba95-cb5b43cbc1ec",
+      "alt": "Illustrative Cotton twill texture",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "6be1822a-0b46-527f-8eac-02a10e38b994",
+      "ownerType": "material",
+      "ownerId": "51d58848-f15e-541f-a32c-cfb95a4f66f8",
+      "slotKey": "material.ae-014.b",
+      "assetVersionId": "8f1fc017-84e4-587a-a40b-3cca87a938ae",
+      "alt": "Illustrative Cotton blend texture",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    },
+    {
+      "id": "69a76b13-438e-5e3c-828c-8b2749a346f7",
+      "ownerType": "material",
+      "ownerId": "f919c8b0-e3aa-5987-882f-f6691486d26d",
+      "slotKey": "material.ae-014.c",
+      "assetVersionId": "1118b08f-0be5-5bb3-b419-dcd09db07642",
+      "alt": "Illustrative Textured weave texture",
+      "sort": 0,
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "fit": "cover"
+    }
+  ],
+  "stores": [
+    {
+      "id": "a4345c59-d750-565c-b92c-20ea773e3b3a",
+      "code": "DEMO-TORONTO",
+      "name": "Demo Toronto",
+      "region": "Toronto",
+      "isDemo": true
+    },
+    {
+      "id": "64731f1b-177d-51fc-ad56-def0cfce24ce",
+      "code": "DEMO-VANCOUVER",
+      "name": "Demo Vancouver",
+      "region": "Vancouver",
+      "isDemo": true
+    },
+    {
+      "id": "77dee3e9-91ee-56f4-8b0f-d4c33ab1c286",
+      "code": "DEMO-CALGARY",
+      "name": "Demo Calgary",
+      "region": "Calgary",
+      "isDemo": true
+    }
+  ],
+  "reviewRounds": [
+    {
+      "id": "55a25fa0-9638-5aaa-a671-8aacdf1294f7",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "collectionRevision": 1,
+      "title": "Autumn Edit 01 demo review",
+      "status": "open",
+      "opensAt": null,
+      "closesAt": null,
+      "audienceStoreIds": [
+        "a4345c59-d750-565c-b92c-20ea773e3b3a",
+        "64731f1b-177d-51fc-ad56-def0cfce24ce",
+        "77dee3e9-91ee-56f4-8b0f-d4c33ab1c286"
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "id": "94cfe180-8809-5eb1-8b96-0ebd8d350b1c",
+      "revision": 1,
+      "updatedAt": "2026-10-26T01:00:00Z",
+      "isDemo": true,
+      "storeId": "a4345c59-d750-565c-b92c-20ea773e3b3a",
+      "roundId": "55a25fa0-9638-5aaa-a671-8aacdf1294f7",
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "baseSubmissionVersion": null,
+      "items": []
+    }
+  ],
+  "submissions": [
+    {
+      "id": "37c41044-c142-5915-a0c7-d9b0d4f89e78",
+      "receiptNumber": "DEMO-20261026-001",
+      "storeId": "64731f1b-177d-51fc-ad56-def0cfce24ce",
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "roundId": "55a25fa0-9638-5aaa-a671-8aacdf1294f7",
+      "version": 1,
+      "submittedAt": "2026-10-26T01:00:00Z",
+      "snapshots": [
+        {
+          "item": {
+            "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+            "productRevision": 1,
+            "colourId": "1261c956-60d6-514f-9baf-fc3c35ef4d36",
+            "materialOptionId": "51d58848-f15e-541f-a32c-cfb95a4f66f8",
+            "materialVersionId": "b3db6742-ab6d-5c54-9fff-dafa853cf21f",
+            "reasons": [
+              "other_material"
+            ],
+            "targetRetailPreference": {
+              "currency": "CAD",
+              "minMinor": null,
+              "maxMinor": null
+            },
+            "comment": "Demo feedback: compare a softer hand feel.",
+            "sampleKind": "not_yet",
+            "sampleQuantity": null,
+            "sampleRequestIds": []
+          },
+          "productCode": "AE-14",
+          "productName": "Olive Twill Overshirt",
+          "colourName": "Olive",
+          "materialName": "Cotton blend",
+          "imageAssetVersionId": "fb6cc55a-93d5-519a-baba-95e6cae60936",
+          "retailPriceVersion": {
+            "id": "c8cf69bf-2920-54ef-b8fa-eebd3d0a3c4b",
+            "revision": 1,
+            "updatedAt": "2026-10-26T01:00:00Z",
+            "isDemo": true,
+            "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+            "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+            "materialOptionId": null,
+            "currency": "CAD",
+            "minMinor": null,
+            "maxMinor": null,
+            "status": "pending",
+            "validFrom": null,
+            "validUntil": null,
+            "confirmedBy": null
+          }
+        },
+        {
+          "item": {
+            "productId": "7fcb072a-cb78-5a0a-84c8-87853a5bf9c7",
+            "productRevision": 1,
+            "colourId": "ec7f0df8-358b-5a4e-ad9f-1dfa748d9714",
+            "materialOptionId": null,
+            "materialVersionId": null,
+            "reasons": [
+              "review_price"
+            ],
+            "targetRetailPreference": {
+              "currency": "CAD",
+              "minMinor": null,
+              "maxMinor": null
+            },
+            "comment": "Demo feedback: confirm the target retail range.",
+            "sampleKind": "not_yet",
+            "sampleQuantity": null,
+            "sampleRequestIds": []
+          },
+          "productCode": "AE-15",
+          "productName": "Textured Knit Sweater",
+          "colourName": "Natural",
+          "materialName": null,
+          "imageAssetVersionId": "b1d7858a-08ac-5330-99cc-904e78e88074",
+          "retailPriceVersion": {
+            "id": "539112a3-9e1e-54f6-a914-7bf436c638d0",
+            "revision": 1,
+            "updatedAt": "2026-10-26T01:00:00Z",
+            "isDemo": true,
+            "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+            "productId": "7fcb072a-cb78-5a0a-84c8-87853a5bf9c7",
+            "materialOptionId": null,
+            "currency": "CAD",
+            "minMinor": null,
+            "maxMinor": null,
+            "status": "pending",
+            "validFrom": null,
+            "validUntil": null,
+            "confirmedBy": null
+          }
+        }
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "8dd7b3e2-8dba-5d10-b4c2-73dbdae70ff5",
+      "receiptNumber": "DEMO-20261026-002",
+      "storeId": "77dee3e9-91ee-56f4-8b0f-d4c33ab1c286",
+      "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+      "roundId": "55a25fa0-9638-5aaa-a671-8aacdf1294f7",
+      "version": 1,
+      "submittedAt": "2026-10-26T01:00:00Z",
+      "snapshots": [
+        {
+          "item": {
+            "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+            "productRevision": 1,
+            "colourId": "1261c956-60d6-514f-9baf-fc3c35ef4d36",
+            "materialOptionId": "e8e00125-2c59-569b-aab5-6a84c8938383",
+            "materialVersionId": "f5d9eeec-e690-5c34-999c-3ff734dc3034",
+            "reasons": [
+              "good_fit"
+            ],
+            "targetRetailPreference": {
+              "currency": "CAD",
+              "minMinor": null,
+              "maxMinor": null
+            },
+            "comment": "Demo feedback: suitable for everyday layering.",
+            "sampleKind": "not_yet",
+            "sampleQuantity": null,
+            "sampleRequestIds": []
+          },
+          "productCode": "AE-14",
+          "productName": "Olive Twill Overshirt",
+          "colourName": "Olive",
+          "materialName": "Cotton twill",
+          "imageAssetVersionId": "fb6cc55a-93d5-519a-baba-95e6cae60936",
+          "retailPriceVersion": {
+            "id": "c8cf69bf-2920-54ef-b8fa-eebd3d0a3c4b",
+            "revision": 1,
+            "updatedAt": "2026-10-26T01:00:00Z",
+            "isDemo": true,
+            "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+            "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1",
+            "materialOptionId": null,
+            "currency": "CAD",
+            "minMinor": null,
+            "maxMinor": null,
+            "status": "pending",
+            "validFrom": null,
+            "validUntil": null,
+            "confirmedBy": null
+          }
+        },
+        {
+          "item": {
+            "productId": "4c18bfe3-bffc-5ef3-a6e4-2326c9dc712d",
+            "productRevision": 1,
+            "colourId": "fb71c7a2-3670-5cab-aab2-8fba0c77a40b",
+            "materialOptionId": null,
+            "materialVersionId": null,
+            "reasons": [
+              "adjust_fit_colour"
+            ],
+            "targetRetailPreference": {
+              "currency": "CAD",
+              "minMinor": null,
+              "maxMinor": null
+            },
+            "comment": "Demo feedback: review fit options.",
+            "sampleKind": "not_yet",
+            "sampleQuantity": null,
+            "sampleRequestIds": []
+          },
+          "productCode": "AE-16",
+          "productName": "Straight Leg Jeans",
+          "colourName": "Indigo",
+          "materialName": null,
+          "imageAssetVersionId": "bcfc9b71-cf9e-531e-92f5-d1ca650687cf",
+          "retailPriceVersion": {
+            "id": "9e00ef64-dad3-58ad-a86c-bae7c2be8899",
+            "revision": 1,
+            "updatedAt": "2026-10-26T01:00:00Z",
+            "isDemo": true,
+            "collectionId": "4cbccd5f-3319-5408-bb19-481584959419",
+            "productId": "4c18bfe3-bffc-5ef3-a6e4-2326c9dc712d",
+            "materialOptionId": null,
+            "currency": "CAD",
+            "minMinor": null,
+            "maxMinor": null,
+            "status": "pending",
+            "validFrom": null,
+            "validUntil": null,
+            "confirmedBy": null
+          }
+        }
+      ],
+      "isDemo": true
+    }
+  ],
+  "votes": [
+    {
+      "storeId": "64731f1b-177d-51fc-ad56-def0cfce24ce",
+      "roundId": "55a25fa0-9638-5aaa-a671-8aacdf1294f7",
+      "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1"
+    },
+    {
+      "storeId": "77dee3e9-91ee-56f4-8b0f-d4c33ab1c286",
+      "roundId": "55a25fa0-9638-5aaa-a671-8aacdf1294f7",
+      "productId": "9e7a753a-d283-53b9-8ade-ae26dbc35ae1"
+    },
+    {
+      "storeId": "77dee3e9-91ee-56f4-8b0f-d4c33ab1c286",
+      "roundId": "55a25fa0-9638-5aaa-a671-8aacdf1294f7",
+      "productId": "4c18bfe3-bffc-5ef3-a6e4-2326c9dc712d"
+    }
+  ],
+  "sampleRequests": [],
+  "revisionBriefs": []
+}

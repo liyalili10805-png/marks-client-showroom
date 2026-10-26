@@ -26,7 +26,7 @@ jobs:
       - name: Stage site files
         run: |
           mkdir -p _site
-          cp -R index.html trend.html trend-detail.html products.html mens.html womens.html about.html collection.html collection-series.html collection-detail.html materials.html my-selection.html styles.css collection.css favicon.svg assets js data _site/
+          cp -R index.html trend.html trend-detail.html products.html mens.html womens.html about.html collection.html collection-series.html collection-detail.html materials.html my-selection.html workspace.html admin.html styles.css collection.css favicon.svg assets js data _site/
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static files

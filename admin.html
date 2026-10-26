@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Content admin · SOHO-Marks</title>
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .admin { padding-bottom: 60px; }
+    .admin-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; padding: 30px 0 18px; flex-wrap: wrap; }
+    .admin-head h1 { margin: 6px 0 4px; font-size: clamp(28px, 3.4vw, 42px); font-weight: 600; }
+    .admin-head p { margin: 0; color: #555; font-size: 14px; }
+    .admin-status { font-size: 12px; color: #777; }
+    .admin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .admin-card { border: 1px solid #e5e5e5; padding: 20px; }
+    .admin-card h2 { margin: 0 0 14px; font-size: 17px; font-weight: 600; }
+    .admin-field { margin-bottom: 12px; }
+    .admin-field label { display: block; font-size: 11px; letter-spacing: .08em; color: #777; margin-bottom: 5px; }
+    .admin-field input, .admin-field textarea { width: 100%; border: 1px solid #ccc; padding: 10px 11px; font-size: 14px; }
+    .admin-field textarea { min-height: 70px; resize: vertical; }
+    .admin-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+    .admin-btn { border: 1px solid #111; background: #fff; padding: 10px 14px; font-size: 12px; cursor: pointer; }
+    .admin-btn.primary { background: #fe6e30; border-color: #fe6e30; color: #fff; }
+    .admin-preview { width: 100%; aspect-ratio: 16/10; object-fit: cover; background: #f4f3f1; display: block; margin-top: 10px; }
+    .admin-products { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .admin-product { border: 1px solid #eee; padding: 10px; }
+    .admin-product img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; margin-bottom: 8px; }
+    .admin-product strong { display: block; font-size: 13px; }
+    .admin-product small { color: #888; font-size: 11px; }
+    .admin-note { color: #777; font-size: 12px; line-height: 1.6; }
+    .admin-msg { margin-top: 12px; font-size: 13px; }
+    @media (max-width: 900px) { .admin-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="trend.html" aria-label="SOHO-Marks home">
+      <img class="brand-logo" src="assets/img/logo.png" alt="苏豪时尚 SOHO FASHION" width="1446" height="392">
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="trend.html">TREND</a>
+      <div class="nav-group">
+        <a href="collection.html">COLLECTION</a>
+        <div class="sub-nav">
+          <a href="collection.html">ALL COLLECTIONS</a>
+          <a href="materials.html">MATERIALS</a>
+          <a href="my-selection.html">MY SELECTION</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="products.html">PRODUCTS</a>
+        <div class="sub-nav">
+          <a href="mens.html">MENS</a>
+          <a href="womens.html">WOMENS</a>
+        </div>
+      </div>
+      <a href="about.html">ABOUT US</a>
+    </nav>
+    <div class="header-tools">
+      <a class="ws-btn" href="workspace.html">Workspace</a>
+    </div>
+  </header>
+
+  <div class="nav-blur" aria-hidden="true"></div>
+
+  <main class="page-root admin">
+    <div class="admin-head">
+      <div>
+        <p class="eyebrow">CONTENT ADMIN · DEMO MODE</p>
+        <h1>Content &amp; assets</h1>
+        <p>Edit the Collection hero, replace product imagery, publish to the storefront.</p>
+      </div>
+      <div class="admin-status" id="admin-status">Loading…</div>
+    </div>
+
+    <div class="admin-grid">
+      <section class="admin-card">
+        <h2>Collection home</h2>
+        <div class="admin-field">
+          <label for="hero-title">TITLE (TWO LINES)</label>
+          <textarea id="hero-title"></textarea>
+        </div>
+        <div class="admin-field">
+          <label for="hero-intro">INTRO</label>
+          <textarea id="hero-intro"></textarea>
+        </div>
+        <div class="admin-field">
+          <label for="hero-cta">BUTTON LABEL</label>
+          <input id="hero-cta" type="text">
+        </div>
+        <div class="admin-field">
+          <label for="hero-image">HERO IMAGE (JPG / PNG / WEBP, ≤ 8 MB)</label>
+          <input id="hero-image" type="file" accept="image/jpeg,image/png,image/webp">
+          <img class="admin-preview" id="hero-preview" alt="Hero preview">
+        </div>
+        <p class="admin-note">Images are stored in this browser (IndexedDB). Product IDs never change.</p>
+      </section>
+
+      <section class="admin-card">
+        <h2>Product imagery</h2>
+        <p class="admin-note" style="margin-top:0">Replace a style image without changing its ID, code or feedback history.</p>
+        <div class="admin-products" id="admin-products"></div>
+      </section>
+    </div>
+
+    <div class="admin-actions">
+      <button class="admin-btn" type="button" id="save-draft">Save draft</button>
+      <button class="admin-btn primary" type="button" id="publish">Publish</button>
+      <button class="admin-btn" type="button" id="withdraw">Withdraw</button>
+      <button class="admin-btn" type="button" id="restore">Restore previous</button>
+      <a class="admin-btn" href="collection.html?preview=1" target="_blank" rel="noopener">Preview</a>
+    </div>
+    <p class="admin-msg" id="admin-msg" role="status"></p>
+  </main>
+
+  <script src="js/demo-store.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

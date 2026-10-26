@@ -152,9 +152,15 @@
     const hero = el('section', 'col-hero');
     const copy = el('div', 'col-hero-copy');
     copy.append(el('p', 'eyebrow', collection.eyebrow));
-    copy.append(el('h1', null, collection.headline));
+    const headline = el('h1');
+    const lines = Array.isArray(collection.titleLines) ? collection.titleLines : String(collection.headline).split('\n');
+    lines.forEach((line, index) => {
+      if (index) headline.append(document.createElement('br'));
+      headline.append(document.createTextNode(line));
+    });
+    copy.append(headline);
     copy.append(el('p', 'col-intro', collection.intro));
-    const explore = el('a', 'btn-accent', 'Explore the collection →');
+    const explore = el('a', 'btn-accent', collection.ctaLabel || 'Explore the collection →');
     explore.href = 'collection-series.html';
     copy.append(explore);
     const media = el('div', 'col-hero-media');
@@ -418,16 +424,48 @@
     saveSelection();
   }
 
+  const normCode = code => String(code || '').replace(/^AE-0?/, 'AE-');
+
+  async function applyOverrides() {
+    if (!window.DemoStore) return;
+    try {
+      const state = await DemoStore.state();
+      const overrides = state.overrides || {};
+      const preview = new URLSearchParams(location.search).has('preview');
+      const useContent = preview || (state.contentStatus || 'published') === 'published';
+      if (useContent && overrides.hero) {
+        if (overrides.hero.titleLines && overrides.hero.titleLines.length) collection.titleLines = overrides.hero.titleLines;
+        if (overrides.hero.intro) collection.intro = overrides.hero.intro;
+        if (overrides.hero.ctaLabel) collection.ctaLabel = overrides.hero.ctaLabel;
+        if (overrides.hero.imageId) {
+          const blob = await DemoStore.getBlob(overrides.hero.imageId);
+          if (blob) collection.cover = URL.createObjectURL(blob);
+        }
+      }
+      if (useContent && overrides.productImages) {
+        for (const [code, id] of Object.entries(overrides.productImages)) {
+          const product = products.find(item => normCode(item.code) === normCode(code));
+          if (!product) continue;
+          const blob = await DemoStore.getBlob(id);
+          if (blob) product.image = URL.createObjectURL(blob);
+        }
+      }
+    } catch (error) {
+      console.warn('Demo overrides unavailable', error);
+    }
+  }
+
   let data;
   let collection;
   let products;
 
   fetch(DATA_URL)
     .then(response => response.json())
-    .then(payload => {
+    .then(async payload => {
       data = payload;
       collection = payload.collection;
       products = payload.products;
+      await applyOverrides();
       if (view === 'landing') renderLanding();
       if (view === 'series') renderSeries();
       if (view === 'detail') renderDetail();
