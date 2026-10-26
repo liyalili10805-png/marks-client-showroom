@@ -230,7 +230,7 @@
       const img = document.createElement('img');
       img.src = item.image;
       img.alt = item.name;
-      tile.append(img);
+      tile.append(img, el('span', 'occasion-label', item.name));
       occGrid.append(tile);
     });
     occasions.append(occGrid);
