@@ -37,7 +37,9 @@
     document.querySelectorAll('[data-save]').forEach(button => {
       const saved = selection.includes(button.dataset.save);
       button.classList.toggle('is-saved', saved);
-      button.textContent = saved ? 'Saved' : 'Save style';
+      const label = button.querySelector('span');
+      if (label) label.textContent = saved ? 'Saved' : 'Save style';
+      else button.textContent = saved ? 'Saved' : 'Save style';
     });
   }
 
