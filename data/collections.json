@@ -72,6 +72,10 @@
           "retail": "To be confirmed",
           "status": "To be confirmed"
         }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
       ]
     },
     {
@@ -125,6 +129,9 @@
           "retail": "To be confirmed",
           "status": "To be confirmed"
         }
+      ],
+      "occasions": [
+        "everyday"
       ]
     },
     {
@@ -175,6 +182,10 @@
           "retail": "To be confirmed",
           "status": "To be confirmed"
         }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
       ]
     },
     {
@@ -225,6 +236,9 @@
           "retail": "To be confirmed",
           "status": "To be confirmed"
         }
+      ],
+      "occasions": [
+        "everyday"
       ]
     },
     {
@@ -264,6 +278,10 @@
           "retail": "To be confirmed",
           "status": "To be confirmed"
         }
+      ],
+      "occasions": [
+        "weekend",
+        "outdoor"
       ]
     },
     {
@@ -303,20 +321,26 @@
           "retail": "To be confirmed",
           "status": "To be confirmed"
         }
+      ],
+      "occasions": [
+        "outdoor"
       ]
     }
   ],
   "occasions": [
     {
       "name": "Everyday",
+      "slug": "everyday",
       "image": "assets/demo/occasion-everyday.webp"
     },
     {
       "name": "Weekend",
+      "slug": "weekend",
       "image": "assets/demo/occasion-weekend.webp"
     },
     {
       "name": "Outdoor",
+      "slug": "outdoor",
       "image": "assets/demo/occasion-outdoor.webp"
     }
   ],

@@ -163,7 +163,7 @@
     copy.append(headline);
     copy.append(el('p', 'col-intro', collection.intro));
     const explore = el('a', 'btn-accent', collection.ctaLabel || 'Explore the collection →');
-    explore.href = 'collection-series.html';
+    explore.href = 'collection-series.html?occasion=everyday';
     copy.append(explore);
     const media = el('div', 'col-hero-media');
     const cover = document.createElement('img');
@@ -177,7 +177,7 @@
     const head = el('div', 'col-section-head');
     head.append(el('h2', null, "This week's selections"));
     const all = el('a', 'text-link', 'View all styles →');
-    all.href = 'collection-series.html';
+    all.href = 'collection-series.html?occasion=everyday';
     head.append(all);
     weekly.append(head);
     const grid = el('div', 'weekly-grid');
@@ -226,7 +226,7 @@
     const occGrid = el('div', 'occasion-grid');
     data.occasions.forEach(item => {
       const tile = el('a', 'occasion-tile');
-      tile.href = 'collection-series.html';
+      tile.href = `collection-series.html?occasion=${encodeURIComponent(item.slug)}`;
       const img = document.createElement('img');
       img.src = item.image;
       img.alt = item.name;
@@ -241,11 +241,14 @@
   function renderSeries() {
     const root = document.getElementById('collection-view');
     root.innerHTML = '';
+    const params = new URLSearchParams(location.search);
+    const occasion = params.get('occasion');
+    const themeLabel = occasion ? occasion.charAt(0).toUpperCase() + occasion.slice(1) : null;
 
     const head = el('div', 'col-page-head');
     const crumb = el('p', 'col-breadcrumb', `COLLECTION / ${collection.title}`);
     head.append(crumb, el('h1', null, collection.title));
-    head.append(el('p', 'col-sub', 'Everyday casual styles selected for store review.'));
+    head.append(el('p', 'col-sub', themeLabel ? `${themeLabel} styles selected for store review.` : 'Everyday casual styles selected for store review.'));
     root.append(head);
 
     const toolbar = el('div', 'col-toolbar');
@@ -284,8 +287,10 @@
       const category = categorySelect.value;
       grid.innerHTML = '';
       products
+        .filter(product => (!occasion || (product.occasions || []).includes(occasion)))
         .filter(product => category === 'All' || product.category === category)
         .forEach(product => grid.append(card(product, true)));
+      if (!grid.children.length) grid.append(el('p', 'empty-note', 'This theme is being prepared.'));
       renderPanel();
       saveSelection();
     }
