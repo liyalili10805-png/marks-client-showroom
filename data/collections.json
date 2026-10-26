@@ -83,7 +83,7 @@
       "listImage": "assets/img/womens-look-green.webp",
       "focalPoint": {
         "x": 50,
-        "y": 30
+        "y": 15
       }
     },
     {
@@ -144,10 +144,10 @@
       "gender": "women",
       "type": "top",
       "material": "Cotton knit",
-      "listImage": "assets/img/womens-views-cream.webp",
+      "listImage": "assets/demo/weekly-knit.webp",
       "focalPoint": {
         "x": 50,
-        "y": 30
+        "y": 50
       }
     },
     {
@@ -206,10 +206,10 @@
       "gender": "women",
       "type": "bottom",
       "material": "Denim",
-      "listImage": "assets/img/womens-look-tan.webp",
+      "listImage": "assets/demo/weekly-jeans.webp",
       "focalPoint": {
         "x": 50,
-        "y": 30
+        "y": 50
       }
     },
     {
@@ -270,7 +270,7 @@
       "listImage": "assets/img/mens-look-coat.webp",
       "focalPoint": {
         "x": 50,
-        "y": 30
+        "y": 15
       }
     },
     {
@@ -322,7 +322,7 @@
       "listImage": "assets/img/mens-look-jacket.webp",
       "focalPoint": {
         "x": 50,
-        "y": 30
+        "y": 15
       }
     },
     {
@@ -373,7 +373,7 @@
       "listImage": "assets/img/mens-look-quilted.webp",
       "focalPoint": {
         "x": 50,
-        "y": 30
+        "y": 15
       }
     }
   ],
