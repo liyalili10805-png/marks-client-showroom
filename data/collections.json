@@ -11,10 +11,10 @@
   "products": [
     {
       "code": "AE-014",
-      "name": "Utility Overshirt",
+      "name": "Olive Twill Overshirt",
       "category": "Women",
       "fit": "Relaxed fit",
-      "texture": "Cotton twill",
+      "texture": "Soft twill texture",
       "weight": "Layering weight",
       "colours": [
         {
@@ -37,7 +37,7 @@
         "assets/img/womens-fabric-green.webp"
       ],
       "retail": "To be confirmed",
-      "why": "An easy outer layer that works over a knit or a tee; the olive twill reads casual but keeps its structure.",
+      "why": "Easy to coordinate with everyday outfits, with thoughtful pocket details and a structured collar for a versatile layer.",
       "materials": [
         {
           "name": "Cotton twill",
@@ -85,7 +85,7 @@
         "x": 50,
         "y": 15
       },
-      "subtitle": "Olive cotton twill overshirt",
+      "subtitle": "Easy layering for everyday wear.",
       "description": "A relaxed overshirt in olive cotton twill, cut for layering over knitwear. Two chest flap pockets, a full button front and a soft collar."
     },
     {
@@ -415,7 +415,7 @@
     },
     {
       "code": "AE-014",
-      "name": "Utility Overshirt",
+      "name": "Olive Twill Overshirt",
       "image": "assets/demo/weekly-overshirt.webp",
       "colours": [
         {
