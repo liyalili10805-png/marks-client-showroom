@@ -194,3 +194,6 @@
 
 /* vertical product cards restored */
 .col-card-media img { aspect-ratio: 4 / 5; object-fit: cover; }
+
+.col-card-media img.fit-contain { object-fit: contain; background: #fff; }
+.col-card-media img.fit-top { object-fit: cover; object-position: center top; }

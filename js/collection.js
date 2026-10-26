@@ -73,6 +73,7 @@
     img.src = product.image;
     img.alt = product.name;
     img.loading = 'lazy';
+    img.className = ['AE-014', 'AE-015', 'AE-016'].includes(product.code) ? 'fit-contain' : 'fit-top';
     media.append(img);
     article.append(media);
 
