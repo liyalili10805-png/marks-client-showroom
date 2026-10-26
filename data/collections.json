@@ -31,7 +31,12 @@
         }
       ],
       "image": "assets/demo/weekly-overshirt.webp",
-      "views": [],
+      "views": [
+        "assets/demo/gen/detail-overshirt-front.webp",
+        "assets/demo/gen/detail-overshirt-back.webp",
+        "assets/demo/gen/detail-overshirt-detail.webp",
+        "assets/demo/gen/detail-overshirt-fabric.webp"
+      ],
       "retail": "To be confirmed",
       "why": "Easy to coordinate with everyday outfits, with thoughtful pocket details and a structured collar for a versatile layer.",
       "materials": [
