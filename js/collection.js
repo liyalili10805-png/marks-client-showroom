@@ -284,6 +284,7 @@
       });
       select.addEventListener('change', () => {
         filters[key] = select.value;
+        page = 1;
         paint();
         syncUrl();
       });
@@ -316,24 +317,59 @@
     layout.append(main, panel);
     root.append(layout);
 
+    const PAGE_SIZE = 9;
+    let page = Math.max(1, Number(params.get('page')) || 1);
+
     function syncUrl() {
       const next = new URLSearchParams();
       Object.entries(filters).forEach(([key, value]) => { if (value) next.set(key, value); });
+      if (page > 1) next.set('page', String(page));
       const query = next.toString();
       history.replaceState(null, '', location.pathname + (query ? '?' + query : ''));
     }
 
+    function renderPager(pages) {
+      let pager = document.getElementById('col-pager');
+      if (!pager) {
+        pager = el('nav', 'col-pager');
+        pager.id = 'col-pager';
+        grid.after(pager);
+      }
+      pager.innerHTML = '';
+      if (pages <= 1) return;
+      const prev = el('button', 'pager-step', '← Previous');
+      prev.type = 'button';
+      prev.disabled = page === 1;
+      prev.addEventListener('click', () => { page -= 1; paint(); syncUrl(); });
+      pager.append(prev);
+      for (let i = 1; i <= pages; i += 1) {
+        const button = el('button', 'pager-page', String(i));
+        button.type = 'button';
+        if (i === page) button.classList.add('active');
+        button.addEventListener('click', () => { page = i; paint(); syncUrl(); });
+        pager.append(button);
+      }
+      const next = el('button', 'pager-step', 'Next →');
+      next.type = 'button';
+      next.disabled = page === pages;
+      next.addEventListener('click', () => { page += 1; paint(); syncUrl(); });
+      pager.append(next);
+    }
+
     function paint() {
-      grid.innerHTML = '';
-      products
+      const filtered = products
         .filter(product => !filters.gender || product.gender === filters.gender)
         .filter(product => !filters.type || product.type === filters.type)
         .filter(product => !filters.material || product.material === filters.material)
         .filter(product => !filters.colour || (product.colours || []).some(colour => colour.name === filters.colour))
         .filter(product => !filters.retail || product.retail === filters.retail)
-        .filter(product => !filters.occasion || (product.occasions || []).includes(filters.occasion))
-        .forEach(product => grid.append(card(product, true)));
-      if (!grid.children.length) grid.append(el('p', 'empty-note', 'No styles match these filters.'));
+        .filter(product => !filters.occasion || (product.occasions || []).includes(filters.occasion));
+      const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+      if (page > pages) page = pages;
+      grid.innerHTML = '';
+      filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE).forEach(product => grid.append(card(product, true)));
+      if (!filtered.length) grid.append(el('p', 'empty-note', 'No styles match these filters.'));
+      renderPager(pages);
       renderPanel();
       saveSelection();
     }

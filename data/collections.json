@@ -213,184 +213,6 @@
       "description": "Straight-leg jeans in dark indigo denim with a mid rise, five-pocket construction and a clean hem."
     },
     {
-      "code": "AE-017",
-      "name": "Cotton Trench Coat",
-      "category": "Men",
-      "fit": "Relaxed shoulder",
-      "texture": "Cotton twill",
-      "weight": "Outer layer",
-      "colours": [
-        {
-          "name": "Stone",
-          "hex": "#cbb79a"
-        },
-        {
-          "name": "Navy",
-          "hex": "#26324a"
-        }
-      ],
-      "image": "assets/img/mens-look-coat.webp",
-      "views": [
-        "assets/img/mens-look-coat.webp",
-        "assets/img/mens-views-coat.webp",
-        "assets/img/mens-fabric-coat.webp"
-      ],
-      "retail": "To be confirmed",
-      "why": "A relaxed trench with a clean shoulder, made for commuting and layering over knitwear.",
-      "materials": [
-        {
-          "name": "Cotton twill",
-          "hand": "Crisp",
-          "structure": "Relaxed",
-          "composition": "To be confirmed",
-          "weight": "To be confirmed",
-          "care": "To be tested",
-          "cost": "To be quoted",
-          "retail": "To be confirmed",
-          "status": "To be confirmed"
-        },
-        {
-          "name": "Cotton blend",
-          "hand": "Soft",
-          "structure": "Structured",
-          "composition": "To be confirmed",
-          "weight": "To be confirmed",
-          "care": "To be tested",
-          "cost": "To be quoted",
-          "retail": "To be confirmed",
-          "status": "To be confirmed"
-        }
-      ],
-      "occasions": [
-        "everyday"
-      ],
-      "gender": "men",
-      "type": "outerwear",
-      "material": "Cotton twill",
-      "listImage": "assets/img/mens-look-coat.webp",
-      "focalPoint": {
-        "x": 50,
-        "y": 15
-      }
-    },
-    {
-      "code": "AE-018",
-      "name": "Green Field Jacket",
-      "category": "Men",
-      "fit": "Regular fit",
-      "texture": "Cotton canvas",
-      "weight": "Mid weight",
-      "colours": [
-        {
-          "name": "Olive",
-          "hex": "#5c5d3a"
-        },
-        {
-          "name": "Black",
-          "hex": "#222"
-        }
-      ],
-      "image": "assets/img/mens-look-jacket.webp",
-      "views": [
-        "assets/img/mens-look-jacket.webp",
-        "assets/img/mens-views-jacket.webp",
-        "assets/img/mens-fabric-jacket.webp"
-      ],
-      "retail": "To be confirmed",
-      "why": "An easy field jacket with a stand collar and patch pockets, built for transitional weather.",
-      "materials": [
-        {
-          "name": "Cotton canvas",
-          "hand": "Structured",
-          "structure": "Regular",
-          "composition": "To be confirmed",
-          "weight": "To be confirmed",
-          "care": "To be tested",
-          "cost": "To be quoted",
-          "retail": "To be confirmed",
-          "status": "To be confirmed"
-        }
-      ],
-      "occasions": [
-        "everyday",
-        "weekend",
-        "outdoor"
-      ],
-      "gender": "men",
-      "type": "outerwear",
-      "material": "Cotton canvas",
-      "listImage": "assets/img/mens-look-jacket.webp",
-      "focalPoint": {
-        "x": 50,
-        "y": 15
-      }
-    },
-    {
-      "code": "AE-020",
-      "name": "Linen Shirt",
-      "category": "Women",
-      "gender": "women",
-      "type": "top",
-      "material": "Linen",
-      "subtitle": "Crisp white linen shirt",
-      "description": "A relaxed shirt in white linen with a soft collar and a clean placket. Light enough for layering, tidy enough on its own.",
-      "fit": "Relaxed fit",
-      "texture": "Linen weave",
-      "weight": "Light weight",
-      "why": "A white linen shirt is the easiest warm-weather layer: open over a tank or buttoned with denim.",
-      "colours": [
-        {
-          "name": "White",
-          "hex": "#f1eee6"
-        },
-        {
-          "name": "Black",
-          "hex": "#1c1c1c"
-        }
-      ],
-      "image": "assets/demo/external/linen-shirt-1.webp",
-      "listImage": "assets/demo/external/linen-shirt-1.webp",
-      "views": [
-        "assets/demo/external/linen-shirt-1.webp",
-        "assets/demo/external/linen-shirt-2.webp",
-        "assets/demo/external/linen-shirt-3.webp",
-        "assets/demo/external/linen-shirt-4.webp"
-      ],
-      "focalPoint": {
-        "x": 50,
-        "y": 15
-      },
-      "retail": "To be confirmed",
-      "materials": [
-        {
-          "name": "Linen",
-          "hand": "Soft",
-          "structure": "Relaxed",
-          "composition": "To be confirmed",
-          "weight": "To be confirmed",
-          "care": "To be tested",
-          "cost": "To be quoted",
-          "retail": "To be confirmed",
-          "status": "To be confirmed"
-        },
-        {
-          "name": "Cotton blend",
-          "hand": "Smooth",
-          "structure": "Regular",
-          "composition": "To be confirmed",
-          "weight": "To be confirmed",
-          "care": "To be tested",
-          "cost": "To be quoted",
-          "retail": "To be confirmed",
-          "status": "To be confirmed"
-        }
-      ],
-      "occasions": [
-        "everyday",
-        "weekend"
-      ]
-    },
-    {
       "code": "AE-021",
       "name": "The Dream Pant",
       "category": "Women",
@@ -413,8 +235,8 @@
           "hex": "#232a3a"
         }
       ],
-      "image": "assets/demo/external/dream-pant-1.webp",
-      "listImage": "assets/demo/external/dream-pant-1.webp",
+      "image": "assets/demo/external/dream-pant-2.webp",
+      "listImage": "assets/demo/external/dream-pant-2.webp",
       "views": [
         "assets/demo/external/dream-pant-1.webp",
         "assets/demo/external/dream-pant-2.webp",
@@ -478,8 +300,8 @@
           "hex": "#232a3a"
         }
       ],
-      "image": "assets/demo/external/perform-legging-1.webp",
-      "listImage": "assets/demo/external/perform-legging-1.webp",
+      "image": "assets/demo/external/perform-legging-2.webp",
+      "listImage": "assets/demo/external/perform-legging-2.webp",
       "views": [
         "assets/demo/external/perform-legging-1.webp",
         "assets/demo/external/perform-legging-2.webp",
@@ -507,6 +329,804 @@
           "name": "Cotton blend",
           "hand": "Soft",
           "structure": "High rise",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-023",
+      "name": "318 Wide-Leg Corduroy Pants",
+      "category": "Women",
+      "gender": "women",
+      "type": "bottom",
+      "material": "Corduroy",
+      "subtitle": "Wide-leg corduroy pants",
+      "description": "Wide-leg corduroy pants with a high rise and a clean, floor-skimming leg. A soft cord that holds its shape.",
+      "fit": "High rise wide leg",
+      "texture": "Wide-wale corduroy",
+      "weight": "Mid weight",
+      "why": "The wide leg balances a chunky knit or a fitted tee; an easy swap for denim.",
+      "colours": [
+        {
+          "name": "Olive",
+          "hex": "#5b5d3a"
+        },
+        {
+          "name": "Brown",
+          "hex": "#6b4a34"
+        }
+      ],
+      "image": "assets/demo/marks/cord318.webp",
+      "listImage": "assets/demo/marks/cord318.webp",
+      "views": [
+        "assets/demo/marks/cord318.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Corduroy",
+          "hand": "Soft",
+          "structure": "Relaxed",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton blend",
+          "hand": "Structured",
+          "structure": "Wide leg",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-024",
+      "name": "501 Straight Jeans",
+      "category": "Women",
+      "gender": "women",
+      "type": "bottom",
+      "material": "Denim",
+      "subtitle": "Original straight-leg jeans",
+      "description": "The original straight-leg jean in a mid wash, with a button fly and a clean straight leg from hip to hem.",
+      "fit": "Straight leg",
+      "texture": "Rigid denim",
+      "weight": "Mid weight",
+      "why": "A straight leg that works with overshirts, knits and coats; the most reliable everyday denim.",
+      "colours": [
+        {
+          "name": "Indigo",
+          "hex": "#3b4f6b"
+        },
+        {
+          "name": "Light wash",
+          "hex": "#8ba3bf"
+        }
+      ],
+      "image": "assets/demo/marks/jeans501.webp",
+      "listImage": "assets/demo/marks/jeans501.webp",
+      "views": [
+        "assets/demo/marks/jeans501.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Rigid denim",
+          "hand": "Crisp",
+          "structure": "Straight",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Stretch denim",
+          "hand": "Soft",
+          "structure": "Straight",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-025",
+      "name": "Faux Wool Long Jacket",
+      "category": "Women",
+      "gender": "women",
+      "type": "outerwear",
+      "material": "Wool blend",
+      "subtitle": "Long button-up wool-blend jacket",
+      "description": "A long, button-up jacket in a faux wool blend with a clean lapel and side pockets. Cut to layer over knitwear.",
+      "fit": "Longline",
+      "texture": "Faux wool",
+      "weight": "Mid weight",
+      "why": "A polished layer that still reads everyday; long enough to cover a knit and light enough for transitional weather.",
+      "colours": [
+        {
+          "name": "Grey",
+          "hex": "#8a8a86"
+        },
+        {
+          "name": "Black",
+          "hex": "#1d1d1d"
+        }
+      ],
+      "image": "assets/demo/marks/wool-jacket-w.webp",
+      "listImage": "assets/demo/marks/wool-jacket-w.webp",
+      "views": [
+        "assets/demo/marks/wool-jacket-w.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Faux wool",
+          "hand": "Soft",
+          "structure": "Structured",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Wool blend",
+          "hand": "Warm",
+          "structure": "Longline",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-026",
+      "name": "Paxton Quilted Shirt Jac",
+      "category": "Women",
+      "gender": "women",
+      "type": "outerwear",
+      "material": "Quilted nylon",
+      "subtitle": "Quilted shirt jacket",
+      "description": "A quilted shirt jacket with a corduroy collar, snap front and patch pockets. Light enough to wear indoors, warm enough for the commute.",
+      "fit": "Relaxed fit",
+      "texture": "Quilted nylon",
+      "weight": "Mid weight",
+      "why": "A shirt-jac is the easiest autumn layer: throw it over a flannel or a knit and it works.",
+      "colours": [
+        {
+          "name": "Navy",
+          "hex": "#2b3346"
+        },
+        {
+          "name": "Olive",
+          "hex": "#55583b"
+        }
+      ],
+      "image": "assets/demo/marks/paxton.webp",
+      "listImage": "assets/demo/marks/paxton.webp",
+      "views": [
+        "assets/demo/marks/paxton.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Quilted nylon",
+          "hand": "Smooth",
+          "structure": "Structured",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton blend",
+          "hand": "Soft",
+          "structure": "Relaxed",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-027",
+      "name": "Jolie Cable Sweater",
+      "category": "Women",
+      "gender": "women",
+      "type": "top",
+      "material": "Wool blend",
+      "subtitle": "Cable-knit crewneck sweater",
+      "description": "A chunky cable-knit crewneck in a soft wool blend, with ribbed cuffs and hem. Designed to be worn on its own or layered.",
+      "fit": "Relaxed fit",
+      "texture": "Cable knit",
+      "weight": "Heavy weight",
+      "why": "The cable texture does the work; pair it with straight jeans or a corduroy trouser and stop there.",
+      "colours": [
+        {
+          "name": "Oat",
+          "hex": "#cbbfa9"
+        },
+        {
+          "name": "Cream",
+          "hex": "#e8e2d4"
+        }
+      ],
+      "image": "assets/demo/marks/jolie.webp",
+      "listImage": "assets/demo/marks/jolie.webp",
+      "views": [
+        "assets/demo/marks/jolie.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Wool blend",
+          "hand": "Soft",
+          "structure": "Relaxed",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton knit",
+          "hand": "Warm",
+          "structure": "Relaxed",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-028",
+      "name": "Nash Flannel Shirt",
+      "category": "Women",
+      "gender": "women",
+      "type": "top",
+      "material": "Cotton flannel",
+      "subtitle": "Plaid flannel shirt",
+      "description": "A brushed cotton flannel in a classic plaid, with a full button front and chest pockets. Soft enough to wear open over a tee.",
+      "fit": "Oversized fit",
+      "texture": "Brushed flannel",
+      "weight": "Mid weight",
+      "why": "An overshirt, a shirt and a light layer in one; the plaid adds the only pattern the outfit needs.",
+      "colours": [
+        {
+          "name": "Red plaid",
+          "hex": "#8e3b3b"
+        },
+        {
+          "name": "Navy plaid",
+          "hex": "#2e3a52"
+        }
+      ],
+      "image": "assets/demo/marks/nash.webp",
+      "listImage": "assets/demo/marks/nash.webp",
+      "views": [
+        "assets/demo/marks/nash.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Brushed flannel",
+          "hand": "Soft",
+          "structure": "Oversized",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton flannel",
+          "hand": "Warm",
+          "structure": "Oversized",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-029",
+      "name": "Fleece-Lined Leggings",
+      "category": "Women",
+      "gender": "women",
+      "type": "bottom",
+      "material": "Fleece knit",
+      "subtitle": "Fleece-lined full-length leggings",
+      "description": "Full-length leggings with a brushed fleece lining, a high rise and side pockets. Warm enough for winter commutes.",
+      "fit": "High rise",
+      "texture": "Fleece-lined knit",
+      "weight": "Mid weight",
+      "why": "The winter base layer that still looks like a legging; wear it under a long coat or a tunic.",
+      "colours": [
+        {
+          "name": "Black",
+          "hex": "#151515"
+        }
+      ],
+      "image": "assets/demo/marks/fleece-legging.webp",
+      "listImage": "assets/demo/marks/fleece-legging.webp",
+      "views": [
+        "assets/demo/marks/fleece-legging.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Fleece knit",
+          "hand": "Soft",
+          "structure": "High rise",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Stretch knit",
+          "hand": "Warm",
+          "structure": "High rise",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-030",
+      "name": "505 Cord Pants",
+      "category": "Men",
+      "gender": "men",
+      "type": "bottom",
+      "material": "Corduroy",
+      "subtitle": "Regular-fit corduroy pants",
+      "description": "Regular-fit corduroy pants with a straight leg and a classic five-pocket build. A soft, broken-in cord for everyday wear.",
+      "fit": "Regular fit",
+      "texture": "Wide-wale corduroy",
+      "weight": "Mid weight",
+      "why": "A cord pant that works with a flannel or a crewneck; warmer than denim without looking dressed up.",
+      "colours": [
+        {
+          "name": "Brown",
+          "hex": "#5d4633"
+        },
+        {
+          "name": "Black",
+          "hex": "#1c1c1c"
+        }
+      ],
+      "image": "assets/demo/marks/cord505.webp",
+      "listImage": "assets/demo/marks/cord505.webp",
+      "views": [
+        "assets/demo/marks/cord505.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Corduroy",
+          "hand": "Soft",
+          "structure": "Regular",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton blend",
+          "hand": "Structured",
+          "structure": "Straight",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-031",
+      "name": "Worker Flannel Shirt",
+      "category": "Men",
+      "gender": "men",
+      "type": "top",
+      "material": "Cotton flannel",
+      "subtitle": "Classic worker flannel shirt",
+      "description": "A classic worker flannel in a brushed cotton, with a full button front, chest pockets and a relaxed cut.",
+      "fit": "Relaxed fit",
+      "texture": "Brushed flannel",
+      "weight": "Mid weight",
+      "why": "The flannel does the layering; wear it open over a tee or buttoned under the sherpa jacket.",
+      "colours": [
+        {
+          "name": "Navy plaid",
+          "hex": "#2c3950"
+        },
+        {
+          "name": "Red plaid",
+          "hex": "#7f3434"
+        }
+      ],
+      "image": "assets/demo/marks/flannel-m.webp",
+      "listImage": "assets/demo/marks/flannel-m.webp",
+      "views": [
+        "assets/demo/marks/flannel-m.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Brushed flannel",
+          "hand": "Soft",
+          "structure": "Relaxed",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton flannel",
+          "hand": "Warm",
+          "structure": "Relaxed",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-032",
+      "name": "Sherpa Shirt Jac",
+      "category": "Men",
+      "gender": "men",
+      "type": "outerwear",
+      "material": "Sherpa fleece",
+      "subtitle": "Sherpa-lined shirt jacket",
+      "description": "A shirt jacket in a heavy cotton with a sherpa lining, chest pockets and a snap front. Built for cold mornings.",
+      "fit": "Relaxed fit",
+      "texture": "Sherpa fleece",
+      "weight": "Heavy weight",
+      "why": "A warm layer that still looks like a shirt; works over a flannel and under a coat.",
+      "colours": [
+        {
+          "name": "Olive",
+          "hex": "#4f5538"
+        },
+        {
+          "name": "Tan",
+          "hex": "#b09a78"
+        }
+      ],
+      "image": "assets/demo/marks/sherpa-jac.webp",
+      "listImage": "assets/demo/marks/sherpa-jac.webp",
+      "views": [
+        "assets/demo/marks/sherpa-jac.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Sherpa fleece",
+          "hand": "Soft",
+          "structure": "Relaxed",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton canvas",
+          "hand": "Warm",
+          "structure": "Structured",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-033",
+      "name": "Crewneck Sweater",
+      "category": "Men",
+      "gender": "men",
+      "type": "top",
+      "material": "Cotton knit",
+      "subtitle": "Cotton crewneck sweater",
+      "description": "A clean crewneck in a soft cotton knit, with ribbed cuffs and hem. An easy layer under a jacket or on its own.",
+      "fit": "Regular fit",
+      "texture": "Cotton knit",
+      "weight": "Mid weight",
+      "why": "The plain crewneck is the most useful knit in a winter wardrobe; it goes with cords, jeans and flannel.",
+      "colours": [
+        {
+          "name": "Black",
+          "hex": "#191919"
+        },
+        {
+          "name": "Navy",
+          "hex": "#25304a"
+        }
+      ],
+      "image": "assets/demo/marks/sweater-m.webp",
+      "listImage": "assets/demo/marks/sweater-m.webp",
+      "views": [
+        "assets/demo/marks/sweater-m.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Cotton knit",
+          "hand": "Soft",
+          "structure": "Regular",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Wool blend",
+          "hand": "Warm",
+          "structure": "Regular",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-034",
+      "name": "Relaxed Straight Jeans",
+      "category": "Men",
+      "gender": "men",
+      "type": "bottom",
+      "material": "Denim",
+      "subtitle": "Relaxed straight-leg jeans",
+      "description": "Relaxed straight-leg jeans in a mid-weight denim, with a mid rise and a clean hem. Roomy through the leg without being baggy.",
+      "fit": "Relaxed straight",
+      "texture": "Denim",
+      "weight": "Mid weight",
+      "why": "A relaxed straight leg that fits over boots and works with every layer above it.",
+      "colours": [
+        {
+          "name": "Indigo",
+          "hex": "#3a4c66"
+        }
+      ],
+      "image": "assets/demo/marks/jeans-m.webp",
+      "listImage": "assets/demo/marks/jeans-m.webp",
+      "views": [
+        "assets/demo/marks/jeans-m.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Denim",
+          "hand": "Crisp",
+          "structure": "Relaxed",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Stretch denim",
+          "hand": "Soft",
+          "structure": "Straight",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ]
+    },
+    {
+      "code": "AE-035",
+      "name": "Wool-Blend Coat",
+      "category": "Men",
+      "gender": "men",
+      "type": "outerwear",
+      "material": "Wool blend",
+      "subtitle": "Button-up wool-blend coat",
+      "description": "A single-breasted coat in a wool blend, with a notch lapel, side pockets and a clean knee-length cut.",
+      "fit": "Regular fit",
+      "texture": "Wool blend",
+      "weight": "Heavy weight",
+      "why": "A proper winter coat that still works with jeans and a crewneck; the one outer layer for the season.",
+      "colours": [
+        {
+          "name": "Navy",
+          "hex": "#25304a"
+        },
+        {
+          "name": "Charcoal",
+          "hex": "#3a3a3a"
+        }
+      ],
+      "image": "assets/demo/marks/wool-coat-m.webp",
+      "listImage": "assets/demo/marks/wool-coat-m.webp",
+      "views": [
+        "assets/demo/marks/wool-coat-m.webp"
+      ],
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "retail": "To be confirmed",
+      "materials": [
+        {
+          "name": "Wool blend",
+          "hand": "Warm",
+          "structure": "Structured",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Poly blend",
+          "hand": "Soft",
+          "structure": "Regular",
           "composition": "To be confirmed",
           "weight": "To be confirmed",
           "care": "To be tested",
