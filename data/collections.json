@@ -6,7 +6,7 @@
     "eyebrow": "AUTUMN EDIT 01",
     "headline": "Everyday layers. Considered details.",
     "intro": "Discover seasonal styles, compare materials and share what works for your store.",
-    "cover": "assets/demo/gen/everyday-hero.webp"
+    "cover": "assets/demo/gen/everyday-hero.webp?v=2"
   },
   "products": [
     {
@@ -30,7 +30,7 @@
           "hex": "#3a3a3a"
         }
       ],
-      "image": "assets/demo/gen/everyday-weekly-overshirt.webp",
+      "image": "assets/demo/gen/everyday-weekly-overshirt.webp?v=2",
       "views": [
         "assets/img/womens-look-green.webp",
         "assets/img/womens-views-green.webp",
@@ -331,7 +331,7 @@
     {
       "name": "Everyday",
       "slug": "everyday",
-      "image": "assets/demo/gen/occasion-everyday.webp"
+      "image": "assets/demo/gen/occasion-everyday.webp?v=2"
     },
     {
       "name": "Weekend",
@@ -367,7 +367,7 @@
     {
       "code": "AE-014",
       "name": "Utility Overshirt",
-      "image": "assets/demo/gen/everyday-weekly-overshirt.webp",
+      "image": "assets/demo/gen/everyday-weekly-overshirt.webp?v=2",
       "colours": [
         {
           "name": "Olive",
