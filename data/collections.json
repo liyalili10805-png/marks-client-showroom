@@ -144,10 +144,10 @@
       "gender": "women",
       "type": "top",
       "material": "Cotton knit",
-      "listImage": "assets/demo/weekly-knit.webp",
+      "listImage": "assets/demo/gen/list-cream-knit-model.webp",
       "focalPoint": {
         "x": 50,
-        "y": 50
+        "y": 20
       }
     },
     {
@@ -206,10 +206,10 @@
       "gender": "women",
       "type": "bottom",
       "material": "Denim",
-      "listImage": "assets/demo/weekly-jeans.webp",
+      "listImage": "assets/demo/gen/list-indigo-jeans-model.webp",
       "focalPoint": {
         "x": 50,
-        "y": 50
+        "y": 20
       }
     },
     {
