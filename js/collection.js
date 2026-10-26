@@ -251,29 +251,54 @@
     head.append(el('p', 'col-sub', themeLabel ? `${themeLabel} styles selected for store review.` : 'Everyday casual styles selected for store review.'));
     root.append(head);
 
+    const filters = {
+      gender: params.get('gender') || '',
+      type: params.get('type') || '',
+      material: params.get('material') || '',
+      colour: params.get('colour') || '',
+      retail: params.get('retail') || '',
+      occasion: occasion || ''
+    };
+
+    function uniqueValues(list) {
+      return [...new Set(list.filter(Boolean))];
+    }
+
     const toolbar = el('div', 'col-toolbar');
-    const categorySelect = document.createElement('select');
-    ['All', 'Women', 'Men'].forEach(value => {
-      const option = document.createElement('option');
-      option.value = value;
-      option.textContent = value;
-      categorySelect.append(option);
+    function makeSelect(key, label, options) {
+      const select = document.createElement('select');
+      select.setAttribute('aria-label', label);
+      options.forEach(([value, text]) => {
+        const option = document.createElement('option');
+        option.value = value;
+        option.textContent = text;
+        if (value === filters[key]) option.selected = true;
+        select.append(option);
+      });
+      select.addEventListener('change', () => {
+        filters[key] = select.value;
+        paint();
+        syncUrl();
+      });
+      return select;
+    }
+
+    const colourOptions = uniqueValues(products.flatMap(product => (product.colours || []).map(colour => colour.name)));
+    toolbar.append(
+      makeSelect('gender', 'Gender', [['', 'Gender'], ['women', 'Women'], ['men', 'Men']]),
+      makeSelect('type', 'Category', [['', 'Category'], ['outerwear', 'Outerwear'], ['top', 'Top'], ['bottom', 'Bottom']]),
+      makeSelect('material', 'Material', [['', 'Material'], ...uniqueValues(products.map(product => product.material)).map(value => [value, value])]),
+      makeSelect('colour', 'Colour', [['', 'Colour'], ...colourOptions.map(value => [value, value])]),
+      makeSelect('retail', 'Target retail', [['', 'Target retail'], ['To be confirmed', 'To be confirmed']]),
+      makeSelect('occasion', 'Occasion', [['', 'Occasion'], ...data.occasions.map(item => [item.slug, item.name])])
+    );
+    const clear = el('button', 'filter-clear', 'Clear');
+    clear.type = 'button';
+    clear.addEventListener('click', () => {
+      history.replaceState(null, '', location.pathname);
+      renderSeries();
     });
-    const materialSelect = document.createElement('select');
-    ['Material', 'Cotton', 'Wool', 'Quilted'].forEach(value => {
-      const option = document.createElement('option');
-      option.value = value;
-      option.textContent = value;
-      materialSelect.append(option);
-    });
-    const colourSelect = document.createElement('select');
-    ['Colour', 'Olive', 'Camel', 'Black'].forEach(value => {
-      const option = document.createElement('option');
-      option.value = value;
-      option.textContent = value;
-      colourSelect.append(option);
-    });
-    toolbar.append(categorySelect, materialSelect, colourSelect);
+    toolbar.append(clear);
     root.append(toolbar);
 
     const layout = el('div', 'col-layout');
@@ -283,21 +308,28 @@
     layout.append(grid, panel);
     root.append(layout);
 
+    function syncUrl() {
+      const next = new URLSearchParams();
+      Object.entries(filters).forEach(([key, value]) => { if (value) next.set(key, value); });
+      const query = next.toString();
+      history.replaceState(null, '', location.pathname + (query ? '?' + query : ''));
+    }
+
     function paint() {
-      const category = categorySelect.value;
       grid.innerHTML = '';
       products
-        .filter(product => (!occasion || (product.occasions || []).includes(occasion)))
-        .filter(product => category === 'All' || product.category === category)
+        .filter(product => !filters.gender || product.gender === filters.gender)
+        .filter(product => !filters.type || product.type === filters.type)
+        .filter(product => !filters.material || product.material === filters.material)
+        .filter(product => !filters.colour || (product.colours || []).some(colour => colour.name === filters.colour))
+        .filter(product => !filters.retail || product.retail === filters.retail)
+        .filter(product => !filters.occasion || (product.occasions || []).includes(filters.occasion))
         .forEach(product => grid.append(card(product, true)));
-      if (!grid.children.length) grid.append(el('p', 'empty-note', 'This theme is being prepared.'));
+      if (!grid.children.length) grid.append(el('p', 'empty-note', 'No styles match these filters.'));
       renderPanel();
       saveSelection();
     }
 
-    categorySelect.addEventListener('change', paint);
-    materialSelect.addEventListener('change', paint);
-    colourSelect.addEventListener('change', paint);
     paint();
   }
 

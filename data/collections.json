@@ -76,7 +76,10 @@
       "occasions": [
         "everyday",
         "weekend"
-      ]
+      ],
+      "gender": "women",
+      "type": "outerwear",
+      "material": "Cotton twill"
     },
     {
       "code": "AE-015",
@@ -132,7 +135,10 @@
       ],
       "occasions": [
         "everyday"
-      ]
+      ],
+      "gender": "women",
+      "type": "top",
+      "material": "Cotton knit"
     },
     {
       "code": "AE-016",
@@ -186,7 +192,10 @@
       "occasions": [
         "everyday",
         "weekend"
-      ]
+      ],
+      "gender": "women",
+      "type": "bottom",
+      "material": "Denim"
     },
     {
       "code": "AE-017",
@@ -239,7 +248,10 @@
       ],
       "occasions": [
         "everyday"
-      ]
+      ],
+      "gender": "men",
+      "type": "outerwear",
+      "material": "Cotton twill"
     },
     {
       "code": "AE-018",
@@ -282,7 +294,10 @@
       "occasions": [
         "weekend",
         "outdoor"
-      ]
+      ],
+      "gender": "men",
+      "type": "outerwear",
+      "material": "Cotton canvas"
     },
     {
       "code": "AE-019",
@@ -324,7 +339,10 @@
       ],
       "occasions": [
         "outdoor"
-      ]
+      ],
+      "gender": "men",
+      "type": "outerwear",
+      "material": "Quilted shell"
     }
   ],
   "occasions": [
