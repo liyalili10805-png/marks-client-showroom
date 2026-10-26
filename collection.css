@@ -150,3 +150,12 @@
   .col-hero { grid-template-columns: 1fr; }
   .weekly-grid { grid-template-columns: 1fr; }
 }
+
+
+/* fill the outlined frames: image height matches its grid cell, no white bands */
+.col-hero { align-items: stretch; }
+.col-hero-media { height: 100%; }
+.col-hero-media img { height: 100%; aspect-ratio: auto; object-fit: cover; object-position: center; }
+.occasion-tile { aspect-ratio: 2.6 / 1; }
+.occasion-tile img { object-position: left center; }
+.weekly-card { min-height: 210px; }
