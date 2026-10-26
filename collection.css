@@ -191,3 +191,6 @@
 .col-card-bottom { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
 .col-card-bottom .swatch { width: 14px; height: 14px; }
 .col-card-actions { margin-top: 0; gap: 8px; font-size: 12px; }
+
+/* vertical product cards restored */
+.col-card-media img { aspect-ratio: 4 / 5; object-fit: cover; }
