@@ -6,7 +6,7 @@
     "eyebrow": "AUTUMN EDIT 01",
     "headline": "Everyday layers. Considered details.",
     "intro": "Discover seasonal styles, compare materials and share what works for your store.",
-    "cover": "assets/img/womens-look-green.webp"
+    "cover": "assets/demo/hero.webp"
   },
   "products": [
     {
@@ -17,9 +17,18 @@
       "texture": "Soft twill texture",
       "weight": "Layering weight",
       "colours": [
-        { "name": "Olive", "hex": "#5c5d3a" },
-        { "name": "Sand", "hex": "#c9b493" },
-        { "name": "Charcoal", "hex": "#3a3a3a" }
+        {
+          "name": "Olive",
+          "hex": "#5c5d3a"
+        },
+        {
+          "name": "Sand",
+          "hex": "#c9b493"
+        },
+        {
+          "name": "Charcoal",
+          "hex": "#3a3a3a"
+        }
       ],
       "image": "assets/img/womens-look-green.webp",
       "views": [
@@ -30,9 +39,39 @@
       "retail": "To be confirmed",
       "why": "Easy to coordinate with everyday outfits, with thoughtful pocket details and a structured collar for a versatile layer.",
       "materials": [
-        { "name": "Cotton twill", "hand": "Soft", "structure": "Relaxed", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" },
-        { "name": "Cotton blend", "hand": "Smooth", "structure": "Structured", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" },
-        { "name": "Textured weave", "hand": "Textured", "structure": "Soft drape", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+        {
+          "name": "Cotton twill",
+          "hand": "Soft",
+          "structure": "Relaxed",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton blend",
+          "hand": "Smooth",
+          "structure": "Structured",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Textured weave",
+          "hand": "Textured",
+          "structure": "Soft drape",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
       ]
     },
     {
@@ -43,9 +82,18 @@
       "texture": "Textured knit",
       "weight": "Mid weight",
       "colours": [
-        { "name": "Cream", "hex": "#e8dfcc" },
-        { "name": "Camel", "hex": "#b98d5f" },
-        { "name": "Black", "hex": "#222" }
+        {
+          "name": "Cream",
+          "hex": "#e8dfcc"
+        },
+        {
+          "name": "Camel",
+          "hex": "#b98d5f"
+        },
+        {
+          "name": "Black",
+          "hex": "#222"
+        }
       ],
       "image": "assets/img/womens-views-cream.webp",
       "views": [
@@ -55,8 +103,28 @@
       "retail": "To be confirmed",
       "why": "A textured crew neck that works alone or under outerwear, with a clean neckline for everyday layering.",
       "materials": [
-        { "name": "Cotton knit", "hand": "Soft", "structure": "Regular", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" },
-        { "name": "Wool blend", "hand": "Warm", "structure": "Structured", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+        {
+          "name": "Cotton knit",
+          "hand": "Soft",
+          "structure": "Regular",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Wool blend",
+          "hand": "Warm",
+          "structure": "Structured",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
       ]
     },
     {
@@ -67,8 +135,14 @@
       "texture": "Wool touch",
       "weight": "Mid weight",
       "colours": [
-        { "name": "Camel", "hex": "#b98d5f" },
-        { "name": "Stone", "hex": "#cfc6b6" }
+        {
+          "name": "Camel",
+          "hex": "#b98d5f"
+        },
+        {
+          "name": "Stone",
+          "hex": "#cfc6b6"
+        }
       ],
       "image": "assets/img/womens-look-tan.webp",
       "views": [
@@ -79,8 +153,28 @@
       "retail": "To be confirmed",
       "why": "A clean straight leg with a soft wool touch, easy to style with knitwear and outerwear across the season.",
       "materials": [
-        { "name": "Wool touch", "hand": "Soft", "structure": "Straight", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" },
-        { "name": "Cotton blend", "hand": "Crisp", "structure": "Structured", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+        {
+          "name": "Wool touch",
+          "hand": "Soft",
+          "structure": "Straight",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton blend",
+          "hand": "Crisp",
+          "structure": "Structured",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
       ]
     },
     {
@@ -91,8 +185,14 @@
       "texture": "Cotton twill",
       "weight": "Outer layer",
       "colours": [
-        { "name": "Stone", "hex": "#cbb79a" },
-        { "name": "Navy", "hex": "#26324a" }
+        {
+          "name": "Stone",
+          "hex": "#cbb79a"
+        },
+        {
+          "name": "Navy",
+          "hex": "#26324a"
+        }
       ],
       "image": "assets/img/mens-look-coat.webp",
       "views": [
@@ -103,8 +203,28 @@
       "retail": "To be confirmed",
       "why": "A relaxed trench with a clean shoulder, made for commuting and layering over knitwear.",
       "materials": [
-        { "name": "Cotton twill", "hand": "Crisp", "structure": "Relaxed", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" },
-        { "name": "Cotton blend", "hand": "Soft", "structure": "Structured", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+        {
+          "name": "Cotton twill",
+          "hand": "Crisp",
+          "structure": "Relaxed",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        },
+        {
+          "name": "Cotton blend",
+          "hand": "Soft",
+          "structure": "Structured",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
       ]
     },
     {
@@ -115,8 +235,14 @@
       "texture": "Cotton canvas",
       "weight": "Mid weight",
       "colours": [
-        { "name": "Olive", "hex": "#5c5d3a" },
-        { "name": "Black", "hex": "#222" }
+        {
+          "name": "Olive",
+          "hex": "#5c5d3a"
+        },
+        {
+          "name": "Black",
+          "hex": "#222"
+        }
       ],
       "image": "assets/img/mens-look-jacket.webp",
       "views": [
@@ -127,7 +253,17 @@
       "retail": "To be confirmed",
       "why": "An easy field jacket with a stand collar and patch pockets, built for transitional weather.",
       "materials": [
-        { "name": "Cotton canvas", "hand": "Structured", "structure": "Regular", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+        {
+          "name": "Cotton canvas",
+          "hand": "Structured",
+          "structure": "Regular",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
       ]
     },
     {
@@ -138,8 +274,14 @@
       "texture": "Quilted shell",
       "weight": "Light warmth",
       "colours": [
-        { "name": "Black", "hex": "#222" },
-        { "name": "Dark olive", "hex": "#4a4b35" }
+        {
+          "name": "Black",
+          "hex": "#222"
+        },
+        {
+          "name": "Dark olive",
+          "hex": "#4a4b35"
+        }
       ],
       "image": "assets/img/mens-look-quilted.webp",
       "views": [
@@ -150,13 +292,91 @@
       "retail": "To be confirmed",
       "why": "Lightweight quilting for autumn and winter layering, with a clean, compact silhouette.",
       "materials": [
-        { "name": "Quilted shell", "hand": "Smooth", "structure": "Compact", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+        {
+          "name": "Quilted shell",
+          "hand": "Smooth",
+          "structure": "Compact",
+          "composition": "To be confirmed",
+          "weight": "To be confirmed",
+          "care": "To be tested",
+          "cost": "To be quoted",
+          "retail": "To be confirmed",
+          "status": "To be confirmed"
+        }
       ]
     }
   ],
   "occasions": [
-    { "name": "Everyday", "image": "assets/img/womens-look-green.webp" },
-    { "name": "Weekend", "image": "assets/img/womens-look-tan.webp" },
-    { "name": "Outdoor", "image": "assets/img/mens-banner.webp" }
+    {
+      "name": "Everyday",
+      "image": "assets/demo/occasion-everyday.webp"
+    },
+    {
+      "name": "Weekend",
+      "image": "assets/demo/occasion-weekend.webp"
+    },
+    {
+      "name": "Outdoor",
+      "image": "assets/demo/occasion-outdoor.webp"
+    }
+  ],
+  "weekly": [
+    {
+      "code": "AE-015",
+      "name": "Textured Knit Sweater",
+      "image": "assets/demo/weekly-knit.webp",
+      "colours": [
+        {
+          "name": "Cream",
+          "hex": "#e6e0d4"
+        },
+        {
+          "name": "Stone",
+          "hex": "#b9b7b2"
+        },
+        {
+          "name": "Charcoal",
+          "hex": "#3a3a3a"
+        }
+      ]
+    },
+    {
+      "code": "AE-014",
+      "name": "Utility Overshirt",
+      "image": "assets/demo/weekly-overshirt.webp",
+      "colours": [
+        {
+          "name": "Olive",
+          "hex": "#5c5d3a"
+        },
+        {
+          "name": "Sand",
+          "hex": "#c9b493"
+        },
+        {
+          "name": "Navy",
+          "hex": "#26324a"
+        }
+      ]
+    },
+    {
+      "code": "AE-016",
+      "name": "Straight Leg Jeans",
+      "image": "assets/demo/weekly-jeans.webp",
+      "colours": [
+        {
+          "name": "Indigo",
+          "hex": "#26324a"
+        },
+        {
+          "name": "Light blue",
+          "hex": "#8fa3bf"
+        },
+        {
+          "name": "Black",
+          "hex": "#1c1c1c"
+        }
+      ]
+    }
   ]
 }

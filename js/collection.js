@@ -178,8 +178,44 @@
     all.href = 'collection-series.html';
     head.append(all);
     weekly.append(head);
-    const grid = el('div', 'col-card-grid');
-    products.slice(0, 3).forEach(product => grid.append(card(product, false)));
+    const grid = el('div', 'weekly-grid');
+    (data.weekly || []).forEach(item => {
+      const card = el('article', 'weekly-card');
+      const media = el('a', 'weekly-media');
+      media.href = `collection-detail.html?code=${encodeURIComponent(item.code)}`;
+      const img = document.createElement('img');
+      img.src = item.image;
+      img.alt = item.name;
+      img.loading = 'lazy';
+      media.append(img);
+
+      const info = el('div', 'weekly-info');
+      info.append(el('h3', null, item.name));
+      const dots = el('div', 'swatches');
+      (item.colours || []).forEach(colour => {
+        const dot = el('span', 'swatch');
+        dot.style.background = colour.hex;
+        dot.title = colour.name;
+        dots.append(dot);
+      });
+      info.append(dots);
+
+      const save = el('button', 'save-style');
+      save.type = 'button';
+      save.dataset.save = item.code;
+      save.classList.toggle('is-saved', selection.includes(item.code));
+      save.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>' + (selection.includes(item.code) ? 'Saved' : 'Save style') + '</span>';
+      save.addEventListener('click', () => {
+        const product = products.find(p => p.code === item.code) || { code: item.code, name: item.name, image: item.image, colours: item.colours };
+        toggleSelection(product);
+        save.querySelector('span').textContent = selection.includes(item.code) ? 'Saved' : 'Save style';
+        save.classList.toggle('is-saved', selection.includes(item.code));
+      });
+      info.append(save);
+
+      card.append(media, info);
+      grid.append(card);
+    });
     weekly.append(grid);
     root.append(weekly);
 
@@ -192,7 +228,7 @@
       const img = document.createElement('img');
       img.src = item.image;
       img.alt = item.name;
-      tile.append(img, el('span', 'occasion-label', item.name));
+      tile.append(img);
       occGrid.append(tile);
     });
     occasions.append(occGrid);
