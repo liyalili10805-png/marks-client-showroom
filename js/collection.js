@@ -70,11 +70,9 @@
     const media = el('a', 'col-card-media');
     media.href = `collection-detail.html?code=${encodeURIComponent(product.code)}`;
     const img = document.createElement('img');
-    img.src = product.listImage || product.image;
+    img.src = product.image;
     img.alt = product.name;
     img.loading = 'lazy';
-    const focal = product.focalPoint || { x: 50, y: 30 };
-    img.style.objectPosition = `${focal.x}% ${focal.y}%`;
     media.append(img);
     article.append(media);
 
