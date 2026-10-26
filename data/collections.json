@@ -14,7 +14,7 @@
       "name": "Utility Overshirt",
       "category": "Women",
       "fit": "Relaxed fit",
-      "texture": "Soft twill texture",
+      "texture": "Cotton twill",
       "weight": "Layering weight",
       "colours": [
         {
@@ -37,7 +37,7 @@
         "assets/img/womens-fabric-green.webp"
       ],
       "retail": "To be confirmed",
-      "why": "Easy to coordinate with everyday outfits, with thoughtful pocket details and a structured collar for a versatile layer.",
+      "why": "An easy outer layer that works over a knit or a tee; the olive twill reads casual but keeps its structure.",
       "materials": [
         {
           "name": "Cotton twill",
@@ -84,7 +84,9 @@
       "focalPoint": {
         "x": 50,
         "y": 15
-      }
+      },
+      "subtitle": "Olive cotton twill overshirt",
+      "description": "A relaxed overshirt in olive cotton twill, cut for layering over knitwear. Two chest flap pockets, a full button front and a soft collar."
     },
     {
       "code": "AE-015",
@@ -113,7 +115,7 @@
         "assets/img/womens-fabric-cream.webp"
       ],
       "retail": "To be confirmed",
-      "why": "A textured crew neck that works alone or under outerwear, with a clean neckline for everyday layering.",
+      "why": "A clean crew neck that layers under outerwear and still works on its own.",
       "materials": [
         {
           "name": "Cotton knit",
@@ -148,14 +150,16 @@
       "focalPoint": {
         "x": 50,
         "y": 20
-      }
+      },
+      "subtitle": "Cream textured knit crewneck",
+      "description": "A cream crewneck sweater in a textured cotton knit with ribbed cuffs and hem. Designed as an everyday layer for transitional weather."
     },
     {
       "code": "AE-016",
       "name": "Straight Leg Jeans",
       "category": "Women",
       "fit": "Straight leg",
-      "texture": "Wool touch",
+      "texture": "Indigo denim",
       "weight": "Mid weight",
       "colours": [
         {
@@ -174,11 +178,11 @@
         "assets/img/womens-fabric-tan.webp"
       ],
       "retail": "To be confirmed",
-      "why": "A clean straight leg with a soft wool touch, easy to style with knitwear and outerwear across the season.",
+      "why": "A straightforward straight leg in a dark wash, easy to style with knitwear and overshirts.",
       "materials": [
         {
-          "name": "Wool touch",
-          "hand": "Soft",
+          "name": "Indigo denim",
+          "hand": "Crisp",
           "structure": "Straight",
           "composition": "To be confirmed",
           "weight": "To be confirmed",
@@ -188,9 +192,9 @@
           "status": "To be confirmed"
         },
         {
-          "name": "Cotton blend",
-          "hand": "Crisp",
-          "structure": "Structured",
+          "name": "Stretch denim",
+          "hand": "Soft",
+          "structure": "Straight",
           "composition": "To be confirmed",
           "weight": "To be confirmed",
           "care": "To be tested",
@@ -210,7 +214,9 @@
       "focalPoint": {
         "x": 50,
         "y": 20
-      }
+      },
+      "subtitle": "Dark indigo straight-leg jeans",
+      "description": "Straight-leg jeans in dark indigo denim with a mid rise, five-pocket construction and a clean hem."
     },
     {
       "code": "AE-017",
