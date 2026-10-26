@@ -356,25 +356,31 @@
     const layout = el('div', 'detail-layout');
     const thumbs = el('div', 'detail-thumbs');
     const main = el('div', 'detail-main');
-    const mainImg = document.createElement('img');
-    mainImg.src = product.views[0];
-    mainImg.alt = product.name;
-    main.append(mainImg);
-    product.views.forEach((src, index) => {
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = index === 0 ? 'active' : '';
-      const img = document.createElement('img');
-      img.src = src;
-      img.alt = `${product.name} view ${index + 1}`;
-      button.append(img);
-      button.addEventListener('click', () => {
-        mainImg.src = src;
-        thumbs.querySelectorAll('button').forEach(item => item.classList.remove('active'));
-        button.classList.add('active');
+    const views = Array.isArray(product.views) ? product.views : [];
+    let mainImg = null;
+    if (views.length) {
+      mainImg = document.createElement('img');
+      mainImg.src = views[0];
+      mainImg.alt = product.name;
+      main.append(mainImg);
+      views.forEach((src, index) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = index === 0 ? 'active' : '';
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = `${product.name} view ${index + 1}`;
+        button.append(img);
+        button.addEventListener('click', () => {
+          mainImg.src = src;
+          thumbs.querySelectorAll('button').forEach(item => item.classList.remove('active'));
+          button.classList.add('active');
+        });
+        thumbs.append(button);
       });
-      thumbs.append(button);
-    });
+    } else {
+      main.append(el('div', 'detail-placeholder', 'Image coming soon'));
+    }
 
     const side = el('div', 'detail-side');
     side.append(el('p', 'eyebrow', `SAMPLE STYLE ${product.code}`));
