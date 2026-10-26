@@ -99,7 +99,7 @@
           "hex": "#222"
         }
       ],
-      "image": "assets/demo/weekly-knit.webp",
+      "image": "assets/demo/gen/everyday-weekly-knit.webp",
       "views": [
         "assets/img/womens-views-cream.webp",
         "assets/img/womens-fabric-cream.webp"
@@ -151,7 +151,7 @@
           "hex": "#cfc6b6"
         }
       ],
-      "image": "assets/demo/weekly-jeans.webp",
+      "image": "assets/demo/gen/everyday-weekly-jeans.webp",
       "views": [
         "assets/img/womens-look-tan.webp",
         "assets/img/womens-views-tan.webp",
@@ -336,7 +336,7 @@
     {
       "name": "Weekend",
       "slug": "weekend",
-      "image": "assets/demo/occasion-weekend.webp"
+      "image": "assets/demo/gen/occasion-weekend.webp"
     },
     {
       "name": "Outdoor",
@@ -348,7 +348,7 @@
     {
       "code": "AE-015",
       "name": "Textured Knit Sweater",
-      "image": "assets/demo/weekly-knit.webp",
+      "image": "assets/demo/gen/everyday-weekly-knit.webp",
       "colours": [
         {
           "name": "Cream",
@@ -386,7 +386,7 @@
     {
       "code": "AE-016",
       "name": "Straight Leg Jeans",
-      "image": "assets/demo/weekly-jeans.webp",
+      "image": "assets/demo/gen/everyday-weekly-jeans.webp",
       "colours": [
         {
           "name": "Indigo",
