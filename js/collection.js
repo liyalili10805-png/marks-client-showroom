@@ -70,16 +70,19 @@
     const media = el('a', 'col-card-media');
     media.href = `collection-detail.html?code=${encodeURIComponent(product.code)}`;
     const img = document.createElement('img');
-    img.src = product.image;
+    img.src = product.listImage || product.image;
     img.alt = product.name;
     img.loading = 'lazy';
+    const focal = product.focalPoint || { x: 50, y: 30 };
+    img.style.objectPosition = `${focal.x}% ${focal.y}%`;
     media.append(img);
     article.append(media);
 
     const info = el('div', 'col-card-info');
     const title = el('div');
     title.append(el('h3', null, product.name), el('p', 'col-code', product.code));
-    info.append(title, swatches(product));
+    const bottom = el('div', 'col-card-bottom');
+    bottom.append(swatches(product));
 
     if (withActions) {
       const actions = el('div', 'col-card-actions');
@@ -98,7 +101,7 @@
       const comment = el('a', 'link-action', 'Comment');
       comment.href = `collection-detail.html?code=${encodeURIComponent(product.code)}#feedback`;
       actions.append(select, el('span', 'sep', '|'), vote, el('span', 'sep', '|'), comment);
-      info.append(actions);
+      bottom.append(actions);
     } else {
       const save = el('button', 'save-style', selection.includes(product.code) ? 'Saved' : 'Save style');
       save.type = 'button';
@@ -108,6 +111,7 @@
       info.append(save);
     }
 
+    info.append(title, bottom);
     article.append(info);
     return article;
   }
@@ -130,7 +134,7 @@
       if (!product) return;
       const row = el('div', 'panel-row');
       const img = document.createElement('img');
-      img.src = product.image;
+      img.src = product.listImage || product.image;
       img.alt = product.name;
       const text = el('div');
       text.append(el('strong', null, product.name), el('small', null, product.code));

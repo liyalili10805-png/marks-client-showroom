@@ -79,7 +79,12 @@
       ],
       "gender": "women",
       "type": "outerwear",
-      "material": "Cotton twill"
+      "material": "Cotton twill",
+      "listImage": "assets/img/womens-look-green.webp",
+      "focalPoint": {
+        "x": 50,
+        "y": 30
+      }
     },
     {
       "code": "AE-015",
@@ -138,7 +143,12 @@
       ],
       "gender": "women",
       "type": "top",
-      "material": "Cotton knit"
+      "material": "Cotton knit",
+      "listImage": "assets/img/womens-views-cream.webp",
+      "focalPoint": {
+        "x": 50,
+        "y": 30
+      }
     },
     {
       "code": "AE-016",
@@ -195,7 +205,12 @@
       ],
       "gender": "women",
       "type": "bottom",
-      "material": "Denim"
+      "material": "Denim",
+      "listImage": "assets/img/womens-look-tan.webp",
+      "focalPoint": {
+        "x": 50,
+        "y": 30
+      }
     },
     {
       "code": "AE-017",
@@ -251,7 +266,12 @@
       ],
       "gender": "men",
       "type": "outerwear",
-      "material": "Cotton twill"
+      "material": "Cotton twill",
+      "listImage": "assets/img/mens-look-coat.webp",
+      "focalPoint": {
+        "x": 50,
+        "y": 30
+      }
     },
     {
       "code": "AE-018",
@@ -292,12 +312,18 @@
         }
       ],
       "occasions": [
+        "everyday",
         "weekend",
         "outdoor"
       ],
       "gender": "men",
       "type": "outerwear",
-      "material": "Cotton canvas"
+      "material": "Cotton canvas",
+      "listImage": "assets/img/mens-look-jacket.webp",
+      "focalPoint": {
+        "x": 50,
+        "y": 30
+      }
     },
     {
       "code": "AE-019",
@@ -338,11 +364,17 @@
         }
       ],
       "occasions": [
+        "everyday",
         "outdoor"
       ],
       "gender": "men",
       "type": "outerwear",
-      "material": "Quilted shell"
+      "material": "Quilted shell",
+      "listImage": "assets/img/mens-look-quilted.webp",
+      "focalPoint": {
+        "x": 50,
+        "y": 30
+      }
     }
   ],
   "occasions": [

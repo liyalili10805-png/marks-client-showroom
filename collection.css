@@ -180,3 +180,14 @@
 }
 
 .col-main { min-width: 0; }
+
+
+/* compact 3:2 model cards for the series grid */
+.col-grid { gap: 20px 16px; }
+.col-card-media img { aspect-ratio: 3 / 2; object-fit: cover; }
+.col-card-info { padding-top: 10px; }
+.col-card-info h3 { font-size: 16px; font-weight: 600; }
+.col-code { margin: 1px 0 8px; font-size: 12px; }
+.col-card-bottom { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.col-card-bottom .swatch { width: 14px; height: 14px; }
+.col-card-actions { margin-top: 0; gap: 8px; font-size: 12px; }
