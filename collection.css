@@ -178,3 +178,5 @@
   .col-layout { grid-template-columns: 1fr; }
   .selection-panel { border-left: 0; border-top: 1px solid #e5e5e5; padding: 20px 0 0; }
 }
+
+.col-main { min-width: 0; }

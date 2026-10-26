@@ -119,6 +119,9 @@
     panel.append(el('p', 'panel-title', `My selection (${selection.length})`));
     if (!selection.length) {
       panel.append(el('p', 'panel-empty', 'Nothing selected yet.'));
+      const review = el('a', 'btn-accent panel-review', 'Review selection →');
+      review.href = 'my-selection.html';
+      panel.append(review);
       return;
     }
     const list = el('div', 'panel-list');
@@ -249,7 +252,8 @@
     const crumb = el('p', 'col-breadcrumb', `COLLECTION / ${collection.title}`);
     head.append(crumb, el('h1', null, collection.title));
     head.append(el('p', 'col-sub', themeLabel ? `${themeLabel} styles selected for store review.` : 'Everyday casual styles selected for store review.'));
-    root.append(head);
+    const main = el('div', 'col-main');
+    main.append(head);
 
     const filters = {
       gender: params.get('gender') || '',
@@ -299,13 +303,14 @@
       renderSeries();
     });
     toolbar.append(clear);
-    root.append(toolbar);
+    main.append(toolbar);
 
     const layout = el('div', 'col-layout');
     const grid = el('div', 'col-grid');
+    main.append(grid);
     const panel = el('aside', 'selection-panel');
     panel.id = 'selection-panel';
-    layout.append(grid, panel);
+    layout.append(main, panel);
     root.append(layout);
 
     function syncUrl() {
