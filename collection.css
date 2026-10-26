@@ -197,3 +197,5 @@
 
 .col-card-media img.fit-contain { object-fit: contain; background: #fff; }
 .col-card-media img.fit-top { object-fit: cover; object-position: center top; }
+
+.detail-placeholder { aspect-ratio: 3 / 4; background: var(--soft); display: flex; align-items: center; justify-content: center; color: #777; font-size: 14px; letter-spacing: .04em; }

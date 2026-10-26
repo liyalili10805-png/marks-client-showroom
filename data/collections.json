@@ -110,10 +110,7 @@
         }
       ],
       "image": "assets/demo/gen/everyday-weekly-knit.webp",
-      "views": [
-        "assets/img/womens-views-cream.webp",
-        "assets/img/womens-fabric-cream.webp"
-      ],
+      "views": [],
       "retail": "To be confirmed",
       "why": "A clean crew neck that layers under outerwear and still works on its own.",
       "materials": [
@@ -172,11 +169,7 @@
         }
       ],
       "image": "assets/demo/gen/everyday-weekly-jeans.webp",
-      "views": [
-        "assets/img/womens-look-tan.webp",
-        "assets/img/womens-views-tan.webp",
-        "assets/img/womens-fabric-tan.webp"
-      ],
+      "views": [],
       "retail": "To be confirmed",
       "why": "A straightforward straight leg in a dark wash, easy to style with knitwear and overshirts.",
       "materials": [
