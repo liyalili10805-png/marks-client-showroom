@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>My Selection · SOHO-Marks</title>
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="collection.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="trend.html" aria-label="SOHO-Marks home">
+      <img class="brand-logo" src="assets/img/logo.png" alt="苏豪时尚 SOHO FASHION" width="1446" height="392">
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="trend.html">TREND</a>
+      <div class="nav-group">
+        <a href="collection.html" class="active" aria-current="page">COLLECTION</a>
+        <div class="sub-nav">
+          <a href="collection.html">ALL COLLECTIONS</a>
+          <a href="materials.html">MATERIALS</a>
+          <a href="my-selection.html">MY SELECTION</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="products.html">PRODUCTS</a>
+        <div class="sub-nav">
+          <a href="mens.html">MENS</a>
+          <a href="womens.html">WOMENS</a>
+        </div>
+      </div>
+      <a href="about.html">ABOUT US</a>
+    </nav>
+    <div class="header-tools">
+      <span id="count" class="count" hidden>0</span>
+    </div>
+  </header>
+
+  <div class="nav-blur" aria-hidden="true"></div>
+
+  <nav class="subnav-bar" aria-label="Collection navigation">
+    <a href="collection.html">ALL COLLECTIONS</a>
+    <a href="materials.html">MATERIALS</a>
+    <a href="my-selection.html" class="active">MY SELECTION</a>
+  </nav>
+
+  <main id="main" class="page-root">
+    <div class="col-page-head">
+      <p class="col-breadcrumb">COLLECTION / MY SELECTION</p>
+      <h1>My Selection</h1>
+      <p class="col-sub">Everyday Essentials · Store feedback</p>
+    </div>
+    <div id="selection-view"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img class="brand-logo" src="assets/img/logo.png" alt="苏豪时尚 SOHO FASHION" width="1446" height="392">
+    </div>
+    <div class="footer-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>
+      <a href="mailto:online@saintycorp.com">online@saintycorp.com</a>
+    </div>
+    <div class="footer-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+      <a href="tel:+862552875682">(86) 025-52875682</a>
+    </div>
+    <div class="footer-item footer-address">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      <span>Building B, No.21 Software Avenue,<br>Yuhuatai District, Nanjing, Jiangsu</span>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (() => {
+      const root = document.getElementById('selection-view');
+      const toastEl = document.getElementById('toast');
+      const toast = message => {
+        toastEl.textContent = message;
+        toastEl.classList.add('show');
+        clearTimeout(toastEl._t);
+        toastEl._t = setTimeout(() => toastEl.classList.remove('show'), 1900);
+      };
+      const codes = JSON.parse(localStorage.getItem('soho-collection-selection') || '[]');
+      fetch('data/collections.json').then(r => r.json()).then(({ products }) => {
+        const items = products.filter(product => codes.includes(product.code));
+        if (!items.length) {
+          root.innerHTML = '<p class="panel-empty">Nothing selected yet. <a class="text-link" href="collection-series.html">Browse the collection →</a></p>';
+          return;
+        }
+        const layout = document.createElement('div');
+        layout.className = 'col-layout';
+        const list = document.createElement('div');
+        items.forEach(product => {
+          const row = document.createElement('div');
+          row.className = 'panel-row';
+          row.style.marginBottom = '14px';
+          const img = document.createElement('img');
+          img.src = product.image;
+          img.alt = product.name;
+          const text = document.createElement('div');
+          text.innerHTML = `<strong>${product.name}</strong><small>${product.code} · ${product.category}</small>`;
+          const link = document.createElement('a');
+          link.className = 'text-link';
+          link.href = 'collection-detail.html?code=' + encodeURIComponent(product.code) + '#feedback';
+          link.textContent = 'Feedback →';
+          row.append(img, text, link);
+          list.append(row);
+        });
+        const panel = document.createElement('aside');
+        panel.className = 'selection-panel';
+        panel.innerHTML = '<p class="panel-title">Submit your selection</p><p class="panel-empty">Your selection expresses interest. Orders are confirmed separately.</p>';
+        layout.append(list, panel);
+        root.append(layout);
+
+        const form = document.createElement('form');
+        form.className = 'feedback-form feedback-section';
+        form.innerHTML = '<h2>Store feedback</h2>' +
+          '<div class="feedback-checks">' +
+          ['Good fit for our customers', 'Review the price', 'Prefer another material', 'Adjust fit or colour'].map(t => `<label><input type="checkbox">${t}</label>`).join('') +
+          '</div>' +
+          '<input type="text" placeholder="Target retail range (e.g. 59.99 – 79.99)">' +
+          '<textarea placeholder="Comments"></textarea>' +
+          '<button class="btn-accent" type="submit">Submit selection</button>';
+        form.addEventListener('submit', event => { event.preventDefault(); toast('Selection submitted (sample)'); });
+        root.append(form);
+      });
+    })();
+  </script>
+</body>
+</html>

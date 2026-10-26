@@ -1,0 +1,162 @@
+{
+  "season": "FW27",
+  "collection": {
+    "slug": "everyday-essentials",
+    "title": "Everyday Essentials",
+    "eyebrow": "AUTUMN EDIT 01",
+    "headline": "Everyday layers. Considered details.",
+    "intro": "Discover seasonal styles, compare materials and share what works for your store.",
+    "cover": "assets/img/womens-look-green.webp"
+  },
+  "products": [
+    {
+      "code": "AE-014",
+      "name": "Olive twill overshirt",
+      "category": "Women",
+      "fit": "Relaxed fit",
+      "texture": "Soft twill texture",
+      "weight": "Layering weight",
+      "colours": [
+        { "name": "Olive", "hex": "#5c5d3a" },
+        { "name": "Sand", "hex": "#c9b493" },
+        { "name": "Charcoal", "hex": "#3a3a3a" }
+      ],
+      "image": "assets/img/womens-look-green.webp",
+      "views": [
+        "assets/img/womens-look-green.webp",
+        "assets/img/womens-views-green.webp",
+        "assets/img/womens-fabric-green.webp"
+      ],
+      "retail": "To be confirmed",
+      "why": "Easy to coordinate with everyday outfits, with thoughtful pocket details and a structured collar for a versatile layer.",
+      "materials": [
+        { "name": "Cotton twill", "hand": "Soft", "structure": "Relaxed", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" },
+        { "name": "Cotton blend", "hand": "Smooth", "structure": "Structured", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" },
+        { "name": "Textured weave", "hand": "Textured", "structure": "Soft drape", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+      ]
+    },
+    {
+      "code": "AE-015",
+      "name": "Textured crew knit",
+      "category": "Women",
+      "fit": "Regular fit",
+      "texture": "Textured knit",
+      "weight": "Mid weight",
+      "colours": [
+        { "name": "Cream", "hex": "#e8dfcc" },
+        { "name": "Camel", "hex": "#b98d5f" },
+        { "name": "Black", "hex": "#222" }
+      ],
+      "image": "assets/img/womens-views-cream.webp",
+      "views": [
+        "assets/img/womens-views-cream.webp",
+        "assets/img/womens-fabric-cream.webp"
+      ],
+      "retail": "To be confirmed",
+      "why": "A textured crew neck that works alone or under outerwear, with a clean neckline for everyday layering.",
+      "materials": [
+        { "name": "Cotton knit", "hand": "Soft", "structure": "Regular", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" },
+        { "name": "Wool blend", "hand": "Warm", "structure": "Structured", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+      ]
+    },
+    {
+      "code": "AE-016",
+      "name": "Straight-leg trouser",
+      "category": "Women",
+      "fit": "Straight leg",
+      "texture": "Wool touch",
+      "weight": "Mid weight",
+      "colours": [
+        { "name": "Camel", "hex": "#b98d5f" },
+        { "name": "Stone", "hex": "#cfc6b6" }
+      ],
+      "image": "assets/img/womens-look-tan.webp",
+      "views": [
+        "assets/img/womens-look-tan.webp",
+        "assets/img/womens-views-tan.webp",
+        "assets/img/womens-fabric-tan.webp"
+      ],
+      "retail": "To be confirmed",
+      "why": "A clean straight leg with a soft wool touch, easy to style with knitwear and outerwear across the season.",
+      "materials": [
+        { "name": "Wool touch", "hand": "Soft", "structure": "Straight", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" },
+        { "name": "Cotton blend", "hand": "Crisp", "structure": "Structured", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+      ]
+    },
+    {
+      "code": "AE-017",
+      "name": "Cotton trench coat",
+      "category": "Men",
+      "fit": "Relaxed shoulder",
+      "texture": "Cotton twill",
+      "weight": "Outer layer",
+      "colours": [
+        { "name": "Stone", "hex": "#cbb79a" },
+        { "name": "Navy", "hex": "#26324a" }
+      ],
+      "image": "assets/img/mens-look-coat.webp",
+      "views": [
+        "assets/img/mens-look-coat.webp",
+        "assets/img/mens-views-coat.webp",
+        "assets/img/mens-fabric-coat.webp"
+      ],
+      "retail": "To be confirmed",
+      "why": "A relaxed trench with a clean shoulder, made for commuting and layering over knitwear.",
+      "materials": [
+        { "name": "Cotton twill", "hand": "Crisp", "structure": "Relaxed", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" },
+        { "name": "Cotton blend", "hand": "Soft", "structure": "Structured", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+      ]
+    },
+    {
+      "code": "AE-018",
+      "name": "Green field jacket",
+      "category": "Men",
+      "fit": "Regular fit",
+      "texture": "Cotton canvas",
+      "weight": "Mid weight",
+      "colours": [
+        { "name": "Olive", "hex": "#5c5d3a" },
+        { "name": "Black", "hex": "#222" }
+      ],
+      "image": "assets/img/mens-look-jacket.webp",
+      "views": [
+        "assets/img/mens-look-jacket.webp",
+        "assets/img/mens-views-jacket.webp",
+        "assets/img/mens-fabric-jacket.webp"
+      ],
+      "retail": "To be confirmed",
+      "why": "An easy field jacket with a stand collar and patch pockets, built for transitional weather.",
+      "materials": [
+        { "name": "Cotton canvas", "hand": "Structured", "structure": "Regular", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+      ]
+    },
+    {
+      "code": "AE-019",
+      "name": "Black quilted jacket",
+      "category": "Men",
+      "fit": "Regular fit",
+      "texture": "Quilted shell",
+      "weight": "Light warmth",
+      "colours": [
+        { "name": "Black", "hex": "#222" },
+        { "name": "Dark olive", "hex": "#4a4b35" }
+      ],
+      "image": "assets/img/mens-look-quilted.webp",
+      "views": [
+        "assets/img/mens-look-quilted.webp",
+        "assets/img/mens-views-quilted.webp",
+        "assets/img/mens-fabric-quilted.webp"
+      ],
+      "retail": "To be confirmed",
+      "why": "Lightweight quilting for autumn and winter layering, with a clean, compact silhouette.",
+      "materials": [
+        { "name": "Quilted shell", "hand": "Smooth", "structure": "Compact", "composition": "To be confirmed", "weight": "To be confirmed", "care": "To be tested", "cost": "To be quoted", "retail": "To be confirmed", "status": "To be confirmed" }
+      ]
+    }
+  ],
+  "occasions": [
+    { "name": "Everyday", "image": "assets/img/womens-look-green.webp" },
+    { "name": "Weekend", "image": "assets/img/womens-look-tan.webp" },
+    { "name": "Outdoor", "image": "assets/img/mens-banner.webp" }
+  ]
+}
