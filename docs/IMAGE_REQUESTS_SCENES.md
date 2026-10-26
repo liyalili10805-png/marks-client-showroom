@@ -35,7 +35,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；the woman from the reference scene (dark shoulder-length hair, early 30s)；穿 olive wide-leg corduroy trousers；背景为a tree-lined street with fallen leaves and a soft park pathway；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of the woman from the reference scene (dark shoulder-length hair, early 30s), wearing olive wide-leg corduroy trousers, standing naturally in a tree-lined street with fallen leaves and a soft park pathway, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae023.webp；模特参考：assets/demo/final/ae016-scene.webp
+reference: assets/demo/marks/cord318.webp；模特参考：assets/demo/final/ae016-scene.webp
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -45,7 +45,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；the woman from the reference scene (brown hair tied back, natural makeup, early 30s)；穿 mid-blue straight-leg jeans；背景为the exterior of a small café with a table, chair and warm afternoon light；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of the woman from the reference scene (brown hair tied back, natural makeup, early 30s), wearing mid-blue straight-leg jeans, standing naturally in the exterior of a small café with a table, chair and warm afternoon light, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae024.webp；模特参考：assets/demo/final/ae014-scene.webp
+reference: assets/demo/marks/jeans501.webp；模特参考：assets/demo/final/ae014-scene.webp
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -55,7 +55,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；the woman from the reference scene (brown hair, carrying a coffee cup, early 30s)；穿 grey long wool-blend coat；背景为a tree-lined street with fallen leaves and a soft park pathway；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of the woman from the reference scene (brown hair, carrying a coffee cup, early 30s), wearing grey long wool-blend coat, standing naturally in a tree-lined street with fallen leaves and a soft park pathway, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae025.webp；模特参考：assets/demo/final/ae015-scene.webp
+reference: assets/demo/marks/wool-jacket-w.webp；模特参考：assets/demo/final/ae015-scene.webp
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -65,7 +65,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；the woman from the reference scene (dark shoulder-length hair, early 30s)；穿 navy quilted shirt jacket with corduroy collar；背景为an autumn city sidewalk in front of a light stone building with café windows；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of the woman from the reference scene (dark shoulder-length hair, early 30s), wearing navy quilted shirt jacket with corduroy collar, standing naturally in an autumn city sidewalk in front of a light stone building with café windows, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae026.webp；模特参考：assets/demo/final/ae016-scene.webp
+reference: assets/demo/marks/paxton.webp；模特参考：assets/demo/final/ae016-scene.webp
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -75,7 +75,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；the woman from the reference scene (brown hair tied back, natural makeup, early 30s)；穿 oat cable-knit crewneck sweater；背景为a tree-lined street with fallen leaves and a soft park pathway；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of the woman from the reference scene (brown hair tied back, natural makeup, early 30s), wearing oat cable-knit crewneck sweater, standing naturally in a tree-lined street with fallen leaves and a soft park pathway, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae027.webp；模特参考：assets/demo/final/ae014-scene.webp
+reference: assets/demo/marks/jolie.webp；模特参考：assets/demo/final/ae014-scene.webp
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -85,7 +85,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；the woman from the reference scene (brown hair, carrying a coffee cup, early 30s)；穿 red plaid flannel shirt；背景为an autumn city sidewalk in front of a light stone building with café windows；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of the woman from the reference scene (brown hair, carrying a coffee cup, early 30s), wearing red plaid flannel shirt, standing naturally in an autumn city sidewalk in front of a light stone building with café windows, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae028.webp；模特参考：assets/demo/final/ae015-scene.webp
+reference: assets/demo/marks/nash.webp；模特参考：assets/demo/final/ae015-scene.webp
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -95,7 +95,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；the woman from the reference scene (dark shoulder-length hair, early 30s)；穿 black fleece-lined leggings；背景为the exterior of a small café with a table, chair and warm afternoon light；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of the woman from the reference scene (dark shoulder-length hair, early 30s), wearing black fleece-lined leggings, standing naturally in the exterior of a small café with a table, chair and warm afternoon light, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae029.webp；模特参考：assets/demo/final/ae016-scene.webp
+reference: assets/demo/marks/fleece-legging.webp；模特参考：assets/demo/final/ae016-scene.webp
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -105,7 +105,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；an adult man in his early 30s, short dark hair, light stubble；穿 brown corduroy straight pants；背景为an autumn city sidewalk in front of a light stone building with café windows；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of an adult man in his early 30s, short dark hair, light stubble, wearing brown corduroy straight pants, standing naturally in an autumn city sidewalk in front of a light stone building with café windows, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae030.webp；模特参考：none (use consistent male model M1 across all men's shots)
+reference: assets/demo/marks/cord505.webp；模特参考：none (use consistent male model M1 across all men's shots)
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -115,7 +115,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；an adult man in his late 20s, medium brown hair, clean-shaven；穿 navy plaid flannel shirt；背景为the exterior of a small café with a table, chair and warm afternoon light；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of an adult man in his late 20s, medium brown hair, clean-shaven, wearing navy plaid flannel shirt, standing naturally in the exterior of a small café with a table, chair and warm afternoon light, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae031.webp；模特参考：none (use consistent male model M2 across all men's shots)
+reference: assets/demo/marks/flannel-m.webp；模特参考：none (use consistent male model M2 across all men's shots)
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -125,7 +125,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；an adult man in his early 30s, short dark hair, light stubble；穿 olive sherpa-lined shirt jacket；背景为a tree-lined street with fallen leaves and a soft park pathway；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of an adult man in his early 30s, short dark hair, light stubble, wearing olive sherpa-lined shirt jacket, standing naturally in a tree-lined street with fallen leaves and a soft park pathway, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae032.webp；模特参考：none (use consistent male model M1 across all men's shots)
+reference: assets/demo/marks/sherpa-jac.webp；模特参考：none (use consistent male model M1 across all men's shots)
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -135,7 +135,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；an adult man in his late 20s, medium brown hair, clean-shaven；穿 black cotton crewneck sweater；背景为an autumn city sidewalk in front of a light stone building with café windows；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of an adult man in his late 20s, medium brown hair, clean-shaven, wearing black cotton crewneck sweater, standing naturally in an autumn city sidewalk in front of a light stone building with café windows, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae033.webp；模特参考：none (use consistent male model M2 across all men's shots)
+reference: assets/demo/marks/sweater-m.webp；模特参考：none (use consistent male model M2 across all men's shots)
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -145,7 +145,7 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；an adult man in his early 30s, short dark hair, light stubble；穿 indigo relaxed straight jeans；背景为the exterior of a small café with a table, chair and warm afternoon light；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of an adult man in his early 30s, short dark hair, light stubble, wearing indigo relaxed straight jeans, standing naturally in the exterior of a small café with a table, chair and warm afternoon light, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae034.webp；模特参考：none (use consistent male model M1 across all men's shots)
+reference: assets/demo/marks/jeans-m.webp；模特参考：none (use consistent male model M1 across all men's shots)
 END_IMAGE_REQUEST
 
 IMAGE_REQUEST
@@ -155,5 +155,5 @@ size: 1400×2100（2:3，竖图）
 purpose: 列表卡片主图，替代现在的棚拍图
 style: 秋季生活方式摄影；an adult man in his late 20s, medium brown hair, clean-shaven；穿 navy wool-blend single-breasted coat；背景为a tree-lined street with fallen leaves and a soft park pathway；柔和阴天光；低饱和暖中性色；浅景深；人物全身居中；与同批其他图保持同一背景风格和同一模特
 prompt: Full-body lifestyle photograph of an adult man in his late 20s, medium brown hair, clean-shaven, wearing navy wool-blend single-breasted coat, standing naturally in a tree-lined street with fallen leaves and a soft park pathway, soft overcast autumn daylight, muted warm neutral palette, shallow depth of field, centered full-body composition, 2:3 vertical, same face and styling as the reference model, consistent background style with the batch, no text, no logos, no watermark
-reference: assets/demo/marks/ae035.webp；模特参考：none (use consistent male model M2 across all men's shots)
+reference: assets/demo/marks/wool-coat-m.webp；模特参考：none (use consistent male model M2 across all men's shots)
 END_IMAGE_REQUEST
