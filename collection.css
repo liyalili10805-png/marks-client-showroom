@@ -209,3 +209,9 @@
 
 .col-card-media { background: #f5f4f0; }
 .col-card-media img { background: #f5f4f0; }
+
+
+/* show the full body: 2:3 media frame, no cropping */
+.col-card-media { aspect-ratio: 2 / 3; background: #f5f4f0; }
+.col-card-media img,
+.col-card-media img.fit-top { width: 100%; height: 100%; aspect-ratio: auto; object-fit: contain; object-position: center; background: #f5f4f0; }
