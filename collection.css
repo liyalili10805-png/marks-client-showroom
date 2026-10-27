@@ -228,3 +228,8 @@
 .col-card-media img,
 .col-card-media img.fit-top,
 .col-card-media img.fit-contain { width: 100% !important; height: 100% !important; aspect-ratio: auto !important; object-fit: cover !important; object-position: center !important; background: #f5f4f0; display: block; }
+
+
+/* make the media a block box so the card grows to include the info */
+.col-card { display: block; }
+.col-card-media { display: block; overflow: hidden; }
