@@ -245,13 +245,13 @@
           "hex": "#232a3a"
         }
       ],
-      "image": "assets/demo/external/dream-pant-1.webp",
-      "listImage": "assets/demo/external/dream-pant-1.webp",
+      "image": "assets/demo/final/ae021/02-front.webp",
+      "listImage": "assets/demo/final/ae021/02-front.webp",
       "views": [
-        "assets/demo/external/dream-pant-1.webp",
-        "assets/demo/external/dream-pant-2.webp",
-        "assets/demo/external/dream-pant-3.webp",
-        "assets/demo/external/dream-pant-4.webp"
+        "assets/demo/final/ae021/02-front.webp",
+        "assets/demo/final/ae021/03-side.webp",
+        "assets/demo/final/ae021/04-back.webp",
+        "assets/demo/final/ae021/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -310,13 +310,13 @@
           "hex": "#232a3a"
         }
       ],
-      "image": "assets/demo/external/perform-legging-1.webp",
-      "listImage": "assets/demo/external/perform-legging-1.webp",
+      "image": "assets/demo/final/ae022/02-front.webp",
+      "listImage": "assets/demo/final/ae022/02-front.webp",
       "views": [
-        "assets/demo/external/perform-legging-1.webp",
-        "assets/demo/external/perform-legging-2.webp",
-        "assets/demo/external/perform-legging-3.webp",
-        "assets/demo/external/perform-legging-4.webp"
+        "assets/demo/final/ae022/02-front.webp",
+        "assets/demo/final/ae022/03-side.webp",
+        "assets/demo/final/ae022/04-back.webp",
+        "assets/demo/final/ae022/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -375,10 +375,13 @@
           "hex": "#6b4a34"
         }
       ],
-      "image": "assets/demo/marks/cord318.webp",
-      "listImage": "assets/demo/marks/cord318.webp",
+      "image": "assets/demo/final/ae023/02-front.webp",
+      "listImage": "assets/demo/final/ae023/02-front.webp",
       "views": [
-        "assets/demo/marks/cord318.webp"
+        "assets/demo/final/ae023/02-front.webp",
+        "assets/demo/final/ae023/03-side.webp",
+        "assets/demo/final/ae023/04-back.webp",
+        "assets/demo/final/ae023/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -437,10 +440,13 @@
           "hex": "#8ba3bf"
         }
       ],
-      "image": "assets/demo/marks/jeans501.webp",
-      "listImage": "assets/demo/marks/jeans501.webp",
+      "image": "assets/demo/final/ae024/02-front.webp",
+      "listImage": "assets/demo/final/ae024/02-front.webp",
       "views": [
-        "assets/demo/marks/jeans501.webp"
+        "assets/demo/final/ae024/02-front.webp",
+        "assets/demo/final/ae024/03-side.webp",
+        "assets/demo/final/ae024/04-back.webp",
+        "assets/demo/final/ae024/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -499,10 +505,13 @@
           "hex": "#1d1d1d"
         }
       ],
-      "image": "assets/demo/marks/wool-jacket-w.webp",
-      "listImage": "assets/demo/marks/wool-jacket-w.webp",
+      "image": "assets/demo/final/ae025/02-front.webp",
+      "listImage": "assets/demo/final/ae025/02-front.webp",
       "views": [
-        "assets/demo/marks/wool-jacket-w.webp"
+        "assets/demo/final/ae025/02-front.webp",
+        "assets/demo/final/ae025/03-side.webp",
+        "assets/demo/final/ae025/04-back.webp",
+        "assets/demo/final/ae025/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -561,10 +570,13 @@
           "hex": "#55583b"
         }
       ],
-      "image": "assets/demo/marks/paxton.webp",
-      "listImage": "assets/demo/marks/paxton.webp",
+      "image": "assets/demo/final/ae026/02-front.webp",
+      "listImage": "assets/demo/final/ae026/02-front.webp",
       "views": [
-        "assets/demo/marks/paxton.webp"
+        "assets/demo/final/ae026/02-front.webp",
+        "assets/demo/final/ae026/03-side.webp",
+        "assets/demo/final/ae026/04-back.webp",
+        "assets/demo/final/ae026/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -623,10 +635,13 @@
           "hex": "#e8e2d4"
         }
       ],
-      "image": "assets/demo/marks/jolie.webp",
-      "listImage": "assets/demo/marks/jolie.webp",
+      "image": "assets/demo/final/ae027/02-front.webp",
+      "listImage": "assets/demo/final/ae027/02-front.webp",
       "views": [
-        "assets/demo/marks/jolie.webp"
+        "assets/demo/final/ae027/02-front.webp",
+        "assets/demo/final/ae027/03-side.webp",
+        "assets/demo/final/ae027/04-back.webp",
+        "assets/demo/final/ae027/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -685,10 +700,13 @@
           "hex": "#2e3a52"
         }
       ],
-      "image": "assets/demo/marks/nash.webp",
-      "listImage": "assets/demo/marks/nash.webp",
+      "image": "assets/demo/final/ae028/02-front.webp",
+      "listImage": "assets/demo/final/ae028/02-front.webp",
       "views": [
-        "assets/demo/marks/nash.webp"
+        "assets/demo/final/ae028/02-front.webp",
+        "assets/demo/final/ae028/03-side.webp",
+        "assets/demo/final/ae028/04-back.webp",
+        "assets/demo/final/ae028/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -743,10 +761,13 @@
           "hex": "#151515"
         }
       ],
-      "image": "assets/demo/marks/fleece-legging.webp",
-      "listImage": "assets/demo/marks/fleece-legging.webp",
+      "image": "assets/demo/final/ae029/02-front.webp",
+      "listImage": "assets/demo/final/ae029/02-front.webp",
       "views": [
-        "assets/demo/marks/fleece-legging.webp"
+        "assets/demo/final/ae029/02-front.webp",
+        "assets/demo/final/ae029/03-side.webp",
+        "assets/demo/final/ae029/04-back.webp",
+        "assets/demo/final/ae029/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -805,10 +826,13 @@
           "hex": "#1c1c1c"
         }
       ],
-      "image": "assets/demo/marks/cord505.webp",
-      "listImage": "assets/demo/marks/cord505.webp",
+      "image": "assets/demo/final/ae030/02-front.webp",
+      "listImage": "assets/demo/final/ae030/02-front.webp",
       "views": [
-        "assets/demo/marks/cord505.webp"
+        "assets/demo/final/ae030/02-front.webp",
+        "assets/demo/final/ae030/03-side.webp",
+        "assets/demo/final/ae030/04-back.webp",
+        "assets/demo/final/ae030/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -867,10 +891,13 @@
           "hex": "#7f3434"
         }
       ],
-      "image": "assets/demo/marks/flannel-m.webp",
-      "listImage": "assets/demo/marks/flannel-m.webp",
+      "image": "assets/demo/final/ae031/02-front.webp",
+      "listImage": "assets/demo/final/ae031/02-front.webp",
       "views": [
-        "assets/demo/marks/flannel-m.webp"
+        "assets/demo/final/ae031/02-front.webp",
+        "assets/demo/final/ae031/03-side.webp",
+        "assets/demo/final/ae031/04-back.webp",
+        "assets/demo/final/ae031/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -929,10 +956,13 @@
           "hex": "#b09a78"
         }
       ],
-      "image": "assets/demo/marks/sherpa-jac.webp",
-      "listImage": "assets/demo/marks/sherpa-jac.webp",
+      "image": "assets/demo/final/ae032/02-front.webp",
+      "listImage": "assets/demo/final/ae032/02-front.webp",
       "views": [
-        "assets/demo/marks/sherpa-jac.webp"
+        "assets/demo/final/ae032/02-front.webp",
+        "assets/demo/final/ae032/03-side.webp",
+        "assets/demo/final/ae032/04-back.webp",
+        "assets/demo/final/ae032/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -991,10 +1021,13 @@
           "hex": "#25304a"
         }
       ],
-      "image": "assets/demo/marks/sweater-m.webp",
-      "listImage": "assets/demo/marks/sweater-m.webp",
+      "image": "assets/demo/final/ae033/02-front.webp",
+      "listImage": "assets/demo/final/ae033/02-front.webp",
       "views": [
-        "assets/demo/marks/sweater-m.webp"
+        "assets/demo/final/ae033/02-front.webp",
+        "assets/demo/final/ae033/03-side.webp",
+        "assets/demo/final/ae033/04-back.webp",
+        "assets/demo/final/ae033/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -1049,10 +1082,13 @@
           "hex": "#3a4c66"
         }
       ],
-      "image": "assets/demo/marks/jeans-m.webp",
-      "listImage": "assets/demo/marks/jeans-m.webp",
+      "image": "assets/demo/final/ae034/02-front.webp",
+      "listImage": "assets/demo/final/ae034/02-front.webp",
       "views": [
-        "assets/demo/marks/jeans-m.webp"
+        "assets/demo/final/ae034/02-front.webp",
+        "assets/demo/final/ae034/03-side.webp",
+        "assets/demo/final/ae034/04-back.webp",
+        "assets/demo/final/ae034/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
@@ -1111,10 +1147,13 @@
           "hex": "#3a3a3a"
         }
       ],
-      "image": "assets/demo/marks/wool-coat-m.webp",
-      "listImage": "assets/demo/marks/wool-coat-m.webp",
+      "image": "assets/demo/final/ae035/02-front.webp",
+      "listImage": "assets/demo/final/ae035/02-front.webp",
       "views": [
-        "assets/demo/marks/wool-coat-m.webp"
+        "assets/demo/final/ae035/02-front.webp",
+        "assets/demo/final/ae035/03-side.webp",
+        "assets/demo/final/ae035/04-back.webp",
+        "assets/demo/final/ae035/05-detail.webp"
       ],
       "focalPoint": {
         "x": 50,
