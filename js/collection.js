@@ -1,4 +1,4 @@
-﻿(() => {
+(() => {
   'use strict';
 
   const DATA_URL = 'data/collections.json';
@@ -421,22 +421,41 @@
     const side = el('div', 'detail-side');
     side.append(el('p', 'eyebrow', `SAMPLE STYLE ${product.code}`));
     side.append(el('h1', null, product.name));
+    if (product.subtitle) side.append(el('p', 'detail-subtitle', product.subtitle));
 
+    const factIcons = {
+      fit: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l3 2 3-2 4 3-2 4v9H7v-9L5 7z"/></svg>',
+      texture: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8c3-2 6 2 9 0s6 2 9 0M3 13c3-2 6 2 9 0s6 2 9 0M3 18c3-2 6 2 9 0s6 2 9 0"/></svg>',
+      weight: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></svg>'
+    };
     const facts = el('div', 'detail-facts');
-    [product.fit, product.texture, product.weight].forEach(fact => {
-      facts.append(el('span', null, fact));
+    [[product.fit, factIcons.fit], [product.texture, factIcons.texture], [product.weight, factIcons.weight]].forEach(([fact, icon]) => {
+      const item = el('span', 'detail-fact');
+      item.innerHTML = icon;
+      item.append(document.createTextNode(fact));
+      facts.append(item);
     });
     side.append(facts);
 
-    side.append(el('p', 'detail-label', 'Colour'));
-    side.append(swatches(product));
+    const firstColour = (product.colours || [])[0];
+    side.append(el('p', 'detail-label', `Colour: ${firstColour ? firstColour.name : 'To be confirmed'}`));
+    const colourRow = el('div', 'detail-colours');
+    (product.colours || []).forEach((colour, index) => {
+      const item = el('span', 'detail-colour');
+      const dot = el('span', 'detail-colour-dot');
+      dot.style.background = colour.hex;
+      if (index === 0) dot.classList.add('active');
+      item.append(dot, el('span', 'detail-colour-name', colour.name));
+      colourRow.append(item);
+    });
+    side.append(colourRow);
 
     side.append(el('p', 'detail-label', 'Material options'));
     const materialList = el('div', 'material-list');
     product.materials.forEach((material, index) => {
       const row = el('div', 'material-row');
       row.append(el('span', null, material.name));
-      const link = el('a', 'text-link', 'View details →');
+      const link = el('a', 'text-link', index === 0 ? 'View details →' : 'Compare option →');
       link.href = '#materials';
       row.append(link);
       row.addEventListener('click', () => {
@@ -464,11 +483,13 @@
     side.append(actions);
 
     const meta = el('div', 'detail-meta-actions');
-    const vote = el('button', 'link-action', 'Vote');
+    const vote = el('button', 'link-action');
     vote.type = 'button';
+    vote.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A3.9 3.9 0 0 1 12 8a3.9 3.9 0 0 1 7 2.7C19 15.6 12 20 12 20z"/></svg><span>Vote</span>';
     vote.addEventListener('click', () => toast('Vote recorded (sample)'));
-    const comment = el('a', 'link-action', 'Comment');
+    const comment = el('a', 'link-action');
     comment.href = '#feedback';
+    comment.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H9l-5 4z"/></svg><span>Comment</span>';
     meta.append(vote, el('span', 'sep', '|'), comment);
     side.append(meta);
 
@@ -476,6 +497,17 @@
     side.append(el('p', 'detail-why', product.why));
     layout.append(thumbs, main, side);
     root.append(layout);
+
+    const styleSection = el('section', 'style-section');
+    styleSection.id = 'style';
+    const styleCopy = el('div', 'style-copy');
+    styleCopy.append(el('h2', null, 'Style details'));
+    styleCopy.append(el('p', 'detail-why', product.description || ''));
+    const styleImage = document.createElement('img');
+    styleImage.src = (product.views || []).find(src => src.indexOf('05-detail') !== -1) || product.image;
+    styleImage.alt = `${product.name} fabric detail`;
+    styleSection.append(styleCopy, styleImage);
+    root.append(styleSection);
 
     const tabs = el('div', 'detail-tabs');
     ['Style details', 'Materials', 'Store feedback'].forEach((label, index) => {
