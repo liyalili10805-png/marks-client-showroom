@@ -498,17 +498,6 @@
     layout.append(thumbs, main, side);
     root.append(layout);
 
-    const styleSection = el('section', 'style-section');
-    styleSection.id = 'style';
-    const styleCopy = el('div', 'style-copy');
-    styleCopy.append(el('h2', null, 'Style details'));
-    styleCopy.append(el('p', 'detail-why', product.description || ''));
-    const styleImage = document.createElement('img');
-    styleImage.src = (product.views || []).find(src => src.indexOf('05-detail') !== -1) || product.image;
-    styleImage.alt = `${product.name} fabric detail`;
-    styleSection.append(styleCopy, styleImage);
-    root.append(styleSection);
-
     const tabs = el('div', 'detail-tabs');
     ['Style details', 'Materials', 'Store feedback'].forEach((label, index) => {
       const anchor = el('a', index === 0 ? 'active' : '', label);
@@ -516,6 +505,19 @@
       tabs.append(anchor);
     });
     root.append(tabs);
+
+    const styleSection = el('section', 'style-section');
+    styleSection.id = 'style';
+    const styleCopy = el('div', 'style-copy');
+    styleCopy.append(el('h2', null, 'Style details'));
+    styleCopy.append(el('p', 'detail-why', product.description || ''));
+    const styleImage = document.createElement('img');
+    const detailViews = product.views || [];
+    styleImage.src = detailViews.find(src => src.indexOf('05-detail') !== -1 || src.indexOf('-detail') !== -1) ||
+      detailViews[detailViews.length - 1] || product.image;
+    styleImage.alt = `${product.name} fabric detail`;
+    styleSection.append(styleCopy, styleImage);
+    root.append(styleSection);
 
     const materialSection = el('section', 'materials-section');
     materialSection.id = 'materials';
