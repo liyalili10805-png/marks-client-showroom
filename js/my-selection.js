@@ -148,6 +148,24 @@
     const mats = materialMap();
     const date = new Date().toLocaleDateString();
     const season = 'Apparel Fall-Winter 2027 / 秋冬 2027';
+    const viewsOf = product => (product.views && product.views.length ? product.views : [product.image])
+      .map(src => new URL(src, location.href).href);
+    const toPng = async src => {
+      const img = new Image();
+      img.src = src;
+      await img.decode();
+      const maxWidth = 700;
+      const scale = Math.min(1, maxWidth / img.naturalWidth);
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.round(img.naturalWidth * scale);
+      canvas.height = Math.round(img.naturalHeight * scale);
+      canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+      return canvas.toDataURL('image/jpeg', 0.82);
+    };
+    const imageCache = {};
+    for (const product of items) {
+      imageCache[product.code] = await Promise.all(viewsOf(product).slice(0, 4).map(toPng));
+    }
     const bomHead = ['Placement / 部位', 'Supplier / 供应商', 'Supplier Ref. / 供应商料号', 'Material Ref. / 材料编号',
       'Material Description / 材料描述', 'Status / 状态', 'Color / 颜色', 'UOM / 单位', 'Consumption / 用量', 'Price / 单价', 'Comments / 备注'];
 
@@ -248,6 +266,19 @@
         merge(row, 6, row, 11);
         put(row, 6, '±1.0', { size: 9, align: { horizontal: 'center' } });
         row += 1;
+      });
+
+      row += 2;
+      merge(row, 1, row, 11);
+      put(row, 1, 'Product Images / 产品图', { bold: true, fill: sectionFill, size: 10 });
+      row += 1;
+      const dataUrls = imageCache[product.code] || [];
+      const imageIds = dataUrls.map(data => wb.addImage({ base64: data, extension: 'jpeg' }));
+      imageIds.forEach((id, index) => ws.addImage(id, { tl: { col: index * 3, row: row - 1 }, ext: { width: 200, height: 250 } }));
+      ws.getRow(row).height = 190;
+      row += 1;
+      ['Front / 正面', 'Side / 侧面', 'Back / 背面', 'Detail / 细节'].forEach((label, index) => {
+        put(row, index * 3 + 1, label, { bold: true, size: 8, align: { horizontal: 'center' } });
       });
     });
 
