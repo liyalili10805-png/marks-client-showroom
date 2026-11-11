@@ -130,6 +130,140 @@
     toast(`Exported ${items.length} style${items.length > 1 ? 's' : ''} to CSV`);
   }
 
+  async function exportExcel(items) {
+    if (!window.ExcelJS) {
+      toast('Excel library is still loading, try again');
+      return;
+    }
+    const wb = new ExcelJS.Workbook();
+    wb.creator = 'SOHO FASHION';
+    wb.created = new Date();
+
+    const thin = { style: 'thin', color: { argb: 'FF999999' } };
+    const border = { top: thin, left: thin, bottom: thin, right: thin };
+    const blackFill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF111111' } };
+    const sectionFill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFE9EEF0' } };
+    const headFill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFDFE7EA' } };
+    const labelFill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFF5F4F0' } };
+    const mats = materialMap();
+    const date = new Date().toLocaleDateString();
+    const season = 'Apparel Fall-Winter 2027 / 秋冬 2027';
+    const bomHead = ['Placement / 部位', 'Supplier / 供应商', 'Supplier Ref. / 供应商料号', 'Material Ref. / 材料编号',
+      'Material Description / 材料描述', 'Status / 状态', 'Color / 颜色', 'UOM / 单位', 'Consumption / 用量', 'Price / 单价', 'Comments / 备注'];
+
+    items.forEach(product => {
+      const ws = wb.addWorksheet(product.code.slice(0, 31));
+      ws.columns = [{ width: 18 }, { width: 14 }, { width: 14 }, { width: 16 }, { width: 26 }, { width: 14 },
+        { width: 12 }, { width: 8 }, { width: 10 }, { width: 10 }, { width: 20 }];
+      ws.views = [{ state: 'frozen', ySplit: 2 }];
+      ws.pageSetup = { paperSize: 9, orientation: 'landscape', fitToPage: true, fitToWidth: 1, fitToHeight: 0 };
+
+      const put = (row, col, value, opts) => {
+        const cell = ws.getCell(row, col);
+        cell.value = value;
+        const options = opts || {};
+        if (options.bold || options.color || options.size) {
+          cell.font = { bold: !!options.bold, color: options.color ? { argb: options.color } : undefined, size: options.size || 10 };
+        }
+        if (options.fill) cell.fill = options.fill;
+        if (options.align) cell.alignment = options.align;
+        if (options.wrap) cell.alignment = Object.assign({}, cell.alignment, { wrapText: true, vertical: 'top' });
+        if (options.border !== false) cell.border = border;
+        return cell;
+      };
+      const merge = (r1, c1, r2, c2) => ws.mergeCells(r1, c1, r2, c2);
+      const headerRow = row => {
+        bomHead.forEach((text, index) => put(row, index + 1, text, { bold: true, fill: headFill, wrap: true, size: 8 }));
+        ws.getRow(row).height = 34;
+      };
+      const bomRow = (row, values) => {
+        values.forEach((value, index) => put(row, index + 1, value, { wrap: true, size: 9 }));
+        ws.getRow(row).height = 30;
+      };
+
+      merge(1, 1, 1, 11);
+      put(1, 1, 'SOHO FASHION × MARKS · 工艺单 / TECH PACK', { bold: true, color: 'FFFFFFFF', fill: blackFill, align: { horizontal: 'center', vertical: 'middle' }, size: 14 });
+      ws.getRow(1).height = 28;
+
+      merge(2, 1, 2, 11);
+      put(2, 1, `${product.name} / ${product.code}`, { bold: true, size: 12, fill: labelFill });
+      ws.getRow(2).height = 22;
+
+      const field = (row, labelA, valueA, labelB, valueB) => {
+        put(row, 1, labelA, { bold: true, fill: labelFill, size: 9 });
+        merge(row, 2, row, 3);
+        put(row, 2, valueA, { size: 9 });
+        put(row, 4, labelB, { bold: true, fill: labelFill, size: 9 });
+        merge(row, 5, row, 11);
+        put(row, 5, valueB, { size: 9 });
+        ws.getRow(row).height = 20;
+      };
+
+      field(3, 'Brand / 品牌', 'SOHO FASHION', 'Banner / 渠道', "Mark's");
+      field(4, 'Product Description / 产品描述', product.name, 'Season / 季节', season);
+      field(5, 'Design # / 设计编号', product.code, 'Product # / 产品编号', product.code);
+      field(6, 'Category (L3)', bi('gender', product.gender), 'Sub-Category (L4)', bi('type', product.type));
+      field(7, 'Product Designer', 'To be confirmed', 'TD Specialist', 'To be confirmed');
+
+      let row = 9;
+      merge(row, 1, row, 11);
+      put(row, 1, 'Section: Fabrics / 面料', { bold: true, fill: sectionFill, size: 10 });
+      row += 1;
+      headerRow(row);
+      const colour = (product.colours && product.colours[0]) ? product.colours[0].name : '';
+      const selected = mats[product.code] ? bi('material', mats[product.code]) : '待确认 / TBC';
+      row += 1;
+      bomRow(row, ['Fabric A : Shell fabric / 主面料', 'To be confirmed', '—', '—', `${bi('material', product.material)} · Composition TBC`, 'In Development', colour, 'm', '0.00', '$0.000', 'Body fabric']);
+      row += 1;
+      bomRow(row, ['Fabric B : Selected material / 选中材料', 'To be confirmed', '—', '—', `${selected} · Composition TBC`, 'In Development', colour, 'm', '0.00', '$0.000', 'Selected by store']);
+
+      row += 2;
+      merge(row, 1, row, 11);
+      put(row, 1, 'Section: Trims, Labels & Packaging / 辅料、标签与包装', { bold: true, fill: sectionFill, size: 10 });
+      row += 1;
+      headerRow(row);
+      row += 1;
+      [
+        ['Main label / 主标', 'To be confirmed', '—', '—', 'Brand label', 'In Development', '—', 'each', '1.00', '$0.000', '—'],
+        ['Care label / 洗标', 'To be confirmed', '—', '—', 'Care & content label', 'In Development', '—', 'each', '1.00', '$0.000', '—'],
+        ['Main hangtag / 吊牌', 'To be confirmed', '—', '—', 'Hangtag', 'In Development', '—', 'each', '1.00', '$0.000', '—'],
+        ['Polybag / 胶袋', 'Factory source', '—', '—', 'Recycled polybag', 'In Development', 'Clear', 'each', '1.00', '$0.000', '—']
+      ].forEach(values => {
+        bomRow(row, values);
+        row += 1;
+      });
+
+      row += 1;
+      merge(row, 1, row, 11);
+      put(row, 1, 'Measurement Spec / 尺寸表（cm）', { bold: true, fill: sectionFill, size: 10 });
+      row += 1;
+      ['Point of Measure / 部位', 'S', 'M', 'L', 'XL', 'Tolerance / 公差'].forEach((text, index) => {
+        put(row, index + 1, text, { bold: true, fill: headFill, align: { horizontal: 'center' }, size: 9 });
+      });
+      merge(row, 6, row, 11);
+      row += 1;
+      ['Chest / 胸围', 'Shoulder / 肩宽', 'Length / 衣长', 'Sleeve / 袖长', 'Waist / 腰围'].forEach(label => {
+        put(row, 1, label, { size: 9, fill: labelFill });
+        ['', '', '', ''].forEach((value, index) => put(row, index + 2, value, { size: 9, align: { horizontal: 'center' } }));
+        merge(row, 6, row, 11);
+        put(row, 6, '±1.0', { size: 9, align: { horizontal: 'center' } });
+        row += 1;
+      });
+    });
+
+    const buffer = await wb.xlsx.writeBuffer();
+    const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+    const link = document.createElement('a');
+    const stamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+    link.href = URL.createObjectURL(blob);
+    link.download = `marks-techpack-${stamp}.xlsx`;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1500);
+    toast(`Excel tech pack exported — ${items.length} style${items.length > 1 ? 's' : ''}`);
+  }
+
   function techPackHtml(items) {
     const mats = materialMap();
     const date = new Date().toLocaleDateString();
@@ -388,7 +522,10 @@
 
     const aside = el('aside', 'sel-aside');
     aside.append(el('p', 'sel-count-label', 'Selected styles'), el('p', 'sel-count', String(items.length)));
-    const techPackButton = el('button', 'btn-accent', 'Export tech pack (PDF)');
+    const excelButton = el('button', 'btn-accent', 'Export tech pack (Excel)');
+    excelButton.type = 'button';
+    excelButton.addEventListener('click', () => exportExcel(items));
+    const techPackButton = el('button', 'btn-outline', 'Print tech pack (PDF)');
     techPackButton.type = 'button';
     techPackButton.addEventListener('click', () => exportTechPack(items));
     const exportButton = el('button', 'btn-outline', 'Export CSV');
@@ -404,8 +541,8 @@
       toast('Selection cleared');
       render();
     });
-    aside.append(techPackButton, exportButton, submit, clear);
-    aside.append(el('p', 'sel-note', 'TECH PACK prints one A4 page per style, bilingual. CSV is for your buying sheet. Feedback is collected on each style page.'));
+    aside.append(excelButton, techPackButton, exportButton, submit, clear);
+    aside.append(el('p', 'sel-note', 'Excel tech pack is editable for BOM, costs and measurements. PDF is for review. Feedback is collected on each style page.'));
 
     body.append(main, aside);
     root.append(body);
