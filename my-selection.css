@@ -1,0 +1,47 @@
+/* My Selection — reference 05 */
+.selection-head { padding: 30px 0 20px; }
+.selection-head h1 { margin: 0 0 8px; font-size: clamp(36px, 4vw, 52px); font-weight: 700; letter-spacing: -.02em; color: #111; }
+.selection-sub { margin: 0; font-size: 18px; color: #111; }
+.selection-sample { margin: 6px 0 0; font-size: 13px; color: #666; }
+
+.selection-body { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items: start; padding-bottom: 30px; }
+.sel-list { display: flex; flex-direction: column; gap: 20px; }
+.sel-item { display: grid; grid-template-columns: 132px minmax(0, 1fr) 28px; gap: 18px; align-items: start; padding-bottom: 20px; border-bottom: 1px solid #e5e5e5; }
+.sel-item img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; background: #f5f4f0; display: block; }
+.sel-code { margin: 0; font-size: 12px; color: #666; }
+.sel-name { margin: 2px 0 10px; font-size: 18px; font-weight: 600; color: #111; }
+.sel-colour { display: flex; align-items: center; gap: 8px; margin: 0 0 8px; font-size: 14px; }
+.sel-dot { width: 18px; height: 18px; border-radius: 50%; border: 1px solid #ddd; }
+.sel-material { margin: 0; font-size: 14px; color: #111; }
+.sel-material span { color: #666; }
+.sel-remove { border: 0; background: none; font-size: 22px; line-height: 1; color: #666; cursor: pointer; padding: 0; }
+.sel-remove:hover { color: #111; }
+
+.sel-aside { border-left: 1px solid #e5e5e5; padding-left: 26px; position: sticky; top: 110px; }
+.sel-count-label { margin: 0; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: #666; }
+.sel-count { margin: 4px 0 18px; font-size: 40px; font-weight: 600; color: #111; }
+.sel-aside .btn-accent, .sel-aside .btn-outline { width: 100%; margin-bottom: 10px; }
+.sel-clear { border: 0; background: none; padding: 0; font-size: 13px; color: #111; text-decoration: underline; cursor: pointer; }
+.sel-note { font-size: 12px; color: #666; line-height: 1.5; margin-top: 14px; }
+
+.sel-feedback { margin-top: 30px; padding-top: 26px; border-top: 1px solid #e5e5e5; max-width: 760px; }
+.sel-feedback h2 { margin: 0 0 14px; font-size: 24px; font-weight: 600; }
+.sel-checks { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; margin-bottom: 18px; }
+.sel-checks label { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.sel-field { margin-bottom: 16px; }
+.sel-field label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.sel-field input[type="text"], .sel-field textarea { width: 100%; border: 1px solid #cfcfcf; padding: 11px 12px; font-size: 14px; font-family: inherit; background: #fff; }
+.sel-field textarea { min-height: 90px; resize: vertical; }
+.sel-sample { display: flex; align-items: center; gap: 18px; font-size: 14px; }
+.sel-sample label { display: inline-flex; align-items: center; gap: 8px; font-weight: 400; }
+.sel-receipt { border: 1px solid var(--accent, #e85a1a); background: #fff6f0; padding: 16px 18px; margin-bottom: 24px; }
+.sel-receipt strong { display: block; font-size: 15px; margin-bottom: 4px; }
+.sel-receipt span { font-size: 13px; color: #333; }
+.sel-empty { padding: 40px 0 60px; }
+.sel-empty p { font-size: 16px; margin: 0 0 10px; }
+
+@media (max-width: 900px) {
+  .selection-body { grid-template-columns: 1fr; }
+  .sel-aside { border-left: 0; border-top: 1px solid #e5e5e5; padding: 20px 0 0; position: static; }
+  .sel-checks { grid-template-columns: 1fr; }
+}

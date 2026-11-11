@@ -66,6 +66,7 @@
     selected = index;
     const material = product.materials[index];
     localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name }));
+    try { const map = JSON.parse(localStorage.getItem('soho-material-choices') || '{}'); map[product.code] = material.name; localStorage.setItem('soho-material-choices', JSON.stringify(map)); } catch (error) { /* ignore */ }
     addToSelection(product.code);
     const table = document.querySelector('.material-table');
     if (table) renderTable(table);

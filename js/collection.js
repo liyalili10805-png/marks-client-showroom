@@ -465,6 +465,7 @@
       chosenMaterial = index;
       const material = product.materials[index];
       localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name }));
+      try { const map = JSON.parse(localStorage.getItem('soho-material-choices') || '{}'); map[product.code] = material.name; localStorage.setItem('soho-material-choices', JSON.stringify(map)); } catch (error) { /* ignore */ }
       document.querySelectorAll('.material-row').forEach((row, rowIndex) => {
         row.classList.toggle('selected', rowIndex === index);
         const radio = row.querySelector('input[type="radio"]');
@@ -506,6 +507,7 @@
       toggleSelection(product);
       const material = product.materials[chosenMaterial];
       localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name }));
+      try { const map = JSON.parse(localStorage.getItem('soho-material-choices') || '{}'); map[product.code] = material.name; localStorage.setItem('soho-material-choices', JSON.stringify(map)); } catch (error) { /* ignore */ }
       add.textContent = selection.includes(product.code) ? 'In My Selection' : 'Add to selection →';
       toast(selection.includes(product.code)
         ? `${material.name} — ${product.code} added to My Selection`
