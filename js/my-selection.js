@@ -6,7 +6,6 @@
   const MATERIALS_KEY = 'soho-material-choices';
   const SUBMISSIONS_KEY = 'soho-selection-submissions';
   const SUBMITTED_KEY = 'soho-selection-submitted';
-  const DRAFT_KEY = 'soho-selection-draft';
 
   let data = null;
   let products = [];
@@ -37,9 +36,8 @@
     toastTimer = setTimeout(() => box.classList.remove('show'), 2200);
   }
 
-  function selectionCodes() {
-    return read(SELECTION_KEY, []) || [];
-  }
+  const selectionCodes = () => read(SELECTION_KEY, []) || [];
+  const materialMap = () => read(MATERIALS_KEY, {}) || {};
 
   function setCodes(codes) {
     write(SELECTION_KEY, codes);
@@ -54,46 +52,54 @@
     count.hidden = total === 0;
   }
 
-  function materialMap() {
-    return read(MATERIALS_KEY, {}) || {};
-  }
-
   function storeLabel() {
     const identity = read('soho-demo-identity', {}) || {};
     return identity.store || identity.storeName || identity.name || 'Store Toronto';
   }
 
-  function feedbackValues(form) {
-    const checks = Array.from(form.querySelectorAll('.sel-checks input:checked')).map(input => input.value);
-    const sample = form.querySelector('input[name="sample"]:checked');
-    return {
-      checks,
-      range: form.querySelector('input[name="range"]').value,
-      comments: form.querySelector('textarea[name="comments"]').value,
-      sample: sample ? sample.value : 'Not yet'
-    };
+  function selectedItems() {
+    const codes = selectionCodes();
+    return products.filter(product => codes.includes(product.code));
   }
 
-  function saveDraft(form, items) {
-    write(DRAFT_KEY, {
-      items: items.map(product => ({ code: product.code, material: materialMap()[product.code] || null })),
-      feedback: feedbackValues(form),
-      savedAt: new Date().toISOString()
-    });
-    toast('Draft saved');
+  function itemRows(items) {
+    const mats = materialMap();
+    return items.map(product => ({
+      code: product.code,
+      name: product.name,
+      gender: product.gender || '',
+      type: product.type || '',
+      colour: (product.colours && product.colours[0]) ? product.colours[0].name : '',
+      material: mats[product.code] || 'To be confirmed',
+      retail: product.retail || 'To be confirmed',
+      occasions: (product.occasions || []).join(' / '),
+      image: product.image
+    }));
   }
 
-  function submitSelection(form, items) {
-    const record = {
-      items: items.map(product => ({
-        code: product.code,
-        name: product.name,
-        material: materialMap()[product.code] || null,
-        colour: (product.colours && product.colours[0]) ? product.colours[0].name : null
-      })),
-      feedback: feedbackValues(form),
-      at: new Date().toISOString()
-    };
+  function exportCsv(items) {
+    const rows = itemRows(items);
+    const header = ['Code', 'Style', 'Gender', 'Type', 'Colour', 'Material', 'Target retail', 'Occasions', 'Image'];
+    const lines = [header].concat(rows.map(row => [
+      row.code, row.name, row.gender, row.type, row.colour, row.material, row.retail, row.occasions, row.image
+    ]));
+    const csv = '\ufeff' + lines.map(line => line
+      .map(cell => `"${String(cell == null ? '' : cell).replace(/"/g, '""')}"`)
+      .join(',')).join('\r\n');
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    const stamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+    link.href = URL.createObjectURL(blob);
+    link.download = `marks-selection-${stamp}.csv`;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+    toast(`Exported ${items.length} style${items.length > 1 ? 's' : ''} to CSV`);
+  }
+
+  function submitSelection(items) {
+    const record = { items: itemRows(items), at: new Date().toISOString() };
     const list = read(SUBMISSIONS_KEY, []) || [];
     list.push(record);
     write(SUBMISSIONS_KEY, list);
@@ -102,70 +108,10 @@
     render();
   }
 
-  function feedbackForm(items) {
-    const draft = read(DRAFT_KEY, null);
-    const values = draft && draft.feedback ? draft.feedback : { checks: [], range: '', comments: '', sample: 'Not yet' };
-    const form = el('form', 'sel-feedback');
-    form.append(el('h2', null, 'Your feedback'));
-
-    const checks = el('div', 'sel-checks');
-    ['Good fit for our customers', 'Review the price', 'Prefer another material', 'Adjust fit or colour'].forEach(text => {
-      const label = el('label');
-      const input = document.createElement('input');
-      input.type = 'checkbox';
-      input.value = text;
-      input.checked = values.checks.includes(text);
-      label.append(input, document.createTextNode(text));
-      checks.append(label);
-    });
-    form.append(checks);
-
-    const rangeField = el('div', 'sel-field');
-    const rangeLabel = el('label', null, 'Target retail range (CAD)');
-    const range = document.createElement('input');
-    range.type = 'text';
-    range.name = 'range';
-    range.placeholder = 'e.g. 59.99 – 79.99';
-    range.value = values.range || '';
-    rangeField.append(rangeLabel, range);
-    form.append(rangeField);
-
-    const commentField = el('div', 'sel-field');
-    const commentLabel = el('label', null, 'Comments');
-    const comments = document.createElement('textarea');
-    comments.name = 'comments';
-    comments.placeholder = 'A softer hand feel would suit our customers.';
-    comments.value = values.comments || '';
-    commentField.append(commentLabel, comments);
-    form.append(commentField);
-
-    const sampleRow = el('div', 'sel-field sel-sample');
-    const sampleLabel = el('label', null, 'Need a sample?');
-    sampleRow.append(sampleLabel);
-    ['Yes', 'Not yet'].forEach(text => {
-      const label = el('label');
-      const input = document.createElement('input');
-      input.type = 'radio';
-      input.name = 'sample';
-      input.value = text;
-      input.checked = (values.sample || 'Not yet') === text;
-      label.append(input, document.createTextNode(text));
-      sampleRow.append(label);
-    });
-    form.append(sampleRow);
-
-    form.addEventListener('submit', event => {
-      event.preventDefault();
-      submitSelection(form, items);
-    });
-    return form;
-  }
-
   function render() {
     const root = document.getElementById('selection-view');
     root.innerHTML = '';
-    const codes = selectionCodes();
-    const items = products.filter(product => codes.includes(product.code));
+    const items = selectedItems();
 
     const head = el('div', 'selection-head');
     head.append(el('p', 'col-breadcrumb', 'COLLECTION / MY SELECTION'));
@@ -179,7 +125,7 @@
       const receipt = el('div', 'sel-receipt');
       receipt.append(el('strong', null, 'Selection submitted'));
       const when = new Date(submitted.at);
-      receipt.append(el('span', null, `${when.toLocaleString()} · ${submitted.items.length} style${submitted.items.length > 1 ? 's' : ''} · Sample: ${submitted.feedback.sample}`));
+      receipt.append(el('span', null, `${when.toLocaleString()} · ${submitted.items.length} style${submitted.items.length > 1 ? 's' : ''}`));
       root.append(receipt);
     }
 
@@ -201,6 +147,7 @@
     items.forEach(product => {
       const item = el('article', 'sel-item');
       const detailHref = `collection-detail.html?code=${encodeURIComponent(product.code)}`;
+
       const imageLink = el('a', 'sel-image-link');
       imageLink.href = detailHref;
       imageLink.setAttribute('aria-label', `View ${product.name} details`);
@@ -215,6 +162,7 @@
       nameLink.href = detailHref;
       nameLink.append(el('h3', 'sel-name', product.name));
       info.append(el('p', 'sel-code', product.code), nameLink);
+
       const colour = (product.colours && product.colours[0]) || null;
       const colourRow = el('p', 'sel-colour');
       if (colour) {
@@ -223,10 +171,12 @@
         colourRow.append(dot, document.createTextNode(colour.name));
       }
       info.append(colourRow);
+
       const material = el('p', 'sel-material');
       material.append(document.createTextNode('Material: '));
       material.append(el('strong', null, mats[product.code] || 'To be confirmed'));
       info.append(material);
+
       const detailLink = el('a', 'sel-detail-link', 'View details →');
       detailLink.href = detailHref;
       info.append(detailLink);
@@ -245,17 +195,15 @@
     });
 
     main.append(list);
-    const form = feedbackForm(items);
-    main.append(form);
 
     const aside = el('aside', 'sel-aside');
     aside.append(el('p', 'sel-count-label', 'Selected styles'), el('p', 'sel-count', String(items.length)));
-    const submit = el('button', 'btn-accent', 'Submit selection');
+    const exportButton = el('button', 'btn-accent', 'Export selection (CSV)');
+    exportButton.type = 'button';
+    exportButton.addEventListener('click', () => exportCsv(items));
+    const submit = el('button', 'btn-outline', 'Submit selection');
     submit.type = 'button';
-    submit.addEventListener('click', () => form.requestSubmit());
-    const draft = el('button', 'btn-outline', 'Save draft');
-    draft.type = 'button';
-    draft.addEventListener('click', () => saveDraft(form, items));
+    submit.addEventListener('click', () => submitSelection(items));
     const clear = el('button', 'sel-clear', 'Clear selection');
     clear.type = 'button';
     clear.addEventListener('click', () => {
@@ -263,8 +211,8 @@
       toast('Selection cleared');
       render();
     });
-    aside.append(submit, draft, clear);
-    aside.append(el('p', 'sel-note', 'Your selection expresses interest. Orders require confirmation.'));
+    aside.append(exportButton, submit, clear);
+    aside.append(el('p', 'sel-note', 'Export the table for your buying sheet, or submit the selection for review. Feedback is collected on each style page.'));
 
     body.append(main, aside);
     root.append(body);
