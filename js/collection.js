@@ -89,11 +89,10 @@
       select.type = 'button';
       select.classList.toggle('active', selection.includes(product.code));
       select.addEventListener('click', () => {
-        if (!selection.includes(product.code)) toggleSelection(product);
-        select.textContent = 'Selected';
-        select.classList.add('active');
+        toggleSelection(product);
+        select.textContent = selection.includes(product.code) ? 'Selected' : 'Select';
+        select.classList.toggle('active', selection.includes(product.code));
         renderPanel();
-        window.location.href = `collection-detail.html?code=${encodeURIComponent(product.code)}`;
       });
       const vote = el('button', 'link-action', 'Vote');
       vote.type = 'button';

@@ -200,13 +200,21 @@
 
     items.forEach(product => {
       const item = el('article', 'sel-item');
+      const detailHref = `collection-detail.html?code=${encodeURIComponent(product.code)}`;
+      const imageLink = el('a', 'sel-image-link');
+      imageLink.href = detailHref;
+      imageLink.setAttribute('aria-label', `View ${product.name} details`);
       const image = document.createElement('img');
       image.src = product.image;
       image.alt = product.name;
-      item.append(image);
+      imageLink.append(image);
+      item.append(imageLink);
 
       const info = el('div', 'sel-info');
-      info.append(el('p', 'sel-code', product.code), el('h3', 'sel-name', product.name));
+      const nameLink = el('a', 'sel-name-link');
+      nameLink.href = detailHref;
+      nameLink.append(el('h3', 'sel-name', product.name));
+      info.append(el('p', 'sel-code', product.code), nameLink);
       const colour = (product.colours && product.colours[0]) || null;
       const colourRow = el('p', 'sel-colour');
       if (colour) {
@@ -219,6 +227,9 @@
       material.append(document.createTextNode('Material: '));
       material.append(el('strong', null, mats[product.code] || 'To be confirmed'));
       info.append(material);
+      const detailLink = el('a', 'sel-detail-link', 'View details →');
+      detailLink.href = detailHref;
+      info.append(detailLink);
       item.append(info);
 
       const remove = el('button', 'sel-remove', '×');
