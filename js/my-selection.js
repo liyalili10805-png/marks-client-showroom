@@ -270,6 +270,57 @@
 
       row += 2;
       merge(row, 1, row, 11);
+      put(row, 1, 'Construction Details / 工艺细节', { bold: true, fill: sectionFill, size: 10 });
+      row += 1;
+      ['Part / 部位', 'Construction / 工艺说明', 'Stitch / 线迹', 'Notes / 备注'].forEach((text, index) => {
+        put(row, index + 1, text, { bold: true, fill: headFill, size: 9 });
+      });
+      merge(row, 4, row, 11);
+      row += 1;
+      ['CF placket / 门襟', 'Collar / 领口', 'Pocket / 口袋', 'Cuff / 袖口', 'Hem / 下摆', 'Shoulder / 肩部'].forEach(part => {
+        put(row, 1, part, { size: 9, fill: labelFill });
+        put(row, 2, '', { size: 9 });
+        put(row, 3, '', { size: 9 });
+        merge(row, 4, row, 11);
+        put(row, 4, '', { size: 9 });
+        row += 1;
+      });
+
+      row += 1;
+      merge(row, 1, row, 11);
+      put(row, 1, 'Stitch Legend / 线迹说明', { bold: true, fill: sectionFill, size: 10 });
+      row += 1;
+      put(row, 1, 'Code / 编号', { bold: true, fill: headFill, size: 9 });
+      merge(row, 2, row, 11);
+      put(row, 2, 'Description / 说明', { bold: true, fill: headFill, size: 9 });
+      row += 1;
+      ['SNLS / 单针平车', 'LTS 1/8" / 1/8" 明线', 'LTS 1/4" / 1/4" 明线', 'LES / 锁边线', 'CHS / 链条线', 'BT / 打枣', '2NCS 1/4" / 双针绷缝'].forEach(item => {
+        put(row, 1, item, { size: 9, fill: labelFill });
+        merge(row, 2, row, 11);
+        put(row, 2, '', { size: 9 });
+        row += 1;
+      });
+
+      row += 1;
+      merge(row, 1, row, 11);
+      put(row, 1, 'Fit Comments / 版型意见', { bold: true, fill: sectionFill, size: 10 });
+      row += 1;
+      ['Date / 日期', 'Round / 轮次', 'Comment / 意见', 'Status / 状态'].forEach((text, index) => {
+        put(row, index + 1, text, { bold: true, fill: headFill, size: 9 });
+      });
+      merge(row, 4, row, 11);
+      row += 1;
+      for (let i = 0; i < 3; i += 1) {
+        put(row, 1, '', { size: 9 });
+        put(row, 2, '', { size: 9 });
+        put(row, 3, '', { size: 9 });
+        merge(row, 4, row, 11);
+        put(row, 4, '', { size: 9 });
+        row += 1;
+      }
+
+      row += 2;
+      merge(row, 1, row, 11);
       put(row, 1, 'Product Images / 产品图', { bold: true, fill: sectionFill, size: 10 });
       row += 1;
       const dataUrls = imageCache[product.code] || [];
