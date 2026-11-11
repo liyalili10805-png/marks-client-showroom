@@ -451,17 +451,47 @@
     side.append(colourRow);
 
     side.append(el('p', 'detail-label', 'Material options'));
+    const MATERIAL_KEY = 'soho-material-choice';
+    let chosenMaterial = 0;
+    try {
+      const storedChoice = JSON.parse(localStorage.getItem(MATERIAL_KEY) || 'null');
+      if (storedChoice && storedChoice.code === product.code) {
+        const found = product.materials.findIndex(material => material.name === storedChoice.material);
+        if (found >= 0) chosenMaterial = found;
+      }
+    } catch (error) { chosenMaterial = 0; }
+
+    function selectMaterial(index) {
+      chosenMaterial = index;
+      const material = product.materials[index];
+      localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name }));
+      document.querySelectorAll('.material-row').forEach((row, rowIndex) => {
+        row.classList.toggle('selected', rowIndex === index);
+        const radio = row.querySelector('input[type="radio"]');
+        if (radio) radio.checked = rowIndex === index;
+      });
+      document.querySelectorAll('.materials-choose button').forEach((button, buttonIndex) => {
+        button.classList.toggle('btn-accent', buttonIndex === index);
+        button.classList.toggle('btn-outline', buttonIndex !== index);
+        button.textContent = buttonIndex === index ? 'Selected material' : 'Choose material';
+      });
+    }
+
     const materialList = el('div', 'material-list');
     product.materials.forEach((material, index) => {
-      const row = el('div', 'material-row');
-      row.append(el('span', null, material.name));
+      const row = el('label', 'material-row' + (index === chosenMaterial ? ' selected' : ''));
+      const radio = document.createElement('input');
+      radio.type = 'radio';
+      radio.name = 'detail-material';
+      radio.value = String(index);
+      radio.checked = index === chosenMaterial;
+      const dot = el('span', 'material-radio');
+      const name = el('span', 'material-name', material.name);
       const link = el('a', 'text-link', index === 0 ? 'View details →' : 'Compare option →');
       link.href = '#materials';
-      row.append(link);
-      row.addEventListener('click', () => {
-        document.querySelectorAll('.material-row').forEach(item => item.classList.remove('selected'));
-        row.classList.add('selected');
-      });
+      link.addEventListener('click', event => event.stopPropagation());
+      row.append(radio, dot, name, link);
+      row.addEventListener('click', () => selectMaterial(index));
       materialList.append(row);
     });
     side.append(materialList);
@@ -474,7 +504,12 @@
     add.type = 'button';
     add.addEventListener('click', () => {
       toggleSelection(product);
+      const material = product.materials[chosenMaterial];
+      localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name }));
       add.textContent = selection.includes(product.code) ? 'In My Selection' : 'Add to selection →';
+      toast(selection.includes(product.code)
+        ? `${material.name} — ${product.code} added to My Selection`
+        : `${product.code} removed from My Selection`);
     });
     const sample = el('button', 'btn-outline', 'Request sample');
     sample.type = 'button';
@@ -572,9 +607,12 @@
     const chooseRow = el('div', 'materials-row materials-choose');
     chooseRow.append(el('span', null, ''));
     product.materials.forEach((material, index) => {
-      const button = el('button', index === 0 ? 'btn-accent' : 'btn-outline', 'Choose material');
+      const button = el('button', index === chosenMaterial ? 'btn-accent' : 'btn-outline', index === chosenMaterial ? 'Selected material' : 'Choose material');
       button.type = 'button';
-      button.addEventListener('click', () => toast(`Selected ${material.name} (sample)`));
+      button.addEventListener('click', () => {
+        selectMaterial(index);
+        toast(`${material.name} selected`);
+      });
       chooseRow.append(button);
     });
     table.append(chooseRow);
