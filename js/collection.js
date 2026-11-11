@@ -486,7 +486,22 @@
     const vote = el('button', 'link-action');
     vote.type = 'button';
     vote.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A3.9 3.9 0 0 1 12 8a3.9 3.9 0 0 1 7 2.7C19 15.6 12 20 12 20z"/></svg><span>Vote</span>';
-    vote.addEventListener('click', () => toast('Vote recorded (sample)'));
+    const votesKey = 'soho-votes';
+    const readVotes = () => { try { return JSON.parse(localStorage.getItem(votesKey) || '[]'); } catch (e) { return []; } };
+    const isVoted = () => readVotes().includes(product.code);
+    function paintVote() {
+      const voted = isVoted();
+      vote.classList.toggle('is-voted', voted);
+      vote.querySelector('span').textContent = voted ? 'Voted' : 'Vote';
+    }
+    vote.addEventListener('click', () => {
+      const list = readVotes();
+      const next = list.includes(product.code) ? list.filter(code => code !== product.code) : list.concat(product.code);
+      localStorage.setItem(votesKey, JSON.stringify(next));
+      paintVote();
+      toast(isVoted() ? 'Vote added (sample)' : 'Vote removed (sample)');
+    });
+    paintVote();
     const comment = el('a', 'link-action');
     comment.href = '#feedback';
     comment.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H9l-5 4z"/></svg><span>Comment</span>';
@@ -511,12 +526,27 @@
     const styleCopy = el('div', 'style-copy');
     styleCopy.append(el('h2', null, 'Style details'));
     styleCopy.append(el('p', 'detail-why', product.description || ''));
-    const styleImage = document.createElement('img');
-    const detailViews = product.views || [];
-    styleImage.src = detailViews.find(src => src.indexOf('05-detail') !== -1 || src.indexOf('-detail') !== -1) ||
-      detailViews[detailViews.length - 1] || product.image;
-    styleImage.alt = `${product.name} fabric detail`;
-    styleSection.append(styleCopy, styleImage);
+
+    const similarBlock = el('div', 'style-similar');
+    similarBlock.append(el('h2', null, 'Similar styles'));
+    const similarGrid = el('div', 'similar-grid');
+    const similar = products
+      .filter(item => item.code !== product.code && item.type === product.type && item.gender === product.gender)
+      .slice(0, 3);
+    const fallback = products
+      .filter(item => item.code !== product.code && !similar.includes(item) && item.type === product.type)
+      .slice(0, 3 - similar.length);
+    similar.concat(fallback).forEach(item => {
+      const card = el('a', 'similar-card');
+      card.href = `collection-detail.html?code=${encodeURIComponent(item.code)}`;
+      const image = document.createElement('img');
+      image.src = item.image;
+      image.alt = item.name;
+      card.append(image, el('strong', null, item.name), el('span', null, item.code));
+      similarGrid.append(card);
+    });
+    similarBlock.append(similarGrid);
+    styleSection.append(styleCopy, similarBlock);
     root.append(styleSection);
 
     const materialSection = el('section', 'materials-section');
@@ -570,12 +600,52 @@
     range.placeholder = 'Target retail range (e.g. 59.99 – 79.99)';
     const commentBox = document.createElement('textarea');
     commentBox.placeholder = 'Comments';
+
+    const fileLabel = el('label', 'attach-label');
+    fileLabel.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Attach images or files</span>';
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.multiple = true;
+    fileInput.accept = 'image/*,.pdf,.doc,.docx,.xls,.xlsx';
+    fileInput.hidden = true;
+    fileLabel.append(fileInput);
+    const fileList = el('div', 'feedback-files');
+    fileInput.addEventListener('change', () => {
+      fileList.innerHTML = '';
+      Array.from(fileInput.files || []).forEach(file => {
+        fileList.append(el('span', null, `${file.name} · ${Math.max(1, Math.round(file.size / 1024))} KB`));
+      });
+    });
+
     const submit = el('button', 'btn-accent', 'Submit feedback');
     submit.type = 'submit';
-    form.append(range, commentBox, submit);
-    form.addEventListener('submit', event => {
+    form.append(fileLabel, fileList, range, commentBox, submit);
+    form.addEventListener('submit', async event => {
       event.preventDefault();
-      toast('Feedback saved (sample)');
+      const files = Array.from(fileInput.files || []);
+      const stored = [];
+      for (const file of files) {
+        let id = null;
+        if (window.DemoStore && DemoStore.putBlob) {
+          try { id = await DemoStore.putBlob(file); } catch (error) { id = null; }
+        }
+        stored.push({ name: file.name, size: file.size, type: file.type, id });
+      }
+      const record = {
+        code: product.code,
+        at: new Date().toISOString(),
+        range: range.value,
+        comment: commentBox.value,
+        attachments: stored
+      };
+      try {
+        const list = JSON.parse(localStorage.getItem('soho-feedback-submissions') || '[]');
+        list.push(record);
+        localStorage.setItem('soho-feedback-submissions', JSON.stringify(list));
+      } catch (error) { /* storage may be unavailable */ }
+      form.reset();
+      fileList.innerHTML = '';
+      toast(`Feedback saved${files.length ? ` with ${files.length} attachment(s)` : ''} (sample)`);
     });
     feedback.append(form);
     root.append(feedback);
