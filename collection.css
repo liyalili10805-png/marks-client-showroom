@@ -284,3 +284,12 @@
 .material-row.selected .material-radio::after { content: ''; position: absolute; inset: 3px; border-radius: 50%; background: var(--accent, #e85a1a); }
 .material-name { flex: 1; font-size: 14px; }
 .material-row .text-link { margin-left: auto; }
+
+
+/* keep three columns from overlapping on medium widths */
+.col-card, .col-grid > * { min-width: 0; }
+.col-card-actions { flex-wrap: wrap; row-gap: 4px; }
+@media (max-width: 1200px) {
+  .col-layout { grid-template-columns: 1fr; }
+  .selection-panel { border-left: 0; border-top: 1px solid #e5e5e5; padding: 20px 0 0; position: static; }
+}
