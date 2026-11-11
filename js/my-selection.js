@@ -133,71 +133,144 @@
   function techPackHtml(items) {
     const mats = materialMap();
     const date = new Date().toLocaleDateString();
-    const row = (cn, en, value) => `<tr><th>${cn}<span>${en}</span></th><td>${value == null || value === '' ? '—' : value}</td></tr>`;
-    const sections = items.map((product, index) => {
-      const views = (product.views && product.views.length ? product.views : [product.image])
-        .map(src => new URL(src, location.href).href);
-      const main = views[0];
-      const thumbs = views.slice(1, 4);
-      const colour = (product.colours && product.colours[0]) || null;
-      return `<section class="pack">
-        <header>
-          <div class="brand">SOHO FASHION × MARKS</div>
-          <div class="doc">工艺单 / TECH PACK</div>
-          <div class="meta">AW26 · ${storeLabel()} · ${date} · ${index + 1} / ${items.length}</div>
-        </header>
-        <div class="body">
-          <div class="images">
-            <img class="main" src="${main}" alt="${product.name}">
-            ${thumbs.map(src => `<img class="thumb" src="${src}" alt="${product.name} view">`).join('')}
-          </div>
-          <table>
-            ${row('款号', 'Style No.', product.code)}
-            ${row('款式名称', 'Style Name', product.name)}
-            ${row('品类', 'Category', bi('type', product.type))}
-            ${row('性别', 'Gender', bi('gender', product.gender))}
-            ${row('版型', 'Fit', bi('fit', product.fit))}
-            ${row('面料', 'Fabric', bi('material', product.material))}
-            ${row('选中材料', 'Selected Material', mats[product.code] ? bi('material', mats[product.code]) : '待确认 / TBC')}
-            ${row('颜色', 'Colour', colour ? bi('colour', colour.name) : '—')}
-            ${row('克重', 'Weight', bi('weight', product.weight))}
-            ${row('目标零售价', 'Target Retail', product.retail === 'To be confirmed' ? 'To be confirmed / 待确认' : (product.retail || '待确认 / TBC'))}
-            ${row('季节', 'Season', 'AW26 秋冬')}
-          </table>
+    const season = 'Apparel Fall-Winter 2027 / 秋冬 2027';
+    const esc = value => String(value == null ? '' : value)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    const mainImage = product => {
+      const src = (product.views && product.views.length ? product.views[0] : product.image);
+      return new URL(src, location.href).href;
+    };
+    const allImages = product => (product.views && product.views.length ? product.views : [product.image])
+      .map(src => new URL(src, location.href).href);
+
+    const header = (product, page, pages) => `
+      <header class="tp-head">
+        <div class="tp-logo">SOHO<span>FASHION</span></div>
+        <div class="tp-hfields">
+          <div class="f wide"><label>Product Description / 产品描述</label><b>${esc(product.name)}</b></div>
+          <div class="f"><label>Season Name / 季节</label><b>${season}</b></div>
+          <div class="f"><label>Date / 日期</label><b>${date}</b></div>
+          <div class="f"><label>Design # / 设计编号</label><b>${esc(product.code)}</b></div>
+          <div class="f"><label>Product # / 产品编号</label><b>${esc(product.code)}</b></div>
         </div>
-        <div class="notes">
-          <h3>工艺说明 / Workmanship</h3>
-          <p>${product.description || ''}</p>
-          <h3>备注 / Remarks</h3>
-          <div class="lines"></div>
-        </div>
-        <footer><span>SOHO FASHION · 工艺单 TECH PACK</span><span>${product.code} · ${index + 1}/${items.length}</span></footer>
+      </header>
+      <div class="tp-sub">
+        <div class="f"><label>Brand / 品牌</label><b>SOHO FASHION</b></div>
+        <div class="f"><label>Banner / 渠道</label><b>Mark's</b></div>
+        <div class="f"><label>Category (L3)</label><b>${bi('gender', product.gender)}</b></div>
+        <div class="f"><label>Sub-Category (L4)</label><b>${bi('type', product.type)}</b></div>
+        <div class="f"><label>Class (L5)</label><b>${bi('type', product.type)}</b></div>
+        <div class="f"><label>Sub-Class (L6)</label><b>PRO</b></div>
+        <div class="tp-thumb"><img src="${mainImage(product)}" alt=""></div>
+      </div>
+      <div class="tp-sub">
+        <div class="f"><label>PRO Engineer</label><b>To be confirmed</b></div>
+        <div class="f"><label>Product Designer</label><b>To be confirmed</b></div>
+        <div class="f"><label>TD Specialist</label><b>To be confirmed</b></div>
+        <div class="f"><label>Product Developer</label><b>To be confirmed</b></div>
+        <div class="f"><label>PRO Merch</label><b>To be confirmed</b></div>
+        <div class="tp-pageno">Page ${page} of ${pages}</div>
+      </div>`;
+
+    const bomCells = values => values.map(value => `<td>${value == null || value === '' ? '—' : value}</td>`).join('');
+
+    const bomPage = (product, page, pages) => {
+      const colour = (product.colours && product.colours[0]) ? product.colours[0].name : '';
+      const shell = bi('material', product.material);
+      const selected = mats[product.code] ? bi('material', mats[product.code]) : '待确认 / TBC';
+      const head = ['Placement / 部位', 'Supplier / 供应商', 'Supplier Ref. / 供应商料号', 'Material Ref. / 材料编号',
+        'Material Description / 材料描述', 'Status / 状态', 'Color / 颜色', 'UOM / 单位', 'Consumption / 用量', 'Price / 单价', 'Comments / 备注'];
+      return `<section class="tp-page">
+        ${header(product, page, pages)}
+        <div class="tp-section">Section: Fabrics / 面料</div>
+        <table class="tp-table">
+          <thead><tr>${head.map(text => `<th>${text}</th>`).join('')}</tr></thead>
+          <tbody>
+            <tr>${bomCells(['Fabric A : Shell fabric / 主面料', 'To be confirmed', '—', '—', shell + ' · Composition TBC', 'In Development', colour, 'm', '0.00', '$0.000', 'Body fabric'])}</tr>
+            <tr>${bomCells(['Fabric B : Selected material / 选中材料', 'To be confirmed', '—', '—', selected + ' · Composition TBC', 'In Development', colour, 'm', '0.00', '$0.000', 'Selected by store'])}</tr>
+          </tbody>
+        </table>
+        <div class="tp-section">Section: Trims / 辅料</div>
+        <table class="tp-table">
+          <thead><tr>${head.map(text => `<th>${text}</th>`).join('')}</tr></thead>
+          <tbody>
+            <tr>${bomCells(['Main label / 主标', 'To be confirmed', '—', '—', 'Brand label', 'In Development', '—', 'each', '1.00', '$0.000', '—'])}</tr>
+            <tr>${bomCells(['Care label / 洗标', 'To be confirmed', '—', '—', 'Care & content label', 'In Development', '—', 'each', '1.00', '$0.000', '—'])}</tr>
+            <tr>${bomCells(['Main hangtag / 吊牌', 'To be confirmed', '—', '—', 'Hangtag', 'In Development', '—', 'each', '1.00', '$0.000', '—'])}</tr>
+            <tr>${bomCells(['Polybag / 胶袋', 'Factory source', '—', '—', 'Recycled polybag', 'In Development', 'Clear', 'each', '1.00', '$0.000', '—'])}</tr>
+          </tbody>
+        </table>
+        <div class="tp-foot">SOHO FASHION · BOM · ${esc(product.code)}</div>
       </section>`;
+    };
+
+    const cadPage = (product, page, pages) => {
+      const images = allImages(product);
+      const points = [['Chest / 胸围'], ['Shoulder / 肩宽'], ['Length / 衣长'], ['Sleeve / 袖长'], ['Waist / 腰围']];
+      return `<section class="tp-page">
+        ${header(product, page, pages)}
+        <div class="tp-doc-title">CAD SKETCH / 产品图</div>
+        <div class="tp-brandline">SOHO FASHION &nbsp;|&nbsp; MARK'S &nbsp;|&nbsp; ${esc(product.code)} &nbsp;|&nbsp; ${season}</div>
+        <div class="tp-cadimgs">
+          ${images.slice(0, 4).map(src => `<img src="${src}" alt="${esc(product.name)}">`).join('')}
+        </div>
+        <div class="tp-notes">
+          <div><h3>Workmanship / 工艺说明</h3><p>${esc(product.description || '')}</p></div>
+          <div><h3>Remarks / 备注</h3><div class="tp-lines"></div></div>
+        </div>
+        <div class="tp-section">Measurement Spec / 尺寸表（cm）</div>
+        <table class="tp-table measure">
+          <thead><tr><th>Point of Measure / 部位</th><th>S</th><th>M</th><th>L</th><th>XL</th><th>Tolerance / 公差</th></tr></thead>
+          <tbody>${points.map(([label]) => `<tr><td>${label}</td><td></td><td></td><td></td><td></td><td>±1.0</td></tr>`).join('')}</tbody>
+        </table>
+        <div class="tp-foot">SOHO FASHION · TECH PACK · ${esc(product.code)}</div>
+      </section>`;
+    };
+
+    const pagesPerStyle = 2;
+    const totalPages = items.length * pagesPerStyle;
+    const sections = items.map((product, index) => {
+      const base = index * pagesPerStyle + 1;
+      return bomPage(product, base, totalPages) + cadPage(product, base + 1, totalPages);
     }).join('');
 
     return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>工艺单 Tech Pack</title>
       <style>
-        @page { size: A4; margin: 12mm; }
+        @page { size: A4; margin: 10mm; }
         * { box-sizing: border-box; }
-        body { margin: 0; color: #111; font-family: Helvetica, Arial, "Microsoft YaHei", sans-serif; }
-        .pack { page-break-after: always; padding: 2mm 0 4mm; }
-        header { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #111; padding-bottom: 6px; }
-        .brand { font-size: 12px; font-weight: 700; letter-spacing: .08em; }
-        .doc { font-size: 20px; font-weight: 700; }
-        .meta { font-size: 10px; color: #444; }
-        .body { display: grid; grid-template-columns: 72mm minmax(0, 1fr); gap: 8mm; margin-top: 6mm; }
-        .images { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; align-content: start; }
-        .images .main { grid-column: 1 / -1; width: 100%; height: 112mm; object-fit: contain; background: #f5f4f0; }
-        .images .thumb { width: 100%; height: 38mm; object-fit: cover; background: #f5f4f0; }
-        table { width: 100%; border-collapse: collapse; font-size: 11px; }
-        th { width: 32%; text-align: left; font-weight: 600; background: #f5f4f0; border: 1px solid #ccc; padding: 6px 7px; vertical-align: top; }
-        th span { display: block; font-weight: 400; font-size: 9px; color: #555; margin-top: 1px; }
-        td { border: 1px solid #ccc; padding: 6px 7px; line-height: 1.45; }
-        .notes { margin-top: 6mm; }
-        .notes h3 { font-size: 11px; margin: 4mm 0 1.5mm; letter-spacing: .06em; text-transform: uppercase; }
-        .notes p { font-size: 11px; line-height: 1.6; margin: 0; }
-        .lines { height: 24mm; border-bottom: 1px solid #bbb; background: repeating-linear-gradient(transparent, transparent 7mm, #eee 7mm, #eee 7.2mm); }
-        footer { display: flex; justify-content: space-between; margin-top: 4mm; border-top: 1px solid #111; padding-top: 4px; font-size: 9px; color: #555; }
+        body { margin: 0; color: #111; font-family: Helvetica, Arial, "Microsoft YaHei", sans-serif; font-size: 10px; }
+        .tp-page { page-break-after: always; padding: 0 0 4mm; }
+        .tp-head { display: grid; grid-template-columns: 34mm 1fr; border: 1px solid #111; }
+        .tp-logo { display: flex; flex-direction: column; justify-content: center; padding: 3mm; font-size: 16px; font-weight: 800; letter-spacing: .06em; border-right: 1px solid #111; }
+        .tp-logo span { font-size: 9px; letter-spacing: .22em; font-weight: 500; border-top: 2px solid #111; margin-top: 2px; padding-top: 2px; }
+        .tp-hfields { display: flex; flex-wrap: wrap; }
+        .tp-hfields .f { flex: 1 1 30%; padding: 2mm 3mm; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+        .tp-hfields .f.wide { flex: 1 1 100%; border-right: 0; }
+        label { display: block; font-size: 7px; letter-spacing: .04em; color: #555; text-transform: uppercase; }
+        b { display: block; font-size: 10px; font-weight: 600; margin-top: 1px; }
+        .tp-sub { display: flex; border: 1px solid #111; border-top: 0; align-items: stretch; }
+        .tp-sub .f { flex: 1; padding: 2mm 3mm; border-right: 1px solid #ccc; }
+        .tp-thumb { width: 26mm; padding: 1mm; border-left: 1px solid #ccc; }
+        .tp-thumb img { width: 100%; height: 22mm; object-fit: contain; }
+        .tp-pageno { margin-left: auto; padding: 2mm 3mm; font-size: 8px; color: #555; align-self: center; }
+        .tp-section { background: #e9eef0; border: 1px solid #111; border-top: 0; padding: 1.5mm 3mm; font-size: 10px; font-weight: 700; }
+        .tp-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+        .tp-table th { background: #dfe7ea; border: 1px solid #111; padding: 2mm 1.5mm; font-size: 8px; text-align: left; font-weight: 700; }
+        .tp-table td { border: 1px solid #999; padding: 2mm 1.5mm; font-size: 8.5px; vertical-align: top; }
+        .tp-table th:nth-child(1), .tp-table td:nth-child(1) { width: 17%; }
+        .tp-table th:nth-child(5), .tp-table td:nth-child(5) { width: 20%; }
+        .tp-table.measure th, .tp-table.measure td { text-align: center; }
+        .tp-table.measure td:first-child, .tp-table.measure th:first-child { text-align: left; width: 34%; }
+        .tp-doc-title { margin-top: 6mm; font-size: 16px; font-weight: 800; border-bottom: 2px solid #111; padding-bottom: 1mm; }
+        .tp-brandline { margin-top: 2mm; font-size: 8px; letter-spacing: .08em; color: #444; }
+        .tp-cadimgs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; margin-top: 4mm; }
+        .tp-cadimgs img { width: 100%; height: 88mm; object-fit: contain; background: #f5f4f0; border: 1px solid #ddd; }
+        .tp-notes { display: grid; grid-template-columns: 1.2fr 1fr; gap: 6mm; margin-top: 5mm; }
+        .tp-notes h3 { font-size: 9px; margin: 0 0 1.5mm; letter-spacing: .05em; }
+        .tp-notes p { margin: 0; font-size: 9px; line-height: 1.55; }
+        .tp-lines { height: 20mm; border-bottom: 1px solid #bbb; background: repeating-linear-gradient(transparent, transparent 6mm, #eee 6mm, #eee 6.2mm); }
+        .tp-foot { margin-top: 4mm; border-top: 1px solid #111; padding-top: 1mm; font-size: 7.5px; color: #555; }
       </style></head><body>${sections}
       <script>window.addEventListener('load', () => setTimeout(() => window.print(), 500));<\/script>
       </body></html>`;
