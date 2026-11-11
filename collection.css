@@ -271,3 +271,5 @@
 .attach-label { display: inline-flex; align-items: center; gap: 8px; width: max-content; border: 1px solid #111; padding: 9px 14px; font-size: 13px; color: #111; cursor: pointer; background: #fff; }
 .attach-label svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.5; }
 .feedback-files { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; font-size: 12px; color: #444; }
+
+.feedback-files a { color: var(--accent, #e85a1a); font-size: 12px; }

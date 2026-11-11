@@ -624,10 +624,12 @@
       event.preventDefault();
       const files = Array.from(fileInput.files || []);
       const stored = [];
-      for (const file of files) {
+      for (let index = 0; index < files.length; index += 1) {
+        const file = files[index];
         let id = null;
         if (window.DemoStore && DemoStore.putBlob) {
-          try { id = await DemoStore.putBlob(file); } catch (error) { id = null; }
+          id = `feedback-${product.code}-${Date.now()}-${index}`;
+          try { await DemoStore.putBlob(id, file); } catch (error) { id = null; }
         }
         stored.push({ name: file.name, size: file.size, type: file.type, id });
       }
@@ -645,6 +647,20 @@
       } catch (error) { /* storage may be unavailable */ }
       form.reset();
       fileList.innerHTML = '';
+      if (stored.length) {
+        const receipt = el('div', 'feedback-files');
+        stored.forEach(item => {
+          if (!item.id || !window.DemoStore || !DemoStore.getBlob) return;
+          DemoStore.getBlob(item.id).then(blob => {
+            if (!blob) return;
+            const link = el('a', null, `Download ${item.name}`);
+            link.href = URL.createObjectURL(blob);
+            link.download = item.name;
+            receipt.append(link);
+          }).catch(() => {});
+        });
+        feedback.append(el('p', 'detail-label', 'Submitted attachments'), receipt);
+      }
       toast(`Feedback saved${files.length ? ` with ${files.length} attachment(s)` : ''} (sample)`);
     });
     feedback.append(form);
