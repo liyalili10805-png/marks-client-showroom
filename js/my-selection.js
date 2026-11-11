@@ -71,17 +71,49 @@
       type: product.type || '',
       colour: (product.colours && product.colours[0]) ? product.colours[0].name : '',
       material: mats[product.code] || 'To be confirmed',
+      baseMaterial: product.material || '',
+      fit: product.fit || '',
+      weight: product.weight || '',
       retail: product.retail || 'To be confirmed',
+      description: product.description || '',
       occasions: (product.occasions || []).join(' / '),
       image: product.image
     }));
   }
 
+  const ZH = {
+    gender: { women: '女装', men: '男装' },
+    type: { outerwear: '外套', top: '上装', bottom: '下装', shirt: '衬衫' },
+    colour: { Olive: '橄榄绿', Sand: '沙色', Charcoal: '炭灰', Black: '黑色', Navy: '海军蓝', Indigo: '靛蓝', Brown: '棕色', Grey: '灰色', Cream: '奶油色', Oat: '燕麦色', White: '白色', Camel: '驼色', 'Light wash': '浅洗', 'Light blue': '浅蓝', 'Red plaid': '红格', 'Navy plaid': '海军蓝格', Coffee: '咖啡色' },
+    material: { 'Cotton twill': '棉斜纹', 'Cotton blend': '棉混纺', 'Textured weave': '肌理织', Corduroy: '灯芯绒', Denim: '牛仔', 'Stretch denim': '弹力牛仔', 'Wool blend': '羊毛混纺', 'Faux wool': '仿羊毛', 'Quilted nylon': '绗缝尼龙', 'Cable knit': '麻花针织', 'Brushed flannel': '磨毛法兰绒', 'Cotton flannel': '棉法兰绒', 'Fleece knit': '摇粒绒', 'Sherpa fleece': '羊羔绒', 'Cotton knit': '棉针织', Linen: '亚麻', 'Stretch twill': '弹力斜纹', Ponte: '罗马布', 'Performance knit': '功能针织', 'Rigid denim': '硬挺牛仔', 'Fleece-lined knit': '加绒针织' },
+    fit: { 'Relaxed fit': '宽松版', 'Regular fit': '常规版', 'Straight leg': '直筒', 'High rise': '高腰', 'High rise wide leg': '高腰阔腿', Longline: '长款', 'Oversized fit': '廓形', 'Relaxed straight': '宽松直筒' },
+    weight: { 'Layering weight': '叠穿厚薄', 'Mid weight': '中厚', 'Heavy weight': '高厚', 'Light weight': '轻薄' }
+  };
+  const zh = (group, value) => (ZH[group] && ZH[group][value]) || '';
+  const bi = (group, value) => {
+    if (!value) return '—';
+    const cn = zh(group, value);
+    return cn ? `${value} / ${cn}` : value;
+  };
+
   function exportCsv(items) {
     const rows = itemRows(items);
-    const header = ['Code', 'Style', 'Gender', 'Type', 'Colour', 'Material', 'Target retail', 'Occasions', 'Image'];
+    const header = ['款号 Style No.', '款式名称 Style Name', '品类 Category', '性别 Gender', '颜色 Colour',
+      '面料 Fabric', '选中材料 Selected Material', '版型 Fit', '克重 Weight', '目标零售价 Target Retail',
+      '工艺说明 Workmanship', '图片 Image'];
     const lines = [header].concat(rows.map(row => [
-      row.code, row.name, row.gender, row.type, row.colour, row.material, row.retail, row.occasions, row.image
+      row.code,
+      row.name,
+      bi('type', row.type),
+      bi('gender', row.gender),
+      bi('colour', row.colour),
+      bi('material', row.baseMaterial),
+      bi('material', row.material),
+      bi('fit', row.fit),
+      bi('weight', row.weight),
+      row.retail,
+      row.description || '',
+      row.image
     ]));
     const csv = '\ufeff' + lines.map(line => line
       .map(cell => `"${String(cell == null ? '' : cell).replace(/"/g, '""')}"`)
@@ -96,6 +128,91 @@
     link.remove();
     setTimeout(() => URL.revokeObjectURL(link.href), 1000);
     toast(`Exported ${items.length} style${items.length > 1 ? 's' : ''} to CSV`);
+  }
+
+  function techPackHtml(items) {
+    const mats = materialMap();
+    const date = new Date().toLocaleDateString();
+    const row = (cn, en, value) => `<tr><th>${cn}<span>${en}</span></th><td>${value == null || value === '' ? '—' : value}</td></tr>`;
+    const sections = items.map((product, index) => {
+      const views = (product.views && product.views.length ? product.views : [product.image])
+        .map(src => new URL(src, location.href).href);
+      const main = views[0];
+      const thumbs = views.slice(1, 4);
+      const colour = (product.colours && product.colours[0]) || null;
+      return `<section class="pack">
+        <header>
+          <div class="brand">SOHO FASHION × MARKS</div>
+          <div class="doc">工艺单 / TECH PACK</div>
+          <div class="meta">AW26 · ${storeLabel()} · ${date} · ${index + 1} / ${items.length}</div>
+        </header>
+        <div class="body">
+          <div class="images">
+            <img class="main" src="${main}" alt="${product.name}">
+            ${thumbs.map(src => `<img class="thumb" src="${src}" alt="${product.name} view">`).join('')}
+          </div>
+          <table>
+            ${row('款号', 'Style No.', product.code)}
+            ${row('款式名称', 'Style Name', product.name)}
+            ${row('品类', 'Category', bi('type', product.type))}
+            ${row('性别', 'Gender', bi('gender', product.gender))}
+            ${row('版型', 'Fit', bi('fit', product.fit))}
+            ${row('面料', 'Fabric', bi('material', product.material))}
+            ${row('选中材料', 'Selected Material', mats[product.code] ? bi('material', mats[product.code]) : '待确认 / TBC')}
+            ${row('颜色', 'Colour', colour ? bi('colour', colour.name) : '—')}
+            ${row('克重', 'Weight', bi('weight', product.weight))}
+            ${row('目标零售价', 'Target Retail', product.retail === 'To be confirmed' ? 'To be confirmed / 待确认' : (product.retail || '待确认 / TBC'))}
+            ${row('季节', 'Season', 'AW26 秋冬')}
+          </table>
+        </div>
+        <div class="notes">
+          <h3>工艺说明 / Workmanship</h3>
+          <p>${product.description || ''}</p>
+          <h3>备注 / Remarks</h3>
+          <div class="lines"></div>
+        </div>
+        <footer><span>SOHO FASHION · 工艺单 TECH PACK</span><span>${product.code} · ${index + 1}/${items.length}</span></footer>
+      </section>`;
+    }).join('');
+
+    return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>工艺单 Tech Pack</title>
+      <style>
+        @page { size: A4; margin: 12mm; }
+        * { box-sizing: border-box; }
+        body { margin: 0; color: #111; font-family: Helvetica, Arial, "Microsoft YaHei", sans-serif; }
+        .pack { page-break-after: always; padding: 2mm 0 4mm; }
+        header { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #111; padding-bottom: 6px; }
+        .brand { font-size: 12px; font-weight: 700; letter-spacing: .08em; }
+        .doc { font-size: 20px; font-weight: 700; }
+        .meta { font-size: 10px; color: #444; }
+        .body { display: grid; grid-template-columns: 72mm minmax(0, 1fr); gap: 8mm; margin-top: 6mm; }
+        .images { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; align-content: start; }
+        .images .main { grid-column: 1 / -1; width: 100%; height: 112mm; object-fit: contain; background: #f5f4f0; }
+        .images .thumb { width: 100%; height: 38mm; object-fit: cover; background: #f5f4f0; }
+        table { width: 100%; border-collapse: collapse; font-size: 11px; }
+        th { width: 32%; text-align: left; font-weight: 600; background: #f5f4f0; border: 1px solid #ccc; padding: 6px 7px; vertical-align: top; }
+        th span { display: block; font-weight: 400; font-size: 9px; color: #555; margin-top: 1px; }
+        td { border: 1px solid #ccc; padding: 6px 7px; line-height: 1.45; }
+        .notes { margin-top: 6mm; }
+        .notes h3 { font-size: 11px; margin: 4mm 0 1.5mm; letter-spacing: .06em; text-transform: uppercase; }
+        .notes p { font-size: 11px; line-height: 1.6; margin: 0; }
+        .lines { height: 24mm; border-bottom: 1px solid #bbb; background: repeating-linear-gradient(transparent, transparent 7mm, #eee 7mm, #eee 7.2mm); }
+        footer { display: flex; justify-content: space-between; margin-top: 4mm; border-top: 1px solid #111; padding-top: 4px; font-size: 9px; color: #555; }
+      </style></head><body>${sections}
+      <script>window.addEventListener('load', () => setTimeout(() => window.print(), 500));<\/script>
+      </body></html>`;
+  }
+
+  function exportTechPack(items) {
+    const win = window.open('', '_blank');
+    if (!win) {
+      toast('Allow pop-ups to export the tech pack');
+      return;
+    }
+    win.document.open();
+    win.document.write(techPackHtml(items));
+    win.document.close();
+    toast(`Tech pack ready — ${items.length} style${items.length > 1 ? 's' : ''}`);
   }
 
   function submitSelection(items) {
@@ -198,7 +315,10 @@
 
     const aside = el('aside', 'sel-aside');
     aside.append(el('p', 'sel-count-label', 'Selected styles'), el('p', 'sel-count', String(items.length)));
-    const exportButton = el('button', 'btn-accent', 'Export selection (CSV)');
+    const techPackButton = el('button', 'btn-accent', 'Export tech pack (PDF)');
+    techPackButton.type = 'button';
+    techPackButton.addEventListener('click', () => exportTechPack(items));
+    const exportButton = el('button', 'btn-outline', 'Export CSV');
     exportButton.type = 'button';
     exportButton.addEventListener('click', () => exportCsv(items));
     const submit = el('button', 'btn-outline', 'Submit selection');
@@ -211,8 +331,8 @@
       toast('Selection cleared');
       render();
     });
-    aside.append(exportButton, submit, clear);
-    aside.append(el('p', 'sel-note', 'Export the table for your buying sheet, or submit the selection for review. Feedback is collected on each style page.'));
+    aside.append(techPackButton, exportButton, submit, clear);
+    aside.append(el('p', 'sel-note', 'TECH PACK prints one A4 page per style, bilingual. CSV is for your buying sheet. Feedback is collected on each style page.'));
 
     body.append(main, aside);
     root.append(body);
