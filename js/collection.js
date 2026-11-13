@@ -79,7 +79,7 @@
 
     const info = el('div', 'col-card-info');
     const title = el('div');
-    title.append(el('h3', null, product.name), el('p', 'col-code', product.referenceBrand ? `${product.code} · ${product.referenceBrand}` : product.code));
+    title.append(el('h3', null, product.name), el('p', 'col-code', product.code));
     const bottom = el('div', 'col-card-bottom');
     bottom.append(swatches(product));
 
@@ -419,7 +419,7 @@
     }
 
     const side = el('div', 'detail-side');
-    side.append(el('p', 'eyebrow', product.referenceBrand ? `BRAND REFERENCE · ${product.referenceBrand} · ${product.code}` : `SAMPLE STYLE ${product.code}`));
+    side.append(el('p', 'eyebrow', `STYLE ${product.code}`));
     side.append(el('h1', null, product.name));
     if (product.subtitle) side.append(el('p', 'detail-subtitle', product.subtitle));
 
@@ -429,7 +429,7 @@
       weight: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></svg>'
     };
     const facts = el('div', 'detail-facts');
-    [[product.fit, factIcons.fit], [product.texture, factIcons.texture], [product.weight, factIcons.weight]].forEach(([fact, icon]) => {
+    [[product.fit, factIcons.fit], [product.texture, factIcons.texture], [product.weight, factIcons.weight]].filter(([fact]) => fact).forEach(([fact, icon]) => {
       const item = el('span', 'detail-fact');
       item.innerHTML = icon;
       item.append(document.createTextNode(fact));
@@ -450,7 +450,7 @@
     });
     side.append(colourRow);
 
-    side.append(el('p', 'detail-label', product.referenceBrand ? 'Source fabric' : 'Material options'));
+    side.append(el('p', 'detail-label', 'Material options'));
     const MATERIAL_KEY = 'soho-material-choice';
     let chosenMaterial = 0;
     try {
@@ -497,8 +497,7 @@
     });
     side.append(materialList);
 
-    side.append(el('p', 'detail-label', product.referenceBrand ? 'Development status' : 'Target retail'));
-    side.append(el('p', 'detail-value', product.retail));
+    if (!product.code.startsWith('RF27-')) { side.append(el('p', 'detail-label', 'Target retail')); side.append(el('p', 'detail-value', product.retail)); }
 
     const actions = el('div', 'detail-cta');
     const add = el('button', 'btn-accent', selection.includes(product.code) ? 'In My Selection' : 'Add to selection →');
@@ -563,15 +562,8 @@
     const styleCopy = el('div', 'style-copy');
     styleCopy.append(el('h2', null, 'Style details'));
     styleCopy.append(el('p', 'detail-why', product.description || ''));
-    if (product.referenceUrl) {
-      const source = el('p', 'detail-why');
-      const link = el('a', 'text-link', `View official ${product.referenceBrand} product →`);
-      link.href = product.referenceUrl; link.target = '_blank'; link.rel = 'noopener noreferrer';
-      source.append(link); styleCopy.append(source);
-      styleCopy.append(el('p', 'detail-why', `Brand style: ${product.referenceStyleCode || 'See official source'} · Source checked: ${product.capturedAt}. This is a brand reference for AW27/28 development review.`));
-      if (product.trendReference) styleCopy.append(el('p', 'detail-why', `Trend: ${product.trendReference.title} · Report page ${product.trendReference.page}. ${product.trendReference.reasonEN}`));
-      if (product.sourceDetails && product.sourceDetails.sizes) styleCopy.append(el('p', 'detail-why', `Source sizes: ${Array.isArray(product.sourceDetails.sizes) ? product.sourceDetails.sizes.join(', ') : product.sourceDetails.sizes}`));
-    }
+    if (product.trendReference) styleCopy.append(el('p', 'detail-why', `Trend direction: ${product.trendReference.title} · ${product.trendReference.report} report, page ${product.trendReference.page}. ${product.trendReference.reasonEN}`));
+
 
     const similarBlock = el('div', 'style-similar');
     similarBlock.append(el('h2', null, 'Similar styles'));
@@ -599,22 +591,35 @@
     materialSection.id = 'materials';
     materialSection.append(el('h2', null, `Materials for ${product.name}`));
     const table = el('div', 'materials-table');
+    table.style.setProperty('--material-count', product.materials.length);
     const header = el('div', 'materials-row materials-head');
     header.append(el('span', null, ''));
     product.materials.forEach((material, index) => {
       header.append(el('span', null, `Option ${String.fromCharCode(65 + index)} · ${material.name}`));
     });
     table.append(header);
-    [['Hand feel', 'hand'], ['Structure', 'structure'], ['Composition', 'composition'], ['Weight', 'weight'], ['Care', 'care'], ['Indicative cost', 'cost'], ['Target retail', 'retail'], ['Sample status', 'status']].forEach(([label, key]) => {
+    [['Hand feel', 'hand'], ['Construction', 'structure'], ['Composition', 'composition'], ['Care', 'care'], ['Development status', 'status']].forEach(([label, key]) => {
       const row = el('div', 'materials-row');
       row.append(el('span', 'materials-label', label));
       product.materials.forEach((material, index) => {
         const cell = el('span', null, material[key]);
-        if (index === 0) cell.classList.add('selected');
+        if (index === chosenMaterial) cell.classList.add('selected');
         row.append(cell);
       });
       table.append(row);
     });
+    if (product.code.startsWith('RF27-')) {
+      materialSection.append(el('p', 'material-note', 'One reference fabric and two development directions. Digital previews show colour and pattern intent; physical fabrics require sampling and approval.'));
+      const concepts = el('div', 'fabric-concepts');
+      product.materials.forEach((material, index) => {
+        const concept = el('article', 'fabric-concept');
+        const preview = el('div', 'fabric-preview'); preview.dataset.pattern = material.pattern; preview.style.setProperty('--fabric-colour', material.previewColour || (product.colours[0] || {}).hex || '#777');
+        preview.setAttribute('role', 'img'); preview.setAttribute('aria-label', `${material.name} — schematic colour and pattern preview`);
+        concept.append(preview, el('p', 'fabric-option', `OPTION ${String.fromCharCode(65 + index)} · ${material.status}`), el('h3', null, material.name));
+        concept.append(el('p', 'fabric-trend', `${material.trendBasis.title} · Page ${material.trendBasis.page}`), el('p', 'fabric-reason', material.trendBasis.reason));
+        const choose = el('button', 'btn-outline', 'Choose this direction'); choose.type = 'button'; choose.addEventListener('click', () => { selectMaterial(index); toast(`${material.name} selected`); }); concept.append(choose); concepts.append(concept);
+      }); materialSection.append(concepts);
+    }
     const chooseRow = el('div', 'materials-row materials-choose');
     chooseRow.append(el('span', null, ''));
     product.materials.forEach((material, index) => {
@@ -627,10 +632,6 @@
       chooseRow.append(button);
     });
     table.append(chooseRow);
-    if (product.referenceBrand) {
-      table.querySelectorAll('.materials-row').forEach(row => { row.style.gridTemplateColumns = 'minmax(130px, 0.7fr) minmax(0, 2fr)'; });
-      const sourceHeading = header.children[1]; if (sourceHeading) sourceHeading.textContent = `Official source fabric · ${product.materials[0].name}`;
-    }
     materialSection.append(table);
     root.append(materialSection);
 
