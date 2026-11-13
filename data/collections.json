@@ -10,6 +10,2090 @@
   },
   "products": [
     {
+      "code": "RF27-O01",
+      "name": "Leather-Collar Denim Shacket",
+      "category": "Men",
+      "gender": "men",
+      "type": "outerwear",
+      "fit": "Straight cut; long sleeves; straight buttoned cuffs.",
+      "texture": "Black selvedge denim with a lamb-leather collar and leather details.",
+      "weight": "Weight not stated by source",
+      "colours": [
+        {
+          "name": "Black",
+          "hex": "#1D1E20",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-o01-01.webp",
+      "listImage": "assets/references/aw2728/rf27-o01-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-o01-02.webp",
+        "assets/references/aw2728/rf27-o01-01.webp",
+        "assets/references/aw2728/rf27-o01-03.webp",
+        "assets/references/aw2728/rf27-o01-04.webp"
+      ],
+      "viewLabels": [
+        "Leather-Collar Denim Shacket — official front view",
+        "Leather-Collar Denim Shacket — official model view",
+        "Leather-Collar Denim Shacket — official back view",
+        "Leather-Collar Denim Shacket — official model view"
+      ],
+      "retail": "To be confirmed",
+      "why": "Black selvedge denim contrasts with a tonal leather collar and pocket trim. The straight body and layered chest pocket translate the report’s material-contrast direction into familiar everyday workwear.",
+      "materials": [
+        {
+          "name": "Denim",
+          "hand": "Black selvedge denim with a lamb-leather collar and leather details.",
+          "structure": "Straight cut; long sleeves; straight buttoned cuffs.",
+          "composition": "Main: 100% cotton. Secondary material: 100% lamb leather. Jacron patch: 100% cow leather.",
+          "weight": "Not stated by source brand",
+          "care": "Do not wash; Do not bleach; Do not tumble dry; Iron at low temperature; Gentle dry clean",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Denim",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "LEMAIRE reference / Shacket / Tonal Material Contrast",
+      "description": "A straight-cut black selvedge-denim overshirt with a leather shirt collar, metal-button front and layered chest patch pocket. Tonal material contrast provides a clear development reference for everyday utility dressing.",
+      "referenceBrand": "LEMAIRE",
+      "referenceUrl": "https://www.lemaire.fr/products/workwear-overshirt-with-leather-collar-men-bk999-black-ld1075-black-selvedge-denim-sh1310-ld1075-bk999",
+      "referenceStyleCode": "SH1310 LD1075 BK999",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "outerwear",
+        "page": 3,
+        "title": "Shacket / Tonal Material Contrast",
+        "reasonEN": "Black selvedge denim contrasts with a tonal leather collar and pocket trim. The straight body and layered chest pocket translate the report’s material-contrast direction into familiar everyday workwear."
+      },
+      "sourceDetails": {
+        "composition": "Main: 100% cotton. Secondary material: 100% lamb leather. Jacron patch: 100% cow leather.",
+        "care": "Do not wash; Do not bleach; Do not tumble dry; Iron at low temperature; Gentle dry clean",
+        "sizes": "44; 46; 48; 50; 52; 54",
+        "officialPrice": {
+          "value": 690,
+          "currency": "EUR"
+        },
+        "colour": {
+          "name": "Black",
+          "hex": "#1D1E20",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://www.lemaire.fr/cdn/shop/files/SH1310_LD1075_BK999_1_86befa90-09f2-4c6f-89fc-31b50c27c416.jpg?quality=90&v=1782642954&width=1600",
+          "alt": "Leather-Collar Denim Shacket — official model view",
+          "sitePath": "assets/references/aw2728/rf27-o01-01.webp",
+          "sourceSha256": "022c0de8d3ed2f97a8d79c43c90175d432e1ff42487883bb57b4f717e200660f"
+        },
+        {
+          "role": "front",
+          "url": "https://www.lemaire.fr/cdn/shop/files/SH1310_LD1075_BK999_20_5adddeab-0629-4a79-92b8-56365442495b.jpg?quality=90&v=1782642954&width=1600",
+          "alt": "Leather-Collar Denim Shacket — official front view",
+          "sitePath": "assets/references/aw2728/rf27-o01-02.webp",
+          "sourceSha256": "96da499afb410252ade85f291df81400d65c4f9176a1f6e4b2d63c574de6e3d9"
+        },
+        {
+          "role": "back",
+          "url": "https://www.lemaire.fr/cdn/shop/files/SH1310_LD1075_BK999_6_6b1a1dab-efd6-48a0-a4ba-a1d54400580a.jpg?quality=90&v=1782642954&width=1600",
+          "alt": "Leather-Collar Denim Shacket — official back view",
+          "sitePath": "assets/references/aw2728/rf27-o01-03.webp",
+          "sourceSha256": "81ed8f0962d3d91f6b26dc228e08e272df9134883de193e9a7a2e644fb3e0003"
+        },
+        {
+          "role": "model",
+          "url": "https://www.lemaire.fr/cdn/shop/files/SH1310_LD1075_BK999_2_4c1505de-b370-49c1-997a-00e336d4a6a6.jpg?quality=90&v=1782642955&width=1600",
+          "alt": "Leather-Collar Denim Shacket — official model view",
+          "sitePath": "assets/references/aw2728/rf27-o01-04.webp",
+          "sourceSha256": "b3eb8727987c76154268db84c3a28f5d4b2395f7a9f6ffd70ba04347ba5bf3ec"
+        }
+      ]
+    },
+    {
+      "code": "RF27-S04",
+      "name": "Women’s L/S Kanan Stripe Shirt — Bleach",
+      "category": "Women",
+      "gender": "women",
+      "type": "top",
+      "fit": "Loose, slightly boxy fit",
+      "texture": "Lightweight yarn-dyed Oxford, garment washed",
+      "weight": "4.7 oz",
+      "colours": [
+        {
+          "name": "Bleach",
+          "hex": "#D9E1E6",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-s04-01.webp",
+      "listImage": "assets/references/aw2728/rf27-s04-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-s04-04.webp",
+        "assets/references/aw2728/rf27-s04-01.webp",
+        "assets/references/aw2728/rf27-s04-02.webp",
+        "assets/references/aw2728/rf27-s04-03.webp",
+        "assets/references/aw2728/rf27-s04-05.webp"
+      ],
+      "viewLabels": [
+        "Women’s L/S Kanan Stripe Shirt — Bleach — official front view",
+        "Women’s L/S Kanan Stripe Shirt — Bleach — official model view",
+        "Women’s L/S Kanan Stripe Shirt — Bleach — official back view",
+        "Women’s L/S Kanan Stripe Shirt — Bleach — official model view",
+        "Women’s L/S Kanan Stripe Shirt — Bleach — official back view"
+      ],
+      "retail": "To be confirmed",
+      "why": "Pale stripes and garment washing support the soft-blue direction, with a slightly boxy silhouette suited to relaxed womenswear layering.",
+      "materials": [
+        {
+          "name": "Cotton oxford",
+          "hand": "Lightweight yarn-dyed Oxford, garment washed",
+          "structure": "Loose, slightly boxy fit",
+          "composition": "100% Cotton",
+          "weight": "4.7 oz",
+          "care": "Not stated by the source brand",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Cotton oxford",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "Carhartt WIP reference / Soft Blues and Warm, Deep Neutrals",
+      "description": "A lightweight Oxford shirt with yarn-dyed pale stripes. Garment washing and a slightly boxy loose cut create a soft, relaxed shape with a small embroidered script detail.",
+      "referenceBrand": "Carhartt WIP",
+      "referenceUrl": "https://us.carhartt-wip.com/en-us/products/w-l-s-kanan-shirt-kanan-stripe-bleach-446",
+      "referenceStyleCode": "I037120_3VF_XX",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "shirt",
+        "page": 9,
+        "title": "Soft Blues and Warm, Deep Neutrals",
+        "reasonEN": "Pale stripes and garment washing support the soft-blue direction, with a slightly boxy silhouette suited to relaxed womenswear layering."
+      },
+      "sourceDetails": {
+        "composition": "100% Cotton",
+        "care": "Not stated by the source brand",
+        "sizes": "XS; S; M; L",
+        "officialPrice": {
+          "value": 108,
+          "currency": "USD"
+        },
+        "colour": {
+          "name": "Bleach",
+          "hex": "#D9E1E6",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037120_3VF_XX-OF-01.jpg?crop=center&height=2251&v=1782840695&width=1501",
+          "alt": "Women’s L/S Kanan Stripe Shirt — Bleach — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s04-01.webp",
+          "sourceSha256": "86496bbf09bbeb6229117ccbfbf996dbc9c6e2026e101e9d6d22099132dfc6d7"
+        },
+        {
+          "role": "back",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037120_3VF_XX-OF-02.jpg?crop=center&height=2251&v=1782840695&width=1501",
+          "alt": "Women’s L/S Kanan Stripe Shirt — Bleach — official back view",
+          "sitePath": "assets/references/aw2728/rf27-s04-02.webp",
+          "sourceSha256": "c21916da68da38bc74cd24b70547d5bbb701da54493c0847e03ffb744045b8f4"
+        },
+        {
+          "role": "model",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037120_3VF_XX-OF-03.jpg?crop=center&height=2251&v=1782840695&width=1501",
+          "alt": "Women’s L/S Kanan Stripe Shirt — Bleach — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s04-03.webp",
+          "sourceSha256": "414b15ca775ccc5b047d88075a3fa166d9b2fae380a258f0e8bdc0747f192cd2"
+        },
+        {
+          "role": "front",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037120_3VF_XX-ST-01_c29acdd5-65f0-4986-a10d-f417f13dcb5c.jpg?crop=center&height=3000&v=1781544696&width=2000",
+          "alt": "Women’s L/S Kanan Stripe Shirt — Bleach — official front view",
+          "sitePath": "assets/references/aw2728/rf27-s04-04.webp",
+          "sourceSha256": "fa62b2d80e242fe47052727836baa6be28f77eacc6b77ea0defa09d77f892cff"
+        },
+        {
+          "role": "back",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037120_3VF_XX-ST-02_026a2e3b-f9e2-4081-b580-afec8cc4749b.jpg?crop=center&height=3000&v=1781544696&width=2000",
+          "alt": "Women’s L/S Kanan Stripe Shirt — Bleach — official back view",
+          "sitePath": "assets/references/aw2728/rf27-s04-05.webp",
+          "sourceSha256": "a447415061d71446bb9389d5f2bec08f95dd2420af38f2181e644db95b091b38"
+        }
+      ]
+    },
+    {
+      "code": "RF27-T01",
+      "name": "Brushed Jersey Wide Pants",
+      "category": "Men",
+      "gender": "men",
+      "type": "bottom",
+      "fit": "Wide tapered leg; two front pleats; elasticated waist with an internal drawcord; zip fly; one rear patch pocket.",
+      "texture": "Finely brushed jersey; the official description notes a soft feel and wrinkle resistance.",
+      "weight": "Weight not stated by source",
+      "colours": [
+        {
+          "name": "08 DARK GRAY",
+          "hex": "#363A3B",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-t01-01.webp",
+      "listImage": "assets/references/aw2728/rf27-t01-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-t01-02.webp",
+        "assets/references/aw2728/rf27-t01-01.webp",
+        "assets/references/aw2728/rf27-t01-03.webp",
+        "assets/references/aw2728/rf27-t01-04.webp"
+      ],
+      "viewLabels": [
+        "Brushed Jersey Wide Pants — official front view",
+        "Brushed Jersey Wide Pants — official model view",
+        "Brushed Jersey Wide Pants — official back view",
+        "Brushed Jersey Wide Pants — official detail view"
+      ],
+      "retail": "To be confirmed",
+      "why": "An elasticated waist and internal drawcord sit behind a clean pleated front. Brushed jersey translates relaxed tailoring into an everyday comfort option for Mark’s.",
+      "materials": [
+        {
+          "name": "Brushed jersey",
+          "hand": "Finely brushed jersey; the official description notes a soft feel and wrinkle resistance.",
+          "structure": "Wide tapered leg; two front pleats; elasticated waist with an internal drawcord; zip fly; one rear patch pocket.",
+          "composition": "Body: 48% polyester, 38% cotton, 14% rayon. The official listing states 30% recycled polyester fibres. Pocket fabric: 100% polyester.",
+          "weight": "Not stated by source brand",
+          "care": "Machine wash in a laundry net; dry cleaning permitted; do not tumble dry. Dark colours may fade or transfer.",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Brushed jersey",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "Uniqlo U reference / Comfort Within: A Cleaner Adjustable Waist",
+      "description": "Men’s brushed jersey trousers with a wide tapered leg, two front pleats and an elasticated waist with an internal drawcord. A zip fly and rear patch pocket keep the finish simple.",
+      "referenceBrand": "Uniqlo U",
+      "referenceUrl": "https://www.uniqlo.com/jp/ja/products/E487257-000/00",
+      "referenceStyleCode": "487257",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "trousers",
+        "page": 6,
+        "title": "Comfort Within: A Cleaner Adjustable Waist",
+        "reasonEN": "An elasticated waist and internal drawcord sit behind a clean pleated front. Brushed jersey translates relaxed tailoring into an everyday comfort option for Mark’s."
+      },
+      "sourceDetails": {
+        "composition": "Body: 48% polyester, 38% cotton, 14% rayon. The official listing states 30% recycled polyester fibres. Pocket fabric: 100% polyester.",
+        "care": "Machine wash in a laundry net; dry cleaning permitted; do not tumble dry. Dark colours may fade or transfer.",
+        "sizes": "XS; S; M; L; XL; XXL; 3XL; 4XL",
+        "officialPrice": null,
+        "colour": {
+          "name": "08 DARK GRAY",
+          "hex": "#363A3B",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://image.uniqlo.com/UQ/ST3/jp/imagesgoods/487257/item/jpgoods_08_487257_3x4.jpg?width=1200",
+          "alt": "Brushed Jersey Wide Pants — official model view",
+          "sitePath": "assets/references/aw2728/rf27-t01-01.webp",
+          "sourceSha256": "2bf3c99fcd95df5ac397ddb84d19817491483b08e1954cd6fc602ddf5c1479ff"
+        },
+        {
+          "role": "front",
+          "url": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/487257/sub/goods_487257_sub14_3x4.jpg?width=1200",
+          "alt": "Brushed Jersey Wide Pants — official front view",
+          "sitePath": "assets/references/aw2728/rf27-t01-02.webp",
+          "sourceSha256": "891468bd88d500d2abaca1057bf72aed91572f74a476fe89872b45053efb8bc1"
+        },
+        {
+          "role": "back",
+          "url": "https://image.uniqlo.com/UQ/ST3/jp/imagesgoods/487257/sub/jpgoods_487257_sub3_3x4.jpg?width=1200",
+          "alt": "Brushed Jersey Wide Pants — official back view",
+          "sitePath": "assets/references/aw2728/rf27-t01-03.webp",
+          "sourceSha256": "0b35fa4380d3857b8b92ec8992cbeb26f4e53e6638dc329b78dcd64e50aa69a7"
+        },
+        {
+          "role": "detail",
+          "url": "https://image.uniqlo.com/UQ/ST3/jp/imagesgoods/487257/feature/jpgoods_487257_feature2.jpg?width=1200",
+          "alt": "Brushed Jersey Wide Pants — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-t01-04.webp",
+          "sourceSha256": "c2b3c094977fdee30cb67d8d02661a898ac2f5c1371a600dde93c8b237d0f1b9"
+        }
+      ]
+    },
+    {
+      "code": "RF27-O02",
+      "name": "Prescott Contrast-Collar Shacket",
+      "category": "Women",
+      "gender": "women",
+      "type": "outerwear",
+      "fit": "Fit not stated by source",
+      "texture": "Unlined midweight cotton canvas; garment-dyed; corduroy collar.",
+      "weight": "Weight not stated by source",
+      "colours": [
+        {
+          "name": "String",
+          "hex": "#C8B8A1",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-o02-01.webp",
+      "listImage": "assets/references/aw2728/rf27-o02-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-o02-03.webp",
+        "assets/references/aw2728/rf27-o02-01.webp",
+        "assets/references/aw2728/rf27-o02-02.webp",
+        "assets/references/aw2728/rf27-o02-04.webp"
+      ],
+      "viewLabels": [
+        "Prescott Contrast-Collar Shacket — official front view",
+        "Prescott Contrast-Collar Shacket — official model view",
+        "Prescott Contrast-Collar Shacket — official model view",
+        "Prescott Contrast-Collar Shacket — official back view"
+      ],
+      "retail": "To be confirmed",
+      "why": "A corduroy collar contrasts with garment-dyed cotton canvas while twin chest pockets retain workwear clarity. It offers a practical women’s reference for contrast-collar shackets and warm, varied surfaces.",
+      "materials": [
+        {
+          "name": "Corduroy",
+          "hand": "Unlined midweight cotton canvas; garment-dyed; corduroy collar.",
+          "structure": "Refer to source brand",
+          "composition": "Upper material: 100% cotton.",
+          "weight": "Not stated by source brand",
+          "care": "Hang to dry; Iron up to 200°C; Machine washable up to 40°C; Tumble dry at up to 60°C",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Corduroy",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "Carhartt WIP reference / Shacket / Tonal Material Contrast",
+      "description": "An unlined cotton-canvas shirt jacket with a contrasting corduroy collar, adjustable cuffs and two buttoned chest pockets. Garment dyeing adds tonal variation to the warm neutral colourway.",
+      "referenceBrand": "Carhartt WIP",
+      "referenceUrl": "https://www.carhartt-wip.com/en-de/p/w-prescott-shirt-jac-string-leather-garment-dyed-46",
+      "referenceStyleCode": "I036513_3VY_GD",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "outerwear",
+        "page": 3,
+        "title": "Shacket / Tonal Material Contrast",
+        "reasonEN": "A corduroy collar contrasts with garment-dyed cotton canvas while twin chest pockets retain workwear clarity. It offers a practical women’s reference for contrast-collar shackets and warm, varied surfaces."
+      },
+      "sourceDetails": {
+        "composition": "Upper material: 100% cotton.",
+        "care": "Hang to dry; Iron up to 200°C; Machine washable up to 40°C; Tumble dry at up to 60°C",
+        "sizes": "XS; S; M; L",
+        "officialPrice": {
+          "value": 159,
+          "currency": "EUR"
+        },
+        "colour": {
+          "name": "String",
+          "hex": "#C8B8A1",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://cdn.media.amplience.net/i/carhartt_wip/I036513_3VY_GD-OF-01?%24OF%24=&fmt=jpg&qlt=90&w=1600",
+          "alt": "Prescott Contrast-Collar Shacket — official model view",
+          "sitePath": "assets/references/aw2728/rf27-o02-01.webp",
+          "sourceSha256": "4bedd7fa842224e5feebe21fcb99db5aa7e53a35cec5f1758c830e2d2026f828"
+        },
+        {
+          "role": "model",
+          "url": "https://cdn.media.amplience.net/i/carhartt_wip/I036513_3VY_GD-OF-03?%24OF%24=&fmt=jpg&qlt=90&w=1600",
+          "alt": "Prescott Contrast-Collar Shacket — official model view",
+          "sitePath": "assets/references/aw2728/rf27-o02-02.webp",
+          "sourceSha256": "c500cdfe0a25fed47ac62a1d2347f00b032d94d95b91599d92f33dd1d58d1af5"
+        },
+        {
+          "role": "front",
+          "url": "https://cdn.media.amplience.net/i/carhartt_wip/I036513_3VY_GD-ST-01?%24ST%24=&fmt=jpg&qlt=90&w=1600",
+          "alt": "Prescott Contrast-Collar Shacket — official front view",
+          "sitePath": "assets/references/aw2728/rf27-o02-03.webp",
+          "sourceSha256": "788a9ad4b709241990d8c5e3fceeed7a5278b4287c1ff87a549fdcc515353c31"
+        },
+        {
+          "role": "back",
+          "url": "https://cdn.media.amplience.net/i/carhartt_wip/I036513_3VY_GD-OF-02?%24OF%24=&fmt=jpg&qlt=90&w=1600",
+          "alt": "Prescott Contrast-Collar Shacket — official back view",
+          "sitePath": "assets/references/aw2728/rf27-o02-04.webp",
+          "sourceSha256": "2673c0c7d4b521aba1c8d3732feab2f904fa2586a73febce82b095e4c552947e"
+        }
+      ]
+    },
+    {
+      "code": "RF27-S01",
+      "name": "L/S Craft Shirt — Cypress",
+      "category": "Men",
+      "gender": "men",
+      "type": "top",
+      "fit": "Loose fit",
+      "texture": "Midweight polycotton twill",
+      "weight": "7.2 oz",
+      "colours": [
+        {
+          "name": "Cypress",
+          "hex": "#4D5847",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-s01-01.webp",
+      "listImage": "assets/references/aw2728/rf27-s01-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-s01-04.webp",
+        "assets/references/aw2728/rf27-s01-01.webp",
+        "assets/references/aw2728/rf27-s01-02.webp",
+        "assets/references/aw2728/rf27-s01-03.webp",
+        "assets/references/aw2728/rf27-s01-05.webp"
+      ],
+      "viewLabels": [
+        "L/S Craft Shirt — Cypress — official front view",
+        "L/S Craft Shirt — Cypress — official model view",
+        "L/S Craft Shirt — Cypress — official back view",
+        "L/S Craft Shirt — Cypress — official model view",
+        "L/S Craft Shirt — Cypress — official back view"
+      ],
+      "retail": "To be confirmed",
+      "why": "Flap chest pockets and a roomy back pleat translate the hybrid-uniform direction into a practical button-front shirt for everyday layering.",
+      "materials": [
+        {
+          "name": "Twill",
+          "hand": "Midweight polycotton twill",
+          "structure": "Loose fit",
+          "composition": "65% Polyester, 35% Cotton",
+          "weight": "7.2 oz",
+          "care": "Not stated by the source brand",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Twill",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "Carhartt WIP reference / Shirting Meets Sport Construction",
+      "description": "A long-sleeved, loose-fit work shirt in polycotton twill. Two buttoned flap pockets and a back pleat give it practical character and room for layering.",
+      "referenceBrand": "Carhartt WIP",
+      "referenceUrl": "https://us.carhartt-wip.com/en-us/products/l-s-craft-shirt-cypress-767",
+      "referenceStyleCode": "I033814_63_XX",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "shirt",
+        "page": 5,
+        "title": "Shirting Meets Sport Construction",
+        "reasonEN": "Flap chest pockets and a roomy back pleat translate the hybrid-uniform direction into a practical button-front shirt for everyday layering."
+      },
+      "sourceDetails": {
+        "composition": "65% Polyester, 35% Cotton",
+        "care": "Not stated by the source brand",
+        "sizes": "XS; S; M; L; XL; XXL",
+        "officialPrice": {
+          "value": 125,
+          "currency": "USD"
+        },
+        "colour": {
+          "name": "Cypress",
+          "hex": "#4D5847",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I033814_63_XX-OF-01_dbb3f14e-250f-4bfa-b794-05bf8f27f9d0.jpg?crop=center&height=2251&v=1763404276&width=1501",
+          "alt": "L/S Craft Shirt — Cypress — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s01-01.webp",
+          "sourceSha256": "93cc4abaa6b244cb5f0e6b0bb2f36af54344dbfc5ce1ae56b671859e5a610156"
+        },
+        {
+          "role": "back",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I033814_63_XX-OF-02.jpg?crop=center&height=2251&v=1763404276&width=1501",
+          "alt": "L/S Craft Shirt — Cypress — official back view",
+          "sitePath": "assets/references/aw2728/rf27-s01-02.webp",
+          "sourceSha256": "30964a24e975122387ea3ad005124986447a2a7003845ca3871dcc81954cfcd3"
+        },
+        {
+          "role": "model",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I033814_63_XX-OF-03.jpg?crop=center&height=2251&v=1763404276&width=1501",
+          "alt": "L/S Craft Shirt — Cypress — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s01-03.webp",
+          "sourceSha256": "122d225038d30c834eb675fc2fdf58845645b05c96f12e2c5f040c8e3afffdd4"
+        },
+        {
+          "role": "front",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I033814_63_XX-ST-01_1c2d39dd-fe9b-438d-b108-33fcbd489176.jpg?crop=center&height=3000&v=1763404277&width=2000",
+          "alt": "L/S Craft Shirt — Cypress — official front view",
+          "sitePath": "assets/references/aw2728/rf27-s01-04.webp",
+          "sourceSha256": "bd43ea86f70f6bea7e8ebd0dd2b32f9f0a30592c4783886d16d22b8c7251d282"
+        },
+        {
+          "role": "back",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I033814_63_XX-ST-02_8dd28a22-fe18-4e0e-8d0a-38da03b3c7a3.jpg?crop=center&height=3000&v=1763404277&width=2000",
+          "alt": "L/S Craft Shirt — Cypress — official back view",
+          "sitePath": "assets/references/aw2728/rf27-s01-05.webp",
+          "sourceSha256": "a0425c5ca88d8ac06efcd9bbcf837bd5ec3c15cab8ee289280e99d9ab2989b07"
+        }
+      ]
+    },
+    {
+      "code": "RF27-T04",
+      "name": "Pleated Barrel Leg Pants",
+      "category": "Women",
+      "gender": "women",
+      "type": "bottom",
+      "fit": "Curved outer leg with a gently tapered hem; front pleats, two back-waist darts and rear patch pockets.",
+      "texture": "Smooth polyester fabric; the official listing includes easy-care guidance.",
+      "weight": "Weight not stated by source",
+      "colours": [
+        {
+          "name": "38 DARK BROWN",
+          "hex": "#5B4B40",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-t04-01.webp",
+      "listImage": "assets/references/aw2728/rf27-t04-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-t04-02.webp",
+        "assets/references/aw2728/rf27-t04-01.webp",
+        "assets/references/aw2728/rf27-t04-03.webp",
+        "assets/references/aw2728/rf27-t04-04.webp"
+      ],
+      "viewLabels": [
+        "Pleated Barrel Leg Pants — official front view",
+        "Pleated Barrel Leg Pants — official model view",
+        "Pleated Barrel Leg Pants — official back view",
+        "Pleated Barrel Leg Pants — official detail view"
+      ],
+      "retail": "To be confirmed",
+      "why": "Front pleats, a curved outer leg and a gently tapered hem create controlled volume. Back darts keep the waist neat, offering a wearable shape development for Mark’s womenswear.",
+      "materials": [
+        {
+          "name": "Source fabric",
+          "hand": "Smooth polyester fabric; the official listing includes easy-care guidance.",
+          "structure": "Curved outer leg with a gently tapered hem; front pleats, two back-waist darts and rear patch pockets.",
+          "composition": "Body: 100% polyester. Pocket fabric: 80% polyester, 20% cotton.",
+          "weight": "Not stated by source brand",
+          "care": "Machine wash; dry cleaning permitted; do not tumble dry. Dark colours may fade or transfer.",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Source fabric",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "Uniqlo U reference / Shaped Ease: Pleats and a Gentle Taper",
+      "description": "Women’s pleated trousers with a curved outer leg and a gently tapered hem. Two back darts shape the waist, while rear patch pockets provide a practical finish.",
+      "referenceBrand": "Uniqlo U",
+      "referenceUrl": "https://www.uniqlo.com/jp/ja/products/E491087-000/00",
+      "referenceStyleCode": "491087",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "trousers",
+        "page": 3,
+        "title": "Shaped Ease: Pleats and a Gentle Taper",
+        "reasonEN": "Front pleats, a curved outer leg and a gently tapered hem create controlled volume. Back darts keep the waist neat, offering a wearable shape development for Mark’s womenswear."
+      },
+      "sourceDetails": {
+        "composition": "Body: 100% polyester. Pocket fabric: 80% polyester, 20% cotton.",
+        "care": "Machine wash; dry cleaning permitted; do not tumble dry. Dark colours may fade or transfer.",
+        "sizes": "55; 58; 61; 64; 67; 70; 73; 76",
+        "officialPrice": null,
+        "colour": {
+          "name": "38 DARK BROWN",
+          "hex": "#5B4B40",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://image.uniqlo.com/UQ/ST3/jp/imagesgoods/491087/item/jpgoods_38_491087_3x4.jpg?width=1200",
+          "alt": "Pleated Barrel Leg Pants — official model view",
+          "sitePath": "assets/references/aw2728/rf27-t04-01.webp",
+          "sourceSha256": "113f2c02f2904306158f6ad79c188ae03b7c7ed74f7d65130343548754ce2162"
+        },
+        {
+          "role": "front",
+          "url": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/491087/sub/goods_491087_sub14_3x4.jpg?width=1200",
+          "alt": "Pleated Barrel Leg Pants — official front view",
+          "sitePath": "assets/references/aw2728/rf27-t04-02.webp",
+          "sourceSha256": "4b76c3a612b7a38df1bf0301120c4481ee8f6d8738d8bdaf0c5b4ea01a478048"
+        },
+        {
+          "role": "back",
+          "url": "https://image.uniqlo.com/UQ/ST3/jp/imagesgoods/491087/sub/jpgoods_491087_sub4_3x4.jpg?width=1200",
+          "alt": "Pleated Barrel Leg Pants — official back view",
+          "sitePath": "assets/references/aw2728/rf27-t04-03.webp",
+          "sourceSha256": "0a7eee9d681ae0f80fed63362c7b5e25027fc56dc76f6fd0c56ecd738132534e"
+        },
+        {
+          "role": "detail",
+          "url": "https://image.uniqlo.com/UQ/ST3/jp/imagesgoods/491087/sub/jpgoods_491087_sub3_3x4.jpg?width=1200",
+          "alt": "Pleated Barrel Leg Pants — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-t04-04.webp",
+          "sourceSha256": "dafff757d5a2e334d5b7796d542d0e560e9367ae4093a0cd6ae9022a61408c78"
+        }
+      ]
+    },
+    {
+      "code": "RF27-O03",
+      "name": "Padded Funnel-Neck Bomber",
+      "category": "Men",
+      "gender": "men",
+      "type": "outerwear",
+      "fit": "Relaxed fit. Model wears size M.",
+      "texture": "Cotton-nylon shell, lightweight padding and ribbed funnel-neck detail.",
+      "weight": "Weight not stated by source",
+      "colours": [
+        {
+          "name": "Navy",
+          "hex": "#171E31",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-o03-01.webp",
+      "listImage": "assets/references/aw2728/rf27-o03-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-o03-03.webp",
+        "assets/references/aw2728/rf27-o03-01.webp",
+        "assets/references/aw2728/rf27-o03-02.webp",
+        "assets/references/aw2728/rf27-o03-04.webp"
+      ],
+      "viewLabels": [
+        "Padded Funnel-Neck Bomber — official front view",
+        "Padded Funnel-Neck Bomber — official model view",
+        "Padded Funnel-Neck Bomber — official back view",
+        "Padded Funnel-Neck Bomber — official detail view"
+      ],
+      "retail": "To be confirmed",
+      "why": "The cotton-nylon shell, ribbed inner collar and gathered hem focus volume on the short upper body. A funnel neck updates the bomber through coverage and layering, supporting everyday and weekend development for Mark’s.",
+      "materials": [
+        {
+          "name": "Padded outerwear",
+          "hand": "Cotton-nylon shell, lightweight padding and ribbed funnel-neck detail.",
+          "structure": "Relaxed fit. Model wears size M.",
+          "composition": "Shell: 64% cotton, 36% polyamide. Padding: 100% polyester. Body lining: 100% lyocell. Sleeve lining: 100% polyester.",
+          "weight": "Not stated by source brand",
+          "care": "Machine wash cold, gentle cycle; Only non-chlorine bleach when needed; Tumble dry medium; Low iron; Dry clean",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend",
+        "outdoor"
+      ],
+      "material": "Padded outerwear",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "COS reference / Jacket / The Material-Mix Blouson",
+      "description": "A navy padded bomber with a ribbed funnel neck, zip and press-stud fastening, internal pockets and a gathered hem. The relaxed short silhouette offers a clear reference for layered city utility.",
+      "referenceBrand": "COS",
+      "referenceUrl": "https://www.cos.com/ko-kr/men/view-all/product.padded-funnel-neck-bomber-jacket-navy.1341010002.html",
+      "referenceStyleCode": "1341010002",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "outerwear",
+        "page": 8,
+        "title": "Jacket / The Material-Mix Blouson",
+        "reasonEN": "The cotton-nylon shell, ribbed inner collar and gathered hem focus volume on the short upper body. A funnel neck updates the bomber through coverage and layering, supporting everyday and weekend development for Mark’s."
+      },
+      "sourceDetails": {
+        "composition": "Shell: 64% cotton, 36% polyamide. Padding: 100% polyester. Body lining: 100% lyocell. Sleeve lining: 100% polyester.",
+        "care": "Machine wash cold, gentle cycle; Only non-chlorine bleach when needed; Tumble dry medium; Low iron; Dry clean",
+        "sizes": "",
+        "officialPrice": {
+          "value": 305000,
+          "currency": "KRW"
+        },
+        "colour": {
+          "name": "Navy",
+          "hex": "#171E31",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://media.cos.com/assets/001/cc/98/cc985ad07e71390827f3f36245e936f596c001f7.jpg?imwidth=1600",
+          "alt": "Padded Funnel-Neck Bomber — official model view",
+          "sitePath": "assets/references/aw2728/rf27-o03-01.webp",
+          "sourceSha256": "321f10e671a861abd7d970f5cca8592dc12037aafef9bd5acc1d0997ec7af339"
+        },
+        {
+          "role": "back",
+          "url": "https://media.cos.com/assets/001/54/c1/54c19c961d9fcf0d935f11c3378aa98571c8a353.jpg?imwidth=1600",
+          "alt": "Padded Funnel-Neck Bomber — official back view",
+          "sitePath": "assets/references/aw2728/rf27-o03-02.webp",
+          "sourceSha256": "3c42a2aaabf5c56b6b636a7881afb1c37d219b226868270c313014a5169d905b"
+        },
+        {
+          "role": "front",
+          "url": "https://media.cos.com/assets/001/b1/48/b148a4a339d6d9ed8441ce3747fec7c68b22efbb.jpg?imwidth=1600",
+          "alt": "Padded Funnel-Neck Bomber — official front view",
+          "sitePath": "assets/references/aw2728/rf27-o03-03.webp",
+          "sourceSha256": "9b0ace47b63486ae1dd8f6973a5ecb8dbddc6347ace53c1d670f32fdf17cd979"
+        },
+        {
+          "role": "detail",
+          "url": "https://media.cos.com/assets/001/e5/7a/e57a6ae2db1d438d47ef30e7f2c393d2828c67c8.jpg?imwidth=1600",
+          "alt": "Padded Funnel-Neck Bomber — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-o03-04.webp",
+          "sourceSha256": "424951591a2b35b5787c83158041aaa3d821bad03f7e91279abeef86763bd9d4"
+        }
+      ]
+    },
+    {
+      "code": "RF27-S05",
+      "name": "Fitted Cotton Poplin Shirt — Light Pink",
+      "category": "Women",
+      "gender": "women",
+      "type": "top",
+      "fit": "Tailored/fitted silhouette; gallery classifies regular fit",
+      "texture": "Smooth Pima cotton poplin, almost silk-like hand described by brand",
+      "weight": "Weight not stated by source",
+      "colours": [
+        {
+          "name": "Light Pink",
+          "hex": "#E9CDD2",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-s05-01.webp",
+      "listImage": "assets/references/aw2728/rf27-s05-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-s05-05.webp",
+        "assets/references/aw2728/rf27-s05-01.webp",
+        "assets/references/aw2728/rf27-s05-02.webp",
+        "assets/references/aw2728/rf27-s05-03.webp",
+        "assets/references/aw2728/rf27-s05-04.webp"
+      ],
+      "viewLabels": [
+        "Fitted Cotton Poplin Shirt — Light Pink — official front view",
+        "Fitted Cotton Poplin Shirt — Light Pink — official model view",
+        "Fitted Cotton Poplin Shirt — Light Pink — official model view",
+        "Fitted Cotton Poplin Shirt — Light Pink — official back view",
+        "Fitted Cotton Poplin Shirt — Light Pink — official detail view"
+      ],
+      "retail": "To be confirmed",
+      "why": "Structured seams, topstitching and pleated sleeves with fused cuffs make controlled shape and cuff detail commercially wearable.",
+      "materials": [
+        {
+          "name": "Cotton poplin",
+          "hand": "Smooth Pima cotton poplin, almost silk-like hand described by brand",
+          "structure": "Tailored/fitted silhouette; gallery classifies regular fit",
+          "composition": "100% Cotton",
+          "weight": "Not stated by source brand",
+          "care": "Dry clean; Only non-chlorine bleach when needed; Line dry; High iron; Machine wash at 40°C",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Cotton poplin",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "ARKET reference / Elongated Pockets and Defined Waists",
+      "description": "A tailored Pima-cotton poplin shirt with structured lines and topstitching. Pleated sleeves and fused cuffs create a crisp finish in a soft light-pink tone.",
+      "referenceBrand": "ARKET",
+      "referenceUrl": "https://www.arket.com/en-eu/product/fitted-cotton-poplin-shirt-light-pink-1361603001/",
+      "referenceStyleCode": "1361603001",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "shirt",
+        "page": 4,
+        "title": "Elongated Pockets and Defined Waists",
+        "reasonEN": "Structured seams, topstitching and pleated sleeves with fused cuffs make controlled shape and cuff detail commercially wearable."
+      },
+      "sourceDetails": {
+        "composition": "100% Cotton",
+        "care": "Dry clean; Only non-chlorine bleach when needed; Line dry; High iron; Machine wash at 40°C",
+        "sizes": "34; 36; 38; 40; 42; 44",
+        "officialPrice": {
+          "value": 39.5,
+          "currency": "EUR"
+        },
+        "colour": {
+          "name": "Light Pink",
+          "hex": "#E9CDD2",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://media.arket.com/assets/006/85/d5/85d5f6329c2d67ad1ba5831ba0eff274731b292d.jpg?imwidth=1920",
+          "alt": "Fitted Cotton Poplin Shirt — Light Pink — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s05-01.webp",
+          "sourceSha256": "7e4af8f36b81990c602bf0e7bccd95d15c3aaedcf254b56a61893c65668a29bd"
+        },
+        {
+          "role": "model",
+          "url": "https://media.arket.com/assets/006/92/cc/92cce8f52eef5b42bab0009149065b5a9e3fcdd1.jpg?imwidth=1920",
+          "alt": "Fitted Cotton Poplin Shirt — Light Pink — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s05-02.webp",
+          "sourceSha256": "ca65ec20c967abe0c38545e3ced330ab57784aabf97af9840733c6a9884864e1"
+        },
+        {
+          "role": "back",
+          "url": "https://media.arket.com/assets/006/7b/19/7b19fc1752ab552c8ab50b8223cee3485bc959b7.jpg?imwidth=1920",
+          "alt": "Fitted Cotton Poplin Shirt — Light Pink — official back view",
+          "sitePath": "assets/references/aw2728/rf27-s05-03.webp",
+          "sourceSha256": "e0b8fe6f76f930b921311b5bd1769a72c9a648477cd1f03981e21353e8cbe8d0"
+        },
+        {
+          "role": "detail",
+          "url": "https://media.arket.com/assets/006/fa/16/fa163e3c5b194042b37023db9ba62174eca58e3b.jpg?imwidth=1920",
+          "alt": "Fitted Cotton Poplin Shirt — Light Pink — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-s05-04.webp",
+          "sourceSha256": "92e8c188515711b1c5e73cc39f57cc3ce5094a99105131c5d1d41e864b199735"
+        },
+        {
+          "role": "front",
+          "url": "https://media.arket.com/assets/006/19/0c/190cd4bc1ca28375579faf8d92641b87c6a3eedb.jpg?imwidth=1920",
+          "alt": "Fitted Cotton Poplin Shirt — Light Pink — official front view",
+          "sitePath": "assets/references/aw2728/rf27-s05-05.webp",
+          "sourceSha256": "06040415009d67a9c9535f1d7a20ed05e59f7e85b18316d8ec09f1b186581c55"
+        }
+      ]
+    },
+    {
+      "code": "RF27-T02",
+      "name": "Pleated Cotton Relaxed-Fit Wide-Leg Trousers",
+      "category": "Men",
+      "gender": "men",
+      "type": "bottom",
+      "fit": "Relaxed fit; wide, full-length leg; regular waist; folded front pleats, pressed creases, belt loops and welt pockets; hook-and-bar fastening with a zip fly.",
+      "texture": "Cotton twill with a clean surface, defined front pleats and pressed creases.",
+      "weight": "Weight not stated by source",
+      "colours": [
+        {
+          "name": "Brown",
+          "hex": "#493F3D",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-t02-01.webp",
+      "listImage": "assets/references/aw2728/rf27-t02-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-t02-02.webp",
+        "assets/references/aw2728/rf27-t02-01.webp",
+        "assets/references/aw2728/rf27-t02-03.webp",
+        "assets/references/aw2728/rf27-t02-04.webp"
+      ],
+      "viewLabels": [
+        "Pleated Cotton Relaxed-Fit Wide-Leg Trousers — official front view",
+        "Pleated Cotton Relaxed-Fit Wide-Leg Trousers — official model view",
+        "Pleated Cotton Relaxed-Fit Wide-Leg Trousers — official back view",
+        "Pleated Cotton Relaxed-Fit Wide-Leg Trousers — official detail view"
+      ],
+      "retail": "To be confirmed",
+      "why": "Folded front pleats introduce volume into a relaxed wide leg while pressed creases retain a clear vertical line. Cotton twill offers a commercial evolution from flat-front chinos for Mark’s.",
+      "materials": [
+        {
+          "name": "Twill",
+          "hand": "Cotton twill with a clean surface, defined front pleats and pressed creases.",
+          "structure": "Relaxed fit; wide, full-length leg; regular waist; folded front pleats, pressed creases, belt loops and welt pockets; hook-and-bar fastening with a zip fly.",
+          "composition": "Shell: 100% cotton. Pocket lining: 100% cotton.",
+          "weight": "Not stated by source brand",
+          "care": "Dry clean; machine wash at 40°C; medium iron; only non-chlorine bleach when needed; line dry.",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Twill",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "COS reference / Pleated Volume: A New Wide Straight Line",
+      "description": "Relaxed wide-leg cotton twill trousers with folded front pleats and pressed creases. Belt loops, welt pockets and a concealed hook-and-bar fastening provide a tailored finish.",
+      "referenceBrand": "COS",
+      "referenceUrl": "https://th.cos.com/th_en/1363931001.html",
+      "referenceStyleCode": "1363931001",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "trousers",
+        "page": 2,
+        "title": "Pleated Volume: A New Wide Straight Line",
+        "reasonEN": "Folded front pleats introduce volume into a relaxed wide leg while pressed creases retain a clear vertical line. Cotton twill offers a commercial evolution from flat-front chinos for Mark’s."
+      },
+      "sourceDetails": {
+        "composition": "Shell: 100% cotton. Pocket lining: 100% cotton.",
+        "care": "Dry clean; machine wash at 40°C; medium iron; only non-chlorine bleach when needed; line dry.",
+        "sizes": "42; 44; 46; 48; 50; 52; 54",
+        "officialPrice": {
+          "value": 3990,
+          "currency": "THB"
+        },
+        "colour": {
+          "name": "Brown",
+          "hex": "#493F3D",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/f1aec8f9f7191d2044c7b6af4db71696f2c426df_xxl-1.jpg",
+          "alt": "Pleated Cotton Relaxed-Fit Wide-Leg Trousers — official model view",
+          "sitePath": "assets/references/aw2728/rf27-t02-01.webp",
+          "sourceSha256": "a71ba874181a5c27907713074da67c154a20f87df61d410204df97228585b780"
+        },
+        {
+          "role": "front",
+          "url": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/1da1716f4d7e90b10978c28db50021f97b4c76fc_xxl-1.jpg",
+          "alt": "Pleated Cotton Relaxed-Fit Wide-Leg Trousers — official front view",
+          "sitePath": "assets/references/aw2728/rf27-t02-02.webp",
+          "sourceSha256": "0104d042e118699a892b15216c2d3d7d6e0798a407572bec0574c236d3b93825"
+        },
+        {
+          "role": "back",
+          "url": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/2d1dc0059740067d09bc909b66d16ca37ac3b9dc_xxl-1.jpg",
+          "alt": "Pleated Cotton Relaxed-Fit Wide-Leg Trousers — official back view",
+          "sitePath": "assets/references/aw2728/rf27-t02-03.webp",
+          "sourceSha256": "84d4409c1f708318c3bc364afdebd699ef38a7ff281e812706ef2fc60afdca61"
+        },
+        {
+          "role": "detail",
+          "url": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/5e38aac400ef79085b19d79a10451ebdad89aa13_xxl-1.jpg",
+          "alt": "Pleated Cotton Relaxed-Fit Wide-Leg Trousers — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-t02-04.webp",
+          "sourceSha256": "74874bfe95ddcd18902d5542b3f14947283a4022072a5d88405d7e8002df6634"
+        }
+      ]
+    },
+    {
+      "code": "RF27-O04",
+      "name": "Re:Down High-Collar Jacket",
+      "category": "Women",
+      "gender": "women",
+      "type": "outerwear",
+      "fit": "Regular fit. Model is 177cm and wears size S.",
+      "texture": "Smooth cotton-polyamide blend shell with Re:Down down-and-feather padding.",
+      "weight": "Weight not stated by source",
+      "colours": [
+        {
+          "name": "Black",
+          "hex": "#1B1B1D",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-o04-01.webp",
+      "listImage": "assets/references/aw2728/rf27-o04-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-o04-02.webp",
+        "assets/references/aw2728/rf27-o04-01.webp",
+        "assets/references/aw2728/rf27-o04-03.webp",
+        "assets/references/aw2728/rf27-o04-04.webp"
+      ],
+      "viewLabels": [
+        "Re:Down High-Collar Jacket — official front view",
+        "Re:Down High-Collar Jacket — official model view",
+        "Re:Down High-Collar Jacket — official back view",
+        "Re:Down High-Collar Jacket — official detail view"
+      ],
+      "retail": "To be confirmed",
+      "why": "A high enclosing collar and padded upper body concentrate volume around the shoulders and neck. The short silhouette can be layered over longer pieces, translating the report’s coverage direction into practical women’s outerwear.",
+      "materials": [
+        {
+          "name": "Padded outerwear",
+          "hand": "Smooth cotton-polyamide blend shell with Re:Down down-and-feather padding.",
+          "structure": "Regular fit. Model is 177cm and wears size S.",
+          "composition": "Shell and lining: 68% polyamide, 28% cotton, 4% elastane. Padding: 80% recycled down, 20% recycled feather.",
+          "weight": "Not stated by source brand",
+          "care": "Do not dry clean; Do not use softener; Low iron; Machine wash at 40°C; Only non-chlorine bleach when needed; Tumble dry at medium temperature; Use mild detergent",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend",
+        "outdoor"
+      ],
+      "material": "Padded outerwear",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "ARKET reference / Jacket / Enclosing Necklines",
+      "description": "A black padded jacket with a high enclosing collar and a regular fit. The clean surface and down-and-feather filling provide a reference for restrained winter volume and layered everyday styling.",
+      "referenceBrand": "ARKET",
+      "referenceUrl": "https://www.arket.com/en-ww/product/clean-puffer-jacket-black-1238490004/",
+      "referenceStyleCode": "1238490004",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "outerwear",
+        "page": 9,
+        "title": "Jacket / Enclosing Necklines",
+        "reasonEN": "A high enclosing collar and padded upper body concentrate volume around the shoulders and neck. The short silhouette can be layered over longer pieces, translating the report’s coverage direction into practical women’s outerwear."
+      },
+      "sourceDetails": {
+        "composition": "Shell and lining: 68% polyamide, 28% cotton, 4% elastane. Padding: 80% recycled down, 20% recycled feather.",
+        "care": "Do not dry clean; Do not use softener; Low iron; Machine wash at 40°C; Only non-chlorine bleach when needed; Tumble dry at medium temperature; Use mild detergent",
+        "sizes": "XXS; XS; S; M; L",
+        "officialPrice": {
+          "value": 299,
+          "currency": "USD"
+        },
+        "colour": {
+          "name": "Black",
+          "hex": "#1B1B1D",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://media.arket.com/assets/006/8b/76/8b766e5a60ed0c724612d5673e3baaeb063bd6f3.jpg?imwidth=1600",
+          "alt": "Re:Down High-Collar Jacket — official model view",
+          "sitePath": "assets/references/aw2728/rf27-o04-01.webp",
+          "sourceSha256": "15ad2bbaee5ce2ec7160220a30a138db0e63c9002664b70eb8b628ad5bc83496"
+        },
+        {
+          "role": "front",
+          "url": "https://media.arket.com/assets/006/18/d1/18d12a0325d35c4975a4336889f36b6ea4c6c85a.jpg?imwidth=1600",
+          "alt": "Re:Down High-Collar Jacket — official front view",
+          "sitePath": "assets/references/aw2728/rf27-o04-02.webp",
+          "sourceSha256": "12f3c98a7ed050d405cbcb3f8ed9233da25af45652028e5f47f2900798f06f86"
+        },
+        {
+          "role": "back",
+          "url": "https://media.arket.com/assets/006/1c/1a/1c1a476608cf34362c0021ca3e3817d4acde4db3.jpg?imwidth=1600",
+          "alt": "Re:Down High-Collar Jacket — official back view",
+          "sitePath": "assets/references/aw2728/rf27-o04-03.webp",
+          "sourceSha256": "a186e92f039bee0e8158210ecac6101ac775bec824f0790e429adde1bc2436ad"
+        },
+        {
+          "role": "detail",
+          "url": "https://media.arket.com/assets/006/21/03/2103607f25769995a6e34f1c54a89dadacf5c8ac.jpg?imwidth=1600",
+          "alt": "Re:Down High-Collar Jacket — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-o04-04.webp",
+          "sourceSha256": "c080e1b944589d0f683ee5361f1939b9352b8bce431a5f871f7b2f6e28465a6b"
+        }
+      ]
+    },
+    {
+      "code": "RF27-S02",
+      "name": "L/S Lucas Shirt — Blue (Bleached)",
+      "category": "Men",
+      "gender": "men",
+      "type": "top",
+      "fit": "Loose fit",
+      "texture": "Midweight cotton denim, bleached finish",
+      "weight": "8.5 oz",
+      "colours": [
+        {
+          "name": "Blue (Bleached)",
+          "hex": "#B2C8DA",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-s02-01.webp",
+      "listImage": "assets/references/aw2728/rf27-s02-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-s02-04.webp",
+        "assets/references/aw2728/rf27-s02-01.webp",
+        "assets/references/aw2728/rf27-s02-02.webp",
+        "assets/references/aw2728/rf27-s02-03.webp",
+        "assets/references/aw2728/rf27-s02-05.webp"
+      ],
+      "viewLabels": [
+        "L/S Lucas Shirt — Blue (Bleached) — official front view",
+        "L/S Lucas Shirt — Blue (Bleached) — official model view",
+        "L/S Lucas Shirt — Blue (Bleached) — official back view",
+        "L/S Lucas Shirt — Blue (Bleached) — official model view",
+        "L/S Lucas Shirt — Blue (Bleached) — official back view"
+      ],
+      "retail": "To be confirmed",
+      "why": "Bleached blue denim offers a commercial expression of softened blue, while a clean button-down collar keeps the shirt easy to layer.",
+      "materials": [
+        {
+          "name": "Denim",
+          "hand": "Midweight cotton denim, bleached finish",
+          "structure": "Loose fit",
+          "composition": "100% Cotton",
+          "weight": "8.5 oz",
+          "care": "Not stated by the source brand",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Denim",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "Carhartt WIP reference / Soft Blues and Warm, Deep Neutrals",
+      "description": "A loose-fit long-sleeved denim shirt in a light bleached-blue wash. The button-down collar and small chest embroidery maintain a clean, everyday appearance.",
+      "referenceBrand": "Carhartt WIP",
+      "referenceUrl": "https://us.carhartt-wip.com/en-us/products/l-s-lucas-shirt-blue-bleached-1085",
+      "referenceStyleCode": "I034525_01_35",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "shirt",
+        "page": 9,
+        "title": "Soft Blues and Warm, Deep Neutrals",
+        "reasonEN": "Bleached blue denim offers a commercial expression of softened blue, while a clean button-down collar keeps the shirt easy to layer."
+      },
+      "sourceDetails": {
+        "composition": "100% Cotton",
+        "care": "Not stated by the source brand",
+        "sizes": "XS; S; M; L; XL; XXL",
+        "officialPrice": {
+          "value": 138,
+          "currency": "USD"
+        },
+        "colour": {
+          "name": "Blue (Bleached)",
+          "hex": "#B2C8DA",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I034525_01_35-OF-01_d1ad07ab-cdf3-459c-bac4-0a352ef1af35.jpg?crop=center&height=2251&v=1776965428&width=1501",
+          "alt": "L/S Lucas Shirt — Blue (Bleached) — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s02-01.webp",
+          "sourceSha256": "9d7e4ea5c7e343827375ccf0534563f5395422a792333e482a74650bc842649c"
+        },
+        {
+          "role": "back",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I034525_01_35-OF-02.jpg?crop=center&height=2251&v=1776965428&width=1501",
+          "alt": "L/S Lucas Shirt — Blue (Bleached) — official back view",
+          "sitePath": "assets/references/aw2728/rf27-s02-02.webp",
+          "sourceSha256": "85864fe28d6e486483be8fa73518745e5013dd06f9dd0db90bb6055cdfa02e55"
+        },
+        {
+          "role": "model",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I034525_01_35-OF-03.jpg?crop=center&height=2251&v=1776965428&width=1501",
+          "alt": "L/S Lucas Shirt — Blue (Bleached) — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s02-03.webp",
+          "sourceSha256": "f80535627c34c7d9edf0c0df0e9e1c6eb09c40ffbee34c93e308c7f3a58ae3aa"
+        },
+        {
+          "role": "front",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I034525_01_35-ST-01.jpg?crop=center&height=3000&v=1781026295&width=2000",
+          "alt": "L/S Lucas Shirt — Blue (Bleached) — official front view",
+          "sitePath": "assets/references/aw2728/rf27-s02-04.webp",
+          "sourceSha256": "c2908d19cdcd3d7e5aeda6ad54fc63b044f566559371498a7d580aebd9361dc9"
+        },
+        {
+          "role": "back",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I034525_01_35-ST-02.jpg?crop=center&height=3000&v=1781026295&width=2000",
+          "alt": "L/S Lucas Shirt — Blue (Bleached) — official back view",
+          "sitePath": "assets/references/aw2728/rf27-s02-05.webp",
+          "sourceSha256": "aed23024cff87410dc1556825902ff4aefd63e2ff410c02801a8b77289536396"
+        }
+      ]
+    },
+    {
+      "code": "RF27-T05",
+      "name": "Corduroy Barrel-Leg Trousers",
+      "category": "Women",
+      "gender": "women",
+      "type": "bottom",
+      "fit": "Regular fit and waist; barrel leg; ankle length; four-pocket construction; buttoned waist tabs; hook-and-bar fastening with a zip fly.",
+      "texture": "Tactile fine-wale corduroy with closely spaced vertical ribs.",
+      "weight": "Weight not stated by source",
+      "colours": [
+        {
+          "name": "Beige",
+          "hex": "#C2B6A4",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-t05-01.webp",
+      "listImage": "assets/references/aw2728/rf27-t05-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-t05-02.webp",
+        "assets/references/aw2728/rf27-t05-01.webp",
+        "assets/references/aw2728/rf27-t05-03.webp",
+        "assets/references/aw2728/rf27-t05-04.webp"
+      ],
+      "viewLabels": [
+        "Corduroy Barrel-Leg Trousers — official front view",
+        "Corduroy Barrel-Leg Trousers — official model view",
+        "Corduroy Barrel-Leg Trousers — official back view",
+        "Corduroy Barrel-Leg Trousers — official detail view"
+      ],
+      "retail": "To be confirmed",
+      "why": "Buttoned waist tabs integrate adjustability into a clean four-pocket silhouette. Fine corduroy, a curved leg and a warm neutral shade offer a comfortable winter casual direction for Mark’s womenswear.",
+      "materials": [
+        {
+          "name": "Corduroy",
+          "hand": "Tactile fine-wale corduroy with closely spaced vertical ribs.",
+          "structure": "Regular fit and waist; barrel leg; ankle length; four-pocket construction; buttoned waist tabs; hook-and-bar fastening with a zip fly.",
+          "composition": "Shell: 67% cotton, 33% polyester. Pocket lining: 100% cotton.",
+          "weight": "Not stated by source brand",
+          "care": "Machine wash. The official page does not specify a temperature.",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Corduroy",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "COS reference / Comfort Within: A Cleaner Adjustable Waist",
+      "description": "Ankle-length corduroy trousers with a barrel-shaped leg and a regular waist. Buttoned waist tabs, four pockets and a concealed hook-and-bar fastening combine discreet adjustability with a clean finish.",
+      "referenceBrand": "COS",
+      "referenceUrl": "https://th.cos.com/th_en/1353359001.html",
+      "referenceStyleCode": "1353359001",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "trousers",
+        "page": 6,
+        "title": "Comfort Within: A Cleaner Adjustable Waist",
+        "reasonEN": "Buttoned waist tabs integrate adjustability into a clean four-pocket silhouette. Fine corduroy, a curved leg and a warm neutral shade offer a comfortable winter casual direction for Mark’s womenswear."
+      },
+      "sourceDetails": {
+        "composition": "Shell: 67% cotton, 33% polyester. Pocket lining: 100% cotton.",
+        "care": "Machine wash. The official page does not specify a temperature.",
+        "sizes": "32; 34; 36; 38; 40; 42",
+        "officialPrice": {
+          "value": 3190,
+          "currency": "THB"
+        },
+        "colour": {
+          "name": "Beige",
+          "hex": "#C2B6A4",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/a901a3b5a39eeea3ce975a379dbc7b709dc03266_xxl-1.jpg",
+          "alt": "Corduroy Barrel-Leg Trousers — official model view",
+          "sitePath": "assets/references/aw2728/rf27-t05-01.webp",
+          "sourceSha256": "388083f4cfecc01dbdcf6902733863b03cb3d7efd41a9f718c5fd5f353e8b9a2"
+        },
+        {
+          "role": "front",
+          "url": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/37234f7dbdf3d5df3213bf2ba48b2dad515fd370_xxl-1.jpg",
+          "alt": "Corduroy Barrel-Leg Trousers — official front view",
+          "sitePath": "assets/references/aw2728/rf27-t05-02.webp",
+          "sourceSha256": "605d7434cef2bebfbc886311fb63acc087cc74ac21c4d1005da58ffad47170e2"
+        },
+        {
+          "role": "back",
+          "url": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/733c1c98071156dcf32e005ef9594c99aae0b132_xxl-1.jpg",
+          "alt": "Corduroy Barrel-Leg Trousers — official back view",
+          "sitePath": "assets/references/aw2728/rf27-t05-03.webp",
+          "sourceSha256": "6971fd083c09fbffdc3b86f1c3cd7dfe441de56ed42381d8b57e7e2dbdf15d9b"
+        },
+        {
+          "role": "detail",
+          "url": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/cb7a03529b74894b40ce3edd7b5ea93416327815_xxl-1.jpg",
+          "alt": "Corduroy Barrel-Leg Trousers — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-t05-04.webp",
+          "sourceSha256": "75e26e842f166d6dad0c9e48a934bb4276206c5b26b23ec63904a36494f47d01"
+        }
+      ]
+    },
+    {
+      "code": "RF27-O05",
+      "name": "Reversible Checked Car Coat",
+      "category": "Men",
+      "gender": "men",
+      "type": "outerwear",
+      "fit": "Regular fit. Model wears size M.",
+      "texture": "Cotton-polyamide blend; reversible beige and heritage-style check surfaces.",
+      "weight": "Weight not stated by source",
+      "colours": [
+        {
+          "name": "Beige",
+          "hex": "#BEAA93",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-o05-01.webp",
+      "listImage": "assets/references/aw2728/rf27-o05-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-o05-02.webp",
+        "assets/references/aw2728/rf27-o05-01.webp",
+        "assets/references/aw2728/rf27-o05-03.webp",
+        "assets/references/aw2728/rf27-o05-04.webp"
+      ],
+      "viewLabels": [
+        "Reversible Checked Car Coat — official front view",
+        "Reversible Checked Car Coat — official model view",
+        "Reversible Checked Car Coat — official detail view",
+        "Reversible Checked Car Coat — official model view"
+      ],
+      "retail": "To be confirmed",
+      "why": "A reversible plain-and-check construction and a collar that folds into a funnel neck make a familiar long coat more adaptable. The cotton-nylon surface and regular body support workday-to-weekend layering.",
+      "materials": [
+        {
+          "name": "Source fabric",
+          "hand": "Cotton-polyamide blend; reversible beige and heritage-style check surfaces.",
+          "structure": "Regular fit. Model wears size M.",
+          "composition": "Shell: 60% cotton, 40% polyamide.",
+          "weight": "Not stated by source brand",
+          "care": "Machine wash cold, gentle cycle; Only non-chlorine bleach when needed; Line dry; Low iron; No dry clean",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Source fabric",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "COS reference / Coat / Tailoring Meets Utility",
+      "description": "A regular-fit reversible car coat with a plain beige face and a brown checked reverse. The collar can fold into a funnel neck, while the button front and long line retain a clear everyday silhouette.",
+      "referenceBrand": "COS",
+      "referenceUrl": "https://www.cos.com/en-ww/men/menswear/coatsjackets/coats/product/reversible-checked-car-coat-beige-checked-1341955001",
+      "referenceStyleCode": "1341955001",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "outerwear",
+        "page": 12,
+        "title": "Coat / Tailoring Meets Utility",
+        "reasonEN": "A reversible plain-and-check construction and a collar that folds into a funnel neck make a familiar long coat more adaptable. The cotton-nylon surface and regular body support workday-to-weekend layering."
+      },
+      "sourceDetails": {
+        "composition": "Shell: 60% cotton, 40% polyamide.",
+        "care": "Machine wash cold, gentle cycle; Only non-chlorine bleach when needed; Line dry; Low iron; No dry clean",
+        "sizes": "",
+        "officialPrice": {
+          "value": 285,
+          "currency": "USD"
+        },
+        "colour": {
+          "name": "Beige",
+          "hex": "#BEAA93",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://media.cos.com/assets/001/c6/2d/c62ddc80e3134d2c14a686ad88aa6b7fe964a315.jpg?imwidth=1600",
+          "alt": "Reversible Checked Car Coat — official model view",
+          "sitePath": "assets/references/aw2728/rf27-o05-01.webp",
+          "sourceSha256": "10b4a5535882a1a495341dff47b73ce996ca31ef0424edcfb27692b2c4ac07e8"
+        },
+        {
+          "role": "front",
+          "url": "https://media.cos.com/assets/001/cc/00/cc001cfb7ad69fcee9c344fcd0ae4fc4f1833ef1.jpg?imwidth=1600",
+          "alt": "Reversible Checked Car Coat — official front view",
+          "sitePath": "assets/references/aw2728/rf27-o05-02.webp",
+          "sourceSha256": "9f2ee20075de7e02d20e96728b681e8b4a3d84baea59bcb890912ec3c4a08d36"
+        },
+        {
+          "role": "detail",
+          "url": "https://media.cos.com/assets/001/a5/52/a55207dc768907cea7bb5a2998c2c5942b8ffbd3.jpg?imwidth=1600",
+          "alt": "Reversible Checked Car Coat — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-o05-03.webp",
+          "sourceSha256": "12cf293138607fa9f155e940e88bd7d1f166e591babf2170060a34cae34d4b8a"
+        },
+        {
+          "role": "model",
+          "url": "https://media.cos.com/assets/001/87/01/8701f43348b9ff7c901c1455e75b2d5c04a1927a.jpg?imwidth=1600",
+          "alt": "Reversible Checked Car Coat — official model view",
+          "sitePath": "assets/references/aw2728/rf27-o05-04.webp",
+          "sourceSha256": "d41e7d6095d5becfebf28507aee7debb89d69809bcdae1fc6876981855a78976"
+        }
+      ]
+    },
+    {
+      "code": "RF27-S06",
+      "name": "Women’s L/S Bekka Shirt — Palisander",
+      "category": "Women",
+      "gender": "women",
+      "type": "top",
+      "fit": "Loose fit",
+      "texture": "8-wale Manhattan cotton corduroy",
+      "weight": "8 oz",
+      "colours": [
+        {
+          "name": "Palisander",
+          "hex": "#493630",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-s06-01.webp",
+      "listImage": "assets/references/aw2728/rf27-s06-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-s06-04.webp",
+        "assets/references/aw2728/rf27-s06-01.webp",
+        "assets/references/aw2728/rf27-s06-02.webp",
+        "assets/references/aw2728/rf27-s06-03.webp",
+        "assets/references/aw2728/rf27-s06-05.webp"
+      ],
+      "viewLabels": [
+        "Women’s L/S Bekka Shirt — Palisander — official front view",
+        "Women’s L/S Bekka Shirt — Palisander — official model view",
+        "Women’s L/S Bekka Shirt — Palisander — official back view",
+        "Women’s L/S Bekka Shirt — Palisander — official model view",
+        "Women’s L/S Bekka Shirt — Palisander — official back view"
+      ],
+      "retail": "To be confirmed",
+      "why": "Deep brown and tactile corduroy translate warm, deep neutrals into a relaxed single-pocket shirt for easy autumn-winter layering.",
+      "materials": [
+        {
+          "name": "Corduroy",
+          "hand": "8-wale Manhattan cotton corduroy",
+          "structure": "Loose fit",
+          "composition": "100% Cotton",
+          "weight": "8 oz",
+          "care": "Not stated by the source brand",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Corduroy",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "Carhartt WIP reference / Soft Blues and Warm, Deep Neutrals",
+      "description": "A loose-fit corduroy shirt with a single chest pocket and back yoke. Wide 8-wale cotton corduroy adds tactile depth to the dark-brown Palisander colour.",
+      "referenceBrand": "Carhartt WIP",
+      "referenceUrl": "https://us.carhartt-wip.com/en-us/products/w-l-s-bekka-shirt-palisander-rinsed-538",
+      "referenceStyleCode": "I037084_33H_02",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "shirt",
+        "page": 9,
+        "title": "Soft Blues and Warm, Deep Neutrals",
+        "reasonEN": "Deep brown and tactile corduroy translate warm, deep neutrals into a relaxed single-pocket shirt for easy autumn-winter layering."
+      },
+      "sourceDetails": {
+        "composition": "100% Cotton",
+        "care": "Not stated by the source brand",
+        "sizes": "XS; S; M; L",
+        "officialPrice": {
+          "value": 198,
+          "currency": "USD"
+        },
+        "colour": {
+          "name": "Palisander",
+          "hex": "#493630",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037084_33H_02-OF-01.jpg?crop=center&height=2251&v=1788370296&width=1501",
+          "alt": "Women’s L/S Bekka Shirt — Palisander — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s06-01.webp",
+          "sourceSha256": "d212857a2ea2cd1f5f8ce9bffbcf432d142d2f980a8c8f7155da7b857c7eb02d"
+        },
+        {
+          "role": "back",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037084_33H_02-OF-02.jpg?crop=center&height=2251&v=1788370296&width=1501",
+          "alt": "Women’s L/S Bekka Shirt — Palisander — official back view",
+          "sitePath": "assets/references/aw2728/rf27-s06-02.webp",
+          "sourceSha256": "2c494ec71264f7d3bba72ffada01df3fb564a67c920b27ce9928603a21b4a69b"
+        },
+        {
+          "role": "model",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037084_33H_02-OF-03.jpg?crop=center&height=2251&v=1788370296&width=1501",
+          "alt": "Women’s L/S Bekka Shirt — Palisander — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s06-03.webp",
+          "sourceSha256": "785d862b4650d4377958453c3dec3950a57597db4b6631471f57493e55ad876b"
+        },
+        {
+          "role": "front",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037084_33H_02-ST-01_fe1696eb-a68b-4c92-8efb-6e65742c5a63.jpg?crop=center&height=3000&v=1784827930&width=2000",
+          "alt": "Women’s L/S Bekka Shirt — Palisander — official front view",
+          "sitePath": "assets/references/aw2728/rf27-s06-04.webp",
+          "sourceSha256": "5b2567ca26579405f77aec122212a550be0fe2e910b209e3891ec6807d39f398"
+        },
+        {
+          "role": "back",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037084_33H_02-ST-02_bb9d24cc-31a1-4803-b698-2b9ea919d0e4.jpg?crop=center&height=3000&v=1784827930&width=2000",
+          "alt": "Women’s L/S Bekka Shirt — Palisander — official back view",
+          "sitePath": "assets/references/aw2728/rf27-s06-05.webp",
+          "sourceSha256": "8861bba3b87c7d19148c8019419f6b96ee5caa5dbfceb0cf86737907357bf85f"
+        }
+      ]
+    },
+    {
+      "code": "RF27-T03",
+      "name": "Brandon Pant – Corduroy",
+      "category": "Men",
+      "gender": "men",
+      "type": "bottom",
+      "fit": "Loose straight fit; low crotch; roomy seat and thigh; straight leg opening; five-pocket construction, back yoke, bartack reinforcement and zip fly.",
+      "texture": "Eight-wale cotton Coventry corduroy; described by the brand as midweight.",
+      "weight": "9.7 oz (official source unit)",
+      "colours": [
+        {
+          "name": "WIP H Brown, Rinsed",
+          "hex": "#8B5C2D",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-t03-01.webp",
+      "listImage": "assets/references/aw2728/rf27-t03-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-t03-02.webp",
+        "assets/references/aw2728/rf27-t03-01.webp",
+        "assets/references/aw2728/rf27-t03-03.webp",
+        "assets/references/aw2728/rf27-t03-04.webp"
+      ],
+      "viewLabels": [
+        "Brandon Pant – Corduroy — official front view",
+        "Brandon Pant – Corduroy — official model view",
+        "Brandon Pant – Corduroy — official back view",
+        "Brandon Pant – Corduroy — official detail view"
+      ],
+      "retail": "To be confirmed",
+      "why": "Eight-wale cotton corduroy meets a loose straight silhouette with a low crotch. Texture and generous seat and thigh volume create a winter update to Mark’s workwear-inspired casual trousers.",
+      "materials": [
+        {
+          "name": "Corduroy",
+          "hand": "Eight-wale cotton Coventry corduroy; described by the brand as midweight.",
+          "structure": "Loose straight fit; low crotch; roomy seat and thigh; straight leg opening; five-pocket construction, back yoke, bartack reinforcement and zip fly.",
+          "composition": "Upper material: 100% cotton. Pocket lining: 65% polyester, 35% cotton.",
+          "weight": "9.7 oz (official source unit)",
+          "care": "Hang to dry; iron up to 150°C; machine wash up to 40°C; tumble dry up to 60°C.",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Corduroy",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "Carhartt WIP reference / Tactile Heritage: Corduroy Takes the Lead",
+      "description": "Loose straight corduroy trousers with a low crotch and roomy seat and thigh. Made from eight-wale cotton Coventry corduroy with five-pocket construction, a back yoke and bartack reinforcement.",
+      "referenceBrand": "Carhartt WIP",
+      "referenceUrl": "https://www.carhartt-wip.com/en-gb/p/brandon-pant-wip-h-brown-rinsed-587",
+      "referenceStyleCode": "I037063_3TG_02",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "trousers",
+        "page": 8,
+        "title": "Tactile Heritage: Corduroy Takes the Lead",
+        "reasonEN": "Eight-wale cotton corduroy meets a loose straight silhouette with a low crotch. Texture and generous seat and thigh volume create a winter update to Mark’s workwear-inspired casual trousers."
+      },
+      "sourceDetails": {
+        "composition": "Upper material: 100% cotton. Pocket lining: 65% polyester, 35% cotton.",
+        "care": "Hang to dry; iron up to 150°C; machine wash up to 40°C; tumble dry up to 60°C.",
+        "sizes": "XS; S; M; L; XL; XXL",
+        "officialPrice": {
+          "value": 110,
+          "currency": "GBP"
+        },
+        "colour": {
+          "name": "WIP H Brown, Rinsed",
+          "hex": "#8B5C2D",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037063_3TG_02-OF-04.jpg?width=1500",
+          "alt": "Brandon Pant – Corduroy — official model view",
+          "sitePath": "assets/references/aw2728/rf27-t03-01.webp",
+          "sourceSha256": "a002dee8e83d1e55c475d9aeff936579f165baa49d83da91ea78dba4c17b2e2f"
+        },
+        {
+          "role": "front",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037063_3TG_02-ST-02.jpg?width=1500",
+          "alt": "Brandon Pant – Corduroy — official front view",
+          "sitePath": "assets/references/aw2728/rf27-t03-02.webp",
+          "sourceSha256": "c83ebe8e6b4144c72462c60767d9d74ce500f11ece38d674859c2cc414eab5d2"
+        },
+        {
+          "role": "back",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037063_3TG_02-ST-01.jpg?width=1500",
+          "alt": "Brandon Pant – Corduroy — official back view",
+          "sitePath": "assets/references/aw2728/rf27-t03-03.webp",
+          "sourceSha256": "7756924c57ca90453b72ae723a134c8316c3cb75b121536ae962b9a0d0c1c966"
+        },
+        {
+          "role": "detail",
+          "url": "https://cdn.shopify.com/s/files/1/2193/5809/files/I037063_3TG_02-OF-01.jpg?width=1500",
+          "alt": "Brandon Pant – Corduroy — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-t03-04.webp",
+          "sourceSha256": "faa0510e91d444f45045eb673cc72e262ad14aee566b6bd70a6d261010c997bc"
+        }
+      ]
+    },
+    {
+      "code": "RF27-O06",
+      "name": "Double-Faced Wool Shawl Coat",
+      "category": "Women",
+      "gender": "women",
+      "type": "outerwear",
+      "fit": "Oversized fit. Model wears size S.",
+      "texture": "Soft, sculptural double-faced wool-lyocell blend.",
+      "weight": "Weight not stated by source",
+      "colours": [
+        {
+          "name": "Brown",
+          "hex": "#58412D",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-o06-01.webp",
+      "listImage": "assets/references/aw2728/rf27-o06-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-o06-02.webp",
+        "assets/references/aw2728/rf27-o06-01.webp",
+        "assets/references/aw2728/rf27-o06-03.webp",
+        "assets/references/aw2728/rf27-o06-04.webp"
+      ],
+      "viewLabels": [
+        "Double-Faced Wool Shawl Coat — official front view",
+        "Double-Faced Wool Shawl Coat — official model view",
+        "Double-Faced Wool Shawl Coat — official back view",
+        "Double-Faced Wool Shawl Coat — official detail view"
+      ],
+      "retail": "To be confirmed",
+      "why": "The broad shawl collar, dropped shoulders, turned-up cuffs and self belt organise volume around the body. A warm-brown double-faced wool blend translates the report’s enveloping-coat direction into a wearable women’s reference.",
+      "materials": [
+        {
+          "name": "Wool fabric",
+          "hand": "Soft, sculptural double-faced wool-lyocell blend.",
+          "structure": "Oversized fit. Model wears size S.",
+          "composition": "Shell: 60% wool, 40% lyocell.",
+          "weight": "Not stated by source brand",
+          "care": "Do not wash; Only non-chlorine bleach when needed; Line dry; Medium iron; Dry clean only",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Wool fabric",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "COS reference / Coat / The Enveloping Silhouette",
+      "description": "An oversized brown double-faced wool-blend coat with a shawl collar, turned-up cuffs, button fastening and a self-tie belt. The soft wrap silhouette is a reference for enclosing outerwear with an adjustable waist.",
+      "referenceBrand": "COS",
+      "referenceUrl": "https://www.cos.com/ja-jp/women/womenswear/coats-and-jackets/product.oversized-double-faced-wool-shawl-coat-brown.1353925001",
+      "referenceStyleCode": "1353925001",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "outerwear",
+        "page": 11,
+        "title": "Coat / The Enveloping Silhouette",
+        "reasonEN": "The broad shawl collar, dropped shoulders, turned-up cuffs and self belt organise volume around the body. A warm-brown double-faced wool blend translates the report’s enveloping-coat direction into a wearable women’s reference."
+      },
+      "sourceDetails": {
+        "composition": "Shell: 60% wool, 40% lyocell.",
+        "care": "Do not wash; Only non-chlorine bleach when needed; Line dry; Medium iron; Dry clean only",
+        "sizes": "",
+        "officialPrice": {
+          "value": 45000,
+          "currency": "JPY"
+        },
+        "colour": {
+          "name": "Brown",
+          "hex": "#58412D",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://media.cos.com/assets/001/65/89/6589a01326fe4ebd3c6853aa74edbef9bed463bd.jpg?imwidth=1600",
+          "alt": "Double-Faced Wool Shawl Coat — official model view",
+          "sitePath": "assets/references/aw2728/rf27-o06-01.webp",
+          "sourceSha256": "bfc479d553ca09b0f76dd13f234ce641be1372f54671f21921ffb1a55f48c521"
+        },
+        {
+          "role": "front",
+          "url": "https://media.cos.com/assets/001/4c/c3/4cc3bc190ad93405539f8d2fb10242d5839d8a99.jpg?imwidth=1600",
+          "alt": "Double-Faced Wool Shawl Coat — official front view",
+          "sitePath": "assets/references/aw2728/rf27-o06-02.webp",
+          "sourceSha256": "6c57fc08256b4ff7bb13b9067f9adffaa743ee151d43b0387b0119c290ba9c11"
+        },
+        {
+          "role": "back",
+          "url": "https://media.cos.com/assets/001/85/ec/85ec257de662b8eb8bc0bdd63b4ff077b7ad5d64.jpg?imwidth=1600",
+          "alt": "Double-Faced Wool Shawl Coat — official back view",
+          "sitePath": "assets/references/aw2728/rf27-o06-03.webp",
+          "sourceSha256": "2ddfd94cf97516779663eecc27d518c4279a031551aba4234be7876f8830b8fb"
+        },
+        {
+          "role": "detail",
+          "url": "https://media.cos.com/assets/001/6a/33/6a335585b2afe95d9c7083094be55fc14772ca38.jpg?imwidth=1600",
+          "alt": "Double-Faced Wool Shawl Coat — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-o06-04.webp",
+          "sourceSha256": "6e258a6d84fc3a72d16702913917cc84a9d92346820b9ca72975114d6f5a91a5"
+        }
+      ]
+    },
+    {
+      "code": "RF27-S03",
+      "name": "Deon 5027 Drapey Twill Shirt",
+      "category": "Men",
+      "gender": "men",
+      "type": "top",
+      "fit": "Regular fit with slightly dropped shoulders",
+      "texture": "Soft, drapey viscose-blend twill; garment dyed",
+      "weight": "Medium weight; numerical weight not stated",
+      "colours": [
+        {
+          "name": "Deep Truffle #880",
+          "hex": "#4A3238",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-s03-01.webp",
+      "listImage": "assets/references/aw2728/rf27-s03-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-s03-04.webp",
+        "assets/references/aw2728/rf27-s03-01.webp",
+        "assets/references/aw2728/rf27-s03-02.webp",
+        "assets/references/aw2728/rf27-s03-03.webp",
+        "assets/references/aw2728/rf27-s03-05.webp"
+      ],
+      "viewLabels": [
+        "Deon 5027 Drapey Twill Shirt — official front view",
+        "Deon 5027 Drapey Twill Shirt — official model view",
+        "Deon 5027 Drapey Twill Shirt — official model view",
+        "Deon 5027 Drapey Twill Shirt — official back view",
+        "Deon 5027 Drapey Twill Shirt — official detail view"
+      ],
+      "retail": "To be confirmed",
+      "why": "Deep truffle adds warmth to a neutral shirt edit. Soft twill, a wide placket and a gently dropped shoulder translate the draped direction into an easy everyday layer.",
+      "materials": [
+        {
+          "name": "Twill",
+          "hand": "Soft, drapey viscose-blend twill; garment dyed",
+          "structure": "Regular fit with slightly dropped shoulders",
+          "composition": "90% LENZING™ ECOVERO™ viscose, 10% polyester",
+          "weight": "Medium weight; numerical weight not stated",
+          "care": "Wash at 30°C, inside out with similar colours; Do not bleach; Do not tumble dry; Iron at low temperature; Hang dry; Avoid prolonged direct light; garment-dyed colour may fade or transfer",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Twill",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "NN.07 reference / Soft Blues and Warm, Deep Neutrals",
+      "description": "A medium-weight shirt in soft, drapey viscose-blend twill. The design has a wide placket, curved hem, slightly dropped shoulders, a single chest patch pocket and tonal buttons. Garment dyed in Deep Truffle.",
+      "referenceBrand": "NN.07",
+      "referenceUrl": "https://www.nn07.com/en/us/deon-5027-deep-truffle",
+      "referenceStyleCode": "2610000073",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "shirt",
+        "page": 9,
+        "title": "Soft Blues and Warm, Deep Neutrals",
+        "reasonEN": "Deep truffle adds warmth to a neutral shirt edit. Soft twill, a wide placket and a gently dropped shoulder translate the draped direction into an easy everyday layer."
+      },
+      "sourceDetails": {
+        "composition": "90% LENZING™ ECOVERO™ viscose, 10% polyester",
+        "care": "Wash at 30°C, inside out with similar colours; Do not bleach; Do not tumble dry; Iron at low temperature; Hang dry; Avoid prolonged direct light; garment-dyed colour may fade or transfer",
+        "sizes": "S; M; L; XL; XXL",
+        "officialPrice": {
+          "value": 200,
+          "currency": "USD"
+        },
+        "colour": {
+          "name": "Deep Truffle #880",
+          "hex": "#4A3238",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://images-cdn.nn07.com/media/images/4063_77d97ec984-2610000073-880_2-original.jpg?auto=format&q=80&w=768",
+          "alt": "Deon 5027 Drapey Twill Shirt — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s03-01.webp",
+          "sourceSha256": "b18e52940100dbf719f1f51ec05b950cdc93fee66ed58b4e4d2a1aa5f02e7dcb"
+        },
+        {
+          "role": "model",
+          "url": "https://images-cdn.nn07.com/media/images/4063_91bf084711-2610000073-880_1-original.jpg?auto=format&q=80&w=768",
+          "alt": "Deon 5027 Drapey Twill Shirt — official model view",
+          "sitePath": "assets/references/aw2728/rf27-s03-02.webp",
+          "sourceSha256": "fc909c048525c2a9ef31dab708e19ce41a641db042a7ddf4ba59f0f3f7061a2d"
+        },
+        {
+          "role": "back",
+          "url": "https://images-cdn.nn07.com/media/images/4063_e0bd064964-2610000073-880_3-original.jpg?auto=format&q=80&w=768",
+          "alt": "Deon 5027 Drapey Twill Shirt — official back view",
+          "sitePath": "assets/references/aw2728/rf27-s03-03.webp",
+          "sourceSha256": "f7e5144832994c2461a7e19dee5a68756135a0aaad6d6d64384e9d7793e57aee"
+        },
+        {
+          "role": "front",
+          "url": "https://images-cdn.nn07.com/media/images/4063_f394821ad7-2610000073-880_1-original.jpg",
+          "alt": "Deon 5027 Drapey Twill Shirt — official front view",
+          "sitePath": "assets/references/aw2728/rf27-s03-04.webp",
+          "sourceSha256": "4f4c5f0029b13e6efc6cd4ff66d5b41eb2d5efe3cb4033eafdcbedead26e3deb"
+        },
+        {
+          "role": "detail",
+          "url": "https://images-cdn.nn07.com/media/images/4063_f074723987-2610000073-880_2-original.jpg",
+          "alt": "Deon 5027 Drapey Twill Shirt — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-s03-05.webp",
+          "sourceSha256": "ed80ea6d264396e46a19b15f758d1b457014301055a7ee708376fc3dd7f7624a"
+        }
+      ]
+    },
+    {
+      "code": "RF27-T06",
+      "name": "Women’s Simple Pant – Corduroy",
+      "category": "Women",
+      "gender": "women",
+      "type": "bottom",
+      "fit": "Loose fit; regular waist; adapted from the men’s Simple Pant silhouette; front and back pockets, zip fly and Square Label.",
+      "texture": "Eight-wale cotton Coventry corduroy; described by the brand as midweight.",
+      "weight": "9.7 oz (official source unit)",
+      "colours": [
+        {
+          "name": "Black, Rinsed",
+          "hex": "#232323",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      ],
+      "image": "assets/references/aw2728/rf27-t06-01.webp",
+      "listImage": "assets/references/aw2728/rf27-t06-01.webp",
+      "views": [
+        "assets/references/aw2728/rf27-t06-02.webp",
+        "assets/references/aw2728/rf27-t06-01.webp",
+        "assets/references/aw2728/rf27-t06-03.webp",
+        "assets/references/aw2728/rf27-t06-04.webp"
+      ],
+      "viewLabels": [
+        "Women’s Simple Pant – Corduroy — official front view",
+        "Women’s Simple Pant – Corduroy — official model view",
+        "Women’s Simple Pant – Corduroy — official back view",
+        "Women’s Simple Pant – Corduroy — official detail view"
+      ],
+      "retail": "To be confirmed",
+      "why": "A loose womenswear silhouette reworks workwear trousers in eight-wale cotton corduroy. Black remains versatile while tactile ribs and generous leg volume add a distinct winter update for Mark’s.",
+      "materials": [
+        {
+          "name": "Corduroy",
+          "hand": "Eight-wale cotton Coventry corduroy; described by the brand as midweight.",
+          "structure": "Loose fit; regular waist; adapted from the men’s Simple Pant silhouette; front and back pockets, zip fly and Square Label.",
+          "composition": "Upper material: 100% cotton. Pocket lining: 65% polyester, 35% cotton.",
+          "weight": "9.7 oz (official source unit)",
+          "care": "Hang to dry; iron up to 200°C; machine wash up to 40°C; tumble dry up to 60°C.",
+          "cost": "Development quotation pending",
+          "retail": "Development target to be confirmed",
+          "status": "Official-brand reference"
+        }
+      ],
+      "occasions": [
+        "everyday",
+        "weekend"
+      ],
+      "material": "Corduroy",
+      "focalPoint": {
+        "x": 50,
+        "y": 15
+      },
+      "subtitle": "Carhartt WIP reference / Tactile Heritage: Corduroy Takes the Lead",
+      "description": "Women’s loose-fit corduroy trousers with a regular waist, based on the men’s Simple Pant silhouette. Eight-wale cotton Coventry corduroy, practical pockets and a zip fly retain a workwear-inspired finish.",
+      "referenceBrand": "Carhartt WIP",
+      "referenceUrl": "https://www.carhartt-wip.com/en-gb/p/w-simple-pant-black-rinsed-279",
+      "referenceStyleCode": "I033889_89_02",
+      "referenceSeason": "Current official product listing; season not stated",
+      "capturedAt": "2026-11-12",
+      "season": "AW2027/28 development",
+      "trendReference": {
+        "report": "trousers",
+        "page": 8,
+        "title": "Tactile Heritage: Corduroy Takes the Lead",
+        "reasonEN": "A loose womenswear silhouette reworks workwear trousers in eight-wale cotton corduroy. Black remains versatile while tactile ribs and generous leg volume add a distinct winter update for Mark’s."
+      },
+      "sourceDetails": {
+        "composition": "Upper material: 100% cotton. Pocket lining: 65% polyester, 35% cotton.",
+        "care": "Hang to dry; iron up to 200°C; machine wash up to 40°C; tumble dry up to 60°C.",
+        "sizes": "24; 25; 26; 27; 28; 29; 30; 31; 32; 33; 34",
+        "officialPrice": {
+          "value": 100,
+          "currency": "GBP"
+        },
+        "colour": {
+          "name": "Black, Rinsed",
+          "hex": "#232323",
+          "note": "Approximate screen colour; refer to the official colour name."
+        }
+      },
+      "sourceImages": [
+        {
+          "role": "model",
+          "url": "https://cdn.media.amplience.net/i/carhartt_wip/I033889_89_02-OF-04?%24OF%24=&fmt=jpg&qlt=85&w=1500",
+          "alt": "Women’s Simple Pant – Corduroy — official model view",
+          "sitePath": "assets/references/aw2728/rf27-t06-01.webp",
+          "sourceSha256": "418d56d3860faaeee7ff6ce17ba53d4437c06fccd1daef7730b4d8a871b3ce44"
+        },
+        {
+          "role": "front",
+          "url": "https://cdn.media.amplience.net/i/carhartt_wip/I033889_89_02-ST-02?%24ST%24=&fmt=jpg&qlt=85&w=1500",
+          "alt": "Women’s Simple Pant – Corduroy — official front view",
+          "sitePath": "assets/references/aw2728/rf27-t06-02.webp",
+          "sourceSha256": "92581a862c0427ceec77496bd1acaf4cb87ed79079f6435cb700d0369ccf5dcc"
+        },
+        {
+          "role": "back",
+          "url": "https://cdn.media.amplience.net/i/carhartt_wip/I033889_89_02-ST-01?%24ST%24=&fmt=jpg&qlt=85&w=1500",
+          "alt": "Women’s Simple Pant – Corduroy — official back view",
+          "sitePath": "assets/references/aw2728/rf27-t06-03.webp",
+          "sourceSha256": "d32df54761e6033db527a1d73f8a39a0e9b8875b28a3f6342bf11db2ed3b2d30"
+        },
+        {
+          "role": "detail",
+          "url": "https://cdn.media.amplience.net/i/carhartt_wip/I033889_89_02-OF-03?%24OF%24=&fmt=jpg&qlt=85&w=1500",
+          "alt": "Women’s Simple Pant – Corduroy — official detail view",
+          "sitePath": "assets/references/aw2728/rf27-t06-04.webp",
+          "sourceSha256": "1e2d39a4f139cf06acfe395f205085ec7df89ed8d33c50e8cec0ac27c83257e1"
+        }
+      ]
+    },
+    {
       "code": "AE-014",
       "name": "Olive Twill Overshirt",
       "category": "Women",

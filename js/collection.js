@@ -79,7 +79,7 @@
 
     const info = el('div', 'col-card-info');
     const title = el('div');
-    title.append(el('h3', null, product.name), el('p', 'col-code', product.code));
+    title.append(el('h3', null, product.name), el('p', 'col-code', product.referenceBrand ? `${product.code} · ${product.referenceBrand}` : product.code));
     const bottom = el('div', 'col-card-bottom');
     bottom.append(swatches(product));
 
@@ -405,7 +405,7 @@
         button.className = index === 0 ? 'active' : '';
         const img = document.createElement('img');
         img.src = src;
-        img.alt = `${product.name} view ${index + 1}`;
+        img.alt = product.viewLabels && product.viewLabels[index] ? product.viewLabels[index] : `${product.name} view ${index + 1}`;
         button.append(img);
         button.addEventListener('click', () => {
           mainImg.src = src;
@@ -419,7 +419,7 @@
     }
 
     const side = el('div', 'detail-side');
-    side.append(el('p', 'eyebrow', `SAMPLE STYLE ${product.code}`));
+    side.append(el('p', 'eyebrow', product.referenceBrand ? `BRAND REFERENCE · ${product.referenceBrand} · ${product.code}` : `SAMPLE STYLE ${product.code}`));
     side.append(el('h1', null, product.name));
     if (product.subtitle) side.append(el('p', 'detail-subtitle', product.subtitle));
 
@@ -450,7 +450,7 @@
     });
     side.append(colourRow);
 
-    side.append(el('p', 'detail-label', 'Material options'));
+    side.append(el('p', 'detail-label', product.referenceBrand ? 'Source fabric' : 'Material options'));
     const MATERIAL_KEY = 'soho-material-choice';
     let chosenMaterial = 0;
     try {
@@ -497,7 +497,7 @@
     });
     side.append(materialList);
 
-    side.append(el('p', 'detail-label', 'Target retail'));
+    side.append(el('p', 'detail-label', product.referenceBrand ? 'Development status' : 'Target retail'));
     side.append(el('p', 'detail-value', product.retail));
 
     const actions = el('div', 'detail-cta');
@@ -563,6 +563,15 @@
     const styleCopy = el('div', 'style-copy');
     styleCopy.append(el('h2', null, 'Style details'));
     styleCopy.append(el('p', 'detail-why', product.description || ''));
+    if (product.referenceUrl) {
+      const source = el('p', 'detail-why');
+      const link = el('a', 'text-link', `View official ${product.referenceBrand} product →`);
+      link.href = product.referenceUrl; link.target = '_blank'; link.rel = 'noopener noreferrer';
+      source.append(link); styleCopy.append(source);
+      styleCopy.append(el('p', 'detail-why', `Brand style: ${product.referenceStyleCode || 'See official source'} · Source checked: ${product.capturedAt}. This is a brand reference for AW27/28 development review.`));
+      if (product.trendReference) styleCopy.append(el('p', 'detail-why', `Trend: ${product.trendReference.title} · Report page ${product.trendReference.page}. ${product.trendReference.reasonEN}`));
+      if (product.sourceDetails && product.sourceDetails.sizes) styleCopy.append(el('p', 'detail-why', `Source sizes: ${Array.isArray(product.sourceDetails.sizes) ? product.sourceDetails.sizes.join(', ') : product.sourceDetails.sizes}`));
+    }
 
     const similarBlock = el('div', 'style-similar');
     similarBlock.append(el('h2', null, 'Similar styles'));
@@ -618,6 +627,10 @@
       chooseRow.append(button);
     });
     table.append(chooseRow);
+    if (product.referenceBrand) {
+      table.querySelectorAll('.materials-row').forEach(row => { row.style.gridTemplateColumns = 'minmax(130px, 0.7fr) minmax(0, 2fr)'; });
+      const sourceHeading = header.children[1]; if (sourceHeading) sourceHeading.textContent = `Official source fabric · ${product.materials[0].name}`;
+    }
     materialSection.append(table);
     root.append(materialSection);
 
@@ -761,4 +774,5 @@
       if (root) root.innerHTML = `<p class="empty-note">Could not load collection data: ${escape(error.message)}</p>`;
     });
 })();
+
 
