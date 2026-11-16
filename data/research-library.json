@@ -1,0 +1,3824 @@
+{
+  "season": "A/W 27/28",
+  "edition": "16 November 2026",
+  "reports": [
+    {
+      "id": "OW01",
+      "title": "The Textured Shacket",
+      "category": "Outerwear",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "The shacket takes on a more tactile character for A/W 27/28. Raised solids, muted checks and low-relief jacquards create three distinct cloth stories, while balanced pockets and a relaxed shoulder keep the shape familiar. The result is an easy outer layer with a clearer material identity.",
+      "whyMarks": "Shirt-jackets and flannel layers already suit Mark’s practical casual wardrobe. A richer surface and considered pocket layout offer a focused way to evolve that familiar item.",
+      "whatChanges": "Develop separate solid, check and jacquard versions around an easy hip-length block. Refine chest-pocket scale, hand-pocket access and room over knitwear, with body shaping developed independently for women and men.",
+      "elements": [
+        "Men: Straight or gently boxy hip-length shirt-jacket, a relaxed shoulder and enough sleeve room for a knit layer.",
+        "Women: An easy hip-length block with optional discreet internal waist control; compare a straight body with gentle side shaping.",
+        "Keep a working shirt collar and cuff so the item remains recognisable.",
+        "Compare a button-front continuity version with a zip-front workwear version.",
+        "Place chest pockets to avoid uncomfortable overlap with hand-pocket entries."
+      ],
+      "materials": [
+        {
+          "name": "Quiet raised solid",
+          "question": "Raised-surface woven twill; the weave remains visible beneath the nap. Brushing is a finish, not a fibre. Check recovery, shedding and seam bulk."
+        },
+        {
+          "name": "Reduced-contrast check",
+          "question": "Yarn-dyed woven check in a more controlled contrast than a familiar bold flannel. A light brushed finish is optional; wash trials must establish its stability."
+        },
+        {
+          "name": "Low-relief jacquard",
+          "question": "Woven jacquard with a modest geometric or small botanical relief. Pattern is formed in construction; avoid describing it as a surface print."
+        }
+      ],
+      "patterns": [
+        "Offer one solid texture, one controlled woven check and one restrained jacquard. Explain their different constructions; do not label all three as fabrics with the same print."
+      ],
+      "processes": [
+        "Brushing is a finish, not a fibre. Check recovery, shedding and seam bulk.",
+        "A light brushed finish is optional; wash trials must establish its stability."
+      ],
+      "sourceIds": [
+        "W02",
+        "W03",
+        "MO",
+        "WO",
+        "MSH",
+        "WFL",
+        "V49"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W02",
+          "section": "Core updates: shackets and overshirts",
+          "role": "Primary evidence for raised texture, changed pockets, chore influence and jacquard alternatives."
+        },
+        {
+          "sourceId": "W03",
+          "section": "Core update: shackets and utility",
+          "role": "Women's body shaping, drawcord control, modular layering and pocket dimension."
+        },
+        {
+          "sourceId": "W02",
+          "section": "Need to know",
+          "role": "Use familiar core products with a useful fabric/component upgrade."
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "JF05"
+      ],
+      "relatedIds": [
+        "MAT01",
+        "MAT03",
+        "PAT01",
+        "PROC04",
+        "S03"
+      ],
+      "limitations": [
+        "There is no shacket-specific Canadian growth forecast; tactile cloth and pocket changes are development choices."
+      ],
+      "cardSummary": "Raised solids, muted checks and low-relief jacquards bring a more tactile reading to the everyday shacket."
+    },
+    {
+      "id": "OW02",
+      "title": "The Barn & Chore Jacket",
+      "category": "Outerwear",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Barn and chore jackets retain their workwear character while becoming easier to wear across everyday settings. Supple canvas, restrained collar contrast and purposeful pocket arrangements carry the update. Concealed fit control offers a quieter way to adjust the silhouette, with the utility detail integrated into the garment’s clean outline.",
+      "whyMarks": "The barn jacket connects directly with Mark’s utility heritage and existing women’s outerwear. Its recognisable shape gives material and construction updates a clear commercial setting.",
+      "whatChanges": "Combine patch-pocket character with angled hand access, secure internal storage and discreet adjustment. Compare soft canvas and compact twill, keeping collar contrast proportionate to the body cloth and the intended layering weight.",
+      "elements": [
+        "Men: Hip-covering chore body, balanced sleeve room and a straight hem suitable for layering.",
+        "Women: Compare an easy straight barn shape with slight waist control; preserve reach and sitting comfort.",
+        "Integrate hand-warmer access into a clean patch-pocket layout.",
+        "Keep a meaningful pocket hierarchy rather than accumulating decorative cargo pockets.",
+        "Use low-profile waist or cuff adjustment that works with gloves."
+      ],
+      "materials": [
+        {
+          "name": "Softened canvas continuity",
+          "question": "Firm woven canvas with enough body to hold patch pockets. Controlled garment wash for handle and seam definition; no durability assumption."
+        },
+        {
+          "name": "Tonal twill utility",
+          "question": "Compact woven twill with cleaner drape than a rigid work canvas. A restrained sueded/brushed face is a proposed finish, subject to abrasion and care tests."
+        },
+        {
+          "name": "Textile-mix insulated barn",
+          "question": "Woven shell, separate corduroy collar and separately specified quilted lining. Quilting is layer construction; collar rib texture comes from corduroy construction."
+        }
+      ],
+      "patterns": [
+        "Lead with useful solids. A lining check or quiet woven check is a sampling alternative; no source says all barn jackets should be plaid."
+      ],
+      "processes": [
+        "Controlled garment wash for handle and seam definition; no durability assumption.",
+        "A restrained sueded/brushed face is a proposed finish, subject to abrasion and care tests."
+      ],
+      "sourceIds": [
+        "W02",
+        "W03",
+        "MO",
+        "WO",
+        "WBA",
+        "V42",
+        "V41"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W02",
+          "section": "Core updates: utility jackets",
+          "role": "Accessible pockets, adjustable trims, chore/four-pocket forms and washed effects."
+        },
+        {
+          "sourceId": "W03",
+          "section": "Core update: shackets and utility",
+          "role": "Drawcord shaping, dimensional pockets, neck tabs and highlighted seams."
+        },
+        {
+          "sourceId": "W03",
+          "section": "Fashion silhouette: the utility/safari jacket",
+          "role": "An alternative boxy/waist-shaped utility route and seasonal material change."
+        }
+      ],
+      "metricIds": [
+        "OW_M01",
+        "OW_M02"
+      ],
+      "visualIds": [
+        "CP02",
+        "CW04"
+      ],
+      "relatedIds": [
+        "MAT03",
+        "PROC03",
+        "PROC04",
+        "OW01"
+      ],
+      "limitations": [
+        "Canvas/field-jacket attention is a social indicator, not barn-jacket purchases or Canadian sales."
+      ],
+      "cardSummary": "Supple utility cloth, considered storage and subtle fit control sharpen the familiar barn and chore jacket."
+    },
+    {
+      "id": "OW03",
+      "title": "The Everyday Bomber & Blouson",
+      "category": "Outerwear",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "The bomber and blouson move toward an easy, considered shape with rounded volume held close to the waist. A collar that works open or closed changes the neckline, while quiet solids and fine checks provide alternatives to overt sport references. Closure and hem details help define the garment’s everyday character.",
+      "whyMarks": "A short casual jacket fits naturally between Mark’s practical outerwear and everyday clothing. Familiar volume allows a more selective approach to collar, closure and cloth.",
+      "whatChanges": "Balance a relaxed upper body with a controlled hem. Explore a convertible collar, a two-way front opening or a purposeful reversible construction as separate versions, using the material choice to determine the final shape.",
+      "elements": [
+        "Men: A controlled hip-length blouson with room through the upper sleeve and limited hem gathering.",
+        "Women: An easy blouson with a gently rounded sleeve; compare a straight waistband with a subtle adjustable hem.",
+        "Test a convertible stand/funnel collar with a working throat tab.",
+        "Use a two-way zip for sitting and layering where the opening length justifies it.",
+        "Keep cuff articulation and hem control simple."
+      ],
+      "materials": [
+        {
+          "name": "Clean matte twill",
+          "question": "Compact woven twill with a smooth, restrained face. Optional light finishing for handle; no performance claim from appearance."
+        },
+        {
+          "name": "Microcheck blouson",
+          "question": "Compact yarn-dyed microcheck woven. Pattern formed in weaving; compare against a printed imitation as a different route."
+        },
+        {
+          "name": "Reversible solid/check",
+          "question": "Two compatible woven faces with a complete reversible garment construction. Reversibility is garment engineering; test zip, label concealment and pocket function."
+        }
+      ],
+      "patterns": [
+        "Keep the main option quiet; test a microcheck face or a subdued plaid as the pattern alternative. Distinguish woven pattern from surface print."
+      ],
+      "processes": [
+        "Optional light finishing for handle; no performance claim from appearance.",
+        "Pattern formed in weaving; compare against a printed imitation as a different route."
+      ],
+      "sourceIds": [
+        "W02",
+        "W03",
+        "MO",
+        "WO",
+        "CTC26",
+        "V47"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W02",
+          "section": "Core updates: bombers and blousons",
+          "role": "Collar tabs, two-way zips, reversibility and restrained cuff/trim changes."
+        },
+        {
+          "sourceId": "W03",
+          "section": "Core updates: bomber jackets",
+          "role": "Funnel collars, controlled sleeve volume, changed closures and microchecks."
+        },
+        {
+          "sourceId": "W02",
+          "section": "Fashion silhouette: the #SumptuousComfort aviator",
+          "role": "A comforting lining or collar is an adjacent option for a warmer version."
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "UC03"
+      ],
+      "relatedIds": [
+        "MAT04",
+        "MAT06",
+        "PROC04",
+        "OW04"
+      ],
+      "limitations": [
+        "Reversibility, collar function and closure benefits depend on the selected construction and wear trial."
+      ],
+      "cardSummary": "Easy volume, a useful collar and quiet cloth give the bomber and blouson a more considered everyday role."
+    },
+    {
+      "id": "OW04",
+      "title": "The Lightweight Harrington",
+      "category": "Outerwear",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "The lightweight Harrington offers a compact alternative to fuller winter jackets. A clean zip front, useful collar and controlled hem keep the silhouette precise, while a subtle microcheck introduces interest without dominating the garment. Smooth plains provide a quieter companion route for an approachable seasonal layering wardrobe.",
+      "whyMarks": "Mark’s lighter casual layers have a clear everyday purpose. The Harrington offers a recognisable shape with room for a more refined textile and closure treatment.",
+      "whatChanges": "Keep the body light and the proportions deliberate. Compare a compact plain with a small woven check, then refine collar depth, cuff adjustment and hem control around the selected cloth.",
+      "elements": [
+        "Men: Hip-length Harrington with a simple collar and enough room over a shirt or fine knit.",
+        "Women: Light windbreaker with a soft controlled sleeve and adjustable straight-to-rounded hem.",
+        "Use easy-grip zip pulls and cuff adjusters that remain comfortable.",
+        "Plan secure phone/key storage without visually overloading a light cloth.",
+        "Keep hardware weight proportionate to the shell."
+      ],
+      "materials": [
+        {
+          "name": "Compact microcheck",
+          "question": "Fine woven microcheck with stable hand and low bulk. A performance finish is optional and requires defined testing."
+        },
+        {
+          "name": "Dry matte plain",
+          "question": "Compact plain-weave or twill shell. Handle finishing remains a sampling choice; no water-repellent claim without evidence."
+        },
+        {
+          "name": "Two-face lightweight shell",
+          "question": "Compatible lightweight woven faces. A reversible construction requires low seam bulk and complete pocket access."
+        }
+      ],
+      "patterns": [
+        "Microcheck has direct item-specific support. Solid colour remains the control option. Do not substitute an unrelated loud print to make the story look more fashionable."
+      ],
+      "processes": [
+        "A performance finish is optional and requires defined testing.",
+        "Handle finishing remains a sampling choice; no water-repellent claim without evidence."
+      ],
+      "sourceIds": [
+        "W02",
+        "W03",
+        "MO",
+        "WO",
+        "HD",
+        "V47",
+        "V41"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W02",
+          "section": "Core updates: short and light jackets",
+          "role": "Lightweight construction, ergonomic trims, adjustability and a microcheck Harrington."
+        },
+        {
+          "sourceId": "W02",
+          "section": "Fashion silhouette: tech shell jacket",
+          "role": "Secure belongings and easy on/off use are relevant adjoining functions."
+        },
+        {
+          "sourceId": "W03",
+          "section": "Fashion silhouette: the soft utility jacket",
+          "role": "Women's windbreakers can use gentle sleeve/hem shaping and a useful collar."
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "UC02",
+        "CW03"
+      ],
+      "relatedIds": [
+        "MAT06",
+        "PAT02",
+        "PROC04",
+        "OW06"
+      ],
+      "limitations": [
+        "The women's windbreaker route uses adjacent utility evidence; a micro-grid does not establish weather protection."
+      ],
+      "cardSummary": "Compact cloth, subtle microchecks and discreet adjustment refine the Harrington as a light seasonal layer."
+    },
+    {
+      "id": "OW05",
+      "title": "The Practical Quilted Layer",
+      "category": "Outerwear",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Quilted outerwear gains definition through the relationship between padding, stitch path and silhouette. Controlled baffles keep volume deliberate, while a removable liner offers another way to build a layered garment. For selected women’s versions, a quiet floral surface can introduce pattern alongside the main solid-colour direction.",
+      "whyMarks": "Puffers, insulated jackets and quilted barn layers are established parts of Mark’s offer. A cleaner layering system gives construction a visible role in seasonal development.",
+      "whatChanges": "Map quilting around the shoulder, pocket and hem rather than applying one repeat throughout. Develop the removable liner as a complete worn layer, with attachment points and inner-face comfort resolved together.",
+      "elements": [
+        "Men: Compare a practical collared padded car-coat length with a parka/puffer hybrid.",
+        "Women: An easy short-to-mid padded body with room for layering; use pattern or quilt-path change before extreme volume.",
+        "Keep pocket entry clear of baffle joins.",
+        "Test a removable liner with durable, easily aligned attachment points.",
+        "Choose baffle lines that work across front, sleeve and back pattern pieces."
+      ],
+      "materials": [
+        {
+          "name": "Plain shell / designed baffle",
+          "question": "Woven shell, separate lining and separately specified insulation. Quilting/baffling joins layers; it is not a fibre or automatically a print."
+        },
+        {
+          "name": "Small floral shell",
+          "question": "Print-suitable woven shell with verified finish compatibility. Surface print plus quilting are two separate processes/constructions."
+        },
+        {
+          "name": "Quiet botanical quilt",
+          "question": "Plain woven shell with a botanical or abstract stitched path. Quilt-line construction creates the pattern; stitch density affects loft and leakage."
+        }
+      ],
+      "patterns": [
+        "Three materially different routes are plain cloth with redesigned baffles, printed small florals, and botanical stitching on plain cloth. Avoid conflating quilt structure with print."
+      ],
+      "processes": [
+        "Quilting/baffling joins layers; it is not a fibre or automatically a print.",
+        "Surface print plus quilting are two separate processes/constructions."
+      ],
+      "sourceIds": [
+        "W02",
+        "W03",
+        "MO",
+        "WO",
+        "WBA",
+        "V45"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W02",
+          "section": "Core updates: quilted and padded styles",
+          "role": "Baffle shape, removable liners, hybrid forms and car-coat lengths."
+        },
+        {
+          "sourceId": "W03",
+          "section": "Fashion silhouette: the upgraded puffer",
+          "role": "Small/medium floral print, botanical or abstract quilting and alternative closures."
+        },
+        {
+          "sourceId": "W02",
+          "section": "Fashion silhouette: the crafted puffer",
+          "role": "Saturation makes differentiated limited tests more defensible than broad decorative expansion."
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "UD02",
+        "UD03",
+        "UD06"
+      ],
+      "relatedIds": [
+        "MAT05",
+        "PROC02",
+        "OW06"
+      ],
+      "limitations": [
+        "The source flags puffer saturation. A quilt pattern or floral surface does not establish thermal performance."
+      ],
+      "cardSummary": "Deliberate quilt lines and adaptable liners give padded outerwear a cleaner layering role."
+    },
+    {
+      "id": "OW06",
+      "title": "The Adaptable Shell & Parka",
+      "category": "Outerwear",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Development study",
+      "summary": "The shell and parka take a practical approach to coverage, storage and adjustable volume. A working hood and considered closures define the garment more clearly than excess hardware. Quiet technical plains lead the surface direction, with print reserved for selected versions whose shape and purpose remain easy to read.",
+      "whyMarks": "Rainwear and parkas are central to Mark’s practical outerwear wardrobe. Clear differences in coverage, layering and intended use help each development earn its place.",
+      "whatChanges": "Set the garment’s weather and activity role first. Shape the hood, pocket access and waist or hem adjustment around that use, then select the appropriate cloth, seam construction and lining route.",
+      "elements": [
+        "Men: Choose a light shell or a longer protective parka as separate blocks; allow a removable liner only where its complete system works.",
+        "Women: Develop a dedicated protective fit with seated coverage and independent hood/collar trials; do not transfer a tailored trench proportion unchanged.",
+        "Check hood field of view and operation with gloves.",
+        "Use secure storage and covered entries without blocking natural hand access.",
+        "Make hem/cuff control work in motion and in a seated position."
+      ],
+      "materials": [
+        {
+          "name": "Plain protective shell",
+          "question": "Compact woven face plus a separately defined protective layer if required. Repellency finish, barrier layer and seam sealing are distinct processes/components."
+        },
+        {
+          "name": "Abstract-camouflage shell",
+          "question": "Print-compatible woven protective face. Printing may interact with coating, lamination and care; test the actual stack."
+        },
+        {
+          "name": "Parka with removable padded layer",
+          "question": "Outer woven shell plus a separately engineered detachable padded liner. Liner attachment, seam protection and quilting belong to different construction decisions."
+        }
+      ],
+      "patterns": [
+        "A solid shell is the functional control. Abstract camouflage is a supported selective print option. No source establishes a check-based technical-shell trend."
+      ],
+      "processes": [
+        "Repellency finish, barrier layer and seam sealing are distinct processes/components.",
+        "Printing may interact with coating, lamination and care; test the actual stack."
+      ],
+      "sourceIds": [
+        "W02",
+        "W03",
+        "MO",
+        "WO",
+        "HD",
+        "V41",
+        "V45"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W02",
+          "section": "Fashion silhouette: tech shell jacket",
+          "role": "Main evidence for a protective urban/outdoor layer, storage, blue colour and abstract camouflage."
+        },
+        {
+          "sourceId": "W02",
+          "section": "Core updates: quilted and padded styles",
+          "role": "Parka/puffer hybrids and modular liners offer an insulated-system route."
+        },
+        {
+          "sourceId": "W03",
+          "section": "Fashion silhouette: the caped trench coat",
+          "role": "Collar tabs that create a higher neckline and detachable components provide an adjacent women's function cue."
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "CW18",
+        "UD04"
+      ],
+      "relatedIds": [
+        "MAT06",
+        "MAT05",
+        "PROC04"
+      ],
+      "limitations": [
+        "The women's route has adjacent rather than a dedicated shell forecast. Weather claims need testing of the complete garment system."
+      ],
+      "cardSummary": "Useful coverage, working hoods and well-placed storage shape a quieter approach to weather outerwear."
+    },
+    {
+      "id": "OW07",
+      "title": "Fleece & Sherpa Layers",
+      "category": "Outerwear",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Controlled test",
+      "summary": "Fleece and sherpa offer a tactile extension of the season’s comfort direction. A clean outline gives pile a more deliberate place in the wardrobe, with collar shape, lining and seam placement controlling the volume. Contrast woven panels can be explored selectively where they serve the structure of the garment.",
+      "whyMarks": "Fleece and sherpa already belong to Mark’s casual and outdoor layering offer. The development opportunity centres on a distinctive handle and a more resolved garment shape.",
+      "whatChanges": "Compare pile height and density within a simple block. Reduce bulk at the neck, underarm and pocket junctions, and assess whether a woven facing or lining gives the chosen pile a cleaner finish.",
+      "elements": [
+        "Men: Keep an easy zip layer or a canvas/twill jacket with a low-bulk pile collar as candidate samples.",
+        "Women: Consider a practical low-pile zip layer or collar/lining application with independently tested fit.",
+        "Control pile bulk at neckline, cuffs, pockets and zipper guards.",
+        "Use a stable backing and secure pocket construction.",
+        "Avoid mixing several plush textures on one practical everyday layer."
+      ],
+      "materials": [
+        {
+          "name": "Compact knit pile",
+          "question": "Stable knitted pile textile with a controlled surface height. Pile construction and subsequent shearing/brushing must be recorded separately."
+        },
+        {
+          "name": "Woven shell / pile collar",
+          "question": "Canvas or twill shell with a separately specified pile collar. Collar construction must manage bulk and clean edge finishing."
+        },
+        {
+          "name": "Low-pile tonal pattern test",
+          "question": "Pattern-capable low-pile textile; exact knit/weave must be known. Jacquard, print and pile cutting are different pattern methods; select one verified route."
+        }
+      ],
+      "patterns": [
+        "Keep solids as the first sample route. A low-contrast tonal pattern is optional and has weaker category support than the solid comfort layer; do not claim an evidenced sherpa check trend."
+      ],
+      "processes": [
+        "Pile construction and subsequent shearing/brushing must be recorded separately.",
+        "Collar construction must manage bulk and clean edge finishing."
+      ],
+      "sourceIds": [
+        "W02",
+        "W03",
+        "MO",
+        "WO",
+        "V46"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W02",
+          "section": "Fashion silhouette: the #SumptuousComfort aviator",
+          "role": "Comforting silhouettes, shearling and alternative material references suggest collar/lining opportunities."
+        },
+        {
+          "sourceId": "W03",
+          "section": "Core updates: bomber jackets",
+          "role": "Comforting linings allow a smaller, functional texture application."
+        },
+        {
+          "sourceId": "W03",
+          "section": "Fashion silhouette: the maximalist textured coat",
+          "role": "Low-pile texture is a visual reference only."
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "UF05",
+        "UF06"
+      ],
+      "relatedIds": [
+        "MAT01",
+        "MAT02",
+        "OW05"
+      ],
+      "limitations": [
+        "No dedicated fleece/sherpa growth forecast is established; this is a conditional translation of comfort-texture evidence and Mark's range."
+      ],
+      "cardSummary": "Soft pile, cleaner proportions and reduced collar bulk refresh familiar fleece and sherpa layers."
+    },
+    {
+      "id": "OW08",
+      "title": "The Everyday Coat",
+      "category": "Outerwear",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Controlled test",
+      "summary": "The everyday coat is defined by a deliberate outline and cloth with enough character to hold it. Straight relaxed topcoats, shorter car coats and gently rounded women’s shapes offer distinct proportions. Plain, textured and woven-check surfaces allow the same practical wardrobe role to take on different levels of visual interest.",
+      "whyMarks": "A considered coat extends Mark’s polished casual layering. Familiar straight and car-coat shapes offer an accessible setting for richer cloth and a more purposeful neckline.",
+      "whatChanges": "Compare three clear silhouettes rather than one broadly oversized block. Resolve shoulder balance, open and closed collar positions, and the relationship between lining, cloth body and the layers worn beneath.",
+      "elements": [
+        "Men: A relaxed straight car-coat/topcoat route with a collar that closes; compare useful length rather than maximizing it.",
+        "Women: A restrained ovoid body with sleeve and pocket access preserved; keep a straighter alternative for comparison.",
+        "Test a collar tab or convertible lapel that works open and closed.",
+        "Keep pocket entry accessible while seated.",
+        "Use a belt or concealed adjuster only where it adds genuine fit choice."
+      ],
+      "materials": [
+        {
+          "name": "Compact wool-look woven",
+          "question": "Dense woven coat cloth with a short raised face. Brushing/full-like finishing must be identified from the supplier; appearance alone does not prove milling."
+        },
+        {
+          "name": "Controlled bouclé",
+          "question": "Looped or textured yarn fabric; verify whether the actual swatch is woven or knitted. Construction, interlining and care determine stability and shape."
+        },
+        {
+          "name": "Quiet heritage check / herringbone alternative",
+          "question": "Yarn-dyed check or a woven herringbone structure, recorded as separate sample options. A raised finish is optional; preserve pattern clarity after care."
+        }
+      ],
+      "patterns": [
+        "A plain short-nap cloth, tonal bouclé and quiet woven heritage check provide different textile choices. Herringbone is a proposed weave alternative, not a WGSN numerical trend claim."
+      ],
+      "processes": [
+        "Brushing/full-like finishing must be identified from the supplier; appearance alone does not prove milling.",
+        "Construction, interlining and care determine stability and shape."
+      ],
+      "sourceIds": [
+        "W02",
+        "W03",
+        "WBL",
+        "MSH",
+        "MO",
+        "WO",
+        "V44",
+        "V49"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W02",
+          "section": "Core updates: longer-line and smarter coats",
+          "role": "Relaxed length, collar tabs, soft drape and traditional/modern construction combinations."
+        },
+        {
+          "sourceId": "W03",
+          "section": "Core updates: tailored outerwear",
+          "role": "Reworked collars, pockets, waist adjustment and an ovoid alternative."
+        },
+        {
+          "sourceId": "W03",
+          "section": "Fashion silhouette: the reversible poncho",
+          "role": "Heritage checks offer a surface option and reversible thinking offers versatility."
+        },
+        {
+          "sourceId": "W02",
+          "section": "Fashion silhouette: the duffel coat",
+          "role": "A familiar coat can gain a shorter proportion or distinctive closure."
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "OL31",
+        "OL08",
+        "JF05"
+      ],
+      "relatedIds": [
+        "MAT01",
+        "PAT02",
+        "MAT04"
+      ],
+      "limitations": [
+        "A wool-like surface does not establish wool content. The research supports fit alternatives rather than one universal oversized coat."
+      ],
+      "cardSummary": "Controlled volume and useful necklines give the everyday coat a clear, approachable shape."
+    },
+    {
+      "id": "S01",
+      "title": "The Refined Flannel Shirt",
+      "category": "Shirts",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Flannel develops through finer distinctions in pattern and surface. Muted checks, tonal herringbone and softly raised woven texture offer separate routes for the familiar collared shirt. A measured collar and considered pocket scale keep the garment easy to layer, with the cloth providing the clearest seasonal change.",
+      "whyMarks": "Flannel is a familiar Mark’s staple with a natural place in everyday layering. Pattern scale and surface finish offer specific ways to evolve the item.",
+      "whatChanges": "Compare a softer check transition with a tonal woven texture. Refine collar balance, sleeve ease and pocket alignment for each cloth, keeping the raised finish controlled enough to preserve its underlying structure.",
+      "elements": [
+        "Keep a recognisable button-front body and usable cuff; distinguish a regular shirt from a heavier overshirt.",
+        "Compare chest-pocket placement and pattern alignment instead of adding unrelated decoration.",
+        "Treat a slimmer button-down and a relaxed layering block as separate fit options, with visible front and side comparisons.",
+        "Women: Develop a relaxed button-front body with a subtly broader collar, setting body length and shoulder ease specifically for the women’s block.",
+        "Women: Explore a softly brushed yarn-dyed flannel check, with repeat scale and pocket/placket alignment developed together for the selected shirt proportion."
+      ],
+      "materials": [
+        {
+          "name": "Brushed cotton check flannel",
+          "question": "How does brushing affect check clarity and appearance after care?"
+        },
+        {
+          "name": "Tonal herringbone",
+          "question": "Can the weave carry interest in a quieter colour relationship?"
+        },
+        {
+          "name": "Dobby or indigo-raised texture",
+          "question": "Confirm the actual weave/finish rather than calling every indigo texture denim."
+        }
+      ],
+      "patterns": [
+        "Ombre checks, tonal herringbone and softer heritage checks provide three different pattern readings."
+      ],
+      "processes": [
+        "Use controlled brushing to soften the face while retaining check definition.",
+        "Align yarn-dyed patterns at chest pockets, front and cuffs."
+      ],
+      "sourceIds": [
+        "W04",
+        "W01",
+        "W15",
+        "MS",
+        "MFL",
+        "WFL",
+        "W05",
+        "W08",
+        "V47",
+        "V49"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W04",
+          "section": "Core update: the flannel shirt",
+          "role": "Item-level construction and pattern"
+        },
+        {
+          "sourceId": "W01",
+          "section": "Heritage Today",
+          "role": "Men’s textile/pattern support"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Grounded Plaids",
+          "role": "Trade-show material corroboration"
+        },
+        {
+          "sourceId": "W05",
+          "section": "Core updates: the button-down shirt",
+          "role": "Women’s button-front silhouette support: relaxed proportions, refined detailing and a subtly wider collar. Applying that proportion to flannel is our item-level interpretation."
+        },
+        {
+          "sourceId": "W08",
+          "section": "Grounded Plaids",
+          "role": "Direct women’s textile support: lighter overshirts/layering, flannels and yarn-dyed checks, scale changes, and brushed/washed finishes."
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "UC01",
+        "JF03"
+      ],
+      "relatedIds": [
+        "MAT01",
+        "PAT01",
+        "PROC05",
+        "S02"
+      ],
+      "limitations": [
+        "No flannel-specific growth figure is supplied. The men's forecast does not prescribe the women's next-season block."
+      ],
+      "cardSummary": "Muted check transitions, tonal herringbone and controlled brushing give flannel a more refined surface."
+    },
+    {
+      "id": "S02",
+      "title": "The Textured Everyday Button-Up",
+      "category": "Shirts",
+      "kind": "item",
+      "gender": "Men",
+      "priority": "Core update",
+      "summary": "The everyday button-up remains clear and familiar while its cloth becomes more expressive. Oxford, seersucker and fine woven textures offer different degrees of relief, supported by a cleaner collar and quiet button tones. A balanced body allows each material to work naturally within an easy work-to-weekend wardrobe.",
+      "whyMarks": "Oxford and everyday work shirts already bridge several wearing occasions at Mark’s. Subtle construction and material changes fit that broad, practical role.",
+      "whatChanges": "Choose a specific textile route before setting the shirt’s volume. Refine body length, shoulder ease, collar scale and button tone so the finish complements the cloth’s crispness, relief or drape.",
+      "elements": [
+        "Compare regular and controlled boxy bodies; an oversized fashion example does not require enlarging the entire range.",
+        "Use considered contrast inside the collar/cuff or tone-matched buttons, with tidy pattern matching where relevant.",
+        "Keep a conventional placket as the everyday anchor; double plackets and wrap fronts belong to a separate reworked-classic experiment."
+      ],
+      "materials": [
+        {
+          "name": "Cotton Oxford",
+          "question": "Verify basketweave and hand on a genuine macro; an organic claim requires article evidence."
+        },
+        {
+          "name": "Seersucker",
+          "question": "Compare its puckered structure and layering behaviour with the smooth Oxford block."
+        },
+        {
+          "name": "Fine dobby / high-twist shirting",
+          "question": "Keep cotton-dobby and high-twist wool routes separately identified; do not infer one blend from the other."
+        }
+      ],
+      "patterns": [
+        "Plain texture and narrow or close-toned stripes can be the editorial edit; striping belongs to the reworked-classic source context."
+      ],
+      "processes": [
+        "Use tone-matched buttons and precise collar/cuff sewing as a quiet finishing route.",
+        "Compare a smooth Oxford face with the raised structure of seersucker or fine dobby."
+      ],
+      "sourceIds": [
+        "W04",
+        "MS",
+        "MNI",
+        "V43",
+        "V47"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W04",
+          "section": "Core updates: the casual button-up shirt",
+          "role": "Direct item evidence"
+        },
+        {
+          "sourceId": "W04",
+          "section": "Need to know",
+          "role": "Core incremental-update strategy"
+        },
+        {
+          "sourceId": "W04",
+          "section": "The reworked classic shirt",
+          "role": "Separate more experimental construction/pattern counterpoint"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "TF02",
+        "UC06"
+      ],
+      "relatedIds": [
+        "PAT02",
+        "MAT04",
+        "PROC04"
+      ],
+      "limitations": [
+        "There is no Oxford-specific growth metric. Current non-iron product benefits do not transfer to proposed cloth."
+      ],
+      "cardSummary": "Oxford, seersucker and fine woven texture give the everyday button-up a distinct material character."
+    },
+    {
+      "id": "S03",
+      "title": "The Softened Utility Shirt",
+      "category": "Shirts",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "The utility shirt becomes softer in handle while retaining its clear workwear construction. Supple twill, chambray and washed denim offer distinct surface routes, with pocket balance and a measured collar keeping the item recognisable. Restrained colour variation adds character without overwhelming the shirt’s easy, everyday layering role.",
+      "whyMarks": "Practical button-front shirts and chambray provide familiar anchors for Mark’s. A more considered hand, wash and pocket arrangement can develop that role across women’s and men’s wardrobes.",
+      "whatChanges": "Keep the garment visibly shirt-weight and easy to layer. Compare softened twill with lighter denim or chambray, then adjust pocket placement, collar structure and wash intensity to the chosen base.",
+      "elements": [
+        "Use a recognisable collar and practical chest-pocket arrangement as our utility translation; verify their exact reference before captioning.",
+        "Keep an inner-layer shirt distinct from a boxy top layer through length, cloth body and room for a base layer.",
+        "For women, compare a regular/relaxed shirt with a lightly shaped body instead of assigning the men’s fit to both."
+      ],
+      "materials": [
+        {
+          "name": "Gently washed cotton denim",
+          "question": "Confirm whether a specific reference is denim, chambray or another yarn-dyed cotton."
+        },
+        {
+          "name": "Softened canvas",
+          "question": "Check whether body and seam bulk remain suitable for a shirt rather than a jacket."
+        },
+        {
+          "name": "Broken twill with slub or uneven yarn character",
+          "question": "Compare the appearance before and after the proposed wash; strength is not inferred from a rugged look."
+        }
+      ],
+      "patterns": [
+        "Use plain indigo/neutral surface or restrained tonal stitching as our edit."
+      ],
+      "processes": [
+        "Compare garment washing, overdye and a restrained pigment-wash effect.",
+        "Retain pocket-edge and placket stability as the surface is softened."
+      ],
+      "sourceIds": [
+        "W04",
+        "W05",
+        "W01",
+        "W08",
+        "WS",
+        "MS",
+        "V41"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W04",
+          "section": "Core updates: the casual button-up shirt",
+          "role": "Men’s silhouette anchor"
+        },
+        {
+          "sourceId": "W05",
+          "section": "Core updates: the button-down shirt",
+          "role": "Women’s silhouette anchor"
+        },
+        {
+          "sourceId": "W01",
+          "section": "Love Worn",
+          "role": "Men’s workwear material/process"
+        },
+        {
+          "sourceId": "W08",
+          "section": "Love Worn",
+          "role": "Women’s denim/twill/canvas material/process"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "CW10"
+      ],
+      "relatedIds": [
+        "MAT03",
+        "PROC01",
+        "PAT02",
+        "OW01"
+      ],
+      "limitations": [
+        "This joins category and textile evidence; it is not a dedicated utility/denim-shirt demand forecast."
+      ],
+      "cardSummary": "Supple workwear cloth, restrained wash character and balanced pockets refresh the utility shirt."
+    },
+    {
+      "id": "S04",
+      "title": "The Women’s Everyday Button-Front",
+      "category": "Shirts",
+      "kind": "item",
+      "gender": "Women",
+      "priority": "Core update",
+      "summary": "The women’s button-front is renewed through proportion and one deliberate structural feature. A broader collar, shaped waist or considered back detail can change its balance against tailored and knitted trousers. Relaxed and gently shaped versions remain distinct, allowing the shirt’s length and volume to serve different ways of dressing.",
+      "whyMarks": "Mark’s already offers semi-fitted shirts, chambray and textured blouses. Proportion offers a direct way to bring new interest to a recognisable everyday item.",
+      "whatChanges": "Select the main feature for each version: collar, waist, back or placket. Set body length and hem shape around that choice, then assess the shirt both tucked and worn loose.",
+      "elements": [
+        "Separate a relaxed longer body from a gently waist-defined alternative.",
+        "Test a wider collar or one asymmetric/wrapped-front detail as a focused variation; retain a straightforward front in the core option.",
+        "Use back/cuff and hem views to show the construction change, rather than relying on a frontal styling image."
+      ],
+      "materials": [
+        {
+          "name": "Matte smooth poplin",
+          "question": "Assess how much body is needed for the intended collar and waist treatment."
+        },
+        {
+          "name": "Fluid matte woven",
+          "question": "Keep it opaque and practical as our Mark’s edit; exact composition/care remains unverified."
+        },
+        {
+          "name": "Striped or subtle-patterned shirting",
+          "question": "The restrained scale/contrast is our editorial decision; verify the actual repeat."
+        }
+      ],
+      "patterns": [
+        "Consider a quiet stripe first; a dark-ground floral or geometric is a separate pattern story."
+      ],
+      "processes": [
+        "Use one deliberate construction change: a wider collar, shaped waist or back detail.",
+        "Compare a matte face with a restrained satin option as distinct cloth choices."
+      ],
+      "sourceIds": [
+        "W05",
+        "WS",
+        "WFL",
+        "V41"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W05",
+          "section": "Core updates: the button-down shirt",
+          "role": "Direct core item evidence"
+        },
+        {
+          "sourceId": "W05",
+          "section": "Need to know",
+          "role": "Structural/waist-focus strategy"
+        },
+        {
+          "sourceId": "W05",
+          "section": "Core updates: the #FluidBlouse",
+          "role": "Separate drape/neckline option"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "CW17"
+      ],
+      "relatedIds": [
+        "MAT04",
+        "PAT03",
+        "PAT04"
+      ],
+      "limitations": [
+        "Fashion-visibility signals do not measure core button-front sales; the restrained pattern edit is our interpretation."
+      ],
+      "cardSummary": "A considered collar, deliberate body length and defined waist options change the balance of the women’s shirt."
+    },
+    {
+      "id": "S05",
+      "title": "The Funnel-Neck Layering Shirt",
+      "category": "Shirts",
+      "kind": "item",
+      "gender": "Women",
+      "priority": "Controlled test",
+      "summary": "A higher neckline gives the shirt a more architectural layering role. The seasonal reference combines a longer body with a concealed front and optional waist definition, changing how familiar shirting sits beneath or over other pieces. The neckline’s open and closed positions become a central part of the design.",
+      "whyMarks": "This is a selective extension of Mark’s familiar shirt-layering wardrobe. A recognisable body keeps the higher neckline and longer proportion approachable.",
+      "whatChanges": "Resolve the collar in both open and closed positions. Balance body length with side openings and optional waist definition, choosing cloth that supports the neck while remaining comfortable as a light layer.",
+      "elements": [
+        "Funnel neck with an actual modular storm-tab reference; do not invent detachable construction from an image.",
+        "Hidden placket and a deliberate body length; compare optional waist shaping with a clean relaxed version.",
+        "Show collar closure, cuff clearance and chest/pocket arrangement on the selected example."
+      ],
+      "materials": [
+        {
+          "name": "Matte poplin",
+          "question": "Does its body support the collar without excessive stiffness?"
+        },
+        {
+          "name": "Softened heritage check",
+          "question": "Distressed surface is a source option; choose the degree of ageing deliberately."
+        },
+        {
+          "name": "Variegated stripe",
+          "question": "Confirm print versus yarn-dyed construction before naming it."
+        }
+      ],
+      "patterns": [
+        "Plains, country checks and variegated stripes have different styling roles; avoid giving every reference the same palette or print."
+      ],
+      "processes": [
+        "Resolve the collar stand, storm-tab anchoring and concealed front as a working construction.",
+        "Show the neckline both open and closed, with comfortable cuff and base-layer clearance."
+      ],
+      "sourceIds": [
+        "W05",
+        "WS",
+        "WFL"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W05",
+          "section": "Fashion silhouette: the #FunnelNeck top-layer shirt",
+          "role": "Direct silhouette/detail/material evidence"
+        },
+        {
+          "sourceId": "W05",
+          "section": "Need to know",
+          "role": "Neckline and waist strategy"
+        },
+        {
+          "sourceId": "W05",
+          "section": "Proof points",
+          "role": "Attributed multi-occasion survey context"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [],
+      "relatedIds": [
+        "MAT03",
+        "PAT01",
+        "PROC04",
+        "OW01"
+      ],
+      "limitations": [
+        "A protective-looking neckline does not establish warmth or weather protection; modular details require a genuine construction reference."
+      ],
+      "cardSummary": "A higher neckline and concealed front move the shirt into a more directional layering role."
+    },
+    {
+      "id": "T01",
+      "title": "Relaxed Everyday Tailoring",
+      "category": "Trousers",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Everyday tailoring becomes easier through measured room at the thigh and a clean straight or relaxed-taper leg. A considered waist and deliberate pleat arrangement refine the familiar trouser, while compact twill and softer tailoring cloth offer different levels of structure. The emphasis is on a clear line with comfortable movement.",
+      "whyMarks": "Mark’s comfortable-waist pants, chinos and women’s tailored trousers create a familiar foundation. A more deliberate leg and waist balance can bring those practical qualities into a polished everyday wardrobe.",
+      "whatChanges": "Develop straight and relaxed-taper blocks as distinct options. Compare a flat front with controlled pleats, refine the transition from waistband to hip, and select cloth according to the desired line and movement.",
+      "elements": [
+        "Men: compare a straight fall with a relaxed taper. Women: assess the straight-leg parallel independently, with front, side and seated views.",
+        "Compare a flat front with modest twin or inverted pleats, keeping useful pocket entry.",
+        "Use a neat comfort-waist construction as an improvement to demonstrate, not a newness claim on its own."
+      ],
+      "materials": [
+        {
+          "name": "Textured twill",
+          "question": "Does texture remain subtle while the trouser line stays clear?"
+        },
+        {
+          "name": "Fluid woven blend",
+          "question": "Compare drape and crease behaviour with the existing chino cloth."
+        },
+        {
+          "name": "Compact gabardine or quiet herringbone",
+          "question": "Keep the gender/item association explicit and verify the actual article."
+        }
+      ],
+      "patterns": [
+        "Plains and restrained tonal texture keep fit central; subtle pinstripe belongs to a separate polished taper option."
+      ],
+      "processes": [
+        "Tune a soft washed hand against crease behaviour and recovery.",
+        "Compare flat-front, modest twin-pleat and inverted-pleat treatments on the intended block."
+      ],
+      "sourceIds": [
+        "W06",
+        "W07",
+        "MP",
+        "WP",
+        "WPT",
+        "V47",
+        "V49"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W06",
+          "section": "Core updates: straight-leg trousers",
+          "role": "Direct men’s straight/pleat evidence"
+        },
+        {
+          "sourceId": "W06",
+          "section": "Core updates: tapered trousers",
+          "role": "Direct men’s comfort-waist/taper evidence"
+        },
+        {
+          "sourceId": "W07",
+          "section": "Core updates: the casual straight- and wide-leg",
+          "role": "Women’s separately identified counterpart"
+        }
+      ],
+      "metricIds": [
+        "ST_Q11",
+        "ST_Q12",
+        "ST_Q16"
+      ],
+      "visualIds": [
+        "UC05",
+        "JF04"
+      ],
+      "relatedIds": [
+        "MAT03",
+        "MAT04",
+        "PAT02",
+        "PROC04"
+      ],
+      "limitations": [
+        "The cited numerical straight/taper forecasts concern A/W 26/27. Women's runway share is separate from men's chino demand."
+      ],
+      "cardSummary": "Straight and relaxed-taper legs combine measured ease, considered waist treatments and clean trouser lines."
+    },
+    {
+      "id": "T02",
+      "title": "The Everyday Utility Trouser",
+      "category": "Trousers",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "The utility trouser is strongest when storage and fit work as one design. Controlled volume through the leg gives cargo details room without overwhelming the silhouette, while discreet waist and hem adjustment offer practical variation. Supple twill and canvas keep the workwear reference clear across different garment weights.",
+      "whyMarks": "Cargo, outdoor and practical everyday pants are established Mark’s categories. Refined pocket access and a cleaner leg balance give utility development a clear purpose for women and men.",
+      "whatChanges": "Set the leg proportion before placing cargo storage. Compare flatter pocket constructions, integrated hand access and restrained hem adjustment, checking how each detail sits when the wearer stands, walks and sits.",
+      "elements": [
+        "Keep pocket placement legible in front and side views; low-profile storage is our editing direction, not a quoted WGSN engineering specification.",
+        "Compare a straight/relaxed-taper leg with one fuller casual option rather than changing every block.",
+        "For women, examine waist adjustment and controlled hem treatment separately from the men’s cargo construction."
+      ],
+      "materials": [
+        {
+          "name": "Compact cotton twill or canvas",
+          "question": "Balance body with comfortable pocket/seam bulk."
+        },
+        {
+          "name": "Washed broken twill",
+          "question": "Does the wash soften the cloth without weakening pocket edges?"
+        },
+        {
+          "name": "Supple ripstop or micro-grid",
+          "question": "Verify the actual grid and article; no weather or durability claim follows from the pattern."
+        }
+      ],
+      "patterns": [
+        "Plain colour or the structural grid can carry interest. A camouflage or all-over print is not required by this evidence set."
+      ],
+      "processes": [
+        "Reinforce pocket entries without building unnecessary bulk.",
+        "Use controlled washing as one surface option and retain the structural grid where present."
+      ],
+      "sourceIds": [
+        "W06",
+        "W07",
+        "MP",
+        "WP",
+        "V41",
+        "V42"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W06",
+          "section": "Need to know",
+          "role": "Subtle utility and construction strategy"
+        },
+        {
+          "sourceId": "W06",
+          "section": "Core updates: straight-leg trousers",
+          "role": "Elevated-utility core caption"
+        },
+        {
+          "sourceId": "W06",
+          "section": "The wide-leg trouser",
+          "role": "Utility-detail influence"
+        },
+        {
+          "sourceId": "W07",
+          "section": "Core updates: the voluminous trouser",
+          "role": "Women’s functionality/adjustable-fit evidence"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "CW16",
+        "CP05"
+      ],
+      "relatedIds": [
+        "MAT03",
+        "MAT06",
+        "PROC04"
+      ],
+      "limitations": [
+        "No cargo-trouser growth metric is supplied. A cargo-pocket short is not evidence of full-length utility-trouser demand."
+      ],
+      "cardSummary": "Integrated storage, controlled volume and discreet adjustment give utility and cargo trousers a cleaner everyday shape."
+    },
+    {
+      "id": "T03",
+      "title": "Draped Wide-Leg Tailoring",
+      "category": "Trousers",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Wide-leg tailoring develops through the fall of the cloth and the point where volume begins. A controlled waist, measured pleats and a deliberate full-length hem keep the silhouette composed. Draping and more structured fabrics offer different readings, allowing the wide leg to sit alongside straight and tapered trouser options.",
+      "whyMarks": "Women’s wide-leg trousers already have a place at Mark’s. Refining drape and waist balance offers a focused update, with men’s wider tailoring treated as a selective development alongside familiar fits.",
+      "whatChanges": "Compare pleat release, hip ease and hem width in the actual cloth. Keep fullness deliberate below the waist, then resolve pocket placement and length so the leg falls cleanly over everyday footwear.",
+      "elements": [
+        "For women, retain wearable wide-leg continuity while giving straighter newness a clear role.",
+        "Compare a fixed tailored waist with an adjustable or comfort-waist treatment; current back elastic is a baseline.",
+        "For men, show the relaxed formal/casual boundary through leg balance, pleats and footwear rather than copying an extreme runway width."
+      ],
+      "materials": [
+        {
+          "name": "Fluid twill or woven blend",
+          "question": "Check whether the leg hangs cleanly without collapsing."
+        },
+        {
+          "name": "Light tailoring cloth",
+          "question": "Compare leg definition and pleat retention with the draping version."
+        },
+        {
+          "name": "Softened denim/twill",
+          "question": "Keep fading controlled; it is not evidence of longer life."
+        }
+      ],
+      "patterns": [
+        "Plain colour and quiet weave allow the silhouette to read. Pyjama satin/print remains a separate fashion story."
+      ],
+      "processes": [
+        "Choose a clean or gently worn-in finish intentionally; keep the waist and leg line coherent.",
+        "Compare fixed tailoring and an adjustable comfort-waist version."
+      ],
+      "sourceIds": [
+        "W06",
+        "W07",
+        "WP",
+        "WPT",
+        "MP",
+        "V44",
+        "V47",
+        "V49"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W06",
+          "section": "The wide-leg trouser",
+          "role": "Direct men’s silhouette/material/detail context"
+        },
+        {
+          "sourceId": "W07",
+          "section": "Core updates: the tailored wide-leg",
+          "role": "Women’s waist/detail context"
+        },
+        {
+          "sourceId": "W07",
+          "section": "Fashion silhouette: the Love Worn #WideLegTrouser",
+          "role": "Future UK/US forecast and aged-surface option"
+        },
+        {
+          "sourceId": "W07",
+          "section": "Need to know",
+          "role": "Counter-signal: rebalance toward straight"
+        }
+      ],
+      "metricIds": [
+        "ST_Q17",
+        "ST_Q20"
+      ],
+      "visualIds": [
+        "OL09",
+        "UC06",
+        "JF02"
+      ],
+      "relatedIds": [
+        "MAT04",
+        "MAT01",
+        "T01"
+      ],
+      "limitations": [
+        "A/W 26/27 runway contraction and A/W 27/28 UK/US retail forecasts describe different evidence; neither establishes Canadian sales."
+      ],
+      "cardSummary": "A controlled waist and deliberate fall give wide-leg tailoring a more balanced, everyday expression."
+    },
+    {
+      "id": "MAT01",
+      "title": "Brushed Flannel & Refined Double Cloth",
+      "category": "Materials",
+      "kind": "material",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "A softly raised surface gives winter cloth depth without losing its woven definition. Lightly brushed flannel, more substantial shacket qualities and refined double cloth serve different garment roles. The direction is most convincing when nap, body and drape are considered together, keeping each item’s outline clear.",
+      "whyMarks": "Flannel and soft layering are familiar Mark’s references. Distinct shirt, shacket and trouser qualities make the tactile direction relevant across several core development areas.",
+      "whatChanges": "Build a small family of qualities with different bodies and raised finishes. Tune the nap to the item, then assess how the cloth behaves at collars, pocket edges, seams and moving areas.",
+      "elements": [
+        "Fibre/material: Cotton, wool or selected blends are candidates, not established compositions.",
+        "Construction: Flannel/twill, double cloth and tweed-like woven routes are separate samples.",
+        "Finish: Brushing, light milling or washing; these processes are not fibre names or print.",
+        "Outerwear: Men/women: soft shacket or everyday coat cloth with useful layering and controlled seam bulk.",
+        "Shirts: Men/women: brushed shirt-weight checks versus heavier overshirt cloth; establish two distinct end uses.",
+        "Trousers: Men/women: light surface nap on a stable twill, checking abrasion and seat recovery."
+      ],
+      "materials": [
+        {
+          "name": "Shirt-weight brushed flannel",
+          "question": "How much nap can the shirt retain without losing check definition?"
+        },
+        {
+          "name": "Structured soft double cloth",
+          "question": "Can it support a shacket collar and loaded pockets without excess seam bulk?"
+        },
+        {
+          "name": "Lightly brushed trouser twill",
+          "question": "Does it recover at the seat and knee while keeping a clean leg line?"
+        }
+      ],
+      "patterns": [
+        "Plain texture, softly defined yarn-dyed checks and quiet tweed-like effects are separate routes."
+      ],
+      "processes": [
+        "Development focus: pilling/abrasion, shrinkage and skew, nap transfer, hand versus seam bulk."
+      ],
+      "sourceIds": [
+        "W01",
+        "W08",
+        "W15",
+        "G02",
+        "WFL",
+        "MFL",
+        "V49"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W01",
+          "section": "Smart Comfort",
+          "role": "material/finish"
+        },
+        {
+          "sourceId": "W08",
+          "section": "Grounded Plaids",
+          "role": "women patterned cloth"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Smart Comfort",
+          "role": "trade-show material"
+        },
+        {
+          "sourceId": "G02",
+          "section": "CLASSIC IS PUNK!",
+          "role": "Independent AW27/28 flannel and classic-cloth context"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "JF01",
+        "JF02"
+      ],
+      "relatedIds": [
+        "S01",
+        "OW01",
+        "OW08",
+        "PAT01"
+      ],
+      "limitations": [
+        "No flannel-specific growth estimate is verified; fibre content and thermal role depend on the selected cloth."
+      ],
+      "cardSummary": "Controlled nap and considered cloth body bring tactile depth to shirts, shackets and everyday tailoring."
+    },
+    {
+      "id": "MAT02",
+      "title": "Corduroy: Rib, Pile & Drape",
+      "category": "Materials",
+      "kind": "material",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Corduroy’s appeal lies in the relationship between rib, pile and movement. A flexible shirt quality, a more defined trouser cloth and a compact collar trim require different balances. Developing those routes separately gives a familiar winter material greater range while preserving its recognisable directional surface.",
+      "whyMarks": "Corduroy and cord-collar outerwear already fit Mark’s everyday wardrobe. Refining the quality for each application creates a more useful material programme than repeating one cord throughout.",
+      "whatChanges": "Compare rib definition, pile height and flexibility at garment scale. Keep shirt drape, trouser line and collar edge turn as separate development priorities, with nap direction resolved in the cutting and construction.",
+      "elements": [
+        "Fibre/material: Cotton-rich or selected blended yarn routes require confirmation.",
+        "Construction: Cut-pile ribbed cloth, separate from rib knit and printed stripe.",
+        "Finish: Softening and pile control are sampling actions; no wale count is prescribed.",
+        "Outerwear: Men/women: collar/trim or a whole-body shacket only after seam-bulk evaluation.",
+        "Shirts: Men/women: lighter supple cord reference for an overshirt; retain movement at shoulder and cuff.",
+        "Trousers: Men/women: compare shape-holding and soft-drape options for straight/wide/barrel blocks."
+      ],
+      "materials": [
+        {
+          "name": "Supple shirt corduroy",
+          "question": "Can rib and pile remain clear with adequate cuff/shoulder movement?"
+        },
+        {
+          "name": "Shape-holding trouser corduroy",
+          "question": "Which body suits the intended straight, wide or curved leg?"
+        },
+        {
+          "name": "Collar/facing corduroy",
+          "question": "How do pile direction, neck feel and differential shrinkage affect the joined seam?"
+        }
+      ],
+      "patterns": [
+        "Let rib and pile carry the interest; a printed stripe is a different method."
+      ],
+      "processes": [
+        "Development focus: pile direction and panel shading, seam bulk, seat/knee recovery, rib abrasion."
+      ],
+      "sourceIds": [
+        "W08",
+        "W15",
+        "G03",
+        "WP",
+        "WCR"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W08",
+          "section": "Sumptuous Comfort",
+          "role": "women construction"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Supplier highlight: Unifi",
+          "role": "specific material lead"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Tactile Softness",
+          "role": "cross-category material"
+        },
+        {
+          "sourceId": "G03",
+          "section": "LIVE YOUR EMOTIONS",
+          "role": "Original event material direction; also upstream of WGSN W15"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [],
+      "relatedIds": [
+        "PROC03",
+        "OW01"
+      ],
+      "limitations": [
+        "No corduroy adoption rate or wale count is prescribed. Technology references do not certify this proposed cloth."
+      ],
+      "cardSummary": "Corduroy develops through distinct rib character, pile definition and flexibility for each garment role."
+    },
+    {
+      "id": "MAT03",
+      "title": "Supple Twill & Canvas",
+      "category": "Materials",
+      "kind": "material",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Twill and canvas take on a more supple hand while retaining the clarity of their utility roots. Softened surfaces and restrained lived-in colour give familiar cloth character, with enough structure retained for pockets and trouser lines. The balance changes between a shirt, chore jacket and practical everyday pant.",
+      "whyMarks": "Utility jackets, workwear-inspired shirts and practical trousers provide a natural home for these cloths. A considered handle connects material development directly with Mark’s established categories.",
+      "whatChanges": "Select the ground structure before applying the wash. Compare levels of softness against collar support, pocket stability and leg fall, then establish the surface character that best serves each item.",
+      "elements": [
+        "Fibre/material: Cotton, linen/hemp blends and regenerated-cellulosic blends are candidate routes.",
+        "Construction: Compact twill, broken twill, basket/canvas and dobby are distinct structures.",
+        "Finish: Soft washing or controlled fading is separate from weave and fibre.",
+        "Outerwear: Men/women: a shacket or chore layer with enough body at collar/pockets.",
+        "Shirts: Men/women: a lighter, supple twill/canvas interpretation; do not reuse jacket cloth automatically.",
+        "Trousers: Men/women: utility or straight-leg cloth assessed for crease, abrasion and pocket distortion."
+      ],
+      "materials": [
+        {
+          "name": "Softened compact twill",
+          "question": "Can hand improve while the weave supports pocket and leg definition?"
+        },
+        {
+          "name": "Washed canvas",
+          "question": "Is its body appropriate to a shirt, shacket or trouser rather than reused automatically?"
+        },
+        {
+          "name": "Broken twill or dobby",
+          "question": "How does a restrained wash change surface character and seam stability?"
+        }
+      ],
+      "patterns": [
+        "Plain, slub or restrained structural texture; a rugged surface does not require camouflage."
+      ],
+      "processes": [
+        "Development focus: tear/tensile strength after finishing, rub fastness, garment-wash repeatability, seam/pocket stability."
+      ],
+      "sourceIds": [
+        "W01",
+        "W08",
+        "W15",
+        "G02",
+        "MP",
+        "WP"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W01",
+          "section": "Harvested Naturals",
+          "role": "men structure"
+        },
+        {
+          "sourceId": "W08",
+          "section": "Love Worn",
+          "role": "women material/finish"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Love Worn",
+          "role": "trade-show cloth"
+        },
+        {
+          "sourceId": "G02",
+          "section": "CLASSIC IS PUNK!",
+          "role": "Independent AW27/28 utility/cotton textile context"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [],
+      "relatedIds": [
+        "OW02",
+        "S03",
+        "T02",
+        "PROC01"
+      ],
+      "limitations": [
+        "A utility appearance does not establish abrasion resistance, weather protection or a particular fibre claim."
+      ],
+      "cardSummary": "Softer handles and controlled wash character develop utility cloth while retaining a clear garment structure."
+    },
+    {
+      "id": "MAT04",
+      "title": "Comfort Wovens: Drape & Recovery",
+      "category": "Materials",
+      "kind": "material",
+      "gender": "Women & Men",
+      "priority": "Development study",
+      "summary": "Comfort in woven cloth is shaped by how it bends, drapes and returns to form. A flowing quality and a compact stretch woven offer different answers for shirts and tailored trousers. Considering construction, elastic fibre and finishing separately makes it easier to preserve the intended silhouette while allowing movement.",
+      "whyMarks": "Comfortable-waist pants, flexible shirts and everyday blouses already serve Mark’s customers. A clearer material choice can refine how those garments move and retain their line.",
+      "whatChanges": "Compare a draping woven with a more compact recovery-led quality in the actual garment. Connect the selected cloth to waist construction, pocket openings, plackets and cuffs rather than relying on softness alone.",
+      "elements": [
+        "Fibre/material: Cotton/cellulosic/wool blend routes and elastic-yarn options are alternatives, not automatic percentages.",
+        "Construction: Compact twill, fluid twill, dobby or softly tailored woven; jersey is a different product route.",
+        "Finish: Washed/crease-management finishes require verification.",
+        "Outerwear: Men/women: supple light blouson cloth only where recovery supports cuffs and pockets.",
+        "Shirts: Men/women: matte fluid woven or controlled-stretch shirting; test placket and collar stability.",
+        "Trousers: Men/women: comfort-waist straight/taper trousers with actual recovery testing."
+      ],
+      "materials": [
+        {
+          "name": "Compact comfort twill",
+          "question": "Does extension recover after bending and sitting?"
+        },
+        {
+          "name": "Fluid matte woven",
+          "question": "Can drape coexist with stable collar, placket or waistband construction?"
+        },
+        {
+          "name": "Textured blend",
+          "question": "Which fibre/yarn/structure route provides the required movement without losing body?"
+        }
+      ],
+      "patterns": [
+        "Tonal texture or restrained tailoring pattern can support a clean line without adding print."
+      ],
+      "processes": [
+        "Development focus: extension/recovery, bagging at knees/elbows, seam slippage, crease behaviour."
+      ],
+      "sourceIds": [
+        "W01",
+        "W08",
+        "W15",
+        "MP",
+        "WP",
+        "V43"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W01",
+          "section": "Throwback Classics",
+          "role": "men comfort/tailoring"
+        },
+        {
+          "sourceId": "W08",
+          "section": "Structured Simplicity",
+          "role": "women structure/drape"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Editors’ pick: Soothing Comfort",
+          "role": "supplier stretch systems"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Supplier highlight: Unifi",
+          "role": "alternative yarn route"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "TF12"
+      ],
+      "relatedIds": [
+        "T01",
+        "T03",
+        "S04"
+      ],
+      "limitations": [
+        "Soft hand, drape and stretch are different properties; extension and recovery require article-specific testing."
+      ],
+      "cardSummary": "Drape, structural stretch and recovery give everyday wovens a more purposeful relationship with movement."
+    },
+    {
+      "id": "MAT05",
+      "title": "Light Padded Layer Systems",
+      "category": "Materials",
+      "kind": "material",
+      "gender": "Women & Men",
+      "priority": "Development study",
+      "summary": "Padded cloth is most useful when developed as a complete layer system. The relationship between shell, fill and lining determines body, bulk and how the garment sits over other pieces. Lighter quilted liners and carefully placed padding offer distinct ways to develop adaptable winter layers with a cleaner outline.",
+      "whyMarks": "Insulated jackets and quilted barn layers are familiar Mark’s products. A more considered assembly gives material development a direct role in their fit and layering purpose.",
+      "whatChanges": "Compare assembled shell, fill and lining combinations. Assess the quilt path and local thickness around collars, armholes and hems, and develop removable liners with their attachment and worn appearance considered from the start.",
+      "elements": [
+        "Fibre/material: Recycled synthetic or other insulation candidates require supplier detail.",
+        "Construction: Shell + selected fill + lining/inner face is a material system.",
+        "Finish: Soft handle and care compatibility must be assessed across the assembled system.",
+        "Outerwear: Men/women: padded casual jacket, quilted liner or light insulated shacket, with the seasonal role stated.",
+        "Shirts: Men/women: padded overshirt is an outer-layer product, not conventional shirt-weight cloth.",
+        "Trousers: Separate lined outdoor-trouser study only; not a general fashion-trouser directive."
+      ],
+      "materials": [
+        {
+          "name": "Soft shell and selected fill",
+          "question": "How does the shell interact with filling during quilting and laundering?"
+        },
+        {
+          "name": "Quilted liner system",
+          "question": "Can a removable layer remain comfortable at attachments and armholes?"
+        },
+        {
+          "name": "Light lining or inner face",
+          "question": "Does the assembled system control migration, compression and surface puckering?"
+        }
+      ],
+      "patterns": [
+        "Quilt-path design is construction; any printed face requires a separate artwork and cloth decision."
+      ],
+      "processes": [
+        "Development focus: fill migration and compression recovery, assembly wash response, shell/fill compatibility, quilting stability."
+      ],
+      "sourceIds": [
+        "W01",
+        "W15",
+        "MO",
+        "WO",
+        "V45"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W01",
+          "section": "Lazycore",
+          "role": "men padded structures"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Tactile Softness",
+          "role": "named insulation lead"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Editors’ pick: Soothing Comfort",
+          "role": "testing rationale"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "UD06",
+        "UD01"
+      ],
+      "relatedIds": [
+        "OW05",
+        "PROC02",
+        "OW06"
+      ],
+      "limitations": [
+        "No fill mass, thermal rating or fill power is specified; warmth depends on the assembled shell, fill and lining."
+      ],
+      "cardSummary": "Shell, fill and lining are developed together to create more considered quilted layers."
+    },
+    {
+      "id": "MAT06",
+      "title": "Quiet Technical Plains & Ripstop",
+      "category": "Materials",
+      "kind": "material",
+      "gender": "Women & Men",
+      "priority": "Development study",
+      "summary": "Technical cloth moves toward quieter surface expression for everyday outerwear. Smooth plains and restrained ripstop grids offer different visual readings, while hand and body help define whether the garment becomes a light layer or a more substantial shell. Cloth construction and the protective assembly remain separate development decisions.",
+      "whyMarks": "Mark’s practical layering wardrobe includes different outdoor and everyday uses. A clear relationship between cloth, garment shape and intended protection makes this direction relevant across those roles.",
+      "whatChanges": "Choose the garment purpose before the technical route. Compare plain and grid constructions, then resolve any coating, membrane, finish, seam treatment and lining as identified parts of the proposed assembly.",
+      "elements": [
+        "Fibre/material: Polyamide/polyester, regenerated alternatives or selected blends are unconfirmed routes.",
+        "Construction: Light ripstop, micro-grid and technical plain weave are alternatives.",
+        "Finish: Water-repellent treatment or membrane is an additional system, not an intrinsic ripstop property.",
+        "Outerwear: Men/women: light jacket, wind layer or packable candidate with clear end-use testing.",
+        "Shirts: Only a separate lightweight overshirt option; evaluate noise and comfort.",
+        "Trousers: Optional utility/outdoor candidate with abrasion and movement checks."
+      ],
+      "materials": [
+        {
+          "name": "Soft ripstop",
+          "question": "Is the grid a verified cloth construction, and how does it affect noise and movement?"
+        },
+        {
+          "name": "Technical plain weave",
+          "question": "Can a quieter face serve the intended light-layer role?"
+        },
+        {
+          "name": "Membrane or treated cloth",
+          "question": "What performance survives garment construction and care when a claim is intended?"
+        }
+      ],
+      "patterns": [
+        "Ripstop grids and micro-grids are structural effects, not automatically prints."
+      ],
+      "processes": [
+        "Development focus: tear/abrasion, surface noise and movement, wash durability, weather/breathability testing only for intended claims."
+      ],
+      "sourceIds": [
+        "W01",
+        "W15",
+        "G02",
+        "MO",
+        "WO",
+        "V45"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W01",
+          "section": "Lazycore",
+          "role": "men functional structure"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Gentle Futurism",
+          "role": "cross-category technical cloth"
+        },
+        {
+          "sourceId": "G02",
+          "section": "FREESTYLE IS PUNK!",
+          "role": "Independent AW27/28 ripstop and washed-material context"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "UD05"
+      ],
+      "relatedIds": [
+        "OW06",
+        "OW04",
+        "T02"
+      ],
+      "limitations": [
+        "Ripstop does not itself establish waterproofing, breathability, UV protection or treatment durability."
+      ],
+      "cardSummary": "Soft technical plains and defined ripstop grids offer distinct surfaces for practical outer layers."
+    },
+    {
+      "id": "PAT01",
+      "title": "Softened Yarn-Dyed Checks",
+      "category": "Print & Pattern",
+      "kind": "pattern",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Heritage checks become quieter through muted colour transitions and more considered repeats. Large and smaller-scale patterns offer different readings across a shirt, shacket or coat, while restrained brushing softens the surface. The colour relationship and cloth construction carry the direction, giving familiar checked garments a more resolved seasonal identity.",
+      "whyMarks": "Flannel checks and heritage layers already belong to Mark’s core wardrobe. Repeat scale, colour balance and handle offer precise ways to update that familiar territory.",
+      "whatChanges": "Develop the woven repeat alongside the garment. Compare contrast levels and brushing, then check how the pattern meets at plackets, chest pockets, collars and the wider areas of an outer layer.",
+      "elements": [
+        "Yarn-dyed/woven plaid, tartan, gingham, windowpane or houndstooth. A printed imitation is a different, separately justified option.",
+        "Outerwear: Men/women: restrained shacket check or small-scale coating pattern.",
+        "Shirts: Men/women: softer check transitions with usable pocket/placket alignment.",
+        "Trousers: Men/women: quiet micro-check only where it complements the chosen block."
+      ],
+      "materials": [
+        {
+          "name": "Soft flannel ground",
+          "question": "How does brushing alter the yarn-dyed repeat?"
+        },
+        {
+          "name": "Compact patterned shirting",
+          "question": "Can scale and contrast stay balanced at collar, pocket and placket?"
+        },
+        {
+          "name": "Quiet check coating",
+          "question": "Does the pattern remain legible across the larger body and joined panels?"
+        }
+      ],
+      "patterns": [
+        "Yarn-dyed plaid, gingham, tartan, windowpane and houndstooth: define method before choosing a repeat."
+      ],
+      "processes": [
+        "Development focus: repeat at front/placket/pockets, contrast at distance, cloth and seam skew, wash shrinkage."
+      ],
+      "sourceIds": [
+        "W01",
+        "W08",
+        "W15",
+        "G02",
+        "WFL",
+        "MFL",
+        "V49"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W01",
+          "section": "Heritage Today",
+          "role": "men woven pattern"
+        },
+        {
+          "sourceId": "W08",
+          "section": "Grounded Plaids",
+          "role": "women woven pattern"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Grounded Plaids",
+          "role": "specific material lead"
+        },
+        {
+          "sourceId": "G02",
+          "section": "FREESTYLE IS PUNK!",
+          "role": "Independent micro-check flannel context"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "JF03",
+        "JF05"
+      ],
+      "relatedIds": [
+        "S01",
+        "OW01",
+        "MAT01"
+      ],
+      "limitations": [
+        "Woven/yarn-dyed checks and printed plaid require different development routes; physical repeat and colour approval are outstanding."
+      ],
+      "cardSummary": "Muted contrast, deliberate repeat and a softly worked surface bring new balance to familiar woven checks."
+    },
+    {
+      "id": "PAT02",
+      "title": "Quiet Stripes & Tailoring Micro-Patterns",
+      "category": "Print & Pattern",
+      "kind": "pattern",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Small woven patterns give everyday shirting and tailoring a more composed surface. Fine stripes, tonal herringbones and microchecks create different kinds of rhythm, with yarn contrast and repeat scale determining how strongly they read. Each route remains distinct, allowing cloth structure to bring interest to a clear garment shape.",
+      "whyMarks": "Oxford shirts and approachable tailored trousers offer familiar settings for quiet pattern. Woven interest can refine those items while keeping them easy to combine.",
+      "whatChanges": "Compare the pattern in both close view and a complete garment. Tune yarn contrast, direction and repeat to the item, then resolve matching and cutting around pockets, pleats and shirt fronts.",
+      "elements": [
+        "Dobby stripe, pinstripe, tonal woven stripe, herringbone or micro-check. These are not all printing processes.",
+        "Outerwear: Men/women: subtle herringbone or micro-pattern for a polished everyday coat/jacket.",
+        "Shirts: Men/women: restrained dobby/stripe on a recognisable button-up.",
+        "Trousers: Men/women: low-contrast tailoring stripe/check, with uninterrupted pleat/leg lines."
+      ],
+      "materials": [
+        {
+          "name": "Dobby stripe shirting",
+          "question": "How does woven relief read at normal wear distance?"
+        },
+        {
+          "name": "Pinstripe or micro-check twill",
+          "question": "Can pleats and seams retain a coherent pattern line?"
+        },
+        {
+          "name": "Understated herringbone",
+          "question": "Does weave interest remain clear without decorative colour contrast?"
+        }
+      ],
+      "patterns": [
+        "Dobby stripe, pinstripe, tonal stripe, micro-check and herringbone remain different constructions."
+      ],
+      "processes": [
+        "Development focus: stripe alignment, visual interference at pleats, seam slippage, colourfastness."
+      ],
+      "sourceIds": [
+        "W01",
+        "W08",
+        "MP",
+        "WP",
+        "V49"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W01",
+          "section": "Harvested Naturals",
+          "role": "men dobby structure"
+        },
+        {
+          "sourceId": "W01",
+          "section": "Throwback Classics",
+          "role": "men tailored pattern"
+        },
+        {
+          "sourceId": "W08",
+          "section": "Structured Simplicity",
+          "role": "women tailored pattern"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "JF04",
+        "JF02"
+      ],
+      "relatedIds": [
+        "S02",
+        "T01",
+        "OW08"
+      ],
+      "limitations": [
+        "A cloth pattern guide does not set a garment fit or exact repeat; weave must be verified on the actual material."
+      ],
+      "cardSummary": "Fine stripes, tonal herringbones and microchecks introduce restrained rhythm through yarn and weave."
+    },
+    {
+      "id": "PAT03",
+      "title": "Open Botanicals for Women’s Shirts",
+      "category": "Print & Pattern",
+      "kind": "pattern",
+      "gender": "Women",
+      "priority": "Controlled test",
+      "summary": "An open botanical repeat offers a selective print direction for women’s everyday shirts. Drawing, spacing and ground colour determine whether the motif feels delicate or more graphic, while controlled coverage keeps the garment easy to read. A simple blouse shape gives the print room to carry the visual character.",
+      "whyMarks": "Women’s everyday shirts and blouses allow a considered botanical route alongside solid cloth and woven patterns. It adds variety within a recognisable garment category.",
+      "whatChanges": "Develop the repeat at the scale of the actual shirt front. Compare spacing and colour coverage, then assess neckline, cuff and hem placement; treat any local embroidery as a separate technique.",
+      "elements": [
+        "Printed artwork on a separately selected cloth; embroidery, jacquard and botanical surface texture are alternative executions with separate sampling/licence routes.",
+        "Outerwear: Not a core all-over outerwear recommendation; consider only a justified lining/limited option.",
+        "Shirts: Women: sparse/open botanical repeat with an uncluttered collar, cuff and placket.",
+        "Trousers: Defer all-over botanical core trousers; no direct supporting demand estimate is verified."
+      ],
+      "materials": [
+        {
+          "name": "Opaque fluid woven",
+          "question": "Will the chosen ink system retain drape and a comfortable hand?"
+        },
+        {
+          "name": "Matte cotton ground",
+          "question": "What motif spacing reads clearly at a shirt's collar and front?"
+        },
+        {
+          "name": "Embroidered alternative",
+          "question": "Does a local stitched version need different backing and placement?"
+        }
+      ],
+      "patterns": [
+        "Open botanical repeat; control ground, spacing, garment coverage and interruptions at seams."
+      ],
+      "processes": [
+        "Development focus: motif spacing and garment coverage, placket/pocket interruptions, colour count and ground, print-through/hand."
+      ],
+      "sourceIds": [
+        "W09",
+        "W08",
+        "G01",
+        "WS"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W09",
+          "section": "Quiet Cottage",
+          "role": "direct print motif"
+        },
+        {
+          "sourceId": "W08",
+          "section": "Wild Romance",
+          "role": "material/decorative context"
+        },
+        {
+          "sourceId": "W09",
+          "section": "Rural Spirit",
+          "role": "secondary motif context"
+        },
+        {
+          "sourceId": "G01",
+          "section": "Floral coding",
+          "role": "Independent AW27/28 floral-material interpretation"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "GI06"
+      ],
+      "relatedIds": [
+        "S04",
+        "PROC05",
+        "PAT04"
+      ],
+      "limitations": [
+        "This women's motif evidence is not a men's leaf-print forecast. Studio artwork and finished printed cloth remain separate."
+      ],
+      "cardSummary": "Airy botanical repeats use deliberate spacing and coverage to bring a lighter reading to winter shirting."
+    },
+    {
+      "id": "PAT04",
+      "title": "Dark-Ground Printed Geometry",
+      "category": "Print & Pattern",
+      "kind": "pattern",
+      "gender": "Women",
+      "priority": "Controlled test",
+      "summary": "Small dark-ground geometry gives printed shirting an orderly, composed reading. A restrained two-colour relationship allows the repeat to carry interest without overwhelming the garment, with scale carefully balanced against the front and cuffs. The direction offers an alternative to botanicals within a selected women’s blouse programme.",
+      "whyMarks": "An easy blouse can introduce a more graphic pattern while retaining familiar styling. Dark-ground geometry provides a clear option for everyday work and weekend dressing.",
+      "whatChanges": "Test a small repeat and two-colour contrast on the intended ground. Review its density across seams, plackets and sleeves, keeping print clearly identified alongside any separately developed woven-pattern options.",
+      "elements": [
+        "A printed repeat such as a restrained arch/step/fan geometry; a jacquard version is a different construction and sourcing route.",
+        "Outerwear: Optional limited detail/lining study, not automatic all-over application.",
+        "Shirts: Women: small dark-ground geometric on a wearable fluid woven; define the ground/contrast in strike-off.",
+        "Trousers: Only a separately justified relaxed-set test; plain/woven micro-pattern remains the core route."
+      ],
+      "materials": [
+        {
+          "name": "Fluid printed shirting",
+          "question": "Does the two-colour ground preserve both drape and pattern definition?"
+        },
+        {
+          "name": "Matte woven ground",
+          "question": "Which repeat scale works at seams, cuffs and placket?"
+        },
+        {
+          "name": "Jacquard comparison",
+          "question": "Should the geometry be constructed in cloth instead of surface-printed?"
+        }
+      ],
+      "patterns": [
+        "Small arches, steps or ordered geometry on a dark two-colour ground; jacquard is a separate alternative."
+      ],
+      "processes": [
+        "Development focus: scale at body and seams, two-colour ground coverage, repeat alignment, print hand."
+      ],
+      "sourceIds": [
+        "W09",
+        "W05",
+        "W15",
+        "WS"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W09",
+          "section": "Timeless Deco",
+          "role": "direct print programme"
+        },
+        {
+          "sourceId": "W05",
+          "section": "Fashion silhouette: the Newstalgia blouse",
+          "role": "women silhouette/print context"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Timeless Deco",
+          "role": "alternative construction"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [],
+      "relatedIds": [
+        "S04",
+        "PAT03"
+      ],
+      "limitations": [
+        "No direct geometric-print growth figure is verified. The limited trouser-set application remains a separate test."
+      ],
+      "cardSummary": "A small two-colour geometric repeat gives selected women’s tops a composed office-to-weekend character."
+    },
+    {
+      "id": "PROC01",
+      "title": "Controlled Wash, Fade & Patina",
+      "category": "Construction & Finish",
+      "kind": "process",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Surface ageing becomes more deliberate through controlled washing and restrained shade variation. A softly worn edge or worked-in colour can add character to utility shirts and chore layers, with the final effect shaped by the original cloth. The process is developed alongside garment construction to keep the result coherent.",
+      "whyMarks": "Utility shirts and chore jackets already suit Mark’s casual wardrobe. A considered wash can develop their surface character while preserving the item’s practical identity.",
+      "whatChanges": "Compare one wash or colour treatment at a time on identified base cloths. Review shade, seam highlights and handle together, then establish a repeatable appearance standard for the selected garment.",
+      "elements": [
+        "Garment dye/overdye, pigment or enzyme wash, laser/sun-fade effects and repaired details are different processes; select and test individually.",
+        "Outerwear: Men/women: soften utility cloth while retaining collar and pocket definition.",
+        "Shirts: Men/women: low-contrast washed highs/lows with a stable button placket.",
+        "Trousers: Men/women: controlled seam/edge character without excessive strength loss."
+      ],
+      "materials": [
+        {
+          "name": "Twill/canvas ground",
+          "question": "How much strength and dimensional stability remain after the selected treatment?"
+        },
+        {
+          "name": "Denim ground",
+          "question": "Can controlled highs/lows repeat across batches?"
+        },
+        {
+          "name": "Patterned ground",
+          "question": "How do washing and dyeing affect pattern definition and seam shade?"
+        }
+      ],
+      "patterns": [
+        "Create character through treatment and yarn before considering a printed imitation of wear."
+      ],
+      "processes": [
+        "Garment dye/overdye, pigment or enzyme wash, laser/sun-fade effects and repaired details are different processes; select and test individually.",
+        "Development focus: shade bands and batch variation, dry/wet rubbing, wash shrinkage, strength after finish."
+      ],
+      "sourceIds": [
+        "W01",
+        "W08",
+        "W15",
+        "G01",
+        "MS",
+        "WS",
+        "MP",
+        "WP"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W01",
+          "section": "Love Worn",
+          "role": "men finish"
+        },
+        {
+          "sourceId": "W08",
+          "section": "Love Worn",
+          "role": "women finish"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Love Worn",
+          "role": "trade-show corroboration"
+        },
+        {
+          "sourceId": "G01",
+          "section": "Decorative Wear",
+          "role": "Independent patina and softened-colour direction"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "GI05"
+      ],
+      "relatedIds": [
+        "S03",
+        "MAT03",
+        "T02"
+      ],
+      "limitations": [
+        "Aged appearance does not prove lower-impact processing or longer life; strength and fastness must be checked after treatment."
+      ],
+      "cardSummary": "Restrained shade variation and worked surfaces bring character to utility cloth through repeatable finishing."
+    },
+    {
+      "id": "PROC02",
+      "title": "Useful Quilting & Modular Padding",
+      "category": "Construction & Finish",
+      "kind": "process",
+      "gender": "Women & Men",
+      "priority": "Development study",
+      "summary": "Quilting shapes the relationship between padding and the body. Stitch paths can organise volume around shoulders, pockets and hems, while a removable liner creates another layering configuration. The direction treats every quilted section as part of a complete garment, balancing its appearance with the movement and bulk of the assembly.",
+      "whyMarks": "Quilted and insulated layers have a clear role at Mark’s. Construction offers a focused way to refine how those garments layer and how their volume is distributed.",
+      "whatChanges": "Map quilting around the actual garment and chosen fill. Resolve liner attachment, edge finishes and local thickness together, checking both the complete jacket and any layer intended to be worn separately.",
+      "elements": [
+        "Stitched baffles/quilting, bonded effects, quilted jacquard and printed quilting imagery are different. Shell/fill decisions belong to MAT05.",
+        "Outerwear: Men/women: compare a restrained quilt layout or removable liner for the intended garment.",
+        "Shirts: Padded overshirt only; retain shoulder/cuff movement.",
+        "Trousers: No generic quilting recommendation for everyday trousers."
+      ],
+      "materials": [
+        {
+          "name": "Shell/fill/lining assembly",
+          "question": "Which quilt path controls migration and bulk for the intended garment?"
+        },
+        {
+          "name": "Removable quilted layer",
+          "question": "How do attachments affect movement and wearing comfort?"
+        },
+        {
+          "name": "Quilt-effect cloth",
+          "question": "Is the visual relief a woven effect or a true padded construction?"
+        }
+      ],
+      "patterns": [
+        "Compare a restrained stitched layout, baffle design or woven quilt effect as different structures."
+      ],
+      "processes": [
+        "Stitched baffles/quilting, bonded effects, quilted jacquard and printed quilting imagery are different. Shell/fill decisions belong to MAT05.",
+        "Development focus: fill migration, stitch holes and puckering, hem/cuff bulk, movement."
+      ],
+      "sourceIds": [
+        "W01",
+        "W02",
+        "W15",
+        "MS",
+        "WS",
+        "MP",
+        "WP",
+        "G01",
+        "V45"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W01",
+          "section": "Lazycore",
+          "role": "textile construction"
+        },
+        {
+          "sourceId": "W02",
+          "section": "Core updates: quilted and padded styles",
+          "role": "men garment execution"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Tactile Softness",
+          "role": "material/finish execution"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "GI04",
+        "UD06"
+      ],
+      "relatedIds": [
+        "OW05",
+        "MAT05"
+      ],
+      "limitations": [
+        "Quilted relief, stitched baffles and printed quilt imagery are different; thermal equivalence cannot be inferred visually."
+      ],
+      "cardSummary": "Quilt paths, fill placement and liner attachments bring structure to adaptable padded outerwear."
+    },
+    {
+      "id": "PROC03",
+      "title": "Corduroy Collars & Pile Trims",
+      "category": "Construction & Finish",
+      "kind": "process",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Corduroy contrast is refined through the way the collar is cut, joined and turned. Nap direction changes the reading of colour, while pile thickness affects the edge and the point where trim meets body cloth. A considered facing helps the familiar detail sit comfortably within the complete garment.",
+      "whyMarks": "Cord-collar barn jackets are familiar Mark’s references. A closer study of feel, edge and construction gives this established detail a specific development purpose.",
+      "whatChanges": "Review the collar in section as well as on the garment. Align nap deliberately, tune the seam and facing thickness, and assess edge turn and neck contact against the selected body cloth.",
+      "elements": [
+        "Cut-pile cloth is a material; directional cutting, undercollar/facing choice, stitching and edge bulk are construction actions. Drawcords are a separate trim.",
+        "Outerwear: Men/women: compare a soft cord collar against a plain/twill body. Women's existing cord-collar barn jacket is the baseline.",
+        "Shirts: Men/women: whole-body cord or a collar/facing contrast requires shirt-weight hand and laundering compatibility.",
+        "Trousers: Keep pile direction and matched panels in cord trousers; a collar story does not apply."
+      ],
+      "materials": [
+        {
+          "name": "Corduroy collar",
+          "question": "How are nap direction, edge turn and neck contact resolved?"
+        },
+        {
+          "name": "Contrasting body cloth",
+          "question": "Will both materials shrink and age compatibly?"
+        },
+        {
+          "name": "Corduroy trouser panels",
+          "question": "Can consistent pile direction and matched shading survive cutting and assembly?"
+        }
+      ],
+      "patterns": [
+        "Pile direction and rib alignment matter at joined panels; contrast need not come from print."
+      ],
+      "processes": [
+        "Cut-pile cloth is a material; directional cutting, undercollar/facing choice, stitching and edge bulk are construction actions. Drawcords are a separate trim.",
+        "Development focus: one-way nap and shading, edge seam bulk, neck feel, differential shrinkage."
+      ],
+      "sourceIds": [
+        "W08",
+        "W15",
+        "W02",
+        "G03",
+        "WBA"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W08",
+          "section": "Sumptuous Comfort",
+          "role": "cord cloth vocabulary"
+        },
+        {
+          "sourceId": "W15",
+          "section": "Tactile Softness",
+          "role": "cord material context"
+        },
+        {
+          "sourceId": "W02",
+          "section": "Core updates: utility jackets",
+          "role": "contrast-collar garment context"
+        },
+        {
+          "sourceId": "G03",
+          "section": "LIVE YOUR EMOTIONS",
+          "role": "Corduroy material context, not a collar engineering specification"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [],
+      "relatedIds": [
+        "MAT02",
+        "OW02"
+      ],
+      "limitations": [
+        "A corduroy collar is already present at Mark's; newness must come from the specific hand, shape or construction."
+      ],
+      "cardSummary": "Nap direction, collar shape and a clean edge turn give corduroy contrast a more resolved finish."
+    },
+    {
+      "id": "PROC04",
+      "title": "Purposeful Pockets & Discreet Adjustment",
+      "category": "Construction & Finish",
+      "kind": "process",
+      "gender": "Women & Men",
+      "priority": "Core update",
+      "summary": "Utility details gain value through clear placement and ease of use. Angled pocket access, a collar that closes comfortably and discreet waist or hem control can each change how a familiar garment works. Hardware is kept considered, with the construction integrated into the silhouette rather than becoming its main decoration.",
+      "whyMarks": "Practical storage and comfortable adjustment connect directly with Mark’s everyday purpose. A useful detail can provide a specific point of difference within a familiar garment.",
+      "whatChanges": "Choose the main access or adjustment improvement for each item. Resolve reach, closure and local bulk in the intended fit, then assess the detail during movement and while wearing other layers.",
+      "elements": [
+        "Pocket geometry, reinforcement, drawcord/tab adjustment and closure choice are garment construction/trim actions, not textile or print trends.",
+        "Outerwear: Men/women: test pocket access seated/standing, collar-tab comfort and restrained adjusters.",
+        "Shirts: Women's hybrid top layer: hidden placket/storm tab; men's everyday shirt: dependable buttons/cuffs.",
+        "Trousers: Comfort waist and accessible pockets can be tested, but not justified solely by outerwear evidence."
+      ],
+      "materials": [
+        {
+          "name": "Pocket/body cloth combination",
+          "question": "How does the cloth behave with a loaded pocket and reinforced entry?"
+        },
+        {
+          "name": "Tab or drawcord assembly",
+          "question": "Is the adjustment comfortable and simple to operate over layers?"
+        },
+        {
+          "name": "Concealed closure",
+          "question": "Does the front remain stable while opened, closed and laundered?"
+        }
+      ],
+      "patterns": [
+        "Use plain or coherent woven pattern where pockets and closures need to remain legible."
+      ],
+      "processes": [
+        "Pocket geometry, reinforcement, drawcord/tab adjustment and closure choice are garment construction/trim actions, not textile or print trends.",
+        "Development focus: reach and storage use, closure operation with layers, hardware weight, drawcord/stopper durability."
+      ],
+      "sourceIds": [
+        "W02",
+        "W03",
+        "W05",
+        "MS",
+        "WS",
+        "MP",
+        "WP",
+        "V41"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W02",
+          "section": "Core updates: utility jackets",
+          "role": "men pocket/trim execution"
+        },
+        {
+          "sourceId": "W03",
+          "section": "Core update: shackets and utility",
+          "role": "women trim execution"
+        },
+        {
+          "sourceId": "W05",
+          "section": "Fashion silhouette: the #FunnelNeck top-layer shirt",
+          "role": "women closure execution"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "CW11"
+      ],
+      "relatedIds": [
+        "OW02",
+        "S05",
+        "T02"
+      ],
+      "limitations": [
+        "No pocket capacity or closure-performance claim is established; details should earn their place through actual use."
+      ],
+      "cardSummary": "Clear pocket access and quiet waist, hem and collar adjustment keep utility details useful and visually controlled."
+    },
+    {
+      "id": "PROC05",
+      "title": "Quiet Stitch & Localised Embroidery",
+      "category": "Construction & Finish",
+      "kind": "process",
+      "gender": "Women & Men",
+      "priority": "Controlled test",
+      "summary": "Craft detail is kept local and deliberate. A small embroidered motif, repair-inspired stitch or considered joined-cloth placement can add character to a familiar shirt or layer, with space left for the garment and material to read clearly. Placement and stitch quality determine the strength of the final effect.",
+      "whyMarks": "A restrained stitched feature can distinguish an everyday shirt or casual layer without changing its familiar role. It offers a selective way to introduce hand-led character.",
+      "whatChanges": "Choose a specific technique and placement for each version. Develop thread, density and backing with the actual cloth, keeping stitched motifs, joined panels and woven patterns identified as separate construction routes.",
+      "elements": [
+        "Embroidery/applique/patchwork are added processes; jacquard is woven construction and a printed imitation is artwork. They require different costing, support and testing.",
+        "Outerwear: Men/women: restrained stitch/repair placement away from high-stress functional seams.",
+        "Shirts: Women: one tonal embroidery/border study; men: tonal panel/check matching or a considered stitch detail.",
+        "Trousers: Selective repair-inspired detail only after strength and comfort review."
+      ],
+      "materials": [
+        {
+          "name": "Embroidery ground",
+          "question": "Does the backing remain comfortable and avoid puckering?"
+        },
+        {
+          "name": "Repair-inspired stitch ground",
+          "question": "Is the effect decorative or intended to reinforce a real area of wear?"
+        },
+        {
+          "name": "Patchwork/jacquard comparison",
+          "question": "Should the visual come from joined cloth, woven pattern or printed artwork?"
+        }
+      ],
+      "patterns": [
+        "A tonal local motif or controlled panel can provide interest without full-garment decoration."
+      ],
+      "processes": [
+        "Embroidery/applique/patchwork are added processes; jacquard is woven construction and a printed imitation is artwork. They require different costing, support and testing.",
+        "Development focus: backing comfort, puckering, wash/rub fastness, placement at seams."
+      ],
+      "sourceIds": [
+        "W08",
+        "W09",
+        "W04",
+        "MS",
+        "WS",
+        "MP",
+        "WP"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W08",
+          "section": "Rural Spirit",
+          "role": "women craft processes"
+        },
+        {
+          "sourceId": "W08",
+          "section": "Love Worn",
+          "role": "repair context"
+        },
+        {
+          "sourceId": "W09",
+          "section": "Quiet Cottage",
+          "role": "women print/decorative context"
+        },
+        {
+          "sourceId": "W04",
+          "section": "The crafted patchwork shirt",
+          "role": "men garment craft"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [],
+      "relatedIds": [
+        "S01",
+        "S04",
+        "PAT03"
+      ],
+      "limitations": [
+        "Decorative mending is not a structural repair. Artwork rights and the comfort of backing/stitches require separate review."
+      ],
+      "cardSummary": "Small stitched placements and repair-inspired details bring measured craft character to familiar shirts and layers."
+    },
+    {
+      "id": "T06",
+      "title": "The Everyday Knit Straight & Wide Leg",
+      "category": "Trousers",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core development",
+      "summary": "Knitted pants gain definition through a clean open hem and a deliberate full-length leg. Straight and controlled wide-leg shapes offer two clear options, with loopback and smoother double-jersey routes changing the body and fall of the garment. A quiet waist and side seam keep the comfort story visually composed.",
+      "whyMarks": "Shambhala comfort pants and wider active bottoms provide a familiar Mark’s foundation. Cleaner leg balance and a more considered knit offer specific ways to develop that everyday role.",
+      "whatChanges": "Develop straight and wide versions separately, with a smooth-front waist and discreet internal adjustment. Compare loopback with double jersey, then refine pocket bags and hem depth around each fabric’s body and recovery.",
+      "elements": [
+        "Two explicit blocks: an open-hem straight leg and a controlled wide leg; both full-length.",
+        "Smooth-front elastic waist with an internal flat drawcord as a sampling option.",
+        "Side-entry pockets evaluated for bag visibility and opening stability in the chosen knit.",
+        "Quiet side seams and a substantial, flat hem; check twist and drag on footwear.",
+        "Women’s and men’s rises, seat balance and thigh ease developed independently."
+      ],
+      "materials": [
+        {
+          "name": "Cotton-led loopback jersey",
+          "question": "Construction: visible interior loops. Fibre blend remains a supplier choice. Does the face retain a clean line at knee, seat and pocket after wear and laundering?"
+        },
+        {
+          "name": "Smooth double jersey",
+          "question": "Construction: two knitted faces. Compare body, drape and recovery with loopback; neither ponte nor a particular elastane percentage is confirmed by these sources."
+        },
+        {
+          "name": "Tonal rib or subtly structured jersey",
+          "question": "Construction: restrained knitted relief, using W20 Prep Staples as a fabric route. Does texture stay quiet at the seat and avoid excessive length growth?"
+        }
+      ],
+      "patterns": [
+        "Solid charcoal, black or deep brown as our core edit.",
+        "Fine mélange as a separate yarn-colour option; no printed texture is required."
+      ],
+      "processes": [
+        "Compare clean finishing and light surface softening on the same base knit.",
+        "Validate waist recovery, spirality, knee growth and hem behaviour on finished samples."
+      ],
+      "sourceIds": [
+        "W18",
+        "W19",
+        "W20",
+        "MACT",
+        "MCOMF",
+        "V46"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W18",
+          "section": "The sweatpant",
+          "role": "Direct gender-inclusive full-length item: relaxed fit and an open straight-leg option."
+        },
+        {
+          "sourceId": "W20",
+          "section": "Prep Staples",
+          "role": "Explicit trouser end use in single/double jersey; our core edit reduces the source’s stripe emphasis."
+        },
+        {
+          "sourceId": "W19",
+          "section": "Lazycore",
+          "role": "Loopback, brushed fleece and single/double jersey sourcing context; not a men’s trouser sales measure."
+        },
+        {
+          "sourceId": "MCOMF",
+          "section": "Official product reference",
+          "role": "Existing Mark’s comfort straight-leg baseline; newness must be more specific than comfort alone."
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "UF03",
+        "UF08"
+      ],
+      "relatedIds": [
+        "T01",
+        "T03",
+        "T07",
+        "AKMAT01",
+        "AKMAT02"
+      ],
+      "limitations": [
+        "A/W 27/28 source direction, translated into a Mark’s development brief. No knit-pant sales growth or tested fabric performance is established."
+      ],
+      "cardSummary": "Clean open hems and considered knit body give straight and wide-leg comfort pants a more deliberate line."
+    },
+    {
+      "id": "T07",
+      "title": "The Brushed Warm-Up Jogger",
+      "category": "Trousers",
+      "kind": "item",
+      "gender": "Women & Men",
+      "priority": "Core development",
+      "summary": "The winter jogger combines a soft inner face with a cleaner outer line. Relaxed volume through the seat and thigh is brought into focus by a gathered hem, while a flat drawcord and controlled waistband keep details quiet. Loopback and brushed-back jersey provide different readings of tactile comfort.",
+      "whyMarks": "Fleece joggers and comfort bottoms are familiar Mark’s items. A more resolved inner handle, leg proportion and hem treatment give this winter development a distinct focus.",
+      "whatChanges": "Compare a fixed gathered hem with a concealed adjustable opening. Balance relaxed thigh ease against ankle volume, then resolve waistband channels, pocket bulk and the brushed interior together on the finished garment.",
+      "elements": [
+        "Relaxed seat and thigh, tapering into a purposeful gathered hem.",
+        "Optional concealed hem adjustment for a straight-to-jogger conversion; test it as a functional variant.",
+        "Multi-channel elastic waist with flat woven drawcord; hardware kept visually discreet.",
+        "Useful side pockets with controlled opening and bag bulk.",
+        "Plain face or small tonal stitch detail, rather than large source-brand graphics."
+      ],
+      "materials": [
+        {
+          "name": "Brushed-back sweatshirt jersey",
+          "question": "Process: raise the inner face of a knitted ground. Compare hand feel, shedding and pilling; brushing is not a fibre or a quantified insulation claim."
+        },
+        {
+          "name": "Loopback fleece alternative",
+          "question": "Construction: retained interior loops. Is this the better option where less loft and reduced seam bulk matter?"
+        },
+        {
+          "name": "Soft double jersey alternative",
+          "question": "Construction: two faces, with fibre blend selected later. Does it give sufficient body and comfort without a raised inner surface?"
+        }
+      ],
+      "patterns": [
+        "Heathered grey and muted mélange are yarn-colour routes.",
+        "Quiet solids support the winter comfort story; any wash variation needs a controlled approval standard."
+      ],
+      "processes": [
+        "Compare unbrushed, lightly brushed and more raised inner-face options on identified base qualities.",
+        "Assess pilling, lint transfer, shrinkage, drawcord security and hem-adjuster comfort."
+      ],
+      "sourceIds": [
+        "W18",
+        "W19",
+        "W20",
+        "MACT",
+        "V46"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W18",
+          "section": "The sweatpant",
+          "role": "Direct item evidence for relaxed fit, elastic waist, flat cord, adjustable gathered hem and loopback/brushed lining."
+        },
+        {
+          "sourceId": "W19",
+          "section": "Lazycore",
+          "role": "Men’s source routes for loopback, brushed fleece and gently napped jersey."
+        },
+        {
+          "sourceId": "W20",
+          "section": "Lazycore",
+          "role": "Women’s companion sourcing direction; qualitative consistency, not an independent sales confirmation."
+        },
+        {
+          "sourceId": "MACT",
+          "section": "Official category listing",
+          "role": "Current Mark’s fleece/jogger baseline; presence does not establish performance or AW27/28 allocation."
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "UF02",
+        "UF01"
+      ],
+      "relatedIds": [
+        "T06",
+        "AKMAT01",
+        "AKPROC01"
+      ],
+      "limitations": [
+        "Brushed comfort is a source-backed design route; warmth, moisture management and durability remain sample questions without a verified test result."
+      ],
+      "cardSummary": "A soft inner face, relaxed leg and purposeful gathered hem refine the winter jogger."
+    },
+    {
+      "id": "T08",
+      "title": "Studio Leggings",
+      "category": "Trousers",
+      "kind": "item",
+      "gender": "Women",
+      "priority": "Focused development study",
+      "summary": "A quiet, close-fitting legging brings the season’s next-to-skin knit direction into a focused studio development. Fine rib and smooth compact jersey offer different surface readings, with a flat high waist and considered seam placement defining the line. Full-length and 7/8 versions allow proportion to be assessed separately from texture.",
+      "whyMarks": "Shambhala’s existing leggings establish a clear Mark’s use case. The opportunity is a more resolved relationship between surface, waist and movement within a familiar active-bottoms category.",
+      "whatChanges": "Compare smooth and fine-rib prototypes in the intended fit. Refine high-waist stability, crotch and inner-leg construction through movement trials, and develop any seamless version as its own engineering route.",
+      "elements": [
+        "Close-fitting leg line, with full-length and 7/8 lengths evaluated as distinct options.",
+        "Flat high waist tested for rolling, digging and movement; no unverified tummy-control claim.",
+        "Crotch/inner-leg construction selected through movement and comfort trials.",
+        "Smooth or fine-rib surface with discreet seam placement and restrained branding.",
+        "Separate cut-and-sew and seamless prototypes if both routes are pursued."
+      ],
+      "materials": [
+        {
+          "name": "Fine rib jersey candidate",
+          "question": "W20 Dreamy Naturalist names ribs and leggings. Can the selected quality retain opacity and shape under bending and repeated extension?"
+        },
+        {
+          "name": "Smooth compact interlock candidate",
+          "question": "W20 Sporty Brights names interlock in broader athleisure sourcing. This is our cross-category fabric comparison; confirm stretch, recovery and opacity rather than borrowing bra-specific claims."
+        },
+        {
+          "name": "Cotton/cellulosic stretch-jersey candidate",
+          "question": "Fibre families come from Dreamy Naturalist, not a confirmed commercial legging article. Which blend and construction meet the intended use after wear and wash?"
+        }
+      ],
+      "patterns": [
+        "Solids and subtle heather mélange as the first development edit.",
+        "No semi-sheer, airy pointelle or lace carried into the opaque studio prototype."
+      ],
+      "processes": [
+        "Compare rib and smooth surfaces before adding decorative finishing.",
+        "Review opacity in movement, dimensional stability, seam comfort and stretch recovery on the actual proposed sample."
+      ],
+      "sourceIds": [
+        "W20",
+        "MACT",
+        "MSHAM",
+        "V48"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W20",
+          "section": "Dreamy Naturalist",
+          "role": "Explicit leggings end use with next-to-skin jersey, ribs and seamless construction. Yoga use is our interpretation."
+        },
+        {
+          "sourceId": "W20",
+          "section": "Sporty Brights",
+          "role": "Interlock as a broader athleisure textile comparison; not a confirmed legging performance specification."
+        },
+        {
+          "sourceId": "MACT",
+          "section": "Official category listing",
+          "role": "Mark’s current high-rise 7/8 Shambhala legging baseline."
+        },
+        {
+          "sourceId": "MSHAM",
+          "section": "Official brand category",
+          "role": "Brand/category fit; does not prove customer demand or future buying plans."
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "LL02",
+        "LL01"
+      ],
+      "relatedIds": [
+        "T06",
+        "AKMAT03",
+        "AKPROC02"
+      ],
+      "limitations": [
+        "Studio/yoga is a development use case, not a directly measured WGSN legging forecast. Opacity, compression, sweat management and technical performance are unverified."
+      ],
+      "cardSummary": "Fine rib and smooth jersey offer two quiet surface routes for a close-fitting studio legging."
+    },
+    {
+      "id": "AKMAT01",
+      "title": "Loopback and Brushed-Back Jersey",
+      "category": "Materials",
+      "kind": "material",
+      "gender": "Women & Men",
+      "priority": "Material direction",
+      "summary": "Keep a clean outer face and compare two inside handles for straight-leg pants and joggers. Treat the unraised loopback and raised brushed-back versions as separate material routes, with leg drape and waist bulk assessed on garments.",
+      "whyMarks": "W18 directly offers loopback or brushed lining for its sweatpant. W19 and W20 Lazycore describe loopback, brushed fleece and single/double jersey, plus gently raised surfaces.",
+      "whatChanges": "Keep a clean outer face and compare two inside handles for straight-leg pants and joggers. Treat the unraised loopback and raised brushed-back versions as separate material routes, with leg drape and waist bulk assessed on garments.",
+      "elements": [
+        "Loopback refers to interior loops. Single/double jersey describes knitted structure. Brushed fleece combines a knitted ground with a raised surface."
+      ],
+      "materials": [
+        {
+          "name": "Fibre & material",
+          "question": "Cotton and cellulosic-led blends are sourcing candidates, with synthetics/elastane possible in the guides. No ratio, weight or certification belongs to the proposed article until supplier documentation identifies it."
+        },
+        {
+          "name": "Construction",
+          "question": "Loopback refers to interior loops. Single/double jersey describes knitted structure. Brushed fleece combines a knitted ground with a raised surface."
+        }
+      ],
+      "patterns": [
+        "Mélange comes from yarn colour; it is not automatically a printed marl."
+      ],
+      "processes": [
+        "Brushing, napping and peaching alter surface handle; do not treat those words as interchangeable fibre names."
+      ],
+      "sourceIds": [
+        "W18",
+        "W19",
+        "W20",
+        "V50"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W18",
+          "section": "The sweatpant",
+          "role": "Direct garment application"
+        },
+        {
+          "sourceId": "W19",
+          "section": "Lazycore",
+          "role": "Men’s construction/finish options"
+        },
+        {
+          "sourceId": "W20",
+          "section": "Lazycore",
+          "role": "Women’s material counterpart"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "KM03"
+      ],
+      "relatedIds": [
+        "T06",
+        "T07"
+      ],
+      "limitations": [
+        "The two Lazycore sections are companion WGSN guides, not independent demand measures. Supplier examples are leads, not booked samples."
+      ]
+    },
+    {
+      "id": "AKMAT02",
+      "title": "Structured Double Jersey for Clean Knit Trousers",
+      "category": "Materials",
+      "kind": "material",
+      "gender": "Women & Men",
+      "priority": "Material direction",
+      "summary": "Use the explicit women’s trouser route and the gender-inclusive W18 sweatpant as the item basis. Compare a smooth denser double jersey and a low-relief tonal structure for a straight or modestly wide everyday pant. Extending suiting-inspired knit ideas to trousers is our adaptation.",
+      "whyMarks": "W20 Prep Staples explicitly includes trousers in single/double jersey. W20 Smart Comfort supplies a polished knit context but its double-face application is tailored cardigans and blazers; W19 Timeless Quality adds restrained ribs and small knitted textures.",
+      "whatChanges": "Use the explicit women’s trouser route and the gender-inclusive W18 sweatpant as the item basis. Compare a smooth denser double jersey and a low-relief tonal structure for a straight or modestly wide everyday pant. Extending suiting-inspired knit ideas to trousers is our adaptation.",
+      "elements": [
+        "Double jersey is a construction family, not proof of a particular commercial ponte/scuba quality or four-way stretch."
+      ],
+      "materials": [
+        {
+          "name": "Fibre & material",
+          "question": "The sourcing guides offer cotton, cellulosic, wool and blended options. Select according to an actual sample rather than assuming that a premium sweater yarn will resist knee growth in pants."
+        },
+        {
+          "name": "Construction",
+          "question": "Double jersey is a construction family, not proof of a particular commercial ponte/scuba quality or four-way stretch."
+        }
+      ],
+      "patterns": [
+        "Begin plain or tonal. A micro-jacquard is knitted pattern; a printed imitation requires separate identification."
+      ],
+      "processes": [
+        "A clean face and controlled dimensional finishing should serve the leg line. No chemical easy-care finish is confirmed."
+      ],
+      "sourceIds": [
+        "W20",
+        "W19",
+        "W18"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W20",
+          "section": "Prep Staples",
+          "role": "Explicit knit-trouser end use"
+        },
+        {
+          "sourceId": "W20",
+          "section": "Smart Comfort",
+          "role": "Suiting-inspired knit comparison with blazer/cardigan limitation"
+        },
+        {
+          "sourceId": "W19",
+          "section": "Timeless Quality",
+          "role": "Restrained structure and quality context"
+        },
+        {
+          "sourceId": "W18",
+          "section": "The sweatpant",
+          "role": "Gender-inclusive full-length item anchor"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [],
+      "relatedIds": [
+        "T06"
+      ],
+      "limitations": [
+        "Smart Comfort is not itself a knit-trouser specification. No performance claim follows from double-faced construction alone."
+      ]
+    },
+    {
+      "id": "AKMAT03",
+      "title": "Fine Rib & Smooth Jersey for Studio Leggings",
+      "category": "Materials",
+      "kind": "material",
+      "gender": "Women",
+      "priority": "Material direction",
+      "summary": "Retain the soft next-to-skin idea but edit for an opaque studio/everyday legging. Compare fine rib and smooth compact jersey, using the actual high-rise garment to evaluate coverage and shape retention. Do not transfer an open structure merely because it is pictured in the same source section.",
+      "whyMarks": "W20 Dreamy Naturalist explicitly includes leggings and proposes next-to-skin jersey, rib and seamless construction. Its airy pointelle, lace and semi-sheer supplier example serve other uses within that broad direction. Sporty Brights includes interlock within wider athleisure sourcing.",
+      "whatChanges": "Retain the soft next-to-skin idea but edit for an opaque studio/everyday legging. Compare fine rib and smooth compact jersey, using the actual high-rise garment to evaluate coverage and shape retention. Do not transfer an open structure merely because it is pictured in the same source section.",
+      "elements": [
+        "Rib is knitted structure; seamless is a garment-engineering route; interlock is a fabric construction. They are not synonyms."
+      ],
+      "materials": [
+        {
+          "name": "Fibre & material",
+          "question": "Cotton/cellulosic blends and elastic components are candidate routes. Neither a fibre name nor the source’s bra-specific interlock establishes leggings compression, breathability or moisture management."
+        },
+        {
+          "name": "Construction",
+          "question": "Rib is knitted structure; seamless is a garment-engineering route; interlock is a fabric construction. They are not synonyms."
+        }
+      ],
+      "patterns": [
+        "Use solid or fine mélange initially. Seamless zoning or rib variation is engineered texture, not automatically print."
+      ],
+      "processes": [
+        "Compare finish only after a suitable opaque knit is identified. Softener or brushing cannot correct an unsuitable open structure."
+      ],
+      "sourceIds": [
+        "W20",
+        "MACT",
+        "V48"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W20",
+          "section": "Dreamy Naturalist",
+          "role": "Direct legging material/end-use evidence"
+        },
+        {
+          "sourceId": "W20",
+          "section": "Sporty Brights",
+          "role": "Interlock comparison only"
+        },
+        {
+          "sourceId": "MACT",
+          "section": "Official category listing",
+          "role": "Existing Mark’s legging use case"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [
+        "LL01"
+      ],
+      "relatedIds": [
+        "T08"
+      ],
+      "limitations": [
+        "These sources do not establish a yoga-specific A/W 27/28 growth rate, technical fabric certification or finished garment performance."
+      ]
+    },
+    {
+      "id": "AKPROC01",
+      "title": "A Controlled Waist and Convertible Hem",
+      "category": "Construction & Finish",
+      "kind": "process",
+      "gender": "Women & Men",
+      "priority": "Construction study",
+      "summary": "Separate a clean permanent open hem from an adjustable straight-to-jogger variant. Hide adjuster bulk where possible and review hardware against the wearer’s ankle and footwear. The cincher must visibly change the silhouette without making the uncinched hem hang unevenly.",
+      "whyMarks": "W18 The sweatpant directly names a multi-channel elastic waist, flat woven drawstrings and concealed elastic cinchers or toggle drawstrings at the hem.",
+      "whatChanges": "Separate a clean permanent open hem from an adjustable straight-to-jogger variant. Hide adjuster bulk where possible and review hardware against the wearer’s ankle and footwear. The cincher must visibly change the silhouette without making the uncinched hem hang unevenly.",
+      "elements": [
+        "Adjustment security and ease of use",
+        "Local thickness and comfort",
+        "Drawcord/hardware care compatibility",
+        "Fit with hem open and gathered"
+      ],
+      "materials": [],
+      "patterns": [],
+      "processes": [
+        "Waistband assembly, drawcord and hem-adjustment construction. Not a textile fibre, print or finish."
+      ],
+      "sourceIds": [
+        "W18",
+        "W19"
+      ],
+      "sourceJoins": [
+        {
+          "sourceId": "W18",
+          "section": "The sweatpant",
+          "role": "Direct construction strategies"
+        },
+        {
+          "sourceId": "W19",
+          "section": "Lazycore",
+          "role": "Jersey/raised-surface bulk context"
+        }
+      ],
+      "metricIds": [],
+      "visualIds": [],
+      "relatedIds": [
+        "T06",
+        "T07"
+      ],
+      "limitations": [
+        "This is a source-backed construction option; no trim supplier or tested assembly is confirmed."
+      ]
+    }
+  ],
+  "sources": {
+    "W01": {
+      "title": "Textile Sourcing Guide: Men’s A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/6a6b4c0872b3ef81e595f17f",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-09-01"
+    },
+    "W02": {
+      "title": "Key Silhouettes: Men’s Jackets & Outerwear A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/69e10fac4faec9e57d53472c",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-04-24"
+    },
+    "W03": {
+      "title": "Key Silhouettes: Women’s Jackets & Outerwear A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/69d5fec0e6ee88a446ed3ed7",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-04-10"
+    },
+    "W04": {
+      "title": "Key Silhouettes: Men’s Shirts & Woven Tops A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/69dd23f99fca01f83498b5f2",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-04-16"
+    },
+    "W05": {
+      "title": "Key Silhouettes: Women’s Woven Tops A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/69de58304faec9e57d40fd4b",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-05-05"
+    },
+    "W06": {
+      "title": "Key Silhouettes: Men’s Trousers A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/69cdba52aad13187186855f5",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-04-10"
+    },
+    "W07": {
+      "title": "Key Silhouettes: Women’s Trousers & Shorts A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/69d8bca4022f4e765679ac17",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-04-16"
+    },
+    "W08": {
+      "title": "Textile Sourcing Guide: Women’s A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/6a70989092530bc5ece60a83",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-09-01"
+    },
+    "W09": {
+      "title": "Print Sourcing Guide: Women’s A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/6aa405d879acdeec1369b90a",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-09-29"
+    },
+    "W10": {
+      "title": "Design & Colour Directions A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/68d24e357e3e9ac5af356877",
+      "season": "A/W 27/28",
+      "publishedAt": "2025-10-20"
+    },
+    "W11": {
+      "title": "Womenswear Forecast A/W 27/28: Design Dependables",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/696e5e40d24fe61fc1e43634",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-03-03"
+    },
+    "W12": {
+      "title": "Menswear Forecast A/W 27/28: Design Dependables",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/6985e114b16527dcdacc324f",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-03-27"
+    },
+    "W13": {
+      "title": "Womenswear Forecast A/W 27/28: Human Touch",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/696e5ee895a11237d320e599",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-03-03"
+    },
+    "W14": {
+      "title": "Menswear Forecast A/W 27/28: Human Touch",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/6985dfa3b16527dcdacc2f2a",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-03-27"
+    },
+    "W15": {
+      "title": "Intertextile Shanghai A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/6a953020b5fedb352c97c9f6",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-09-18"
+    },
+    "CTC26": {
+      "title": "Mark's Better everyday positioning and new store format",
+      "publisher": "Canadian Tire Corporation",
+      "url": "https://corp.canadiantire.ca/English/media/news-releases/press-release-details/2026/Canadian-Tire-Corporation-Puts-200-Million-Behind-Marks-New-Store-Format-Opens-the-Brands-Largest-Store-Yet-in-Thunder-Bay/default.aspx",
+      "season": null,
+      "publishedAt": "2026-11-04"
+    },
+    "MO": {
+      "title": "Men's outerwear range",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/cat/mens/mens-outerwear-DC3000607.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "WO": {
+      "title": "Women's outerwear range",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/cat/womens/outerwear-DC3000602.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "MS": {
+      "title": "Men's tops range",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/cat/mens/mens-tops-DC3000605.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "WS": {
+      "title": "Women's blouses and shirts range",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/cat/womens/womens-tops/blouses-shirts-DC3000242.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "MP": {
+      "title": "Men's pants range",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/cat/mens/mens-bottoms/pants-DC3000177.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "WP": {
+      "title": "Women's pants range",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/cat/womens/bottoms/pants-DC3000250.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "MFL": {
+      "title": "WindRiver men's stretch flannel product",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/pdp/windriver-men-s-basic-stretch-flannel-shirt-84350932f.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "WFL": {
+      "title": "WindRiver women's oversized flannel product",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/pdp/windriver-women-s-oversized-flannel-86002242f.410039996029.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "MNI": {
+      "title": "Denver Hayes men's non-iron shirt product",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/pdp/denver-hayes-men-s-long-sleeve-non-iron-essential-shirt-85182104f.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "WPT": {
+      "title": "Denver Hayes women's pleated trouser product",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/pdp/denver-hayes-women-s-pleated-trouser-pants-84014793f.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "WCR": {
+      "title": "Denver Hayes women's wide-leg corduroy product",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/pdp/denver-hayes-women-s-wide-leg-front-patch-stretch-cord-pants-86002100f.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "WBA": {
+      "title": "WindRiver women's insulated cotton barn jacket product",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/pdp/windriver-women-s-cotton-insulated-barn-jacket-86209684f.html?colorCode=COLOUR_BROWN",
+      "season": null,
+      "publishedAt": null
+    },
+    "WBL": {
+      "title": "Denver Hayes women's long bouclé jacket product",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/pdp/denver-hayes-women-s-button-up-boucle-long-jacket-86295035f.html?colorCode=COLOUR_BURGUNDY",
+      "season": null,
+      "publishedAt": null
+    },
+    "MSH": {
+      "title": "Denver Hayes men's wool-like shacket product",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/pdp/denver-hayes-men-s-wool-like-shacket-81259009f.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "HD": {
+      "title": "HYPER-DRI product technology",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/events/innovations-product-tech/dry.html",
+      "season": null,
+      "publishedAt": null
+    },
+    "G01": {
+      "title": "AW 27-28 Key Materials: How a New Relationship with Time Is Shaping Material Developments",
+      "publisher": "Première Vision",
+      "url": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments",
+      "season": "AW2027/28",
+      "publishedAt": "2026-09-23"
+    },
+    "G02": {
+      "title": "MILANO UNICA PRESENTA MU IS PUNK! HANDCRAFT IS PUNK! — Fall-Winter 2027/28 Collections",
+      "publisher": "Milano Unica",
+      "url": "https://www.milanounica.it/it/milano-unica-presenta-mu-is-punk-handcraft-is-punk",
+      "season": "AW2027/28",
+      "publishedAt": "2026-07-07"
+    },
+    "G03": {
+      "title": "Intertextile Directions Trends: A QUEST FOR ESSENCE sets the tone – and the scent – for Autumn / Winter 2027-28",
+      "publisher": "Messe Frankfurt / Intertextile Shanghai Apparel Fabrics",
+      "url": "https://intertextile-shanghai-apparel-fabrics-autumn.hk.messefrankfurt.com/shanghai/en/press/press-releases/2026/itsa26-pr3.html",
+      "season": "AW2027/28",
+      "publishedAt": "2026-07-27"
+    },
+    "W18": {
+      "title": "Mega Capsule: Active New Year’s Training - Men’s & Women’s A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/6aa17978c50454c8461f7bf4",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-10-06"
+    },
+    "W19": {
+      "title": "Textile Sourcing Guide: Men’s Knitwear & Jersey A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/6a6c8545c4ec4fb769307336",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-08-27"
+    },
+    "W20": {
+      "title": "Textile Sourcing Guide: Women’s Knitwear & Jersey A/W 27/28",
+      "publisher": "WGSN",
+      "url": "https://www.wgsnchina.cn/fashion/article/6a6c81e22b4a8186b3035075",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-08-27"
+    },
+    "MACT": {
+      "title": "Mark’s Women’s Active Bottoms",
+      "publisher": "Mark’s",
+      "url": "https://www.marks.com/en/cat/womens/womens-activewear/active-bottoms-DC3000445.html",
+      "season": "Current public range; product seasons unspecified",
+      "publishedAt": null
+    },
+    "MSHAM": {
+      "title": "Mark’s Shambhala Pants, Shorts & Skirts",
+      "publisher": "Mark’s",
+      "url": "https://www.marks.com/en/all-brands/shambhala/pants-shorts-skirts.html",
+      "season": "Current public range; product seasons unspecified",
+      "publishedAt": null
+    },
+    "MCOMF": {
+      "title": "Shambhala Women’s Live In Comfort Straight Leg Pants",
+      "publisher": "Mark’s",
+      "url": "https://www.marks.com/en/pdp/shambhala-women-s-live-in-comfort-straight-leg-pants-79462017f.html",
+      "season": "Current public product; season unspecified",
+      "publishedAt": null
+    },
+    "V41": {
+      "title": "Preview Collection: A/W 2026",
+      "publisher": "Carhartt WIP",
+      "url": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026",
+      "season": "A/W2026 Preview",
+      "publishedAt": null
+    },
+    "V42": {
+      "title": "The Fall/Winter 2026 Campaign",
+      "publisher": "Carhartt WIP",
+      "url": "https://carhartt-wip.jp/blogs/journal/the-fall-winter-2026-campaign",
+      "season": "A/W2026 Campaign",
+      "publishedAt": null
+    },
+    "V43": {
+      "title": "Published fashion and textile reference",
+      "publisher": "Textil Santanderina AW27/28 process presentation; photographer and pictured garment designer not identified on source page",
+      "url": "https://textilsantanderina.com/new-finishes-aw27-28-collection/",
+      "season": "AW27/28 textile collection presentation",
+      "publishedAt": null
+    },
+    "V44": {
+      "title": "Published fashion and textile reference",
+      "publisher": "Image: LEMAIRE, Autumn/Winter 2026 Lookbook",
+      "url": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook",
+      "season": "A/W 2026 editorial",
+      "publishedAt": null
+    },
+    "V45": {
+      "title": "Unique Clothing: Down Jacket",
+      "publisher": "UNIQLO LifeWear magazine",
+      "url": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing",
+      "season": "A/W 2026",
+      "publishedAt": null
+    },
+    "V46": {
+      "title": "Fluffy Moments",
+      "publisher": "UNIQLO LifeWear magazine",
+      "url": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments",
+      "season": "A/W 2026",
+      "publishedAt": null
+    },
+    "V47": {
+      "title": "The City Classics",
+      "publisher": "UNIQLO LifeWear magazine",
+      "url": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics",
+      "season": "A/W 2026",
+      "publishedAt": null
+    },
+    "V48": {
+      "title": "Yoga & Pilates: Summer 2026 Editorial",
+      "publisher": "lululemon",
+      "url": "https://shop.lululemon.com/story/yoga-pilates",
+      "season": "Summer 2026 campaign (asset dated May 2026)",
+      "publishedAt": null
+    },
+    "V49": {
+      "title": "Autumn/Winter 27/28 Seasonal Fabric Collection",
+      "publisher": "John Foster · Autumn/Winter 2027/28",
+      "url": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/",
+      "season": "A/W 2027/28",
+      "publishedAt": null
+    },
+    "V50": {
+      "title": "Brushed-Back Fleece: QL-025945",
+      "publisher": "SWATCHON · QL-025945",
+      "url": "https://www.swatchon.com/fabric/QL-025945",
+      "season": "Current fabric reference · collection season not stated",
+      "publishedAt": null
+    }
+  },
+  "metrics": {
+    "OW_M01": {
+      "label": "CanvasJacket TikTok views",
+      "valueDisplay": "+133%",
+      "period": "January–March 2026 vs January–March 2025",
+      "market": "Worldwide",
+      "method": "TikTok view change, as reported by WGSN",
+      "limitation": "No absolute hashtag baseline, unique-user count, demographic split, gender split or sampled-post denominator is supplied. Views can include repeat exposure and do not measure purchases.",
+      "sourceId": "W02",
+      "contextClass": "social_attention",
+      "chartable": true
+    },
+    "OW_M02": {
+      "label": "FieldJacket TikTok views",
+      "valueDisplay": "+91%",
+      "period": "January–March 2026 vs January–March 2025",
+      "market": "Worldwide",
+      "method": "TikTok view change, as reported by WGSN",
+      "limitation": "No absolute hashtag baseline, unique-user count, demographic split, gender split or sampled-post denominator is supplied. Views can include repeat exposure and do not measure purchases.",
+      "sourceId": "W02",
+      "contextClass": "social_attention",
+      "chartable": true
+    },
+    "ST_Q11": {
+      "label": "Men’s straight-leg trouser assortment forecast",
+      "valueDisplay": "28.5% share · +0.6ppt",
+      "period": "A/W 26/27 forecast vs A/W 25/26; quoted in the A/W 27/28 report",
+      "market": "UK",
+      "method": "WGSN retail forecast quoted by the article; underlying model and retailer universe not independently inspected.",
+      "limitation": "The quantitative target season is AW26/27, not AW27/28. Assortment share is not unit or value sales. Reported retail trouser assortment; retailer/SKU counts and model details unavailable",
+      "sourceId": "W06",
+      "contextClass": "retail_forecast",
+      "chartable": true
+    },
+    "ST_Q12": {
+      "label": "Men’s tapered-trouser assortment forecast",
+      "valueDisplay": "16.5% share · +1.0ppt",
+      "period": "A/W 26/27 forecast vs A/W 25/26; quoted in the A/W 27/28 report",
+      "market": "US",
+      "method": "WGSN retail forecast quoted by the article; underlying model and retailer universe not independently inspected.",
+      "limitation": "The quantitative target season is AW26/27, not AW27/28. Not evidence of Canadian demand or an allocation recommendation. Reported retail trouser assortment; retailer/SKU counts and model details unavailable",
+      "sourceId": "W06",
+      "contextClass": "retail_forecast",
+      "chartable": true
+    },
+    "ST_Q16": {
+      "label": "Women’s straight-leg catwalk mix",
+      "valueDisplay": "37.5% share · +18ppt",
+      "period": "AW26/27; AW26/27 vs AW25/26",
+      "market": "Catwalk geography/collection sample not specified",
+      "method": "WGSN catwalk garment/classification mix, as reported in the article; collection and garment counts not exposed.",
+      "limitation": "Not a retail assortment forecast, consumer preference survey or Canadian sales figure. Share of the relevant WGSN catwalk classification; exact look count and collection coverage are not disclosed.",
+      "sourceId": "W07",
+      "contextClass": "catwalk_observation",
+      "chartable": true
+    },
+    "ST_Q17": {
+      "label": "Women’s wide-leg catwalk mix",
+      "valueDisplay": "17% share · −18.4ppt",
+      "period": "AW26/27; AW26/27 vs AW25/26",
+      "market": "Catwalk geography/collection sample not specified",
+      "method": "WGSN catwalk garment/classification mix, as reported in the article; collection and garment counts not exposed.",
+      "limitation": "Runway contraction does not contradict the different AW27/28 UK/US retail forecast simply by having a negative sign. Share of the relevant WGSN catwalk classification; exact look count and collection coverage are not disclosed.",
+      "sourceId": "W07",
+      "contextClass": "catwalk_observation",
+      "chartable": true
+    },
+    "ST_Q20": {
+      "label": "Women’s wide-leg future retail direction",
+      "valueDisplay": "UK: Slow Riser · US: Flat",
+      "period": "A/W 27/28 forecast; comparison baseline not exposed",
+      "market": "UK and US",
+      "method": "WGSN retail forecast quoted by the article; underlying model and retailer universe not independently inspected.",
+      "limitation": "No numerical growth rate is stated. Keep separate from Q17 historical runway mix. Trouser category; universe/counts unavailable",
+      "sourceId": "W07",
+      "contextClass": "retail_forecast_classification",
+      "chartable": false
+    },
+    "AK_Q01": {
+      "label": "Soft callouts in UK/US women’s knit apparel",
+      "valueDisplay": "16.2% share; +2.3ppt",
+      "value": 16.2,
+      "change": 2.3,
+      "unit": "percentage points",
+      "period": "A/W 2025 versus A/W 2023",
+      "market": "UK and US retailers; women’s knit apparel",
+      "denominator": "The report’s tracked knit-apparel assortment mix, including multiple garment categories; product-callout measure, not knit-pants units.",
+      "method": "WGSN e-commerce assortment analysis; some retailers excluded for like-for-like comparison; recategorisation and retailer website changes may affect counts.",
+      "limitation": "Two-year historical seasonal comparison. Not YoY, Canadian sales, or a sweatpant/legging-specific demand measure.",
+      "sourceId": "W20",
+      "section": "Proof points",
+      "methodSection": "Methodology",
+      "contextClass": "Historical broad-category assortment context",
+      "chartable": true,
+      "attachmentPolicy": "Central context panel only; do not title as knit-pant or yoga growth."
+    },
+    "AK_Q02": {
+      "label": "Cosy callouts in UK/US women’s knit apparel",
+      "valueDisplay": "4.3% share; +0.3ppt",
+      "value": 4.3,
+      "change": 0.3,
+      "unit": "percentage points",
+      "period": "A/W 2025 versus A/W 2023",
+      "market": "UK and US retailers; women’s knit apparel",
+      "denominator": "The report’s tracked knit-apparel assortment mix; many garment categories are included.",
+      "method": "WGSN e-commerce assortment analysis with like-for-like retailer exclusions and possible recategorisation effects.",
+      "limitation": "A broad product-description signal, not a measured warmth benefit, unit sales or jogger-only adoption.",
+      "sourceId": "W20",
+      "section": "Proof points",
+      "methodSection": "Methodology",
+      "contextClass": "Historical broad-category assortment context",
+      "chartable": true,
+      "attachmentPolicy": "Context only; not evidence for a particular fleece composition or warmth rating."
+    }
+  },
+  "visuals": {
+    "CW03": {
+      "src": "assets/research/CW03.jpg",
+      "alt": "A compact collared zip jacket balances relaxed layered shirting.",
+      "caption": "A compact collared zip jacket balances relaxed layered shirting.",
+      "role": "full-length silhouette · detail · editorial reference",
+      "season": "A/W2026 Preview",
+      "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+    },
+    "CW04": {
+      "src": "assets/research/CW04.jpg",
+      "alt": "Four-pocket workwear gains a longer striped-shirt layer.",
+      "caption": "Four-pocket workwear gains a longer striped-shirt layer.",
+      "role": "full-length silhouette · detail · editorial reference",
+      "season": "A/W2026 Preview",
+      "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+    },
+    "CW10": {
+      "src": "assets/research/CW10.jpg",
+      "alt": "Enlarged flap pockets define a grey-green utility overshirt.",
+      "caption": "Enlarged flap pockets define a grey-green utility overshirt.",
+      "role": "detail · editorial reference",
+      "season": "A/W2026 Preview",
+      "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+    },
+    "CW11": {
+      "src": "assets/research/CW11.jpg",
+      "alt": "Sand tones and enlarged patch pockets soften the zip-front work jacket.",
+      "caption": "Sand tones and enlarged patch pockets soften the zip-front work jacket.",
+      "role": "detail · editorial reference",
+      "season": "A/W2026 Preview",
+      "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+    },
+    "CW16": {
+      "src": "assets/research/CW16.jpg",
+      "alt": "Tonal sand workwear pairs enlarged jacket pockets with reinforced-front trousers.",
+      "caption": "Tonal sand workwear pairs enlarged jacket pockets with reinforced-front trousers.",
+      "role": "full-length silhouette · detail · editorial reference",
+      "season": "A/W2026 Preview",
+      "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+    },
+    "CW17": {
+      "src": "assets/research/CW17.jpg",
+      "alt": "An elongated striped shirt is styled open with dropped shoulders and generous cuffs.",
+      "caption": "An elongated striped shirt is styled open with dropped shoulders and generous cuffs.",
+      "role": "full-length silhouette · detail · editorial reference",
+      "season": "A/W2026 Preview",
+      "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+    },
+    "CW18": {
+      "src": "assets/research/CW18.jpg",
+      "alt": "A dark hooded zip layer sits above abstract printed trousers and tall boots.",
+      "caption": "A dark hooded zip layer sits above abstract printed trousers and tall boots.",
+      "role": "full-length silhouette · detail · editorial reference",
+      "season": "A/W2026 Preview",
+      "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+    },
+    "CP02": {
+      "src": "assets/research/CP02.jpg",
+      "alt": "A contrast-collar burgundy work jacket anchors layered winter workwear.",
+      "caption": "A contrast-collar burgundy work jacket anchors layered winter workwear.",
+      "role": "detail · editorial reference",
+      "season": "A/W2026 Campaign",
+      "credit": "Carhartt WIP. Photography: Craig Gareth Watkins; direction: Alex Acy; styling: Silvia Vinci.",
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/the-fall-winter-2026-campaign"
+    },
+    "CP05": {
+      "src": "assets/research/CP05.jpg",
+      "alt": "Reinforced trouser panels bring structure to relaxed workwear volume.",
+      "caption": "Reinforced trouser panels bring structure to relaxed workwear volume.",
+      "role": "detail · editorial reference",
+      "season": "A/W2026 Campaign",
+      "credit": "Carhartt WIP. Photography: Craig Gareth Watkins; direction: Alex Acy; styling: Silvia Vinci.",
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/the-fall-winter-2026-campaign"
+    },
+    "TF02": {
+      "src": "assets/research/TF02.jpg",
+      "alt": "A raised white collar emphasises a clean neck line.",
+      "caption": "A raised white collar emphasises a clean neck line.",
+      "role": "Supplier editorial illustration",
+      "season": "AW27/28 textile collection presentation",
+      "credit": "Textil Santanderina AW27/28 process presentation; photographer and pictured garment designer not identified on source page.",
+      "sourceUrl": "https://textilsantanderina.com/new-finishes-aw27-28-collection/"
+    },
+    "TF12": {
+      "src": "assets/research/TF12.jpg",
+      "alt": "Muted olive tailoring carries a controlled warm accent.",
+      "caption": "Muted olive tailoring carries a controlled warm accent.",
+      "role": "Supplier editorial illustration",
+      "season": "AW27/28 textile collection presentation",
+      "credit": "Textil Santanderina AW27/28 process presentation; photographer and pictured garment designer not identified on source page.",
+      "sourceUrl": "https://textilsantanderina.com/new-finishes-aw27-28-collection/"
+    },
+    "OL08": {
+      "src": "assets/research/editorial-08.jpg",
+      "alt": "Belt, lapel and light: the waist becomes a precise point of focus.",
+      "caption": "Belt, lapel and light: the waist becomes a precise point of focus.",
+      "role": "Design detail",
+      "season": "A/W 2026 editorial",
+      "credit": "Image: LEMAIRE, Autumn/Winter 2026 Lookbook. Photography by Phil Engelhardt.",
+      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook"
+    },
+    "OL09": {
+      "src": "assets/research/editorial-09.jpg",
+      "alt": "An open navy outer layer balances the volume of relaxed trousers.",
+      "caption": "An open navy outer layer balances the volume of relaxed trousers.",
+      "role": "Editorial silhouette",
+      "season": "A/W 2026 editorial",
+      "credit": "Image: LEMAIRE, Autumn/Winter 2026 Lookbook. Photography by Phil Engelhardt.",
+      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook"
+    },
+    "OL31": {
+      "src": "assets/research/editorial-31.jpg",
+      "alt": "A raised collar and wrapped front create an enveloping silhouette.",
+      "caption": "A raised collar and wrapped front create an enveloping silhouette.",
+      "role": "Editorial silhouette",
+      "season": "A/W 2026 editorial",
+      "credit": "Image: LEMAIRE, Autumn/Winter 2026 Lookbook. Photography by Phil Engelhardt.",
+      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook"
+    },
+    "GI04": {
+      "src": "assets/research/GI04.webp",
+      "alt": "Washed nuance and irregular surface replace pristine uniformity.",
+      "caption": "Washed nuance and irregular surface replace pristine uniformity.",
+      "role": "Textile direction",
+      "season": "AW27/28 textile forecast",
+      "credit": "Ego Pecci - IT / Tebur Textile - CN. Image: bout / @a.bout__.",
+      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments"
+    },
+    "GI05": {
+      "src": "assets/research/GI05.webp",
+      "alt": "Decorative memory returns through dark florals and tactile ornament.",
+      "caption": "Decorative memory returns through dark florals and tactile ornament.",
+      "role": "Textile direction",
+      "season": "AW27/28 textile forecast",
+      "credit": "A&A Textile - TW / Carlo Pozzi - IT / Akbaslar Tekstil - TR / Solstiss - FR.",
+      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments"
+    },
+    "GI06": {
+      "src": "assets/research/GI06.webp",
+      "alt": "Botanical motifs shift between memory and abstraction.",
+      "caption": "Botanical motifs shift between memory and abstraction.",
+      "role": "Textile direction",
+      "season": "AW27/28 textile forecast",
+      "credit": "Maher Khoder - TR / Turkay Tekstil - TR / Mitwill Textiles Europe - FR. Image: Amanda Kelly Ltd - GB.",
+      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments"
+    },
+    "UD01": {
+      "src": "assets/research/UD01.jpg",
+      "alt": "Six padded outerwear pieces arranged in a horizontal still life.",
+      "caption": "Six padded outerwear pieces arranged in a horizontal still life.",
+      "role": "product still life",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+    },
+    "UD02": {
+      "src": "assets/research/UD02.jpg",
+      "alt": "Two cropped padded jackets: a dark reversible style and a blue volume style.",
+      "caption": "Two cropped padded jackets: a dark reversible style and a blue volume style.",
+      "role": "fashion editorial / upper-body silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+    },
+    "UD03": {
+      "src": "assets/research/UD03.jpg",
+      "alt": "Urban padded layers worn with jersey pants, culottes and relaxed pleated trousers.",
+      "caption": "Urban padded layers worn with jersey pants, culottes and relaxed pleated trousers.",
+      "role": "fashion editorial / full-body silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+    },
+    "UD04": {
+      "src": "assets/research/UD04.png",
+      "alt": "A dark cloth strip with droplets, from the sealed-seam parka construction study.",
+      "caption": "A dark cloth strip with droplets, from the sealed-seam parka construction study.",
+      "role": "source construction illustration",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+    },
+    "UD05": {
+      "src": "assets/research/UD05.png",
+      "alt": "A red cloth strip with a visible grid, illustrating the source’s ripstop shell.",
+      "caption": "A red cloth strip with a visible grid, illustrating the source’s ripstop shell.",
+      "role": "source textile construction illustration",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+    },
+    "UD06": {
+      "src": "assets/research/UD06.png",
+      "alt": "Layered cloth and contrasting fill forms in the hybrid-padding illustration.",
+      "caption": "Layered cloth and contrasting fill forms in the hybrid-padding illustration.",
+      "role": "source padding construction illustration",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+    },
+    "UF01": {
+      "src": "assets/research/UF01.jpg",
+      "alt": "A green full-zip fleece layered over a striped shirt and dark jogger pants.",
+      "caption": "A green full-zip fleece layered over a striped shirt and dark jogger pants.",
+      "role": "fashion editorial / partial silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+    },
+    "UF02": {
+      "src": "assets/research/UF02.jpg",
+      "alt": "A checked pile blouson and a white half-zip layer worn with light trousers.",
+      "caption": "A checked pile blouson and a white half-zip layer worn with light trousers.",
+      "role": "fashion editorial / full-body silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+    },
+    "UF03": {
+      "src": "assets/research/UF03.jpg",
+      "alt": "A red button-front fleece pullover with pale wide sweatpants in a café.",
+      "caption": "A red button-front fleece pullover with pale wide sweatpants in a café.",
+      "role": "fashion editorial / partial silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+    },
+    "UF05": {
+      "src": "assets/research/UF05.jpg",
+      "alt": "Cream and brown plush outer layers shown together in relaxed café styling.",
+      "caption": "Cream and brown plush outer layers shown together in relaxed café styling.",
+      "role": "fashion editorial / upper-body silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+    },
+    "UF06": {
+      "src": "assets/research/UF06.jpg",
+      "alt": "A brown pile cardigan layered with a checked shirt, photographed at a writing table.",
+      "caption": "A brown pile cardigan layered with a checked shirt, photographed at a writing table.",
+      "role": "fashion editorial / seated styling",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+    },
+    "UF08": {
+      "src": "assets/research/UF08.jpg",
+      "alt": "A grey sweatshirt group with an Oxford shirt, jersey work pants and blue leggings.",
+      "caption": "A grey sweatshirt group with an Oxford shirt, jersey work pants and blue leggings.",
+      "role": "fashion editorial / partial group silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+    },
+    "UC01": {
+      "src": "assets/research/UC01.jpg",
+      "alt": "A cropped blue-grey checked shirt and pale jersey pants worn in a ceramic studio.",
+      "caption": "A cropped blue-grey checked shirt and pale jersey pants worn in a ceramic studio.",
+      "role": "fashion editorial / seated silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Kohei Kawashima. Styling: Mitsuru Kurosawa.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics"
+    },
+    "UC02": {
+      "src": "assets/research/UC02.jpg",
+      "alt": "A cream Harrington jacket worn with light relaxed trousers on a city street.",
+      "caption": "A cream Harrington jacket worn with light relaxed trousers on a city street.",
+      "role": "fashion editorial / full-body silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Kohei Kawashima. Styling: Mitsuru Kurosawa.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics"
+    },
+    "UC03": {
+      "src": "assets/research/UC03.jpg",
+      "alt": "A dark brown zip blouson with a shirt collar and clean front.",
+      "caption": "A dark brown zip blouson with a shirt collar and clean front.",
+      "role": "fashion editorial / upper-body silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Kohei Kawashima. Styling: Mitsuru Kurosawa.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics"
+    },
+    "UC05": {
+      "src": "assets/research/UC05.jpg",
+      "alt": "Dark smart trousers worn with a compact denim trucker jacket in Berlin.",
+      "caption": "Dark smart trousers worn with a compact denim trucker jacket in Berlin.",
+      "role": "fashion editorial / full-body silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Kohei Kawashima. Styling: Mitsuru Kurosawa.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics"
+    },
+    "UC06": {
+      "src": "assets/research/UC06.jpg",
+      "alt": "A small-check button-front shirt tucked into dark pleated relaxed trousers.",
+      "caption": "A small-check button-front shirt tucked into dark pleated relaxed trousers.",
+      "role": "fashion editorial / partial silhouette",
+      "season": "A/W 2026",
+      "credit": "UNIQLO LifeWear magazine. Photography: Kohei Kawashima. Styling: Mitsuru Kurosawa.",
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics"
+    },
+    "LL01": {
+      "src": "assets/research/LL01.jpg",
+      "alt": "Close view of a high-rise black legging waistband and curved waist seam.",
+      "caption": "Close view of a high-rise black legging waistband and curved waist seam.",
+      "role": "fashion editorial / garment detail",
+      "season": "Summer 2026 campaign (asset dated May 2026)",
+      "credit": "lululemon. Photographer not identified on source page.",
+      "sourceUrl": "https://shop.lululemon.com/story/yoga-pilates"
+    },
+    "LL02": {
+      "src": "assets/research/LL02.jpg",
+      "alt": "Black full-length studio leggings shown in a wide-stance movement pose.",
+      "caption": "Black full-length studio leggings shown in a wide-stance movement pose.",
+      "role": "fashion editorial / full-body silhouette",
+      "season": "Summer 2026 campaign (asset dated May 2026)",
+      "credit": "lululemon. Photographer not identified on source page.",
+      "sourceUrl": "https://shop.lululemon.com/story/yoga-pilates"
+    },
+    "JF01": {
+      "src": "assets/research/JF01.jpg",
+      "alt": "Warm russet and oat tones bring depth to small-scale tailoring patterns. John Foster, A/W 27/28.",
+      "caption": "Warm russet and oat tones bring depth to small-scale tailoring patterns. John Foster, A/W 27/28.",
+      "role": "Actual cloth close-up · woven pattern and surface study",
+      "season": "A/W 2027/28",
+      "credit": "John Foster · Autumn/Winter 2027/28",
+      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/"
+    },
+    "JF02": {
+      "src": "assets/research/JF02.jpg",
+      "alt": "Herringbone, muted stripe and marl-like plains renew the language of heritage cloth. John Foster, A/W 27/28.",
+      "caption": "Herringbone, muted stripe and marl-like plains renew the language of heritage cloth. John Foster, A/W 27/28.",
+      "role": "Actual swatch close-up · woven texture study",
+      "season": "A/W 2027/28",
+      "credit": "John Foster · Autumn/Winter 2027/28",
+      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/"
+    },
+    "JF03": {
+      "src": "assets/research/JF03.jpg",
+      "alt": "Olive, moss and muted gold soften the traditional check and stripe story. John Foster, A/W 27/28.",
+      "caption": "Olive, moss and muted gold soften the traditional check and stripe story. John Foster, A/W 27/28.",
+      "role": "Actual cloth and inspiration board · colour and pattern study",
+      "season": "A/W 2027/28",
+      "credit": "John Foster · Autumn/Winter 2027/28",
+      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/"
+    },
+    "JF04": {
+      "src": "assets/research/JF04.jpg",
+      "alt": "Dogtooth and fine pinstripe sharpen a palette of charcoal and chalk. John Foster, A/W 27/28.",
+      "caption": "Dogtooth and fine pinstripe sharpen a palette of charcoal and chalk. John Foster, A/W 27/28.",
+      "role": "Actual swatch close-up · woven micro-pattern study",
+      "season": "A/W 2027/28",
+      "credit": "John Foster · Autumn/Winter 2027/28",
+      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/"
+    },
+    "JF05": {
+      "src": "assets/research/JF05.jpg",
+      "alt": "Blue-grey windowpane and mottled plains keep winter tailoring quietly expressive. John Foster, A/W 27/28.",
+      "caption": "Blue-grey windowpane and mottled plains keep winter tailoring quietly expressive. John Foster, A/W 27/28.",
+      "role": "Actual cloth close-up · check and surface study",
+      "season": "A/W 2027/28",
+      "credit": "John Foster · Autumn/Winter 2027/28",
+      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/"
+    },
+    "KM03": {
+      "src": "assets/research/KM03.jpg",
+      "alt": "A heather-grey knit face folds back to reveal a raised fleece reverse. SWATCHON, brushed-back cotton fleece reference.",
+      "caption": "A heather-grey knit face folds back to reveal a raised fleece reverse. SWATCHON, brushed-back cotton fleece reference.",
+      "role": "Actual fabric macro · knit face and brushed reverse",
+      "season": "Current fabric reference · collection season not stated",
+      "credit": "SWATCHON · QL-025945",
+      "sourceUrl": "https://www.swatchon.com/fabric/QL-025945"
+    }
+  },
+  "featured": [
+    "OW02",
+    "T06",
+    "MAT01"
+  ],
+  "contextMetricIds": [
+    "OW_M01",
+    "OW_M02",
+    "ST_Q11",
+    "ST_Q16",
+    "AK_Q01",
+    "AK_Q02"
+  ],
+  "editorialScope": "An independent SOHO Fashion interpretation for Mark’s. Forecast research, observed fashion and supplier evidence retain their original dates and scope."
+}
