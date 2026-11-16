@@ -1226,8 +1226,8 @@
           "question": "Compare leg definition and pleat retention with the draping version."
         },
         {
-          "name": "Softened denim/twill",
-          "question": "Keep fading controlled; it is not evidence of longer life."
+          "name": "Softened twill",
+          "question": "Balance a supple hand with a clean, controlled trouser line."
         }
       ],
       "patterns": [
@@ -2144,7 +2144,7 @@
       ],
       "metricIds": [],
       "visualIds": [
-        "GI05"
+        "GI04"
       ],
       "relatedIds": [
         "S03",
@@ -2201,7 +2201,6 @@
         "WS",
         "MP",
         "WP",
-        "G01",
         "V45"
       ],
       "sourceJoins": [
@@ -2223,7 +2222,6 @@
       ],
       "metricIds": [],
       "visualIds": [
-        "GI04",
         "UD06"
       ],
       "relatedIds": [
@@ -2498,7 +2496,7 @@
         },
         {
           "name": "Tonal rib or subtly structured jersey",
-          "question": "Construction: restrained knitted relief, using W20 Prep Staples as a fabric route. Does texture stay quiet at the seat and avoid excessive length growth?"
+          "question": "Construction: restrained knitted relief, developed as a restrained trouser texture. Does texture stay quiet at the seat and avoid excessive length growth?"
         }
       ],
       "patterns": [
@@ -2659,11 +2657,11 @@
       "materials": [
         {
           "name": "Fine rib jersey candidate",
-          "question": "W20 Dreamy Naturalist names ribs and leggings. Can the selected quality retain opacity and shape under bending and repeated extension?"
+          "question": "Compare a fine rib in the intended fit. Assess coverage under bending and shape retention after repeated extension."
         },
         {
           "name": "Smooth compact interlock candidate",
-          "question": "W20 Sporty Brights names interlock in broader athleisure sourcing. This is our cross-category fabric comparison; confirm stretch, recovery and opacity rather than borrowing bra-specific claims."
+          "question": "Compare smooth compact interlock as an alternative surface. Confirm stretch, recovery and coverage on the proposed garment."
         },
         {
           "name": "Cotton/cellulosic stretch-jersey candidate",
@@ -2713,8 +2711,7 @@
       ],
       "relatedIds": [
         "T06",
-        "AKMAT03",
-        "AKPROC02"
+        "AKMAT03"
       ],
       "limitations": [
         "Studio/yoga is a development use case, not a directly measured WGSN legging forecast. Opacity, compression, sweat management and technical performance are unverified."
@@ -2728,9 +2725,9 @@
       "kind": "material",
       "gender": "Women & Men",
       "priority": "Material direction",
-      "summary": "Keep a clean outer face and compare two inside handles for straight-leg pants and joggers. Treat the unraised loopback and raised brushed-back versions as separate material routes, with leg drape and waist bulk assessed on garments.",
-      "whyMarks": "W18 directly offers loopback or brushed lining for its sweatpant. W19 and W20 Lazycore describe loopback, brushed fleece and single/double jersey, plus gently raised surfaces.",
-      "whatChanges": "Keep a clean outer face and compare two inside handles for straight-leg pants and joggers. Treat the unraised loopback and raised brushed-back versions as separate material routes, with leg drape and waist bulk assessed on garments.",
+      "summary": "Loopback and brushed-back jersey offer two distinct inner handles for everyday knit pants. A clean outer face keeps the leg line composed, while the inside can remain looped or take on a softly raised surface. Cloth body and local thickness are developed around the intended straight or gathered silhouette.",
+      "whyMarks": "Comfort pants and joggers already belong to Mark’s offer. Distinct face-and-back combinations give the material programme a clear relationship to fit and seasonal handle.",
+      "whatChanges": "Compare loopback and lightly raised inner faces on identified base qualities. Review drape, knee recovery, waist bulk and pocket construction in the intended garment.",
       "elements": [
         "Loopback refers to interior loops. Single/double jersey describes knitted structure. Brushed fleece combines a knitted ground with a raised surface."
       ],
@@ -2783,7 +2780,8 @@
       ],
       "limitations": [
         "The two Lazycore sections are companion WGSN guides, not independent demand measures. Supplier examples are leads, not booked samples."
-      ]
+      ],
+      "cardSummary": "A clean outer face pairs with looped or softly raised inner surfaces for everyday knit pants."
     },
     {
       "id": "AKMAT02",
@@ -2792,9 +2790,9 @@
       "kind": "material",
       "gender": "Women & Men",
       "priority": "Material direction",
-      "summary": "Use the explicit women’s trouser route and the gender-inclusive W18 sweatpant as the item basis. Compare a smooth denser double jersey and a low-relief tonal structure for a straight or modestly wide everyday pant. Extending suiting-inspired knit ideas to trousers is our adaptation.",
-      "whyMarks": "W20 Prep Staples explicitly includes trousers in single/double jersey. W20 Smart Comfort supplies a polished knit context but its double-face application is tailored cardigans and blazers; W19 Timeless Quality adds restrained ribs and small knitted textures.",
-      "whatChanges": "Use the explicit women’s trouser route and the gender-inclusive W18 sweatpant as the item basis. Compare a smooth denser double jersey and a low-relief tonal structure for a straight or modestly wide everyday pant. Extending suiting-inspired knit ideas to trousers is our adaptation.",
+      "summary": "Double jersey brings a more defined body to everyday knitted trousers. Smooth faces and low-relief tonal structures offer different surface readings, with the cloth selected to support a clean straight or measured wide leg. The direction connects a composed appearance with the movement of a knitted construction.",
+      "whyMarks": "Mark’s comfort-bottoms wardrobe gives structured jersey a clear use. A more deliberate cloth body can refine how an everyday knitted trouser falls and holds its line.",
+      "whatChanges": "Compare a smooth double jersey with a subtly structured alternative in the same trouser block. Resolve pocket shape, waist gathering and hem depth around each quality’s drape and recovery.",
       "elements": [
         "Double jersey is a construction family, not proof of a particular commercial ponte/scuba quality or four-way stretch."
       ],
@@ -2848,7 +2846,8 @@
       ],
       "limitations": [
         "Smart Comfort is not itself a knit-trouser specification. No performance claim follows from double-faced construction alone."
-      ]
+      ],
+      "cardSummary": "Smooth double jersey and low-relief tonal structures bring definition to clean, everyday knit trousers."
     },
     {
       "id": "AKMAT03",
@@ -2857,9 +2856,9 @@
       "kind": "material",
       "gender": "Women",
       "priority": "Material direction",
-      "summary": "Retain the soft next-to-skin idea but edit for an opaque studio/everyday legging. Compare fine rib and smooth compact jersey, using the actual high-rise garment to evaluate coverage and shape retention. Do not transfer an open structure merely because it is pictured in the same source section.",
-      "whyMarks": "W20 Dreamy Naturalist explicitly includes leggings and proposes next-to-skin jersey, rib and seamless construction. Its airy pointelle, lace and semi-sheer supplier example serve other uses within that broad direction. Sporty Brights includes interlock within wider athleisure sourcing.",
-      "whatChanges": "Retain the soft next-to-skin idea but edit for an opaque studio/everyday legging. Compare fine rib and smooth compact jersey, using the actual high-rise garment to evaluate coverage and shape retention. Do not transfer an open structure merely because it is pictured in the same source section.",
+      "summary": "Fine rib and smooth compact jersey offer two surface routes for studio leggings. A quiet appearance keeps the focus on the close-fitting line, while coverage and shape retention are developed in the intended garment. Seamless engineering and cut-and-sew construction remain distinct options within this focused material study.",
+      "whyMarks": "Shambhala leggings provide a familiar Mark’s use case. A controlled surface and considered relationship between cloth, waist and movement give the material development a precise purpose.",
+      "whatChanges": "Compare fine rib with a smooth jersey in the intended high-rise fit. Assess coverage through bending, recovery after wear and the comfort of seams or knitted transitions.",
       "elements": [
         "Rib is knitted structure; seamless is a garment-engineering route; interlock is a fabric construction. They are not synonyms."
       ],
@@ -2910,7 +2909,8 @@
       ],
       "limitations": [
         "These sources do not establish a yoga-specific A/W 27/28 growth rate, technical fabric certification or finished garment performance."
-      ]
+      ],
+      "cardSummary": "Fine rib and smooth compact jersey offer distinct surfaces for a quiet, close-fitting studio legging."
     },
     {
       "id": "AKPROC01",
@@ -2919,9 +2919,9 @@
       "kind": "process",
       "gender": "Women & Men",
       "priority": "Construction study",
-      "summary": "Separate a clean permanent open hem from an adjustable straight-to-jogger variant. Hide adjuster bulk where possible and review hardware against the wearer’s ankle and footwear. The cincher must visibly change the silhouette without making the uncinched hem hang unevenly.",
-      "whyMarks": "W18 The sweatpant directly names a multi-channel elastic waist, flat woven drawstrings and concealed elastic cinchers or toggle drawstrings at the hem.",
-      "whatChanges": "Separate a clean permanent open hem from an adjustable straight-to-jogger variant. Hide adjuster bulk where possible and review hardware against the wearer’s ankle and footwear. The cincher must visibly change the silhouette without making the uncinched hem hang unevenly.",
+      "summary": "Discreet waist and hem construction gives knit pants more control over shape. A flat drawcord and considered elastic channels keep the waist composed, while an optional concealed hem cincher allows the leg to move between open and gathered. The detail is developed around comfort, adjustment and the uncinched silhouette.",
+      "whyMarks": "Comfort pants and joggers are familiar Mark’s items. A well-resolved waist and optional hem adjustment give a useful construction focus within those established shapes.",
+      "whatChanges": "Develop a permanent open hem and an adjustable version separately. Resolve channel bulk, drawcord security and adjuster position, then review the leg with the hem both open and gathered.",
       "elements": [
         "Adjustment security and ease of use",
         "Local thickness and comfort",
@@ -2957,7 +2957,8 @@
       ],
       "limitations": [
         "This is a source-backed construction option; no trim supplier or tested assembly is confirmed."
-      ]
+      ],
+      "cardSummary": "Flat drawcords, considered elastic channels and concealed hem adjustment refine the shape of knit pants."
     }
   ],
   "sources": {
@@ -3405,8 +3406,7 @@
       "section": "Proof points",
       "methodSection": "Methodology",
       "contextClass": "Historical broad-category assortment context",
-      "chartable": true,
-      "attachmentPolicy": "Central context panel only; do not title as knit-pant or yoga growth."
+      "chartable": true
     },
     "AK_Q02": {
       "label": "Cosy callouts in UK/US women’s knit apparel",
@@ -3423,8 +3423,7 @@
       "section": "Proof points",
       "methodSection": "Methodology",
       "contextClass": "Historical broad-category assortment context",
-      "chartable": true,
-      "attachmentPolicy": "Context only; not evidence for a particular fleece composition or warmth rating."
+      "chartable": true
     }
   },
   "visuals": {
@@ -3561,15 +3560,6 @@
       "role": "Textile direction",
       "season": "AW27/28 textile forecast",
       "credit": "Ego Pecci - IT / Tebur Textile - CN. Image: bout / @a.bout__.",
-      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments"
-    },
-    "GI05": {
-      "src": "assets/research/GI05.webp",
-      "alt": "Decorative memory returns through dark florals and tactile ornament.",
-      "caption": "Decorative memory returns through dark florals and tactile ornament.",
-      "role": "Textile direction",
-      "season": "AW27/28 textile forecast",
-      "credit": "A&A Textile - TW / Carlo Pozzi - IT / Akbaslar Tekstil - TR / Solstiss - FR.",
       "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments"
     },
     "GI06": {
