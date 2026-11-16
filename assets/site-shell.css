@@ -1,0 +1,26 @@
+/* Shared showroom shell. Page styles must not resize these elements. */
+:root{--site-header-height:84px}
+.site-header{gap:clamp(12px,1.8vw,32px)}
+.main-nav{gap:clamp(18px,2vw,32px);min-width:0}
+.header-search svg{order:-1}
+.nav-group{height:var(--site-header-height)}
+.sub-nav{top:var(--site-header-height)}
+.site-header button,.site-header input{font-family:inherit}
+@media(max-width:900px){
+  :root{--site-header-height:56px}
+  .site-header{gap:14px}
+  .main-nav{gap:16px}
+}
+@media(max-width:620px){
+  :root{--site-header-height:96px}
+  .site-header{height:96px;flex-wrap:wrap;align-content:center;justify-content:space-between;gap:2px 12px;padding:8px var(--pad) 0}
+  .site-header .brand-logo{height:30px}
+  .header-tools{margin-left:auto;gap:0}
+  .header-tools .tool-button{width:32px;height:32px}
+  .main-nav{order:3;flex:1 0 100%;justify-content:space-between;gap:12px}
+  .main-nav>a,.nav-group>a{font-size:12px;padding:8px 0}
+  .nav-group{height:42px}
+  .sub-nav{top:42px;max-width:calc(100vw - 24px);gap:18px;padding:14px 16px}
+  .sub-nav a{font-size:11px}
+  .nav-blur{inset:96px 0 0}
+}

@@ -1,0 +1,478 @@
+{
+  "season": "A/W 27/28",
+  "editor": "SOHO Fashion",
+  "edition": "November 2026",
+  "reports": [
+    {
+      "number": "01",
+      "title": "Relaxed Tailoring",
+      "subtitle": "Longer lines, softer volume and cleaner detail.",
+      "directionLabel": "A/W 27/28 direction",
+      "thesis": "Familiar tailored shapes are reworked through length, relaxed proportions and a balance of compact and yielding cloth. Clean fronts, considered pleats and tonal layering keep attention on the outline.",
+      "silhouette": "Elongated coats, generous shirts and straighter trouser lines create an unbroken vertical rhythm. Rounded shoulders and a little space through the body soften the outline; a defined waist or composed hem brings it back into focus.",
+      "designElements": "Collars stand away from the neck. Fronts appear clean, while a deep cuff, displaced seam or precise pleat gives a familiar shape a different presence. Details are few, but their scale matters.",
+      "elementKeywords": [
+        "Elongated line",
+        "Soft structure",
+        "Defined pleat",
+        "Considered collar"
+      ],
+      "colourDirection": "Chalk and pale grey sit beside ink-dark tones. Cool blue gives the palette a sharper edge; warm brown prevents the composition from feeling clinical. Tonal layering keeps attention on shape.",
+      "colourFamilies": [
+        "Chalk",
+        "Smoke Grey",
+        "Ink",
+        "Cool Blue",
+        "Warm Brown"
+      ],
+      "textilesAndPattern": "Compact suiting, smooth poplin and fine textured cloth give the silhouette definition. Brushed surfaces introduce a softer counterpoint. Pattern becomes part of the construction: a discreet herringbone, narrow stripe or close-toned check, seen more as depth than decoration.",
+      "observedSignal": {
+        "label": "Observed A/W 26/27 runway signal",
+        "text": "Straight trouser lines became more visible on the women's catwalks, while familiar outerwear forms were reworked through volume and proportion."
+      },
+      "materialContext": {
+        "label": "Published A/W 27/28 textile direction",
+        "text": "Dense structure and precise craftsmanship bring a sculptural quality to cloth, alongside a renewed reading of traditional tailoring patterns.",
+        "sourceIds": [
+          "G01",
+          "G02"
+        ]
+      },
+      "wearabilityLens": "The visual shift remains legible in everyday dressing: fewer competing details, clearer proportions and a more intentional layering line.",
+      "id": "quiet-architecture",
+      "visuals": {
+        "cover": "OL04",
+        "silhouette": [
+          "OL09",
+          "OL04"
+        ],
+        "elements": [
+          "OL08"
+        ],
+        "materials": [
+          "GI02"
+        ],
+        "print": [
+          "GI02"
+        ],
+        "colour": [
+          "GI10"
+        ]
+      }
+    },
+    {
+      "number": "02",
+      "title": "Utility & Soft Volume",
+      "subtitle": "Enveloping shapes and discreet functional detail.",
+      "directionLabel": "A/W 27/28 direction",
+      "thesis": "Urban and outdoor references meet in rounded outer layers, raised necklines and adjustable forms. Coverage, movement and layering shape the direction, with practical details integrated into a softer outline.",
+      "silhouette": "Ovoid jackets, elongated top layers and relaxed trousers create a rounded, mobile outline. Volume is gathered, released or lightly contained, replacing a hard utilitarian stance with a more fluid relationship to the body.",
+      "designElements": "Raised necklines, cape-like overlays and adjustable openings frame the silhouette. Pockets become integrated architecture; concealed fastenings and layered panels keep the surface composed. The result sits between tailoring and outdoor clothing.",
+      "elementKeywords": [
+        "Enveloping volume",
+        "Raised neckline",
+        "Integrated pocketing",
+        "Adjustable form"
+      ],
+      "colourDirection": "Industrial grey and muted green establish a cool foundation. Black adds definition, while pale or luminous blue introduces a more synthetic note. Earthy neutrals soften the meeting of natural and technical references.",
+      "colourFamilies": [
+        "Industrial Grey",
+        "Muted Green",
+        "Black",
+        "Pale Blue",
+        "Luminous Blue"
+      ],
+      "textilesAndPattern": "Matte poplins, supple grid structures and smooth twills sit beside softer, more tactile layers. Pattern is reduced to organic markings, fine grids and tonal surface changes. Contrasting weights create the expression, rather than overt equipment styling.",
+      "observedSignal": {
+        "label": "Observed A/W 26/27 runway signal",
+        "text": "Cape details and soft volume gained visibility in runway coverage of woven tops, providing a backdrop to the season's enveloping shapes."
+      },
+      "materialContext": {
+        "label": "Published A/W 27/28 textile direction",
+        "text": "Urban mobility and softer utility meet in supple cloth, subtle surfaces and the conversation between traditional and technical fabrics.",
+        "sourceIds": [
+          "G02",
+          "G03"
+        ]
+      },
+      "wearabilityLens": "The direction connects with everyday movement through layers that look adaptable, with the visual drama concentrated in shape and proportion.",
+      "id": "protective-fluidity",
+      "visuals": {
+        "cover": "GI08",
+        "silhouette": [
+          "OL31",
+          "GI08"
+        ],
+        "elements": [
+          "OL31",
+          "OL08"
+        ],
+        "materials": [
+          "GI09",
+          "GI02"
+        ],
+        "print": [
+          "GI09"
+        ],
+        "colour": [
+          "GI10"
+        ]
+      }
+    },
+    {
+      "number": "03",
+      "title": "Rural Texture & Pattern",
+      "subtitle": "Heritage checks, tactile cloth and edited florals.",
+      "directionLabel": "A/W 27/28 direction",
+      "thesis": "Countryside references develop along two paths. One favours layered checks and richer textures; the other uses cleaner outlines and more open botanical patterns. Scale, surface and restrained colour relationships update familiar references.",
+      "silhouette": "Long-over-long layers, enveloping coats and easy shirt shapes establish the richer mood. Cleaner columns and restrained volume provide its counterpoint. A softly defined waist or an unexpected length changes the rhythm without erasing the reference.",
+      "designElements": "Collars, facings and borders become frames for texture. Subtle craft details and shifts in pattern scale create depth; quieter versions rely on spare fastenings and a clearer outline. Decoration appears intentional rather than uniform across the look.",
+      "elementKeywords": [
+        "Long-over-long",
+        "Textural layering",
+        "Pattern-scale contrast",
+        "Framed borders"
+      ],
+      "colourDirection": "Rust, clay and bark brown anchor the richer side, with green and tomato red adding energy. Cleaner blue, white and cool brown belong to the restrained interpretation. The two palettes express different readings of the same rural memory.",
+      "colourFamilies": [
+        "Rust",
+        "Clay",
+        "Bark Brown",
+        "Grounded Green",
+        "Tomato Red",
+        "Clean Blue"
+      ],
+      "textilesAndPattern": "Corduroy, brushed cloth, rustic yarns and tactile jacquards create material depth. Checks shift in scale or blur at their edges. Painterly landscapes, birds and fruit introduce storytelling, while open botanicals and generous space offer a quieter alternative.",
+      "observedSignal": {
+        "label": "Observed A/W 26/27 runway signal",
+        "text": "Rich outerwear textures and larger volumes were prominent in the recorded catwalk direction, forming part of the backdrop to this more expressive treatment of familiar forms."
+      },
+      "materialContext": {
+        "label": "Published A/W 27/28 textile direction",
+        "text": "Corduroy, tweed, workwear cloth and reinterpreted heritage patterns connect tactile familiarity with a more expressive seasonal surface.",
+        "sourceIds": [
+          "G02",
+          "G03"
+        ]
+      },
+      "wearabilityLens": "The connection to everyday dressing lies in recognisable rural forms, with the degree of pattern and texture changing the mood.",
+      "id": "pastoral-tension",
+      "visuals": {
+        "cover": "GI06",
+        "silhouette": [
+          "OL31",
+          "GI07"
+        ],
+        "elements": [
+          "GI05"
+        ],
+        "materials": [
+          "GI05",
+          "GI03"
+        ],
+        "print": [
+          "GI06"
+        ],
+        "colour": [
+          "GI06"
+        ]
+      }
+    },
+    {
+      "number": "04",
+      "title": "Washed & Tactile Surfaces",
+      "subtitle": "Patina, irregular texture and painterly pattern.",
+      "directionLabel": "A/W 27/28 direction",
+      "thesis": "Faded colour, irregular yarns and worked surfaces give cloth a more individual character. Brushed and plush textures sit beside softened denim and twill, while painterly florals extend the interest in visible marks and material depth.",
+      "silhouette": "Relaxed blousons, fluid shirts and easy trouser volumes soften familiar wardrobe shapes. Retro references are present, but the outline remains contemporary: a shorter top against a longer line, or a yielding surface balanced by a clearer structure.",
+      "designElements": "Repair-like stitching, uneven colour boundaries and subtle frayed or floated textures make the hand of the maker visible. The emphasis is on controlled imperfection and tactile contrast, rather than damage for its own sake.",
+      "elementKeywords": [
+        "Controlled imperfection",
+        "Softened retro",
+        "Visible stitch",
+        "Painterly mark"
+      ],
+      "colourDirection": "Rich browns and burgundy give faded neutrals an anchor. Peach, soft pink and muted green introduce a gentler contrast. Colour looks layered and softened, with occasional saturated passages giving painterly surfaces their depth.",
+      "colourFamilies": [
+        "Ground Brown",
+        "Burgundy",
+        "Soft Peach",
+        "Pale Pink",
+        "Muted Green"
+      ],
+      "textilesAndPattern": "Washed denim, softened twill and irregular woven surfaces sit beside corduroy, chenille and tactile jacquards. Fading and brushed texture suggest the passage of time. Florals take on the grain of pastel and the gesture of a painted mark, moving beyond flat decorative repeats.",
+      "observedSignal": {
+        "label": "Observed A/W 26/27 runway signal",
+        "text": "Runway-linked editorial coverage recorded renewed visibility for fluid blouses and retro styling. The forward direction extends that softness into a more tactile and expressive surface language."
+      },
+      "materialContext": {
+        "label": "Published A/W 27/28 textile direction",
+        "text": "Patina, decorative wear and the reinterpretation of archival flowers connect memory with a renewed appreciation of material character.",
+        "sourceIds": [
+          "G01",
+          "G02"
+        ]
+      },
+      "wearabilityLens": "Character is carried by the surface while familiar outlines keep the fashion expression approachable.",
+      "id": "human-imprint",
+      "visuals": {
+        "cover": "GI04",
+        "silhouette": [
+          "GI07",
+          "GI08"
+        ],
+        "elements": [
+          "GI04"
+        ],
+        "materials": [
+          "GI04",
+          "GI03"
+        ],
+        "print": [
+          "GI06"
+        ],
+        "colour": [
+          "GI03"
+        ]
+      }
+    }
+  ],
+  "assets": {
+    "GI01": {
+      "id": "GI01",
+      "src": "assets/global/GI01.webp",
+      "alt": "A split collage: a historical painting of two figures in red and white, beside lustrous taupe and black draped cloth on a dark background.",
+      "caption": "Supreme satins",
+      "credit": "Première Vision",
+      "publisher": "Première Vision",
+      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments",
+      "season": "AW27/28 textile forecast",
+      "role": "Textile direction"
+    },
+    "GI02": {
+      "id": "GI02",
+      "src": "assets/global/GI02.webp",
+      "alt": "Angular plum and golden-yellow cloth folds on black, paired with a pale-yellow sculptural outfit with a greatly enlarged sleeve.",
+      "caption": "Dense cloth becomes an instrument of shape.",
+      "credit": "YesungTextile - LR / Guigou - FR. Designer Selma Mataich; shoes in collaboration with Tirlittan Machreich; photo Alexandre Kallio; model Kielo Kivinen; MUAH Titti Heinrichs.",
+      "publisher": "Première Vision",
+      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments",
+      "season": "AW27/28 textile forecast",
+      "role": "Textile direction"
+    },
+    "GI03": {
+      "id": "GI03",
+      "src": "assets/global/GI03.webp",
+      "alt": "A collage of golden crumpled velvet-like cloth, a mustard outfit, acid-yellow drape and a dark yellow-patterned textured cloth.",
+      "caption": "Pile and lustre give the surface a richer presence.",
+      "credit": "Pontoglio 1883 - IT / Albert Guégain - FR / Kröner & Schlikker - DE / Sophie Halette - FR. Image: Leo Prothmann / @Leoprothmann.",
+      "publisher": "Première Vision",
+      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments",
+      "season": "AW27/28 textile forecast",
+      "role": "Textile direction"
+    },
+    "GI04": {
+      "id": "GI04",
+      "src": "assets/global/GI04.webp",
+      "alt": "Layered, pale cloth with softened uneven colour and a light translucent edge, beside a lilac-grey quilted jacket on a model.",
+      "caption": "Washed nuance and irregular surface replace pristine uniformity.",
+      "credit": "Ego Pecci - IT / Tebur Textile - CN. Image: bout / @a.bout__.",
+      "publisher": "Première Vision",
+      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments",
+      "season": "AW27/28 textile forecast",
+      "role": "Textile direction"
+    },
+    "GI05": {
+      "id": "GI05",
+      "src": "assets/global/GI05.webp",
+      "alt": "Antique stacked plates alongside a dark blue floral textile and brown lace-like draped material.",
+      "caption": "Decorative memory returns through dark florals and tactile ornament.",
+      "credit": "A&A Textile - TW / Carlo Pozzi - IT / Akbaslar Tekstil - TR / Solstiss - FR.",
+      "publisher": "Première Vision",
+      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments",
+      "season": "AW27/28 textile forecast",
+      "role": "Textile direction"
+    },
+    "GI06": {
+      "id": "GI06",
+      "src": "assets/global/GI06.webp",
+      "alt": "Draped textile prints with enlarged, blurred and pixelated flowers, beside a separate pink-and-red floral design.",
+      "caption": "Botanical motifs shift between memory and abstraction.",
+      "credit": "Maher Khoder - TR / Turkay Tekstil - TR / Mitwill Textiles Europe - FR. Image: Amanda Kelly Ltd - GB.",
+      "publisher": "Première Vision",
+      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments",
+      "season": "AW27/28 textile forecast",
+      "role": "Textile direction"
+    },
+    "GI07": {
+      "id": "GI07",
+      "src": "assets/global/GI07.jpg",
+      "alt": "A side-profile model wearing a cream collared jacket with a bag over the shoulder, against warm wood panelling.",
+      "caption": "A clean collar and unforced volume express everyday structure.",
+      "credit": "Published by Textil Santanderina; photographer and garment designer not identified on the page.",
+      "publisher": "Textil Santanderina",
+      "sourceUrl": "https://textilsantanderina.com/new-finishes-aw27-28-collection/",
+      "season": "AW27/28 collection presentation",
+      "role": "Fashion editorial"
+    },
+    "GI08": {
+      "id": "GI08",
+      "src": "assets/global/GI08.jpg",
+      "alt": "A close editorial view of a model in a dark, broad-collared jacket over white shirting, set against a textured grey rock surface.",
+      "caption": "A lifted collar frames a softly layered silhouette.",
+      "credit": "Published by Textil Santanderina; photographer and garment designer not identified on the page.",
+      "publisher": "Textil Santanderina",
+      "sourceUrl": "https://textilsantanderina.com/new-finishes-aw27-28-collection/",
+      "season": "AW27/28 collection presentation",
+      "role": "Fashion editorial"
+    },
+    "GI09": {
+      "id": "GI09",
+      "src": "assets/global/GI09.jpg",
+      "alt": "A closely cropped pair: white button-front shirting with a chest pocket beside a soft blue top, showing body volume and surface contrast.",
+      "caption": "Soft volume is expressed through the contrast of pale and blue surfaces.",
+      "credit": "Published by Textil Santanderina; photographer and garment designer not identified on the page.",
+      "publisher": "Textil Santanderina",
+      "sourceUrl": "https://textilsantanderina.com/new-finishes-aw27-28-collection/",
+      "season": "AW27/28 collection presentation",
+      "role": "Fashion editorial"
+    },
+    "GI10": {
+      "id": "GI10",
+      "src": "assets/global/GI10.jpg",
+      "alt": "A publisher-built moodboard mixing natural form, sculptural brown/tan surfaces, a cropped burgundy jacket detail and a colour-chip strip.",
+      "caption": "SARTORIAL",
+      "credit": "Textil Santanderina’s SARTORIAL collection board; individual image origins not identified.",
+      "publisher": "Textil Santanderina",
+      "sourceUrl": "https://textilsantanderina.com/aw27-28-collection/",
+      "season": "AW27/28 textile collection presentation",
+      "role": "Textile direction"
+    },
+    "OL04": {
+      "id": "OL04",
+      "src": "assets/global/editorial-04.jpg",
+      "alt": "Soft tailoring and tonal layers against a dark architectural setting.",
+      "caption": "Soft tailoring and tonal layers against a dark architectural setting.",
+      "credit": "Image: LEMAIRE, Autumn/Winter 2026 Lookbook. Photography by Phil Engelhardt.",
+      "publisher": "LEMAIRE",
+      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook",
+      "season": "A/W 2026 editorial",
+      "role": "Editorial silhouette"
+    },
+    "OL08": {
+      "id": "OL08",
+      "src": "assets/global/editorial-08.jpg",
+      "alt": "Belt, lapel and light: the waist becomes a precise point of focus.",
+      "caption": "Belt, lapel and light: the waist becomes a precise point of focus.",
+      "credit": "Image: LEMAIRE, Autumn/Winter 2026 Lookbook. Photography by Phil Engelhardt.",
+      "publisher": "LEMAIRE",
+      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook",
+      "season": "A/W 2026 editorial",
+      "role": "Design detail"
+    },
+    "OL09": {
+      "id": "OL09",
+      "src": "assets/global/editorial-09.jpg",
+      "alt": "An open navy outer layer balances the volume of relaxed trousers.",
+      "caption": "An open navy outer layer balances the volume of relaxed trousers.",
+      "credit": "Image: LEMAIRE, Autumn/Winter 2026 Lookbook. Photography by Phil Engelhardt.",
+      "publisher": "LEMAIRE",
+      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook",
+      "season": "A/W 2026 editorial",
+      "role": "Editorial silhouette"
+    },
+    "OL31": {
+      "id": "OL31",
+      "src": "assets/global/editorial-31.jpg",
+      "alt": "A raised collar and wrapped front create an enveloping silhouette.",
+      "caption": "A raised collar and wrapped front create an enveloping silhouette.",
+      "credit": "Image: LEMAIRE, Autumn/Winter 2026 Lookbook. Photography by Phil Engelhardt.",
+      "publisher": "LEMAIRE",
+      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook",
+      "season": "A/W 2026 editorial",
+      "role": "Editorial silhouette"
+    }
+  },
+  "insights": [
+    {
+      "title": "The long line, softened",
+      "topic": "Silhouette",
+      "deck": "Length and relaxed volume redraw the everyday outline.",
+      "asset": "OL09",
+      "dossier": "quiet-architecture",
+      "chapter": "silhouette"
+    },
+    {
+      "title": "The enveloping form",
+      "topic": "Silhouette",
+      "deck": "Wrapped fronts and raised collars create a more fluid sense of protection.",
+      "asset": "OL31",
+      "dossier": "protective-fluidity",
+      "chapter": "silhouette"
+    },
+    {
+      "title": "A waist in focus",
+      "topic": "Elements",
+      "deck": "A belt and a deliberate lapel give soft volume a point of definition.",
+      "asset": "OL08",
+      "dossier": "quiet-architecture",
+      "chapter": "elements"
+    },
+    {
+      "title": "The protective neckline",
+      "topic": "Elements",
+      "deck": "The collar becomes part of the architecture of the outer layer.",
+      "asset": "GI08",
+      "dossier": "protective-fluidity",
+      "chapter": "elements"
+    },
+    {
+      "title": "Cloth as architecture",
+      "topic": "Materials",
+      "deck": "Compact structure and sculptural folds give material an active role.",
+      "asset": "GI02",
+      "dossier": "quiet-architecture",
+      "chapter": "materials"
+    },
+    {
+      "title": "A trace of time",
+      "topic": "Materials",
+      "deck": "Faded nuance and irregular surfaces introduce a more human character.",
+      "asset": "GI04",
+      "dossier": "human-imprint",
+      "chapter": "materials"
+    },
+    {
+      "title": "The tactile return",
+      "topic": "Materials",
+      "deck": "Pile, drape and restrained lustre add depth to a quieter wardrobe.",
+      "asset": "GI03",
+      "dossier": "human-imprint",
+      "chapter": "materials"
+    },
+    {
+      "title": "Botanical distortion",
+      "topic": "Print",
+      "deck": "Flowers move between painterly memory, blurred edges and digital abstraction.",
+      "asset": "GI06",
+      "dossier": "pastoral-tension",
+      "chapter": "print"
+    },
+    {
+      "title": "Decorative memory",
+      "topic": "Print",
+      "deck": "Archival ornament finds a richer expression through textile and surface.",
+      "asset": "GI05",
+      "dossier": "pastoral-tension",
+      "chapter": "print"
+    },
+    {
+      "title": "Sartorial colour & material study",
+      "topic": "Colour",
+      "deck": "Textil Santanderina’s A/W 27/28 Sartorial presentation brings colour and material references together.",
+      "asset": "GI10",
+      "dossier": "quiet-architecture",
+      "chapter": "colour"
+    }
+  ]
+}
