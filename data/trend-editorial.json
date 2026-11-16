@@ -1,0 +1,387 @@
+{
+  "season": "A/W 27/28",
+  "edition": "November 2026",
+  "updatedAt": "2026-11-15",
+  "editor": "SOHO Fashion",
+  "macroStories": [
+    {
+      "eyebrow": "01 / PURPOSE",
+      "title": "Purpose, Reconsidered",
+      "subtitle": "Familiar utility. Softer structure. A cleaner everyday wardrobe.",
+      "introduction": "The next chapter of utility feels more considered: a better-placed pocket, a softer shoulder, a trouser with a clearer line. These are recognisable pieces with a fresh point of view.",
+      "storyIds": [
+        "utility-rebalanced",
+        "top-layer-shirt",
+        "straighter-direction"
+      ],
+      "id": "purpose-reconsidered"
+    },
+    {
+      "eyebrow": "02 / TEXTURE",
+      "title": "Texture, With Character",
+      "subtitle": "Depth, softened colour and a trace of craft.",
+      "introduction": "A brushed surface, a blurred check, a quiet herringbone. Texture gives everyday clothes a more personal feel, balanced by simple shapes and an easy way of dressing.",
+      "storyIds": [
+        "tactile-everyday-coat",
+        "refined-flannel",
+        "texture-in-motion"
+      ],
+      "id": "texture-with-character"
+    }
+  ],
+  "stories": [
+    {
+      "title": "Utility, Rebalanced",
+      "subtitle": "Workwear roots meet a softer line and details with purpose.",
+      "category": "Outerwear",
+      "gender": "Men & Women",
+      "takeaways": [
+        "Keep the familiar chore silhouette; bring a little more ease to the sleeve and body.",
+        "Let a closing collar and thoughtfully placed pockets carry the update.",
+        "Pair a textured outer layer with a smooth shirt or fine knit beneath."
+      ],
+      "materialRoutes": [
+        {
+          "name": "Washed canvas",
+          "description": "A gently faded face for an understated workwear mood.",
+          "pattern": "Plain / softly faded"
+        },
+        {
+          "name": "Peached twill",
+          "description": "A smoother, softer surface for a cleaner jacket line.",
+          "pattern": "Plain / tonal twill"
+        },
+        {
+          "name": "Supple ripstop",
+          "description": "A fine grid for a lighter, more fluid utility layer.",
+          "pattern": "Matte plain / fine grid"
+        }
+      ],
+      "patternEdit": "Let plains lead. Bring in a fading check or irregular tonal mark on one surface, keeping the collar and pockets quiet.",
+      "whyRelevant": "A natural progression from familiar barn jackets and overshirts, with everyday pockets, easy layers and a recognisable shape.",
+      "id": "utility-rebalanced",
+      "macroStoryId": "purpose-reconsidered",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-11-15",
+      "readTime": "3 min read",
+      "image": "assets/collections/aw2728/rf27-o03-01.webp",
+      "imageAlt": "Navy blouson with a closeable collar and relaxed everyday layers",
+      "imagePosition": "50% 20%",
+      "secondaryImage": "assets/collections/aw2728/rf27-o01-02.webp",
+      "caption": "A closeable collar and an easy jacket line; a separate denim overshirt reference explores workwear pockets.",
+      "secondaryCaption": "Denim overshirt: a pocket and collar study.",
+      "relatedStyleCodes": [
+        "RF27-O03",
+        "RF27-O01",
+        "RF27-O02"
+      ],
+      "topics": [
+        "Outerwear"
+      ],
+      "sourceIds": [
+        "G01",
+        "G02",
+        "G03"
+      ]
+    },
+    {
+      "title": "The New Top-Layer Shirt",
+      "subtitle": "A longer line, a considered neckline and room to layer.",
+      "category": "Shirts",
+      "gender": "Women",
+      "takeaways": [
+        "Extend the hem for an easy open layer or a softly shaped waist.",
+        "Explore an open collar that rises into a gentle stand.",
+        "Keep the front clean; let a back pleat or a longer cuff define the shape."
+      ],
+      "materialRoutes": [
+        {
+          "name": "Matte poplin",
+          "description": "A clean, crisp surface that emphasises the collar and hem.",
+          "pattern": "Solid colour"
+        },
+        {
+          "name": "Stripe Oxford",
+          "description": "A familiar woven texture with a fine, composed stripe.",
+          "pattern": "Fine yarn-dyed stripe"
+        },
+        {
+          "name": "Soft check flannel",
+          "description": "A lightly brushed surface with a blurred countryside check.",
+          "pattern": "Muted heritage check"
+        }
+      ],
+      "patternEdit": "Choose a fine stripe or softened check with space to breathe. Use a plain collar and clean fastenings to keep the silhouette in focus.",
+      "whyRelevant": "An easy bridge between the everyday button-front shirt and the familiar overshirt, worn alone or over a simple base layer.",
+      "id": "top-layer-shirt",
+      "macroStoryId": "purpose-reconsidered",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-11-15",
+      "readTime": "3 min read",
+      "image": "assets/collections/aw2728/rf27-s04-01.webp",
+      "imageAlt": "Blue striped shirt illustrating a relaxed body and longer shirt line",
+      "imagePosition": "50% 20%",
+      "secondaryImage": "assets/collections/aw2728/rf27-s05-03.webp",
+      "caption": "A longer striped shirt and a clean poplin reference establish the starting point. The raised neckline is a proposed development.",
+      "secondaryCaption": "Poplin shirt back: clean seam shaping.",
+      "relatedStyleCodes": [
+        "RF27-S04",
+        "RF27-S05"
+      ],
+      "topics": [
+        "Shirts"
+      ],
+      "sourceIds": [
+        "G01",
+        "G02"
+      ]
+    },
+    {
+      "title": "A Straighter Direction",
+      "subtitle": "Relaxed through the leg, defined at the waist.",
+      "category": "Trousers",
+      "gender": "Men & Women",
+      "takeaways": [
+        "Allow ease through the thigh while keeping a clear vertical line.",
+        "Choose a flat front or a single considered pleat rather than excess volume.",
+        "Complete the shape with a neat waistband and straightforward pockets."
+      ],
+      "materialRoutes": [
+        {
+          "name": "Compact cotton twill",
+          "description": "A defined weave for a clean, familiar trouser line.",
+          "pattern": "Solid / visible twill"
+        },
+        {
+          "name": "Soft-drape twill",
+          "description": "A more fluid expression of the same relaxed straight leg.",
+          "pattern": "Solid / matte"
+        },
+        {
+          "name": "Fine textured suiting",
+          "description": "A quiet woven surface for a more polished everyday option.",
+          "pattern": "Micro check or tonal weave"
+        }
+      ],
+      "patternEdit": "Keep the outline clear with plains and near-plains. A discreet micro check adds depth without changing the easy character.",
+      "whyRelevant": "An approachable extension of chinos and relaxed trousers, paired just as easily with an overshirt as with a cleaner everyday shirt.",
+      "id": "straighter-direction",
+      "macroStoryId": "purpose-reconsidered",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-11-15",
+      "readTime": "3 min read",
+      "image": "assets/collections/aw2728/rf27-t03-02.webp",
+      "imageAlt": "Straight-leg corduroy trousers showing a clear line from hip to hem",
+      "imagePosition": "50% 40%",
+      "secondaryImage": "assets/collections/aw2728/rf27-t06-01.webp",
+      "caption": "Men’s and women’s straight-leg references. Compare the leg balance before moving into the proposed cloth alternatives.",
+      "secondaryCaption": "A women’s straight leg provides a second fit reference.",
+      "relatedStyleCodes": [
+        "RF27-T03",
+        "RF27-T06"
+      ],
+      "topics": [
+        "Trousers"
+      ],
+      "sourceIds": [
+        "G01",
+        "G02",
+        "G03"
+      ]
+    },
+    {
+      "title": "The Tactile Everyday Coat",
+      "subtitle": "Soft volume and quiet contrast bring a new character to a familiar layer.",
+      "category": "Outerwear",
+      "gender": "Men & Women",
+      "takeaways": [
+        "Let a softly rounded body or relaxed shoulder refresh the familiar coat.",
+        "Balance the surface with a simple fastening and generous, clean-lined pockets.",
+        "Keep contrast close in colour, using a collar or facing for a quieter change."
+      ],
+      "materialRoutes": [
+        {
+          "name": "Brushed coating",
+          "description": "A soft, matte face with a gentle sense of depth.",
+          "pattern": "Plain / melange"
+        },
+        {
+          "name": "Quiet herringbone",
+          "description": "A familiar directional weave in a restrained tonal pairing.",
+          "pattern": "Fine herringbone"
+        },
+        {
+          "name": "Soft boucle",
+          "description": "A small looped surface, balanced by an uncomplicated shape.",
+          "pattern": "Tonal loop texture"
+        }
+      ],
+      "patternEdit": "Build interest through the weave. Melange, a fine herringbone or a low-contrast check keeps the coat easy to combine.",
+      "whyRelevant": "A considered everyday layer that sits comfortably beside casual jackets, while offering a more polished way to finish the wardrobe.",
+      "id": "tactile-everyday-coat",
+      "macroStoryId": "texture-with-character",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-11-15",
+      "readTime": "3 min read",
+      "image": "assets/collections/aw2728/rf27-o06-01.webp",
+      "imageAlt": "Brown shawl-collar coat illustrating soft structure and tactile layering",
+      "imagePosition": "50% 25%",
+      "secondaryImage": "assets/collections/aw2728/rf27-o05-04.webp",
+      "caption": "Soft coating and a checked coat reference show two ways to give a familiar layer more character.",
+      "secondaryCaption": "A checked coat: pattern carried by the cloth.",
+      "relatedStyleCodes": [
+        "RF27-O06",
+        "RF27-O05"
+      ],
+      "topics": [
+        "Outerwear",
+        "Materials"
+      ],
+      "sourceIds": [
+        "G01",
+        "G02",
+        "G03"
+      ]
+    },
+    {
+      "title": "The Softer Button-Up",
+      "subtitle": "Familiar shirting, refreshed through drape, weave and a quieter pattern.",
+      "category": "Shirts",
+      "gender": "Men",
+      "takeaways": [
+        "Keep an easy button-front shape that works open or neatly tucked.",
+        "Choose a softened check or tonal weave instead of a louder all-over statement.",
+        "Use well-aligned pockets and restrained buttons to sharpen the finish."
+      ],
+      "materialRoutes": [
+        {
+          "name": "Brushed check flannel",
+          "description": "A blurred plaid with a gentle transition between colours.",
+          "pattern": "Ombre check"
+        },
+        {
+          "name": "Tonal herringbone flannel",
+          "description": "A quieter woven rhythm with a softly brushed face.",
+          "pattern": "Near-plain herringbone"
+        },
+        {
+          "name": "Fine cotton dobby",
+          "description": "A small geometric texture for a cleaner interpretation.",
+          "pattern": "Tonal dobby"
+        }
+      ],
+      "patternEdit": "Keep one pattern in focus. A softened plaid, fine herringbone or small woven geometry brings depth without crowding the outfit.",
+      "whyRelevant": "A recognisable flannel and button-up wardrobe, refreshed through pattern balance, surface and the finishing details that make a simple shirt feel considered.",
+      "id": "refined-flannel",
+      "macroStoryId": "texture-with-character",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-11-15",
+      "readTime": "3 min read",
+      "image": "assets/collections/aw2728/rf27-s03-01.webp",
+      "imageAlt": "Brown button-front shirt illustrating drape and a simple everyday shape",
+      "imagePosition": "50% 30%",
+      "secondaryImage": "assets/collections/aw2728/rf27-s03-03.webp",
+      "caption": "A draped button-up is the silhouette reference. Brushed checks, herringbone and dobby below are proposed alternative fabric routes.",
+      "secondaryCaption": "A relaxed back line and the fall of the cloth.",
+      "relatedStyleCodes": [
+        "RF27-S03",
+        "RF27-S02"
+      ],
+      "topics": [
+        "Shirts",
+        "Materials"
+      ],
+      "sourceIds": [
+        "G01",
+        "G02"
+      ]
+    },
+    {
+      "title": "Texture in Motion",
+      "subtitle": "Corduroy, soft twill and quiet checks bring depth to a relaxed leg.",
+      "category": "Trousers",
+      "gender": "Men & Women",
+      "takeaways": [
+        "Explore a gentle curve through the leg, finishing with a composed hem opening.",
+        "Let the cloth define the shape: a clear wale, a softer drape or a fine woven check.",
+        "Balance the fuller line with a simple shirt and a shorter outer layer."
+      ],
+      "materialRoutes": [
+        {
+          "name": "Soft corduroy",
+          "description": "A defined wale that gives a familiar trouser a richer surface.",
+          "pattern": "Fine-to-medium wale"
+        },
+        {
+          "name": "Fluid twill",
+          "description": "A smooth, falling line for a softer interpretation of volume.",
+          "pattern": "Plain / softly washed colour"
+        },
+        {
+          "name": "Subtle check cloth",
+          "description": "A small, close-toned check with a more tailored character.",
+          "pattern": "Muted woven check"
+        }
+      ],
+      "patternEdit": "Let wale and weave carry the interest. Keep checks close in tone, pairing them with an uncomplicated upper half.",
+      "whyRelevant": "Adds a fresh leg balance to familiar comfort-led trousers, with texture giving the wearer another choice beyond a plain chino or an existing wide leg.",
+      "id": "texture-in-motion",
+      "macroStoryId": "texture-with-character",
+      "season": "A/W 27/28",
+      "publishedAt": "2026-11-15",
+      "readTime": "3 min read",
+      "image": "assets/collections/aw2728/rf27-t04-01.webp",
+      "imageAlt": "Brown pleated barrel-leg trousers with controlled volume and a composed hem",
+      "imagePosition": "50% 55%",
+      "secondaryImage": "assets/collections/aw2728/rf27-t05-04.webp",
+      "caption": "A gentle barrel silhouette and a corduroy garment detail. The alternative cloth routes are development options.",
+      "secondaryCaption": "Corduroy garment detail: wale and surface character.",
+      "relatedStyleCodes": [
+        "RF27-T04",
+        "RF27-T05",
+        "RF27-T02"
+      ],
+      "topics": [
+        "Trousers",
+        "Materials"
+      ],
+      "sourceIds": [
+        "G01",
+        "G02",
+        "G03"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "G01",
+      "publisher": "Première Vision",
+      "title": "AW 27-28 Key Materials: How a New Relationship with Time Is Shaping Material Developments",
+      "url": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments",
+      "date": "2026-09-23",
+      "signalLabel": "PARIS / MATERIAL DIRECTION",
+      "signalTitle": "Surfaces with a sense of time",
+      "signalText": "Patina, faded colour and tactile richness give familiar fabrics a more expressive character."
+    },
+    {
+      "id": "G02",
+      "publisher": "Milano Unica",
+      "title": "Milano Unica presents MU IS PUNK! HANDCRAFT IS PUNK! — Fall/Winter 2027/28 Collections",
+      "url": "https://www.milanounica.it/it/milano-unica-presenta-mu-is-punk-handcraft-is-punk",
+      "date": "2026-07-07",
+      "signalLabel": "MILAN / TEXTILE DIRECTION",
+      "signalTitle": "Heritage, reconsidered",
+      "signalText": "Traditional patterns meet washed denim, micro-check flannel and supple utility cloth."
+    },
+    {
+      "id": "G03",
+      "publisher": "Messe Frankfurt / Intertextile Shanghai Apparel Fabrics",
+      "title": "Intertextile Directions Trends: A QUEST FOR ESSENCE sets the tone – and the scent – for Autumn / Winter 2027-28",
+      "url": "https://intertextile-shanghai-apparel-fabrics-autumn.hk.messefrankfurt.com/shanghai/en/press/press-releases/2026/itsa26-pr3.html",
+      "date": "2026-07-27",
+      "signalLabel": "SHANGHAI / MATERIAL DIRECTION",
+      "signalTitle": "Softness meets utility",
+      "signalText": "Corduroy, tweed and workwear fabrics connect a reassuring hand with everyday dressing."
+    }
+  ]
+}
