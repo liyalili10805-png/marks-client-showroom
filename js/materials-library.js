@@ -1,0 +1,511 @@
+(function () {
+  'use strict';
+
+  const root = document.querySelector('[data-material-app]');
+  const body = document.body;
+  const DATA_URL = body.dataset.materialsData || 'data/materials-library.json';
+  const LIBRARY_URL = body.dataset.materialLibrary || 'products.html';
+  const BOARD_URL = body.dataset.materialBoard || 'library-board.html';
+  const STORIES_URL = body.dataset.materialStories || 'development-stories.html';
+  const BOARD_KEY = 'soho-material-board-v1';
+  const PAGE_SIZE = 40;
+  const SOURCE = {global: 'Global Edit', sales: 'Sourced Materials', studio: 'SOHO Design Studio'};
+  const STATUS = {reference: 'Reference Only', concept: 'Design Concept', sampling: 'Sampling in Progress', available: 'Sample Available'};
+  const FILTERS = [
+    {key: 'family', label: 'Material / pattern'},
+    {key: 'color', label: 'Colour'},
+    {key: 'use', label: 'Application'},
+    {key: 'source', label: 'Source'},
+    {key: 'status', label: 'Sample status'}
+  ];
+  const picked = new Set();
+  const compared = new Set();
+  let items = [], byId = new Map(), board = readBoard(), state = readState();
+  let visibleLimit = PAGE_SIZE, matches = [], rendered = [], currentDetail = null;
+  let dialog, dialogReturnFocus, toastTimer, searchTimer, groupFilter = '', sharedIds = [];
+  const pageIsBoard = body.dataset.materialPage === 'board';
+  if (!root) { wireSharedHeader(); return; }
+  const icons = {
+    save: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h12v17l-6-4-6 4z"/></svg>',
+    search: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>',
+    missing: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><circle cx="8" cy="8" r="1.5"/><path d="m3 18 6-6 4 4 3-3 5 5"/></svg>'
+  };
+
+  function node(tag, className, text) {
+    const n = document.createElement(tag);
+    if (className) n.className = className;
+    if (text != null) n.textContent = String(text);
+    return n;
+  }
+  function button(text, className, action) {
+    const n = node('button', className, text); n.type = 'button';
+    if (action) n.addEventListener('click', action);
+    return n;
+  }
+  function link(text, href, className) {
+    const n = node('a', className, text); n.href = href; return n;
+  }
+  function list(value) {
+    if (Array.isArray(value)) return value.map(v => typeof v === 'object' ? v.name || v.label || '' : String(v)).filter(Boolean);
+    return value ? [String(value)] : [];
+  }
+  function safeImage(value) {
+    let src = typeof value === 'object' && value ? value.src || value.image || value.url : value;
+    if (typeof src !== 'string') return '';
+    if (/^(?:javascript|data|blob):/i.test(src)) return '';
+    return src;
+  }
+  function image(src, alt, className, eager) {
+    const img = node('img', className);
+    img.alt = alt || ''; img.loading = eager ? 'eager' : 'lazy'; img.decoding = 'async';
+    img.width = 600; img.height = 600;
+    if (src) img.src = safeImage(src);
+    img.addEventListener('error', () => {
+      const missing = node('div', 'ml-image-unavailable'); missing.innerHTML = icons.missing;
+      missing.append(node('span', null, 'Image temporarily unavailable'));
+      img.replaceWith(missing);
+    }, {once: true});
+    if (!src) requestAnimationFrame(() => img.dispatchEvent(new Event('error')));
+    return img;
+  }
+  function normalise(item, index) {
+    const sourceType = ['global', 'sales', 'studio'].includes(item.sourceType) ? item.sourceType : 'global';
+    const type = item.type === 'pattern' ? 'pattern' : 'fabric';
+    const colorways = (item.colorways || []).map(c => ({name: c.name || list(c.colors).join(' / ') || 'Colourway', colors: list(c.colors), image: safeImage(c.image), images: list(c.images)}));
+    return {...item, id: String(item.id || 'M-' + (index + 1)), title: item.title || 'Material study', type,
+      family: item.family || (type === 'fabric' ? 'Other fabrics' : 'Other patterns'), colors: list(item.colors),
+      uses: list(item.uses), tags: list(item.tags), image: safeImage(item.image), images: item.images || [],
+      sourceType, status: STATUS[item.status] ? item.status : sourceType === 'studio' ? 'concept' : 'reference', colorways,
+      season: item.season || 'Current reference · season not specified', trendIds: list(item.trendIds), _order: index};
+  }
+  function readBoard() {
+    try {
+      const stored = JSON.parse(localStorage.getItem(BOARD_KEY) || '[]');
+      const arr = Array.isArray(stored) ? stored : stored.items || [];
+      return new Map(arr.filter(x => x && typeof x.id === 'string').map(x => [x.id, {id: x.id, note: String(x.note || ''), group: String(x.group || ''), colorway: String(x.colorway || '')}]));
+    } catch (_) { return new Map(); }
+  }
+  function persist() {
+    try { localStorage.setItem(BOARD_KEY, JSON.stringify([...board.values()])); return true; }
+    catch (_) { toast('Your browser could not save this selection. Please export your board to keep a copy.'); return false; }
+  }
+  function toast(message) {
+    let n = document.querySelector('.ml-toast');
+    if (!n) { n = node('div', 'ml-toast'); n.setAttribute('role', 'status'); document.body.append(n); }
+    clearTimeout(toastTimer); n.textContent = message; n.hidden = false;
+    toastTimer = setTimeout(() => { n.hidden = true; }, 3200);
+  }
+  function countUpdate() {
+    document.querySelectorAll('[data-material-count]').forEach(n => { n.textContent = board.size; });
+    document.querySelectorAll('[data-save-id]').forEach(n => {
+      const saved = board.has(n.dataset.saveId); n.setAttribute('aria-pressed', String(saved));
+      const item = byId.get(n.dataset.saveId);
+      if (n.classList.contains('ml-save')) n.setAttribute('aria-label', (saved ? 'Remove ' : 'Save ') + (item ? item.title : 'material') + (saved ? ' from board' : ' to board'));
+      else n.textContent = saved ? 'Saved to Material Board ✓' : 'Save to Material Board';
+    });
+  }
+  function saveItem(item, colorway) {
+    if (!board.has(item.id)) board.set(item.id, {id: item.id, note: '', group: '', colorway: colorway || ''});
+    else if (colorway != null) board.get(item.id).colorway = colorway;
+    persist(); countUpdate();
+  }
+  function toggleSave(item) {
+    if (board.has(item.id)) { board.delete(item.id); persist(); toast('Removed from your Material Board'); }
+    else { saveItem(item); toast('Saved to your Material Board'); }
+    countUpdate();
+  }
+  function readState() {
+    const params = new URLSearchParams(location.search);
+    const s = {type: ['fabric', 'pattern'].includes(params.get('type')) ? params.get('type') : 'all', q: params.get('q') || '', sort: ['curated', 'az'].includes(params.get('sort')) ? params.get('sort') : 'curated'};
+    FILTERS.forEach(f => { s[f.key] = new Set(params.getAll(f.key).flatMap(v => v.split('|')).filter(Boolean)); });
+    return s;
+  }
+  function writeState(replace) {
+    const params = new URLSearchParams();
+    if (state.type !== 'all') params.set('type', state.type);
+    if (state.q) params.set('q', state.q);
+    FILTERS.forEach(f => { [...state[f.key]].forEach(v => params.append(f.key, v)); });
+    if (state.sort !== 'curated') params.set('sort', state.sort);
+    const next = location.pathname + (params.size ? '?' + params.toString() : '');
+    if (next !== location.pathname + location.search) history[replace ? 'replaceState' : 'pushState']({}, '', next);
+  }
+  function searchText(item) { return [item.id, item.title, item.family, item.structure, item.technique, ...item.colors, ...item.uses, ...item.tags].join(' ').toLocaleLowerCase(); }
+  function valuesFor(item, key) {
+    if (key === 'color') return [...new Set([...item.colors, ...item.colorways.flatMap(c => c.colors)])];
+    if (key === 'use') return item.uses;
+    if (key === 'source') return [item.sourceType];
+    return [item[key]];
+  }
+  function labelFor(key, value) { return key === 'source' ? SOURCE[value] || value : key === 'status' ? STATUS[value] || value : value; }
+  function filtered() {
+    const terms = state.q.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
+    let result = items.filter(item => (state.type === 'all' || item.type === state.type)
+      && terms.every(t => searchText(item).includes(t))
+      && FILTERS.every(f => !state[f.key].size || valuesFor(item, f.key).some(v => state[f.key].has(v))));
+    if (state.sort === 'az') result.sort((a, b) => a.title.localeCompare(b.title));
+    return result;
+  }
+  function heading(title, intro, eyebrow) {
+    const h = node('div', 'ml-heading'), copy = node('div');
+    copy.append(node('p', 'ml-eyebrow', eyebrow || 'SOHO Fashion / Material Library'), node('h1', null, title), node('p', 'ml-intro', intro));
+    const links = node('nav', 'ml-toplinks'); links.setAttribute('aria-label', 'Material library navigation');
+    if (pageIsBoard) links.append(link('Browse the library ↗', LIBRARY_URL));
+    links.append(link('Development Stories ↗', STORIES_URL));
+    if (!pageIsBoard) {
+      const b = link('', BOARD_URL, 'ml-board-link'); b.append(node('span', null, 'Material Board'));
+      const c = node('span', 'ml-count-pill', board.size); c.dataset.materialCount = ''; b.append(c); links.append(b);
+    } else links.append(link('Style selection ↗', 'my-selection.html'));
+    h.append(copy, links); return h;
+  }
+
+  function renderLibrary() {
+    root.replaceChildren(heading('Materials & Patterns', 'Explore cloth, colour and pattern. Build your next material selection.'));
+    const mainbar = node('div', 'ml-mainbar'), tabs = node('div', 'ml-tabs'); tabs.setAttribute('role', 'tablist'); tabs.setAttribute('aria-label', 'Library type');
+    [['all', 'All materials'], ['fabric', 'Fabrics'], ['pattern', 'Patterns']].forEach(([value, text]) => {
+      const b = button('', 'ml-tab', () => { state.type = value; updateLibrary(); });
+      b.setAttribute('role', 'tab'); b.dataset.type = value;
+      b.append(node('span', null, text), node('span', 'ml-tab-count', value === 'all' ? items.length : items.filter(i => i.type === value).length));
+      tabs.append(b);
+    });
+    tabs.addEventListener('keydown', e => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
+      const all = [...tabs.querySelectorAll('button')], current = all.indexOf(document.activeElement);
+      const next = e.key === 'Home' ? 0 : e.key === 'End' ? all.length - 1 : (current + (e.key === 'ArrowRight' ? 1 : -1) + all.length) % all.length;
+      e.preventDefault(); all[next].click(); all[next].focus();
+    });
+    const search = node('form', 'ml-search'); search.setAttribute('role', 'search'); search.innerHTML = icons.search;
+    const input = node('input'); input.type = 'search'; input.placeholder = 'Search fabrics, patterns, colours or codes'; input.setAttribute('aria-label', 'Search materials and patterns'); input.id = 'ml-search';
+    input.addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { state.q = input.value.trim(); updateLibrary(true); }, 160); });
+    search.addEventListener('submit', e => { e.preventDefault(); clearTimeout(searchTimer); state.q = input.value.trim(); updateLibrary(true); });
+    search.append(input); mainbar.append(tabs, search); root.append(mainbar);
+    const filters = node('div', 'ml-filters'); filters.setAttribute('aria-label', 'Filter materials');
+    FILTERS.forEach(f => {
+      const detail = node('details', 'ml-filter'); detail.dataset.filterKey = f.key;
+      const summary = node('summary'); summary.append(node('span', null, f.label), node('span', 'ml-filter-count')); detail.append(summary);
+      const pop = node('div', 'ml-filter-pop');
+      const counts = new Map();
+      items.forEach(i => valuesFor(i, f.key).forEach(v => { if (v) counts.set(v, (counts.get(v) || 0) + 1); }));
+      if (f.key === 'source') Object.keys(SOURCE).forEach(k => { if (!counts.has(k)) counts.set(k, 0); });
+      [...counts.keys()].sort((a, b) => labelFor(f.key, a).localeCompare(labelFor(f.key, b))).forEach(value => {
+        const label = node('label'), check = node('input'); check.type = 'checkbox'; check.value = value; check.dataset.filter = f.key;
+        check.addEventListener('change', () => { if (check.checked) state[f.key].add(value); else state[f.key].delete(value); updateLibrary(); });
+        label.append(check, node('span', null, labelFor(f.key, value)), node('span', 'ml-option-count', counts.get(value))); pop.append(label);
+      });
+      detail.append(pop); detail.addEventListener('toggle', () => { if (detail.open) filters.querySelectorAll('details').forEach(d => { if (d !== detail) d.open = false; }); }); filters.append(detail);
+    });
+    filters.append(node('span', 'ml-filter-note', 'A considered library for everyday development')); root.append(filters);
+    root.append(node('div', 'ml-chips'));
+    const meta = node('div', 'ml-library-meta'), count = node('p', 'ml-result-count'); count.setAttribute('role', 'status'); count.setAttribute('aria-live', 'polite');
+    const viewtools = node('div', 'ml-viewtools'), label = node('label'), check = node('input');
+    check.type = 'checkbox'; check.id = 'ml-select-visible'; check.addEventListener('change', () => { rendered.forEach(i => { if (check.checked) picked.add(i.id); else picked.delete(i.id); }); syncPicked(); });
+    label.append(check, document.createTextNode('Select visible')); viewtools.append(label);
+    const sort = node('select'); sort.setAttribute('aria-label', 'Sort materials');
+    [['curated', 'Library order'], ['az', 'Name: A–Z']].forEach(([value, text]) => { const o = node('option', null, text); o.value = value; sort.append(o); });
+    sort.id = 'ml-sort'; sort.addEventListener('change', () => { state.sort = sort.value; updateLibrary(); }); viewtools.append(sort);
+    meta.append(count, viewtools); root.append(meta);
+    const grid = node('div', 'ml-grid'); grid.id = 'ml-material-grid'; grid.setAttribute('aria-label', 'Materials and patterns'); root.append(grid, node('div', 'ml-load-area'));
+    const foot = node('div', 'ml-library-footnote');
+    foot.append(node('p', null, 'Reference materials, physical samples and digital concepts are identified separately. Save an item to your board to keep a shortlist and add development notes.'), link('How we develop materials ↗', STORIES_URL)); root.append(foot);
+    updateLibrary(true, true);
+  }
+  function syncControls() {
+    root.querySelectorAll('[data-type]').forEach(b => { const active = b.dataset.type === state.type; b.setAttribute('aria-selected', String(active)); b.tabIndex = active ? 0 : -1; });
+    root.querySelector('#ml-search').value = state.q;
+    root.querySelector('#ml-sort').value = state.sort;
+    root.querySelectorAll('[data-filter]').forEach(check => { check.checked = state[check.dataset.filter].has(check.value); });
+    root.querySelectorAll('[data-filter-key]').forEach(d => { const n = state[d.dataset.filterKey].size, b = d.querySelector('.ml-filter-count'); b.textContent = n; b.hidden = !n; });
+  }
+  function updateLibrary(replace, initial) {
+    visibleLimit = PAGE_SIZE; matches = filtered(); syncControls(); renderChips(); renderGrid();
+    if (!initial) writeState(replace);
+  }
+  function renderChips() {
+    const chips = root.querySelector('.ml-chips'); chips.replaceChildren();
+    const add = (text, action) => { const b = button('', 'ml-chip', action); b.append(node('span', null, text), node('span', null, '×')); b.setAttribute('aria-label', 'Remove filter: ' + text); chips.append(b); };
+    if (state.q) add('Search: ' + state.q, () => { state.q = ''; updateLibrary(); });
+    FILTERS.forEach(f => state[f.key].forEach(v => add(labelFor(f.key, v), () => { state[f.key].delete(v); updateLibrary(); })));
+    if (state.type !== 'all') add(state.type === 'fabric' ? 'Fabrics' : 'Patterns', () => { state.type = 'all'; updateLibrary(); });
+    if (chips.childElementCount) chips.append(button('Clear all', 'ml-text-button', resetFilters));
+    chips.hidden = !chips.childElementCount;
+  }
+  function resetFilters() {
+    state = {type: 'all', q: '', sort: 'curated'}; FILTERS.forEach(f => { state[f.key] = new Set(); }); updateLibrary();
+  }
+  function renderGrid() {
+    rendered = matches.slice(0, visibleLimit);
+    const grid = root.querySelector('.ml-grid'); grid.replaceChildren();
+    const count = root.querySelector('.ml-result-count'); count.replaceChildren(node('strong', null, matches.length.toLocaleString() + (matches.length === 1 ? ' material' : ' materials')),
+      document.createTextNode(' · ' + items.filter(i => i.type === 'fabric').length + ' fabrics / ' + items.filter(i => i.type === 'pattern').length + ' patterns in the library'));
+    if (!matches.length) {
+      const empty = node('div', 'ml-empty'); empty.append(node('h2', null, 'A different combination?'), node('p', null, 'No materials match these filters. Try a broader colour, application or material family.'), button('Clear filters', 'ml-button', resetFilters)); grid.append(empty);
+    } else rendered.forEach(item => grid.append(card(item)));
+    const load = root.querySelector('.ml-load-area'); load.replaceChildren();
+    if (matches.length > rendered.length) load.append(button('Load more materials', 'ml-button', () => { visibleLimit += PAGE_SIZE; renderGrid(); }));
+    if (matches.length) load.append(node('p', null, 'Showing ' + rendered.length.toLocaleString() + ' of ' + matches.length.toLocaleString()));
+    syncPicked(); countUpdate();
+  }
+  function card(item, boardMode) {
+    const article = node('article', boardMode ? 'ml-board-card' : 'ml-card'); article.dataset.materialId = item.id;
+    const media = node('div', 'ml-card-media'), open = button('', 'ml-open', () => openDetail(item.id));
+    const savedColourway = boardMode ? item.colorways.find(c => c.name === board.get(item.id)?.colorway) : null;
+    open.setAttribute('aria-label', 'View ' + item.title); open.append(image(savedColourway?.image || item.thumbnail || item.image, item.title, 'ml-card-image')); media.append(open);
+    const save = button('', 'ml-save', e => { e.stopPropagation(); toggleSave(item); if (pageIsBoard) renderBoard(); });
+    save.innerHTML = icons.save; save.dataset.saveId = item.id; save.setAttribute('aria-pressed', String(board.has(item.id))); media.append(save);
+    if (!boardMode) {
+      const label = node('label', 'ml-pick'), pick = node('input'); pick.type = 'checkbox'; pick.dataset.pickId = item.id; pick.setAttribute('aria-label', 'Select ' + item.title);
+      pick.checked = picked.has(item.id); pick.addEventListener('change', () => { if (pick.checked) picked.add(item.id); else picked.delete(item.id); syncPicked(); }); label.append(pick); media.append(label);
+    }
+    article.append(media);
+    const meta = node('div', 'ml-card-meta'); meta.append(node('span', null, item.type === 'fabric' ? 'Fabric' : 'Pattern'), node('span', null, item.id)); article.append(meta);
+    const h3 = node('h3', 'ml-card-title'); h3.append(button(item.title, 'ml-title-button', () => openDetail(item.id))); article.append(h3);
+    const foot = node('div', 'ml-card-foot');
+    foot.append(node('p', null, item.family + (item.colorways.length > 1 ? ' · ' + item.colorways.length + ' colourways' : '')));
+    const c = button(compared.has(item.id) ? 'Comparing ✓' : 'Compare +', 'ml-card-compare', () => toggleCompare(item)); c.dataset.compareId = item.id; c.setAttribute('aria-pressed', String(compared.has(item.id))); foot.append(c); article.append(foot);
+    if (item.sourceType === 'studio') article.append(node('p', 'ml-ai-note', 'AI-assisted design · digital concept'));
+    else article.append(node('p', 'ml-card-status', STATUS[item.status]));
+    if (boardMode) {
+      const record = board.get(item.id) || {note: '', group: '', colorway: ''};
+      if (record.colorway) article.append(node('p', 'ml-ai-note', 'Selected colourway: ' + record.colorway));
+      const groupLabel = node('label', 'ml-note-label', 'Board group'); groupLabel.htmlFor = 'ml-group-' + item.id;
+      const group = node('input'); group.type = 'text'; group.id = groupLabel.htmlFor; group.value = record.group; group.placeholder = 'e.g. Shirts / muted checks'; group.maxLength = 80;
+      group.addEventListener('change', () => { const row = board.get(item.id); if (row) { row.group = group.value.trim(); persist(); updateGroupOptions(); } });
+      const noteLabel = node('label', 'ml-note-label', 'Development note'); noteLabel.htmlFor = 'ml-note-' + item.id;
+      const note = node('textarea'); note.id = noteLabel.htmlFor; note.value = record.note; note.placeholder = 'Colour, scale, handle or intended application…'; note.maxLength = 2000;
+      note.addEventListener('input', () => { const row = board.get(item.id); if (row) { row.note = note.value; persist(); } });
+      const actions = node('div', 'ml-board-card-actions'); actions.append(button('View details ↗', '', () => openDetail(item.id)), button('Remove', '', () => { board.delete(item.id); persist(); renderBoard(); }));
+      article.append(groupLabel, group, noteLabel, note, actions);
+    }
+    return article;
+  }
+  function syncPicked() {
+    root.querySelectorAll('[data-pick-id]').forEach(c => { c.checked = picked.has(c.dataset.pickId); });
+    const all = root.querySelector('#ml-select-visible');
+    if (all) { all.checked = !!rendered.length && rendered.every(i => picked.has(i.id)); all.indeterminate = rendered.some(i => picked.has(i.id)) && !all.checked; all.disabled = !rendered.length; }
+    document.querySelectorAll('[data-compare-id]').forEach(b => { const active = compared.has(b.dataset.compareId); b.textContent = active ? 'Comparing ✓' : 'Compare +'; b.setAttribute('aria-pressed', String(active)); });
+    renderBulkbar();
+  }
+  function renderBulkbar() {
+    let bar = document.querySelector('.ml-bulkbar');
+    if (!picked.size && !compared.size) { if (bar) bar.remove(); return; }
+    if (!bar) { bar = node('div', 'ml-bulkbar'); bar.setAttribute('aria-label', 'Selection actions'); document.body.append(bar); }
+    bar.replaceChildren();
+    if (picked.size) {
+      bar.append(node('span', 'ml-bulk-count', picked.size + ' selected'), button('Save selected', 'ml-bulk-save', () => {
+        const n = picked.size; picked.forEach(id => { const i = byId.get(id); if (i) saveItem(i); }); picked.clear(); syncPicked(); toast(n + ' materials saved to your board');
+      }));
+    }
+    if (compared.size) bar.append(button('Compare (' + compared.size + '/4)', '', openCompare));
+    bar.append(button('Material Board (' + board.size + ') ↗', '', () => { location.href = BOARD_URL; }));
+    const clear = button('×', '', () => { picked.clear(); compared.clear(); syncPicked(); }); clear.setAttribute('aria-label', 'Clear temporary selection and comparison'); bar.append(clear);
+  }
+  function toggleCompare(item) {
+    if (compared.has(item.id)) compared.delete(item.id);
+    else if (compared.size < 4) compared.add(item.id);
+    else { toast('Compare up to four materials at a time. Remove one to add another.'); return; }
+    syncPicked();
+  }
+
+  function ensureDialog() {
+    if (dialog) return dialog;
+    dialog = node('dialog', 'ml-dialog'); dialog.setAttribute('aria-label', 'Material details'); document.body.append(dialog);
+    dialog.addEventListener('click', e => { if (e.target === dialog) { const r = dialog.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) closeDialog(); } });
+    dialog.addEventListener('close', () => { body.style.overflow = ''; currentDetail = null; if (dialogReturnFocus && dialogReturnFocus.isConnected) dialogReturnFocus.focus({preventScroll: true}); });
+    dialog.addEventListener('keydown', e => {
+      if (e.key === 'Escape') { e.preventDefault(); closeDialog(); }
+      if (e.key === 'Tab') {
+        const focusable = [...dialog.querySelectorAll('button:not([disabled]),a[href],input,select,textarea,[tabindex="0"]')].filter(n => n.offsetParent !== null);
+        if (!focusable.length) return;
+        if (e.shiftKey && document.activeElement === focusable[0]) { e.preventDefault(); focusable[focusable.length - 1].focus(); }
+        if (!e.shiftKey && document.activeElement === focusable[focusable.length - 1]) { e.preventDefault(); focusable[0].focus(); }
+      }
+    });
+    return dialog;
+  }
+  function showDialog(title) {
+    const d = ensureDialog();
+    if (!d.open) { dialogReturnFocus = document.activeElement; d.showModal(); body.style.overflow = 'hidden'; }
+    d.setAttribute('aria-label', title); d.scrollTop = 0;
+    return d;
+  }
+  function closeDialog() { if (dialog && dialog.open) dialog.close(); }
+  function closeButton() {
+    const b = button('×', 'ml-dialog-close', closeDialog); b.setAttribute('aria-label', 'Close dialog'); return b;
+  }
+  function galleryFor(item) {
+    const gallery = [{src: item.image, caption: item.imageCaption || (item.sourceType === 'studio' ? 'AI-assisted design concept' : 'Published material reference')}];
+    (item.images || []).forEach(v => { const src = safeImage(v); if (src && !gallery.some(x => x.src === src)) gallery.push({src, caption: typeof v === 'object' ? v.caption || v.alt || '' : ''}); });
+    return gallery;
+  }
+  function openDetail(id) {
+    const item = byId.get(id); if (!item) return;
+    currentDetail = id;
+    const d = ensureDialog(); d.replaceChildren(closeButton());
+    const layout = node('div', 'ml-detail-layout'), visual = node('div', 'ml-detail-visual'), gallery = galleryFor(item);
+    const zoom = button('', 'ml-detail-zoom'); zoom.setAttribute('aria-label', 'Enlarge material image');
+    zoom.addEventListener('click', () => { const active = zoom.classList.toggle('is-zoomed'); zoom.setAttribute('aria-label', active ? 'Reduce material image' : 'Enlarge material image'); });
+    let mainImage = image(item.image, item.title, 'ml-detail-mainimage', true); zoom.append(mainImage);
+    const caption = node('p', 'ml-detail-image-caption', gallery[0].caption); visual.append(zoom, caption);
+    const replaceImage = (src, text) => { zoom.classList.remove('is-zoomed'); zoom.replaceChildren(image(src, item.title, 'ml-detail-mainimage', true)); caption.textContent = text || ''; };
+    if (gallery.length > 1) {
+      const thumbs = node('div', 'ml-thumbnails'); thumbs.setAttribute('aria-label', 'Material image views');
+      gallery.forEach((g, index) => {
+        const b = button('', '', () => { replaceImage(g.src, g.caption); thumbs.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true'); });
+        b.setAttribute('aria-label', 'View image ' + (index + 1)); b.setAttribute('aria-pressed', String(index === 0)); b.append(image(g.src, '', '', true)); thumbs.append(b);
+      }); visual.append(thumbs);
+    }
+    const copy = node('div', 'ml-detail-copy');
+    copy.append(node('p', 'ml-detail-code', (item.type === 'fabric' ? 'Fabric' : 'Pattern') + ' / ' + item.id), node('h2', null, item.title));
+    copy.append(node('p', 'ml-detail-desc', item.description || 'A material reference selected for further exploration in everyday apparel.'));
+    copy.append(node('p', 'ml-status ml-status--' + item.status, STATUS[item.status]));
+    const fields = node('dl', 'ml-detail-fields');
+    [['Family', item.family], ['Structure', item.structure || item.technique], ['Colour', item.colors.join(' / ')], ['Application', item.uses.join(' / ')], ['Collection', item.season], ['Library source', SOURCE[item.sourceType]]].forEach(([key, value]) => {
+      if (!value) return;
+      const row = node('div'); row.append(node('dt', null, key), node('dd', null, value)); fields.append(row);
+    }); copy.append(fields);
+    let selectedColorway = board.get(id)?.colorway || '';
+    if (item.colorways.length) {
+      copy.append(node('p', 'ml-note-label', 'Colourways'));
+      const choices = node('div', 'ml-detail-choices');
+      item.colorways.forEach(c => {
+        const b = button(c.name, '', () => {
+          selectedColorway = c.name; if (c.image) replaceImage(c.image, c.name);
+          choices.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true');
+        }); b.setAttribute('aria-pressed', String(selectedColorway === c.name)); choices.append(b);
+      }); copy.append(choices);
+      const selected = item.colorways.find(c => c.name === selectedColorway); if (selected?.image) replaceImage(selected.image, selected.name);
+    }
+    const actions = node('div', 'ml-detail-actions');
+    const save = button(board.has(id) ? 'Saved to Material Board ✓' : 'Save to Material Board', 'ml-button ml-button--dark', () => { saveItem(item, selectedColorway); toast('Saved to your Material Board'); if (pageIsBoard) renderBoard(); }); save.dataset.saveId = id; save.setAttribute('aria-pressed', String(board.has(id))); actions.append(save);
+    actions.append(button(compared.has(id) ? 'Comparing ✓' : 'Compare +', 'ml-button ml-button--quiet', () => toggleCompare(item))); actions.lastChild.dataset.compareId = id;
+    copy.append(actions, link('Open Material Board ↗', BOARD_URL, 'ml-trend-links'));
+    const scope = item.sourceType === 'studio' ? 'AI-assisted digital design. Colours, repeat and production translation require sample development.'
+      : item.status === 'available' ? 'Physical sample availability has been recorded. Confirm the intended colour and development requirements when requesting a sample.'
+      : item.status === 'sampling' ? 'Sample development is in progress. Final colour, surface and availability will be confirmed after review.'
+      : 'Visual reference for development. Sample availability and material properties have not been confirmed.';
+    copy.append(node('p', 'ml-detail-scope', scope));
+    if (item.trendIds.length) {
+      const trends = node('p', 'ml-trend-links', 'Related research'); item.trendIds.forEach(t => trends.append(link(t, 'trend-story.html?report=' + encodeURIComponent(t)))); copy.append(trends);
+    }
+    layout.append(visual, copy); d.append(layout);
+    const pool = pageIsBoard ? items.filter(i => board.has(i.id)) : matches;
+    const index = pool.findIndex(i => i.id === id), nav = node('div', 'ml-detail-nav');
+    const prev = button('← Previous', '', () => openDetail(pool[index - 1].id)); prev.disabled = index <= 0;
+    const next = button('Next →', '', () => openDetail(pool[index + 1].id)); next.disabled = index < 0 || index >= pool.length - 1;
+    nav.append(prev, node('span', null, index >= 0 ? (index + 1) + ' / ' + pool.length : item.id), next); d.append(nav);
+    showDialog(item.title); countUpdate(); d.querySelector('.ml-dialog-close').focus({preventScroll: true});
+  }
+  function openCompare() {
+    if (!compared.size) return;
+    const d = ensureDialog(); d.replaceChildren(closeButton()); const content = node('div', 'ml-compare');
+    content.append(node('h2', null, 'Compare materials'), node('p', 'ml-compare-intro', 'Compare the identified visual and development details. Physical performance requires the actual material.'));
+    const scroll = node('div', 'ml-compare-scroll'), table = node('table'), selected = [...compared].map(id => byId.get(id)).filter(Boolean);
+    const head = node('thead'), tr = node('tr'); tr.append(node('th', null, 'Material'));
+    selected.forEach(i => { const th = node('th'); th.append(image(i.image, i.title, '', true), node('p', 'ml-compare-name', i.title), node('p', 'ml-compare-id', i.id)); tr.append(th); }); head.append(tr); table.append(head);
+    const tbody = node('tbody');
+    [['Type', i => i.type === 'fabric' ? 'Fabric' : 'Pattern'], ['Family', i => i.family], ['Structure', i => i.structure || i.technique || 'Not specified'], ['Colour', i => i.colors.join(' / ') || 'See reference'], ['Application', i => i.uses.join(' / ') || 'To be developed'], ['Source', i => SOURCE[i.sourceType]], ['Status', i => STATUS[i.status]], ['Collection', i => i.season]].forEach(([label, getter]) => {
+      const row = node('tr'); const th = node('th', null, label); th.scope = 'row'; row.append(th); selected.forEach(i => row.append(node('td', null, getter(i)))); tbody.append(row);
+    });
+    const action = node('tr'); action.append(node('th', null, 'Board'));
+    selected.forEach(i => { const td = node('td'); const b = button(board.has(i.id) ? 'Saved ✓' : 'Save material', 'ml-button ml-button--small', () => { saveItem(i); b.textContent = 'Saved ✓'; toast('Saved to your Material Board'); }); td.append(b); action.append(td); }); tbody.append(action); table.append(tbody); scroll.append(table); content.append(scroll); d.append(content); showDialog('Compare materials'); d.querySelector('.ml-dialog-close').focus({preventScroll: true});
+  }
+
+  function renderBoard() {
+    root.replaceChildren(heading('Material Board', 'Your saved fabrics, patterns and development notes.', 'SOHO Fashion / Your Selection'));
+    if (sharedIds.length) {
+      const shared = node('div', 'ml-board-shared'); shared.append(node('span', null, sharedIds.length + ' materials have been shared with you. Add them to your board to keep and annotate them.'), button('Add shared materials', 'ml-button ml-button--small', () => {
+        sharedIds.forEach(id => { if (byId.has(id)) saveItem(byId.get(id)); }); const n = sharedIds.length; sharedIds = []; history.replaceState({}, '', location.pathname); renderBoard(); toast(n + ' shared materials added');
+      })); root.append(shared);
+    }
+    const actions = node('div', 'ml-board-actions');
+    actions.append(link('Continue browsing ↗', LIBRARY_URL, 'ml-button ml-button--dark'), button('Export selection', 'ml-button', () => exportBoard('csv')), button('Save board file', 'ml-button ml-button--quiet', () => exportBoard('json')), button('Share material list', 'ml-button ml-button--quiet', shareBoard)); root.append(actions);
+    const toolbar = node('div', 'ml-board-toolbar');
+    const count = node('span'); count.append(node('strong', null, board.size), document.createTextNode(board.size === 1 ? ' saved material' : ' saved materials')); toolbar.append(count);
+    const label = node('label', null, 'Board group'), select = node('select'); select.id = 'ml-board-group'; select.setAttribute('aria-label', 'Filter board by group'); label.append(select); toolbar.append(label); root.append(toolbar); updateGroupOptions(); select.value = groupFilter;
+    select.addEventListener('change', () => { groupFilter = select.value; renderBoardItems(); });
+    const missing = [...board.keys()].filter(id => !byId.has(id));
+    if (missing.length) root.append(node('p', 'ml-board-missing', missing.length + ' saved ' + (missing.length === 1 ? 'reference is' : 'references are') + ' no longer in the current library. They remain in your exported board file.'));
+    const grid = node('div', 'ml-board-grid'); root.append(grid); renderBoardItems();
+    root.append(node('p', 'ml-board-info', 'Your board is saved in this browser. Export a copy to keep your notes and groups. Shared links contain material IDs only; your notes and groups are not included. Saving a reference or design concept does not confirm physical sample availability.'));
+    countUpdate();
+  }
+  function updateGroupOptions() {
+    const select = root.querySelector('#ml-board-group'); if (!select) return;
+    const groups = [...new Set([...board.values()].map(r => r.group).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+    if (groupFilter && !groups.includes(groupFilter) && groupFilter !== '__ungrouped') groupFilter = '';
+    select.replaceChildren(); const all = node('option', null, 'All groups'); all.value = ''; select.append(all);
+    const ungrouped = node('option', null, 'Ungrouped'); ungrouped.value = '__ungrouped'; select.append(ungrouped);
+    groups.forEach(g => { const option = node('option', null, g); option.value = g; select.append(option); }); select.value = groupFilter;
+  }
+  function renderBoardItems() {
+    const grid = root.querySelector('.ml-board-grid'); grid.replaceChildren();
+    const current = items.filter(i => board.has(i.id) && (!groupFilter || (groupFilter === '__ungrouped' ? !board.get(i.id).group : board.get(i.id).group === groupFilter)));
+    if (!current.length) {
+      const empty = node('div', 'ml-empty'); empty.append(node('h2', null, board.size ? 'No materials in this group.' : 'Start with a material.'), node('p', null, board.size ? 'Choose another group to view your saved materials.' : 'Save fabrics and patterns while you browse. Keep colour choices, organise groups and add your development notes here.'), link('Explore the library ↗', LIBRARY_URL, 'ml-button ml-button--dark')); grid.append(empty);
+    } else current.forEach(i => grid.append(card(i, true)));
+    countUpdate(); syncPicked();
+  }
+  function boardRows() {
+    return [...board.values()].map(r => {
+      const i = byId.get(r.id);
+      return {id: r.id, title: i?.title || 'Reference no longer in library', type: i?.type || '', family: i?.family || '', colourway: r.colorway, colours: i?.colors.join(' / ') || '', application: i?.uses.join(' / ') || '', status: i ? STATUS[i.status] : '', source: i ? SOURCE[i.sourceType] : '', group: r.group, note: r.note};
+    });
+  }
+  function download(content, type, filename) {
+    const url = URL.createObjectURL(new Blob([content], {type})); const a = link('', url); a.download = filename; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+  function exportBoard(format) {
+    if (!board.size) { toast('Save a material before exporting your board.'); return; }
+    const rows = boardRows(), stamp = new Date().toISOString().slice(0, 10);
+    if (format === 'json') download(JSON.stringify({title: 'SOHO Material Board', exportedAt: new Date().toISOString(), materials: rows}, null, 2), 'application/json', 'SOHO-Material-Board-' + stamp + '.json');
+    else {
+      const headers = ['Material ID', 'Title', 'Type', 'Family', 'Selected colourway', 'Colours', 'Application', 'Sample status', 'Library source', 'Board group', 'Development note'];
+      const keys = ['id', 'title', 'type', 'family', 'colourway', 'colours', 'application', 'status', 'source', 'group', 'note'];
+      const escape = v => '"' + String(v ?? '').replace(/"/g, '""') + '"';
+      const formulaSafe = v => /^[=+\-@\t\r]/.test(String(v)) ? "'" + v : v;
+      const csv = [headers.map(escape).join(','), ...rows.map(r => keys.map(k => escape(formulaSafe(r[k]))).join(','))].join('\r\n');
+      download('\uFEFF' + csv, 'text/csv;charset=utf-8', 'SOHO-Material-Selection-' + stamp + '.csv');
+    }
+    toast('Your board has been exported');
+  }
+  async function shareBoard() {
+    if (!board.size) { toast('Save a material before sharing a list.'); return; }
+    const ids = [...board.keys()].filter(id => byId.has(id)); if (!ids.length) { toast('No current library materials to share.'); return; }
+    const url = new URL(BOARD_URL, location.href); url.searchParams.set('ids', ids.join(','));
+    if (url.href.length > 8000) { toast('This board is too large for one shared link. Export the selection file instead.'); return; }
+    try { await navigator.clipboard.writeText(url.href); toast('Material list link copied. Your notes and groups stay private.'); }
+    catch (_) {
+      const d = ensureDialog(); d.replaceChildren(closeButton()); const content = node('div', 'ml-compare');
+      content.append(node('h2', null, 'Share your material list'), node('p', 'ml-compare-intro', 'Copy this link. It contains material IDs only, without your notes or groups.'));
+      const input = node('input'); input.type = 'text'; input.value = url.href; input.readOnly = true; input.style.cssText = 'width:100%;padding:13px;border:1px solid #deded7;font:inherit;font-size:12px'; input.setAttribute('aria-label', 'Material list share link'); content.append(input); d.append(content); showDialog('Share material list'); input.focus(); input.select();
+    }
+  }
+
+  function wireSharedHeader() {
+    const search = document.querySelector('.header-search');
+    if (search) search.addEventListener('submit', e => {
+      e.preventDefault(); const query = search.querySelector('input')?.value.trim() || '';
+      if (pageIsBoard || !root) location.href = LIBRARY_URL + '?q=' + encodeURIComponent(query);
+      else { state.q = query; updateLibrary(); root.querySelector('#ml-search').focus(); }
+    });
+    const selection = document.querySelector('[aria-label="View selection"]'); if (selection) selection.addEventListener('click', () => { location.href = 'my-selection.html'; });
+    const contact = document.querySelector('[aria-label="Subscribe"], [aria-label="Contact SOHO Fashion"]'); if (contact) { contact.setAttribute('aria-label', 'Contact SOHO Fashion'); contact.addEventListener('click', () => { location.href = 'mailto:online@saintycorp.com'; }); }
+  }
+  async function load() {
+    try {
+      const response = await fetch(DATA_URL); if (!response.ok) throw new Error('Library response ' + response.status);
+      const data = await response.json(), raw = Array.isArray(data) ? data : data.items;
+      if (!Array.isArray(raw)) throw new Error('No library items');
+      const seen = new Set(); items = raw.map(normalise).filter(i => { if (seen.has(i.id)) return false; seen.add(i.id); return true; }); byId = new Map(items.map(i => [i.id, i]));
+      if (pageIsBoard) { const params = new URLSearchParams(location.search); sharedIds = [...new Set((params.get('ids') || '').split(','))].filter(id => byId.has(id)); renderBoard(); }
+      else renderLibrary();
+      wireSharedHeader();
+      window.addEventListener('popstate', () => { if (!pageIsBoard) { state = readState(); updateLibrary(true, true); } });
+      window.addEventListener('storage', e => { if (e.key === BOARD_KEY) { board = readBoard(); if (pageIsBoard) renderBoard(); else countUpdate(); } });
+      document.addEventListener('click', e => { if (!e.target.closest('.ml-filter')) root.querySelectorAll('.ml-filter[open]').forEach(d => { d.open = false; }); });
+    } catch (error) {
+      root.replaceChildren(heading(pageIsBoard ? 'Material Board' : 'Materials & Patterns', 'Explore cloth, colour and pattern.'));
+      const empty = node('div', 'ml-empty'); empty.append(node('h2', null, 'The library is temporarily unavailable.'), node('p', null, 'Your saved selection has not been changed. Please try loading the library again.'), button('Try again', 'ml-button', load)); root.append(empty);
+    }
+  }
+  load();
+})();
