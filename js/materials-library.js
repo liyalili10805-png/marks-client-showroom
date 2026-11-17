@@ -268,7 +268,8 @@
       if (record.colorway) article.append(node('p', 'ml-ai-note', 'Selected colourway: ' + record.colorway));
       const groupLabel = node('label', 'ml-note-label', 'Board group'); groupLabel.htmlFor = 'ml-group-' + item.id;
       const group = node('input'); group.type = 'text'; group.id = groupLabel.htmlFor; group.value = record.group; group.placeholder = 'e.g. Shirts / muted checks'; group.maxLength = 80;
-      group.addEventListener('change', () => { const row = board.get(item.id); if (row) { row.group = group.value.trim(); persist(); updateGroupOptions(); } });
+      group.addEventListener('input', () => { const row = board.get(item.id); if (row) { row.group = group.value.trim(); persist(); } });
+      group.addEventListener('change', updateGroupOptions);
       const noteLabel = node('label', 'ml-note-label', 'Development note'); noteLabel.htmlFor = 'ml-note-' + item.id;
       const note = node('textarea'); note.id = noteLabel.htmlFor; note.value = record.note; note.placeholder = 'Colour, scale, handle or intended application…'; note.maxLength = 2000;
       note.addEventListener('input', () => { const row = board.get(item.id); if (row) { row.note = note.value; persist(); } });
@@ -447,7 +448,8 @@
   function boardRows() {
     return [...board.values()].map(r => {
       const i = byId.get(r.id);
-      return {id: r.id, title: i?.title || 'Reference no longer in library', type: i?.type || '', family: i?.family || '', colourway: r.colorway, colours: i?.colors.join(' / ') || '', application: i?.uses.join(' / ') || '', status: i ? STATUS[i.status] : '', source: i ? SOURCE[i.sourceType] : '', group: r.group, note: r.note};
+      const selected = i?.colorways.find(c => c.name === r.colorway);
+      return {id: r.id, title: i?.title || 'Reference no longer in library', type: i?.type || '', family: i?.family || '', colourway: r.colorway, colours: (selected?.colors || i?.colors || []).join(' / '), application: i?.uses.join(' / ') || '', status: i ? STATUS[i.status] : '', source: i ? SOURCE[i.sourceType] : '', group: r.group, note: r.note};
     });
   }
   function download(content, type, filename) {
