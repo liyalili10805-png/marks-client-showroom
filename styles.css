@@ -104,7 +104,7 @@ body:has(.nav-group:focus-within) .nav-blur { opacity: 1; visibility: visible; }
 .breadcrumb a:hover { color: #111; }
 
 .hero { position: relative; margin: 0 0 4px; background: #000; }
-.hero video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #000; }
+.hero video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: #000; }
 .film-play { position: absolute; left: 50%; top: 50%; bottom: auto; transform: translate(-50%,-50%); display: inline-flex; align-items: center; gap: 10px; padding: 13px 20px; border: 1px solid rgba(255,255,255,.65); background: rgba(17,17,17,.6); color: #fff; font: inherit; font-size: 13px; cursor: pointer; }
 .film-play svg { width: 16px; height: 16px; }
 .film-play:hover { background: #111; }
