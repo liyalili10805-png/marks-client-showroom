@@ -14,6 +14,18 @@
 
   const escape = value => String(value == null ? '' : value);
 
+  // Development timing is an assigned brief, not the source garment's collection date.
+  const developmentSeason = product => String(product.developmentSeason || '').trim();
+  function matchesStyleFilters(product, filters) {
+    return (!filters.gender || product.gender === filters.gender)
+      && (!filters.type || product.type === filters.type)
+      && (!filters.material || product.material === filters.material)
+      && (!filters.colour || (product.colours || []).some(colour => colour.name === filters.colour))
+      && (!filters.retail || product.retail === filters.retail)
+      && (!filters.occasion || (product.occasions || []).includes(filters.occasion))
+      && (!filters.season || (filters.season === 'unassigned' ? !developmentSeason(product) : developmentSeason(product) === filters.season));
+  }
+
   let selection = [];
   try { selection = JSON.parse(localStorage.getItem(SELECT_KEY) || '[]'); } catch { selection = []; }
 
@@ -258,13 +270,16 @@
     const main = el('div', 'col-main');
     main.append(head);
 
+    const assignedSeasons = uniqueValues(products.map(developmentSeason));
+    const requestedSeason = params.get('season') || '';
     const filters = {
       gender: params.get('gender') || '',
       type: params.get('type') || '',
       material: params.get('material') || '',
       colour: params.get('colour') || '',
       retail: params.get('retail') || '',
-      occasion: occasion || ''
+      occasion: occasion || '',
+      season: assignedSeasons.includes(requestedSeason) || requestedSeason === 'unassigned' ? requestedSeason : ''
     };
 
     function uniqueValues(list) {
@@ -275,6 +290,7 @@
     function makeSelect(key, label, options) {
       const select = document.createElement('select');
       select.setAttribute('aria-label', label);
+      select.dataset.filter = key;
       options.forEach(([value, text]) => {
         const option = document.createElement('option');
         option.value = value;
@@ -298,7 +314,8 @@
       makeSelect('material', 'Material', [['', 'Material'], ...uniqueValues(products.map(product => product.material)).map(value => [value, value])]),
       makeSelect('colour', 'Colour', [['', 'Colour'], ...colourOptions.map(value => [value, value])]),
       makeSelect('retail', 'Target retail', [['', 'Target retail'], ['To be confirmed', 'To be confirmed']]),
-      makeSelect('occasion', 'Occasion', [['', 'Occasion'], ...data.occasions.map(item => [item.slug, item.name])])
+      makeSelect('occasion', 'Occasion', [['', 'Occasion'], ...data.occasions.map(item => [item.slug, item.name])]),
+      makeSelect('season', 'Development season', [['', 'Development season'], ...assignedSeasons.map(value => [value, value]), ...(products.some(product => !developmentSeason(product)) ? [['unassigned', 'Season not assigned']] : [])])
     );
     const clear = el('button', 'filter-clear', 'Clear');
     clear.type = 'button';
@@ -357,13 +374,7 @@
     }
 
     function paint() {
-      const filtered = products
-        .filter(product => !filters.gender || product.gender === filters.gender)
-        .filter(product => !filters.type || product.type === filters.type)
-        .filter(product => !filters.material || product.material === filters.material)
-        .filter(product => !filters.colour || (product.colours || []).some(colour => colour.name === filters.colour))
-        .filter(product => !filters.retail || product.retail === filters.retail)
-        .filter(product => !filters.occasion || (product.occasions || []).includes(filters.occasion));
+      const filtered = products.filter(product => matchesStyleFilters(product, filters));
       const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
       if (page > pages) page = pages;
       grid.innerHTML = '';
@@ -375,6 +386,7 @@
     }
 
     paint();
+    syncUrl();
   }
 
   function renderDetail() {
@@ -766,7 +778,10 @@
       products = payload.products;
       await applyOverrides();
       if (view === 'landing') renderLanding();
-      if (view === 'series') renderSeries();
+      if (view === 'series') {
+        renderSeries();
+        window.addEventListener('popstate', renderSeries);
+      }
       if (view === 'detail') renderDetail();
       saveSelection();
     })

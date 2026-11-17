@@ -301,3 +301,18 @@
 .fabric-preview[data-pattern="Twill direction"]{background-image:repeating-linear-gradient(135deg,transparent 0 3px,#ffffff20 3px 4px,#00000012 4px 5px)}.fabric-preview[data-pattern="Corduroy direction"]{background-image:repeating-linear-gradient(90deg,#ffffff18 0 3px,#00000025 3px 5px,#ffffff08 5px 8px)}.fabric-preview[data-pattern="Herringbone direction"]{background-image:repeating-linear-gradient(45deg,transparent 0 4px,#d7cebb30 4px 6px),repeating-linear-gradient(135deg,transparent 0 4px,#00000020 4px 6px);background-size:30px 30px}.fabric-concepts .fabric-reason{min-height:90px}.materials-section{scroll-margin-top:110px}
 
 .fabric-preview[data-pattern="Micro-grid direction"]{background-image:repeating-linear-gradient(0deg,transparent 0 11px,#e1d7bf55 11px 12px),repeating-linear-gradient(90deg,transparent 0 11px,#e1d7bf55 11px 12px)}.fabric-preview[data-pattern="Houndstooth direction"]{background-image:conic-gradient(from 90deg at 25% 25%,#d7cbb170 90deg,transparent 0),conic-gradient(from 270deg at 75% 75%,#d7cbb170 90deg,transparent 0);background-size:20px 20px}.fabric-preview[data-pattern="Botanical print direction"]{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='112' viewBox='0 0 96 112'%3E%3Cg stroke='%23d6ccb4' stroke-opacity='.58' fill='none' stroke-width='.8'%3E%3Cpath d='M25 84q13-28 19-63M39 50Q15 47 25 30q19 3 14 20M42 41q24-5 18-24-21 3-18 24M33 66Q11 66 14 49q20-3 19 17M35 62q28 0 27-19-23-2-27 19M73 109q5-16 13-30M81 92q-17-2-13-16 16 0 13 16'/%3E%3C/g%3E%3C/svg%3E");background-size:96px 112px}.fabric-preview[data-pattern="Border print direction"]{background-image:linear-gradient(90deg,transparent 0 70%,#d6c8b060 70% 72%,transparent 72% 76%,#d6c8b0aa 76% 79%,transparent 79% 83%,#d6c8b060 83% 85%,transparent 85%),repeating-linear-gradient(0deg,transparent 0 3px,#ffffff15 3px 4px)}
+
+/* Collection browsing follows the same type hierarchy as the Trend library. */
+body[data-view="series"] #collection-view{font:inherit;color:#171817}
+body[data-view="series"] .col-page-head{padding:32px 0 29px}
+body[data-view="series"] .col-breadcrumb{font-size:10px;font-weight:500;line-height:1.6;letter-spacing:.09em;color:#656863;margin-bottom:17px}
+body[data-view="series"] .col-page-head h1{font-family:inherit;font-size:clamp(32px,3.5vw,54px);font-weight:600;line-height:1.05;letter-spacing:-.035em;margin:0 0 14px}
+body[data-view="series"] .col-sub{font-size:14px;line-height:1.65;color:#656863}
+body[data-view="series"] .col-card-info h3{font-family:inherit;font-size:24px;font-weight:600;line-height:1.14;letter-spacing:-.025em;margin:9px 0 11px}
+body[data-view="series"] .col-code{font-size:10px;line-height:1.5;letter-spacing:.045em;text-transform:uppercase;color:#656863}
+body[data-view="series"] .col-toolbar{display:flex;flex-wrap:wrap;gap:8px;padding-bottom:22px;align-items:stretch}
+body[data-view="series"] .col-toolbar select{font-family:inherit;flex:1 1 105px;min-width:0;max-width:100%;height:41px;font-size:12px;padding:0 25px 0 11px}
+body[data-view="series"] .col-toolbar select[data-filter="material"]{flex-basis:150px}
+body[data-view="series"] .col-toolbar select[data-filter="season"]{flex:1.3 1 156px}
+body[data-view="series"] .filter-clear{font:inherit;font-size:11px;min-height:41px}
+@media(max-width:560px){body[data-view="series"] .col-page-head{padding:25px 0}body[data-view="series"] .col-page-head h1{font-size:35px}body[data-view="series"] .col-sub{font-size:13px}body[data-view="series"] .col-card-info h3{font-size:20px}body[data-view="series"] .col-toolbar select{flex-basis:calc(50% - 4px)}body[data-view="series"] .col-toolbar select[data-filter="season"]{flex-basis:calc(50% - 4px)}}

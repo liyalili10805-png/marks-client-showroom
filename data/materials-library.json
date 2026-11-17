@@ -30,6 +30,9 @@
       "images": [
         "assets/material-library/MF001.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "T01",
@@ -62,6 +65,9 @@
       "image": "assets/material-library/MP024.webp",
       "images": [
         "assets/material-library/MP024.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -104,6 +110,9 @@
       "images": [
         "assets/material-library/MF011.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "OW02",
@@ -138,6 +147,9 @@
       "image": "assets/material-library/MP055.webp",
       "images": [
         "assets/material-library/MP055.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -181,6 +193,9 @@
       "images": [
         "assets/material-library/MF016.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT02",
         "OW01"
@@ -212,6 +227,9 @@
       "image": "assets/material-library/MP062.webp",
       "images": [
         "assets/material-library/MP062.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -270,6 +288,9 @@
       "images": [
         "assets/material-library/MF022.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT01",
         "S01",
@@ -301,6 +322,9 @@
       "image": "assets/material-library/MP076.webp",
       "images": [
         "assets/material-library/MP076.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -349,6 +373,9 @@
       "images": [
         "assets/material-library/MF030.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "MAT04"
@@ -383,6 +410,9 @@
       "image": "assets/material-library/MP091.webp",
       "images": [
         "assets/material-library/MP091.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -425,6 +455,9 @@
       "images": [
         "assets/material-library/MF036.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "S04"
@@ -456,6 +489,9 @@
       "image": "assets/material-library/MP111.webp",
       "images": [
         "assets/material-library/MP111.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -497,6 +533,9 @@
       "images": [
         "assets/material-library/MF042.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -530,6 +569,9 @@
       "image": "assets/material-library/MP126.webp",
       "images": [
         "assets/material-library/MP126.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -597,6 +639,9 @@
       "images": [
         "assets/material-library/MF050.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -634,6 +679,9 @@
       "image": "assets/material-library/MS001.webp",
       "images": [
         "assets/material-library/MS001.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ]
     },
     {
@@ -661,6 +709,9 @@
       "thumbnail": "assets/material-library/MF058-thumb.webp",
       "images": [
         "assets/material-library/MF058.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "AKMAT03",
@@ -693,6 +744,9 @@
       "image": "assets/material-library/MP001.webp",
       "images": [
         "assets/material-library/MP001.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -742,6 +796,9 @@
       "images": [
         "assets/material-library/MF068.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT01",
         "T06",
@@ -774,6 +831,9 @@
       "image": "assets/material-library/MP002.webp",
       "images": [
         "assets/material-library/MP002.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -823,6 +883,9 @@
       "images": [
         "assets/material-library/MF071.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT01",
         "T07",
@@ -854,6 +917,9 @@
       "image": "assets/material-library/MP003.webp",
       "images": [
         "assets/material-library/MP003.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "colorways": [
         {
@@ -898,6 +964,9 @@
       "images": [
         "assets/material-library/MF078.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW07"
       ]
@@ -929,6 +998,9 @@
       "image": "assets/material-library/MP004.webp",
       "images": [
         "assets/material-library/MP004.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "colorways": [
         {
@@ -995,6 +1067,9 @@
       "images": [
         "assets/material-library/MF083.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT04",
         "T01"
@@ -1029,6 +1104,9 @@
       "image": "assets/material-library/MP005.webp",
       "images": [
         "assets/material-library/MP005.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -1082,6 +1160,9 @@
       "images": [
         "assets/material-library/MF087.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW08",
         "OW01"
@@ -1114,6 +1195,9 @@
       "image": "assets/material-library/MP008.webp",
       "images": [
         "assets/material-library/MP008.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -1174,6 +1258,9 @@
       "images": [
         "assets/material-library/MF092.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW01",
         "OW08"
@@ -1204,6 +1291,9 @@
       "image": "assets/material-library/MP019.webp",
       "images": [
         "assets/material-library/MP019.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "colorways": [
         {
@@ -1256,6 +1346,9 @@
       "images": [
         "assets/material-library/MF097.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT06",
         "OW06",
@@ -1292,6 +1385,9 @@
       "image": "assets/material-library/MS004.webp",
       "images": [
         "assets/material-library/MS004.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ]
     },
     {
@@ -1319,6 +1415,9 @@
       "thumbnail": "assets/material-library/MF106-thumb.webp",
       "images": [
         "assets/material-library/MF106.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "AKMAT02",
@@ -1355,6 +1454,9 @@
       "image": "assets/material-library/MP018.webp",
       "images": [
         "assets/material-library/MP018.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -1409,6 +1511,9 @@
       "images": [
         "assets/material-library/MF107.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT05",
         "OW05"
@@ -1440,6 +1545,9 @@
       "image": "assets/material-library/MP012.webp",
       "images": [
         "assets/material-library/MP012.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -1481,6 +1589,9 @@
       "images": [
         "assets/material-library/MF111.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW07"
       ]
@@ -1511,6 +1622,9 @@
       "image": "assets/material-library/MP007.webp",
       "images": [
         "assets/material-library/MP007.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "colorways": [
         {
@@ -1565,6 +1679,9 @@
       "images": [
         "assets/material-library/MF116.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT03",
         "T08"
@@ -1596,6 +1713,9 @@
       "image": "assets/material-library/MP042.webp",
       "images": [
         "assets/material-library/MP042.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "colorways": [
         {
@@ -1635,6 +1755,9 @@
       "images": [
         "assets/material-library/MF002.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "T01",
@@ -1669,6 +1792,9 @@
       "image": "assets/material-library/MP006.webp",
       "images": [
         "assets/material-library/MP006.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -1738,6 +1864,9 @@
       "images": [
         "assets/material-library/MF012.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "OW02",
@@ -1771,6 +1900,9 @@
       "image": "assets/material-library/MP009.webp",
       "images": [
         "assets/material-library/MP009.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -1838,6 +1970,9 @@
       "images": [
         "assets/material-library/MF017.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT02",
         "OW01"
@@ -1870,6 +2005,9 @@
       "image": "assets/material-library/MP030.webp",
       "images": [
         "assets/material-library/MP030.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "colorways": [
         {
@@ -1935,6 +2073,9 @@
       "images": [
         "assets/material-library/MF023.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT01",
         "S01",
@@ -1967,6 +2108,9 @@
       "image": "assets/material-library/MP025.webp",
       "images": [
         "assets/material-library/MP025.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -2009,6 +2153,9 @@
       "images": [
         "assets/material-library/MF031.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "MAT04"
@@ -2039,6 +2186,9 @@
       "image": "assets/material-library/MP013.webp",
       "images": [
         "assets/material-library/MP013.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -2078,6 +2228,9 @@
       "images": [
         "assets/material-library/MF037.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "S04"
@@ -2115,6 +2268,9 @@
       "image": "assets/material-library/MS002.webp",
       "images": [
         "assets/material-library/MS002.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ]
     },
     {
@@ -2142,6 +2298,9 @@
       "thumbnail": "assets/material-library/MF043-thumb.webp",
       "images": [
         "assets/material-library/MF043.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "AKMAT02",
@@ -2173,6 +2332,9 @@
       "image": "assets/material-library/MP023.webp",
       "images": [
         "assets/material-library/MP023.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -2213,6 +2375,9 @@
       "images": [
         "assets/material-library/MF051.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -2244,6 +2409,9 @@
       "image": "assets/material-library/MP010.webp",
       "images": [
         "assets/material-library/MP010.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -2309,6 +2477,9 @@
       "images": [
         "assets/material-library/MF059.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT03",
         "T08"
@@ -2339,6 +2510,9 @@
       "image": "assets/material-library/MP088.webp",
       "images": [
         "assets/material-library/MP088.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "colorways": [
         {
@@ -2399,6 +2573,9 @@
       "images": [
         "assets/material-library/MF069.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT01",
         "T06",
@@ -2431,6 +2608,9 @@
       "image": "assets/material-library/MP026.webp",
       "images": [
         "assets/material-library/MP026.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -2473,6 +2653,9 @@
       "images": [
         "assets/material-library/MF073.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT01",
         "T07",
@@ -2505,6 +2688,9 @@
       "image": "assets/material-library/MP017.webp",
       "images": [
         "assets/material-library/MP017.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -2562,6 +2748,9 @@
       "images": [
         "assets/material-library/MF079.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW07"
       ]
@@ -2593,6 +2782,9 @@
       "image": "assets/material-library/MP027.webp",
       "images": [
         "assets/material-library/MP027.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -2634,6 +2826,9 @@
       "images": [
         "assets/material-library/MF084.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT04",
         "T01"
@@ -2664,6 +2859,9 @@
       "image": "assets/material-library/MP011.webp",
       "images": [
         "assets/material-library/MP011.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -2704,6 +2902,9 @@
       "images": [
         "assets/material-library/MF088.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW08",
         "OW01"
@@ -2735,6 +2936,9 @@
       "image": "assets/material-library/MP134.webp",
       "images": [
         "assets/material-library/MP134.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "colorways": [
         {
@@ -2795,6 +2999,9 @@
       "images": [
         "assets/material-library/MF093.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW01",
         "OW08"
@@ -2825,6 +3032,9 @@
       "image": "assets/material-library/MP031.webp",
       "images": [
         "assets/material-library/MP031.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -2887,6 +3097,9 @@
       "images": [
         "assets/material-library/MF098.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT06",
         "OW06",
@@ -2918,6 +3131,9 @@
       "image": "assets/material-library/MP028.webp",
       "images": [
         "assets/material-library/MP028.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -2958,6 +3174,9 @@
       "images": [
         "assets/material-library/MF108.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT05",
         "OW05"
@@ -2989,6 +3208,9 @@
       "image": "assets/material-library/MP129.webp",
       "images": [
         "assets/material-library/MP129.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -3037,6 +3259,9 @@
       "images": [
         "assets/material-library/MF112.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW07"
       ]
@@ -3066,6 +3291,9 @@
       "image": "assets/material-library/MP014.webp",
       "images": [
         "assets/material-library/MP014.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -3106,6 +3334,9 @@
       "images": [
         "assets/material-library/MF117.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT03",
         "T08"
@@ -3138,6 +3369,9 @@
       "image": "assets/material-library/MP033.webp",
       "images": [
         "assets/material-library/MP033.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -3181,6 +3415,9 @@
       "images": [
         "assets/material-library/MF003.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "T01",
@@ -3213,6 +3450,9 @@
       "image": "assets/material-library/MP029.webp",
       "images": [
         "assets/material-library/MP029.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -3255,6 +3495,9 @@
       "images": [
         "assets/material-library/MF013.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "OW02",
@@ -3286,6 +3529,9 @@
       "image": "assets/material-library/MP015.webp",
       "images": [
         "assets/material-library/MP015.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -3341,6 +3587,9 @@
       "images": [
         "assets/material-library/MF018.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT02",
         "OW01"
@@ -3374,6 +3623,9 @@
       "image": "assets/material-library/MP034.webp",
       "images": [
         "assets/material-library/MP034.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -3418,6 +3670,9 @@
       "images": [
         "assets/material-library/MF024.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT01",
         "S01",
@@ -3450,6 +3705,9 @@
       "image": "assets/material-library/MP036.webp",
       "images": [
         "assets/material-library/MP036.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -3492,6 +3750,9 @@
       "images": [
         "assets/material-library/MF032.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "MAT04"
@@ -3523,6 +3784,9 @@
       "image": "assets/material-library/MP016.webp",
       "images": [
         "assets/material-library/MP016.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -3589,6 +3853,9 @@
       "images": [
         "assets/material-library/MF038.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "S04"
@@ -3619,6 +3886,9 @@
       "image": "assets/material-library/MP044.webp",
       "images": [
         "assets/material-library/MP044.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -3681,6 +3951,9 @@
       "images": [
         "assets/material-library/MF044.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -3715,6 +3988,9 @@
       "image": "assets/material-library/MP037.webp",
       "images": [
         "assets/material-library/MP037.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -3759,6 +4035,9 @@
       "images": [
         "assets/material-library/MF053.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -3791,6 +4070,9 @@
       "image": "assets/material-library/MP020.webp",
       "images": [
         "assets/material-library/MP020.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -3832,6 +4114,9 @@
       "images": [
         "assets/material-library/MF060.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT03",
         "T08"
@@ -3864,6 +4149,9 @@
       "image": "assets/material-library/MP045.webp",
       "images": [
         "assets/material-library/MP045.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -3929,6 +4217,9 @@
       "images": [
         "assets/material-library/MF070.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT01",
         "T06",
@@ -3960,6 +4251,9 @@
       "image": "assets/material-library/MP038.webp",
       "images": [
         "assets/material-library/MP038.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -4009,6 +4303,9 @@
       "images": [
         "assets/material-library/MF074.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT01",
         "T07",
@@ -4040,6 +4337,9 @@
       "image": "assets/material-library/MP021.webp",
       "images": [
         "assets/material-library/MP021.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -4105,6 +4405,9 @@
       "images": [
         "assets/material-library/MF080.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW07"
       ]
@@ -4136,6 +4439,9 @@
       "image": "assets/material-library/MP046.webp",
       "images": [
         "assets/material-library/MP046.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -4200,6 +4506,9 @@
       "images": [
         "assets/material-library/MF085.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT04",
         "T01"
@@ -4230,6 +4539,9 @@
       "image": "assets/material-library/MP039.webp",
       "images": [
         "assets/material-library/MP039.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -4270,6 +4582,9 @@
       "images": [
         "assets/material-library/MF089.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW08",
         "OW01"
@@ -4301,6 +4616,9 @@
       "image": "assets/material-library/MP022.webp",
       "images": [
         "assets/material-library/MP022.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -4375,6 +4693,9 @@
       "images": [
         "assets/material-library/MF094.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW01",
         "OW08"
@@ -4407,6 +4728,9 @@
       "image": "assets/material-library/MP052.webp",
       "images": [
         "assets/material-library/MP052.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -4450,6 +4774,9 @@
       "images": [
         "assets/material-library/MF099.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT06",
         "OW06",
@@ -4481,6 +4808,9 @@
       "image": "assets/material-library/MP040.webp",
       "images": [
         "assets/material-library/MP040.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -4521,6 +4851,9 @@
       "images": [
         "assets/material-library/MF109.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT05",
         "OW05"
@@ -4552,6 +4885,9 @@
       "image": "assets/material-library/MP032.webp",
       "images": [
         "assets/material-library/MP032.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -4593,6 +4929,9 @@
       "images": [
         "assets/material-library/MF113.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW07"
       ]
@@ -4622,6 +4961,9 @@
       "image": "assets/material-library/MP053.webp",
       "images": [
         "assets/material-library/MP053.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -4662,6 +5004,9 @@
       "images": [
         "assets/material-library/MF118.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT03",
         "T08"
@@ -4693,6 +5038,9 @@
       "image": "assets/material-library/MP041.webp",
       "images": [
         "assets/material-library/MP041.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -4735,6 +5083,9 @@
       "images": [
         "assets/material-library/MF004.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "T01",
@@ -4766,6 +5117,9 @@
       "image": "assets/material-library/MP035.webp",
       "images": [
         "assets/material-library/MP035.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -4814,6 +5168,9 @@
       "images": [
         "assets/material-library/MF014.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "OW02",
@@ -4848,6 +5205,9 @@
       "image": "assets/material-library/MP054.webp",
       "images": [
         "assets/material-library/MP054.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -4891,6 +5251,9 @@
       "images": [
         "assets/material-library/MF019.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT02",
         "OW01"
@@ -4923,6 +5286,9 @@
       "image": "assets/material-library/MP043.webp",
       "images": [
         "assets/material-library/MP043.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -4966,6 +5332,9 @@
       "images": [
         "assets/material-library/MF025.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT01",
         "S01",
@@ -4998,6 +5367,9 @@
       "image": "assets/material-library/MP058.webp",
       "images": [
         "assets/material-library/MP058.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -5049,6 +5421,9 @@
       "images": [
         "assets/material-library/MF033.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "MAT04"
@@ -5080,6 +5455,9 @@
       "image": "assets/material-library/MP056.webp",
       "images": [
         "assets/material-library/MP056.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -5119,6 +5497,9 @@
       "images": [
         "assets/material-library/MF039.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "S04"
@@ -5149,6 +5530,9 @@
       "image": "assets/material-library/MP048.webp",
       "images": [
         "assets/material-library/MP048.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -5189,6 +5573,9 @@
       "images": [
         "assets/material-library/MF045.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -5219,6 +5606,9 @@
       "image": "assets/material-library/MP061.webp",
       "images": [
         "assets/material-library/MP061.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -5259,6 +5649,9 @@
       "images": [
         "assets/material-library/MF054.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -5291,6 +5684,9 @@
       "image": "assets/material-library/MP057.webp",
       "images": [
         "assets/material-library/MP057.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -5332,6 +5728,9 @@
       "images": [
         "assets/material-library/MF061.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT03",
         "T08"
@@ -5362,6 +5761,9 @@
       "image": "assets/material-library/MP049.webp",
       "images": [
         "assets/material-library/MP049.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -5403,6 +5805,9 @@
       "images": [
         "assets/material-library/MF076.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT01",
         "T07",
@@ -5436,6 +5841,9 @@
       "image": "assets/material-library/MP066.webp",
       "images": [
         "assets/material-library/MP066.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -5501,6 +5909,9 @@
       "images": [
         "assets/material-library/MF081.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW07"
       ]
@@ -5531,6 +5942,9 @@
       "image": "assets/material-library/MP068.webp",
       "images": [
         "assets/material-library/MP068.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -5571,6 +5985,9 @@
       "images": [
         "assets/material-library/MF086.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT04",
         "T01"
@@ -5603,6 +6020,9 @@
       "image": "assets/material-library/MP050.webp",
       "images": [
         "assets/material-library/MP050.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -5652,6 +6072,9 @@
       "images": [
         "assets/material-library/MF090.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW08",
         "OW01"
@@ -5684,6 +6107,9 @@
       "image": "assets/material-library/MP072.webp",
       "images": [
         "assets/material-library/MP072.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -5727,6 +6153,9 @@
       "images": [
         "assets/material-library/MF095.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW01",
         "OW08"
@@ -5760,6 +6189,9 @@
       "image": "assets/material-library/MP070.webp",
       "images": [
         "assets/material-library/MP070.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -5803,6 +6235,9 @@
       "images": [
         "assets/material-library/MF100.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT06",
         "OW06",
@@ -5836,6 +6271,9 @@
       "image": "assets/material-library/MP051.webp",
       "images": [
         "assets/material-library/MP051.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -5878,6 +6316,9 @@
       "images": [
         "assets/material-library/MF110.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT05",
         "OW05"
@@ -5912,6 +6353,9 @@
       "image": "assets/material-library/MP082.webp",
       "images": [
         "assets/material-library/MP082.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -5955,6 +6399,9 @@
       "images": [
         "assets/material-library/MF114.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW07"
       ]
@@ -5986,6 +6433,9 @@
       "image": "assets/material-library/MP071.webp",
       "images": [
         "assets/material-library/MP071.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -6037,6 +6487,9 @@
       "images": [
         "assets/material-library/MF119.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT03",
         "T08"
@@ -6068,6 +6521,9 @@
       "image": "assets/material-library/MP059.webp",
       "images": [
         "assets/material-library/MP059.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -6118,6 +6574,9 @@
       "images": [
         "assets/material-library/MF005.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "T01",
@@ -6149,6 +6608,9 @@
       "image": "assets/material-library/MP083.webp",
       "images": [
         "assets/material-library/MP083.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -6190,6 +6652,9 @@
       "images": [
         "assets/material-library/MF015.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "OW02",
@@ -6221,6 +6686,9 @@
       "image": "assets/material-library/MP073.webp",
       "images": [
         "assets/material-library/MP073.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -6262,6 +6730,9 @@
       "images": [
         "assets/material-library/MF020.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT02",
         "OW01"
@@ -6292,6 +6763,9 @@
       "image": "assets/material-library/MP060.webp",
       "images": [
         "assets/material-library/MP060.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -6333,6 +6807,9 @@
       "images": [
         "assets/material-library/MF026.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT01",
         "S01",
@@ -6366,6 +6843,9 @@
       "image": "assets/material-library/MP084.webp",
       "images": [
         "assets/material-library/MP084.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -6434,6 +6914,9 @@
       "images": [
         "assets/material-library/MF034.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "MAT04"
@@ -6464,6 +6947,9 @@
       "image": "assets/material-library/MP074.webp",
       "images": [
         "assets/material-library/MP074.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -6511,6 +6997,9 @@
       "images": [
         "assets/material-library/MF040.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "S04"
@@ -6541,6 +7030,9 @@
       "image": "assets/material-library/MP063.webp",
       "images": [
         "assets/material-library/MP063.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -6603,6 +7095,9 @@
       "images": [
         "assets/material-library/MF046.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -6635,6 +7130,9 @@
       "image": "assets/material-library/MP087.webp",
       "images": [
         "assets/material-library/MP087.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -6677,6 +7175,9 @@
       "images": [
         "assets/material-library/MF055.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -6707,6 +7208,9 @@
       "image": "assets/material-library/MP078.webp",
       "images": [
         "assets/material-library/MP078.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -6747,6 +7251,9 @@
       "images": [
         "assets/material-library/MF082.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW07"
       ]
@@ -6776,6 +7283,9 @@
       "image": "assets/material-library/MP064.webp",
       "images": [
         "assets/material-library/MP064.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -6823,6 +7333,9 @@
       "images": [
         "assets/material-library/MF091.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW08",
         "OW01"
@@ -6855,6 +7368,9 @@
       "image": "assets/material-library/MP092.webp",
       "images": [
         "assets/material-library/MP092.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -6898,6 +7414,9 @@
       "images": [
         "assets/material-library/MF096.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW01",
         "OW08"
@@ -6928,6 +7447,9 @@
       "image": "assets/material-library/MP079.webp",
       "images": [
         "assets/material-library/MP079.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -6969,6 +7491,9 @@
       "images": [
         "assets/material-library/MF101.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT06",
         "OW06",
@@ -7001,6 +7526,9 @@
       "image": "assets/material-library/MP065.webp",
       "images": [
         "assets/material-library/MP065.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -7049,6 +7577,9 @@
       "images": [
         "assets/material-library/MF115.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "OW07"
       ]
@@ -7079,6 +7610,9 @@
       "image": "assets/material-library/MP103.webp",
       "images": [
         "assets/material-library/MP103.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -7120,6 +7654,9 @@
       "images": [
         "assets/material-library/MF120.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT03",
         "T08"
@@ -7150,6 +7687,9 @@
       "image": "assets/material-library/MP080.webp",
       "images": [
         "assets/material-library/MP080.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -7191,6 +7731,9 @@
       "images": [
         "assets/material-library/MF006.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "T01",
@@ -7223,6 +7766,9 @@
       "image": "assets/material-library/MP067.webp",
       "images": [
         "assets/material-library/MP067.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -7273,6 +7819,9 @@
       "images": [
         "assets/material-library/MF021.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT02",
         "OW01"
@@ -7305,6 +7854,9 @@
       "image": "assets/material-library/MP112.webp",
       "images": [
         "assets/material-library/MP112.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -7348,6 +7900,9 @@
       "images": [
         "assets/material-library/MF027.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT01",
         "S01",
@@ -7380,6 +7935,9 @@
       "image": "assets/material-library/MP094.webp",
       "images": [
         "assets/material-library/MP094.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -7421,6 +7979,9 @@
       "images": [
         "assets/material-library/MF035.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "MAT04"
@@ -7452,6 +8013,9 @@
       "image": "assets/material-library/MP069.webp",
       "images": [
         "assets/material-library/MP069.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -7492,6 +8056,9 @@
       "images": [
         "assets/material-library/MF041.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "S02",
         "S04"
@@ -7526,6 +8093,9 @@
       "image": "assets/material-library/MP113.webp",
       "images": [
         "assets/material-library/MP113.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -7600,6 +8170,9 @@
       "images": [
         "assets/material-library/MF047.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -7633,6 +8206,9 @@
       "image": "assets/material-library/MP095.webp",
       "images": [
         "assets/material-library/MP095.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -7675,6 +8251,9 @@
       "images": [
         "assets/material-library/MF056.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -7706,6 +8285,9 @@
       "image": "assets/material-library/MP075.webp",
       "images": [
         "assets/material-library/MP075.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -7748,6 +8330,9 @@
       "images": [
         "assets/material-library/MF102.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT06",
         "OW06",
@@ -7781,6 +8366,9 @@
       "image": "assets/material-library/MP114.webp",
       "images": [
         "assets/material-library/MP114.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -7824,6 +8412,9 @@
       "images": [
         "assets/material-library/MF007.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "T01",
@@ -7859,6 +8450,9 @@
       "image": "assets/material-library/MP096.webp",
       "images": [
         "assets/material-library/MP096.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -7903,6 +8497,9 @@
       "images": [
         "assets/material-library/MF028.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT01",
         "S01",
@@ -7935,6 +8532,9 @@
       "image": "assets/material-library/MP077.webp",
       "images": [
         "assets/material-library/MP077.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -7976,6 +8576,9 @@
       "images": [
         "assets/material-library/MF048.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -8006,6 +8609,9 @@
       "image": "assets/material-library/MP128.webp",
       "images": [
         "assets/material-library/MP128.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -8054,6 +8660,9 @@
       "images": [
         "assets/material-library/MF057.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -8086,6 +8695,9 @@
       "image": "assets/material-library/MP097.webp",
       "images": [
         "assets/material-library/MP097.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -8128,6 +8740,9 @@
       "images": [
         "assets/material-library/MF008.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "T01",
@@ -8160,6 +8775,9 @@
       "image": "assets/material-library/MP081.webp",
       "images": [
         "assets/material-library/MP081.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -8202,6 +8820,9 @@
       "images": [
         "assets/material-library/MF029.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT01",
         "S01",
@@ -8233,6 +8854,9 @@
       "image": "assets/material-library/MP131.webp",
       "images": [
         "assets/material-library/MP131.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -8281,6 +8905,9 @@
       "images": [
         "assets/material-library/MF049.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "AKMAT02",
         "T06"
@@ -8313,6 +8940,9 @@
       "image": "assets/material-library/MP099.webp",
       "images": [
         "assets/material-library/MP099.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -8355,6 +8985,9 @@
       "images": [
         "assets/material-library/MF009.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "T01",
@@ -8387,6 +9020,9 @@
       "image": "assets/material-library/MP085.webp",
       "images": [
         "assets/material-library/MP085.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -8429,6 +9065,9 @@
       "images": [
         "assets/material-library/MF010.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "MAT03",
         "T01",
@@ -8461,6 +9100,9 @@
       "image": "assets/material-library/MP132.webp",
       "images": [
         "assets/material-library/MP132.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -8530,6 +9172,9 @@
       "images": [
         "assets/material-library/MP100.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT01"
       ],
@@ -8572,6 +9217,9 @@
       "images": [
         "assets/material-library/MP086.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT03"
       ],
@@ -8611,6 +9259,9 @@
       "image": "assets/material-library/MP133.webp",
       "images": [
         "assets/material-library/MP133.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT02"
@@ -8660,6 +9311,9 @@
       "images": [
         "assets/material-library/MP101.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT01"
       ],
@@ -8699,6 +9353,9 @@
       "image": "assets/material-library/MP089.webp",
       "images": [
         "assets/material-library/MP089.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -8740,6 +9397,9 @@
       "images": [
         "assets/material-library/MP102.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT01"
       ],
@@ -8779,6 +9439,9 @@
       "image": "assets/material-library/MP090.webp",
       "images": [
         "assets/material-library/MP090.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -8822,6 +9485,9 @@
       "images": [
         "assets/material-library/MP104.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT01"
       ],
@@ -8861,6 +9527,9 @@
       "image": "assets/material-library/MP093.webp",
       "images": [
         "assets/material-library/MP093.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -8910,6 +9579,9 @@
       "images": [
         "assets/material-library/MP105.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT01"
       ],
@@ -8948,6 +9620,9 @@
       "image": "assets/material-library/MP098.webp",
       "images": [
         "assets/material-library/MP098.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -8989,6 +9664,9 @@
       "images": [
         "assets/material-library/MP106.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT01"
       ],
@@ -9028,6 +9706,9 @@
       "image": "assets/material-library/MP110.webp",
       "images": [
         "assets/material-library/MP110.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -9078,6 +9759,9 @@
       "images": [
         "assets/material-library/MP107.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT01"
       ],
@@ -9118,6 +9802,9 @@
       "image": "assets/material-library/MP115.webp",
       "images": [
         "assets/material-library/MP115.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -9162,6 +9849,9 @@
       "images": [
         "assets/material-library/MP108.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT01"
       ],
@@ -9203,6 +9893,9 @@
       "image": "assets/material-library/MP116.webp",
       "images": [
         "assets/material-library/MP116.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -9246,6 +9939,9 @@
       "image": "assets/material-library/MP109.webp",
       "images": [
         "assets/material-library/MP109.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -9312,6 +10008,9 @@
       "images": [
         "assets/material-library/MP117.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT03"
       ],
@@ -9354,6 +10053,9 @@
       "image": "assets/material-library/MP127.webp",
       "images": [
         "assets/material-library/MP127.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT01"
@@ -9422,6 +10124,9 @@
       "images": [
         "assets/material-library/MP118.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT03"
       ],
@@ -9469,6 +10174,9 @@
       "image": "assets/material-library/MS003.webp",
       "images": [
         "assets/material-library/MS003.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ]
     },
     {
@@ -9498,6 +10206,9 @@
       "image": "assets/material-library/MP119.webp",
       "images": [
         "assets/material-library/MP119.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -9543,6 +10254,9 @@
       "images": [
         "assets/material-library/MP120.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT03"
       ],
@@ -9586,6 +10300,9 @@
       "image": "assets/material-library/MP121.webp",
       "images": [
         "assets/material-library/MP121.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -9631,6 +10348,9 @@
       "images": [
         "assets/material-library/MP122.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT03"
       ],
@@ -9675,6 +10395,9 @@
       "images": [
         "assets/material-library/MP123.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT03"
       ],
@@ -9717,6 +10440,9 @@
       "image": "assets/material-library/MP124.webp",
       "images": [
         "assets/material-library/MP124.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"
@@ -9762,6 +10488,9 @@
       "images": [
         "assets/material-library/MP125.webp"
       ],
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
       "trendIds": [
         "PAT03"
       ],
@@ -9806,6 +10535,9 @@
       "image": "assets/material-library/MP130.webp",
       "images": [
         "assets/material-library/MP130.webp"
+      ],
+      "developmentSeasons": [
+        "A/W 27/28"
       ],
       "trendIds": [
         "PAT03"

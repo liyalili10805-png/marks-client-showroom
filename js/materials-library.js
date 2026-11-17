@@ -8,20 +8,21 @@
   const BOARD_URL = body.dataset.materialBoard || 'library-board.html';
   const STORIES_URL = body.dataset.materialStories || 'development-stories.html';
   const BOARD_KEY = 'soho-material-board-v1';
-  const PAGE_SIZE = 40;
+  const PAGE_SIZE = 25;
   const SOURCE = {global: 'Global Edit', sales: 'Sourced Materials', studio: 'SOHO Design Studio'};
   const STATUS = {reference: 'Reference Only', concept: 'Design Concept', sampling: 'Sampling in Progress', available: 'Sample Available'};
   const FILTERS = [
     {key: 'family', label: 'Material / pattern'},
     {key: 'color', label: 'Colour'},
     {key: 'use', label: 'Application'},
+    {key: 'developmentSeason', label: 'Development season'},
     {key: 'source', label: 'Source'},
     {key: 'status', label: 'Sample status'}
   ];
   const picked = new Set();
   const compared = new Set();
   let items = [], byId = new Map(), board = readBoard(), state = readState();
-  let visibleLimit = PAGE_SIZE, matches = [], rendered = [], currentDetail = null;
+  let matches = [], rendered = [], currentDetail = null;
   let dialog, dialogReturnFocus, toastTimer, searchTimer, groupFilter = '', sharedIds = [];
   const pageIsBoard = body.dataset.materialPage === 'board';
   if (!root) { wireSharedHeader(); return; }
@@ -76,7 +77,7 @@
       family: item.family || (type === 'fabric' ? 'Other fabrics' : 'Other patterns'), colors: list(item.colors),
       uses: list(item.uses), tags: list(item.tags), image: safeImage(item.image), images: item.images || [],
       sourceType, status: STATUS[item.status] ? item.status : sourceType === 'studio' ? 'concept' : 'reference', colorways,
-      season: item.season || 'Current reference · season not specified', trendIds: list(item.trendIds), _order: index};
+      season: item.season || 'Current reference · season not specified', developmentSeasons: list(item.developmentSeasons), trendIds: list(item.trendIds), _order: index};
   }
   function readBoard() {
     try {
@@ -116,7 +117,8 @@
   }
   function readState() {
     const params = new URLSearchParams(location.search);
-    const s = {type: ['fabric', 'pattern'].includes(params.get('type')) ? params.get('type') : 'all', q: params.get('q') || '', sort: ['curated', 'az'].includes(params.get('sort')) ? params.get('sort') : 'curated'};
+    const page = Number(params.get('page'));
+    const s = {type: ['fabric', 'pattern'].includes(params.get('type')) ? params.get('type') : 'all', q: params.get('q') || '', sort: ['curated', 'az'].includes(params.get('sort')) ? params.get('sort') : 'curated', page: Number.isSafeInteger(page) && page > 0 ? page : 1};
     FILTERS.forEach(f => { s[f.key] = new Set(params.getAll(f.key).flatMap(v => v.split('|')).filter(Boolean)); });
     return s;
   }
@@ -126,6 +128,7 @@
     if (state.q) params.set('q', state.q);
     FILTERS.forEach(f => { [...state[f.key]].forEach(v => params.append(f.key, v)); });
     if (state.sort !== 'curated') params.set('sort', state.sort);
+    if (state.page > 1) params.set('page', state.page);
     const next = location.pathname + (params.size ? '?' + params.toString() : '');
     if (next !== location.pathname + location.search) history[replace ? 'replaceState' : 'pushState']({}, '', next);
   }
@@ -133,6 +136,7 @@
   function valuesFor(item, key) {
     if (key === 'color') return [...new Set([...item.colors, ...item.colorways.flatMap(c => c.colors)])];
     if (key === 'use') return item.uses;
+    if (key === 'developmentSeason') return item.developmentSeasons;
     if (key === 'source') return [item.sourceType];
     return [item[key]];
   }
@@ -195,7 +199,7 @@
     });
     filters.append(node('span', 'ml-filter-note', 'A considered library for everyday development')); root.append(filters);
     root.append(node('div', 'ml-chips'));
-    const meta = node('div', 'ml-library-meta'), count = node('p', 'ml-result-count'); count.setAttribute('role', 'status'); count.setAttribute('aria-live', 'polite');
+    const meta = node('div', 'ml-library-meta ml-results-start'), count = node('p', 'ml-result-count'); count.setAttribute('role', 'status'); count.setAttribute('aria-live', 'polite');
     const viewtools = node('div', 'ml-viewtools'), label = node('label'), check = node('input');
     check.type = 'checkbox'; check.id = 'ml-select-visible'; check.addEventListener('change', () => { rendered.forEach(i => { if (check.checked) picked.add(i.id); else picked.delete(i.id); }); syncPicked(); });
     label.append(check, document.createTextNode('Select visible')); viewtools.append(label);
@@ -203,7 +207,10 @@
     [['curated', 'Library order'], ['az', 'Name: A–Z']].forEach(([value, text]) => { const o = node('option', null, text); o.value = value; sort.append(o); });
     sort.id = 'ml-sort'; sort.addEventListener('change', () => { state.sort = sort.value; updateLibrary(); }); viewtools.append(sort);
     meta.append(count, viewtools); root.append(meta);
-    const grid = node('div', 'ml-grid'); grid.id = 'ml-material-grid'; grid.setAttribute('aria-label', 'Materials and patterns'); root.append(grid, node('div', 'ml-load-area'));
+    const topPager = node('nav', 'ml-pagination'); topPager.dataset.pagination = 'top'; topPager.setAttribute('aria-label', 'Material result pages, top');
+    const grid = node('div', 'ml-grid'); grid.id = 'ml-material-grid'; grid.setAttribute('aria-label', 'Materials and patterns');
+    const bottomPager = node('nav', 'ml-pagination'); bottomPager.dataset.pagination = 'bottom'; bottomPager.setAttribute('aria-label', 'Material result pages, bottom');
+    root.append(topPager, grid, bottomPager);
     const foot = node('div', 'ml-library-footnote');
     foot.append(node('p', null, 'Reference materials, physical samples and digital concepts are identified separately. Save an item to your board to keep a shortlist and add development notes.'), link('How we develop materials ↗', STORIES_URL)); root.append(foot);
     updateLibrary(true, true);
@@ -216,8 +223,9 @@
     root.querySelectorAll('[data-filter-key]').forEach(d => { const n = state[d.dataset.filterKey].size, b = d.querySelector('.ml-filter-count'); b.textContent = n; b.hidden = !n; });
   }
   function updateLibrary(replace, initial) {
-    visibleLimit = PAGE_SIZE; matches = filtered(); syncControls(); renderChips(); renderGrid();
-    if (!initial) writeState(replace);
+    if (!initial) state.page = 1;
+    matches = filtered(); state.page = clampPage(state.page); syncControls(); renderChips(); renderGrid();
+    writeState(replace || initial);
   }
   function renderChips() {
     const chips = root.querySelector('.ml-chips'); chips.replaceChildren();
@@ -229,19 +237,57 @@
     chips.hidden = !chips.childElementCount;
   }
   function resetFilters() {
-    state = {type: 'all', q: '', sort: 'curated'}; FILTERS.forEach(f => { state[f.key] = new Set(); }); updateLibrary();
+    state = {type: 'all', q: '', sort: 'curated', page: 1}; FILTERS.forEach(f => { state[f.key] = new Set(); }); updateLibrary();
+  }
+  function pageCount() { return Math.max(1, Math.ceil(matches.length / PAGE_SIZE)); }
+  function clampPage(page) { return Math.min(pageCount(), Math.max(1, Number.isSafeInteger(page) ? page : 1)); }
+  function pageNumbers() {
+    const total = pageCount(), pages = new Set([1, total, state.page - 1, state.page, state.page + 1]);
+    if (state.page <= 3) [2, 3, 4].forEach(p => pages.add(p));
+    if (state.page >= total - 2) [total - 3, total - 2, total - 1].forEach(p => pages.add(p));
+    return [...pages].filter(p => p > 0 && p <= total).sort((a, b) => a - b);
+  }
+  function scrollResults() { root.querySelector('.ml-results-start')?.scrollIntoView({block: 'start'}); }
+  function goToPage(page, position) {
+    const next = clampPage(page); if (next === state.page) return;
+    state.page = next; renderGrid(); writeState();
+    requestAnimationFrame(() => {
+      if (position) root.querySelector('[data-pagination="' + position + '"] [aria-current="page"]')?.focus({preventScroll: true});
+      scrollResults();
+    });
+  }
+  function renderPagination() {
+    const total = pageCount(), first = (state.page - 1) * PAGE_SIZE + 1, last = Math.min(state.page * PAGE_SIZE, matches.length);
+    root.querySelectorAll('.ml-pagination').forEach(pager => {
+      pager.replaceChildren(); pager.hidden = !matches.length; if (!matches.length) return;
+      const summary = node('div', 'ml-page-summary');
+      summary.append(node('span', 'ml-page-range', first.toLocaleString() + '–' + last.toLocaleString() + ' of ' + matches.length.toLocaleString()), node('span', 'ml-page-position', 'Page ' + state.page + ' of ' + total));
+      const controls = node('div', 'ml-page-controls');
+      const pageButton = (text, page, label, current) => {
+        const b = button(text, 'ml-page-button', () => goToPage(page, pager.dataset.pagination));
+        b.setAttribute('aria-label', label); b.setAttribute('aria-controls', 'ml-material-grid');
+        if (current) b.setAttribute('aria-current', 'page'); return b;
+      };
+      const previous = pageButton('Prev', state.page - 1, 'Previous page'); previous.disabled = state.page === 1; controls.append(previous);
+      let previousNumber = 0;
+      pageNumbers().forEach(page => {
+        if (previousNumber && page - previousNumber > 1) { const dots = node('span', 'ml-page-ellipsis', '…'); dots.setAttribute('aria-hidden', 'true'); controls.append(dots); }
+        controls.append(pageButton(String(page), page, 'Page ' + page, page === state.page)); previousNumber = page;
+      });
+      const next = pageButton('Next', state.page + 1, 'Next page'); next.disabled = state.page === total; controls.append(next);
+      pager.append(summary, controls);
+    });
   }
   function renderGrid() {
-    rendered = matches.slice(0, visibleLimit);
+    state.page = clampPage(state.page);
+    rendered = matches.slice((state.page - 1) * PAGE_SIZE, state.page * PAGE_SIZE);
     const grid = root.querySelector('.ml-grid'); grid.replaceChildren();
     const count = root.querySelector('.ml-result-count'); count.replaceChildren(node('strong', null, matches.length.toLocaleString() + (matches.length === 1 ? ' material' : ' materials')),
       document.createTextNode(' · ' + items.filter(i => i.type === 'fabric').length + ' fabrics / ' + items.filter(i => i.type === 'pattern').length + ' patterns in the library'));
     if (!matches.length) {
       const empty = node('div', 'ml-empty'); empty.append(node('h2', null, 'A different combination?'), node('p', null, 'No materials match these filters. Try a broader colour, application or material family.'), button('Clear filters', 'ml-button', resetFilters)); grid.append(empty);
     } else rendered.forEach(item => grid.append(card(item)));
-    const load = root.querySelector('.ml-load-area'); load.replaceChildren();
-    if (matches.length > rendered.length) load.append(button('Load more materials', 'ml-button', () => { visibleLimit += PAGE_SIZE; renderGrid(); }));
-    if (matches.length) load.append(node('p', null, 'Showing ' + rendered.length.toLocaleString() + ' of ' + matches.length.toLocaleString()));
+    renderPagination();
     syncPicked(); countUpdate();
   }
   function card(item, boardMode) {
@@ -501,7 +547,7 @@
       if (pageIsBoard) { const params = new URLSearchParams(location.search); sharedIds = [...new Set((params.get('ids') || '').split(','))].filter(id => byId.has(id)); renderBoard(); }
       else renderLibrary();
       wireSharedHeader();
-      window.addEventListener('popstate', () => { if (!pageIsBoard) { state = readState(); updateLibrary(true, true); } });
+      window.addEventListener('popstate', () => { if (!pageIsBoard) { const previous = state.page; state = readState(); updateLibrary(true, true); if (state.page !== previous) requestAnimationFrame(scrollResults); } });
       window.addEventListener('storage', e => { if (e.key === BOARD_KEY) { board = readBoard(); if (pageIsBoard) renderBoard(); else countUpdate(); } });
       document.addEventListener('click', e => { if (!e.target.closest('.ml-filter')) root.querySelectorAll('.ml-filter[open]').forEach(d => { d.open = false; }); });
     } catch (error) {
