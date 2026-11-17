@@ -75,10 +75,10 @@
   function normalise(item, index) {
     const sourceType = ['global', 'sales', 'studio'].includes(item.sourceType) ? item.sourceType : 'global';
     const type = item.type === 'pattern' ? 'pattern' : 'fabric';
-    const colorways = (item.colorways || []).map(c => ({name: c.name || list(c.colors).join(' / ') || 'Colourway', colors: list(c.colors), image: safeImage(c.image), thumbnail: safeImage(c.thumbnail), images: list(c.images)}));
+    const colorways = (item.colorways || []).map(c => ({name: c.name || list(c.colors).join(' / ') || 'Colourway', colors: list(c.colors), image: safeImage(c.image), thumbnail: safeImage(c.thumbnail), displayImage: safeImage(c.displayImage), displayThumbnail: safeImage(c.displayThumbnail), displayWidth: Number(c.displayWidth), displayThumbnailWidth: Number(c.displayThumbnailWidth), images: list(c.images)}));
     return {...item, id: String(item.id || 'M-' + (index + 1)), title: item.title || 'Material study', type,
       family: item.family || (type === 'fabric' ? 'Other fabrics' : 'Other patterns'), colors: list(item.colors),
-      uses: list(item.uses), tags: list(item.tags), image: safeImage(item.image), images: item.images || [],
+      uses: list(item.uses), tags: list(item.tags), image: safeImage(item.image), displayImage: safeImage(item.displayImage), displayThumbnail: safeImage(item.displayThumbnail), images: item.images || [],
       sourceType, status: STATUS[item.status] ? item.status : sourceType === 'studio' ? 'concept' : 'reference', colorways,
       season: item.season || 'Current reference · season not specified', developmentSeasons: list(item.developmentSeasons), trendIds: list(item.trendIds), _order: index};
   }
@@ -136,7 +136,7 @@
     if (next !== location.pathname + location.search) history[replace ? 'replaceState' : 'pushState']({}, '', next);
   }
   function searchText(item) {
-    if (!searchIndex.has(item)) searchIndex.set(item, [item.id, item.title, item.family, item.structure, item.technique, ...item.colors, ...item.uses, ...item.tags].join(' ').toLocaleLowerCase());
+    if (!searchIndex.has(item)) searchIndex.set(item, [item.id, item.title, item.family, item.structure, item.technique, item.displayLabel, ...item.colors, ...item.uses, ...item.tags].join(' ').toLocaleLowerCase());
     return searchIndex.get(item);
   }
   function valuesFor(item, key) {
@@ -299,10 +299,10 @@
     renderPagination();
     syncPicked(); countUpdate();
   }
-  function previewFor(item, colourway) { return colourway ? colourway.thumbnail || colourway.image || item.thumbnail || item.image : item.thumbnail || item.image; }
+  function previewFor(item, colourway) { return colourway ? colourway.displayThumbnail || colourway.displayImage || colourway.thumbnail || colourway.image || item.displayThumbnail || item.displayImage || item.thumbnail || item.image : item.displayThumbnail || item.displayImage || item.thumbnail || item.image; }
   function prioritiseCard(article, position) {
     const img = article.querySelector('img'); if (!img) return;
-    const width = window.innerWidth || 1440, row = width < 700 ? 2 : width < 1000 ? 3 : width < 1280 ? 4 : width >= 1700 ? 6 : 5;
+    const width = window.innerWidth || 1440, row = width < 700 ? 2 : width < 1000 ? 3 : width >= 1700 ? 5 : 4;
     img.loading = position < row ? 'eager' : 'lazy'; img.fetchPriority = position === 0 ? 'high' : position < row ? 'auto' : 'low';
     img.width = 400; img.height = 400;
   }
@@ -313,10 +313,17 @@
     return article;
   }
   function card(item, boardMode, position) {
-    const article = node('article', boardMode ? 'ml-board-card' : 'ml-card'); article.dataset.materialId = item.id;
+    const article = node('article', boardMode ? 'ml-board-card' : 'ml-card'); article.dataset.materialId = item.id; article.dataset.materialType = item.type;
     const media = node('div', 'ml-card-media'), open = button('', 'ml-open', () => openDetail(item.id));
     const savedColourway = boardMode ? item.colorways.find(c => c.name === board.get(item.id)?.colorway) : null;
-    open.setAttribute('aria-label', 'View ' + item.title); open.append(image(previewFor(item, savedColourway), item.title, 'ml-card-image')); media.append(open);
+    open.setAttribute('aria-label', 'View ' + item.title);
+    const preview = image(previewFor(item, savedColourway), item.title, 'ml-card-image');
+    const presentation = savedColourway || item;
+    if (presentation.displayThumbnail && presentation.displayImage && Number(presentation.displayWidth) > Number(presentation.displayThumbnailWidth)) {
+      preview.sizes = '(max-width: 699px) calc((100vw - 36px) / 2), (max-width: 999px) 31vw, (min-width: 1700px) 310px, 24vw';
+      preview.srcset = safeImage(presentation.displayThumbnail) + ' ' + Number(presentation.displayThumbnailWidth) + 'w, ' + safeImage(presentation.displayImage) + ' ' + Number(presentation.displayWidth) + 'w';
+    }
+    open.append(preview); media.append(open);
     const save = button('', 'ml-save', e => { e.stopPropagation(); toggleSave(item); if (pageIsBoard) renderBoard(); });
     save.innerHTML = icons.save; save.dataset.saveId = item.id; save.setAttribute('aria-pressed', String(board.has(item.id))); media.append(save);
     if (!boardMode) {
@@ -326,6 +333,7 @@
     article.append(media);
     const meta = node('div', 'ml-card-meta'); meta.append(node('span', null, item.type === 'fabric' ? 'Fabric' : 'Pattern'), node('span', null, item.id)); article.append(meta);
     const h3 = node('h3', 'ml-card-title'); h3.append(button(item.title, 'ml-title-button', () => openDetail(item.id))); article.append(h3);
+    if (item.displayLabel) article.append(node('p', 'ml-surface-label', item.displayLabel));
     const foot = node('div', 'ml-card-foot');
     foot.append(node('p', null, item.family + (item.colorways.length > 1 ? ' · ' + item.colorways.length + ' colourways' : '')));
     const c = button(compared.has(item.id) ? 'Comparing ✓' : 'Compare +', 'ml-card-compare', () => toggleCompare(item)); c.dataset.compareId = item.id; c.setAttribute('aria-pressed', String(compared.has(item.id))); foot.append(c); article.append(foot);
