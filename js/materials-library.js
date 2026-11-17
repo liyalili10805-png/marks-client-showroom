@@ -4,6 +4,7 @@
   const root = document.querySelector('[data-material-app]');
   const body = document.body;
   const DATA_URL = body.dataset.materialsData || 'data/materials-library.json';
+  const TREND_URL = body.dataset.trendConnections || 'data/trend-connections.json' + new URL(DATA_URL, location.href).search;
   const LIBRARY_URL = body.dataset.materialLibrary || 'products.html';
   const BOARD_URL = body.dataset.materialBoard || 'library-board.html';
   const STORIES_URL = body.dataset.materialStories || 'development-stories.html';
@@ -26,6 +27,8 @@
   let matches = [], rendered = [], currentDetail = null;
   let dialog, dialogReturnFocus, toastTimer, searchTimer, groupFilter = '', sharedIds = [];
   let countedItems, counts, loading = false, lifecycleWired = false, sharedHeaderWired = false;
+  let trendConnections, trendRequest = 0;
+  let trendSelection = {status: 'idle', report: null, term: null, ids: new Set()};
   const pageIsBoard = body.dataset.materialPage === 'board';
   if (!root) { wireSharedHeader(); return; }
   const icons = {
@@ -121,12 +124,16 @@
   function readState() {
     const params = new URLSearchParams(location.search);
     const page = Number(params.get('page'));
-    const s = {type: ['fabric', 'pattern'].includes(params.get('type')) ? params.get('type') : 'all', q: params.get('q') || '', sort: ['curated', 'az'].includes(params.get('sort')) ? params.get('sort') : 'curated', page: Number.isSafeInteger(page) && page > 0 ? page : 1};
+    const s = {type: ['fabric', 'pattern'].includes(params.get('type')) ? params.get('type') : 'all', q: params.get('q') || '', sort: ['curated', 'az'].includes(params.get('sort')) ? params.get('sort') : 'curated', page: Number.isSafeInteger(page) && page > 0 ? page : 1, trend: params.has('trend') ? params.get('trend') : null, direction: params.has('direction') ? params.get('direction') : null};
     FILTERS.forEach(f => { s[f.key] = new Set(params.getAll(f.key).flatMap(v => v.split('|')).filter(Boolean)); });
     return s;
   }
   function writeState(replace) {
     const params = new URLSearchParams();
+    if (hasTrendSelection()) {
+      params.set('trend', state.trend);
+      if (state.direction !== null) params.set('direction', state.direction);
+    }
     if (state.type !== 'all') params.set('type', state.type);
     if (state.q) params.set('q', state.q);
     FILTERS.forEach(f => { [...state[f.key]].forEach(v => params.append(f.key, v)); });
@@ -148,9 +155,81 @@
     return counts;
   }
   function labelFor(key, value) { return key === 'source' ? SOURCE[value] || value : key === 'status' ? STATUS[value] || value : value; }
+  function hasTrendSelection() { return !pageIsBoard && state.trend !== null; }
+  function trendPool() {
+    if (!hasTrendSelection()) return items;
+    return trendSelection.status === 'ready' ? items.filter(item => trendSelection.ids.has(item.id)) : [];
+  }
+  function scopeTotals() {
+    if (!hasTrendSelection()) return totals();
+    const scoped = {fabric: 0, pattern: 0}; trendPool().forEach(item => { scoped[item.type]++; }); return scoped;
+  }
+  async function resolveTrendSelection(retry) {
+    const request = ++trendRequest;
+    trendSelection = {status: hasTrendSelection() ? 'loading' : 'idle', report: null, term: null, ids: new Set()};
+    if (!hasTrendSelection()) return;
+    const reportId = state.trend, direction = state.direction;
+    try {
+      if (retry) trendConnections = null;
+      if (!trendConnections) trendConnections = fetch(TREND_URL).then(async response => {
+        if (!response.ok) throw new Error('Trend connections unavailable');
+        const data = await response.json();
+        if (!data || data.season !== 'A/W 27/28' || !data.reports || typeof data.reports !== 'object') throw new Error('Invalid trend connections');
+        return data;
+      }).catch(error => { trendConnections = null; throw error; });
+      const data = await trendConnections;
+      if (request !== trendRequest) return;
+      const report = Object.prototype.hasOwnProperty.call(data.reports, reportId) ? data.reports[reportId] : null;
+      if (!report) { trendSelection.status = 'unknown-report'; return; }
+      if (report.id !== reportId || typeof report.title !== 'string' || !Array.isArray(report.materialTerms)) throw new Error('Invalid report connection');
+      trendSelection.report = report;
+      if (!report.materialTerms.every(term => term && typeof term.key === 'string' && typeof term.label === 'string' && Array.isArray(term.ids))) throw new Error('Invalid material connections');
+      const term = direction === null ? null : report.materialTerms.find(entry => entry.key === direction);
+      if (direction !== null && !term) { trendSelection.status = 'unknown-direction'; return; }
+      const ids = (term ? term.ids : report.materialTerms.flatMap(entry => entry.ids)).filter(id => typeof id === 'string' && byId.has(id));
+      trendSelection = {status: 'ready', report, term, ids: new Set(ids)};
+    } catch (_) {
+      if (request === trendRequest) trendSelection = {...trendSelection, status: 'unavailable', ids: new Set()};
+    }
+  }
+  function clearTrendSelection() {
+    state.trend = null; state.direction = null; trendRequest++;
+    trendSelection = {status: 'idle', report: null, term: null, ids: new Set()};
+    updateLibrary();
+  }
+  function trendBackLink() {
+    return state.trend && trendSelection.status !== 'unknown-report' ? 'trend-story.html?report=' + encodeURIComponent(state.trend) : 'trend.html#intelligence';
+  }
+  function trendBackLabel() { return state.trend && trendSelection.status !== 'unknown-report' ? 'Back to report ↗' : 'Back to research ↗'; }
+  function renderTrendContext() {
+    const previous = root.querySelector('.ml-trend-context');
+    if (!hasTrendSelection()) { if (previous) previous.remove(); return; }
+    const context = node('section', 'ml-trend-context'); context.setAttribute('aria-labelledby', 'ml-trend-title');
+    const copy = node('div', 'ml-trend-copy');
+    copy.append(node('p', 'ml-trend-eyebrow', 'From trend research / A/W 27/28'));
+    const title = node('h2', null, trendSelection.report ? trendSelection.report.title : 'Trend selection'); title.id = 'ml-trend-title'; copy.append(title);
+    const label = trendSelection.status === 'loading' ? 'Loading the linked materials…' : trendSelection.status === 'unknown-direction' ? 'Material direction unavailable' : trendSelection.term ? trendSelection.term.label : trendSelection.status === 'ready' ? 'All linked materials' : 'The requested selection could not be loaded';
+    copy.append(node('p', 'ml-trend-direction', label));
+    const actions = node('div', 'ml-trend-actions');
+    actions.append(link(trendBackLabel(), trendBackLink(), 'ml-trend-back'), button('Clear trend selection', 'ml-trend-clear', clearTrendSelection));
+    context.append(copy, actions);
+    if (previous) previous.replaceWith(context); else root.querySelector('.ml-heading').after(context);
+  }
+  function trendEmpty() {
+    const empty = node('div', 'ml-empty ml-trend-empty');
+    let title = 'No linked materials yet.', message = 'This direction does not have any materials in the current library. Return to the report or clear the trend selection to browse the library.';
+    if (trendSelection.status === 'loading') { title = 'Loading this trend selection…'; message = 'The linked materials will appear here when the selection is ready.'; }
+    else if (trendSelection.status === 'unknown-report') { title = 'This trend report could not be found.'; message = 'The requested report does not have a current material selection. Return to research or clear the trend selection.'; }
+    else if (trendSelection.status === 'unknown-direction') { title = 'This material direction is unavailable.'; message = 'This keyword is not linked to materials in the requested report. Return to the report to choose another direction.'; }
+    else if (trendSelection.status === 'unavailable') { title = 'This trend selection is temporarily unavailable.'; message = 'The linked materials could not be loaded. Please try again or return to the report.'; }
+    empty.append(node('h2', null, title), node('p', null, message));
+    if (trendSelection.status === 'unavailable') empty.append(button('Try again', 'ml-button', async () => { const pending = resolveTrendSelection(true); updateLibrary(true, true); await pending; updateLibrary(true, true); }));
+    if (trendSelection.status !== 'loading') empty.append(link(trendBackLabel(), trendBackLink(), 'ml-button'), button('Clear trend selection', 'ml-button ml-button--quiet', clearTrendSelection));
+    return empty;
+  }
   function filtered() {
     const terms = state.q.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
-    let result = items.filter(item => (state.type === 'all' || item.type === state.type)
+    let result = trendPool().filter(item => (state.type === 'all' || item.type === state.type)
       && terms.every(t => searchText(item).includes(t))
       && FILTERS.every(f => !state[f.key].size || valuesFor(item, f.key).some(v => state[f.key].has(v))));
     if (state.sort === 'az') result.sort((a, b) => a.title.localeCompare(b.title));
@@ -223,7 +302,8 @@
     updateLibrary(true, true);
   }
   function syncControls() {
-    root.querySelectorAll('[data-type]').forEach(b => { const active = b.dataset.type === state.type; b.setAttribute('aria-selected', String(active)); b.tabIndex = active ? 0 : -1; });
+    const scoped = scopeTotals();
+    root.querySelectorAll('[data-type]').forEach(b => { const active = b.dataset.type === state.type; b.setAttribute('aria-selected', String(active)); b.tabIndex = active ? 0 : -1; b.querySelector('.ml-tab-count').textContent = b.dataset.type === 'all' ? scoped.fabric + scoped.pattern : scoped[b.dataset.type]; });
     root.querySelector('#ml-search').value = state.q;
     root.querySelector('#ml-sort').value = state.sort;
     root.querySelectorAll('[data-filter]').forEach(check => { check.checked = state[check.dataset.filter].has(check.value); });
@@ -231,7 +311,7 @@
   }
   function updateLibrary(replace, initial) {
     if (!initial) state.page = 1;
-    matches = filtered(); state.page = clampPage(state.page); syncControls(); renderChips(); renderGrid();
+    matches = filtered(); state.page = clampPage(state.page); syncControls(); renderTrendContext(); renderChips(); renderGrid();
     writeState(replace || initial);
   }
   function renderChips() {
@@ -244,10 +324,14 @@
     chips.hidden = !chips.childElementCount;
   }
   function resetFilters() {
-    state = {type: 'all', q: '', sort: 'curated', page: 1}; FILTERS.forEach(f => { state[f.key] = new Set(); }); updateLibrary();
+    const {trend, direction} = state;
+    state = {type: 'all', q: '', sort: 'curated', page: 1, trend, direction}; FILTERS.forEach(f => { state[f.key] = new Set(); }); updateLibrary();
   }
   function pageCount() { return Math.max(1, Math.ceil(matches.length / PAGE_SIZE)); }
-  function clampPage(page) { return Math.min(pageCount(), Math.max(1, Number.isSafeInteger(page) ? page : 1)); }
+  function clampPage(page) {
+    const requested = Math.max(1, Number.isSafeInteger(page) ? page : 1);
+    return hasTrendSelection() && trendSelection.status === 'loading' ? requested : Math.min(pageCount(), requested);
+  }
   function pageNumbers() {
     const total = pageCount(), pages = new Set([1, total, state.page - 1, state.page, state.page + 1]);
     if (state.page <= 3) [2, 3, 4].forEach(p => pages.add(p));
@@ -291,10 +375,12 @@
     rendered = matches.slice((state.page - 1) * PAGE_SIZE, state.page * PAGE_SIZE);
     const grid = root.querySelector('.ml-grid');
     const unchanged = rendered.length && grid.children.length && previous.length === rendered.length && rendered.every((item, i) => previous[i].id === item.id);
+    const scoped = scopeTotals();
     const count = root.querySelector('.ml-result-count'); count.replaceChildren(node('strong', null, matches.length.toLocaleString() + (matches.length === 1 ? ' material' : ' materials')),
-      document.createTextNode(' · ' + totals().fabric + ' fabrics / ' + totals().pattern + ' patterns in the library'));
+      document.createTextNode(' · ' + scoped.fabric + ' fabrics / ' + scoped.pattern + ' patterns ' + (hasTrendSelection() ? 'in this trend selection' : 'in the library')));
     if (!matches.length) {
-      const empty = node('div', 'ml-empty'); empty.append(node('h2', null, 'A different combination?'), node('p', null, 'No materials match these filters. Try a broader colour, application or material family.'), button('Clear filters', 'ml-button', resetFilters)); grid.replaceChildren(empty);
+      if (hasTrendSelection() && (trendSelection.status !== 'ready' || !trendSelection.ids.size)) grid.replaceChildren(trendEmpty());
+      else { const empty = node('div', 'ml-empty'); empty.append(node('h2', null, 'A different combination?'), node('p', null, hasTrendSelection() ? 'No materials match these filters within this trend selection. Try a broader colour, application or material family.' : 'No materials match these filters. Try a broader colour, application or material family.'), button('Clear filters', 'ml-button', resetFilters)); grid.replaceChildren(empty); }
     } else if (!unchanged) grid.replaceChildren(...rendered.map(cachedLibraryCard));
     renderPagination();
     syncPicked(); countUpdate();
@@ -577,11 +663,11 @@
       if (!Array.isArray(raw)) throw new Error('No library items');
       const seen = new Set(); items = raw.map(normalise).filter(i => { if (seen.has(i.id)) return false; seen.add(i.id); return true; }); byId = new Map(items.map(i => [i.id, i])); libraryCards.clear();
       if (pageIsBoard) { const params = new URLSearchParams(location.search); sharedIds = [...new Set((params.get('ids') || '').split(','))].filter(id => byId.has(id)); renderBoard(); }
-      else renderLibrary();
+      else { await resolveTrendSelection(); renderLibrary(); }
       wireSharedHeader();
       if (!lifecycleWired) {
         lifecycleWired = true;
-        window.addEventListener('popstate', () => { if (!pageIsBoard) { const previous = state.page; state = readState(); updateLibrary(true, true); if (state.page !== previous) requestAnimationFrame(scrollResults); } });
+        window.addEventListener('popstate', async () => { if (!pageIsBoard) { const previous = state.page; state = readState(); const pending = resolveTrendSelection(); updateLibrary(true, true); await pending; updateLibrary(true, true); if (state.page !== previous) requestAnimationFrame(scrollResults); } });
         window.addEventListener('storage', e => { if (e.key === BOARD_KEY) { board = readBoard(); if (pageIsBoard) renderBoard(); else countUpdate(); } });
         document.addEventListener('click', e => { if (!e.target.closest('.ml-filter')) root.querySelectorAll('.ml-filter[open]').forEach(d => { d.open = false; }); });
       }

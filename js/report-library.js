@@ -10,9 +10,10 @@
   const dataUrl = body.dataset.researchData || 'data/research-library.json';
   const detailPage = body.dataset.reportPage || 'trend-report.html';
   const libraryPage = body.dataset.libraryPage || 'trend.html';
+  const connectionsUrl = body.dataset.trendConnections || 'data/trend-connections.json?v=20261117journey1';
   const categories = ['All research', 'Outerwear', 'Shirts', 'Trousers', 'Materials', 'Print & Pattern', 'Construction & Finish'];
   const state = { category: 'All research', gender: 'all', query: '' };
-  let data, reports, byId, featuredIds = [], activeObserver;
+  let data, reports, byId, featuredIds = [], activeObserver, connections = {};
   const reportCache = new WeakMap();
   const cardCache = new Map();
   const pendingImages = new WeakMap();
@@ -46,6 +47,59 @@
     return element;
   }
   function reportUrl(id) { return `${detailPage}?report=${encodeURIComponent(id)}`; }
+  function connectionTerms(report, kind) {
+    const record = connections[report.id];
+    return array(record && record[kind === 'style' ? 'styleTerms' : 'materialTerms']).filter(term => term && text(term.key) && text(term.label) && strings(term.ids).length);
+  }
+  function connectionUrl(report, kind, term) {
+    const params = new URLSearchParams({trend: report.id});
+    if (term) params.set('direction', term.key);
+    return `${kind === 'style' ? 'collection-series.html' : 'products.html'}?${params}`;
+  }
+  function connectionCount(terms) { return unique(terms.flatMap(term => strings(term.ids))).length; }
+  function connectionSummary(report) {
+    const styleTerms = connectionTerms(report, 'style'), materialTerms = connectionTerms(report, 'material');
+    if (!styleTerms.length && !materialTerms.length) return null;
+    const nav = node('nav', 'rl-direction-summary'); nav.setAttribute('aria-label', 'Explore this direction');
+    nav.append(node('span', 'rl-connection-kicker', 'Explore this direction'));
+    [['style', styleTerms, 'style references'], ['material', materialTerms, 'materials & patterns']].forEach(([kind, terms, label]) => {
+      if (terms.length) nav.append(link(connectionUrl(report, kind), 'rl-direction-all', `${connectionCount(terms)} ${label} ↗`));
+    });
+    return nav;
+  }
+  function connectionBlock(report, kind) {
+    const terms = connectionTerms(report, kind); if (!terms.length) return null;
+    const nav = node('nav', 'rl-direction-keywords');
+    const heading = kind === 'style' ? 'Explore related styles' : 'Explore materials & patterns';
+    nav.setAttribute('aria-label', heading); nav.append(node('p', 'rl-connection-kicker', heading));
+    const links = node('div', 'rl-connection-links');
+    terms.forEach(term => {
+      const anchor = link(connectionUrl(report, kind, term), 'rl-connection-term');
+      const count = unique(strings(term.ids)).length;
+      anchor.append(node('span', '', term.label), node('span', 'rl-connection-count', count));
+      anchor.setAttribute('aria-label', `${term.label}: ${count} local ${kind === 'style' ? 'style' : 'material'} ${count === 1 ? 'reference' : 'references'}`);
+      links.append(anchor);
+    });
+    nav.append(links); return nav;
+  }
+  function appendConnectedText(container, value, report, kind) {
+    const source = text(value), lower = source.toLowerCase();
+    const hits = connectionTerms(report, kind).flatMap(term => {
+      const position = lower.indexOf(term.label.toLowerCase());
+      return position < 0 ? [] : [{term, position, end: position + term.label.length}];
+    }).sort((a, b) => a.position - b.position || b.end - a.end);
+    let cursor = 0;
+    hits.forEach(hit => {
+      if (hit.position < cursor) return;
+      container.append(document.createTextNode(source.slice(cursor, hit.position)), link(connectionUrl(report, kind, hit.term), 'rl-inline-direction', source.slice(hit.position, hit.end)));
+      cursor = hit.end;
+    });
+    container.append(document.createTextNode(source.slice(cursor)));
+  }
+  function materialTermFor(report, name) {
+    const normalised = ` ${clean(name)} `;
+    return connectionTerms(report, 'material').filter(term => normalised.includes(` ${clean(term.key)} `) || normalised.includes(` ${clean(term.label)} `)).sort((a, b) => clean(b.key).length - clean(a.key).length)[0];
+  }
   function titleCase(value) { return text(value).replace(/[_-]+/g, ' ').replace(/\b\w/g, char => char.toUpperCase()); }
   function categoryOf(report) {
     const raw = clean(report.category);
@@ -345,8 +399,8 @@
   function paragraphGroup(title,value) {
     const div=node('div');div.append(node('h3','',title));strings(value).forEach(item => div.append(node('p','',item)));return div;
   }
-  function listSection(items) {
-    const list=node('ol','rl-detail-list');strings(items).forEach(item => list.append(node('li','',item)));return list;
+  function listSection(items, report, kind) {
+    const list=node('ol','rl-detail-list');strings(items).forEach(item => {const row=node('li');if(report)appendConnectedText(row,item,report,kind);else row.textContent=item;list.append(row);});return list;
   }
   function renderDossier() {
     const params=new URLSearchParams(location.search),id=params.get('report')||params.get('id')||params.get('story');
@@ -358,7 +412,7 @@
     crumb.append(link(`${libraryPage}#intelligence`,'','Research library'),node('span','','/'),node('span','',categoryOf(report)));shell.append(crumb);
     const head=node('header','rl-dossier-head');head.append(node('span','rl-kicker',[categoryOf(report),data.season].map(text).filter(Boolean).join(' / ')),node('h1','',report.title));
     if(report.summary)head.append(node('p','rl-dossier-summary',report.summary));
-    const meta=node('div','rl-dossier-meta');[genderText(report),report.kind,report.priority,data.edition].map(text).filter(Boolean).forEach(value=>meta.append(node('span','',value)));head.append(meta);shell.append(head);
+    const meta=node('div','rl-dossier-meta');[genderText(report),report.kind,report.priority,data.edition].map(text).filter(Boolean).forEach(value=>meta.append(node('span','',value)));head.append(meta);const summary=connectionSummary(report);if(summary)head.append(summary);shell.append(head);
     const cover=coverId(report),ids=visualIds(report),used=new Set(cover?[cover]:[]);
     if(cover){const opener=node('div','rl-opener');const fig=figure(cover,true);if(fig){opener.append(fig);shell.append(opener);}}
     const layout=node('div','rl-dossier-layout'),toc=node('nav','rl-toc');toc.setAttribute('aria-label','Report contents');toc.append(node('h2','','In this report'));const tocList=node('ol');toc.append(tocList);
@@ -372,10 +426,10 @@
     }
     const kind=typeOf(report);
     if(report.whyMarks||report.whatChanges){chapter('direction',kind==='item'?'The item direction':'The research direction',section=>{const pair=node('div','rl-copy-pair');if(report.whyMarks)pair.append(paragraphGroup('Why it matters for Mark’s',report.whyMarks));if(report.whatChanges)pair.append(paragraphGroup('What changes',report.whatChanges));section.append(pair);});}
-    const addElements=()=>{if(strings(report.elements).length)chapter('elements',kind==='item'?'Design elements':'Design expression',section=>{section.append(listSection(report.elements));addGallery(section,visual=>/detail|element|construction|waist|collar|pocket/i.test(text(visual.role)));});};
-    const addMaterials=()=>{if(array(report.materials).some(material=>material&&material.name))chapter('materials','Material direction',section=>{const list=node('div','rl-material-list');array(report.materials).forEach(material=>{if(!material||!material.name)return;const entry=node('article','rl-material');entry.append(node('h3','',material.name));if(material.question)entry.append(node('p','',material.question));list.append(entry);});section.append(list);addGallery(section,visual=>/material|textile|fabric|swatch|weave|pile|cloth/i.test(text(visual.role))&&!/print|pattern/.test(text(visual.role)));});};
+    const addElements=()=>{if(strings(report.elements).length)chapter('elements',kind==='item'?'Design elements':'Design expression',section=>{section.append(listSection(report.elements,report,'style'));const keywords=connectionBlock(report,'style');if(keywords)section.append(keywords);addGallery(section,visual=>/detail|element|construction|waist|collar|pocket/i.test(text(visual.role)));});};
+    const addMaterials=()=>{if(array(report.materials).some(material=>material&&material.name))chapter('materials','Material direction',section=>{const list=node('div','rl-material-list');array(report.materials).forEach(material=>{if(!material||!material.name)return;const entry=node('article','rl-material'),heading=node('h3'),term=materialTermFor(report,material.name);if(term){const anchor=link(connectionUrl(report,'material',term),'rl-material-direction',material.name);anchor.setAttribute('aria-label',`${material.name}: explore ${unique(strings(term.ids)).length} local references`);heading.append(anchor);}else heading.textContent=material.name;entry.append(heading);if(material.question)entry.append(node('p','',material.question));list.append(entry);});section.append(list);const keywords=connectionBlock(report,'material');if(keywords)section.append(keywords);addGallery(section,visual=>/material|textile|fabric|swatch|weave|pile|cloth/i.test(text(visual.role))&&!/print|pattern/.test(text(visual.role)));});};
     const addPatterns=()=>{if(strings(report.patterns).length)chapter('pattern','Print & pattern',section=>{section.append(listSection(report.patterns));addGallery(section,visual=>/print|pattern|motif|botanic/i.test(text(visual.role)));});};
-    const addProcesses=()=>{if(strings(report.processes).length)chapter('process','Construction & finish',section=>{section.append(listSection(report.processes));addGallery(section,visual=>/process|finish|wash|construction|seam/i.test(text(visual.role)));});};
+    const addProcesses=()=>{if(strings(report.processes).length)chapter('process','Construction & finish',section=>{section.append(listSection(report.processes));if(!array(report.materials).some(material=>material&&material.name)){const keywords=connectionBlock(report,'material');if(keywords)section.append(keywords);}addGallery(section,visual=>/process|finish|wash|construction|seam/i.test(text(visual.role)));});};
     if(kind==='material'){addMaterials();addProcesses();addPatterns();addElements();}
     else if(kind==='pattern'){addPatterns();addMaterials();addProcesses();addElements();}
     else if(kind==='process'){addProcesses();addElements();addMaterials();addPatterns();}
@@ -406,8 +460,9 @@
   async function load() {
     app.replaceChildren(node('p','rl-loading','Loading research…'));
     try {
-      const response=await fetch(dataUrl);if(!response.ok)throw new Error('Unavailable');const incoming=await response.json();
+      const [response, connectionData]=await Promise.all([fetch(dataUrl),body.dataset.page==='dossier'?fetch(connectionsUrl).then(response=>response.ok?response.json():null).catch(()=>null):Promise.resolve(null)]);if(!response.ok)throw new Error('Unavailable');const incoming=await response.json();
       if(!incoming||!Array.isArray(incoming.reports))throw new Error('Invalid data');
+      connections=connectionData&&connectionData.version===1&&connectionData.reports&&typeof connectionData.reports==='object'?connectionData.reports:{};
       data={...incoming,sources:incoming.sources||{},metrics:incoming.metrics||{},visuals:incoming.visuals||{}};
       cardCache.clear();
       const seen=new Set();reports=incoming.reports.filter(report=>report&&text(report.id)&&text(report.title)&&!seen.has(report.id)&&(seen.add(report.id),true));byId=new Map(reports.map(report=>[report.id,report]));

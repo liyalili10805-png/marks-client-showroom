@@ -3,8 +3,13 @@
 
   const scriptVersion = document.currentScript ? new URL(document.currentScript.src, location.href).searchParams.get('v') : '';
   const DATA_URL = 'data/collections.json?v=' + encodeURIComponent(scriptVersion || '20261117perf1');
+  const TREND_CONNECTIONS_URL = 'data/trend-connections.json?v=' + encodeURIComponent(scriptVersion || '20261117perf1');
   const SELECT_KEY = 'soho-collection-selection';
   const view = document.body.dataset.view || 'landing';
+  const SERIES_QUERY_KEYS = ['gender', 'type', 'material', 'colour', 'retail', 'occasion', 'season', 'page'];
+  let trendConnections = null;
+  let trendConnectionsPromise;
+  let trendConnectionsFailed = false;
 
   const el = (tag, className, text) => {
     const node = document.createElement(tag);
@@ -14,6 +19,94 @@
   };
 
   const escape = value => String(value == null ? '' : value);
+
+  async function loadTrendConnections() {
+    if (!new URLSearchParams(location.search).has('trend')) return;
+    if (!trendConnectionsPromise) {
+      trendConnectionsPromise = fetch(TREND_CONNECTIONS_URL)
+        .then(response => {
+          if (!response.ok) throw new Error('Trend connections unavailable');
+          return response.json();
+        })
+        .then(payload => {
+          if (!payload || !payload.reports || typeof payload.reports !== 'object' || Array.isArray(payload.reports)) throw new Error('Invalid trend connections');
+          trendConnections = payload;
+        })
+        .catch(() => { trendConnectionsFailed = true; });
+    }
+    await trendConnectionsPromise;
+  }
+
+  function trendSelection() {
+    const params = new URLSearchParams(location.search);
+    if (!params.has('trend')) return {active: false};
+    const id = params.get('trend');
+    const direction = params.get('direction');
+    const result = {active: true, id, direction, ids: new Set(), title: 'Trend selection', label: 'All style directions'};
+    if (!trendConnections) {
+      result.error = trendConnectionsFailed ? 'This trend selection could not be loaded. Return to the report or clear the trend selection to browse the collection.' : 'Loading this trend selection…';
+      return result;
+    }
+    const report = Object.prototype.hasOwnProperty.call(trendConnections.reports, id) ? trendConnections.reports[id] : null;
+    if (!report || !Array.isArray(report.styleTerms)) {
+      result.error = 'This trend report is not available. Return to the report or clear the trend selection to browse the collection.';
+      return result;
+    }
+    result.title = report.title || report.id || id;
+    result.season = trendConnections.season || '';
+    const terms = params.has('direction') ? report.styleTerms.filter(term => term && term.key === direction) : report.styleTerms;
+    if (params.has('direction') && !terms.length) {
+      result.label = 'Keyword unavailable';
+      result.error = 'This keyword is not available in the selected report. Return to the report to choose another direction.';
+      return result;
+    }
+    if (params.has('direction')) result.label = terms[0].label || terms[0].key;
+    terms.forEach(term => {
+      if (term && Array.isArray(term.ids)) term.ids.forEach(code => { if (typeof code === 'string' && code) result.ids.add(code); });
+    });
+    return result;
+  }
+
+  function seriesUrl(options = {}) {
+    const current = new URLSearchParams(location.search), params = new URLSearchParams();
+    if (options.keepFilters !== false) SERIES_QUERY_KEYS.forEach(key => { if (current.has(key)) params.set(key, current.get(key)); });
+    if (!options.clearTrend && current.has('trend')) {
+      params.set('trend', current.get('trend'));
+      if (current.has('direction')) params.set('direction', current.get('direction'));
+    }
+    if (options.resetPage) params.delete('page');
+    return 'collection-series.html' + (params.size ? '?' + params.toString() : '');
+  }
+
+  function detailUrl(code, hash = '') {
+    const current = new URLSearchParams(location.search), params = new URLSearchParams({code});
+    if (current.has('trend')) {
+      params.set('trend', current.get('trend'));
+      if (current.has('direction')) params.set('direction', current.get('direction'));
+      SERIES_QUERY_KEYS.forEach(key => { if (current.has(key)) params.set(key, current.get(key)); });
+    }
+    return 'collection-detail.html?' + params.toString() + hash;
+  }
+
+  function trendContext(context) {
+    const section = el('section', 'col-trend-context');
+    section.setAttribute('aria-label', 'Trend selection');
+    if (context.error) section.classList.add('has-error');
+    const copy = el('div', 'col-trend-copy');
+    copy.append(el('p', 'col-trend-eyebrow', ['From the Trend library', context.season].filter(Boolean).join(' · ')), el('h2', null, context.title), el('p', 'col-trend-keyword', context.label));
+    if (context.error) copy.append(el('p', 'col-trend-message', context.error));
+    else copy.append(el('p', 'col-trend-message', view === 'detail' ? 'A style linked to this research direction. Return to the trend selection to continue browsing.' : 'Styles linked to this research direction. Refine the selection using the filters below.'));
+    const links = el('nav', 'col-trend-actions');
+    links.setAttribute('aria-label', 'Trend selection navigation');
+    const report = el('a', null, 'Back to report ↗');
+    report.href = context.id ? 'trend-story.html?report=' + encodeURIComponent(context.id) : 'trend.html';
+    const clear = el('a', null, 'Clear trend selection');
+    clear.dataset.clearTrend = '';
+    clear.href = seriesUrl({clearTrend: true, resetPage: true});
+    links.append(report, clear);
+    section.append(copy, links);
+    return section;
+  }
 
   function imageSource(value) {
     const source = String(value || '');
@@ -123,7 +216,7 @@
   function card(product, withActions, index = 0) {
     const article = el('article', 'col-card');
     const media = el('a', 'col-card-media');
-    media.href = `collection-detail.html?code=${encodeURIComponent(product.code)}`;
+    media.href = detailUrl(product.code);
     const img = materialImage(listImage(product), product.name, {eager: index < 3, priority: index === 0, fallback: product.image, styleCode: product.code});
     img.className = 'fit-top';
     media.append(img);
@@ -151,7 +244,7 @@
       vote.type = 'button';
       vote.addEventListener('click', () => toast('Vote recorded (sample)'));
       const comment = el('a', 'link-action', 'Comment');
-      comment.href = `collection-detail.html?code=${encodeURIComponent(product.code)}#feedback`;
+      comment.href = detailUrl(product.code, '#feedback');
       actions.append(select, el('span', 'sep', '|'), vote, el('span', 'sep', '|'), comment);
       bottom.append(actions);
     } else {
@@ -239,7 +332,7 @@
     (data.weekly || []).forEach(item => {
       const card = el('article', 'weekly-card');
       const media = el('a', 'weekly-media');
-      media.href = `collection-detail.html?code=${encodeURIComponent(item.code)}`;
+      media.href = detailUrl(item.code);
       const productImage = products.find(product => normCode(product.code) === normCode(item.code)) || item;
       const img = materialImage(item.thumbnail || listImage(productImage), item.name, {width: 480, height: 480, fallback: item.image, styleCode: item.code});
       media.append(img);
@@ -293,6 +386,7 @@
     const root = document.getElementById('collection-view');
     root.innerHTML = '';
     const params = new URLSearchParams(location.search);
+    const trend = trendSelection();
     const occasion = params.get('occasion');
     const themeLabel = occasion ? occasion.charAt(0).toUpperCase() + occasion.slice(1) : null;
 
@@ -302,6 +396,7 @@
     head.append(el('p', 'col-sub', themeLabel ? `${themeLabel} styles selected for store review.` : 'Everyday casual styles selected for store review.'));
     const main = el('div', 'col-main');
     main.append(head);
+    if (trend.active) main.append(trendContext(trend));
 
     const assignedSeasons = uniqueValues(products.map(developmentSeason));
     const requestedSeason = params.get('season') || '';
@@ -353,7 +448,7 @@
     const clear = el('button', 'filter-clear', 'Clear');
     clear.type = 'button';
     clear.addEventListener('click', () => {
-      history.replaceState(null, '', location.pathname);
+      history.replaceState(null, '', trend.active ? seriesUrl({keepFilters: false}) : location.pathname);
       renderSeries();
     });
     toolbar.append(clear);
@@ -372,6 +467,10 @@
 
     function syncUrl() {
       const next = new URLSearchParams();
+      if (trend.active) {
+        next.set('trend', trend.id);
+        if (params.has('direction')) next.set('direction', trend.direction);
+      }
       Object.entries(filters).forEach(([key, value]) => { if (value) next.set(key, value); });
       if (page > 1) next.set('page', String(page));
       const query = next.toString();
@@ -407,12 +506,16 @@
     }
 
     function paint() {
-      const filtered = products.filter(product => matchesStyleFilters(product, filters));
+      const filtered = products.filter(product => (!trend.active || trend.ids.has(product.code)) && matchesStyleFilters(product, filters));
       const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
       if (page > pages) page = pages;
+      // Link destinations must carry the current filters, including immediately after a change.
+      syncUrl();
+      const clearTrend = main.querySelector('[data-clear-trend]');
+      if (clearTrend) clearTrend.href = seriesUrl({clearTrend: true, resetPage: true});
       grid.innerHTML = '';
       filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE).forEach((product, index) => grid.append(card(product, true, index)));
-      if (!filtered.length) grid.append(el('p', 'empty-note', 'No styles match these filters.'));
+      if (!filtered.length) grid.append(el('p', 'empty-note', trend.active ? trend.error ? 'No styles are shown while this trend selection is unavailable.' : trend.ids.size ? 'No linked styles match these filters.' : 'No styles are currently linked to this research direction.' : 'No styles match these filters.'));
       renderPager(pages);
       renderPanel();
       saveSelection();
@@ -424,15 +527,27 @@
 
   function renderDetail() {
     const root = document.getElementById('collection-view');
-    const code = new URLSearchParams(location.search).get('code') || products[0].code;
-    const product = products.find(item => item.code === code) || products[0];
+    const params = new URLSearchParams(location.search);
+    const trend = trendSelection();
+    const code = params.get('code') || products[0].code;
+    const requestedProduct = products.find(item => item.code === code);
+    const product = requestedProduct || products[0];
     root.innerHTML = '';
 
     const crumb = el('div', 'breadcrumb');
-    const back = el('a', null, 'COLLECTION');
-    back.href = 'collection-series.html';
-    crumb.append(back, document.createTextNode(` / ${product.name}`));
+    const back = el('a', null, trend.active ? 'BACK TO TREND SELECTION' : 'COLLECTION');
+    back.href = trend.active ? seriesUrl() : 'collection-series.html';
+    crumb.append(back, document.createTextNode(` / ${trend.active && !requestedProduct ? 'Style unavailable' : product.name}`));
     root.append(crumb);
+    if (trend.active) {
+      if (!trend.error && (!requestedProduct || !trend.ids.has(product.code))) trend.error = 'This style is not linked to the selected research direction. Return to the trend selection to explore the linked styles.';
+      root.append(trendContext(trend));
+      if (trend.error) {
+        root.append(el('p', 'empty-note', 'This style is unavailable in the current trend selection.'));
+        saveSelection();
+        return;
+      }
+    }
 
     const layout = el('div', 'detail-layout');
     const thumbs = el('div', 'detail-thumbs');
@@ -611,15 +726,16 @@
     const similarBlock = el('div', 'style-similar');
     similarBlock.append(el('h2', null, 'Similar styles'));
     const similarGrid = el('div', 'similar-grid');
-    const similar = products
+    const similarPool = products.filter(item => !trend.active || trend.ids.has(item.code));
+    const similar = similarPool
       .filter(item => item.code !== product.code && item.type === product.type && item.gender === product.gender)
       .slice(0, 3);
-    const fallback = products
+    const fallback = similarPool
       .filter(item => item.code !== product.code && !similar.includes(item) && item.type === product.type)
       .slice(0, 3 - similar.length);
     similar.concat(fallback).forEach(item => {
       const card = el('a', 'similar-card');
-      card.href = `collection-detail.html?code=${encodeURIComponent(item.code)}`;
+      card.href = detailUrl(item.code);
       const image = materialImage(listImage(item), item.name, {width: 480, height: 600, fallback: item.image, styleCode: item.code});
       card.append(image, el('strong', null, item.name), el('span', null, item.code));
       similarGrid.append(card);
@@ -807,12 +923,13 @@
       data = payload;
       collection = payload.collection;
       products = payload.products;
+      await loadTrendConnections();
       const preview = new URLSearchParams(location.search).has('preview');
       if (preview) await applyOverrides();
       if (view === 'landing') renderLanding();
       if (view === 'series') {
         renderSeries();
-        window.addEventListener('popstate', renderSeries);
+        window.addEventListener('popstate', async () => { await loadTrendConnections(); renderSeries(); });
       }
       if (view === 'detail') renderDetail();
       saveSelection();

@@ -1,0 +1,1911 @@
+{
+  "version": 1,
+  "season": "A/W 27/28",
+  "reports": {
+    "OW01": {
+      "id": "OW01",
+      "title": "The Textured Shacket",
+      "styleTerms": [
+        {
+          "key": "shacket",
+          "label": "Hip-length shirt-jacket",
+          "ids": [
+            "RF27-O01",
+            "RF27-O02",
+            "AE-014"
+          ]
+        },
+        {
+          "key": "contrast-collar",
+          "label": "Contrast collars",
+          "ids": [
+            "RF27-O01",
+            "RF27-O02"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "raised-solid",
+          "label": "Raised woven solids",
+          "ids": [
+            "MF087",
+            "MF090",
+            "MF091",
+            "MF088",
+            "MF089"
+          ]
+        },
+        {
+          "key": "check",
+          "label": "Controlled check references",
+          "ids": [
+            "MP080",
+            "MP091",
+            "MP097",
+            "MP102",
+            "MP111"
+          ]
+        },
+        {
+          "key": "jacquard",
+          "label": "Jacquard references",
+          "ids": [
+            "MP002",
+            "MP129"
+          ]
+        }
+      ]
+    },
+    "OW02": {
+      "id": "OW02",
+      "title": "The Barn & Chore Jacket",
+      "styleTerms": [
+        {
+          "key": "contrast-collar",
+          "label": "Contrast-collar canvas",
+          "ids": [
+            "RF27-O02"
+          ]
+        },
+        {
+          "key": "twill-overshirt",
+          "label": "Twill overshirt",
+          "ids": [
+            "AE-014"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "canvas",
+          "label": "Canvas grounds",
+          "ids": [
+            "MF011",
+            "MF013",
+            "MF015",
+            "MF012",
+            "MF014"
+          ]
+        },
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "corduroy",
+          "label": "Corduroy",
+          "ids": [
+            "MF019",
+            "MF020",
+            "MF016",
+            "MF018",
+            "MF017",
+            "MF021"
+          ]
+        }
+      ]
+    },
+    "OW03": {
+      "id": "OW03",
+      "title": "The Everyday Bomber & Blouson",
+      "styleTerms": [
+        {
+          "key": "blouson",
+          "label": "Hip-length blouson",
+          "ids": [
+            "RF27-O03"
+          ]
+        },
+        {
+          "key": "funnel-neck",
+          "label": "Funnel neck",
+          "ids": [
+            "RF27-O03"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "microcheck",
+          "label": "Microcheck references",
+          "ids": [
+            "MP034",
+            "MP044",
+            "MP045",
+            "MP109"
+          ]
+        },
+        {
+          "key": "plain-weave",
+          "label": "Plain woven grounds",
+          "ids": [
+            "MF033",
+            "MF034",
+            "MF032",
+            "MF035",
+            "MF031",
+            "MF030"
+          ]
+        }
+      ]
+    },
+    "OW04": {
+      "id": "OW04",
+      "title": "The Lightweight Harrington",
+      "styleTerms": [],
+      "materialTerms": [
+        {
+          "key": "microcheck",
+          "label": "Microcheck references",
+          "ids": [
+            "MP034",
+            "MP044",
+            "MP045",
+            "MP109"
+          ]
+        },
+        {
+          "key": "plain-weave",
+          "label": "Plain woven grounds",
+          "ids": [
+            "MF033",
+            "MF034",
+            "MF032",
+            "MF035",
+            "MF031",
+            "MF030"
+          ]
+        },
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        }
+      ]
+    },
+    "OW05": {
+      "id": "OW05",
+      "title": "The Practical Quilted Layer",
+      "styleTerms": [
+        {
+          "key": "padded-body",
+          "label": "Padded body",
+          "ids": [
+            "RF27-O04"
+          ]
+        },
+        {
+          "key": "quilted-shirt-jacket",
+          "label": "Quilted shirt-jacket",
+          "ids": [
+            "AE-026"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "plain-weave",
+          "label": "Plain woven grounds",
+          "ids": [
+            "MF033",
+            "MF034",
+            "MF032",
+            "MF035",
+            "MF031",
+            "MF030"
+          ]
+        },
+        {
+          "key": "ripstop",
+          "label": "Ripstop",
+          "ids": [
+            "MF097",
+            "MF098",
+            "MF101",
+            "MF099",
+            "MF100",
+            "MF102"
+          ]
+        }
+      ]
+    },
+    "OW06": {
+      "id": "OW06",
+      "title": "The Adaptable Shell & Parka",
+      "styleTerms": [],
+      "materialTerms": [
+        {
+          "key": "ripstop",
+          "label": "Ripstop",
+          "ids": [
+            "MF097",
+            "MF098",
+            "MF101",
+            "MF099",
+            "MF100",
+            "MF102"
+          ]
+        },
+        {
+          "key": "plain-weave",
+          "label": "Plain woven grounds",
+          "ids": [
+            "MF033",
+            "MF034",
+            "MF032",
+            "MF035",
+            "MF031",
+            "MF030"
+          ]
+        }
+      ]
+    },
+    "OW07": {
+      "id": "OW07",
+      "title": "Fleece & Sherpa Layers",
+      "styleTerms": [
+        {
+          "key": "sherpa-lined-layer",
+          "label": "Sherpa-lined shirt jacket",
+          "ids": [
+            "AE-032"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "sherpa",
+          "label": "Sherpa pile references",
+          "ids": [
+            "MF115",
+            "MF114",
+            "MF111",
+            "MF113",
+            "MF112"
+          ]
+        },
+        {
+          "key": "pile",
+          "label": "Polar fleece references",
+          "ids": [
+            "MF078",
+            "MF079",
+            "MF080",
+            "MF082",
+            "MF081"
+          ]
+        }
+      ]
+    },
+    "OW08": {
+      "id": "OW08",
+      "title": "The Everyday Coat",
+      "styleTerms": [
+        {
+          "key": "wrap-coat",
+          "label": "Shawl-collar wrap coat",
+          "ids": [
+            "RF27-O06"
+          ]
+        },
+        {
+          "key": "car-coat",
+          "label": "Reversible car coat",
+          "ids": [
+            "RF27-O05"
+          ]
+        },
+        {
+          "key": "everyday-coat",
+          "label": "Everyday coat shapes",
+          "ids": [
+            "AE-025",
+            "AE-035"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "compact-woven",
+          "label": "Compact coating references",
+          "ids": [
+            "MF087",
+            "MF090",
+            "MF091",
+            "MF088",
+            "MF089"
+          ]
+        },
+        {
+          "key": "textured-woven",
+          "label": "Textured woven references",
+          "ids": [
+            "MF096",
+            "MF092",
+            "MF095",
+            "MF093",
+            "MF094"
+          ]
+        },
+        {
+          "key": "check",
+          "label": "Controlled check references",
+          "ids": [
+            "MP080",
+            "MP091",
+            "MP097",
+            "MP102",
+            "MP111"
+          ]
+        },
+        {
+          "key": "herringbone",
+          "label": "Woven herringbone",
+          "ids": [
+            "MP005",
+            "MP006",
+            "MP027"
+          ]
+        }
+      ]
+    },
+    "S01": {
+      "id": "S01",
+      "title": "The Refined Flannel Shirt",
+      "styleTerms": [
+        {
+          "key": "flannel-shirt",
+          "label": "Flannel shirt shapes",
+          "ids": [
+            "AE-028",
+            "AE-031"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "flannel",
+          "label": "Flannel references",
+          "ids": [
+            "MF028",
+            "MF029",
+            "MF024",
+            "MF025",
+            "MF026",
+            "MF027",
+            "MF023",
+            "MF022"
+          ]
+        },
+        {
+          "key": "flannel-check",
+          "label": "Brushed check references",
+          "ids": [
+            "MP024",
+            "MP026",
+            "MP031",
+            "MP033",
+            "MP078",
+            "MP079",
+            "MP080"
+          ]
+        },
+        {
+          "key": "dobby",
+          "label": "Dobby shirting",
+          "ids": [
+            "MP023"
+          ]
+        }
+      ]
+    },
+    "S02": {
+      "id": "S02",
+      "title": "The Textured Everyday Button-Up",
+      "styleTerms": [
+        {
+          "key": "oxford-shirt",
+          "label": "Relaxed Oxford shirt",
+          "ids": [
+            "RF27-S04"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "seersucker",
+          "label": "Seersucker shirting",
+          "ids": [
+            "MP001",
+            "MP071",
+            "MP072",
+            "MP083",
+            "MP092"
+          ]
+        },
+        {
+          "key": "dobby",
+          "label": "Dobby shirting",
+          "ids": [
+            "MP023"
+          ]
+        }
+      ]
+    },
+    "S03": {
+      "id": "S03",
+      "title": "The Softened Utility Shirt",
+      "styleTerms": [
+        {
+          "key": "utility-shirt",
+          "label": "Two-pocket utility shirt",
+          "ids": [
+            "RF27-S01"
+          ]
+        },
+        {
+          "key": "washed-denim-shirt",
+          "label": "Washed denim shirt",
+          "ids": [
+            "RF27-S02"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "canvas",
+          "label": "Canvas grounds",
+          "ids": [
+            "MF011",
+            "MF013",
+            "MF015",
+            "MF012",
+            "MF014"
+          ]
+        }
+      ]
+    },
+    "S04": {
+      "id": "S04",
+      "title": "The Women’s Everyday Button-Front",
+      "styleTerms": [
+        {
+          "key": "relaxed-button-front",
+          "label": "Relaxed button-front",
+          "ids": [
+            "RF27-S04"
+          ]
+        },
+        {
+          "key": "defined-waist",
+          "label": "Defined waist",
+          "ids": [
+            "RF27-S05"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "poplin",
+          "label": "Plain poplin grounds",
+          "ids": [
+            "MF037",
+            "MF039",
+            "MF036",
+            "MF041",
+            "MF038"
+          ]
+        },
+        {
+          "key": "plain-weave",
+          "label": "Plain woven grounds",
+          "ids": [
+            "MF033",
+            "MF034",
+            "MF032",
+            "MF035",
+            "MF031",
+            "MF030"
+          ]
+        },
+        {
+          "key": "stripe",
+          "label": "Shirting stripes",
+          "ids": [
+            "MP010",
+            "MP015",
+            "MP016",
+            "MP021",
+            "MP035",
+            "MP126"
+          ]
+        }
+      ]
+    },
+    "S05": {
+      "id": "S05",
+      "title": "The Funnel-Neck Layering Shirt",
+      "styleTerms": [],
+      "materialTerms": [
+        {
+          "key": "poplin",
+          "label": "Plain poplin grounds",
+          "ids": [
+            "MF037",
+            "MF039",
+            "MF036",
+            "MF041",
+            "MF038"
+          ]
+        },
+        {
+          "key": "flannel-check",
+          "label": "Brushed check references",
+          "ids": [
+            "MP024",
+            "MP026",
+            "MP031",
+            "MP033",
+            "MP078",
+            "MP079",
+            "MP080"
+          ]
+        },
+        {
+          "key": "variegated-stripe",
+          "label": "Variegated stripe references",
+          "ids": [
+            "MP015",
+            "MP016"
+          ]
+        }
+      ]
+    },
+    "T01": {
+      "id": "T01",
+      "title": "Relaxed Everyday Tailoring",
+      "styleTerms": [
+        {
+          "key": "pleated-tailoring",
+          "label": "Pleated tailoring",
+          "ids": [
+            "RF27-T02",
+            "RF27-T04"
+          ]
+        },
+        {
+          "key": "pull-on-tailoring",
+          "label": "Clean pull-on waist",
+          "ids": [
+            "AE-021"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "gabardine",
+          "label": "Compact gabardine",
+          "ids": [
+            "MF085",
+            "MF083",
+            "MF086",
+            "MF084"
+          ]
+        },
+        {
+          "key": "herringbone",
+          "label": "Woven herringbone",
+          "ids": [
+            "MP005",
+            "MP006",
+            "MP027"
+          ]
+        }
+      ]
+    },
+    "T02": {
+      "id": "T02",
+      "title": "The Everyday Utility Trouser",
+      "styleTerms": [],
+      "materialTerms": [
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "canvas",
+          "label": "Canvas grounds",
+          "ids": [
+            "MF011",
+            "MF013",
+            "MF015",
+            "MF012",
+            "MF014"
+          ]
+        },
+        {
+          "key": "ripstop",
+          "label": "Ripstop",
+          "ids": [
+            "MF097",
+            "MF098",
+            "MF101",
+            "MF099",
+            "MF100",
+            "MF102"
+          ]
+        }
+      ]
+    },
+    "T03": {
+      "id": "T03",
+      "title": "Draped Wide-Leg Tailoring",
+      "styleTerms": [
+        {
+          "key": "wide-leg",
+          "label": "Pleated wide leg",
+          "ids": [
+            "RF27-T02"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "plain-weave",
+          "label": "Plain woven grounds",
+          "ids": [
+            "MF033",
+            "MF034",
+            "MF032",
+            "MF035",
+            "MF031",
+            "MF030"
+          ]
+        },
+        {
+          "key": "herringbone",
+          "label": "Woven herringbone",
+          "ids": [
+            "MP005",
+            "MP006",
+            "MP027"
+          ]
+        }
+      ]
+    },
+    "MAT01": {
+      "id": "MAT01",
+      "title": "Brushed Flannel & Refined Double Cloth",
+      "styleTerms": [
+        {
+          "key": "flannel-shirt",
+          "label": "Flannel shirt shapes",
+          "ids": [
+            "AE-028",
+            "AE-031"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "flannel",
+          "label": "Flannel references",
+          "ids": [
+            "MF028",
+            "MF029",
+            "MF024",
+            "MF025",
+            "MF026",
+            "MF027",
+            "MF023",
+            "MF022"
+          ]
+        },
+        {
+          "key": "flannel-check",
+          "label": "Brushed check references",
+          "ids": [
+            "MP024",
+            "MP026",
+            "MP031",
+            "MP033",
+            "MP078",
+            "MP079",
+            "MP080"
+          ]
+        },
+        {
+          "key": "twill-ground",
+          "label": "Twill grounds for finish trials",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        }
+      ]
+    },
+    "MAT02": {
+      "id": "MAT02",
+      "title": "Corduroy: Rib, Pile & Drape",
+      "styleTerms": [
+        {
+          "key": "corduroy-shirt",
+          "label": "Corduroy shirt",
+          "ids": [
+            "RF27-S06"
+          ]
+        },
+        {
+          "key": "corduroy-trousers",
+          "label": "Corduroy trouser shapes",
+          "ids": [
+            "RF27-T03",
+            "RF27-T05",
+            "RF27-T06",
+            "AE-023",
+            "AE-030"
+          ]
+        },
+        {
+          "key": "corduroy-collar",
+          "label": "Corduroy collar",
+          "ids": [
+            "RF27-O02"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "corduroy",
+          "label": "Corduroy",
+          "ids": [
+            "MF019",
+            "MF020",
+            "MF016",
+            "MF018",
+            "MF017",
+            "MF021"
+          ]
+        }
+      ]
+    },
+    "MAT03": {
+      "id": "MAT03",
+      "title": "Supple Twill & Canvas",
+      "styleTerms": [
+        {
+          "key": "canvas-layer",
+          "label": "Canvas workwear layer",
+          "ids": [
+            "RF27-O02"
+          ]
+        },
+        {
+          "key": "twill-shirt",
+          "label": "Twill shirt shapes",
+          "ids": [
+            "RF27-S01",
+            "RF27-S03"
+          ]
+        },
+        {
+          "key": "twill-trouser",
+          "label": "Twill trouser shape",
+          "ids": [
+            "RF27-T02"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "canvas",
+          "label": "Canvas grounds",
+          "ids": [
+            "MF011",
+            "MF013",
+            "MF015",
+            "MF012",
+            "MF014"
+          ]
+        }
+      ]
+    },
+    "MAT04": {
+      "id": "MAT04",
+      "title": "Comfort Wovens: Drape & Recovery",
+      "styleTerms": [
+        {
+          "key": "draped-shirt",
+          "label": "Draped twill shirt",
+          "ids": [
+            "RF27-S03"
+          ]
+        },
+        {
+          "key": "woven-trouser",
+          "label": "Woven trouser shapes",
+          "ids": [
+            "RF27-T02",
+            "AE-021"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "plain-weave",
+          "label": "Plain woven grounds",
+          "ids": [
+            "MF033",
+            "MF034",
+            "MF032",
+            "MF035",
+            "MF031",
+            "MF030"
+          ]
+        },
+        {
+          "key": "gabardine",
+          "label": "Gabardine references",
+          "ids": [
+            "MF085",
+            "MF083",
+            "MF086",
+            "MF084"
+          ]
+        }
+      ]
+    },
+    "MAT05": {
+      "id": "MAT05",
+      "title": "Light Padded Layer Systems",
+      "styleTerms": [
+        {
+          "key": "padded-layer",
+          "label": "Padded jacket",
+          "ids": [
+            "RF27-O04"
+          ]
+        },
+        {
+          "key": "quilted-layer",
+          "label": "Quilted shirt-jacket",
+          "ids": [
+            "AE-026"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "plain-weave",
+          "label": "Plain woven grounds",
+          "ids": [
+            "MF033",
+            "MF034",
+            "MF032",
+            "MF035",
+            "MF031",
+            "MF030"
+          ]
+        },
+        {
+          "key": "ripstop",
+          "label": "Ripstop",
+          "ids": [
+            "MF097",
+            "MF098",
+            "MF101",
+            "MF099",
+            "MF100",
+            "MF102"
+          ]
+        }
+      ]
+    },
+    "MAT06": {
+      "id": "MAT06",
+      "title": "Quiet Technical Plains & Ripstop",
+      "styleTerms": [],
+      "materialTerms": [
+        {
+          "key": "ripstop",
+          "label": "Ripstop",
+          "ids": [
+            "MF097",
+            "MF098",
+            "MF101",
+            "MF099",
+            "MF100",
+            "MF102"
+          ]
+        },
+        {
+          "key": "plain-weave",
+          "label": "Plain woven grounds",
+          "ids": [
+            "MF033",
+            "MF034",
+            "MF032",
+            "MF035",
+            "MF031",
+            "MF030"
+          ]
+        }
+      ]
+    },
+    "PAT01": {
+      "id": "PAT01",
+      "title": "Softened Yarn-Dyed Checks",
+      "styleTerms": [
+        {
+          "key": "flannel-shirt",
+          "label": "Checked flannel shirts",
+          "ids": [
+            "AE-028",
+            "AE-031"
+          ]
+        },
+        {
+          "key": "checked-coat",
+          "label": "Checked car coat",
+          "ids": [
+            "RF27-O05"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "flannel-check",
+          "label": "Brushed check references",
+          "ids": [
+            "MP024",
+            "MP026",
+            "MP031",
+            "MP033",
+            "MP078",
+            "MP079",
+            "MP080"
+          ]
+        },
+        {
+          "key": "yarn-dyed-gingham",
+          "label": "Yarn-dyed gingham",
+          "ids": [
+            "MP001",
+            "MP127"
+          ]
+        },
+        {
+          "key": "woven-check",
+          "label": "Woven heritage checks",
+          "ids": [
+            "MP018",
+            "MP091"
+          ]
+        },
+        {
+          "key": "check",
+          "label": "Controlled check references",
+          "ids": [
+            "MP080",
+            "MP091",
+            "MP097",
+            "MP102",
+            "MP111"
+          ]
+        }
+      ]
+    },
+    "PAT02": {
+      "id": "PAT02",
+      "title": "Quiet Stripes & Tailoring Micro-Patterns",
+      "styleTerms": [
+        {
+          "key": "striped-shirt",
+          "label": "Striped Oxford shirt",
+          "ids": [
+            "RF27-S04"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "yarn-dyed-stripe",
+          "label": "Yarn-dyed shirting stripes",
+          "ids": [
+            "MP021",
+            "MP035",
+            "MP126"
+          ]
+        },
+        {
+          "key": "stripe",
+          "label": "Shirting stripes",
+          "ids": [
+            "MP010",
+            "MP015",
+            "MP016",
+            "MP021",
+            "MP035",
+            "MP126"
+          ]
+        },
+        {
+          "key": "tailoring-stripe",
+          "label": "Tailoring stripe references",
+          "ids": [
+            "MP020",
+            "MP066",
+            "MP082"
+          ]
+        },
+        {
+          "key": "herringbone",
+          "label": "Woven herringbone",
+          "ids": [
+            "MP005",
+            "MP006",
+            "MP027"
+          ]
+        }
+      ]
+    },
+    "PAT03": {
+      "id": "PAT03",
+      "title": "Open Botanicals for Women’s Shirts",
+      "styleTerms": [],
+      "materialTerms": [
+        {
+          "key": "viscose-botanical",
+          "label": "Viscose floral references",
+          "ids": [
+            "MP017",
+            "MP028",
+            "MP029",
+            "MP036",
+            "MP062",
+            "MP086"
+          ]
+        },
+        {
+          "key": "cotton-botanical",
+          "label": "Cotton botanical references",
+          "ids": [
+            "MP037",
+            "MP038",
+            "MP039",
+            "MP043",
+            "MP048",
+            "MP063",
+            "MP076",
+            "MP077",
+            "MP085",
+            "MP090",
+            "MP093",
+            "MP098",
+            "MP115",
+            "MP116",
+            "MP117",
+            "MP118",
+            "MP119",
+            "MP120",
+            "MP121",
+            "MP122",
+            "MP123",
+            "MP124",
+            "MP125"
+          ]
+        },
+        {
+          "key": "poplin",
+          "label": "Plain poplin grounds",
+          "ids": [
+            "MF037",
+            "MF039",
+            "MF036",
+            "MF041",
+            "MF038"
+          ]
+        }
+      ]
+    },
+    "PAT04": {
+      "id": "PAT04",
+      "title": "Dark-Ground Printed Geometry",
+      "styleTerms": [],
+      "materialTerms": [
+        {
+          "key": "geometry",
+          "label": "Geometric pattern references",
+          "ids": [
+            "MP004",
+            "MS002"
+          ]
+        },
+        {
+          "key": "poplin",
+          "label": "Plain poplin grounds",
+          "ids": [
+            "MF037",
+            "MF039",
+            "MF036",
+            "MF041",
+            "MF038"
+          ]
+        },
+        {
+          "key": "jacquard",
+          "label": "Jacquard comparison",
+          "ids": [
+            "MP129"
+          ]
+        }
+      ]
+    },
+    "PROC01": {
+      "id": "PROC01",
+      "title": "Controlled Wash, Fade & Patina",
+      "styleTerms": [
+        {
+          "key": "garment-dye",
+          "label": "Garment-dyed canvas",
+          "ids": [
+            "RF27-O02"
+          ]
+        },
+        {
+          "key": "washed-denim-shirt",
+          "label": "Washed denim shirt",
+          "ids": [
+            "RF27-S02"
+          ]
+        },
+        {
+          "key": "garment-dyed-twill",
+          "label": "Garment-dyed twill shirt",
+          "ids": [
+            "RF27-S03"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "canvas",
+          "label": "Canvas grounds",
+          "ids": [
+            "MF011",
+            "MF013",
+            "MF015",
+            "MF012",
+            "MF014"
+          ]
+        },
+        {
+          "key": "flannel-check",
+          "label": "Brushed check references",
+          "ids": [
+            "MP024",
+            "MP026",
+            "MP031",
+            "MP033",
+            "MP078",
+            "MP079",
+            "MP080"
+          ]
+        }
+      ]
+    },
+    "PROC02": {
+      "id": "PROC02",
+      "title": "Useful Quilting & Modular Padding",
+      "styleTerms": [
+        {
+          "key": "quilted-shirt-jacket",
+          "label": "Quilted shirt-jacket",
+          "ids": [
+            "AE-026"
+          ]
+        },
+        {
+          "key": "padded-jacket",
+          "label": "Padded jacket shape",
+          "ids": [
+            "RF27-O04"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "quilt-effect",
+          "label": "Quilt-effect knitted cloth",
+          "ids": [
+            "MF109",
+            "MF108",
+            "MF110",
+            "MF107"
+          ]
+        },
+        {
+          "key": "plain-weave",
+          "label": "Plain woven grounds",
+          "ids": [
+            "MF033",
+            "MF034",
+            "MF032",
+            "MF035",
+            "MF031",
+            "MF030"
+          ]
+        },
+        {
+          "key": "ripstop",
+          "label": "Ripstop",
+          "ids": [
+            "MF097",
+            "MF098",
+            "MF101",
+            "MF099",
+            "MF100",
+            "MF102"
+          ]
+        }
+      ]
+    },
+    "PROC03": {
+      "id": "PROC03",
+      "title": "Corduroy Collars & Pile Trims",
+      "styleTerms": [
+        {
+          "key": "corduroy-collar",
+          "label": "Corduroy collar",
+          "ids": [
+            "RF27-O02"
+          ]
+        },
+        {
+          "key": "corduroy-trousers",
+          "label": "Corduroy trouser panels",
+          "ids": [
+            "RF27-T03",
+            "RF27-T05",
+            "RF27-T06"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "corduroy",
+          "label": "Corduroy",
+          "ids": [
+            "MF019",
+            "MF020",
+            "MF016",
+            "MF018",
+            "MF017",
+            "MF021"
+          ]
+        },
+        {
+          "key": "canvas",
+          "label": "Canvas grounds",
+          "ids": [
+            "MF011",
+            "MF013",
+            "MF015",
+            "MF012",
+            "MF014"
+          ]
+        },
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "pile-trim",
+          "label": "Pile-trim references",
+          "ids": [
+            "MF115",
+            "MF114",
+            "MF078",
+            "MF079",
+            "MF111",
+            "MF113",
+            "MF112",
+            "MF080",
+            "MF082",
+            "MF081"
+          ]
+        }
+      ]
+    },
+    "PROC04": {
+      "id": "PROC04",
+      "title": "Purposeful Pockets & Discreet Adjustment",
+      "styleTerms": [
+        {
+          "key": "internal-drawcord",
+          "label": "Internal drawcord",
+          "ids": [
+            "RF27-T01"
+          ]
+        },
+        {
+          "key": "waist-tabs",
+          "label": "Waist adjustment tabs",
+          "ids": [
+            "RF27-T05"
+          ]
+        },
+        {
+          "key": "shirt-pockets",
+          "label": "Two-pocket shirt",
+          "ids": [
+            "RF27-S01"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "twill",
+          "label": "Twill grounds",
+          "ids": [
+            "MF003",
+            "MF001",
+            "MF005",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "canvas",
+          "label": "Canvas grounds",
+          "ids": [
+            "MF011",
+            "MF013",
+            "MF015",
+            "MF012",
+            "MF014"
+          ]
+        },
+        {
+          "key": "double-jersey",
+          "label": "Double-knit references",
+          "ids": [
+            "MF042",
+            "MF044",
+            "MF047",
+            "MF048",
+            "MF043",
+            "MF045",
+            "MF049",
+            "MF046"
+          ]
+        }
+      ]
+    },
+    "PROC05": {
+      "id": "PROC05",
+      "title": "Quiet Stitch & Localised Embroidery",
+      "styleTerms": [],
+      "materialTerms": [
+        {
+          "key": "poplin",
+          "label": "Plain poplin grounds",
+          "ids": [
+            "MF037",
+            "MF039",
+            "MF036",
+            "MF041",
+            "MF038"
+          ]
+        },
+        {
+          "key": "stitch-ground",
+          "label": "Woven grounds for stitch trials",
+          "ids": [
+            "MF003",
+            "MF011",
+            "MF001",
+            "MF005",
+            "MF013",
+            "MF015",
+            "MF012",
+            "MF014",
+            "MF004",
+            "MF009",
+            "MF010",
+            "MF006",
+            "MF007",
+            "MF002",
+            "MF008"
+          ]
+        },
+        {
+          "key": "jacquard",
+          "label": "Jacquard comparison",
+          "ids": [
+            "MP129"
+          ]
+        }
+      ]
+    },
+    "T06": {
+      "id": "T06",
+      "title": "The Everyday Knit Straight & Wide Leg",
+      "styleTerms": [
+        {
+          "key": "knit-wide-leg",
+          "label": "Wide-leg jersey trousers",
+          "ids": [
+            "RF27-T01"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "loopback",
+          "label": "French terry / loopback",
+          "ids": [
+            "MF068",
+            "MF069",
+            "MF070"
+          ]
+        },
+        {
+          "key": "double-jersey",
+          "label": "Double-knit references",
+          "ids": [
+            "MF042",
+            "MF044",
+            "MF047",
+            "MF048",
+            "MF043",
+            "MF045",
+            "MF049",
+            "MF046"
+          ]
+        },
+        {
+          "key": "ponte",
+          "label": "Ponte references",
+          "ids": [
+            "MF050",
+            "MF056",
+            "MF057",
+            "MF055",
+            "MF051",
+            "MF053",
+            "MF054"
+          ]
+        },
+        {
+          "key": "structured-jersey",
+          "label": "Textured knit candidate",
+          "ids": [
+            "MF106"
+          ]
+        }
+      ]
+    },
+    "T07": {
+      "id": "T07",
+      "title": "The Brushed Warm-Up Jogger",
+      "styleTerms": [],
+      "materialTerms": [
+        {
+          "key": "brushed-back",
+          "label": "Brushed-back fleece",
+          "ids": [
+            "MF073",
+            "MF074",
+            "MF076",
+            "MF071"
+          ]
+        },
+        {
+          "key": "loopback",
+          "label": "French terry / loopback",
+          "ids": [
+            "MF068",
+            "MF069",
+            "MF070"
+          ]
+        },
+        {
+          "key": "double-jersey",
+          "label": "Double-knit references",
+          "ids": [
+            "MF042",
+            "MF044",
+            "MF047",
+            "MF048",
+            "MF043",
+            "MF045",
+            "MF049",
+            "MF046"
+          ]
+        }
+      ]
+    },
+    "T08": {
+      "id": "T08",
+      "title": "Studio Leggings",
+      "styleTerms": [
+        {
+          "key": "high-rise-legging",
+          "label": "High-rise legging",
+          "ids": [
+            "AE-022"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "fine-rib",
+          "label": "Rib jersey references",
+          "ids": [
+            "MF060",
+            "MF061",
+            "MF058",
+            "MF059"
+          ]
+        },
+        {
+          "key": "smooth-jersey",
+          "label": "Smooth tricot references",
+          "ids": [
+            "MF119",
+            "MF117",
+            "MF120",
+            "MF116",
+            "MF118"
+          ]
+        }
+      ]
+    },
+    "AKMAT01": {
+      "id": "AKMAT01",
+      "title": "Loopback and Brushed-Back Jersey",
+      "styleTerms": [
+        {
+          "key": "brushed-jersey-trouser",
+          "label": "Brushed jersey trousers",
+          "ids": [
+            "RF27-T01"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "loopback",
+          "label": "French terry / loopback",
+          "ids": [
+            "MF068",
+            "MF069",
+            "MF070"
+          ]
+        },
+        {
+          "key": "brushed-back",
+          "label": "Brushed-back fleece",
+          "ids": [
+            "MF073",
+            "MF074",
+            "MF076",
+            "MF071"
+          ]
+        }
+      ]
+    },
+    "AKMAT02": {
+      "id": "AKMAT02",
+      "title": "Structured Double Jersey for Clean Knit Trousers",
+      "styleTerms": [],
+      "materialTerms": [
+        {
+          "key": "double-jersey",
+          "label": "Double-knit references",
+          "ids": [
+            "MF042",
+            "MF044",
+            "MF047",
+            "MF048",
+            "MF043",
+            "MF045",
+            "MF049",
+            "MF046"
+          ]
+        },
+        {
+          "key": "ponte",
+          "label": "Ponte references",
+          "ids": [
+            "MF050",
+            "MF056",
+            "MF057",
+            "MF055",
+            "MF051",
+            "MF053",
+            "MF054"
+          ]
+        }
+      ]
+    },
+    "AKMAT03": {
+      "id": "AKMAT03",
+      "title": "Fine Rib & Smooth Jersey for Studio Leggings",
+      "styleTerms": [
+        {
+          "key": "high-rise-legging",
+          "label": "High-rise legging shape",
+          "ids": [
+            "AE-022"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "fine-rib",
+          "label": "Rib jersey references",
+          "ids": [
+            "MF060",
+            "MF061",
+            "MF058",
+            "MF059"
+          ]
+        },
+        {
+          "key": "smooth-jersey",
+          "label": "Smooth tricot references",
+          "ids": [
+            "MF119",
+            "MF117",
+            "MF120",
+            "MF116",
+            "MF118"
+          ]
+        }
+      ]
+    },
+    "AKPROC01": {
+      "id": "AKPROC01",
+      "title": "A Controlled Waist and Convertible Hem",
+      "styleTerms": [
+        {
+          "key": "internal-drawcord",
+          "label": "Internal drawcord waist",
+          "ids": [
+            "RF27-T01"
+          ]
+        }
+      ],
+      "materialTerms": [
+        {
+          "key": "double-jersey",
+          "label": "Double-knit references",
+          "ids": [
+            "MF042",
+            "MF044",
+            "MF047",
+            "MF048",
+            "MF043",
+            "MF045",
+            "MF049",
+            "MF046"
+          ]
+        },
+        {
+          "key": "loopback",
+          "label": "French terry / loopback",
+          "ids": [
+            "MF068",
+            "MF069",
+            "MF070"
+          ]
+        },
+        {
+          "key": "brushed-back",
+          "label": "Brushed-back fleece",
+          "ids": [
+            "MF073",
+            "MF074",
+            "MF076",
+            "MF071"
+          ]
+        }
+      ]
+    }
+  }
+}
