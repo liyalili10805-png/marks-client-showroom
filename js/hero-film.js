@@ -5,31 +5,52 @@
   if (!film || !play) return;
   const label = play.querySelector('span');
   const fallback = document.querySelector('[data-film-fallback]');
+  let visible = true;
+  let attempt = 0;
+  film.muted = true;
+  film.defaultMuted = true;
   function ready() {
     play.hidden = false;
     play.disabled = false;
     if (label) label.textContent = 'Play film';
   }
-  ready();
+  async function start() {
+    if (document.hidden || !visible) return;
+    const current = ++attempt;
+    if (!film.getAttribute('src')) film.src = film.dataset.src;
+    try { await film.play(); }
+    catch (error) {
+      if (current === attempt && visible && !document.hidden && error.name !== 'AbortError') ready();
+    }
+  }
+  function pause() {
+    ++attempt;
+    film.pause();
+  }
   play.addEventListener('click', async () => {
     play.disabled = true;
     if (label) label.textContent = 'Loading film…';
-    if (!film.getAttribute('src')) film.src = film.dataset.src;
     film.controls = true;
-    try { await film.play(); }
-    catch { ready(); }
+    await start();
   });
-  film.addEventListener('playing', () => { play.hidden = true; });
+  film.addEventListener('playing', () => {
+    if (document.hidden || !visible) { pause(); return; }
+    play.hidden = true;
+    play.disabled = false;
+  });
   film.addEventListener('error', () => {
     ready();
     if (fallback) fallback.hidden = false;
   });
   document.addEventListener('visibilitychange', () => {
-    if (document.hidden) film.pause();
+    if (document.hidden) pause();
+    else start();
   });
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(entries => {
-      if (!entries[0].isIntersecting && !film.paused) film.pause();
+      visible = entries[0].isIntersecting;
+      if (visible) start();
+      else pause();
     }, {threshold: 0}).observe(film);
-  }
+  } else start();
 })();
