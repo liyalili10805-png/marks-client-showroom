@@ -1,14 +1,42 @@
 (function () {
   'use strict';
 
-  const DATA_URL = 'data/collections.json';
+  const scriptVersion = document.currentScript ? new URL(document.currentScript.src, location.href).searchParams.get('v') : '';
+  const DATA_URL = 'data/collections.json?v=' + encodeURIComponent(scriptVersion || '20261117perf1');
   const SELECTION_KEY = 'soho-collection-selection';
   const MATERIALS_KEY = 'soho-material-choices';
   const SUBMISSIONS_KEY = 'soho-selection-submissions';
   const SUBMITTED_KEY = 'soho-selection-submitted';
+  const EXCELJS_URL = 'js/vendor/exceljs.min.js?v=20261027s';
 
   let data = null;
   let products = [];
+  let excelLibraryPromise = null;
+
+  function loadExcelLibrary() {
+    if (window.ExcelJS && typeof window.ExcelJS.Workbook === 'function') return Promise.resolve(window.ExcelJS);
+    if (excelLibraryPromise) return excelLibraryPromise;
+    const script = document.createElement('script');
+    script.src = EXCELJS_URL;
+    script.async = true;
+    excelLibraryPromise = new Promise((resolve, reject) => {
+      script.onload = () => {
+        script.onload = null;
+        script.onerror = null;
+        if (window.ExcelJS && typeof window.ExcelJS.Workbook === 'function') resolve(window.ExcelJS);
+        else reject(new Error('Excel library could not start. Please try again.'));
+      };
+      script.onerror = () => reject(new Error('Could not load the Excel library. Please try again.'));
+      document.head.append(script);
+    }).catch(error => {
+      script.onload = null;
+      script.onerror = null;
+      script.remove();
+      excelLibraryPromise = null;
+      throw error;
+    });
+    return excelLibraryPromise;
+  }
 
   const read = (key, fallback) => {
     try {
@@ -131,11 +159,8 @@
   }
 
   async function exportExcel(items) {
-    if (!window.ExcelJS) {
-      toast('Excel library is still loading, try again');
-      return;
-    }
-    const wb = new ExcelJS.Workbook();
+    const ExcelLibrary = await loadExcelLibrary();
+    const wb = new ExcelLibrary.Workbook();
     wb.creator = 'SOHO FASHION';
     wb.created = new Date();
 
@@ -510,7 +535,7 @@
     const list = el('div', 'sel-list');
     const mats = materialMap();
 
-    items.forEach(product => {
+    items.forEach((product, index) => {
       const item = el('article', 'sel-item');
       const detailHref = `collection-detail.html?code=${encodeURIComponent(product.code)}`;
 
@@ -518,8 +543,15 @@
       imageLink.href = detailHref;
       imageLink.setAttribute('aria-label', `View ${product.name} details`);
       const image = document.createElement('img');
-      image.src = product.image;
       image.alt = product.name;
+      image.width = 480;
+      image.height = 720;
+      image.loading = index < 2 ? 'eager' : 'lazy';
+      image.decoding = 'async';
+      if (index === 0) image.fetchPriority = 'high';
+      const source = product.thumbnail || product.listImage || product.image;
+      if (source !== product.image) image.addEventListener('error', () => { image.src = product.image; }, {once: true});
+      image.src = source;
       imageLink.append(image);
       item.append(imageLink);
 
@@ -593,7 +625,7 @@
     root.append(body);
   }
 
-  fetch(DATA_URL + '?v=' + Date.now())
+  fetch(DATA_URL)
     .then(response => response.json())
     .then(payload => {
       data = payload;
@@ -606,3 +638,4 @@
       if (root) root.innerHTML = '<p class="sel-empty">Selection could not be loaded.</p>';
     });
 })();
+

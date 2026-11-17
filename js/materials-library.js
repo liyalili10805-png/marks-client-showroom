@@ -21,9 +21,11 @@
   ];
   const picked = new Set();
   const compared = new Set();
+  const searchIndex = new WeakMap(), valueIndex = new WeakMap(), libraryCards = new Map();
   let items = [], byId = new Map(), board = readBoard(), state = readState();
   let matches = [], rendered = [], currentDetail = null;
   let dialog, dialogReturnFocus, toastTimer, searchTimer, groupFilter = '', sharedIds = [];
+  let countedItems, counts, loading = false, lifecycleWired = false, sharedHeaderWired = false;
   const pageIsBoard = body.dataset.materialPage === 'board';
   if (!root) { wireSharedHeader(); return; }
   const icons = {
@@ -56,9 +58,10 @@
     if (/^(?:javascript|data|blob):/i.test(src)) return '';
     return src;
   }
-  function image(src, alt, className, eager) {
+  function image(src, alt, className, eager, priority) {
     const img = node('img', className);
     img.alt = alt || ''; img.loading = eager ? 'eager' : 'lazy'; img.decoding = 'async';
+    img.fetchPriority = priority || 'auto';
     img.width = 600; img.height = 600;
     if (src) img.src = safeImage(src);
     img.addEventListener('error', () => {
@@ -72,7 +75,7 @@
   function normalise(item, index) {
     const sourceType = ['global', 'sales', 'studio'].includes(item.sourceType) ? item.sourceType : 'global';
     const type = item.type === 'pattern' ? 'pattern' : 'fabric';
-    const colorways = (item.colorways || []).map(c => ({name: c.name || list(c.colors).join(' / ') || 'Colourway', colors: list(c.colors), image: safeImage(c.image), images: list(c.images)}));
+    const colorways = (item.colorways || []).map(c => ({name: c.name || list(c.colors).join(' / ') || 'Colourway', colors: list(c.colors), image: safeImage(c.image), thumbnail: safeImage(c.thumbnail), images: list(c.images)}));
     return {...item, id: String(item.id || 'M-' + (index + 1)), title: item.title || 'Material study', type,
       family: item.family || (type === 'fabric' ? 'Other fabrics' : 'Other patterns'), colors: list(item.colors),
       uses: list(item.uses), tags: list(item.tags), image: safeImage(item.image), images: item.images || [],
@@ -105,10 +108,10 @@
       else n.textContent = saved ? 'Saved to Material Board ✓' : 'Save to Material Board';
     });
   }
-  function saveItem(item, colorway) {
+  function saveItem(item, colorway, deferCommit) {
     if (!board.has(item.id)) board.set(item.id, {id: item.id, note: '', group: '', colorway: colorway || ''});
     else if (colorway != null) board.get(item.id).colorway = colorway;
-    persist(); countUpdate();
+    if (!deferCommit) { persist(); countUpdate(); }
   }
   function toggleSave(item) {
     if (board.has(item.id)) { board.delete(item.id); persist(); toast('Removed from your Material Board'); }
@@ -132,13 +135,17 @@
     const next = location.pathname + (params.size ? '?' + params.toString() : '');
     if (next !== location.pathname + location.search) history[replace ? 'replaceState' : 'pushState']({}, '', next);
   }
-  function searchText(item) { return [item.id, item.title, item.family, item.structure, item.technique, ...item.colors, ...item.uses, ...item.tags].join(' ').toLocaleLowerCase(); }
+  function searchText(item) {
+    if (!searchIndex.has(item)) searchIndex.set(item, [item.id, item.title, item.family, item.structure, item.technique, ...item.colors, ...item.uses, ...item.tags].join(' ').toLocaleLowerCase());
+    return searchIndex.get(item);
+  }
   function valuesFor(item, key) {
-    if (key === 'color') return [...new Set([...item.colors, ...item.colorways.flatMap(c => c.colors)])];
-    if (key === 'use') return item.uses;
-    if (key === 'developmentSeason') return item.developmentSeasons;
-    if (key === 'source') return [item.sourceType];
-    return [item[key]];
+    if (!valueIndex.has(item)) valueIndex.set(item, {color: [...new Set([...item.colors, ...item.colorways.flatMap(c => c.colors)])], use: item.uses, developmentSeason: item.developmentSeasons, source: [item.sourceType], family: [item.family], status: [item.status]});
+    return valueIndex.get(item)[key] || [item[key]];
+  }
+  function totals() {
+    if (countedItems !== items) { counts = {fabric: 0, pattern: 0}; items.forEach(item => { counts[item.type]++; }); countedItems = items; }
+    return counts;
   }
   function labelFor(key, value) { return key === 'source' ? SOURCE[value] || value : key === 'status' ? STATUS[value] || value : value; }
   function filtered() {
@@ -168,7 +175,7 @@
     [['all', 'All materials'], ['fabric', 'Fabrics'], ['pattern', 'Patterns']].forEach(([value, text]) => {
       const b = button('', 'ml-tab', () => { state.type = value; updateLibrary(); });
       b.setAttribute('role', 'tab'); b.dataset.type = value;
-      b.append(node('span', null, text), node('span', 'ml-tab-count', value === 'all' ? items.length : items.filter(i => i.type === value).length));
+      b.append(node('span', null, text), node('span', 'ml-tab-count', value === 'all' ? items.length : totals()[value]));
       tabs.append(b);
     });
     tabs.addEventListener('keydown', e => {
@@ -280,21 +287,36 @@
   }
   function renderGrid() {
     state.page = clampPage(state.page);
+    const previous = rendered;
     rendered = matches.slice((state.page - 1) * PAGE_SIZE, state.page * PAGE_SIZE);
-    const grid = root.querySelector('.ml-grid'); grid.replaceChildren();
+    const grid = root.querySelector('.ml-grid');
+    const unchanged = rendered.length && grid.children.length && previous.length === rendered.length && rendered.every((item, i) => previous[i].id === item.id);
     const count = root.querySelector('.ml-result-count'); count.replaceChildren(node('strong', null, matches.length.toLocaleString() + (matches.length === 1 ? ' material' : ' materials')),
-      document.createTextNode(' · ' + items.filter(i => i.type === 'fabric').length + ' fabrics / ' + items.filter(i => i.type === 'pattern').length + ' patterns in the library'));
+      document.createTextNode(' · ' + totals().fabric + ' fabrics / ' + totals().pattern + ' patterns in the library'));
     if (!matches.length) {
-      const empty = node('div', 'ml-empty'); empty.append(node('h2', null, 'A different combination?'), node('p', null, 'No materials match these filters. Try a broader colour, application or material family.'), button('Clear filters', 'ml-button', resetFilters)); grid.append(empty);
-    } else rendered.forEach(item => grid.append(card(item)));
+      const empty = node('div', 'ml-empty'); empty.append(node('h2', null, 'A different combination?'), node('p', null, 'No materials match these filters. Try a broader colour, application or material family.'), button('Clear filters', 'ml-button', resetFilters)); grid.replaceChildren(empty);
+    } else if (!unchanged) grid.replaceChildren(...rendered.map(cachedLibraryCard));
     renderPagination();
     syncPicked(); countUpdate();
   }
-  function card(item, boardMode) {
+  function previewFor(item, colourway) { return colourway ? colourway.thumbnail || colourway.image || item.thumbnail || item.image : item.thumbnail || item.image; }
+  function prioritiseCard(article, position) {
+    const img = article.querySelector('img'); if (!img) return;
+    const width = window.innerWidth || 1440, row = width < 700 ? 2 : width < 1000 ? 3 : width < 1280 ? 4 : width >= 1700 ? 6 : 5;
+    img.loading = position < row ? 'eager' : 'lazy'; img.fetchPriority = position === 0 ? 'high' : position < row ? 'auto' : 'low';
+    img.width = 400; img.height = 400;
+  }
+  function cachedLibraryCard(item, position) {
+    const article = libraryCards.get(item.id) || card(item);
+    libraryCards.delete(item.id); libraryCards.set(item.id, article); prioritiseCard(article, position);
+    while (libraryCards.size > PAGE_SIZE * 3) libraryCards.delete(libraryCards.keys().next().value);
+    return article;
+  }
+  function card(item, boardMode, position) {
     const article = node('article', boardMode ? 'ml-board-card' : 'ml-card'); article.dataset.materialId = item.id;
     const media = node('div', 'ml-card-media'), open = button('', 'ml-open', () => openDetail(item.id));
     const savedColourway = boardMode ? item.colorways.find(c => c.name === board.get(item.id)?.colorway) : null;
-    open.setAttribute('aria-label', 'View ' + item.title); open.append(image(savedColourway?.image || item.thumbnail || item.image, item.title, 'ml-card-image')); media.append(open);
+    open.setAttribute('aria-label', 'View ' + item.title); open.append(image(previewFor(item, savedColourway), item.title, 'ml-card-image')); media.append(open);
     const save = button('', 'ml-save', e => { e.stopPropagation(); toggleSave(item); if (pageIsBoard) renderBoard(); });
     save.innerHTML = icons.save; save.dataset.saveId = item.id; save.setAttribute('aria-pressed', String(board.has(item.id))); media.append(save);
     if (!boardMode) {
@@ -322,7 +344,7 @@
       const actions = node('div', 'ml-board-card-actions'); actions.append(button('View details ↗', '', () => openDetail(item.id)), button('Remove', '', () => { board.delete(item.id); persist(); renderBoard(); }));
       article.append(groupLabel, group, noteLabel, note, actions);
     }
-    return article;
+    prioritiseCard(article, position); return article;
   }
   function syncPicked() {
     root.querySelectorAll('[data-pick-id]').forEach(c => { c.checked = picked.has(c.dataset.pickId); });
@@ -338,7 +360,7 @@
     bar.replaceChildren();
     if (picked.size) {
       bar.append(node('span', 'ml-bulk-count', picked.size + ' selected'), button('Save selected', 'ml-bulk-save', () => {
-        const n = picked.size; picked.forEach(id => { const i = byId.get(id); if (i) saveItem(i); }); picked.clear(); syncPicked(); toast(n + ' materials saved to your board');
+        const n = picked.size; picked.forEach(id => { const i = byId.get(id); if (i) saveItem(i, undefined, true); }); persist(); countUpdate(); picked.clear(); syncPicked(); toast(n + ' materials saved to your board');
       }));
     }
     if (compared.size) bar.append(button('Compare (' + compared.size + '/4)', '', openCompare));
@@ -379,8 +401,8 @@
     const b = button('×', 'ml-dialog-close', closeDialog); b.setAttribute('aria-label', 'Close dialog'); return b;
   }
   function galleryFor(item) {
-    const gallery = [{src: item.image, caption: item.imageCaption || (item.sourceType === 'studio' ? 'AI-assisted design concept' : 'Published material reference')}];
-    (item.images || []).forEach(v => { const src = safeImage(v); if (src && !gallery.some(x => x.src === src)) gallery.push({src, caption: typeof v === 'object' ? v.caption || v.alt || '' : ''}); });
+    const gallery = [{src: item.image, thumbnail: item.thumbnail, caption: item.imageCaption || (item.sourceType === 'studio' ? 'AI-assisted design concept' : 'Published material reference')}];
+    (item.images || []).forEach(v => { const src = safeImage(v); if (src && !gallery.some(x => x.src === src)) gallery.push({src, thumbnail: safeImage(typeof v === 'object' ? v.thumbnail : '') || item.colorways.find(c => c.image === src)?.thumbnail, caption: typeof v === 'object' ? v.caption || v.alt || '' : ''}); });
     return gallery;
   }
   function openDetail(id) {
@@ -388,16 +410,18 @@
     currentDetail = id;
     const d = ensureDialog(); d.replaceChildren(closeButton());
     const layout = node('div', 'ml-detail-layout'), visual = node('div', 'ml-detail-visual'), gallery = galleryFor(item);
+    let selectedColorway = board.get(id)?.colorway || '';
+    const initialColourway = item.colorways.find(c => c.name === selectedColorway);
     const zoom = button('', 'ml-detail-zoom'); zoom.setAttribute('aria-label', 'Enlarge material image');
     zoom.addEventListener('click', () => { const active = zoom.classList.toggle('is-zoomed'); zoom.setAttribute('aria-label', active ? 'Reduce material image' : 'Enlarge material image'); });
-    let mainImage = image(item.image, item.title, 'ml-detail-mainimage', true); zoom.append(mainImage);
-    const caption = node('p', 'ml-detail-image-caption', gallery[0].caption); visual.append(zoom, caption);
-    const replaceImage = (src, text) => { zoom.classList.remove('is-zoomed'); zoom.replaceChildren(image(src, item.title, 'ml-detail-mainimage', true)); caption.textContent = text || ''; };
+    const mainImage = image(initialColourway?.image || item.image, item.title, 'ml-detail-mainimage', true, 'high'); zoom.append(mainImage);
+    const caption = node('p', 'ml-detail-image-caption', initialColourway?.image ? initialColourway.name : gallery[0].caption); visual.append(zoom, caption);
+    const replaceImage = (src, text) => { zoom.classList.remove('is-zoomed'); zoom.replaceChildren(image(src, item.title, 'ml-detail-mainimage', true, 'high')); caption.textContent = text || ''; };
     if (gallery.length > 1) {
       const thumbs = node('div', 'ml-thumbnails'); thumbs.setAttribute('aria-label', 'Material image views');
       gallery.forEach((g, index) => {
         const b = button('', '', () => { replaceImage(g.src, g.caption); thumbs.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true'); });
-        b.setAttribute('aria-label', 'View image ' + (index + 1)); b.setAttribute('aria-pressed', String(index === 0)); b.append(image(g.src, '', '', true)); thumbs.append(b);
+        b.setAttribute('aria-label', 'View image ' + (index + 1)); b.setAttribute('aria-pressed', String(g.src === (initialColourway?.image || item.image))); b.append(image(g.thumbnail || g.src, '', '', true)); thumbs.append(b);
       }); visual.append(thumbs);
     }
     const copy = node('div', 'ml-detail-copy');
@@ -409,7 +433,6 @@
       if (!value) return;
       const row = node('div'); row.append(node('dt', null, key), node('dd', null, value)); fields.append(row);
     }); copy.append(fields);
-    let selectedColorway = board.get(id)?.colorway || '';
     if (item.colorways.length) {
       copy.append(node('p', 'ml-note-label', 'Colourways'));
       const choices = node('div', 'ml-detail-choices');
@@ -419,7 +442,6 @@
           choices.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true');
         }); b.setAttribute('aria-pressed', String(selectedColorway === c.name)); choices.append(b);
       }); copy.append(choices);
-      const selected = item.colorways.find(c => c.name === selectedColorway); if (selected?.image) replaceImage(selected.image, selected.name);
     }
     const actions = node('div', 'ml-detail-actions');
     const save = button(board.has(id) ? 'Saved to Material Board ✓' : 'Save to Material Board', 'ml-button ml-button--dark', () => { saveItem(item, selectedColorway); toast('Saved to your Material Board'); if (pageIsBoard) renderBoard(); }); save.dataset.saveId = id; save.setAttribute('aria-pressed', String(board.has(id))); actions.append(save);
@@ -447,7 +469,7 @@
     content.append(node('h2', null, 'Compare materials'), node('p', 'ml-compare-intro', 'Compare the identified visual and development details. Physical performance requires the actual material.'));
     const scroll = node('div', 'ml-compare-scroll'), table = node('table'), selected = [...compared].map(id => byId.get(id)).filter(Boolean);
     const head = node('thead'), tr = node('tr'); tr.append(node('th', null, 'Material'));
-    selected.forEach(i => { const th = node('th'); th.append(image(i.image, i.title, '', true), node('p', 'ml-compare-name', i.title), node('p', 'ml-compare-id', i.id)); tr.append(th); }); head.append(tr); table.append(head);
+    selected.forEach(i => { const th = node('th'); th.append(image(previewFor(i), i.title, '', true), node('p', 'ml-compare-name', i.title), node('p', 'ml-compare-id', i.id)); tr.append(th); }); head.append(tr); table.append(head);
     const tbody = node('tbody');
     [['Type', i => i.type === 'fabric' ? 'Fabric' : 'Pattern'], ['Family', i => i.family], ['Structure', i => i.structure || i.technique || 'Not specified'], ['Colour', i => i.colors.join(' / ') || 'See reference'], ['Application', i => i.uses.join(' / ') || 'To be developed'], ['Source', i => SOURCE[i.sourceType]], ['Status', i => STATUS[i.status]], ['Collection', i => i.season]].forEach(([label, getter]) => {
       const row = node('tr'); const th = node('th', null, label); th.scope = 'row'; row.append(th); selected.forEach(i => row.append(node('td', null, getter(i)))); tbody.append(row);
@@ -460,7 +482,7 @@
     root.replaceChildren(heading('Material Board', 'Your saved fabrics, patterns and development notes.', 'SOHO Fashion / Your Selection'));
     if (sharedIds.length) {
       const shared = node('div', 'ml-board-shared'); shared.append(node('span', null, sharedIds.length + ' materials have been shared with you. Add them to your board to keep and annotate them.'), button('Add shared materials', 'ml-button ml-button--small', () => {
-        sharedIds.forEach(id => { if (byId.has(id)) saveItem(byId.get(id)); }); const n = sharedIds.length; sharedIds = []; history.replaceState({}, '', location.pathname); renderBoard(); toast(n + ' shared materials added');
+        sharedIds.forEach(id => { if (byId.has(id)) saveItem(byId.get(id), undefined, true); }); persist(); const n = sharedIds.length; sharedIds = []; history.replaceState({}, '', location.pathname); renderBoard(); toast(n + ' shared materials added');
       })); root.append(shared);
     }
     const actions = node('div', 'ml-board-actions');
@@ -488,7 +510,7 @@
     const current = items.filter(i => board.has(i.id) && (!groupFilter || (groupFilter === '__ungrouped' ? !board.get(i.id).group : board.get(i.id).group === groupFilter)));
     if (!current.length) {
       const empty = node('div', 'ml-empty'); empty.append(node('h2', null, board.size ? 'No materials in this group.' : 'Start with a material.'), node('p', null, board.size ? 'Choose another group to view your saved materials.' : 'Save fabrics and patterns while you browse. Keep colour choices, organise groups and add your development notes here.'), link('Explore the library ↗', LIBRARY_URL, 'ml-button ml-button--dark')); grid.append(empty);
-    } else current.forEach(i => grid.append(card(i, true)));
+    } else grid.append(...current.map((item, index) => card(item, true, index)));
     countUpdate(); syncPicked();
   }
   function boardRows() {
@@ -529,6 +551,7 @@
   }
 
   function wireSharedHeader() {
+    if (sharedHeaderWired) return; sharedHeaderWired = true;
     const search = document.querySelector('.header-search');
     if (search) search.addEventListener('submit', e => {
       e.preventDefault(); const query = search.querySelector('input')?.value.trim() || '';
@@ -539,21 +562,25 @@
     const contact = document.querySelector('[aria-label="Subscribe"], [aria-label="Contact SOHO Fashion"]'); if (contact) { contact.setAttribute('aria-label', 'Contact SOHO Fashion'); contact.addEventListener('click', () => { location.href = 'mailto:online@saintycorp.com'; }); }
   }
   async function load() {
+    if (loading) return; loading = true;
     try {
       const response = await fetch(DATA_URL); if (!response.ok) throw new Error('Library response ' + response.status);
       const data = await response.json(), raw = Array.isArray(data) ? data : data.items;
       if (!Array.isArray(raw)) throw new Error('No library items');
-      const seen = new Set(); items = raw.map(normalise).filter(i => { if (seen.has(i.id)) return false; seen.add(i.id); return true; }); byId = new Map(items.map(i => [i.id, i]));
+      const seen = new Set(); items = raw.map(normalise).filter(i => { if (seen.has(i.id)) return false; seen.add(i.id); return true; }); byId = new Map(items.map(i => [i.id, i])); libraryCards.clear();
       if (pageIsBoard) { const params = new URLSearchParams(location.search); sharedIds = [...new Set((params.get('ids') || '').split(','))].filter(id => byId.has(id)); renderBoard(); }
       else renderLibrary();
       wireSharedHeader();
-      window.addEventListener('popstate', () => { if (!pageIsBoard) { const previous = state.page; state = readState(); updateLibrary(true, true); if (state.page !== previous) requestAnimationFrame(scrollResults); } });
-      window.addEventListener('storage', e => { if (e.key === BOARD_KEY) { board = readBoard(); if (pageIsBoard) renderBoard(); else countUpdate(); } });
-      document.addEventListener('click', e => { if (!e.target.closest('.ml-filter')) root.querySelectorAll('.ml-filter[open]').forEach(d => { d.open = false; }); });
+      if (!lifecycleWired) {
+        lifecycleWired = true;
+        window.addEventListener('popstate', () => { if (!pageIsBoard) { const previous = state.page; state = readState(); updateLibrary(true, true); if (state.page !== previous) requestAnimationFrame(scrollResults); } });
+        window.addEventListener('storage', e => { if (e.key === BOARD_KEY) { board = readBoard(); if (pageIsBoard) renderBoard(); else countUpdate(); } });
+        document.addEventListener('click', e => { if (!e.target.closest('.ml-filter')) root.querySelectorAll('.ml-filter[open]').forEach(d => { d.open = false; }); });
+      }
     } catch (error) {
       root.replaceChildren(heading(pageIsBoard ? 'Material Board' : 'Materials & Patterns', 'Explore cloth, colour and pattern.'));
       const empty = node('div', 'ml-empty'); empty.append(node('h2', null, 'The library is temporarily unavailable.'), node('p', null, 'Your saved selection has not been changed. Please try loading the library again.'), button('Try again', 'ml-button', load)); root.append(empty);
-    }
+    } finally { loading = false; }
   }
   load();
 })();

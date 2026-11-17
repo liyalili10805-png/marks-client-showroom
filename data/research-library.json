@@ -3434,7 +3434,11 @@
       "role": "full-length silhouette · detail · editorial reference",
       "season": "A/W2026 Preview",
       "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
-      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026",
+      "thumbnail": "assets/research/thumbs/CW03-640.webp",
+      "srcset": "assets/research/thumbs/CW03-640.webp 640w, assets/research/thumbs/CW03-1280.webp 1280w",
+      "width": 2560,
+      "height": 3200
     },
     "CW04": {
       "src": "assets/research/CW04.jpg",
@@ -3443,7 +3447,11 @@
       "role": "full-length silhouette · detail · editorial reference",
       "season": "A/W2026 Preview",
       "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
-      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026",
+      "thumbnail": "assets/research/thumbs/CW04-640.webp",
+      "srcset": "assets/research/thumbs/CW04-640.webp 640w, assets/research/thumbs/CW04-1280.webp 1280w",
+      "width": 2560,
+      "height": 3200
     },
     "CW10": {
       "src": "assets/research/CW10.jpg",
@@ -3452,7 +3460,11 @@
       "role": "detail · editorial reference",
       "season": "A/W2026 Preview",
       "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
-      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026",
+      "thumbnail": "assets/research/thumbs/CW10-640.webp",
+      "srcset": "assets/research/thumbs/CW10-640.webp 640w, assets/research/thumbs/CW10-1280.webp 1280w",
+      "width": 2560,
+      "height": 3185
     },
     "CW11": {
       "src": "assets/research/CW11.jpg",
@@ -3461,7 +3473,11 @@
       "role": "detail · editorial reference",
       "season": "A/W2026 Preview",
       "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
-      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026",
+      "thumbnail": "assets/research/thumbs/CW11-640.webp",
+      "srcset": "assets/research/thumbs/CW11-640.webp 640w, assets/research/thumbs/CW11-1280.webp 1280w",
+      "width": 2560,
+      "height": 3840
     },
     "CW16": {
       "src": "assets/research/CW16.jpg",
@@ -3470,7 +3486,11 @@
       "role": "full-length silhouette · detail · editorial reference",
       "season": "A/W2026 Preview",
       "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
-      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026",
+      "thumbnail": "assets/research/thumbs/CW16-640.webp",
+      "srcset": "assets/research/thumbs/CW16-640.webp 640w, assets/research/thumbs/CW16-1280.webp 1280w",
+      "width": 2560,
+      "height": 3201
     },
     "CW17": {
       "src": "assets/research/CW17.jpg",
@@ -3479,7 +3499,11 @@
       "role": "full-length silhouette · detail · editorial reference",
       "season": "A/W2026 Preview",
       "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
-      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026",
+      "thumbnail": "assets/research/thumbs/CW17-640.webp",
+      "srcset": "assets/research/thumbs/CW17-640.webp 640w, assets/research/thumbs/CW17-1280.webp 1280w",
+      "width": 2560,
+      "height": 3200
     },
     "CW18": {
       "src": "assets/research/CW18.jpg",
@@ -3488,7 +3512,11 @@
       "role": "full-length silhouette · detail · editorial reference",
       "season": "A/W2026 Preview",
       "credit": "Carhartt WIP. Photography: Matthias Leidinger; art direction: Tim Kottman; styling: Aya Takeshima.",
-      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026"
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/carhartt-wip-preview-collection-fall-winter-2026",
+      "thumbnail": "assets/research/thumbs/CW18-640.webp",
+      "srcset": "assets/research/thumbs/CW18-640.webp 640w, assets/research/thumbs/CW18-1280.webp 1280w",
+      "width": 2560,
+      "height": 3200
     },
     "CP02": {
       "src": "assets/research/CP02.jpg",
@@ -3497,7 +3525,11 @@
       "role": "detail · editorial reference",
       "season": "A/W2026 Campaign",
       "credit": "Carhartt WIP. Photography: Craig Gareth Watkins; direction: Alex Acy; styling: Silvia Vinci.",
-      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/the-fall-winter-2026-campaign"
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/the-fall-winter-2026-campaign",
+      "thumbnail": "assets/research/thumbs/CP02-640.webp",
+      "srcset": "assets/research/thumbs/CP02-640.webp 640w, assets/research/thumbs/CP02-1280.webp 1280w",
+      "width": 4000,
+      "height": 2667
     },
     "CP05": {
       "src": "assets/research/CP05.jpg",
@@ -3506,7 +3538,11 @@
       "role": "detail · editorial reference",
       "season": "A/W2026 Campaign",
       "credit": "Carhartt WIP. Photography: Craig Gareth Watkins; direction: Alex Acy; styling: Silvia Vinci.",
-      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/the-fall-winter-2026-campaign"
+      "sourceUrl": "https://carhartt-wip.jp/blogs/journal/the-fall-winter-2026-campaign",
+      "thumbnail": "assets/research/thumbs/CP05-640.webp",
+      "srcset": "assets/research/thumbs/CP05-640.webp 640w, assets/research/thumbs/CP05-1280.webp 1200w",
+      "width": 1200,
+      "height": 1500
     },
     "TF02": {
       "src": "assets/research/TF02.jpg",
@@ -3515,7 +3551,11 @@
       "role": "Supplier editorial illustration",
       "season": "AW27/28 textile collection presentation",
       "credit": "Textil Santanderina AW27/28 process presentation; photographer and pictured garment designer not identified on source page.",
-      "sourceUrl": "https://textilsantanderina.com/new-finishes-aw27-28-collection/"
+      "sourceUrl": "https://textilsantanderina.com/new-finishes-aw27-28-collection/",
+      "thumbnail": "assets/research/thumbs/TF02-640.webp",
+      "srcset": "assets/research/thumbs/TF02-640.webp 640w, assets/research/thumbs/TF02-1280.webp 1024w",
+      "width": 1024,
+      "height": 683
     },
     "TF12": {
       "src": "assets/research/TF12.jpg",
@@ -3524,7 +3564,11 @@
       "role": "Supplier editorial illustration",
       "season": "AW27/28 textile collection presentation",
       "credit": "Textil Santanderina AW27/28 process presentation; photographer and pictured garment designer not identified on source page.",
-      "sourceUrl": "https://textilsantanderina.com/new-finishes-aw27-28-collection/"
+      "sourceUrl": "https://textilsantanderina.com/new-finishes-aw27-28-collection/",
+      "thumbnail": "assets/research/thumbs/TF12-640.webp",
+      "srcset": "assets/research/thumbs/TF12-640.webp 640w, assets/research/thumbs/TF12-1280.webp 1024w",
+      "width": 1024,
+      "height": 683
     },
     "OL08": {
       "src": "assets/research/editorial-08.jpg",
@@ -3533,7 +3577,11 @@
       "role": "Design detail",
       "season": "A/W 2026 editorial",
       "credit": "Image: LEMAIRE, Autumn/Winter 2026 Lookbook. Photography by Phil Engelhardt.",
-      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook"
+      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook",
+      "thumbnail": "assets/research/thumbs/OL08-640.webp",
+      "srcset": "assets/research/thumbs/OL08-640.webp 640w, assets/research/thumbs/OL08-1280.webp 1000w",
+      "width": 1000,
+      "height": 1249
     },
     "OL09": {
       "src": "assets/research/editorial-09.jpg",
@@ -3542,7 +3590,11 @@
       "role": "Editorial silhouette",
       "season": "A/W 2026 editorial",
       "credit": "Image: LEMAIRE, Autumn/Winter 2026 Lookbook. Photography by Phil Engelhardt.",
-      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook"
+      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook",
+      "thumbnail": "assets/research/thumbs/OL09-640.webp",
+      "srcset": "assets/research/thumbs/OL09-640.webp 640w, assets/research/thumbs/OL09-1280.webp 1000w",
+      "width": 1000,
+      "height": 1249
     },
     "OL31": {
       "src": "assets/research/editorial-31.jpg",
@@ -3551,7 +3603,11 @@
       "role": "Editorial silhouette",
       "season": "A/W 2026 editorial",
       "credit": "Image: LEMAIRE, Autumn/Winter 2026 Lookbook. Photography by Phil Engelhardt.",
-      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook"
+      "sourceUrl": "https://www.lemaire.fr/pages/autumn-winter-2026-lookbook",
+      "thumbnail": "assets/research/thumbs/OL31-640.webp",
+      "srcset": "assets/research/thumbs/OL31-640.webp 640w, assets/research/thumbs/OL31-1280.webp 1000w",
+      "width": 1000,
+      "height": 1249
     },
     "GI04": {
       "src": "assets/research/GI04.webp",
@@ -3560,7 +3616,11 @@
       "role": "Textile direction",
       "season": "AW27/28 textile forecast",
       "credit": "Ego Pecci - IT / Tebur Textile - CN. Image: bout / @a.bout__.",
-      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments"
+      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments",
+      "thumbnail": "assets/research/thumbs/GI04-640.webp",
+      "srcset": "assets/research/thumbs/GI04-640.webp 640w, assets/research/thumbs/GI04-1280.webp 954w",
+      "width": 954,
+      "height": 404
     },
     "GI06": {
       "src": "assets/research/GI06.webp",
@@ -3569,7 +3629,11 @@
       "role": "Textile direction",
       "season": "AW27/28 textile forecast",
       "credit": "Maher Khoder - TR / Turkay Tekstil - TR / Mitwill Textiles Europe - FR. Image: Amanda Kelly Ltd - GB.",
-      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments"
+      "sourceUrl": "https://www.premierevision.com/en/articles/9e280496-65b6-f111-a6a9-6045bdf5ca6d/-aw-27-28-key-materials-how-a-new-relationship-with-time-is-shaping-material-developments",
+      "thumbnail": "assets/research/thumbs/GI06-640.webp",
+      "srcset": "assets/research/thumbs/GI06-640.webp 640w, assets/research/thumbs/GI06-1280.webp 952w",
+      "width": 952,
+      "height": 404
     },
     "UD01": {
       "src": "assets/research/UD01.jpg",
@@ -3578,7 +3642,11 @@
       "role": "product still life",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing",
+      "thumbnail": "assets/research/thumbs/UD01-640.webp",
+      "srcset": "assets/research/thumbs/UD01-640.webp 640w, assets/research/thumbs/UD01-1280.webp 1280w",
+      "width": 2000,
+      "height": 851
     },
     "UD02": {
       "src": "assets/research/UD02.jpg",
@@ -3587,7 +3655,11 @@
       "role": "fashion editorial / upper-body silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing",
+      "thumbnail": "assets/research/thumbs/UD02-640.webp",
+      "srcset": "assets/research/thumbs/UD02-640.webp 640w, assets/research/thumbs/UD02-1280.webp 986w",
+      "width": 986,
+      "height": 1314
     },
     "UD03": {
       "src": "assets/research/UD03.jpg",
@@ -3596,7 +3668,11 @@
       "role": "fashion editorial / full-body silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing",
+      "thumbnail": "assets/research/thumbs/UD03-640.webp",
+      "srcset": "assets/research/thumbs/UD03-640.webp 640w, assets/research/thumbs/UD03-1280.webp 986w",
+      "width": 986,
+      "height": 1314
     },
     "UD04": {
       "src": "assets/research/UD04.png",
@@ -3605,7 +3681,11 @@
       "role": "source construction illustration",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing",
+      "thumbnail": "assets/research/thumbs/UD04-640.webp",
+      "srcset": "assets/research/thumbs/UD04-640.webp 640w, assets/research/thumbs/UD04-1280.webp 1060w",
+      "width": 1060,
+      "height": 532
     },
     "UD05": {
       "src": "assets/research/UD05.png",
@@ -3614,7 +3694,11 @@
       "role": "source textile construction illustration",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing",
+      "thumbnail": "assets/research/thumbs/UD05-640.webp",
+      "srcset": "assets/research/thumbs/UD05-640.webp 640w, assets/research/thumbs/UD05-1280.webp 1060w",
+      "width": 1060,
+      "height": 532
     },
     "UD06": {
       "src": "assets/research/UD06.png",
@@ -3623,7 +3707,11 @@
       "role": "source padding construction illustration",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Yoshio Kato (products), Shota Kono, Seishi Shirakawa. Styling: Shotaro Yamaguchi, Akio Hasegawa. Illustrations: Dan Matutina.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/unique-clothing",
+      "thumbnail": "assets/research/thumbs/UD06-640.webp",
+      "srcset": "assets/research/thumbs/UD06-640.webp 640w, assets/research/thumbs/UD06-1280.webp 1060w",
+      "width": 1060,
+      "height": 532
     },
     "UF01": {
       "src": "assets/research/UF01.jpg",
@@ -3632,7 +3720,11 @@
       "role": "fashion editorial / partial silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments",
+      "thumbnail": "assets/research/thumbs/UF01-640.webp",
+      "srcset": "assets/research/thumbs/UF01-1280.webp 384w",
+      "width": 384,
+      "height": 790
     },
     "UF02": {
       "src": "assets/research/UF02.jpg",
@@ -3641,7 +3733,11 @@
       "role": "fashion editorial / full-body silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments",
+      "thumbnail": "assets/research/thumbs/UF02-640.webp",
+      "srcset": "assets/research/thumbs/UF02-640.webp 640w, assets/research/thumbs/UF02-1280.webp 1280w",
+      "width": 1446,
+      "height": 1154
     },
     "UF03": {
       "src": "assets/research/UF03.jpg",
@@ -3650,7 +3746,11 @@
       "role": "fashion editorial / partial silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments",
+      "thumbnail": "assets/research/thumbs/UF03-640.webp",
+      "srcset": "assets/research/thumbs/UF03-640.webp 640w, assets/research/thumbs/UF03-1280.webp 986w",
+      "width": 986,
+      "height": 1314
     },
     "UF05": {
       "src": "assets/research/UF05.jpg",
@@ -3659,7 +3759,11 @@
       "role": "fashion editorial / upper-body silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments",
+      "thumbnail": "assets/research/thumbs/UF05-640.webp",
+      "srcset": "assets/research/thumbs/UF05-640.webp 640w, assets/research/thumbs/UF05-1280.webp 986w",
+      "width": 986,
+      "height": 986
     },
     "UF06": {
       "src": "assets/research/UF06.jpg",
@@ -3668,7 +3772,11 @@
       "role": "fashion editorial / seated styling",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments",
+      "thumbnail": "assets/research/thumbs/UF06-640.webp",
+      "srcset": "assets/research/thumbs/UF06-640.webp 640w, assets/research/thumbs/UF06-1280.webp 986w",
+      "width": 986,
+      "height": 986
     },
     "UF08": {
       "src": "assets/research/UF08.jpg",
@@ -3677,7 +3785,11 @@
       "role": "fashion editorial / partial group silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Naohiro Ogawa, Yoshio Kato (products). Styling: Yutaka Aoki.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/fluffy-moments",
+      "thumbnail": "assets/research/thumbs/UF08-640.webp",
+      "srcset": "assets/research/thumbs/UF08-640.webp 640w, assets/research/thumbs/UF08-1280.webp 986w",
+      "width": 986,
+      "height": 1314
     },
     "UC01": {
       "src": "assets/research/UC01.jpg",
@@ -3686,7 +3798,11 @@
       "role": "fashion editorial / seated silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Kohei Kawashima. Styling: Mitsuru Kurosawa.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics",
+      "thumbnail": "assets/research/thumbs/UC01-640.webp",
+      "srcset": "assets/research/thumbs/UC01-640.webp 640w, assets/research/thumbs/UC01-1280.webp 986w",
+      "width": 986,
+      "height": 1314
     },
     "UC02": {
       "src": "assets/research/UC02.jpg",
@@ -3695,7 +3811,11 @@
       "role": "fashion editorial / full-body silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Kohei Kawashima. Styling: Mitsuru Kurosawa.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics",
+      "thumbnail": "assets/research/thumbs/UC02-640.webp",
+      "srcset": "assets/research/thumbs/UC02-640.webp 640w, assets/research/thumbs/UC02-1280.webp 986w",
+      "width": 986,
+      "height": 1314
     },
     "UC03": {
       "src": "assets/research/UC03.jpg",
@@ -3704,7 +3824,11 @@
       "role": "fashion editorial / upper-body silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Kohei Kawashima. Styling: Mitsuru Kurosawa.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics",
+      "thumbnail": "assets/research/thumbs/UC03-640.webp",
+      "srcset": "assets/research/thumbs/UC03-640.webp 640w, assets/research/thumbs/UC03-1280.webp 986w",
+      "width": 986,
+      "height": 740
     },
     "UC05": {
       "src": "assets/research/UC05.jpg",
@@ -3713,7 +3837,11 @@
       "role": "fashion editorial / full-body silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Kohei Kawashima. Styling: Mitsuru Kurosawa.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics",
+      "thumbnail": "assets/research/thumbs/UC05-640.webp",
+      "srcset": "assets/research/thumbs/UC05-640.webp 640w, assets/research/thumbs/UC05-1280.webp 986w",
+      "width": 986,
+      "height": 1314
     },
     "UC06": {
       "src": "assets/research/UC06.jpg",
@@ -3722,7 +3850,11 @@
       "role": "fashion editorial / partial silhouette",
       "season": "A/W 2026",
       "credit": "UNIQLO LifeWear magazine. Photography: Kohei Kawashima. Styling: Mitsuru Kurosawa.",
-      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics"
+      "sourceUrl": "https://www.uniqlo.com/us/en/special-feature/lifewear-magazine/26fw/the-city-classics",
+      "thumbnail": "assets/research/thumbs/UC06-640.webp",
+      "srcset": "assets/research/thumbs/UC06-640.webp 640w, assets/research/thumbs/UC06-1280.webp 986w",
+      "width": 986,
+      "height": 1314
     },
     "LL01": {
       "src": "assets/research/LL01.jpg",
@@ -3731,7 +3863,11 @@
       "role": "fashion editorial / garment detail",
       "season": "Summer 2026 campaign (asset dated May 2026)",
       "credit": "lululemon. Photographer not identified on source page.",
-      "sourceUrl": "https://shop.lululemon.com/story/yoga-pilates"
+      "sourceUrl": "https://shop.lululemon.com/story/yoga-pilates",
+      "thumbnail": "assets/research/thumbs/LL01-640.webp",
+      "srcset": "assets/research/thumbs/LL01-640.webp 640w, assets/research/thumbs/LL01-1280.webp 648w",
+      "width": 648,
+      "height": 778
     },
     "LL02": {
       "src": "assets/research/LL02.jpg",
@@ -3740,7 +3876,11 @@
       "role": "fashion editorial / full-body silhouette",
       "season": "Summer 2026 campaign (asset dated May 2026)",
       "credit": "lululemon. Photographer not identified on source page.",
-      "sourceUrl": "https://shop.lululemon.com/story/yoga-pilates"
+      "sourceUrl": "https://shop.lululemon.com/story/yoga-pilates",
+      "thumbnail": "assets/research/thumbs/LL02-640.webp",
+      "srcset": "assets/research/thumbs/LL02-640.webp 640w, assets/research/thumbs/LL02-1280.webp 1280w",
+      "width": 1280,
+      "height": 1600
     },
     "JF01": {
       "src": "assets/research/JF01.jpg",
@@ -3749,7 +3889,11 @@
       "role": "Actual cloth close-up · woven pattern and surface study",
       "season": "A/W 2027/28",
       "credit": "John Foster · Autumn/Winter 2027/28",
-      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/"
+      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/",
+      "thumbnail": "assets/research/thumbs/JF01-640.webp",
+      "srcset": "assets/research/thumbs/JF01-640.webp 640w, assets/research/thumbs/JF01-1280.webp 700w",
+      "width": 700,
+      "height": 700
     },
     "JF02": {
       "src": "assets/research/JF02.jpg",
@@ -3758,7 +3902,11 @@
       "role": "Actual swatch close-up · woven texture study",
       "season": "A/W 2027/28",
       "credit": "John Foster · Autumn/Winter 2027/28",
-      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/"
+      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/",
+      "thumbnail": "assets/research/thumbs/JF02-640.webp",
+      "srcset": "assets/research/thumbs/JF02-640.webp 640w, assets/research/thumbs/JF02-1280.webp 700w",
+      "width": 700,
+      "height": 700
     },
     "JF03": {
       "src": "assets/research/JF03.jpg",
@@ -3767,7 +3915,11 @@
       "role": "Actual cloth and inspiration board · colour and pattern study",
       "season": "A/W 2027/28",
       "credit": "John Foster · Autumn/Winter 2027/28",
-      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/"
+      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/",
+      "thumbnail": "assets/research/thumbs/JF03-640.webp",
+      "srcset": "assets/research/thumbs/JF03-640.webp 640w, assets/research/thumbs/JF03-1280.webp 700w",
+      "width": 700,
+      "height": 700
     },
     "JF04": {
       "src": "assets/research/JF04.jpg",
@@ -3776,7 +3928,11 @@
       "role": "Actual swatch close-up · woven micro-pattern study",
       "season": "A/W 2027/28",
       "credit": "John Foster · Autumn/Winter 2027/28",
-      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/"
+      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/",
+      "thumbnail": "assets/research/thumbs/JF04-640.webp",
+      "srcset": "assets/research/thumbs/JF04-640.webp 640w, assets/research/thumbs/JF04-1280.webp 700w",
+      "width": 700,
+      "height": 700
     },
     "JF05": {
       "src": "assets/research/JF05.jpg",
@@ -3785,7 +3941,11 @@
       "role": "Actual cloth close-up · check and surface study",
       "season": "A/W 2027/28",
       "credit": "John Foster · Autumn/Winter 2027/28",
-      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/"
+      "sourceUrl": "https://john-foster.co.uk/autumn-winter-seasonal-fabric-collection/",
+      "thumbnail": "assets/research/thumbs/JF05-640.webp",
+      "srcset": "assets/research/thumbs/JF05-640.webp 640w, assets/research/thumbs/JF05-1280.webp 700w",
+      "width": 700,
+      "height": 700
     },
     "KM03": {
       "src": "assets/research/KM03.jpg",
@@ -3794,7 +3954,11 @@
       "role": "Actual fabric macro · knit face and brushed reverse",
       "season": "Current fabric reference · collection season not stated",
       "credit": "SWATCHON · QL-025945",
-      "sourceUrl": "https://www.swatchon.com/fabric/QL-025945"
+      "sourceUrl": "https://www.swatchon.com/fabric/QL-025945",
+      "thumbnail": "assets/research/thumbs/KM03-640.webp",
+      "srcset": "assets/research/thumbs/KM03-640.webp 640w, assets/research/thumbs/KM03-1280.webp 1080w",
+      "width": 1080,
+      "height": 1233
     }
   },
   "featured": [

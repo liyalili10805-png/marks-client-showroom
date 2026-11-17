@@ -1,7 +1,8 @@
 ﻿(function () {
   'use strict';
 
-  const DATA_URL = 'data/collections.json';
+  const scriptVersion = document.currentScript ? new URL(document.currentScript.src, location.href).searchParams.get('v') : '';
+  const DATA_URL = 'data/collections.json?v=' + encodeURIComponent(scriptVersion || '20261117perf1');
   const SELECTION_KEY = 'soho-collection-selection';
   const MATERIAL_KEY = 'soho-material-choice';
   const LABELS = [
@@ -175,8 +176,16 @@
     const layout = el('div', 'materials-layout');
     const aside = el('aside', 'materials-product');
     const image = document.createElement('img');
-    image.src = (product.views && product.views.length) ? product.views[0] : product.image;
     image.alt = product.name;
+    image.width = 480;
+    image.height = 720;
+    image.loading = 'eager';
+    image.decoding = 'async';
+    image.fetchPriority = 'high';
+    const original = (product.views && product.views.length) ? product.views[0] : product.image;
+    const source = product.thumbnail || product.listImage || original;
+    if (source !== original) image.addEventListener('error', () => { image.src = original; }, {once: true});
+    image.src = source;
     aside.append(image, el('p', 'm-code', product.code), el('p', 'm-name', product.name));
     const detailLink = el('a', null, 'View style details →');
     detailLink.href = `collection-detail.html?code=${encodeURIComponent(product.code)}#materials`;
@@ -192,7 +201,7 @@
     renderTable(table);
   }
 
-  fetch(DATA_URL + '?v=' + Date.now())
+  fetch(DATA_URL)
     .then(response => response.json())
     .then(payload => {
       data = payload;
@@ -204,4 +213,5 @@
       if (root) root.innerHTML = '<p class="empty-note">Materials could not be loaded.</p>';
     });
 })();
+
 

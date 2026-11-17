@@ -63,6 +63,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP024.webp",
+      "thumbnail": "assets/material-library/MP024-thumb.webp",
       "images": [
         "assets/material-library/MP024.webp"
       ],
@@ -79,7 +80,8 @@
             "Black",
             "Green"
           ],
-          "image": "assets/material-library/MP024.webp"
+          "image": "assets/material-library/MP024.webp",
+          "thumbnail": "assets/material-library/MP024-thumb.webp"
         }
       ]
     },
@@ -145,6 +147,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP055.webp",
+      "thumbnail": "assets/material-library/MP055-thumb.webp",
       "images": [
         "assets/material-library/MP055.webp"
       ],
@@ -162,7 +165,8 @@
             "Navy",
             "Green"
           ],
-          "image": "assets/material-library/MP055.webp"
+          "image": "assets/material-library/MP055.webp",
+          "thumbnail": "assets/material-library/MP055-thumb.webp"
         }
       ]
     },
@@ -225,6 +229,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP062.webp",
+      "thumbnail": "assets/material-library/MP062-thumb.webp",
       "images": [
         "assets/material-library/MP062.webp"
       ],
@@ -241,7 +246,8 @@
             "Green",
             "Khaki"
           ],
-          "image": "assets/material-library/MP062.webp"
+          "image": "assets/material-library/MP062.webp",
+          "thumbnail": "assets/material-library/MP062-thumb.webp"
         },
         {
           "name": "White / Blue",
@@ -249,7 +255,8 @@
             "White",
             "Blue"
           ],
-          "image": "assets/material-library/MP062-c2.webp"
+          "image": "assets/material-library/MP062-c2.webp",
+          "thumbnail": "assets/material-library/MP062-c2-thumb.webp"
         },
         {
           "name": "Purple / Lilac",
@@ -257,7 +264,8 @@
             "Purple",
             "Lilac"
           ],
-          "image": "assets/material-library/MP062-c3.webp"
+          "image": "assets/material-library/MP062-c3.webp",
+          "thumbnail": "assets/material-library/MP062-c3-thumb.webp"
         }
       ]
     },
@@ -320,6 +328,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP076.webp",
+      "thumbnail": "assets/material-library/MP076-thumb.webp",
       "images": [
         "assets/material-library/MP076.webp"
       ],
@@ -335,14 +344,16 @@
           "colors": [
             "Navy"
           ],
-          "image": "assets/material-library/MP076.webp"
+          "image": "assets/material-library/MP076.webp",
+          "thumbnail": "assets/material-library/MP076-thumb.webp"
         },
         {
           "name": "Red",
           "colors": [
             "Red"
           ],
-          "image": "assets/material-library/MP076-c2.webp"
+          "image": "assets/material-library/MP076-c2.webp",
+          "thumbnail": "assets/material-library/MP076-c2-thumb.webp"
         }
       ]
     },
@@ -408,6 +419,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP091.webp",
+      "thumbnail": "assets/material-library/MP091-thumb.webp",
       "images": [
         "assets/material-library/MP091.webp"
       ],
@@ -426,7 +438,8 @@
             "Charcoal",
             "Beige"
           ],
-          "image": "assets/material-library/MP091.webp"
+          "image": "assets/material-library/MP091.webp",
+          "thumbnail": "assets/material-library/MP091-thumb.webp"
         }
       ]
     },
@@ -487,6 +500,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP111.webp",
+      "thumbnail": "assets/material-library/MP111-thumb.webp",
       "images": [
         "assets/material-library/MP111.webp"
       ],
@@ -503,7 +517,8 @@
             "Green",
             "Brown"
           ],
-          "image": "assets/material-library/MP111.webp"
+          "image": "assets/material-library/MP111.webp",
+          "thumbnail": "assets/material-library/MP111-thumb.webp"
         }
       ]
     },
@@ -567,6 +582,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP126.webp",
+      "thumbnail": "assets/material-library/MP126-thumb.webp",
       "images": [
         "assets/material-library/MP126.webp"
       ],
@@ -585,14 +601,16 @@
             "Putty",
             "Pink"
           ],
-          "image": "assets/material-library/MP126.webp"
+          "image": "assets/material-library/MP126.webp",
+          "thumbnail": "assets/material-library/MP126-thumb.webp"
         },
         {
           "name": "Blue",
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP126-c2.webp"
+          "image": "assets/material-library/MP126-c2.webp",
+          "thumbnail": "assets/material-library/MP126-c2-thumb.webp"
         },
         {
           "name": "Red / Pink / Magenta",
@@ -601,7 +619,8 @@
             "Pink",
             "Magenta"
           ],
-          "image": "assets/material-library/MP126-c3.webp"
+          "image": "assets/material-library/MP126-c3.webp",
+          "thumbnail": "assets/material-library/MP126-c3-thumb.webp"
         },
         {
           "name": "Orange / Lilac",
@@ -609,7 +628,8 @@
             "Orange",
             "Lilac"
           ],
-          "image": "assets/material-library/MP126-c4.webp"
+          "image": "assets/material-library/MP126-c4.webp",
+          "thumbnail": "assets/material-library/MP126-c4-thumb.webp"
         }
       ]
     },
@@ -677,6 +697,7 @@
       ],
       "designNote": "AI-assisted design concept. Repeat alignment, production scale, colour matching and a physical strike-off remain to be developed.",
       "image": "assets/material-library/MS001.webp",
+      "thumbnail": "assets/material-library/MS001-thumb.webp",
       "images": [
         "assets/material-library/MS001.webp"
       ],
@@ -742,6 +763,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP001.webp",
+      "thumbnail": "assets/material-library/MP001-thumb.webp",
       "images": [
         "assets/material-library/MP001.webp"
       ],
@@ -758,7 +780,8 @@
             "Blue",
             "Green"
           ],
-          "image": "assets/material-library/MP001.webp"
+          "image": "assets/material-library/MP001.webp",
+          "thumbnail": "assets/material-library/MP001-thumb.webp"
         },
         {
           "name": "Green / Pink",
@@ -766,7 +789,8 @@
             "Green",
             "Pink"
           ],
-          "image": "assets/material-library/MP001-c2.webp"
+          "image": "assets/material-library/MP001-c2.webp",
+          "thumbnail": "assets/material-library/MP001-c2-thumb.webp"
         }
       ]
     },
@@ -829,6 +853,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP002.webp",
+      "thumbnail": "assets/material-library/MP002-thumb.webp",
       "images": [
         "assets/material-library/MP002.webp"
       ],
@@ -845,14 +870,16 @@
             "Green",
             "Khaki"
           ],
-          "image": "assets/material-library/MP002.webp"
+          "image": "assets/material-library/MP002.webp",
+          "thumbnail": "assets/material-library/MP002-thumb.webp"
         },
         {
           "name": "Blue",
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP002-c2.webp"
+          "image": "assets/material-library/MP002-c2.webp",
+          "thumbnail": "assets/material-library/MP002-c2-thumb.webp"
         }
       ]
     },
@@ -915,6 +942,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP003.webp",
+      "thumbnail": "assets/material-library/MP003-thumb.webp",
       "images": [
         "assets/material-library/MP003.webp"
       ],
@@ -927,14 +955,16 @@
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP003.webp"
+          "image": "assets/material-library/MP003.webp",
+          "thumbnail": "assets/material-library/MP003-thumb.webp"
         },
         {
           "name": "Pink",
           "colors": [
             "Pink"
           ],
-          "image": "assets/material-library/MP003-c2.webp"
+          "image": "assets/material-library/MP003-c2.webp",
+          "thumbnail": "assets/material-library/MP003-c2-thumb.webp"
         }
       ]
     },
@@ -996,6 +1026,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP004.webp",
+      "thumbnail": "assets/material-library/MP004-thumb.webp",
       "images": [
         "assets/material-library/MP004.webp"
       ],
@@ -1010,7 +1041,8 @@
             "Brown",
             "Pink"
           ],
-          "image": "assets/material-library/MP004.webp"
+          "image": "assets/material-library/MP004.webp",
+          "thumbnail": "assets/material-library/MP004-thumb.webp"
         },
         {
           "name": "Cream / Green",
@@ -1018,7 +1050,8 @@
             "Cream",
             "Green"
           ],
-          "image": "assets/material-library/MP004-c2.webp"
+          "image": "assets/material-library/MP004-c2.webp",
+          "thumbnail": "assets/material-library/MP004-c2-thumb.webp"
         },
         {
           "name": "Green / Purple / Lilac / Mint",
@@ -1028,7 +1061,8 @@
             "Lilac",
             "Mint"
           ],
-          "image": "assets/material-library/MP004-c3.webp"
+          "image": "assets/material-library/MP004-c3.webp",
+          "thumbnail": "assets/material-library/MP004-c3-thumb.webp"
         },
         {
           "name": "Cream / Lilac / Lavender",
@@ -1037,7 +1071,8 @@
             "Lilac",
             "Lavender"
           ],
-          "image": "assets/material-library/MP004-c4.webp"
+          "image": "assets/material-library/MP004-c4.webp",
+          "thumbnail": "assets/material-library/MP004-c4-thumb.webp"
         }
       ]
     },
@@ -1102,6 +1137,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP005.webp",
+      "thumbnail": "assets/material-library/MP005-thumb.webp",
       "images": [
         "assets/material-library/MP005.webp"
       ],
@@ -1120,7 +1156,8 @@
             "Purple",
             "Lilac"
           ],
-          "image": "assets/material-library/MP005.webp"
+          "image": "assets/material-library/MP005.webp",
+          "thumbnail": "assets/material-library/MP005-thumb.webp"
         },
         {
           "name": "White / Pink / Purple / Lilac",
@@ -1130,7 +1167,8 @@
             "Purple",
             "Lilac"
           ],
-          "image": "assets/material-library/MP005-c2.webp"
+          "image": "assets/material-library/MP005-c2.webp",
+          "thumbnail": "assets/material-library/MP005-c2-thumb.webp"
         }
       ]
     },
@@ -1193,6 +1231,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP008.webp",
+      "thumbnail": "assets/material-library/MP008-thumb.webp",
       "images": [
         "assets/material-library/MP008.webp"
       ],
@@ -1210,7 +1249,8 @@
             "Brown",
             "Taupe"
           ],
-          "image": "assets/material-library/MP008.webp"
+          "image": "assets/material-library/MP008.webp",
+          "thumbnail": "assets/material-library/MP008-thumb.webp"
         },
         {
           "name": "White / Navy / Blue",
@@ -1219,7 +1259,8 @@
             "Navy",
             "Blue"
           ],
-          "image": "assets/material-library/MP008-c2.webp"
+          "image": "assets/material-library/MP008-c2.webp",
+          "thumbnail": "assets/material-library/MP008-c2-thumb.webp"
         },
         {
           "name": "White / Red",
@@ -1227,7 +1268,8 @@
             "White",
             "Red"
           ],
-          "image": "assets/material-library/MP008-c3.webp"
+          "image": "assets/material-library/MP008-c3.webp",
+          "thumbnail": "assets/material-library/MP008-c3-thumb.webp"
         }
       ]
     },
@@ -1289,6 +1331,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP019.webp",
+      "thumbnail": "assets/material-library/MP019-thumb.webp",
       "images": [
         "assets/material-library/MP019.webp"
       ],
@@ -1301,21 +1344,24 @@
           "colors": [
             "Brown"
           ],
-          "image": "assets/material-library/MP019.webp"
+          "image": "assets/material-library/MP019.webp",
+          "thumbnail": "assets/material-library/MP019-thumb.webp"
         },
         {
           "name": "Red",
           "colors": [
             "Red"
           ],
-          "image": "assets/material-library/MP019-c2.webp"
+          "image": "assets/material-library/MP019-c2.webp",
+          "thumbnail": "assets/material-library/MP019-c2-thumb.webp"
         },
         {
           "name": "Orange",
           "colors": [
             "Orange"
           ],
-          "image": "assets/material-library/MP019-c3.webp"
+          "image": "assets/material-library/MP019-c3.webp",
+          "thumbnail": "assets/material-library/MP019-c3-thumb.webp"
         }
       ]
     },
@@ -1383,6 +1429,7 @@
       "trendIds": [],
       "designNote": "AI-assisted design concept. Repeat alignment, production scale, colour matching and a physical strike-off remain to be developed.",
       "image": "assets/material-library/MS004.webp",
+      "thumbnail": "assets/material-library/MS004-thumb.webp",
       "images": [
         "assets/material-library/MS004.webp"
       ],
@@ -1452,6 +1499,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP018.webp",
+      "thumbnail": "assets/material-library/MP018-thumb.webp",
       "images": [
         "assets/material-library/MP018.webp"
       ],
@@ -1471,7 +1519,8 @@
             "Taupe",
             "Red"
           ],
-          "image": "assets/material-library/MP018.webp"
+          "image": "assets/material-library/MP018.webp",
+          "thumbnail": "assets/material-library/MP018-thumb.webp"
         },
         {
           "name": "Blue / Brown / Taupe / Red",
@@ -1481,7 +1530,8 @@
             "Taupe",
             "Red"
           ],
-          "image": "assets/material-library/MP018-c2.webp"
+          "image": "assets/material-library/MP018-c2.webp",
+          "thumbnail": "assets/material-library/MP018-c2-thumb.webp"
         }
       ]
     },
@@ -1543,6 +1593,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP012.webp",
+      "thumbnail": "assets/material-library/MP012-thumb.webp",
       "images": [
         "assets/material-library/MP012.webp"
       ],
@@ -1559,7 +1610,8 @@
             "Blue",
             "Yellow"
           ],
-          "image": "assets/material-library/MP012.webp"
+          "image": "assets/material-library/MP012.webp",
+          "thumbnail": "assets/material-library/MP012-thumb.webp"
         }
       ]
     },
@@ -1620,6 +1672,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP007.webp",
+      "thumbnail": "assets/material-library/MP007-thumb.webp",
       "images": [
         "assets/material-library/MP007.webp"
       ],
@@ -1633,7 +1686,8 @@
             "Navy",
             "Blue"
           ],
-          "image": "assets/material-library/MP007.webp"
+          "image": "assets/material-library/MP007.webp",
+          "thumbnail": "assets/material-library/MP007-thumb.webp"
         },
         {
           "name": "Blue / Orange / Lilac",
@@ -1642,14 +1696,16 @@
             "Orange",
             "Lilac"
           ],
-          "image": "assets/material-library/MP007-c2.webp"
+          "image": "assets/material-library/MP007-c2.webp",
+          "thumbnail": "assets/material-library/MP007-c2-thumb.webp"
         },
         {
           "name": "Blue",
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP007-c3.webp"
+          "image": "assets/material-library/MP007-c3.webp",
+          "thumbnail": "assets/material-library/MP007-c3-thumb.webp"
         }
       ]
     },
@@ -1711,6 +1767,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP042.webp",
+      "thumbnail": "assets/material-library/MP042-thumb.webp",
       "images": [
         "assets/material-library/MP042.webp"
       ],
@@ -1724,7 +1781,8 @@
             "Yellow",
             "Mustard"
           ],
-          "image": "assets/material-library/MP042.webp"
+          "image": "assets/material-library/MP042.webp",
+          "thumbnail": "assets/material-library/MP042-thumb.webp"
         }
       ]
     },
@@ -1790,6 +1848,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP006.webp",
+      "thumbnail": "assets/material-library/MP006-thumb.webp",
       "images": [
         "assets/material-library/MP006.webp"
       ],
@@ -1807,7 +1866,8 @@
             "Brown",
             "Mint"
           ],
-          "image": "assets/material-library/MP006.webp"
+          "image": "assets/material-library/MP006.webp",
+          "thumbnail": "assets/material-library/MP006-thumb.webp"
         },
         {
           "name": "Brown / Pink / Purple / Lilac",
@@ -1817,7 +1877,8 @@
             "Purple",
             "Lilac"
           ],
-          "image": "assets/material-library/MP006-c2.webp"
+          "image": "assets/material-library/MP006-c2.webp",
+          "thumbnail": "assets/material-library/MP006-c2-thumb.webp"
         },
         {
           "name": "White / Purple",
@@ -1825,7 +1886,8 @@
             "White",
             "Purple"
           ],
-          "image": "assets/material-library/MP006-c3.webp"
+          "image": "assets/material-library/MP006-c3.webp",
+          "thumbnail": "assets/material-library/MP006-c3-thumb.webp"
         },
         {
           "name": "Cream / Turquoise",
@@ -1833,7 +1895,8 @@
             "Cream",
             "Turquoise"
           ],
-          "image": "assets/material-library/MP006-c4.webp"
+          "image": "assets/material-library/MP006-c4.webp",
+          "thumbnail": "assets/material-library/MP006-c4-thumb.webp"
         }
       ]
     },
@@ -1898,6 +1961,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP009.webp",
+      "thumbnail": "assets/material-library/MP009-thumb.webp",
       "images": [
         "assets/material-library/MP009.webp"
       ],
@@ -1915,7 +1979,8 @@
             "Grey",
             "Sage"
           ],
-          "image": "assets/material-library/MP009.webp"
+          "image": "assets/material-library/MP009.webp",
+          "thumbnail": "assets/material-library/MP009-thumb.webp"
         },
         {
           "name": "Green / Petrol / Mint",
@@ -1924,7 +1989,8 @@
             "Petrol",
             "Mint"
           ],
-          "image": "assets/material-library/MP009-c2.webp"
+          "image": "assets/material-library/MP009-c2.webp",
+          "thumbnail": "assets/material-library/MP009-c2-thumb.webp"
         },
         {
           "name": "Navy / Blue",
@@ -1932,14 +1998,16 @@
             "Navy",
             "Blue"
           ],
-          "image": "assets/material-library/MP009-c3.webp"
+          "image": "assets/material-library/MP009-c3.webp",
+          "thumbnail": "assets/material-library/MP009-c3-thumb.webp"
         },
         {
           "name": "Pink",
           "colors": [
             "Pink"
           ],
-          "image": "assets/material-library/MP009-c4.webp"
+          "image": "assets/material-library/MP009-c4.webp",
+          "thumbnail": "assets/material-library/MP009-c4-thumb.webp"
         }
       ]
     },
@@ -2003,6 +2071,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP030.webp",
+      "thumbnail": "assets/material-library/MP030-thumb.webp",
       "images": [
         "assets/material-library/MP030.webp"
       ],
@@ -2017,7 +2086,8 @@
             "Green",
             "Khaki"
           ],
-          "image": "assets/material-library/MP030.webp"
+          "image": "assets/material-library/MP030.webp",
+          "thumbnail": "assets/material-library/MP030-thumb.webp"
         },
         {
           "name": "Cream / Blue / Grey",
@@ -2026,7 +2096,8 @@
             "Blue",
             "Grey"
           ],
-          "image": "assets/material-library/MP030-c2.webp"
+          "image": "assets/material-library/MP030-c2.webp",
+          "thumbnail": "assets/material-library/MP030-c2-thumb.webp"
         },
         {
           "name": "Black / Cream",
@@ -2034,7 +2105,8 @@
             "Black",
             "Cream"
           ],
-          "image": "assets/material-library/MP030-c3.webp"
+          "image": "assets/material-library/MP030-c3.webp",
+          "thumbnail": "assets/material-library/MP030-c3-thumb.webp"
         },
         {
           "name": "Black / Cream",
@@ -2042,7 +2114,8 @@
             "Black",
             "Cream"
           ],
-          "image": "assets/material-library/MP030-c4.webp"
+          "image": "assets/material-library/MP030-c4.webp",
+          "thumbnail": "assets/material-library/MP030-c4-thumb.webp"
         }
       ]
     },
@@ -2106,6 +2179,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP025.webp",
+      "thumbnail": "assets/material-library/MP025-thumb.webp",
       "images": [
         "assets/material-library/MP025.webp"
       ],
@@ -2122,7 +2196,8 @@
             "Black",
             "Red"
           ],
-          "image": "assets/material-library/MP025.webp"
+          "image": "assets/material-library/MP025.webp",
+          "thumbnail": "assets/material-library/MP025-thumb.webp"
         }
       ]
     },
@@ -2184,6 +2259,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP013.webp",
+      "thumbnail": "assets/material-library/MP013-thumb.webp",
       "images": [
         "assets/material-library/MP013.webp"
       ],
@@ -2199,7 +2275,8 @@
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP013.webp"
+          "image": "assets/material-library/MP013.webp",
+          "thumbnail": "assets/material-library/MP013-thumb.webp"
         }
       ]
     },
@@ -2266,6 +2343,7 @@
       ],
       "designNote": "AI-assisted design concept. Repeat alignment, production scale, colour matching and a physical strike-off remain to be developed.",
       "image": "assets/material-library/MS002.webp",
+      "thumbnail": "assets/material-library/MS002-thumb.webp",
       "images": [
         "assets/material-library/MS002.webp"
       ],
@@ -2330,6 +2408,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP023.webp",
+      "thumbnail": "assets/material-library/MP023-thumb.webp",
       "images": [
         "assets/material-library/MP023.webp"
       ],
@@ -2345,7 +2424,8 @@
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP023.webp"
+          "image": "assets/material-library/MP023.webp",
+          "thumbnail": "assets/material-library/MP023-thumb.webp"
         }
       ]
     },
@@ -2407,6 +2487,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP010.webp",
+      "thumbnail": "assets/material-library/MP010-thumb.webp",
       "images": [
         "assets/material-library/MP010.webp"
       ],
@@ -2423,7 +2504,8 @@
             "Brown",
             "Putty"
           ],
-          "image": "assets/material-library/MP010.webp"
+          "image": "assets/material-library/MP010.webp",
+          "thumbnail": "assets/material-library/MP010-thumb.webp"
         },
         {
           "name": "Purple / Lilac / Lavender",
@@ -2432,14 +2514,16 @@
             "Lilac",
             "Lavender"
           ],
-          "image": "assets/material-library/MP010-c2.webp"
+          "image": "assets/material-library/MP010-c2.webp",
+          "thumbnail": "assets/material-library/MP010-c2-thumb.webp"
         },
         {
           "name": "Blue",
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP010-c3.webp"
+          "image": "assets/material-library/MP010-c3.webp",
+          "thumbnail": "assets/material-library/MP010-c3-thumb.webp"
         },
         {
           "name": "Purple / Lilac",
@@ -2447,7 +2531,8 @@
             "Purple",
             "Lilac"
           ],
-          "image": "assets/material-library/MP010-c4.webp"
+          "image": "assets/material-library/MP010-c4.webp",
+          "thumbnail": "assets/material-library/MP010-c4-thumb.webp"
         }
       ]
     },
@@ -2508,6 +2593,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP088.webp",
+      "thumbnail": "assets/material-library/MP088-thumb.webp",
       "images": [
         "assets/material-library/MP088.webp"
       ],
@@ -2520,14 +2606,16 @@
           "colors": [
             "Brown"
           ],
-          "image": "assets/material-library/MP088.webp"
+          "image": "assets/material-library/MP088.webp",
+          "thumbnail": "assets/material-library/MP088-thumb.webp"
         },
         {
           "name": "Grey",
           "colors": [
             "Grey"
           ],
-          "image": "assets/material-library/MP088-c2.webp"
+          "image": "assets/material-library/MP088-c2.webp",
+          "thumbnail": "assets/material-library/MP088-c2-thumb.webp"
         },
         {
           "name": "White / Green",
@@ -2535,7 +2623,8 @@
             "White",
             "Green"
           ],
-          "image": "assets/material-library/MP088-c3.webp"
+          "image": "assets/material-library/MP088-c3.webp",
+          "thumbnail": "assets/material-library/MP088-c3-thumb.webp"
         },
         {
           "name": "Pink / Magenta",
@@ -2543,7 +2632,8 @@
             "Pink",
             "Magenta"
           ],
-          "image": "assets/material-library/MP088-c4.webp"
+          "image": "assets/material-library/MP088-c4.webp",
+          "thumbnail": "assets/material-library/MP088-c4-thumb.webp"
         }
       ]
     },
@@ -2606,6 +2696,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP026.webp",
+      "thumbnail": "assets/material-library/MP026-thumb.webp",
       "images": [
         "assets/material-library/MP026.webp"
       ],
@@ -2622,7 +2713,8 @@
             "Black",
             "Blue"
           ],
-          "image": "assets/material-library/MP026.webp"
+          "image": "assets/material-library/MP026.webp",
+          "thumbnail": "assets/material-library/MP026-thumb.webp"
         }
       ]
     },
@@ -2686,6 +2778,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP017.webp",
+      "thumbnail": "assets/material-library/MP017-thumb.webp",
       "images": [
         "assets/material-library/MP017.webp"
       ],
@@ -2702,7 +2795,8 @@
             "Pink",
             "Purple"
           ],
-          "image": "assets/material-library/MP017.webp"
+          "image": "assets/material-library/MP017.webp",
+          "thumbnail": "assets/material-library/MP017-thumb.webp"
         },
         {
           "name": "Green / Purple",
@@ -2710,7 +2804,8 @@
             "Green",
             "Purple"
           ],
-          "image": "assets/material-library/MP017-c2.webp"
+          "image": "assets/material-library/MP017-c2.webp",
+          "thumbnail": "assets/material-library/MP017-c2-thumb.webp"
         },
         {
           "name": "Orange / Pink",
@@ -2718,7 +2813,8 @@
             "Orange",
             "Pink"
           ],
-          "image": "assets/material-library/MP017-c3.webp"
+          "image": "assets/material-library/MP017-c3.webp",
+          "thumbnail": "assets/material-library/MP017-c3-thumb.webp"
         }
       ]
     },
@@ -2780,6 +2876,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP027.webp",
+      "thumbnail": "assets/material-library/MP027-thumb.webp",
       "images": [
         "assets/material-library/MP027.webp"
       ],
@@ -2796,7 +2893,8 @@
             "Yellow",
             "Mustard"
           ],
-          "image": "assets/material-library/MP027.webp"
+          "image": "assets/material-library/MP027.webp",
+          "thumbnail": "assets/material-library/MP027-thumb.webp"
         }
       ]
     },
@@ -2857,6 +2955,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP011.webp",
+      "thumbnail": "assets/material-library/MP011-thumb.webp",
       "images": [
         "assets/material-library/MP011.webp"
       ],
@@ -2872,7 +2971,8 @@
           "colors": [
             "Pink"
           ],
-          "image": "assets/material-library/MP011.webp"
+          "image": "assets/material-library/MP011.webp",
+          "thumbnail": "assets/material-library/MP011-thumb.webp"
         }
       ]
     },
@@ -2934,6 +3034,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP134.webp",
+      "thumbnail": "assets/material-library/MP134-thumb.webp",
       "images": [
         "assets/material-library/MP134.webp"
       ],
@@ -2947,28 +3048,32 @@
             "Navy",
             "Blue"
           ],
-          "image": "assets/material-library/MP134.webp"
+          "image": "assets/material-library/MP134.webp",
+          "thumbnail": "assets/material-library/MP134-thumb.webp"
         },
         {
           "name": "Pink",
           "colors": [
             "Pink"
           ],
-          "image": "assets/material-library/MP134-c2.webp"
+          "image": "assets/material-library/MP134-c2.webp",
+          "thumbnail": "assets/material-library/MP134-c2-thumb.webp"
         },
         {
           "name": "Black",
           "colors": [
             "Black"
           ],
-          "image": "assets/material-library/MP134-c3.webp"
+          "image": "assets/material-library/MP134-c3.webp",
+          "thumbnail": "assets/material-library/MP134-c3-thumb.webp"
         },
         {
           "name": "Red",
           "colors": [
             "Red"
           ],
-          "image": "assets/material-library/MP134-c4.webp"
+          "image": "assets/material-library/MP134-c4.webp",
+          "thumbnail": "assets/material-library/MP134-c4-thumb.webp"
         }
       ]
     },
@@ -3030,6 +3135,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP031.webp",
+      "thumbnail": "assets/material-library/MP031-thumb.webp",
       "images": [
         "assets/material-library/MP031.webp"
       ],
@@ -3045,28 +3151,32 @@
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP031.webp"
+          "image": "assets/material-library/MP031.webp",
+          "thumbnail": "assets/material-library/MP031-thumb.webp"
         },
         {
           "name": "Green",
           "colors": [
             "Green"
           ],
-          "image": "assets/material-library/MP031-c2.webp"
+          "image": "assets/material-library/MP031-c2.webp",
+          "thumbnail": "assets/material-library/MP031-c2-thumb.webp"
         },
         {
           "name": "Lilac",
           "colors": [
             "Lilac"
           ],
-          "image": "assets/material-library/MP031-c3.webp"
+          "image": "assets/material-library/MP031-c3.webp",
+          "thumbnail": "assets/material-library/MP031-c3-thumb.webp"
         },
         {
           "name": "Pink",
           "colors": [
             "Pink"
           ],
-          "image": "assets/material-library/MP031-c4.webp"
+          "image": "assets/material-library/MP031-c4.webp",
+          "thumbnail": "assets/material-library/MP031-c4-thumb.webp"
         }
       ]
     },
@@ -3129,6 +3239,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP028.webp",
+      "thumbnail": "assets/material-library/MP028-thumb.webp",
       "images": [
         "assets/material-library/MP028.webp"
       ],
@@ -3144,7 +3255,8 @@
           "colors": [
             "White"
           ],
-          "image": "assets/material-library/MP028.webp"
+          "image": "assets/material-library/MP028.webp",
+          "thumbnail": "assets/material-library/MP028-thumb.webp"
         }
       ]
     },
@@ -3206,6 +3318,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP129.webp",
+      "thumbnail": "assets/material-library/MP129-thumb.webp",
       "images": [
         "assets/material-library/MP129.webp"
       ],
@@ -3222,14 +3335,16 @@
             "Putty",
             "Grey"
           ],
-          "image": "assets/material-library/MP129.webp"
+          "image": "assets/material-library/MP129.webp",
+          "thumbnail": "assets/material-library/MP129-thumb.webp"
         },
         {
           "name": "White",
           "colors": [
             "White"
           ],
-          "image": "assets/material-library/MP129-c2.webp"
+          "image": "assets/material-library/MP129-c2.webp",
+          "thumbnail": "assets/material-library/MP129-c2-thumb.webp"
         }
       ]
     },
@@ -3289,6 +3404,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP014.webp",
+      "thumbnail": "assets/material-library/MP014-thumb.webp",
       "images": [
         "assets/material-library/MP014.webp"
       ],
@@ -3304,7 +3420,8 @@
           "colors": [
             "Grey"
           ],
-          "image": "assets/material-library/MP014.webp"
+          "image": "assets/material-library/MP014.webp",
+          "thumbnail": "assets/material-library/MP014-thumb.webp"
         }
       ]
     },
@@ -3367,6 +3484,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP033.webp",
+      "thumbnail": "assets/material-library/MP033-thumb.webp",
       "images": [
         "assets/material-library/MP033.webp"
       ],
@@ -3384,7 +3502,8 @@
             "Yellow",
             "Mustard"
           ],
-          "image": "assets/material-library/MP033.webp"
+          "image": "assets/material-library/MP033.webp",
+          "thumbnail": "assets/material-library/MP033-thumb.webp"
         }
       ]
     },
@@ -3448,6 +3567,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP029.webp",
+      "thumbnail": "assets/material-library/MP029-thumb.webp",
       "images": [
         "assets/material-library/MP029.webp"
       ],
@@ -3464,7 +3584,8 @@
             "White",
             "Lilac"
           ],
-          "image": "assets/material-library/MP029.webp"
+          "image": "assets/material-library/MP029.webp",
+          "thumbnail": "assets/material-library/MP029-thumb.webp"
         }
       ]
     },
@@ -3527,6 +3648,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP015.webp",
+      "thumbnail": "assets/material-library/MP015-thumb.webp",
       "images": [
         "assets/material-library/MP015.webp"
       ],
@@ -3542,21 +3664,24 @@
           "colors": [
             "Brown"
           ],
-          "image": "assets/material-library/MP015.webp"
+          "image": "assets/material-library/MP015.webp",
+          "thumbnail": "assets/material-library/MP015-thumb.webp"
         },
         {
           "name": "Grey",
           "colors": [
             "Grey"
           ],
-          "image": "assets/material-library/MP015-c2.webp"
+          "image": "assets/material-library/MP015-c2.webp",
+          "thumbnail": "assets/material-library/MP015-c2-thumb.webp"
         },
         {
           "name": "Pink",
           "colors": [
             "Pink"
           ],
-          "image": "assets/material-library/MP015-c3.webp"
+          "image": "assets/material-library/MP015-c3.webp",
+          "thumbnail": "assets/material-library/MP015-c3-thumb.webp"
         }
       ]
     },
@@ -3621,6 +3746,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP034.webp",
+      "thumbnail": "assets/material-library/MP034-thumb.webp",
       "images": [
         "assets/material-library/MP034.webp"
       ],
@@ -3639,7 +3765,8 @@
             "Orange",
             "Yellow"
           ],
-          "image": "assets/material-library/MP034.webp"
+          "image": "assets/material-library/MP034.webp",
+          "thumbnail": "assets/material-library/MP034-thumb.webp"
         }
       ]
     },
@@ -3703,6 +3830,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP036.webp",
+      "thumbnail": "assets/material-library/MP036-thumb.webp",
       "images": [
         "assets/material-library/MP036.webp"
       ],
@@ -3719,7 +3847,8 @@
             "Grey",
             "Purple"
           ],
-          "image": "assets/material-library/MP036.webp"
+          "image": "assets/material-library/MP036.webp",
+          "thumbnail": "assets/material-library/MP036-thumb.webp"
         }
       ]
     },
@@ -3782,6 +3911,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP016.webp",
+      "thumbnail": "assets/material-library/MP016-thumb.webp",
       "images": [
         "assets/material-library/MP016.webp"
       ],
@@ -3798,7 +3928,8 @@
             "Black",
             "Cream"
           ],
-          "image": "assets/material-library/MP016.webp"
+          "image": "assets/material-library/MP016.webp",
+          "thumbnail": "assets/material-library/MP016-thumb.webp"
         },
         {
           "name": "White / Navy / Blue",
@@ -3807,7 +3938,8 @@
             "Navy",
             "Blue"
           ],
-          "image": "assets/material-library/MP016-c2.webp"
+          "image": "assets/material-library/MP016-c2.webp",
+          "thumbnail": "assets/material-library/MP016-c2-thumb.webp"
         },
         {
           "name": "Green / Orange",
@@ -3815,7 +3947,8 @@
             "Green",
             "Orange"
           ],
-          "image": "assets/material-library/MP016-c3.webp"
+          "image": "assets/material-library/MP016-c3.webp",
+          "thumbnail": "assets/material-library/MP016-c3-thumb.webp"
         },
         {
           "name": "Green / Lilac / Lavender",
@@ -3824,7 +3957,8 @@
             "Lilac",
             "Lavender"
           ],
-          "image": "assets/material-library/MP016-c4.webp"
+          "image": "assets/material-library/MP016-c4.webp",
+          "thumbnail": "assets/material-library/MP016-c4-thumb.webp"
         }
       ]
     },
@@ -3884,6 +4018,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP044.webp",
+      "thumbnail": "assets/material-library/MP044-thumb.webp",
       "images": [
         "assets/material-library/MP044.webp"
       ],
@@ -3899,21 +4034,24 @@
           "colors": [
             "Green"
           ],
-          "image": "assets/material-library/MP044.webp"
+          "image": "assets/material-library/MP044.webp",
+          "thumbnail": "assets/material-library/MP044-thumb.webp"
         },
         {
           "name": "Blue",
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP044-c2.webp"
+          "image": "assets/material-library/MP044-c2.webp",
+          "thumbnail": "assets/material-library/MP044-c2-thumb.webp"
         },
         {
           "name": "Petrol",
           "colors": [
             "Petrol"
           ],
-          "image": "assets/material-library/MP044-c3.webp"
+          "image": "assets/material-library/MP044-c3.webp",
+          "thumbnail": "assets/material-library/MP044-c3-thumb.webp"
         },
         {
           "name": "Pink / Fuchsia",
@@ -3921,7 +4059,8 @@
             "Pink",
             "Fuchsia"
           ],
-          "image": "assets/material-library/MP044-c4.webp"
+          "image": "assets/material-library/MP044-c4.webp",
+          "thumbnail": "assets/material-library/MP044-c4-thumb.webp"
         }
       ]
     },
@@ -3986,6 +4125,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP037.webp",
+      "thumbnail": "assets/material-library/MP037-thumb.webp",
       "images": [
         "assets/material-library/MP037.webp"
       ],
@@ -4005,7 +4145,8 @@
             "Pink",
             "Lilac"
           ],
-          "image": "assets/material-library/MP037.webp"
+          "image": "assets/material-library/MP037.webp",
+          "thumbnail": "assets/material-library/MP037-thumb.webp"
         }
       ]
     },
@@ -4068,6 +4209,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP020.webp",
+      "thumbnail": "assets/material-library/MP020-thumb.webp",
       "images": [
         "assets/material-library/MP020.webp"
       ],
@@ -4084,7 +4226,8 @@
             "Black",
             "Cream"
           ],
-          "image": "assets/material-library/MP020.webp"
+          "image": "assets/material-library/MP020.webp",
+          "thumbnail": "assets/material-library/MP020-thumb.webp"
         }
       ]
     },
@@ -4147,6 +4290,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP045.webp",
+      "thumbnail": "assets/material-library/MP045-thumb.webp",
       "images": [
         "assets/material-library/MP045.webp"
       ],
@@ -4164,7 +4308,8 @@
             "Taupe",
             "Putty"
           ],
-          "image": "assets/material-library/MP045.webp"
+          "image": "assets/material-library/MP045.webp",
+          "thumbnail": "assets/material-library/MP045-thumb.webp"
         },
         {
           "name": "Lilac / Lavender",
@@ -4172,14 +4317,16 @@
             "Lilac",
             "Lavender"
           ],
-          "image": "assets/material-library/MP045-c2.webp"
+          "image": "assets/material-library/MP045-c2.webp",
+          "thumbnail": "assets/material-library/MP045-c2-thumb.webp"
         },
         {
           "name": "Turquoise",
           "colors": [
             "Turquoise"
           ],
-          "image": "assets/material-library/MP045-c3.webp"
+          "image": "assets/material-library/MP045-c3.webp",
+          "thumbnail": "assets/material-library/MP045-c3-thumb.webp"
         },
         {
           "name": "Pink / Fuchsia",
@@ -4187,7 +4334,8 @@
             "Pink",
             "Fuchsia"
           ],
-          "image": "assets/material-library/MP045-c4.webp"
+          "image": "assets/material-library/MP045-c4.webp",
+          "thumbnail": "assets/material-library/MP045-c4-thumb.webp"
         }
       ]
     },
@@ -4249,6 +4397,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP038.webp",
+      "thumbnail": "assets/material-library/MP038-thumb.webp",
       "images": [
         "assets/material-library/MP038.webp"
       ],
@@ -4264,7 +4413,8 @@
           "colors": [
             "White"
           ],
-          "image": "assets/material-library/MP038.webp"
+          "image": "assets/material-library/MP038.webp",
+          "thumbnail": "assets/material-library/MP038-thumb.webp"
         },
         {
           "name": "Cream / Blue",
@@ -4272,7 +4422,8 @@
             "Cream",
             "Blue"
           ],
-          "image": "assets/material-library/MP038-c2.webp"
+          "image": "assets/material-library/MP038-c2.webp",
+          "thumbnail": "assets/material-library/MP038-c2-thumb.webp"
         }
       ]
     },
@@ -4335,6 +4486,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP021.webp",
+      "thumbnail": "assets/material-library/MP021-thumb.webp",
       "images": [
         "assets/material-library/MP021.webp"
       ],
@@ -4350,7 +4502,8 @@
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP021.webp"
+          "image": "assets/material-library/MP021.webp",
+          "thumbnail": "assets/material-library/MP021-thumb.webp"
         },
         {
           "name": "Blue / Purple",
@@ -4358,7 +4511,8 @@
             "Blue",
             "Purple"
           ],
-          "image": "assets/material-library/MP021-c2.webp"
+          "image": "assets/material-library/MP021-c2.webp",
+          "thumbnail": "assets/material-library/MP021-c2-thumb.webp"
         },
         {
           "name": "Red / Pink",
@@ -4366,7 +4520,8 @@
             "Red",
             "Pink"
           ],
-          "image": "assets/material-library/MP021-c3.webp"
+          "image": "assets/material-library/MP021-c3.webp",
+          "thumbnail": "assets/material-library/MP021-c3-thumb.webp"
         },
         {
           "name": "Blue / Pink / Petrol",
@@ -4375,7 +4530,8 @@
             "Pink",
             "Petrol"
           ],
-          "image": "assets/material-library/MP021-c4.webp"
+          "image": "assets/material-library/MP021-c4.webp",
+          "thumbnail": "assets/material-library/MP021-c4-thumb.webp"
         }
       ]
     },
@@ -4437,6 +4593,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP046.webp",
+      "thumbnail": "assets/material-library/MP046-thumb.webp",
       "images": [
         "assets/material-library/MP046.webp"
       ],
@@ -4454,7 +4611,8 @@
             "Olive",
             "Sage"
           ],
-          "image": "assets/material-library/MP046.webp"
+          "image": "assets/material-library/MP046.webp",
+          "thumbnail": "assets/material-library/MP046-thumb.webp"
         },
         {
           "name": "Yellow / Mustard",
@@ -4462,21 +4620,24 @@
             "Yellow",
             "Mustard"
           ],
-          "image": "assets/material-library/MP046-c2.webp"
+          "image": "assets/material-library/MP046-c2.webp",
+          "thumbnail": "assets/material-library/MP046-c2-thumb.webp"
         },
         {
           "name": "Red",
           "colors": [
             "Red"
           ],
-          "image": "assets/material-library/MP046-c3.webp"
+          "image": "assets/material-library/MP046-c3.webp",
+          "thumbnail": "assets/material-library/MP046-c3-thumb.webp"
         },
         {
           "name": "Black",
           "colors": [
             "Black"
           ],
-          "image": "assets/material-library/MP046-c4.webp"
+          "image": "assets/material-library/MP046-c4.webp",
+          "thumbnail": "assets/material-library/MP046-c4-thumb.webp"
         }
       ]
     },
@@ -4537,6 +4698,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP039.webp",
+      "thumbnail": "assets/material-library/MP039-thumb.webp",
       "images": [
         "assets/material-library/MP039.webp"
       ],
@@ -4552,7 +4714,8 @@
           "colors": [
             "Navy"
           ],
-          "image": "assets/material-library/MP039.webp"
+          "image": "assets/material-library/MP039.webp",
+          "thumbnail": "assets/material-library/MP039-thumb.webp"
         }
       ]
     },
@@ -4614,6 +4777,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP022.webp",
+      "thumbnail": "assets/material-library/MP022-thumb.webp",
       "images": [
         "assets/material-library/MP022.webp"
       ],
@@ -4630,7 +4794,8 @@
             "Navy",
             "Burgundy"
           ],
-          "image": "assets/material-library/MP022.webp"
+          "image": "assets/material-library/MP022.webp",
+          "thumbnail": "assets/material-library/MP022-thumb.webp"
         },
         {
           "name": "White / Green / Yellow / Pink",
@@ -4640,7 +4805,8 @@
             "Yellow",
             "Pink"
           ],
-          "image": "assets/material-library/MP022-c2.webp"
+          "image": "assets/material-library/MP022-c2.webp",
+          "thumbnail": "assets/material-library/MP022-c2-thumb.webp"
         },
         {
           "name": "White / Burgundy / Yellow / Pink / Petrol",
@@ -4651,7 +4817,8 @@
             "Pink",
             "Petrol"
           ],
-          "image": "assets/material-library/MP022-c3.webp"
+          "image": "assets/material-library/MP022-c3.webp",
+          "thumbnail": "assets/material-library/MP022-c3-thumb.webp"
         },
         {
           "name": "White / Green / Burgundy / Pink / Lilac",
@@ -4662,7 +4829,8 @@
             "Pink",
             "Lilac"
           ],
-          "image": "assets/material-library/MP022-c4.webp"
+          "image": "assets/material-library/MP022-c4.webp",
+          "thumbnail": "assets/material-library/MP022-c4-thumb.webp"
         }
       ]
     },
@@ -4726,6 +4894,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP052.webp",
+      "thumbnail": "assets/material-library/MP052-thumb.webp",
       "images": [
         "assets/material-library/MP052.webp"
       ],
@@ -4743,7 +4912,8 @@
             "Pink",
             "Magenta"
           ],
-          "image": "assets/material-library/MP052.webp"
+          "image": "assets/material-library/MP052.webp",
+          "thumbnail": "assets/material-library/MP052-thumb.webp"
         }
       ]
     },
@@ -4806,6 +4976,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP040.webp",
+      "thumbnail": "assets/material-library/MP040-thumb.webp",
       "images": [
         "assets/material-library/MP040.webp"
       ],
@@ -4821,7 +4992,8 @@
           "colors": [
             "White"
           ],
-          "image": "assets/material-library/MP040.webp"
+          "image": "assets/material-library/MP040.webp",
+          "thumbnail": "assets/material-library/MP040-thumb.webp"
         }
       ]
     },
@@ -4883,6 +5055,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP032.webp",
+      "thumbnail": "assets/material-library/MP032-thumb.webp",
       "images": [
         "assets/material-library/MP032.webp"
       ],
@@ -4899,7 +5072,8 @@
             "Purple",
             "Lilac"
           ],
-          "image": "assets/material-library/MP032.webp"
+          "image": "assets/material-library/MP032.webp",
+          "thumbnail": "assets/material-library/MP032-thumb.webp"
         }
       ]
     },
@@ -4959,6 +5133,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP053.webp",
+      "thumbnail": "assets/material-library/MP053-thumb.webp",
       "images": [
         "assets/material-library/MP053.webp"
       ],
@@ -4974,7 +5149,8 @@
           "colors": [
             "Turquoise"
           ],
-          "image": "assets/material-library/MP053.webp"
+          "image": "assets/material-library/MP053.webp",
+          "thumbnail": "assets/material-library/MP053-thumb.webp"
         }
       ]
     },
@@ -5036,6 +5212,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP041.webp",
+      "thumbnail": "assets/material-library/MP041-thumb.webp",
       "images": [
         "assets/material-library/MP041.webp"
       ],
@@ -5052,7 +5229,8 @@
             "Cream",
             "Orange"
           ],
-          "image": "assets/material-library/MP041.webp"
+          "image": "assets/material-library/MP041.webp",
+          "thumbnail": "assets/material-library/MP041-thumb.webp"
         }
       ]
     },
@@ -5115,6 +5293,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP035.webp",
+      "thumbnail": "assets/material-library/MP035-thumb.webp",
       "images": [
         "assets/material-library/MP035.webp"
       ],
@@ -5130,14 +5309,16 @@
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP035.webp"
+          "image": "assets/material-library/MP035.webp",
+          "thumbnail": "assets/material-library/MP035-thumb.webp"
         },
         {
           "name": "Blue",
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP035-c2.webp"
+          "image": "assets/material-library/MP035-c2.webp",
+          "thumbnail": "assets/material-library/MP035-c2-thumb.webp"
         }
       ]
     },
@@ -5203,6 +5384,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP054.webp",
+      "thumbnail": "assets/material-library/MP054-thumb.webp",
       "images": [
         "assets/material-library/MP054.webp"
       ],
@@ -5220,7 +5402,8 @@
             "Pink",
             "Purple"
           ],
-          "image": "assets/material-library/MP054.webp"
+          "image": "assets/material-library/MP054.webp",
+          "thumbnail": "assets/material-library/MP054-thumb.webp"
         }
       ]
     },
@@ -5284,6 +5467,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP043.webp",
+      "thumbnail": "assets/material-library/MP043-thumb.webp",
       "images": [
         "assets/material-library/MP043.webp"
       ],
@@ -5301,7 +5485,8 @@
             "Blue",
             "Yellow"
           ],
-          "image": "assets/material-library/MP043.webp"
+          "image": "assets/material-library/MP043.webp",
+          "thumbnail": "assets/material-library/MP043-thumb.webp"
         }
       ]
     },
@@ -5365,6 +5550,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP058.webp",
+      "thumbnail": "assets/material-library/MP058-thumb.webp",
       "images": [
         "assets/material-library/MP058.webp"
       ],
@@ -5381,7 +5567,8 @@
             "Cream",
             "Navy"
           ],
-          "image": "assets/material-library/MP058.webp"
+          "image": "assets/material-library/MP058.webp",
+          "thumbnail": "assets/material-library/MP058-thumb.webp"
         },
         {
           "name": "White / Navy / Blue",
@@ -5390,7 +5577,8 @@
             "Navy",
             "Blue"
           ],
-          "image": "assets/material-library/MP058-c2.webp"
+          "image": "assets/material-library/MP058-c2.webp",
+          "thumbnail": "assets/material-library/MP058-c2-thumb.webp"
         }
       ]
     },
@@ -5453,6 +5641,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP056.webp",
+      "thumbnail": "assets/material-library/MP056-thumb.webp",
       "images": [
         "assets/material-library/MP056.webp"
       ],
@@ -5468,7 +5657,8 @@
           "colors": [
             "Red"
           ],
-          "image": "assets/material-library/MP056.webp"
+          "image": "assets/material-library/MP056.webp",
+          "thumbnail": "assets/material-library/MP056-thumb.webp"
         }
       ]
     },
@@ -5528,6 +5718,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP048.webp",
+      "thumbnail": "assets/material-library/MP048-thumb.webp",
       "images": [
         "assets/material-library/MP048.webp"
       ],
@@ -5543,7 +5734,8 @@
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP048.webp"
+          "image": "assets/material-library/MP048.webp",
+          "thumbnail": "assets/material-library/MP048-thumb.webp"
         }
       ]
     },
@@ -5604,6 +5796,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP061.webp",
+      "thumbnail": "assets/material-library/MP061-thumb.webp",
       "images": [
         "assets/material-library/MP061.webp"
       ],
@@ -5619,7 +5812,8 @@
           "colors": [
             "Orange"
           ],
-          "image": "assets/material-library/MP061.webp"
+          "image": "assets/material-library/MP061.webp",
+          "thumbnail": "assets/material-library/MP061-thumb.webp"
         }
       ]
     },
@@ -5682,6 +5876,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP057.webp",
+      "thumbnail": "assets/material-library/MP057-thumb.webp",
       "images": [
         "assets/material-library/MP057.webp"
       ],
@@ -5698,7 +5893,8 @@
             "Black",
             "White"
           ],
-          "image": "assets/material-library/MP057.webp"
+          "image": "assets/material-library/MP057.webp",
+          "thumbnail": "assets/material-library/MP057-thumb.webp"
         }
       ]
     },
@@ -5759,6 +5955,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP049.webp",
+      "thumbnail": "assets/material-library/MP049-thumb.webp",
       "images": [
         "assets/material-library/MP049.webp"
       ],
@@ -5774,7 +5971,8 @@
           "colors": [
             "Navy"
           ],
-          "image": "assets/material-library/MP049.webp"
+          "image": "assets/material-library/MP049.webp",
+          "thumbnail": "assets/material-library/MP049-thumb.webp"
         }
       ]
     },
@@ -5839,6 +6037,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP066.webp",
+      "thumbnail": "assets/material-library/MP066-thumb.webp",
       "images": [
         "assets/material-library/MP066.webp"
       ],
@@ -5855,7 +6054,8 @@
             "White",
             "Navy"
           ],
-          "image": "assets/material-library/MP066.webp"
+          "image": "assets/material-library/MP066.webp",
+          "thumbnail": "assets/material-library/MP066-thumb.webp"
         },
         {
           "name": "White / Red",
@@ -5863,7 +6063,8 @@
             "White",
             "Red"
           ],
-          "image": "assets/material-library/MP066-c2.webp"
+          "image": "assets/material-library/MP066-c2.webp",
+          "thumbnail": "assets/material-library/MP066-c2-thumb.webp"
         },
         {
           "name": "Black / White",
@@ -5871,7 +6072,8 @@
             "Black",
             "White"
           ],
-          "image": "assets/material-library/MP066-c3.webp"
+          "image": "assets/material-library/MP066-c3.webp",
+          "thumbnail": "assets/material-library/MP066-c3-thumb.webp"
         },
         {
           "name": "White / Yellow",
@@ -5879,7 +6081,8 @@
             "White",
             "Yellow"
           ],
-          "image": "assets/material-library/MP066-c4.webp"
+          "image": "assets/material-library/MP066-c4.webp",
+          "thumbnail": "assets/material-library/MP066-c4-thumb.webp"
         }
       ]
     },
@@ -5940,6 +6143,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP068.webp",
+      "thumbnail": "assets/material-library/MP068-thumb.webp",
       "images": [
         "assets/material-library/MP068.webp"
       ],
@@ -5955,7 +6159,8 @@
           "colors": [
             "Multicolour"
           ],
-          "image": "assets/material-library/MP068.webp"
+          "image": "assets/material-library/MP068.webp",
+          "thumbnail": "assets/material-library/MP068-thumb.webp"
         }
       ]
     },
@@ -6018,6 +6223,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP050.webp",
+      "thumbnail": "assets/material-library/MP050-thumb.webp",
       "images": [
         "assets/material-library/MP050.webp"
       ],
@@ -6035,14 +6241,16 @@
             "Brown",
             "Yellow"
           ],
-          "image": "assets/material-library/MP050.webp"
+          "image": "assets/material-library/MP050.webp",
+          "thumbnail": "assets/material-library/MP050-thumb.webp"
         },
         {
           "name": "Navy",
           "colors": [
             "Navy"
           ],
-          "image": "assets/material-library/MP050-c2.webp"
+          "image": "assets/material-library/MP050-c2.webp",
+          "thumbnail": "assets/material-library/MP050-c2-thumb.webp"
         }
       ]
     },
@@ -6105,6 +6313,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP072.webp",
+      "thumbnail": "assets/material-library/MP072-thumb.webp",
       "images": [
         "assets/material-library/MP072.webp"
       ],
@@ -6122,7 +6331,8 @@
             "Blue",
             "Grey"
           ],
-          "image": "assets/material-library/MP072.webp"
+          "image": "assets/material-library/MP072.webp",
+          "thumbnail": "assets/material-library/MP072-thumb.webp"
         }
       ]
     },
@@ -6187,6 +6397,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP070.webp",
+      "thumbnail": "assets/material-library/MP070-thumb.webp",
       "images": [
         "assets/material-library/MP070.webp"
       ],
@@ -6204,7 +6415,8 @@
             "Brown",
             "Grey"
           ],
-          "image": "assets/material-library/MP070.webp"
+          "image": "assets/material-library/MP070.webp",
+          "thumbnail": "assets/material-library/MP070-thumb.webp"
         }
       ]
     },
@@ -6269,6 +6481,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP051.webp",
+      "thumbnail": "assets/material-library/MP051-thumb.webp",
       "images": [
         "assets/material-library/MP051.webp"
       ],
@@ -6286,7 +6499,8 @@
             "Pink",
             "Magenta"
           ],
-          "image": "assets/material-library/MP051.webp"
+          "image": "assets/material-library/MP051.webp",
+          "thumbnail": "assets/material-library/MP051-thumb.webp"
         }
       ]
     },
@@ -6351,6 +6565,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP082.webp",
+      "thumbnail": "assets/material-library/MP082-thumb.webp",
       "images": [
         "assets/material-library/MP082.webp"
       ],
@@ -6369,7 +6584,8 @@
             "Yellow",
             "Mustard"
           ],
-          "image": "assets/material-library/MP082.webp"
+          "image": "assets/material-library/MP082.webp",
+          "thumbnail": "assets/material-library/MP082-thumb.webp"
         }
       ]
     },
@@ -6431,6 +6647,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP071.webp",
+      "thumbnail": "assets/material-library/MP071-thumb.webp",
       "images": [
         "assets/material-library/MP071.webp"
       ],
@@ -6448,7 +6665,8 @@
             "White",
             "Blue"
           ],
-          "image": "assets/material-library/MP071.webp"
+          "image": "assets/material-library/MP071.webp",
+          "thumbnail": "assets/material-library/MP071-thumb.webp"
         },
         {
           "name": "White / Blue / Red",
@@ -6457,7 +6675,8 @@
             "Blue",
             "Red"
           ],
-          "image": "assets/material-library/MP071-c2.webp"
+          "image": "assets/material-library/MP071-c2.webp",
+          "thumbnail": "assets/material-library/MP071-c2-thumb.webp"
         }
       ]
     },
@@ -6519,6 +6738,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP059.webp",
+      "thumbnail": "assets/material-library/MP059-thumb.webp",
       "images": [
         "assets/material-library/MP059.webp"
       ],
@@ -6535,7 +6755,8 @@
             "Black",
             "Red"
           ],
-          "image": "assets/material-library/MP059.webp"
+          "image": "assets/material-library/MP059.webp",
+          "thumbnail": "assets/material-library/MP059-thumb.webp"
         },
         {
           "name": "Burgundy / Maroon",
@@ -6543,7 +6764,8 @@
             "Burgundy",
             "Maroon"
           ],
-          "image": "assets/material-library/MP059-c2.webp"
+          "image": "assets/material-library/MP059-c2.webp",
+          "thumbnail": "assets/material-library/MP059-c2-thumb.webp"
         }
       ]
     },
@@ -6606,6 +6828,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP083.webp",
+      "thumbnail": "assets/material-library/MP083-thumb.webp",
       "images": [
         "assets/material-library/MP083.webp"
       ],
@@ -6621,7 +6844,8 @@
           "colors": [
             "Red"
           ],
-          "image": "assets/material-library/MP083.webp"
+          "image": "assets/material-library/MP083.webp",
+          "thumbnail": "assets/material-library/MP083-thumb.webp"
         }
       ]
     },
@@ -6684,6 +6908,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP073.webp",
+      "thumbnail": "assets/material-library/MP073-thumb.webp",
       "images": [
         "assets/material-library/MP073.webp"
       ],
@@ -6699,7 +6924,8 @@
           "colors": [
             "Yellow"
           ],
-          "image": "assets/material-library/MP073.webp"
+          "image": "assets/material-library/MP073.webp",
+          "thumbnail": "assets/material-library/MP073-thumb.webp"
         }
       ]
     },
@@ -6761,6 +6987,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP060.webp",
+      "thumbnail": "assets/material-library/MP060-thumb.webp",
       "images": [
         "assets/material-library/MP060.webp"
       ],
@@ -6776,7 +7003,8 @@
           "colors": [
             "Green"
           ],
-          "image": "assets/material-library/MP060.webp"
+          "image": "assets/material-library/MP060.webp",
+          "thumbnail": "assets/material-library/MP060-thumb.webp"
         }
       ]
     },
@@ -6841,6 +7069,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP084.webp",
+      "thumbnail": "assets/material-library/MP084-thumb.webp",
       "images": [
         "assets/material-library/MP084.webp"
       ],
@@ -6858,7 +7087,8 @@
             "White",
             "Charcoal"
           ],
-          "image": "assets/material-library/MP084.webp"
+          "image": "assets/material-library/MP084.webp",
+          "thumbnail": "assets/material-library/MP084-thumb.webp"
         },
         {
           "name": "White / Green",
@@ -6866,7 +7096,8 @@
             "White",
             "Green"
           ],
-          "image": "assets/material-library/MP084-c2.webp"
+          "image": "assets/material-library/MP084-c2.webp",
+          "thumbnail": "assets/material-library/MP084-c2-thumb.webp"
         },
         {
           "name": "White / Navy / Blue",
@@ -6875,7 +7106,8 @@
             "Navy",
             "Blue"
           ],
-          "image": "assets/material-library/MP084-c3.webp"
+          "image": "assets/material-library/MP084-c3.webp",
+          "thumbnail": "assets/material-library/MP084-c3-thumb.webp"
         },
         {
           "name": "White / Red",
@@ -6883,7 +7115,8 @@
             "White",
             "Red"
           ],
-          "image": "assets/material-library/MP084-c4.webp"
+          "image": "assets/material-library/MP084-c4.webp",
+          "thumbnail": "assets/material-library/MP084-c4-thumb.webp"
         }
       ]
     },
@@ -6945,6 +7178,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP074.webp",
+      "thumbnail": "assets/material-library/MP074-thumb.webp",
       "images": [
         "assets/material-library/MP074.webp"
       ],
@@ -6960,7 +7194,8 @@
           "colors": [
             "Yellow"
           ],
-          "image": "assets/material-library/MP074.webp"
+          "image": "assets/material-library/MP074.webp",
+          "thumbnail": "assets/material-library/MP074-thumb.webp"
         },
         {
           "name": "Blue / Yellow",
@@ -6968,7 +7203,8 @@
             "Blue",
             "Yellow"
           ],
-          "image": "assets/material-library/MP074-c2.webp"
+          "image": "assets/material-library/MP074-c2.webp",
+          "thumbnail": "assets/material-library/MP074-c2-thumb.webp"
         }
       ]
     },
@@ -7028,6 +7264,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP063.webp",
+      "thumbnail": "assets/material-library/MP063-thumb.webp",
       "images": [
         "assets/material-library/MP063.webp"
       ],
@@ -7043,7 +7280,8 @@
           "colors": [
             "Grey"
           ],
-          "image": "assets/material-library/MP063.webp"
+          "image": "assets/material-library/MP063.webp",
+          "thumbnail": "assets/material-library/MP063-thumb.webp"
         },
         {
           "name": "Red / Pink",
@@ -7051,21 +7289,24 @@
             "Red",
             "Pink"
           ],
-          "image": "assets/material-library/MP063-c2.webp"
+          "image": "assets/material-library/MP063-c2.webp",
+          "thumbnail": "assets/material-library/MP063-c2-thumb.webp"
         },
         {
           "name": "Blue",
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP063-c3.webp"
+          "image": "assets/material-library/MP063-c3.webp",
+          "thumbnail": "assets/material-library/MP063-c3-thumb.webp"
         },
         {
           "name": "Purple",
           "colors": [
             "Purple"
           ],
-          "image": "assets/material-library/MP063-c4.webp"
+          "image": "assets/material-library/MP063-c4.webp",
+          "thumbnail": "assets/material-library/MP063-c4-thumb.webp"
         }
       ]
     },
@@ -7128,6 +7369,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP087.webp",
+      "thumbnail": "assets/material-library/MP087-thumb.webp",
       "images": [
         "assets/material-library/MP087.webp"
       ],
@@ -7145,7 +7387,8 @@
             "Green",
             "Red"
           ],
-          "image": "assets/material-library/MP087.webp"
+          "image": "assets/material-library/MP087.webp",
+          "thumbnail": "assets/material-library/MP087-thumb.webp"
         }
       ]
     },
@@ -7206,6 +7449,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP078.webp",
+      "thumbnail": "assets/material-library/MP078-thumb.webp",
       "images": [
         "assets/material-library/MP078.webp"
       ],
@@ -7221,7 +7465,8 @@
           "colors": [
             "Green"
           ],
-          "image": "assets/material-library/MP078.webp"
+          "image": "assets/material-library/MP078.webp",
+          "thumbnail": "assets/material-library/MP078-thumb.webp"
         }
       ]
     },
@@ -7281,6 +7526,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP064.webp",
+      "thumbnail": "assets/material-library/MP064-thumb.webp",
       "images": [
         "assets/material-library/MP064.webp"
       ],
@@ -7296,14 +7542,16 @@
           "colors": [
             "Black"
           ],
-          "image": "assets/material-library/MP064.webp"
+          "image": "assets/material-library/MP064.webp",
+          "thumbnail": "assets/material-library/MP064-thumb.webp"
         },
         {
           "name": "Green",
           "colors": [
             "Green"
           ],
-          "image": "assets/material-library/MP064-c2.webp"
+          "image": "assets/material-library/MP064-c2.webp",
+          "thumbnail": "assets/material-library/MP064-c2-thumb.webp"
         }
       ]
     },
@@ -7366,6 +7614,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP092.webp",
+      "thumbnail": "assets/material-library/MP092-thumb.webp",
       "images": [
         "assets/material-library/MP092.webp"
       ],
@@ -7383,7 +7632,8 @@
             "Blue",
             "Red"
           ],
-          "image": "assets/material-library/MP092.webp"
+          "image": "assets/material-library/MP092.webp",
+          "thumbnail": "assets/material-library/MP092-thumb.webp"
         }
       ]
     },
@@ -7445,6 +7695,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP079.webp",
+      "thumbnail": "assets/material-library/MP079-thumb.webp",
       "images": [
         "assets/material-library/MP079.webp"
       ],
@@ -7460,7 +7711,8 @@
           "colors": [
             "Pink"
           ],
-          "image": "assets/material-library/MP079.webp"
+          "image": "assets/material-library/MP079.webp",
+          "thumbnail": "assets/material-library/MP079-thumb.webp"
         }
       ]
     },
@@ -7524,6 +7776,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP065.webp",
+      "thumbnail": "assets/material-library/MP065-thumb.webp",
       "images": [
         "assets/material-library/MP065.webp"
       ],
@@ -7540,14 +7793,16 @@
             "Blue",
             "Petrol"
           ],
-          "image": "assets/material-library/MP065.webp"
+          "image": "assets/material-library/MP065.webp",
+          "thumbnail": "assets/material-library/MP065-thumb.webp"
         },
         {
           "name": "Green",
           "colors": [
             "Green"
           ],
-          "image": "assets/material-library/MP065-c2.webp"
+          "image": "assets/material-library/MP065-c2.webp",
+          "thumbnail": "assets/material-library/MP065-c2-thumb.webp"
         }
       ]
     },
@@ -7608,6 +7863,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP103.webp",
+      "thumbnail": "assets/material-library/MP103-thumb.webp",
       "images": [
         "assets/material-library/MP103.webp"
       ],
@@ -7624,7 +7880,8 @@
             "Cream",
             "Red"
           ],
-          "image": "assets/material-library/MP103.webp"
+          "image": "assets/material-library/MP103.webp",
+          "thumbnail": "assets/material-library/MP103-thumb.webp"
         }
       ]
     },
@@ -7685,6 +7942,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP080.webp",
+      "thumbnail": "assets/material-library/MP080-thumb.webp",
       "images": [
         "assets/material-library/MP080.webp"
       ],
@@ -7700,7 +7958,8 @@
           "colors": [
             "Red"
           ],
-          "image": "assets/material-library/MP080.webp"
+          "image": "assets/material-library/MP080.webp",
+          "thumbnail": "assets/material-library/MP080-thumb.webp"
         }
       ]
     },
@@ -7764,6 +8023,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP067.webp",
+      "thumbnail": "assets/material-library/MP067-thumb.webp",
       "images": [
         "assets/material-library/MP067.webp"
       ],
@@ -7780,7 +8040,8 @@
             "Orange",
             "Lilac"
           ],
-          "image": "assets/material-library/MP067.webp"
+          "image": "assets/material-library/MP067.webp",
+          "thumbnail": "assets/material-library/MP067-thumb.webp"
         },
         {
           "name": "Yellow / Purple",
@@ -7788,7 +8049,8 @@
             "Yellow",
             "Purple"
           ],
-          "image": "assets/material-library/MP067-c2.webp"
+          "image": "assets/material-library/MP067-c2.webp",
+          "thumbnail": "assets/material-library/MP067-c2-thumb.webp"
         }
       ]
     },
@@ -7852,6 +8114,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP112.webp",
+      "thumbnail": "assets/material-library/MP112-thumb.webp",
       "images": [
         "assets/material-library/MP112.webp"
       ],
@@ -7869,7 +8132,8 @@
             "Pink",
             "Magenta"
           ],
-          "image": "assets/material-library/MP112.webp"
+          "image": "assets/material-library/MP112.webp",
+          "thumbnail": "assets/material-library/MP112-thumb.webp"
         }
       ]
     },
@@ -7933,6 +8197,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP094.webp",
+      "thumbnail": "assets/material-library/MP094-thumb.webp",
       "images": [
         "assets/material-library/MP094.webp"
       ],
@@ -7948,7 +8213,8 @@
           "colors": [
             "Red"
           ],
-          "image": "assets/material-library/MP094.webp"
+          "image": "assets/material-library/MP094.webp",
+          "thumbnail": "assets/material-library/MP094-thumb.webp"
         }
       ]
     },
@@ -8011,6 +8277,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP069.webp",
+      "thumbnail": "assets/material-library/MP069-thumb.webp",
       "images": [
         "assets/material-library/MP069.webp"
       ],
@@ -8027,7 +8294,8 @@
             "Brown",
             "Yellow"
           ],
-          "image": "assets/material-library/MP069.webp"
+          "image": "assets/material-library/MP069.webp",
+          "thumbnail": "assets/material-library/MP069-thumb.webp"
         }
       ]
     },
@@ -8091,6 +8359,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP113.webp",
+      "thumbnail": "assets/material-library/MP113-thumb.webp",
       "images": [
         "assets/material-library/MP113.webp"
       ],
@@ -8110,7 +8379,8 @@
             "Red",
             "Burgundy"
           ],
-          "image": "assets/material-library/MP113.webp"
+          "image": "assets/material-library/MP113.webp",
+          "thumbnail": "assets/material-library/MP113-thumb.webp"
         },
         {
           "name": "Blue / Green / Burgundy / Orange / Lilac",
@@ -8121,7 +8391,8 @@
             "Orange",
             "Lilac"
           ],
-          "image": "assets/material-library/MP113-c2.webp"
+          "image": "assets/material-library/MP113-c2.webp",
+          "thumbnail": "assets/material-library/MP113-c2-thumb.webp"
         },
         {
           "name": "Blue / Green / Orange / Pink / Lilac",
@@ -8132,7 +8403,8 @@
             "Pink",
             "Lilac"
           ],
-          "image": "assets/material-library/MP113-c3.webp"
+          "image": "assets/material-library/MP113-c3.webp",
+          "thumbnail": "assets/material-library/MP113-c3-thumb.webp"
         },
         {
           "name": "Red / Pink",
@@ -8140,7 +8412,8 @@
             "Red",
             "Pink"
           ],
-          "image": "assets/material-library/MP113-c4.webp"
+          "image": "assets/material-library/MP113-c4.webp",
+          "thumbnail": "assets/material-library/MP113-c4-thumb.webp"
         }
       ]
     },
@@ -8204,6 +8477,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP095.webp",
+      "thumbnail": "assets/material-library/MP095-thumb.webp",
       "images": [
         "assets/material-library/MP095.webp"
       ],
@@ -8221,7 +8495,8 @@
             "Blue",
             "Green"
           ],
-          "image": "assets/material-library/MP095.webp"
+          "image": "assets/material-library/MP095.webp",
+          "thumbnail": "assets/material-library/MP095-thumb.webp"
         }
       ]
     },
@@ -8283,6 +8558,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP075.webp",
+      "thumbnail": "assets/material-library/MP075-thumb.webp",
       "images": [
         "assets/material-library/MP075.webp"
       ],
@@ -8299,7 +8575,8 @@
             "White",
             "Rose"
           ],
-          "image": "assets/material-library/MP075.webp"
+          "image": "assets/material-library/MP075.webp",
+          "thumbnail": "assets/material-library/MP075-thumb.webp"
         }
       ]
     },
@@ -8364,6 +8641,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP114.webp",
+      "thumbnail": "assets/material-library/MP114-thumb.webp",
       "images": [
         "assets/material-library/MP114.webp"
       ],
@@ -8381,7 +8659,8 @@
             "Blue",
             "Putty"
           ],
-          "image": "assets/material-library/MP114.webp"
+          "image": "assets/material-library/MP114.webp",
+          "thumbnail": "assets/material-library/MP114-thumb.webp"
         }
       ]
     },
@@ -8448,6 +8727,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP096.webp",
+      "thumbnail": "assets/material-library/MP096-thumb.webp",
       "images": [
         "assets/material-library/MP096.webp"
       ],
@@ -8466,7 +8746,8 @@
             "Burgundy",
             "Yellow"
           ],
-          "image": "assets/material-library/MP096.webp"
+          "image": "assets/material-library/MP096.webp",
+          "thumbnail": "assets/material-library/MP096-thumb.webp"
         }
       ]
     },
@@ -8530,6 +8811,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP077.webp",
+      "thumbnail": "assets/material-library/MP077-thumb.webp",
       "images": [
         "assets/material-library/MP077.webp"
       ],
@@ -8546,7 +8828,8 @@
             "Pink",
             "Purple"
           ],
-          "image": "assets/material-library/MP077.webp"
+          "image": "assets/material-library/MP077.webp",
+          "thumbnail": "assets/material-library/MP077-thumb.webp"
         }
       ]
     },
@@ -8607,6 +8890,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP128.webp",
+      "thumbnail": "assets/material-library/MP128-thumb.webp",
       "images": [
         "assets/material-library/MP128.webp"
       ],
@@ -8622,7 +8906,8 @@
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP128.webp"
+          "image": "assets/material-library/MP128.webp",
+          "thumbnail": "assets/material-library/MP128-thumb.webp"
         },
         {
           "name": "Navy / Blue",
@@ -8630,7 +8915,8 @@
             "Navy",
             "Blue"
           ],
-          "image": "assets/material-library/MP128-c2.webp"
+          "image": "assets/material-library/MP128-c2.webp",
+          "thumbnail": "assets/material-library/MP128-c2-thumb.webp"
         }
       ]
     },
@@ -8693,6 +8979,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP097.webp",
+      "thumbnail": "assets/material-library/MP097-thumb.webp",
       "images": [
         "assets/material-library/MP097.webp"
       ],
@@ -8709,7 +8996,8 @@
             "Brown",
             "Camel"
           ],
-          "image": "assets/material-library/MP097.webp"
+          "image": "assets/material-library/MP097.webp",
+          "thumbnail": "assets/material-library/MP097-thumb.webp"
         }
       ]
     },
@@ -8773,6 +9061,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP081.webp",
+      "thumbnail": "assets/material-library/MP081-thumb.webp",
       "images": [
         "assets/material-library/MP081.webp"
       ],
@@ -8789,7 +9078,8 @@
             "Green",
             "Pink"
           ],
-          "image": "assets/material-library/MP081.webp"
+          "image": "assets/material-library/MP081.webp",
+          "thumbnail": "assets/material-library/MP081-thumb.webp"
         }
       ]
     },
@@ -8852,6 +9142,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP131.webp",
+      "thumbnail": "assets/material-library/MP131-thumb.webp",
       "images": [
         "assets/material-library/MP131.webp"
       ],
@@ -8867,7 +9158,8 @@
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP131.webp"
+          "image": "assets/material-library/MP131.webp",
+          "thumbnail": "assets/material-library/MP131-thumb.webp"
         },
         {
           "name": "Red / Yellow",
@@ -8875,7 +9167,8 @@
             "Red",
             "Yellow"
           ],
-          "image": "assets/material-library/MP131-c2.webp"
+          "image": "assets/material-library/MP131-c2.webp",
+          "thumbnail": "assets/material-library/MP131-c2-thumb.webp"
         }
       ]
     },
@@ -8938,6 +9231,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP099.webp",
+      "thumbnail": "assets/material-library/MP099-thumb.webp",
       "images": [
         "assets/material-library/MP099.webp"
       ],
@@ -8954,7 +9248,8 @@
             "Blue",
             "Red"
           ],
-          "image": "assets/material-library/MP099.webp"
+          "image": "assets/material-library/MP099.webp",
+          "thumbnail": "assets/material-library/MP099-thumb.webp"
         }
       ]
     },
@@ -9018,6 +9313,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP085.webp",
+      "thumbnail": "assets/material-library/MP085-thumb.webp",
       "images": [
         "assets/material-library/MP085.webp"
       ],
@@ -9034,7 +9330,8 @@
             "Blue",
             "Red"
           ],
-          "image": "assets/material-library/MP085.webp"
+          "image": "assets/material-library/MP085.webp",
+          "thumbnail": "assets/material-library/MP085-thumb.webp"
         }
       ]
     },
@@ -9098,6 +9395,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP132.webp",
+      "thumbnail": "assets/material-library/MP132-thumb.webp",
       "images": [
         "assets/material-library/MP132.webp"
       ],
@@ -9114,7 +9412,8 @@
             "Blue",
             "Turquoise"
           ],
-          "image": "assets/material-library/MP132.webp"
+          "image": "assets/material-library/MP132.webp",
+          "thumbnail": "assets/material-library/MP132-thumb.webp"
         },
         {
           "name": "Green / Turquoise",
@@ -9122,7 +9421,8 @@
             "Green",
             "Turquoise"
           ],
-          "image": "assets/material-library/MP132-c2.webp"
+          "image": "assets/material-library/MP132-c2.webp",
+          "thumbnail": "assets/material-library/MP132-c2-thumb.webp"
         },
         {
           "name": "Blue / Yellow / Turquoise",
@@ -9131,7 +9431,8 @@
             "Yellow",
             "Turquoise"
           ],
-          "image": "assets/material-library/MP132-c3.webp"
+          "image": "assets/material-library/MP132-c3.webp",
+          "thumbnail": "assets/material-library/MP132-c3-thumb.webp"
         },
         {
           "name": "Red / Pink",
@@ -9139,7 +9440,8 @@
             "Red",
             "Pink"
           ],
-          "image": "assets/material-library/MP132-c4.webp"
+          "image": "assets/material-library/MP132-c4.webp",
+          "thumbnail": "assets/material-library/MP132-c4-thumb.webp"
         }
       ]
     },
@@ -9169,6 +9471,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP100.webp",
+      "thumbnail": "assets/material-library/MP100-thumb.webp",
       "images": [
         "assets/material-library/MP100.webp"
       ],
@@ -9186,7 +9489,8 @@
             "Blue",
             "Green"
           ],
-          "image": "assets/material-library/MP100.webp"
+          "image": "assets/material-library/MP100.webp",
+          "thumbnail": "assets/material-library/MP100-thumb.webp"
         }
       ]
     },
@@ -9214,6 +9518,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP086.webp",
+      "thumbnail": "assets/material-library/MP086-thumb.webp",
       "images": [
         "assets/material-library/MP086.webp"
       ],
@@ -9230,7 +9535,8 @@
             "Navy",
             "Blue"
           ],
-          "image": "assets/material-library/MP086.webp"
+          "image": "assets/material-library/MP086.webp",
+          "thumbnail": "assets/material-library/MP086-thumb.webp"
         }
       ]
     },
@@ -9257,6 +9563,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP133.webp",
+      "thumbnail": "assets/material-library/MP133-thumb.webp",
       "images": [
         "assets/material-library/MP133.webp"
       ],
@@ -9272,14 +9579,16 @@
           "colors": [
             "Grey"
           ],
-          "image": "assets/material-library/MP133.webp"
+          "image": "assets/material-library/MP133.webp",
+          "thumbnail": "assets/material-library/MP133-thumb.webp"
         },
         {
           "name": "Purple",
           "colors": [
             "Purple"
           ],
-          "image": "assets/material-library/MP133-c2.webp"
+          "image": "assets/material-library/MP133-c2.webp",
+          "thumbnail": "assets/material-library/MP133-c2-thumb.webp"
         }
       ]
     },
@@ -9308,6 +9617,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP101.webp",
+      "thumbnail": "assets/material-library/MP101-thumb.webp",
       "images": [
         "assets/material-library/MP101.webp"
       ],
@@ -9324,7 +9634,8 @@
             "Black",
             "Blue"
           ],
-          "image": "assets/material-library/MP101.webp"
+          "image": "assets/material-library/MP101.webp",
+          "thumbnail": "assets/material-library/MP101-thumb.webp"
         }
       ]
     },
@@ -9351,6 +9662,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP089.webp",
+      "thumbnail": "assets/material-library/MP089-thumb.webp",
       "images": [
         "assets/material-library/MP089.webp"
       ],
@@ -9366,7 +9678,8 @@
           "colors": [
             "Green"
           ],
-          "image": "assets/material-library/MP089.webp"
+          "image": "assets/material-library/MP089.webp",
+          "thumbnail": "assets/material-library/MP089-thumb.webp"
         }
       ]
     },
@@ -9394,6 +9707,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP102.webp",
+      "thumbnail": "assets/material-library/MP102-thumb.webp",
       "images": [
         "assets/material-library/MP102.webp"
       ],
@@ -9409,7 +9723,8 @@
           "colors": [
             "Red"
           ],
-          "image": "assets/material-library/MP102.webp"
+          "image": "assets/material-library/MP102.webp",
+          "thumbnail": "assets/material-library/MP102-thumb.webp"
         }
       ]
     },
@@ -9437,6 +9752,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP090.webp",
+      "thumbnail": "assets/material-library/MP090-thumb.webp",
       "images": [
         "assets/material-library/MP090.webp"
       ],
@@ -9453,7 +9769,8 @@
             "Orange",
             "Yellow"
           ],
-          "image": "assets/material-library/MP090.webp"
+          "image": "assets/material-library/MP090.webp",
+          "thumbnail": "assets/material-library/MP090-thumb.webp"
         }
       ]
     },
@@ -9482,6 +9799,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP104.webp",
+      "thumbnail": "assets/material-library/MP104-thumb.webp",
       "images": [
         "assets/material-library/MP104.webp"
       ],
@@ -9498,7 +9816,8 @@
             "Blue",
             "Purple"
           ],
-          "image": "assets/material-library/MP104.webp"
+          "image": "assets/material-library/MP104.webp",
+          "thumbnail": "assets/material-library/MP104-thumb.webp"
         }
       ]
     },
@@ -9525,6 +9844,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP093.webp",
+      "thumbnail": "assets/material-library/MP093-thumb.webp",
       "images": [
         "assets/material-library/MP093.webp"
       ],
@@ -9540,7 +9860,8 @@
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP093.webp"
+          "image": "assets/material-library/MP093.webp",
+          "thumbnail": "assets/material-library/MP093-thumb.webp"
         },
         {
           "name": "Blue / Red",
@@ -9548,7 +9869,8 @@
             "Blue",
             "Red"
           ],
-          "image": "assets/material-library/MP093-c2.webp"
+          "image": "assets/material-library/MP093-c2.webp",
+          "thumbnail": "assets/material-library/MP093-c2-thumb.webp"
         }
       ]
     },
@@ -9576,6 +9898,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP105.webp",
+      "thumbnail": "assets/material-library/MP105-thumb.webp",
       "images": [
         "assets/material-library/MP105.webp"
       ],
@@ -9591,7 +9914,8 @@
           "colors": [
             "Yellow"
           ],
-          "image": "assets/material-library/MP105.webp"
+          "image": "assets/material-library/MP105.webp",
+          "thumbnail": "assets/material-library/MP105-thumb.webp"
         }
       ]
     },
@@ -9618,6 +9942,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP098.webp",
+      "thumbnail": "assets/material-library/MP098-thumb.webp",
       "images": [
         "assets/material-library/MP098.webp"
       ],
@@ -9633,7 +9958,8 @@
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP098.webp"
+          "image": "assets/material-library/MP098.webp",
+          "thumbnail": "assets/material-library/MP098-thumb.webp"
         }
       ]
     },
@@ -9661,6 +9987,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP106.webp",
+      "thumbnail": "assets/material-library/MP106-thumb.webp",
       "images": [
         "assets/material-library/MP106.webp"
       ],
@@ -9676,7 +10003,8 @@
           "colors": [
             "Red"
           ],
-          "image": "assets/material-library/MP106.webp"
+          "image": "assets/material-library/MP106.webp",
+          "thumbnail": "assets/material-library/MP106-thumb.webp"
         }
       ]
     },
@@ -9704,6 +10032,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP110.webp",
+      "thumbnail": "assets/material-library/MP110-thumb.webp",
       "images": [
         "assets/material-library/MP110.webp"
       ],
@@ -9720,7 +10049,8 @@
             "Navy",
             "Blue"
           ],
-          "image": "assets/material-library/MP110.webp"
+          "image": "assets/material-library/MP110.webp",
+          "thumbnail": "assets/material-library/MP110-thumb.webp"
         },
         {
           "name": "Purple / Lilac",
@@ -9728,7 +10058,8 @@
             "Purple",
             "Lilac"
           ],
-          "image": "assets/material-library/MP110-c2.webp"
+          "image": "assets/material-library/MP110-c2.webp",
+          "thumbnail": "assets/material-library/MP110-c2-thumb.webp"
         }
       ]
     },
@@ -9756,6 +10087,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP107.webp",
+      "thumbnail": "assets/material-library/MP107-thumb.webp",
       "images": [
         "assets/material-library/MP107.webp"
       ],
@@ -9771,7 +10103,8 @@
           "colors": [
             "Brown"
           ],
-          "image": "assets/material-library/MP107.webp"
+          "image": "assets/material-library/MP107.webp",
+          "thumbnail": "assets/material-library/MP107-thumb.webp"
         }
       ]
     },
@@ -9800,6 +10133,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP115.webp",
+      "thumbnail": "assets/material-library/MP115-thumb.webp",
       "images": [
         "assets/material-library/MP115.webp"
       ],
@@ -9817,7 +10151,8 @@
             "Brown",
             "Red"
           ],
-          "image": "assets/material-library/MP115.webp"
+          "image": "assets/material-library/MP115.webp",
+          "thumbnail": "assets/material-library/MP115-thumb.webp"
         }
       ]
     },
@@ -9846,6 +10181,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP108.webp",
+      "thumbnail": "assets/material-library/MP108-thumb.webp",
       "images": [
         "assets/material-library/MP108.webp"
       ],
@@ -9862,7 +10198,8 @@
             "Green",
             "Red"
           ],
-          "image": "assets/material-library/MP108.webp"
+          "image": "assets/material-library/MP108.webp",
+          "thumbnail": "assets/material-library/MP108-thumb.webp"
         }
       ]
     },
@@ -9891,6 +10228,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP116.webp",
+      "thumbnail": "assets/material-library/MP116-thumb.webp",
       "images": [
         "assets/material-library/MP116.webp"
       ],
@@ -9908,7 +10246,8 @@
             "Cream",
             "Red"
           ],
-          "image": "assets/material-library/MP116.webp"
+          "image": "assets/material-library/MP116.webp",
+          "thumbnail": "assets/material-library/MP116-thumb.webp"
         }
       ]
     },
@@ -9937,6 +10276,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP109.webp",
+      "thumbnail": "assets/material-library/MP109-thumb.webp",
       "images": [
         "assets/material-library/MP109.webp"
       ],
@@ -9954,7 +10294,8 @@
             "Lilac",
             "Lavender"
           ],
-          "image": "assets/material-library/MP109.webp"
+          "image": "assets/material-library/MP109.webp",
+          "thumbnail": "assets/material-library/MP109-thumb.webp"
         },
         {
           "name": "Orange / Pink",
@@ -9962,14 +10303,16 @@
             "Orange",
             "Pink"
           ],
-          "image": "assets/material-library/MP109-c2.webp"
+          "image": "assets/material-library/MP109-c2.webp",
+          "thumbnail": "assets/material-library/MP109-c2-thumb.webp"
         },
         {
           "name": "Pink",
           "colors": [
             "Pink"
           ],
-          "image": "assets/material-library/MP109-c3.webp"
+          "image": "assets/material-library/MP109-c3.webp",
+          "thumbnail": "assets/material-library/MP109-c3-thumb.webp"
         },
         {
           "name": "Orange / Pink",
@@ -9977,7 +10320,8 @@
             "Orange",
             "Pink"
           ],
-          "image": "assets/material-library/MP109-c4.webp"
+          "image": "assets/material-library/MP109-c4.webp",
+          "thumbnail": "assets/material-library/MP109-c4-thumb.webp"
         }
       ]
     },
@@ -10005,6 +10349,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP117.webp",
+      "thumbnail": "assets/material-library/MP117-thumb.webp",
       "images": [
         "assets/material-library/MP117.webp"
       ],
@@ -10021,7 +10366,8 @@
             "Cream",
             "Orange"
           ],
-          "image": "assets/material-library/MP117.webp"
+          "image": "assets/material-library/MP117.webp",
+          "thumbnail": "assets/material-library/MP117-thumb.webp"
         }
       ]
     },
@@ -10051,6 +10397,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP127.webp",
+      "thumbnail": "assets/material-library/MP127-thumb.webp",
       "images": [
         "assets/material-library/MP127.webp"
       ],
@@ -10069,7 +10416,8 @@
             "Putty",
             "Pink"
           ],
-          "image": "assets/material-library/MP127.webp"
+          "image": "assets/material-library/MP127.webp",
+          "thumbnail": "assets/material-library/MP127-thumb.webp"
         },
         {
           "name": "Red / Pink / Magenta",
@@ -10078,14 +10426,16 @@
             "Pink",
             "Magenta"
           ],
-          "image": "assets/material-library/MP127-c2.webp"
+          "image": "assets/material-library/MP127-c2.webp",
+          "thumbnail": "assets/material-library/MP127-c2-thumb.webp"
         },
         {
           "name": "Blue",
           "colors": [
             "Blue"
           ],
-          "image": "assets/material-library/MP127-c3.webp"
+          "image": "assets/material-library/MP127-c3.webp",
+          "thumbnail": "assets/material-library/MP127-c3-thumb.webp"
         },
         {
           "name": "Orange / Lilac",
@@ -10093,7 +10443,8 @@
             "Orange",
             "Lilac"
           ],
-          "image": "assets/material-library/MP127-c4.webp"
+          "image": "assets/material-library/MP127-c4.webp",
+          "thumbnail": "assets/material-library/MP127-c4-thumb.webp"
         }
       ]
     },
@@ -10121,6 +10472,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP118.webp",
+      "thumbnail": "assets/material-library/MP118-thumb.webp",
       "images": [
         "assets/material-library/MP118.webp"
       ],
@@ -10137,7 +10489,8 @@
             "Black",
             "Cream"
           ],
-          "image": "assets/material-library/MP118.webp"
+          "image": "assets/material-library/MP118.webp",
+          "thumbnail": "assets/material-library/MP118-thumb.webp"
         }
       ]
     },
@@ -10172,6 +10525,7 @@
       ],
       "designNote": "AI-assisted design concept. Repeat alignment, production scale, colour matching and a physical strike-off remain to be developed.",
       "image": "assets/material-library/MS003.webp",
+      "thumbnail": "assets/material-library/MS003-thumb.webp",
       "images": [
         "assets/material-library/MS003.webp"
       ],
@@ -10204,6 +10558,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP119.webp",
+      "thumbnail": "assets/material-library/MP119-thumb.webp",
       "images": [
         "assets/material-library/MP119.webp"
       ],
@@ -10221,7 +10576,8 @@
             "Cream",
             "Red"
           ],
-          "image": "assets/material-library/MP119.webp"
+          "image": "assets/material-library/MP119.webp",
+          "thumbnail": "assets/material-library/MP119-thumb.webp"
         }
       ]
     },
@@ -10251,6 +10607,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP120.webp",
+      "thumbnail": "assets/material-library/MP120-thumb.webp",
       "images": [
         "assets/material-library/MP120.webp"
       ],
@@ -10269,7 +10626,8 @@
             "Blue",
             "Mustard"
           ],
-          "image": "assets/material-library/MP120.webp"
+          "image": "assets/material-library/MP120.webp",
+          "thumbnail": "assets/material-library/MP120-thumb.webp"
         }
       ]
     },
@@ -10298,6 +10656,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP121.webp",
+      "thumbnail": "assets/material-library/MP121-thumb.webp",
       "images": [
         "assets/material-library/MP121.webp"
       ],
@@ -10315,7 +10674,8 @@
             "Mustard",
             "Gold"
           ],
-          "image": "assets/material-library/MP121.webp"
+          "image": "assets/material-library/MP121.webp",
+          "thumbnail": "assets/material-library/MP121-thumb.webp"
         }
       ]
     },
@@ -10345,6 +10705,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP122.webp",
+      "thumbnail": "assets/material-library/MP122-thumb.webp",
       "images": [
         "assets/material-library/MP122.webp"
       ],
@@ -10363,7 +10724,8 @@
             "Navy",
             "Gold"
           ],
-          "image": "assets/material-library/MP122.webp"
+          "image": "assets/material-library/MP122.webp",
+          "thumbnail": "assets/material-library/MP122-thumb.webp"
         }
       ]
     },
@@ -10392,6 +10754,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP123.webp",
+      "thumbnail": "assets/material-library/MP123-thumb.webp",
       "images": [
         "assets/material-library/MP123.webp"
       ],
@@ -10409,7 +10772,8 @@
             "Navy",
             "Blue"
           ],
-          "image": "assets/material-library/MP123.webp"
+          "image": "assets/material-library/MP123.webp",
+          "thumbnail": "assets/material-library/MP123-thumb.webp"
         }
       ]
     },
@@ -10438,6 +10802,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP124.webp",
+      "thumbnail": "assets/material-library/MP124-thumb.webp",
       "images": [
         "assets/material-library/MP124.webp"
       ],
@@ -10455,7 +10820,8 @@
             "Olive",
             "Mustard"
           ],
-          "image": "assets/material-library/MP124.webp"
+          "image": "assets/material-library/MP124.webp",
+          "thumbnail": "assets/material-library/MP124-thumb.webp"
         }
       ]
     },
@@ -10485,6 +10851,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP125.webp",
+      "thumbnail": "assets/material-library/MP125-thumb.webp",
       "images": [
         "assets/material-library/MP125.webp"
       ],
@@ -10503,7 +10870,8 @@
             "Orange",
             "Mustard"
           ],
-          "image": "assets/material-library/MP125.webp"
+          "image": "assets/material-library/MP125.webp",
+          "thumbnail": "assets/material-library/MP125-thumb.webp"
         }
       ]
     },
@@ -10533,6 +10901,7 @@
       "status": "reference",
       "season": "Current reference — season not stated",
       "image": "assets/material-library/MP130.webp",
+      "thumbnail": "assets/material-library/MP130-thumb.webp",
       "images": [
         "assets/material-library/MP130.webp"
       ],
@@ -10550,7 +10919,8 @@
             "Yellow",
             "Pink"
           ],
-          "image": "assets/material-library/MP130.webp"
+          "image": "assets/material-library/MP130.webp",
+          "thumbnail": "assets/material-library/MP130-thumb.webp"
         },
         {
           "name": "Blue / Red / Pink",
@@ -10559,7 +10929,8 @@
             "Red",
             "Pink"
           ],
-          "image": "assets/material-library/MP130-c2.webp"
+          "image": "assets/material-library/MP130-c2.webp",
+          "thumbnail": "assets/material-library/MP130-c2-thumb.webp"
         }
       ]
     }

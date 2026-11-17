@@ -1,7 +1,8 @@
 (() => {
   'use strict';
 
-  const DATA_URL = 'data/collections.json';
+  const scriptVersion = document.currentScript ? new URL(document.currentScript.src, location.href).searchParams.get('v') : '';
+  const DATA_URL = 'data/collections.json?v=' + encodeURIComponent(scriptVersion || '20261117perf1');
   const SELECT_KEY = 'soho-collection-selection';
   const view = document.body.dataset.view || 'landing';
 
@@ -13,6 +14,43 @@
   };
 
   const escape = value => String(value == null ? '' : value);
+
+  function imageSource(value) {
+    const source = String(value || '');
+    const publicRoot = 'https://liyalili10805-png.github.io/marks-client-showroom/';
+    return source.startsWith(publicRoot) ? source.slice(publicRoot.length) : source;
+  }
+  function listImage(item, compact) {
+    if (String(item.image || '').startsWith('blob:')) return item.image;
+    return (compact && item.viewThumbnails && item.viewThumbnails[0]) || item.thumbnail || item.listImage || item.image;
+  }
+  function materialImage(source, label, options = {}) {
+    const img = document.createElement('img');
+    img.alt = label || '';
+    img.width = options.width || 480;
+    img.height = options.height || 720;
+    img.loading = options.eager ? 'eager' : 'lazy';
+    img.decoding = 'async';
+    if (options.priority) img.fetchPriority = 'high';
+    if (options.styleCode) {
+      img.dataset.styleImage = options.styleCode;
+      img.dataset.imageSize = options.compact ? 'compact' : 'list';
+    }
+    const primary = imageSource(source);
+    const fallback = imageSource(options.fallback);
+    if (fallback && fallback !== primary) img.addEventListener('error', () => {
+      img.removeAttribute('srcset');
+      img.src = fallback;
+    }, {once: true});
+    img.src = primary;
+    return img;
+  }
+  function refreshOverrideImages() {
+    document.querySelectorAll('[data-style-image]').forEach(img => {
+      const item = products.find(product => normCode(product.code) === normCode(img.dataset.styleImage));
+      if (item) img.src = imageSource(listImage(item, img.dataset.imageSize === 'compact'));
+    });
+  }
 
   // Development timing is an assigned brief, not the source garment's collection date.
   const developmentSeason = product => String(product.developmentSeason || '').trim();
@@ -53,6 +91,11 @@
       if (label) label.textContent = saved ? 'Saved' : 'Save style';
       else button.textContent = saved ? 'Saved' : 'Save style';
     });
+    document.querySelectorAll('[data-style-select]').forEach(button => {
+      const saved = selection.includes(button.dataset.styleSelect);
+      button.textContent = saved ? 'Selected' : 'Select';
+      button.classList.toggle('active', saved);
+    });
   }
 
   function toggleSelection(product) {
@@ -77,14 +120,11 @@
     return wrap;
   }
 
-  function card(product, withActions) {
+  function card(product, withActions, index = 0) {
     const article = el('article', 'col-card');
     const media = el('a', 'col-card-media');
     media.href = `collection-detail.html?code=${encodeURIComponent(product.code)}`;
-    const img = document.createElement('img');
-    img.src = product.image;
-    img.alt = product.name;
-    img.loading = 'lazy';
+    const img = materialImage(listImage(product), product.name, {eager: index < 3, priority: index === 0, fallback: product.image, styleCode: product.code});
     img.className = 'fit-top';
     media.append(img);
     article.append(media);
@@ -99,6 +139,7 @@
       const actions = el('div', 'col-card-actions');
       const select = el('button', 'link-action', selection.includes(product.code) ? 'Selected' : 'Select');
       select.type = 'button';
+      select.dataset.styleSelect = product.code;
       select.classList.toggle('active', selection.includes(product.code));
       select.addEventListener('click', () => {
         toggleSelection(product);
@@ -144,9 +185,7 @@
       const product = products.find(p => p.code === code);
       if (!product) return;
       const row = el('div', 'panel-row');
-      const img = document.createElement('img');
-      img.src = product.listImage || product.image;
-      img.alt = product.name;
+      const img = materialImage(listImage(product, true), product.name, {width: 120, height: 160, fallback: product.listImage || product.image, styleCode: product.code, compact: true});
       const text = el('div');
       text.append(el('strong', null, product.name), el('small', null, product.code));
       const remove = el('button', 'panel-remove', '×');
@@ -154,7 +193,7 @@
       remove.addEventListener('click', () => {
         selection = selection.filter(item => item !== code);
         saveSelection();
-        renderSeries();
+        renderPanel();
       });
       row.append(img, text, remove);
       list.append(row);
@@ -184,9 +223,7 @@
     explore.href = 'collection-series.html?occasion=everyday';
     copy.append(explore);
     const media = el('div', 'col-hero-media');
-    const cover = document.createElement('img');
-    cover.src = collection.cover;
-    cover.alt = collection.title;
+    const cover = materialImage(collection.coverThumbnail || collection.cover, collection.title, {width: 1200, height: 900, eager: true, priority: true, fallback: collection.cover});
     media.append(cover);
     hero.append(copy, media);
     root.append(hero);
@@ -203,10 +240,8 @@
       const card = el('article', 'weekly-card');
       const media = el('a', 'weekly-media');
       media.href = `collection-detail.html?code=${encodeURIComponent(item.code)}`;
-      const img = document.createElement('img');
-      img.src = item.image;
-      img.alt = item.name;
-      img.loading = 'lazy';
+      const productImage = products.find(product => normCode(product.code) === normCode(item.code)) || item;
+      const img = materialImage(item.thumbnail || listImage(productImage), item.name, {width: 480, height: 480, fallback: item.image, styleCode: item.code});
       media.append(img);
 
       const info = el('div', 'weekly-info');
@@ -245,9 +280,7 @@
     data.occasions.forEach(item => {
       const tile = el('a', 'occasion-tile');
       tile.href = `collection-series.html?occasion=${encodeURIComponent(item.slug)}`;
-      const img = document.createElement('img');
-      img.src = item.image;
-      img.alt = item.name;
+      const img = materialImage(item.thumbnail || item.image, item.name, {width: 900, height: 350, fallback: item.image});
       tile.append(img, el('span', 'occasion-label', item.name));
       occGrid.append(tile);
     });
@@ -378,7 +411,7 @@
       const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
       if (page > pages) page = pages;
       grid.innerHTML = '';
-      filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE).forEach(product => grid.append(card(product, true)));
+      filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE).forEach((product, index) => grid.append(card(product, true, index)));
       if (!filtered.length) grid.append(el('p', 'empty-note', 'No styles match these filters.'));
       renderPager(pages);
       renderPanel();
@@ -407,20 +440,18 @@
     const views = Array.isArray(product.views) ? product.views : [];
     let mainImg = null;
     if (views.length) {
-      mainImg = document.createElement('img');
-      mainImg.src = views[0];
-      mainImg.alt = product.name;
+      mainImg = materialImage(views[0], product.name, {width: 600, height: 900, eager: true, priority: true});
       main.append(mainImg);
       views.forEach((src, index) => {
         const button = document.createElement('button');
         button.type = 'button';
         button.className = index === 0 ? 'active' : '';
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = product.viewLabels && product.viewLabels[index] ? product.viewLabels[index] : `${product.name} view ${index + 1}`;
+        const thumbnail = (product.viewThumbnails || [])[index] || (index === 0 ? listImage(product, true) : src);
+        const label = product.viewLabels && product.viewLabels[index] ? product.viewLabels[index] : `${product.name} view ${index + 1}`;
+        const img = materialImage(thumbnail, label, {width: 120, height: 180, fallback: src});
         button.append(img);
         button.addEventListener('click', () => {
-          mainImg.src = src;
+          mainImg.src = imageSource(src);
           thumbs.querySelectorAll('button').forEach(item => item.classList.remove('active'));
           button.classList.add('active');
         });
@@ -589,9 +620,7 @@
     similar.concat(fallback).forEach(item => {
       const card = el('a', 'similar-card');
       card.href = `collection-detail.html?code=${encodeURIComponent(item.code)}`;
-      const image = document.createElement('img');
-      image.src = item.image;
-      image.alt = item.name;
+      const image = materialImage(listImage(item), item.name, {width: 480, height: 600, fallback: item.image, styleCode: item.code});
       card.append(image, el('strong', null, item.name), el('span', null, item.code));
       similarGrid.append(card);
     });
@@ -738,19 +767,20 @@
   const normCode = code => String(code || '').replace(/^AE-0?/, 'AE-');
 
   async function applyOverrides() {
-    if (!window.DemoStore) return;
+    if (!window.DemoStore) return false;
+    let changed = false;
     try {
       const state = await DemoStore.state();
       const overrides = state.overrides || {};
       const preview = new URLSearchParams(location.search).has('preview');
       const useContent = preview || (state.contentStatus || 'published') === 'published';
       if (useContent && overrides.hero) {
-        if (overrides.hero.titleLines && overrides.hero.titleLines.length) collection.titleLines = overrides.hero.titleLines;
-        if (overrides.hero.intro) collection.intro = overrides.hero.intro;
-        if (overrides.hero.ctaLabel) collection.ctaLabel = overrides.hero.ctaLabel;
+        if (overrides.hero.titleLines && overrides.hero.titleLines.length) { collection.titleLines = overrides.hero.titleLines; changed = true; }
+        if (overrides.hero.intro) { collection.intro = overrides.hero.intro; changed = true; }
+        if (overrides.hero.ctaLabel) { collection.ctaLabel = overrides.hero.ctaLabel; changed = true; }
         if (overrides.hero.imageId) {
           const blob = await DemoStore.getBlob(overrides.hero.imageId);
-          if (blob) collection.cover = URL.createObjectURL(blob);
+          if (blob) { collection.cover = URL.createObjectURL(blob); collection.coverThumbnail = collection.cover; changed = true; }
         }
       }
       if (useContent && overrides.productImages) {
@@ -758,25 +788,27 @@
           const product = products.find(item => normCode(item.code) === normCode(code));
           if (!product) continue;
           const blob = await DemoStore.getBlob(id);
-          if (blob) product.image = URL.createObjectURL(blob);
+          if (blob) { product.image = URL.createObjectURL(blob); product.thumbnail = product.image; changed = true; }
         }
       }
     } catch (error) {
       console.warn('Demo overrides unavailable', error);
     }
+    return changed;
   }
 
   let data;
   let collection;
   let products;
 
-  fetch(DATA_URL + '?v=' + Date.now())
+  fetch(DATA_URL)
     .then(response => response.json())
     .then(async payload => {
       data = payload;
       collection = payload.collection;
       products = payload.products;
-      await applyOverrides();
+      const preview = new URLSearchParams(location.search).has('preview');
+      if (preview) await applyOverrides();
       if (view === 'landing') renderLanding();
       if (view === 'series') {
         renderSeries();
@@ -784,6 +816,11 @@
       }
       if (view === 'detail') renderDetail();
       saveSelection();
+      if (!preview) applyOverrides().then(changed => {
+        if (!changed) return;
+        if (view === 'landing') renderLanding();
+        else refreshOverrideImages();
+      });
     })
     .catch(error => {
       const root = document.getElementById('collection-view');

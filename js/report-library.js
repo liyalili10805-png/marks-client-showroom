@@ -13,6 +13,10 @@
   const categories = ['All research', 'Outerwear', 'Shirts', 'Trousers', 'Materials', 'Print & Pattern', 'Construction & Finish'];
   const state = { category: 'All research', gender: 'all', query: '' };
   let data, reports, byId, featuredIds = [], activeObserver;
+  const reportCache = new WeakMap();
+  const cardCache = new Map();
+  const pendingImages = new WeakMap();
+  let imageObserver;
 
   const text = value => typeof value === 'string' || typeof value === 'number' ? String(value) : '';
   const array = value => Array.isArray(value) ? value : value == null ? [] : [value];
@@ -83,24 +87,62 @@
     return value === 'women' ? /\b(women|womens|woman|female)\b/.test(raw) : /\b(men|mens|man|male)\b/.test(raw);
   }
   function searchText(report) {
-    return [report.title, report.category, report.kind, genderText(report), report.summary, report.whatChanges,
+    const cached = reportCache.get(report);
+    if (cached && cached.search != null) return cached.search;
+    const value = [report.title, report.category, report.kind, genderText(report), report.summary, report.whatChanges,
       ...strings(report.elements), ...strings(report.patterns), ...strings(report.processes),
       ...array(report.materials).flatMap(material => [material && material.name, material && material.question])]
       .map(text).join(' ').toLowerCase();
+    const memo = cached || {}; memo.search = value; reportCache.set(report, memo);
+    return value;
   }
   function isBoard(visual) { return /board|collage|swatch|print design|textile direction/i.test([visual.role, visual.alt].map(text).join(' ')); }
   function isSilhouette(visual) { return /silhouette|full.length|lookbook|full.body/i.test(text(visual.role)); }
-  function visualIds(report) { return unique(strings(report.visualIds)).filter(id => data.visuals[id] && safeUrl(data.visuals[id].src)); }
+  function visualIds(report) {
+    const cached = reportCache.get(report);
+    if (cached && cached.visualIds) return cached.visualIds;
+    const ids = unique(strings(report.visualIds)).filter(id => data.visuals[id] && safeUrl(data.visuals[id].src));
+    const memo = cached || {}; memo.visualIds = ids; reportCache.set(report, memo);
+    return ids;
+  }
   function coverId(report) {
     const ids = visualIds(report);
     return ids[0];
   }
-  function image(visual, eager = false) {
+  function image(visual, eager = false, layout = 'figure') {
     const img = node('img');
-    img.src = safeUrl(visual.src);
     img.alt = text(visual.alt) || text(visual.caption);
     img.loading = eager ? 'eager' : 'lazy';
     img.decoding = 'async';
+    img.fetchPriority = eager ? 'high' : 'auto';
+    const width = Number(visual.width), height = Number(visual.height);
+    if (width > 0 && height > 0) { img.width = width; img.height = height; }
+    const srcset = (layout === 'figure' ? '' : text(visual.srcset)).split(',').map(value => {
+      const [src, descriptor] = value.trim().split(/\s+/);
+      return safeUrl(src) && /^\d+w$/.test(descriptor) ? `${safeUrl(src)} ${descriptor}` : '';
+    }).filter(Boolean).join(', ');
+    const sizes = layout === 'feature'
+      ? '(max-width: 800px) 100vw, (min-width: 1000px) 65vw, 33vw'
+      : layout === 'card'
+        ? '(max-width: 560px) 100vw, (max-width: 800px) 50vw, (min-width: 1450px) 25vw, 33vw'
+        : '(max-width: 800px) 100vw, (min-width: 1450px) 1100px, 85vw';
+    const loadImage = () => {
+      if (srcset) { img.sizes = sizes; img.srcset = srcset; }
+      img.src = safeUrl((layout === 'card' ? visual.thumbnail : '') || visual.src);
+    };
+    // A small observer margin avoids native lazy loading several screens of large cards.
+    // Dimensions (or the card's CSS ratio) reserve layout before a source is assigned.
+    if (!eager && (layout !== 'figure' || (width > 0 && height > 0)) && 'IntersectionObserver' in window) {
+      if (!imageObserver) imageObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const start = pendingImages.get(entry.target);
+          if (start) { pendingImages.delete(entry.target); start(); }
+          imageObserver.unobserve(entry.target);
+        });
+      }, { rootMargin: '300px 0px' });
+      pendingImages.set(img, loadImage); imageObserver.observe(img);
+    } else loadImage();
     return img;
   }
   function source(id) { return id && data.sources[id] || null; }
@@ -110,13 +152,15 @@
     return link(item.url, '', label || item.title || item.publisher, true);
   }
   function card(report, feature = false, eager = false) {
+    const cacheKey = `${report.id}:${feature ? 'feature' : 'card'}`;
+    if (cardCache.has(cacheKey)) return cardCache.get(cacheKey);
     const article = node('article', 'rl-card');
     article.dataset.reportId = report.id;
     const id = coverId(report), visual = id && data.visuals[id];
     if (visual) {
       const media = link(reportUrl(report.id), 'rl-card-media' + (isBoard(visual) ? ' is-board' : isSilhouette(visual) ? ' is-silhouette' : ''), null);
       media.setAttribute('aria-label', `Read ${report.title}`);
-      const img = image(visual, eager);
+      const img = image(visual, eager, feature ? 'feature' : 'card');
       img.addEventListener('error', () => { media.remove(); article.classList.add('is-text-only'); }, { once: true });
       media.append(img); article.append(media);
     } else article.classList.add('is-text-only');
@@ -128,6 +172,7 @@
     heading.append(headingLink); article.append(meta, heading);
     if (report.summary) article.append(node('p', 'rl-card-summary', report.cardSummary || report.summary));
     if (visual && (visual.season || visual.role)) article.append(node('p', 'rl-card-visual-note', [visual.season, visual.role].map(text).filter(Boolean).join(' · ')));
+    cardCache.set(cacheKey, article);
     return article;
   }
   function figure(id, eager = false) {
@@ -193,9 +238,18 @@
     });
     return grid;
   }
-  function imageCredits(ids) {
+  function disclosure(label, build) {
     const details = node('details', 'rl-source-disclosure');
-    details.append(node('summary', '', 'Image credits & actual collection seasons'));
+    details.append(node('summary', '', label));
+    let built = false;
+    details.addEventListener('toggle', () => {
+      if (!details.open || built) return;
+      built = true; details.append(build());
+    });
+    return details;
+  }
+  function imageCredits(ids) {
+    return disclosure('Image credits & actual collection seasons', () => {
     const rows = node('div', 'rl-visual-credits');
     unique(ids).forEach(id => {
       const visual = data.visuals[id]; if (!visual) return;
@@ -206,7 +260,8 @@
       if (safeUrl(visual.sourceUrl, true)) row.append(link(visual.sourceUrl, '', 'Original source ↗', true));
       rows.append(row);
     });
-    details.append(rows); return details;
+    return rows;
+    });
   }
   function readState() {
     const query = new URLSearchParams(location.search), requested = query.get('category');
@@ -230,7 +285,7 @@
     const featured = node('section','rl-featured'); featured.setAttribute('aria-labelledby','rl-featured-title');
     const featureHeading = node('div','rl-section-topline'); const featureTitle = node('h2','','Featured research'); featureTitle.id='rl-featured-title';
     featureHeading.append(featureTitle,node('span','rl-kicker rl-muted','The seasonal edit'));
-    const featureGrid = node('div','rl-feature-grid'); featuredIds.forEach(id => featureGrid.append(card(byId.get(id),true,true)));
+    const featureGrid = node('div','rl-feature-grid'); featuredIds.forEach(id => featureGrid.append(card(byId.get(id),true)));
     featured.append(featureHeading,featureGrid); if (featuredIds.length) shell.append(featured);
 
     const toolbar = node('section','rl-toolbar'); toolbar.setAttribute('aria-label','Filter research');
@@ -268,8 +323,7 @@
     const panelHead=node('div','rl-panel-heading'), panelTitle=node('h2','','Data & sources');panelTitle.id='rl-data-title';
     panelHead.append(panelTitle,node('p','','Each figure retains its market, period and measure. Collection imagery and seasonal forecasts are identified separately in the source records.'));
     evidence.append(panelHead);const metricSection=metricGrid(metricIds);if(metricSection)evidence.append(metricSection);
-    const sources=node('details','rl-source-disclosure');sources.append(node('summary','','Explore the research sources'));
-    sources.append(sourceRows(unique(reports.flatMap(report => [...strings(report.sourceIds),...array(report.sourceJoins).map(join => join && join.sourceId)]))));evidence.append(sources);
+    const sources=disclosure('Explore the research sources', () => sourceRows(unique(reports.flatMap(report => [...strings(report.sourceIds),...array(report.sourceJoins).map(join => join && join.sourceId)]))));evidence.append(sources);
     evidence.append(imageCredits(unique(reports.flatMap(visualIds))));shell.append(evidence);app.replaceChildren(shell);
 
     function update(push=true) {
@@ -352,9 +406,10 @@
   async function load() {
     app.replaceChildren(node('p','rl-loading','Loading research…'));
     try {
-      const response=await fetch(dataUrl,{cache:'no-cache'});if(!response.ok)throw new Error('Unavailable');const incoming=await response.json();
+      const response=await fetch(dataUrl);if(!response.ok)throw new Error('Unavailable');const incoming=await response.json();
       if(!incoming||!Array.isArray(incoming.reports))throw new Error('Invalid data');
       data={...incoming,sources:incoming.sources||{},metrics:incoming.metrics||{},visuals:incoming.visuals||{}};
+      cardCache.clear();
       const seen=new Set();reports=incoming.reports.filter(report=>report&&text(report.id)&&text(report.title)&&!seen.has(report.id)&&(seen.add(report.id),true));byId=new Map(reports.map(report=>[report.id,report]));
       featuredIds=unique(strings(incoming.featured)).filter(id=>byId.has(id)).slice(0,3);
       if(body.dataset.page==='dossier')renderDossier();else renderHub();

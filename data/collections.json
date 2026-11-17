@@ -6,7 +6,8 @@
     "eyebrow": "AUTUMN EDIT 01",
     "headline": "Everyday layers. Considered details.",
     "intro": "Discover seasonal styles, compare materials and share what works for your store.",
-    "cover": "https://liyalili10805-png.github.io/marks-client-showroom/assets/demo/hero.webp"
+    "cover": "https://liyalili10805-png.github.io/marks-client-showroom/assets/demo/hero.webp",
+    "coverThumbnail": "assets/collections/thumbs/collection-cover.webp"
   },
   "products": [
     {
@@ -112,7 +113,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-O01-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-O01-view-01.webp",
+        "assets/collections/thumbs/RF27-O01-view-02.webp",
+        "assets/collections/thumbs/RF27-O01-view-03.webp",
+        "assets/collections/thumbs/RF27-O01-view-04.webp"
+      ]
     },
     {
       "code": "RF27-S04",
@@ -217,7 +225,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-S04-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-S04-view-01.webp",
+        "assets/collections/thumbs/RF27-S04-view-02.webp",
+        "assets/collections/thumbs/RF27-S04-view-03.webp",
+        "assets/collections/thumbs/RF27-S04-view-04.webp"
+      ]
     },
     {
       "code": "RF27-T01",
@@ -322,7 +337,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-T01-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-T01-view-01.webp",
+        "assets/collections/thumbs/RF27-T01-view-02.webp",
+        "assets/collections/thumbs/RF27-T01-view-03.webp",
+        "assets/collections/thumbs/RF27-T01-view-04.webp"
+      ]
     },
     {
       "code": "RF27-O02",
@@ -427,7 +449,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-O02-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-O02-view-01.webp",
+        "assets/collections/thumbs/RF27-O02-view-02.webp",
+        "assets/collections/thumbs/RF27-O02-view-03.webp",
+        "assets/collections/thumbs/RF27-O02-view-04.webp"
+      ]
     },
     {
       "code": "RF27-S01",
@@ -532,7 +561,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-S01-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-S01-view-01.webp",
+        "assets/collections/thumbs/RF27-S01-view-02.webp",
+        "assets/collections/thumbs/RF27-S01-view-03.webp",
+        "assets/collections/thumbs/RF27-S01-view-04.webp"
+      ]
     },
     {
       "code": "RF27-T04",
@@ -637,7 +673,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-T04-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-T04-view-01.webp",
+        "assets/collections/thumbs/RF27-T04-view-02.webp",
+        "assets/collections/thumbs/RF27-T04-view-03.webp",
+        "assets/collections/thumbs/RF27-T04-view-04.webp"
+      ]
     },
     {
       "code": "RF27-O03",
@@ -743,7 +786,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-O03-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-O03-view-01.webp",
+        "assets/collections/thumbs/RF27-O03-view-02.webp",
+        "assets/collections/thumbs/RF27-O03-view-03.webp",
+        "assets/collections/thumbs/RF27-O03-view-04.webp"
+      ]
     },
     {
       "code": "RF27-S05",
@@ -848,7 +898,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-S05-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-S05-view-01.webp",
+        "assets/collections/thumbs/RF27-S05-view-02.webp",
+        "assets/collections/thumbs/RF27-S05-view-03.webp",
+        "assets/collections/thumbs/RF27-S05-view-04.webp"
+      ]
     },
     {
       "code": "RF27-T02",
@@ -953,7 +1010,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-T02-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-T02-view-01.webp",
+        "assets/collections/thumbs/RF27-T02-view-02.webp",
+        "assets/collections/thumbs/RF27-T02-view-03.webp",
+        "assets/collections/thumbs/RF27-T02-view-04.webp"
+      ]
     },
     {
       "code": "RF27-O04",
@@ -1059,7 +1123,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-O04-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-O04-view-01.webp",
+        "assets/collections/thumbs/RF27-O04-view-02.webp",
+        "assets/collections/thumbs/RF27-O04-view-03.webp",
+        "assets/collections/thumbs/RF27-O04-view-04.webp"
+      ]
     },
     {
       "code": "RF27-S02",
@@ -1164,7 +1235,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-S02-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-S02-view-01.webp",
+        "assets/collections/thumbs/RF27-S02-view-02.webp",
+        "assets/collections/thumbs/RF27-S02-view-03.webp",
+        "assets/collections/thumbs/RF27-S02-view-04.webp"
+      ]
     },
     {
       "code": "RF27-T05",
@@ -1269,7 +1347,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-T05-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-T05-view-01.webp",
+        "assets/collections/thumbs/RF27-T05-view-02.webp",
+        "assets/collections/thumbs/RF27-T05-view-03.webp",
+        "assets/collections/thumbs/RF27-T05-view-04.webp"
+      ]
     },
     {
       "code": "RF27-O05",
@@ -1372,7 +1457,13 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-O05-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-O05-view-01.webp",
+        "assets/collections/thumbs/RF27-O05-view-02.webp",
+        "assets/collections/thumbs/RF27-O05-view-03.webp"
+      ]
     },
     {
       "code": "RF27-S06",
@@ -1477,7 +1568,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-S06-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-S06-view-01.webp",
+        "assets/collections/thumbs/RF27-S06-view-02.webp",
+        "assets/collections/thumbs/RF27-S06-view-03.webp",
+        "assets/collections/thumbs/RF27-S06-view-04.webp"
+      ]
     },
     {
       "code": "RF27-T03",
@@ -1580,7 +1678,13 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-T03-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-T03-view-01.webp",
+        "assets/collections/thumbs/RF27-T03-view-02.webp",
+        "assets/collections/thumbs/RF27-T03-view-03.webp"
+      ]
     },
     {
       "code": "RF27-O06",
@@ -1685,7 +1789,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-O06-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-O06-view-01.webp",
+        "assets/collections/thumbs/RF27-O06-view-02.webp",
+        "assets/collections/thumbs/RF27-O06-view-03.webp",
+        "assets/collections/thumbs/RF27-O06-view-04.webp"
+      ]
     },
     {
       "code": "RF27-S03",
@@ -1790,7 +1901,14 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-S03-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-S03-view-01.webp",
+        "assets/collections/thumbs/RF27-S03-view-02.webp",
+        "assets/collections/thumbs/RF27-S03-view-03.webp",
+        "assets/collections/thumbs/RF27-S03-view-04.webp"
+      ]
     },
     {
       "code": "RF27-T06",
@@ -1893,7 +2011,13 @@
           "visualNote": "Digital colour and pattern direction. Physical fabric approval required."
         }
       ],
-      "developmentSeason": "A/W 27/28"
+      "developmentSeason": "A/W 27/28",
+      "thumbnail": "assets/collections/thumbs/RF27-T06-card.webp",
+      "viewThumbnails": [
+        "assets/collections/thumbs/RF27-T06-view-01.webp",
+        "assets/collections/thumbs/RF27-T06-view-02.webp",
+        "assets/collections/thumbs/RF27-T06-view-03.webp"
+      ]
     },
     {
       "code": "AE-014",
@@ -1973,7 +2097,13 @@
         "y": 15
       },
       "subtitle": "Easy layering for everyday wear.",
-      "description": "A relaxed overshirt in olive cotton twill, cut for layering over knitwear. Two chest flap pockets, a full button front and a soft collar."
+      "description": "A relaxed overshirt in olive cotton twill, cut for layering over knitwear. Two chest flap pockets, a full button front and a soft collar.",
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
+      ]
     },
     {
       "code": "AE-015",
@@ -2041,7 +2171,13 @@
         "y": 20
       },
       "subtitle": "Cream textured knit crewneck",
-      "description": "A cream crewneck sweater in a textured cotton knit with ribbed cuffs and hem. Designed as an everyday layer for transitional weather."
+      "description": "A cream crewneck sweater in a textured cotton knit with ribbed cuffs and hem. Designed as an everyday layer for transitional weather.",
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
+      ]
     },
     {
       "code": "AE-016",
@@ -2106,7 +2242,13 @@
         "y": 20
       },
       "subtitle": "Dark indigo straight-leg jeans",
-      "description": "Straight-leg jeans in dark indigo denim with a mid rise, five-pocket construction and a clean hem."
+      "description": "Straight-leg jeans in dark indigo denim with a mid rise, five-pocket construction and a clean hem.",
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
+      ]
     },
     {
       "code": "AE-021",
@@ -2171,6 +2313,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2236,6 +2384,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2301,6 +2455,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2366,6 +2526,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2431,6 +2597,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2496,6 +2668,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2561,6 +2739,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2626,6 +2810,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2687,6 +2877,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2752,6 +2948,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2817,6 +3019,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2882,6 +3090,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -2947,6 +3161,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -3008,6 +3228,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -3073,6 +3299,12 @@
       "occasions": [
         "everyday",
         "weekend"
+      ],
+      "viewThumbnails": [
+        null,
+        null,
+        null,
+        null
       ]
     }
   ],
@@ -3080,17 +3312,20 @@
     {
       "name": "Everyday",
       "slug": "everyday",
-      "image": "https://liyalili10805-png.github.io/marks-client-showroom/assets/demo/gen/occasion-everyday.webp"
+      "image": "https://liyalili10805-png.github.io/marks-client-showroom/assets/demo/gen/occasion-everyday.webp",
+      "thumbnail": "assets/collections/thumbs/occasions-everyday.webp"
     },
     {
       "name": "Weekend",
       "slug": "weekend",
-      "image": "https://liyalili10805-png.github.io/marks-client-showroom/assets/demo/gen/occasion-weekend-v2.webp"
+      "image": "https://liyalili10805-png.github.io/marks-client-showroom/assets/demo/gen/occasion-weekend-v2.webp",
+      "thumbnail": "assets/collections/thumbs/occasions-weekend.webp"
     },
     {
       "name": "Outdoor",
       "slug": "outdoor",
-      "image": "https://liyalili10805-png.github.io/marks-client-showroom/assets/demo/gen/occasion-outdoor.webp"
+      "image": "https://liyalili10805-png.github.io/marks-client-showroom/assets/demo/gen/occasion-outdoor.webp",
+      "thumbnail": "assets/collections/thumbs/occasions-outdoor.webp"
     }
   ],
   "weekly": [
@@ -3111,7 +3346,8 @@
           "name": "Charcoal",
           "hex": "#3a3a3a"
         }
-      ]
+      ],
+      "thumbnail": "assets/collections/thumbs/weekly-AE-015.webp"
     },
     {
       "code": "AE-014",
@@ -3130,7 +3366,8 @@
           "name": "Navy",
           "hex": "#26324a"
         }
-      ]
+      ],
+      "thumbnail": "assets/collections/thumbs/weekly-AE-014.webp"
     },
     {
       "code": "AE-016",
@@ -3149,7 +3386,8 @@
           "name": "Black",
           "hex": "#1c1c1c"
         }
-      ]
+      ],
+      "thumbnail": "assets/collections/thumbs/weekly-AE-016.webp"
     }
   ]
 }
