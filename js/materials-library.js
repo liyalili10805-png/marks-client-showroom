@@ -156,6 +156,7 @@
   }
   function writeState(replace) {
     const params = new URLSearchParams();
+    if(originStyle)params.set('style',originStyle.code);
     if (hasTrendSelection()) {
       params.set('trend', state.trend);
       if (state.direction !== null) params.set('direction', state.direction);
@@ -333,6 +334,7 @@
 
   function renderLibrary() {
     root.replaceChildren(heading('Materials & Patterns', 'Explore cloth, colour and pattern. Build your next material selection.'));
+    if(originStyle){const context=node('nav','ml-trend-context');context.setAttribute('aria-label','Style material context');context.append(node('p',null,'Material review for '+originStyle.code),link('Back to style '+originStyle.code+' ↗','collection-detail.html?code='+encodeURIComponent(originStyle.code)+'#materials'));root.append(context);}
     const mainbar = node('div', 'ml-mainbar'), tabs = node('div', 'ml-tabs'); tabs.setAttribute('role', 'tablist'); tabs.setAttribute('aria-label', 'Library type');
     [['all', 'All materials'], ['fabric', 'Fabrics'], ['pattern', 'Patterns']].forEach(([value, text]) => {
       const b = button('', 'ml-tab', () => { state.type = value; updateLibrary(); });
@@ -679,9 +681,19 @@
       if (invalidLinkedColourway) copy.append(node('p', 'ml-detail-scope', 'The linked colourway is not listed for this material. The original base reference is shown; choose a listed colourway to review another view.'));
     }
     const actions = node('div', 'ml-detail-actions');
+    if(originStyle){
+      const reviewed=originStyle.materials.find(m=>m.id===item.id);
+      if(reviewed)copy.append(node('p','ml-detail-scope','For '+originStyle.code+' / '+reviewed.role+'. '+reviewed.reason),node('p','ml-detail-scope','Review before sampling: '+reviewed.review));
+      const pairAction=button('Use for '+originStyle.code,'ml-button ml-button--dark',()=>{
+        const photographed=selectedColorway?.image||item.image;
+        const cloth=originStyle.materials.find(m=>m.id===item.id&&m.colourwayImage===photographed);
+        if(!cloth){toast('This cloth/colourway has not been reviewed for this style. Return to its matched materials.');return;}
+        try{window.StyleMaterials.save(originStyle,cloth);const old=JSON.parse(localStorage.getItem('soho-material-choices')||'{}');old[originStyle.code]=cloth.name;localStorage.setItem('soho-material-choices',JSON.stringify(old));const styles=JSON.parse(localStorage.getItem('soho-collection-selection')||'[]');if(!styles.includes(originStyle.code))styles.push(originStyle.code);localStorage.setItem('soho-collection-selection',JSON.stringify(styles));pairAction.textContent='Saved for '+originStyle.code+' ✓';toast(cloth.id+' saved for '+originStyle.code+' on this device.');}catch{toast('This device could not save the style/material combination.');}
+      });actions.append(pairAction);
+    }
     const save = button('Save to Material Board', 'ml-button ml-button--dark', () => { const saved = saveItem(item, selectedColorway || ''); if (saved) toast('Saved to your Material Board in this browser'); if (pageIsBoard) renderBoard(); }); save.dataset.saveId = id; actions.append(save);
     actions.append(button(compared.has(id) ? 'Comparing ✓' : 'Compare +', 'ml-button ml-button--quiet', () => toggleCompare(item))); actions.lastChild.dataset.compareId = id;
-    const nextSteps = node('nav', 'ml-detail-next'); nextSteps.setAttribute('aria-label', 'Material selection actions'); nextSteps.append(link('Open Material Board ↗', BOARD_URL)); copy.append(actions, nextSteps);
+    const nextSteps = node('nav', 'ml-detail-next'); nextSteps.setAttribute('aria-label', 'Material selection actions'); nextSteps.append(link('Open Material Board ↗', BOARD_URL));if(originStyle)nextSteps.append(link('Back to style '+originStyle.code+' ↗','collection-detail.html?code='+encodeURIComponent(originStyle.code)+'#materials'),link('Review style selection ↗','my-selection.html'));copy.append(actions, nextSteps);
     const scope = item.sourceType === 'studio' ? 'AI-assisted digital design. Colours, repeat and production translation require sample development.'
       : item.status === 'available' ? 'Physical sample availability has been recorded. Confirm the intended colour and development requirements when requesting a sample.'
       : item.status === 'sampling' ? 'Sample development is in progress. Final colour, surface and availability will be confirmed after review.'
@@ -796,6 +808,7 @@
     const selection = document.querySelector('[aria-label="View selection"]'); if (selection) selection.addEventListener('click', () => { location.href = 'my-selection.html'; });
     const contact = document.querySelector('[aria-label="Subscribe"], [aria-label="Contact SOHO Fashion"]'); if (contact) { contact.setAttribute('aria-label', 'Contact SOHO Fashion'); contact.addEventListener('click', () => { location.href = 'mailto:online@saintycorp.com'; }); }
   }
+  let originStyle=null;
   async function load() {
     if (loading) return; loading = true;
     try {
@@ -803,6 +816,8 @@
       const data = await response.json(), raw = Array.isArray(data) ? data : data.items;
       if (!Array.isArray(raw)) throw new Error('No library items');
       const seen = new Set(); items = raw.map(normalise).filter(i => { if (seen.has(i.id)) return false; seen.add(i.id); return true; }); byId = new Map(items.map(i => [i.id, i])); libraryCards.clear();
+      const styleId=new URLSearchParams(location.search).get('style');
+      if(window.StyleMaterials&&/^(?:RF27-[OST]\d\d|AE-\d{3})$/.test(styleId||'')){const candidate={code:styleId,materials:[]};await window.StyleMaterials.load([candidate]);if(candidate.materials.length)originStyle=candidate;}
       if (pageIsBoard) { const params = new URLSearchParams(location.search); sharedIds = [...new Set((params.get('ids') || '').split(','))].filter(id => byId.has(id)); renderBoard(); }
       else { await resolveTrendSelection(); renderLibrary(); }
       syncMaterialDeepLink();

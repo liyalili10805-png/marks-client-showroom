@@ -59,6 +59,7 @@
 
   function choose(index) {
     const material = product.materials[index];
+    if(material?.library){try{window.StyleMaterials.save(product,material);}catch{toast('This device could not save the style/material combination.');return;}}
     try { const map = JSON.parse(localStorage.getItem('soho-material-choices') || '{}'); map[product.code] = material.name; localStorage.setItem('soho-material-choices', JSON.stringify(map));localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name }));addToSelection(product.code); } catch (error) {toast('This device could not save the material choice.');return;}
     selected = index;
     const table = document.querySelector('.material-table');
@@ -76,20 +77,22 @@
     materials.forEach((material, index) => {
       const th = document.createElement('th');
       th.className = 'mat-head' + (index === selected ? ' selected' : '');
-      const swatch = el('p', 'mat-evidence', material.status === 'Reference fabric' && product.imageKind !== 'concept' ? 'Recorded garment fabric' : 'Development direction · sampling required');
+      if(material.library){const link=el('a','matched-material-image');link.href=window.StyleMaterials.url(material);const photo=el('img');photo.src=material.preview||material.colourwayImage;photo.alt=material.name;photo.width=400;photo.height=400;photo.loading='lazy';photo.decoding='async';link.append(photo);th.append(link);}
+      const swatch = el('p', 'mat-evidence', material.library?material.id+' · '+material.role:'Development direction · sampling required');
       th.append(
         swatch,
         el('div', 'mat-option', `Option ${String.fromCharCode(65 + index)}`),
         el('div', 'mat-name', material.name),
         el('div', 'mat-selected', index === selected ? 'Selected' : '')
       );
+      if(material.library){th.append(el('p','material-match-reason',material.reason));const detail=el('a',null,'View cloth & original images ↗');detail.href=window.StyleMaterials.url(material);th.append(detail);}
       headRow.append(th);
     });
     thead.append(headRow);
     table.append(thead);
 
     const tbody = document.createElement('tbody');
-    LABELS.forEach(([label, key]) => {
+    (product.materialMatchesReady?[['Library code','id'],['Application','role'],['Construction','structure'],['Colourway','colourway'],['Review before sampling','review'],['Status','status']]:LABELS).forEach(([label, key]) => {
       const row = document.createElement('tr');
       row.append(el('th', null, label));
       materials.forEach((material, index) => {
@@ -124,7 +127,8 @@
     try { stored = JSON.parse(localStorage.getItem(MATERIAL_KEY) || 'null'); } catch (e) { stored = null; }
     let map={};try{map=JSON.parse(localStorage.getItem('soho-material-choices') || '{}');}catch{}
     const chosen=map[product.code] || (stored && stored.code===product.code ? stored.material : '');
-    selected=materials.findIndex(material=>material.name===chosen);
+    const exact=window.StyleMaterials?.selected(product);
+    selected=materials.findIndex(material=>exact?material.id===exact.id:!product.materialMatchesReady&&material.name===chosen);
 
     const head = el('div', 'materials-head');
     head.append(el('h1', null, 'Materials for this collection'));
@@ -191,8 +195,9 @@
 
   fetch(DATA_URL)
     .then(response => response.json())
-    .then(payload => {
+    .then(async payload => {
       data = {...payload,products:(payload.products || []).filter(inDevelopmentScope)};
+      if(window.StyleMaterials)await window.StyleMaterials.load(data.products);
       render();
       updateCount();
     })

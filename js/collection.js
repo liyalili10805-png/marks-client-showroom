@@ -700,12 +700,13 @@
     });
     side.append(colourRow);
 
-    side.append(el('p', 'detail-label', 'Material options'));
+    side.append(el('p', 'detail-label', 'Matched library materials'));
     const MATERIAL_KEY = 'soho-material-choice';
     let chosenMaterial = -1;
     try {
       const storedChoice = JSON.parse(localStorage.getItem(MATERIAL_KEY) || 'null'), map=JSON.parse(localStorage.getItem('soho-material-choices') || '{}');
-      const savedName=map && map[product.code] || (storedChoice && storedChoice.code===product.code ? storedChoice.material : '');
+      const savedLibrary=window.StyleMaterials?.selected(product);
+      const savedName=savedLibrary?.name || (!product.materialMatchesReady && (map && map[product.code] || (storedChoice && storedChoice.code===product.code ? storedChoice.material : '')));
       if (savedName) {
         const found = product.materials.findIndex(material => material.name === savedName);
         if (found >= 0) chosenMaterial = found;
@@ -714,6 +715,7 @@
 
     function selectMaterial(index) {
       const material = product.materials[index];
+      if(material?.library){try{window.StyleMaterials.save(product,material);}catch{toast('This device could not save the style/material combination.');return false;}}
       try { const map = JSON.parse(localStorage.getItem('soho-material-choices') || '{}'); map[product.code] = material.name; localStorage.setItem('soho-material-choices', JSON.stringify(map));localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name })); } catch (error) {toast('This device could not save the material choice.');return false;}
       chosenMaterial = index;
       document.querySelectorAll('.material-row').forEach((row, rowIndex) => {
@@ -726,6 +728,7 @@
         button.classList.toggle('btn-outline', buttonIndex !== index);
         button.textContent = buttonIndex === index ? 'Selected material' : 'Choose material';
       });
+      document.querySelectorAll('[data-material-choice]').forEach(button=>{const active=Number(button.dataset.materialChoice)===index;button.classList.toggle('btn-accent',active);button.textContent=active?'Selected for this style':'Choose for this style';button.setAttribute('aria-pressed',String(active));});
       return true;
     }
 
@@ -738,7 +741,7 @@
       radio.value = String(index);
       radio.checked = index === chosenMaterial;
       const dot = el('span', 'material-radio');
-      const name = el('span', 'material-name', material.name);
+      const name = el('span', 'material-name', (material.library?material.id+' · ':'')+material.name);
       const link = el('a', 'text-link', index === 0 ? 'View details →' : 'Compare option →');
       link.href = '#materials';
       link.addEventListener('click', event => event.stopPropagation());
@@ -747,6 +750,7 @@
       materialList.append(row);
     });
     side.append(materialList);
+    if(!product.materials.length)side.append(el('p','material-note',product.materialMatchesError?'Library matches could not be loaded. Please reload to choose a real material.':'No reviewed library material is linked to this style yet.'));
 
     if (!product.code.startsWith('RF27-')) { side.append(el('p', 'detail-label', 'Target retail')); side.append(el('p', 'detail-value', product.retail)); }
 
@@ -826,6 +830,13 @@
     const materialSection = el('section', 'materials-section');
     materialSection.id = 'materials';
     materialSection.append(el('h2', null, `Materials for ${product.name}`));
+    if(product.recordedMaterial){
+      const original=el('details','recorded-garment-fabric');original.append(el('summary',null,'Original garment fabric / recorded information'));
+      original.append(el('p',null,product.texture),el('p',null,product.recordedMaterial.composition),el('p',null,product.recordedMaterial.care));
+      original.append(el('p','material-note','This describes the reference garment. It is not the specification of the library alternatives below.'));materialSection.append(original);
+    }
+    materialSection.append(el('p','material-match-brief',product.materialMatchBrief||'Choose an identified material from the library for this style.'));
+    materialSection.append(el('p','material-note','Each option below is linked to its exact Materials library record. These are proposed applications; physical approval and sample availability require confirmation.'));
     if (trend.active && !trend.error && trendConnections?.reports?.[trend.id]?.materialTerms?.length) {
       const localMaterials=el('a','material-library-link','Explore local material references for this direction ↗');
       localMaterials.href='products.html?trend='+encodeURIComponent(trend.id);
@@ -839,7 +850,7 @@
       header.append(el('span', null, `Option ${String.fromCharCode(65 + index)} · ${material.name}`));
     });
     table.append(header);
-    [['Hand feel', 'hand'], ['Construction', 'structure'], ['Composition', 'composition'], ['Care', 'care'], ['Development status', 'status']].forEach(([label, key]) => {
+    [['Library code','id'],['Proposed application','role'],['Construction', 'structure'],['Colourway','colourway'],['Review before sampling','review'],['Development status', 'status']].forEach(([label, key]) => {
       const row = el('div', 'materials-row');
       row.append(el('span', 'materials-label', label));
       product.materials.forEach((material, index) => {
@@ -849,17 +860,23 @@
       });
       table.append(row);
     });
-    if (product.code.startsWith('RF27-')) {
-      materialSection.append(el('p', 'material-note', 'One recorded garment fabric and two development directions. Colour blocks indicate screen colour only; they are not fabric photographs or evidence of texture. Proposed fabrics require sourcing, physical sampling and approval.'));
+    if (product.materialMatchesReady) {
       const concepts = el('div', 'fabric-concepts');
+      concepts.style.setProperty('--fabric-count',Math.min(product.materials.length,3)||1);
       product.materials.forEach((material, index) => {
         const concept = el('article', 'fabric-concept');
-        const preview = el('div', 'fabric-colour-reference','Screen colour direction only');preview.style.backgroundColor=material.previewColour || (product.colours[0] || {}).hex || '#ddd';
-        concept.append(preview, el('p', 'fabric-option', `OPTION ${String.fromCharCode(65 + index)} · ${material.status}`), el('h3', null, material.name));
-        concept.append(el('p', 'fabric-trend', `${material.trendBasis.title} · Page ${material.trendBasis.page}`), el('p', 'fabric-reason', material.trendBasis.reason));
-        const choose = el('button', 'btn-outline', 'Choose this direction'); choose.type = 'button'; choose.addEventListener('click', () => { if(selectMaterial(index))toast(`${material.name} saved on this device only. Not sent.`); }); concept.append(choose); concepts.append(concept);
+        concept.dataset.materialId=material.id;
+        const preview=el('a','matched-material-image');preview.href=window.StyleMaterials.url(material);preview.setAttribute('aria-label','View '+material.id+' material and original images');
+        const photo=el('img');photo.src=material.preview||material.colourwayImage;photo.alt=material.name+' · '+material.colourway;photo.width=400;photo.height=400;photo.loading='lazy';photo.decoding='async';
+        photo.addEventListener('error',()=>{preview.textContent='Material photograph temporarily unavailable · view library record';},{once:true});preview.append(photo);
+        concept.append(preview, el('p', 'fabric-option',material.id+' / '+material.role), el('h3', null, material.name));
+        concept.append(el('p','fabric-reason',material.reason),el('p','fabric-review','Before sampling: '+material.review));
+        const sources=el('nav','fabric-research-links');material.research.forEach(report=>{const link=el('a',null,report.title+' ↗');link.href='trend-story.html?report='+encodeURIComponent(report.id);sources.append(link);});concept.append(sources);
+        const detail=el('a','material-library-link','View cloth & original images ↗');detail.href=preview.href;concept.append(detail);
+        const choose = el('button', index===chosenMaterial?'btn-accent':'btn-outline', index===chosenMaterial?'Selected for this style':'Choose for this style'); choose.type = 'button';choose.dataset.materialChoice=String(index);choose.setAttribute('aria-pressed',String(index===chosenMaterial)); choose.addEventListener('click', () => { if(selectMaterial(index))toast(`${material.id} paired with ${product.code} on this device. Physical approval required.`); }); concept.append(choose); concepts.append(concept);
       }); materialSection.append(concepts);
     }
+    if(!product.materials.length)materialSection.append(el('p','material-note',product.materialMatchesError?'Material records could not be loaded. No substitute has been shown.':'No reviewed material match is available for this style yet.'));
     const chooseRow = el('div', 'materials-row materials-choose');
     chooseRow.append(el('span', null, ''));
     product.materials.forEach((material, index) => {
@@ -871,7 +888,7 @@
       chooseRow.append(button);
     });
     table.append(chooseRow);
-    materialSection.append(table);
+    if(product.materials.length)materialSection.append(table);
     root.append(materialSection);
 
     const feedback = el('section', 'feedback-section');
@@ -915,7 +932,7 @@
     const submit = el('button', 'btn-accent', 'Save note on this device');
     submit.type = 'submit';
     form.append(fileLabel, fileList, range, commentBox, submit);
-    const feedbackText=()=>{const preferences=Array.from(checks.querySelectorAll('input')).filter(input=>input.checked).map(input=>input.value);return [`Style: ${product.code} · ${product.name}`,product.imageKind==='concept'?'Digital style concept · subject to physical development.':'Style reference',`Material: ${product.materials[chosenMaterial]?.name || 'Not selected'}`,`Development season: ${developmentSeason(product) || 'Not assigned'}`,`Interests: ${preferences.join('; ') || 'Not specified'}`,`Target retail: ${range.value || 'Not specified'}`,commentBox.value,`Reference: ${location.href}`,'Please confirm sample and material availability.'].join('\n\n');};
+    const feedbackText=()=>{const preferences=Array.from(checks.querySelectorAll('input')).filter(input=>input.checked).map(input=>input.value);return [`Style: ${product.code} · ${product.name}`,product.imageKind==='concept'?'Digital style concept · subject to physical development.':'Style reference',`Material: ${product.materials[chosenMaterial]?product.materials[chosenMaterial].id+' · '+product.materials[chosenMaterial].name+' / '+product.materials[chosenMaterial].colourway+' / '+product.materials[chosenMaterial].role:'Not selected'}`,`Development season: ${developmentSeason(product) || 'Not assigned'}`,`Interests: ${preferences.join('; ') || 'Not specified'}`,`Target retail: ${range.value || 'Not specified'}`,commentBox.value,`Reference: ${location.href}`,'Please confirm sample and material availability.'].join('\n\n');};
     const email=el('button','btn-outline','Open email draft');email.type='button';
     email.addEventListener('click',()=>{location.href='mailto:online@saintycorp.com?subject='+encodeURIComponent('Development feedback · '+product.code)+'&body='+encodeURIComponent(feedbackText());});
     const download=el('button','btn-outline','Download feedback note');download.type='button';download.addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([feedbackText()],{type:'text/plain;charset=utf-8'})),link=el('a');link.href=url;link.download=product.code+'-development-feedback.txt';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Feedback note downloaded. Not sent.');});
@@ -940,6 +957,7 @@
         comment: commentBox.value,
         preferences:Array.from(checks.querySelectorAll('input')).filter(input=>input.checked).map(input=>input.value),
         material:product.materials[chosenMaterial]?.name || '',
+        materialPair:window.StyleMaterials?.record(product)||null,
         trend:trend.active?{report:trend.id,direction:trend.direction}:null,
         attachments: stored
       };
@@ -1024,7 +1042,7 @@
         renderSeries();
         window.addEventListener('popstate', async () => { await loadTrendConnections(); renderSeries(); });
       }
-      if (view === 'detail') renderDetail();
+      if (view === 'detail') {if(window.StyleMaterials)await window.StyleMaterials.load(products);renderDetail();}
       saveSelection();
       if (!preview) applyOverrides().then(changed => {
         if (!changed) return;

@@ -1,0 +1,1286 @@
+{
+  "version": 1,
+  "season": "A/W 27/28",
+  "basis": "Explicit style-to-library design review. Applications are proposed, not physically approved.",
+  "styles": {
+    "RF27-T04": {
+      "brief": "Woven alternatives for a front-pleated barrel leg. Keep the curved side seam and controlled hem.",
+      "checks": "Review weight, drape, pleat retention and bulk at the waist darts. Rebalance the pattern after a cloth trial.",
+      "pairs": [
+        {
+          "materialId": "MF086",
+          "role": "Main cloth / clean tailoring",
+          "reason": "The photographed fine diagonal and neutral beige ground provide a restrained woven alternative for the front pleats and curved leg. This changes the original brown colour.",
+          "review": "Check drape and pleat retention; fibre percentages and finished weight are not supplied.",
+          "colourwayImage": "assets/material-library/MF086.webp",
+          "research": [
+            {
+              "id": "T01",
+              "title": "Relaxed Everyday Tailoring"
+            }
+          ]
+        },
+        {
+          "materialId": "MF084",
+          "role": "Main cloth / defined shape",
+          "reason": "The black gabardine reference offers a more defined diagonal surface for the barrel outline and rear patch pockets. It is a cotton alternative to the recorded polyester original.",
+          "review": "Check stiffness, shrinkage and pleat bulk before keeping the original pattern.",
+          "colourwayImage": "assets/material-library/MF084.webp",
+          "research": [
+            {
+              "id": "T01",
+              "title": "Relaxed Everyday Tailoring"
+            }
+          ]
+        },
+        {
+          "materialId": "MP091",
+          "role": "Main cloth / patterned variation",
+          "reason": "A grey-brown wool check with a visible herringbone ground offers a specific patterned tailoring route for this barrel block, with a clear woven pattern.",
+          "review": "Review cloth weight and bulk; match checks across the front pleats and pockets. This is a different construction from the original.",
+          "colourwayImage": "assets/material-library/MP091.webp",
+          "research": []
+        }
+      ]
+    },
+    "RF27-T01": {
+      "brief": "Knit cloth for an elastic-waist, pleated wide leg. Preserve ease and a clean hanging line.",
+      "checks": "Check stretch, recovery, drape, pilling and seam growth in the pleated waist.",
+      "pairs": [
+        {
+          "materialId": "MF044",
+          "role": "Main cloth / compact knit",
+          "reason": "Charcoal double knit is a concrete knit alternative for the wide leg and elasticated waist. Its surface differs from the recorded brushed jersey.",
+          "review": "Check weight and recovery; adjust ease and waistband support after testing.",
+          "colourwayImage": "assets/material-library/MF044.webp",
+          "research": [
+            {
+              "id": "PROC04",
+              "title": "Purposeful Pockets & Discreet Adjustment"
+            },
+            {
+              "id": "T06",
+              "title": "The Everyday Knit Straight & Wide Leg"
+            },
+            {
+              "id": "AKPROC01",
+              "title": "A Controlled Waist and Convertible Hem"
+            }
+          ]
+        },
+        {
+          "materialId": "MF046",
+          "role": "Main cloth / softer colour",
+          "reason": "Warm-grey double knit keeps a quiet knit surface while offering a lighter neutral for the full leg.",
+          "review": "Assess hang and pleat bulk; no brushed finish or softness is confirmed.",
+          "colourwayImage": "assets/material-library/MF046.webp",
+          "research": [
+            {
+              "id": "PROC04",
+              "title": "Purposeful Pockets & Discreet Adjustment"
+            },
+            {
+              "id": "T06",
+              "title": "The Everyday Knit Straight & Wide Leg"
+            },
+            {
+              "id": "AKPROC01",
+              "title": "A Controlled Waist and Convertible Hem"
+            }
+          ]
+        },
+        {
+          "materialId": "MF055",
+          "role": "Main cloth / ponte alternative",
+          "reason": "Grey ponte provides a different compact-knit route for a cleaner trouser expression with the same relaxed leg idea.",
+          "review": "Test stretch and recovery and revise ease before using the jersey block.",
+          "colourwayImage": "assets/material-library/MF055.webp",
+          "research": [
+            {
+              "id": "T06",
+              "title": "The Everyday Knit Straight & Wide Leg"
+            }
+          ]
+        }
+      ]
+    },
+    "RF27-T02": {
+      "brief": "Woven cloth for a full-length wide leg with front pleats and pressed creases.",
+      "checks": "Test crease retention, drape, pocket show-through and bulk at the folded front pleats.",
+      "pairs": [
+        {
+          "materialId": "MF084",
+          "role": "Main cloth / cotton twill",
+          "reason": "Black cotton gabardine relates directly to the recorded cotton-twill construction and retains a clear woven direction for the full leg.",
+          "review": "Check weight, shrinkage and pressed crease performance.",
+          "colourwayImage": "assets/material-library/MF084.webp",
+          "research": [
+            {
+              "id": "T01",
+              "title": "Relaxed Everyday Tailoring"
+            },
+            {
+              "id": "MAT04",
+              "title": "Comfort Wovens: Drape & Recovery"
+            }
+          ]
+        },
+        {
+          "materialId": "MF086",
+          "role": "Main cloth / tailoring alternative",
+          "reason": "Beige gabardine offers a finer diagonal and neutral alternative for the pressed-crease wide-leg silhouette.",
+          "review": "Review drape and re-pressing performance; composition percentages are unconfirmed.",
+          "colourwayImage": "assets/material-library/MF086.webp",
+          "research": [
+            {
+              "id": "T01",
+              "title": "Relaxed Everyday Tailoring"
+            },
+            {
+              "id": "MAT04",
+              "title": "Comfort Wovens: Drape & Recovery"
+            }
+          ]
+        },
+        {
+          "materialId": "MP091",
+          "role": "Main cloth / patterned tailoring",
+          "reason": "The grey-brown wool check provides an identifiable patterned route for the wide tailored leg.",
+          "review": "Check bulk at pleats and pattern matching at side seams and welt pockets.",
+          "colourwayImage": "assets/material-library/MP091.webp",
+          "research": []
+        }
+      ]
+    },
+    "RF27-T03": {
+      "brief": "A roomy seat and straight leg with reinforced pocket construction.",
+      "checks": "Review pile direction, wale scale, weight, shrinkage and seam bulk; no wale count is inferred from an image.",
+      "pairs": [
+        {
+          "materialId": "MF016",
+          "role": "Main cloth / corduroy",
+          "reason": "Navy cotton corduroy supplies an actual ribbed cloth reference for this straight trouser leg.",
+          "review": "Compare pile and wale scale with the intended fit; trouser suitability requires a physical cloth trial.",
+          "colourwayImage": "assets/material-library/MF016.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            },
+            {
+              "id": "PROC03",
+              "title": "Corduroy Collars & Pile Trims"
+            }
+          ]
+        },
+        {
+          "materialId": "MF020",
+          "role": "Main cloth / neutral corduroy",
+          "reason": "Beige corduroy gives a distinct neutral ribbed alternative while retaining the tactile trouser direction.",
+          "review": "Check wear resistance, stretch if needed and bulk at pockets; blend percentages are not supplied.",
+          "colourwayImage": "assets/material-library/MF020.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            },
+            {
+              "id": "PROC03",
+              "title": "Corduroy Collars & Pile Trims"
+            }
+          ]
+        },
+        {
+          "materialId": "MF084",
+          "role": "Main cloth / woven alternative",
+          "reason": "Black cotton gabardine offers an explicit non-pile alternative for the same leg concept. This changes the surface and may change the silhouette.",
+          "review": "Recheck ease and leg volume in a toile; this does not reproduce corduroy.",
+          "colourwayImage": "assets/material-library/MF084.webp",
+          "research": []
+        }
+      ]
+    },
+    "RF27-T05": {
+      "brief": "A barrel leg with ankle-length proportions and waist tabs.",
+      "checks": "Review pile direction, wale scale, weight, shrinkage and seam bulk; no wale count is inferred from an image.",
+      "pairs": [
+        {
+          "materialId": "MF016",
+          "role": "Main cloth / corduroy",
+          "reason": "Navy cotton corduroy supplies an actual ribbed cloth reference for this curved trouser leg.",
+          "review": "Compare pile and wale scale with the intended fit; trouser suitability requires a physical cloth trial.",
+          "colourwayImage": "assets/material-library/MF016.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            },
+            {
+              "id": "PROC03",
+              "title": "Corduroy Collars & Pile Trims"
+            }
+          ]
+        },
+        {
+          "materialId": "MF020",
+          "role": "Main cloth / neutral corduroy",
+          "reason": "Beige corduroy gives a distinct neutral ribbed alternative while retaining the tactile trouser direction.",
+          "review": "Check wear resistance, stretch if needed and bulk at pockets; blend percentages are not supplied.",
+          "colourwayImage": "assets/material-library/MF020.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            },
+            {
+              "id": "PROC03",
+              "title": "Corduroy Collars & Pile Trims"
+            }
+          ]
+        },
+        {
+          "materialId": "MF084",
+          "role": "Main cloth / woven alternative",
+          "reason": "Black cotton gabardine offers an explicit non-pile alternative for the same leg concept. This changes the surface and may change the silhouette.",
+          "review": "Recheck ease and leg volume in a toile; this does not reproduce corduroy.",
+          "colourwayImage": "assets/material-library/MF084.webp",
+          "research": []
+        }
+      ]
+    },
+    "RF27-T06": {
+      "brief": "A relaxed straight workwear leg with front and back pockets.",
+      "checks": "Review pile direction, wale scale, weight, shrinkage and seam bulk; no wale count is inferred from an image.",
+      "pairs": [
+        {
+          "materialId": "MF016",
+          "role": "Main cloth / corduroy",
+          "reason": "Navy cotton corduroy supplies an actual ribbed cloth reference for this straight trouser leg.",
+          "review": "Compare pile and wale scale with the intended fit; trouser suitability requires a physical cloth trial.",
+          "colourwayImage": "assets/material-library/MF016.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            },
+            {
+              "id": "PROC03",
+              "title": "Corduroy Collars & Pile Trims"
+            }
+          ]
+        },
+        {
+          "materialId": "MF020",
+          "role": "Main cloth / neutral corduroy",
+          "reason": "Beige corduroy gives a distinct neutral ribbed alternative while retaining the tactile trouser direction.",
+          "review": "Check wear resistance, stretch if needed and bulk at pockets; blend percentages are not supplied.",
+          "colourwayImage": "assets/material-library/MF020.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            },
+            {
+              "id": "PROC03",
+              "title": "Corduroy Collars & Pile Trims"
+            }
+          ]
+        },
+        {
+          "materialId": "MF084",
+          "role": "Main cloth / woven alternative",
+          "reason": "Black cotton gabardine offers an explicit non-pile alternative for the same leg concept. This changes the surface and may change the silhouette.",
+          "review": "Recheck ease and leg volume in a toile; this does not reproduce corduroy.",
+          "colourwayImage": "assets/material-library/MF084.webp",
+          "research": []
+        }
+      ]
+    },
+    "RF27-S01": {
+      "brief": "A loose two-pocket utility shirt with a defined collar and button front.",
+      "checks": "Review shirt weight, collar support, pocket bulk and shrinkage.",
+      "pairs": [
+        {
+          "materialId": "MF003",
+          "role": "Main cloth / utility twill",
+          "reason": "Green cotton twill retains a diagonal workwear surface for the two patch pockets, with a fibre change from the recorded polycotton.",
+          "review": "Check shirt weight and collar roll; do not assume the original hand.",
+          "colourwayImage": "assets/material-library/MF003.webp",
+          "research": [
+            {
+              "id": "S03",
+              "title": "The Softened Utility Shirt"
+            },
+            {
+              "id": "MAT03",
+              "title": "Supple Twill & Canvas"
+            },
+            {
+              "id": "PROC04",
+              "title": "Purposeful Pockets & Discreet Adjustment"
+            }
+          ]
+        },
+        {
+          "materialId": "MF037",
+          "role": "Main cloth / cleaner alternative",
+          "reason": "Deep-green poplin changes the utility shirt to a cleaner woven surface while retaining its pocket layout.",
+          "review": "Review opacity and pocket show-through; rebalance collar interfacing.",
+          "colourwayImage": "assets/material-library/MF037.webp",
+          "research": []
+        },
+        {
+          "materialId": "MP035",
+          "role": "Main cloth / striped variation",
+          "reason": "A narrow woven workwear stripe gives the pocketed shirt a specific pattern route.",
+          "review": "Check stripe alignment at pockets and placket; confirm actual stripe scale.",
+          "colourwayImage": "assets/material-library/MP035.webp",
+          "research": []
+        }
+      ]
+    },
+    "RF27-S04": {
+      "brief": "A loose, slightly boxy striped shirt. Keep a readable stripe and relaxed volume.",
+      "checks": "Check shirt drape, opacity, stripe matching and shrinkage.",
+      "pairs": [
+        {
+          "materialId": "MP021",
+          "role": "Main cloth / yarn-dyed stripe",
+          "reason": "This photographed cotton shirting stripe directly addresses the striped button-front expression. It is not verified as the original Oxford weave.",
+          "review": "Confirm weave, weight and hand; align the stripe through placket and chest.",
+          "colourwayImage": "assets/material-library/MP021.webp",
+          "research": [
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            },
+            {
+              "id": "PAT02",
+              "title": "Quiet Stripes & Tailoring Micro-Patterns"
+            }
+          ]
+        },
+        {
+          "materialId": "MP010",
+          "role": "Main cloth / chambray stripe",
+          "reason": "A quieter chambray stripe offers a specific softer-looking stripe alternative for the boxy shirt.",
+          "review": "Assess drape and collar support; garment-washed softness is not confirmed.",
+          "colourwayImage": "assets/material-library/MP010.webp",
+          "research": [
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            },
+            {
+              "id": "PAT02",
+              "title": "Quiet Stripes & Tailoring Micro-Patterns"
+            }
+          ]
+        },
+        {
+          "materialId": "MF041",
+          "role": "Main cloth / plain variation",
+          "reason": "White polyester poplin offers a clean solid companion to the striped reference while keeping the loose shirt block.",
+          "review": "Check opacity and structure; a plain surface changes the visual direction.",
+          "colourwayImage": "assets/material-library/MF041.webp",
+          "research": [
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            }
+          ]
+        }
+      ]
+    },
+    "RF27-S05": {
+      "brief": "A fitted button-front shirt with a smooth, clean surface.",
+      "checks": "Review opacity, movement ease, collar support and seam slippage.",
+      "pairs": [
+        {
+          "materialId": "MF041",
+          "role": "Main cloth / smooth poplin alternative",
+          "reason": "White polyester poplin offers a smooth woven alternative for the fitted shirt, with a fibre change from the original Pima cotton.",
+          "review": "Confirm fibre details, weight and movement ease in the fitted block.",
+          "colourwayImage": "assets/material-library/MF041.webp",
+          "research": [
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            }
+          ]
+        },
+        {
+          "materialId": "MF038",
+          "role": "Main cloth / cotton colour alternative",
+          "reason": "Yellow cotton poplin provides a distinct coloured poplin alternative for the tailored shirt.",
+          "review": "Review opacity, hand and pressing response in a fitted sample.",
+          "colourwayImage": "assets/material-library/MF038.webp",
+          "research": [
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            }
+          ]
+        },
+        {
+          "materialId": "MF040",
+          "role": "Main cloth / patterned variation",
+          "reason": "The photographed paisley cotton poplin gives this shirt a real print option on a relevant woven ground.",
+          "review": "Confirm motif scale and placement at darts, cuffs and button placket; this is not a border print.",
+          "colourwayImage": "assets/material-library/MF040.webp",
+          "research": []
+        }
+      ]
+    },
+    "RF27-S02": {
+      "brief": "A loose button-down shirt; alternative cloth must work through collar, cuffs and button placket.",
+      "checks": "Check weave weight, collar roll, shrinkage and seam appearance.",
+      "pairs": [
+        {
+          "materialId": "MP010",
+          "role": "Main cloth / chambray alternative",
+          "reason": "A real chambray stripe offers a striped shirting alternative to the recorded bleached denim.",
+          "review": "This does not reproduce the denim wash; confirm weight and stripe placement.",
+          "colourwayImage": "assets/material-library/MP010.webp",
+          "research": []
+        },
+        {
+          "materialId": "MF005",
+          "role": "Main cloth / cotton twill alternative",
+          "reason": "Pale-blue cotton twill retains a diagonal woven route for the loose shirt.",
+          "review": "Check shirt weight and wash behaviour; do not identify this reference as denim.",
+          "colourwayImage": "assets/material-library/MF005.webp",
+          "research": [
+            {
+              "id": "S03",
+              "title": "The Softened Utility Shirt"
+            },
+            {
+              "id": "PROC01",
+              "title": "Controlled Wash, Fade & Patina"
+            }
+          ]
+        },
+        {
+          "materialId": "MP033",
+          "role": "Main cloth / checked alternative",
+          "reason": "Ochre-and-navy flannel check offers a distinct casual shirt variation for the loose button-down block.",
+          "review": "Review thickness at collar and cuffs and align the checks at the front.",
+          "colourwayImage": "assets/material-library/MP033.webp",
+          "research": [
+            {
+              "id": "PROC01",
+              "title": "Controlled Wash, Fade & Patina"
+            }
+          ]
+        }
+      ]
+    },
+    "RF27-S06": {
+      "brief": "A loose corduroy shirt with a tactile surface and button-front details.",
+      "checks": "Review wale scale, pile direction, weight and seam bulk.",
+      "pairs": [
+        {
+          "materialId": "MF016",
+          "role": "Main cloth / cotton corduroy",
+          "reason": "Navy cotton corduroy is a real cut-pile reference for the loose corduroy shirt.",
+          "review": "The original eight-wale specification is not confirmed for this library cloth.",
+          "colourwayImage": "assets/material-library/MF016.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            }
+          ]
+        },
+        {
+          "materialId": "MF017",
+          "role": "Main cloth / coloured corduroy",
+          "reason": "Pale-green cotton corduroy offers a distinct colour route while keeping the ribbed shirt expression.",
+          "review": "Review wale spacing and collar/cuff bulk before sampling.",
+          "colourwayImage": "assets/material-library/MF017.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            }
+          ]
+        },
+        {
+          "materialId": "MP033",
+          "role": "Main cloth / checked variation",
+          "reason": "Ochre-and-navy flannel check changes the loose shirt to a brushed woven pattern route.",
+          "review": "Reassess weight and shrinkage; this is not a printed corduroy.",
+          "colourwayImage": "assets/material-library/MP033.webp",
+          "research": []
+        }
+      ]
+    },
+    "RF27-S03": {
+      "brief": "A softly draped shirt with slightly dropped shoulders.",
+      "checks": "Drape is central: confirm it physically before adapting the original block.",
+      "pairs": [
+        {
+          "materialId": "MF002",
+          "role": "Main cloth / twill candidate",
+          "reason": "Pink polyester twill provides a photographed woven candidate for the dropped-shoulder shirt, with a clear change from the original viscose-blend cloth.",
+          "review": "Fluidity and hand are unverified; reject this option if a hanging cloth trial is too firm.",
+          "colourwayImage": "assets/material-library/MF002.webp",
+          "research": [
+            {
+              "id": "MAT03",
+              "title": "Supple Twill & Canvas"
+            },
+            {
+              "id": "MAT04",
+              "title": "Comfort Wovens: Drape & Recovery"
+            },
+            {
+              "id": "PROC01",
+              "title": "Controlled Wash, Fade & Patina"
+            }
+          ]
+        },
+        {
+          "materialId": "MP062",
+          "role": "Main cloth / printed candidate",
+          "reason": "The leaf-patterned viscose reference offers a specific printed direction for the relaxed shirt.",
+          "review": "Verify fibre details, drape, seam slippage and print scale before applying it to the block.",
+          "colourwayImage": "assets/material-library/MP062.webp",
+          "research": []
+        }
+      ]
+    },
+    "RF27-O01": {
+      "brief": "A straight shacket with a contrast collar; library alternatives change the recorded denim-and-leather combination.",
+      "checks": "Check shacket weight, pocket support and the compatibility of body and collar cloth.",
+      "pairs": [
+        {
+          "materialId": "MF011",
+          "role": "Body / canvas alternative",
+          "reason": "Deep-green cotton canvas offers a workwear body alternative for the straight button-front shacket.",
+          "review": "This is a canvas redesign, not the recorded denim cloth. Review body weight and seam bulk.",
+          "colourwayImage": "assets/material-library/MF011.webp",
+          "research": []
+        },
+        {
+          "materialId": "MP111",
+          "role": "Body / checked alternative",
+          "reason": "A muted cotton outerwear check gives the straight shacket a real patterned body route.",
+          "review": "Check weight, pattern matching and pocket placement; it does not reproduce a leather collar.",
+          "colourwayImage": "assets/material-library/MP111.webp",
+          "research": [
+            {
+              "id": "OW01",
+              "title": "The Textured Shacket"
+            }
+          ]
+        }
+      ]
+    },
+    "RF27-O02": {
+      "brief": "An unlined canvas shacket with a contrast corduroy collar.",
+      "checks": "Review unlined body weight, seam finish and body/collar shrinkage together.",
+      "pairs": [
+        {
+          "materialId": "MF011",
+          "role": "Body / cotton canvas",
+          "reason": "Deep-green cotton canvas retains the recorded canvas body direction and supports the workwear pocket expression.",
+          "review": "Confirm weight and garment-dye suitability; neither is established by the photograph.",
+          "colourwayImage": "assets/material-library/MF011.webp",
+          "research": [
+            {
+              "id": "OW02",
+              "title": "The Barn & Chore Jacket"
+            },
+            {
+              "id": "MAT03",
+              "title": "Supple Twill & Canvas"
+            },
+            {
+              "id": "PROC01",
+              "title": "Controlled Wash, Fade & Patina"
+            },
+            {
+              "id": "PROC03",
+              "title": "Corduroy Collars & Pile Trims"
+            }
+          ]
+        },
+        {
+          "materialId": "MP033",
+          "role": "Body / checked variation",
+          "reason": "Ochre-and-navy flannel check offers an actual patterned alternative for the relaxed shacket.",
+          "review": "Check weight and pocket matching; this is a checked cloth rather than a printed canvas.",
+          "colourwayImage": "assets/material-library/MP033.webp",
+          "research": [
+            {
+              "id": "PROC01",
+              "title": "Controlled Wash, Fade & Patina"
+            }
+          ]
+        }
+      ]
+    },
+    "RF27-O03": {
+      "brief": "A relaxed padded bomber with a ribbed funnel neck.",
+      "checks": "Review shell weight, seam strength, padding compatibility and neck-rib recovery.",
+      "pairs": [
+        {
+          "materialId": "MF097",
+          "role": "Shell / ripstop alternative",
+          "reason": "Brown nylon ripstop gives the bomber an explicit grid-textured shell alternative.",
+          "review": "No wind resistance, water resistance or downproofness is confirmed. Trial with the intended padding and lining.",
+          "colourwayImage": "assets/material-library/MF097.webp",
+          "research": [
+            {
+              "id": "MAT05",
+              "title": "Light Padded Layer Systems"
+            },
+            {
+              "id": "PROC02",
+              "title": "Useful Quilting & Modular Padding"
+            }
+          ]
+        },
+        {
+          "materialId": "MF099",
+          "role": "Shell / neutral alternative",
+          "reason": "Beige nylon-blend ripstop offers a separate neutral shell route for the relaxed bomber.",
+          "review": "Confirm shell handle and seam performance; this is not the original cotton-nylon shell.",
+          "colourwayImage": "assets/material-library/MF099.webp",
+          "research": [
+            {
+              "id": "MAT05",
+              "title": "Light Padded Layer Systems"
+            },
+            {
+              "id": "PROC02",
+              "title": "Useful Quilting & Modular Padding"
+            }
+          ]
+        }
+      ]
+    },
+    "RF27-O04": {
+      "brief": "A high-collar padded jacket; shell construction and fill containment must be assessed together.",
+      "checks": "Check downproofness if using down, seam leakage, shell weight and collar volume.",
+      "pairs": [
+        {
+          "materialId": "MF097",
+          "role": "Shell / ripstop candidate",
+          "reason": "Brown nylon ripstop is a real grid-structured shell candidate for the padded jacket.",
+          "review": "Downproofness and coating are unknown; do not fill with down before testing.",
+          "colourwayImage": "assets/material-library/MF097.webp",
+          "research": [
+            {
+              "id": "OW05",
+              "title": "The Practical Quilted Layer"
+            },
+            {
+              "id": "MAT05",
+              "title": "Light Padded Layer Systems"
+            },
+            {
+              "id": "PROC02",
+              "title": "Useful Quilting & Modular Padding"
+            }
+          ]
+        },
+        {
+          "materialId": "MF099",
+          "role": "Shell / neutral candidate",
+          "reason": "Beige nylon-blend ripstop offers another concrete shell reference for the high-collar shape.",
+          "review": "Check fill containment, seam performance and drape around the collar.",
+          "colourwayImage": "assets/material-library/MF099.webp",
+          "research": [
+            {
+              "id": "OW05",
+              "title": "The Practical Quilted Layer"
+            },
+            {
+              "id": "MAT05",
+              "title": "Light Padded Layer Systems"
+            },
+            {
+              "id": "PROC02",
+              "title": "Useful Quilting & Modular Padding"
+            }
+          ]
+        }
+      ]
+    },
+    "RF27-O05": {
+      "brief": "Single-cloth alternatives for the car-coat silhouette. The original reversible construction needs a separately sourced and approved cloth.",
+      "checks": "Two separate references do not constitute a reversible cloth. Develop and test the reversible construction.",
+      "pairs": [
+        {
+          "materialId": "MF086",
+          "role": "Main cloth / plain single-face alternative",
+          "reason": "Beige gabardine offers a plain woven alternative for the car-coat shape. This is a single-face redesign, not a reversible fabric.",
+          "review": "Review coat weight and reverse appearance; develop lining and seam construction.",
+          "colourwayImage": "assets/material-library/MF086.webp",
+          "research": []
+        },
+        {
+          "materialId": "MP111",
+          "role": "Main cloth / checked single-face alternative",
+          "reason": "Muted cotton outerwear check offers a photographed patterned cloth for a single-faced version of the car coat.",
+          "review": "Confirm coat weight, lining and seam finish. Reversibility is not established.",
+          "colourwayImage": "assets/material-library/MP111.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            },
+            {
+              "id": "PAT01",
+              "title": "Softened Yarn-Dyed Checks"
+            }
+          ]
+        },
+        {
+          "materialId": "MP006",
+          "role": "Main cloth / herringbone variation",
+          "reason": "A heritage herringbone wool reference provides an alternative surface route for a single-faced car coat.",
+          "review": "This changes the original reversible concept; review weight and lining construction.",
+          "colourwayImage": "assets/material-library/MP006.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        }
+      ]
+    },
+    "RF27-O06": {
+      "brief": "An oversized shawl-collar coat with a sculptural outline.",
+      "checks": "Review drape, coat weight, lapel roll and edge finishing; no library cloth is certified double-faced.",
+      "pairs": [
+        {
+          "materialId": "MF089",
+          "role": "Main cloth / melton alternative",
+          "reason": "Charcoal wool-blend melton provides a real coat cloth direction for the oversized shawl collar.",
+          "review": "Check weight and drape; develop lined construction unless double-face suitability is confirmed.",
+          "colourwayImage": "assets/material-library/MF089.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        },
+        {
+          "materialId": "MF090",
+          "role": "Main cloth / lighter neutral",
+          "reason": "Beige wool-blend melton offers a lighter-coloured coat route for the broad shawl-collar form.",
+          "review": "Fibre percentages and double-face edge finishing are unconfirmed.",
+          "colourwayImage": "assets/material-library/MF090.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        },
+        {
+          "materialId": "MP006",
+          "role": "Main cloth / herringbone variation",
+          "reason": "A visible wool herringbone adds a specific woven-pattern alternative to the broad coat silhouette.",
+          "review": "Check drape and weight; it is not a verified double-faced wool-lyocell cloth.",
+          "colourwayImage": "assets/material-library/MP006.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        }
+      ]
+    },
+    "AE-014": {
+      "brief": "An olive overshirt shape reference; cloth choices are for physical redevelopment.",
+      "checks": "Review shirt weight, collar support, pocket bulk and shrinkage.",
+      "pairs": [
+        {
+          "materialId": "MF003",
+          "role": "Main cloth / utility twill",
+          "reason": "Green cotton twill retains a diagonal workwear surface for the overshirt pocket construction, with a fibre change from the concept cloth brief.",
+          "review": "Check shirt weight and collar roll; do not assume the original hand.",
+          "colourwayImage": "assets/material-library/MF003.webp",
+          "research": [
+            {
+              "id": "OW02",
+              "title": "The Barn & Chore Jacket"
+            }
+          ]
+        },
+        {
+          "materialId": "MF037",
+          "role": "Main cloth / cleaner alternative",
+          "reason": "Deep-green poplin changes the utility shirt to a cleaner woven surface while retaining its pocket layout.",
+          "review": "Review opacity and pocket show-through; rebalance collar interfacing.",
+          "colourwayImage": "assets/material-library/MF037.webp",
+          "research": []
+        },
+        {
+          "materialId": "MP035",
+          "role": "Main cloth / striped variation",
+          "reason": "A narrow woven workwear stripe gives the pocketed shirt a specific pattern route.",
+          "review": "Check stripe alignment at pockets and placket; confirm actual stripe scale.",
+          "colourwayImage": "assets/material-library/MP035.webp",
+          "research": []
+        }
+      ]
+    },
+    "AE-021": {
+      "brief": "A pull-on straight-leg concept; test all cloth options in a new pull-on block.",
+      "checks": "Check stretch, recovery, drape, pilling and seam growth in the pleated waist.",
+      "pairs": [
+        {
+          "materialId": "MF044",
+          "role": "Main cloth / compact knit",
+          "reason": "Charcoal double knit is a concrete knit alternative for the pull-on straight leg. Its surface differs from the original stretch-twill direction.",
+          "review": "Check weight and recovery; adjust ease and waistband support after testing.",
+          "colourwayImage": "assets/material-library/MF044.webp",
+          "research": []
+        },
+        {
+          "materialId": "MF046",
+          "role": "Main cloth / softer colour",
+          "reason": "Warm-grey double knit keeps a quiet knit surface while offering a lighter neutral for the straight leg.",
+          "review": "Assess hang and pleat bulk; no brushed finish or softness is confirmed.",
+          "colourwayImage": "assets/material-library/MF046.webp",
+          "research": []
+        },
+        {
+          "materialId": "MF055",
+          "role": "Main cloth / ponte alternative",
+          "reason": "Grey ponte provides a different compact-knit route for a cleaner trouser expression with the same relaxed leg idea.",
+          "review": "Test stretch and recovery and revise ease before using the pull-on block.",
+          "colourwayImage": "assets/material-library/MF055.webp",
+          "research": []
+        }
+      ]
+    },
+    "AE-023": {
+      "brief": "A wide-leg corduroy concept; assess each actual cloth in the intended wide-leg shape.",
+      "checks": "Review pile direction, wale scale, weight, shrinkage and seam bulk; no wale count is inferred from an image.",
+      "pairs": [
+        {
+          "materialId": "MF016",
+          "role": "Main cloth / corduroy",
+          "reason": "Navy cotton corduroy supplies an actual ribbed cloth reference for this wide trouser leg.",
+          "review": "Compare pile and wale scale with the intended fit; trouser suitability requires a physical cloth trial.",
+          "colourwayImage": "assets/material-library/MF016.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            }
+          ]
+        },
+        {
+          "materialId": "MF020",
+          "role": "Main cloth / neutral corduroy",
+          "reason": "Beige corduroy gives a distinct neutral ribbed alternative while retaining the tactile trouser direction.",
+          "review": "Check wear resistance, stretch if needed and bulk at pockets; blend percentages are not supplied.",
+          "colourwayImage": "assets/material-library/MF020.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            }
+          ]
+        },
+        {
+          "materialId": "MF084",
+          "role": "Main cloth / woven alternative",
+          "reason": "Black cotton gabardine offers an explicit non-pile alternative for the same leg concept. This changes the surface and may change the silhouette.",
+          "review": "Recheck ease and leg volume in a toile; this does not reproduce corduroy.",
+          "colourwayImage": "assets/material-library/MF084.webp",
+          "research": []
+        }
+      ]
+    },
+    "AE-025": {
+      "brief": "A long-jacket reference; select weight and construction for a jacket rather than assuming coat suitability.",
+      "checks": "Review drape, coat weight, lapel roll and edge finishing; no library cloth is certified double-faced.",
+      "pairs": [
+        {
+          "materialId": "MF089",
+          "role": "Main cloth / melton alternative",
+          "reason": "Charcoal wool-blend melton provides a real coat cloth direction for the long-jacket shape.",
+          "review": "Check weight and drape; develop lined construction unless double-face suitability is confirmed.",
+          "colourwayImage": "assets/material-library/MF089.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        },
+        {
+          "materialId": "MF090",
+          "role": "Main cloth / lighter neutral",
+          "reason": "Beige wool-blend melton offers a lighter-coloured coat route for the longline silhouette.",
+          "review": "Fibre percentages and double-face edge finishing are unconfirmed.",
+          "colourwayImage": "assets/material-library/MF090.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        },
+        {
+          "materialId": "MP006",
+          "role": "Main cloth / herringbone variation",
+          "reason": "A visible wool herringbone adds a specific woven-pattern alternative to the longline silhouette.",
+          "review": "Check drape and weight; it is not a verified double-faced cloth.",
+          "colourwayImage": "assets/material-library/MP006.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        }
+      ]
+    },
+    "AE-028": {
+      "brief": "A relaxed flannel shirt; preserve loose volume and check pocket/placket placement.",
+      "checks": "Review wale scale, pile direction, weight and seam bulk.",
+      "pairs": [
+        {
+          "materialId": "MF023",
+          "role": "Main cloth / flannel",
+          "reason": "Navy flannel provides an actual woven winter-shirt reference for the relaxed button-front shape.",
+          "review": "Check shirt weight, brushing, shrinkage and pocket bulk.",
+          "colourwayImage": "assets/material-library/MF023.webp",
+          "research": [
+            {
+              "id": "S01",
+              "title": "The Refined Flannel Shirt"
+            },
+            {
+              "id": "MAT01",
+              "title": "Brushed Flannel & Refined Double Cloth"
+            }
+          ]
+        },
+        {
+          "materialId": "MP033",
+          "role": "Main cloth / muted check",
+          "reason": "An ochre-and-navy flannel check supplies a specific checked flannel expression for this shirt.",
+          "review": "Match the pattern at the front and pockets; verify cloth weight and shrinkage.",
+          "colourwayImage": "assets/material-library/MP033.webp",
+          "research": [
+            {
+              "id": "S01",
+              "title": "The Refined Flannel Shirt"
+            },
+            {
+              "id": "MAT01",
+              "title": "Brushed Flannel & Refined Double Cloth"
+            },
+            {
+              "id": "PAT01",
+              "title": "Softened Yarn-Dyed Checks"
+            }
+          ]
+        },
+        {
+          "materialId": "MP025",
+          "role": "Main cloth / coloured check",
+          "reason": "Red overcheck flannel offers a distinct patterned shirt variation.",
+          "review": "Confirm repeat scale and brushing; review collar and cuff bulk.",
+          "colourwayImage": "assets/material-library/MP025.webp",
+          "research": []
+        }
+      ]
+    },
+    "AE-030": {
+      "brief": "A straight corduroy trouser reference; review wale scale and pocket bulk.",
+      "checks": "Review pile direction, wale scale, weight, shrinkage and seam bulk; no wale count is inferred from an image.",
+      "pairs": [
+        {
+          "materialId": "MF016",
+          "role": "Main cloth / corduroy",
+          "reason": "Navy cotton corduroy supplies an actual ribbed cloth reference for this straight trouser leg.",
+          "review": "Compare pile and wale scale with the intended fit; trouser suitability requires a physical cloth trial.",
+          "colourwayImage": "assets/material-library/MF016.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            }
+          ]
+        },
+        {
+          "materialId": "MF020",
+          "role": "Main cloth / neutral corduroy",
+          "reason": "Beige corduroy gives a distinct neutral ribbed alternative while retaining the tactile trouser direction.",
+          "review": "Check wear resistance, stretch if needed and bulk at pockets; blend percentages are not supplied.",
+          "colourwayImage": "assets/material-library/MF020.webp",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            }
+          ]
+        },
+        {
+          "materialId": "MF084",
+          "role": "Main cloth / woven alternative",
+          "reason": "Black cotton gabardine offers an explicit non-pile alternative for the same leg concept. This changes the surface and may change the silhouette.",
+          "review": "Recheck ease and leg volume in a toile; this does not reproduce corduroy.",
+          "colourwayImage": "assets/material-library/MF084.webp",
+          "research": []
+        }
+      ]
+    },
+    "AE-031": {
+      "brief": "A worker flannel shirt; review shirt weight and reinforced pocket details.",
+      "checks": "Review wale scale, pile direction, weight and seam bulk.",
+      "pairs": [
+        {
+          "materialId": "MF023",
+          "role": "Main cloth / flannel",
+          "reason": "Navy flannel provides an actual woven winter-shirt reference for the relaxed button-front shape.",
+          "review": "Check shirt weight, brushing, shrinkage and pocket bulk.",
+          "colourwayImage": "assets/material-library/MF023.webp",
+          "research": [
+            {
+              "id": "S01",
+              "title": "The Refined Flannel Shirt"
+            },
+            {
+              "id": "MAT01",
+              "title": "Brushed Flannel & Refined Double Cloth"
+            }
+          ]
+        },
+        {
+          "materialId": "MP033",
+          "role": "Main cloth / muted check",
+          "reason": "An ochre-and-navy flannel check supplies a specific checked flannel expression for this shirt.",
+          "review": "Match the pattern at the front and pockets; verify cloth weight and shrinkage.",
+          "colourwayImage": "assets/material-library/MP033.webp",
+          "research": [
+            {
+              "id": "S01",
+              "title": "The Refined Flannel Shirt"
+            },
+            {
+              "id": "MAT01",
+              "title": "Brushed Flannel & Refined Double Cloth"
+            },
+            {
+              "id": "PAT01",
+              "title": "Softened Yarn-Dyed Checks"
+            }
+          ]
+        },
+        {
+          "materialId": "MP025",
+          "role": "Main cloth / coloured check",
+          "reason": "Red overcheck flannel offers a distinct patterned shirt variation.",
+          "review": "Confirm repeat scale and brushing; review collar and cuff bulk.",
+          "colourwayImage": "assets/material-library/MP025.webp",
+          "research": []
+        }
+      ]
+    },
+    "AE-035": {
+      "brief": "A regular wool-blend coat; assess each cloth for its narrower coat block.",
+      "checks": "Review drape, coat weight, lapel roll and edge finishing; no library cloth is certified double-faced.",
+      "pairs": [
+        {
+          "materialId": "MF089",
+          "role": "Main cloth / melton alternative",
+          "reason": "Charcoal wool-blend melton provides a real coat cloth direction for the regular coat shape.",
+          "review": "Check weight and drape; develop lined construction unless double-face suitability is confirmed.",
+          "colourwayImage": "assets/material-library/MF089.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        },
+        {
+          "materialId": "MF090",
+          "role": "Main cloth / lighter neutral",
+          "reason": "Beige wool-blend melton offers a lighter-coloured coat route for the longline silhouette.",
+          "review": "Fibre percentages and double-face edge finishing are unconfirmed.",
+          "colourwayImage": "assets/material-library/MF090.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        },
+        {
+          "materialId": "MP006",
+          "role": "Main cloth / herringbone variation",
+          "reason": "A visible wool herringbone adds a specific woven-pattern alternative to the longline silhouette.",
+          "review": "Check drape and weight; it is not a verified double-faced cloth.",
+          "colourwayImage": "assets/material-library/MP006.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        }
+      ]
+    },
+    "AE-022": {
+      "brief": "A high-rise yoga-legging shape concept.",
+      "checks": "Verify four-way stretch, recovery, opacity at extension and seam strength before any fit approval.",
+      "pairs": [
+        {
+          "materialId": "MF117",
+          "role": "Main cloth / tricot candidate",
+          "reason": "Brown striated tricot provides a real knit reference for developing the high-rise legging concept.",
+          "review": "The photograph does not establish stretch or opacity. Test before cutting a close-fitting sample.",
+          "colourwayImage": "assets/material-library/MF117.webp",
+          "research": [
+            {
+              "id": "T08",
+              "title": "Studio Leggings"
+            },
+            {
+              "id": "AKMAT03",
+              "title": "Fine Rib & Smooth Jersey for Studio Leggings"
+            }
+          ]
+        },
+        {
+          "materialId": "MF119",
+          "role": "Main cloth / tricot alternative",
+          "reason": "Ivory nylon-blend tricot offers a different colour and fibre direction for the same knit concept.",
+          "review": "Opacity, stretch and recovery are critical and unverified.",
+          "colourwayImage": "assets/material-library/MF119.webp",
+          "research": [
+            {
+              "id": "T08",
+              "title": "Studio Leggings"
+            },
+            {
+              "id": "AKMAT03",
+              "title": "Fine Rib & Smooth Jersey for Studio Leggings"
+            }
+          ]
+        }
+      ]
+    },
+    "AE-029": {
+      "brief": "Outer-knit candidates for the legging reference. A suitable fleece lining has not yet been linked and must be developed separately.",
+      "checks": "Verify stretch, recovery, opacity and lining bulk for the whole garment.",
+      "pairs": [
+        {
+          "materialId": "MF117",
+          "role": "Main cloth / tricot candidate",
+          "reason": "Brown striated tricot provides a real knit reference for developing the legging shell.",
+          "review": "The photograph does not establish stretch or opacity. Test before cutting a close-fitting sample.",
+          "colourwayImage": "assets/material-library/MF117.webp",
+          "research": [
+            {
+              "id": "T08",
+              "title": "Studio Leggings"
+            },
+            {
+              "id": "AKMAT03",
+              "title": "Fine Rib & Smooth Jersey for Studio Leggings"
+            }
+          ]
+        },
+        {
+          "materialId": "MF119",
+          "role": "Main cloth / tricot alternative",
+          "reason": "Ivory nylon-blend tricot offers a different colour and fibre direction for the legging shell.",
+          "review": "Opacity, stretch and recovery are critical and unverified.",
+          "colourwayImage": "assets/material-library/MF119.webp",
+          "research": [
+            {
+              "id": "T08",
+              "title": "Studio Leggings"
+            },
+            {
+              "id": "AKMAT03",
+              "title": "Fine Rib & Smooth Jersey for Studio Leggings"
+            }
+          ]
+        }
+      ]
+    },
+    "AE-026": {
+      "brief": "A quilted shirt-jacket reference; knitted alternatives change the original woven-shell construction.",
+      "checks": "Review quilt structure, stability, lining and seam bulk before sampling.",
+      "pairs": [
+        {
+          "materialId": "MF109",
+          "role": "Body / quilted knit alternative",
+          "reason": "Black quilted knit supplies a real quilted-surface alternative for the shirt-jacket shape.",
+          "review": "A knit requires revised ease and seam construction; this is not the recorded quilted nylon.",
+          "colourwayImage": "assets/material-library/MF109.webp",
+          "research": [
+            {
+              "id": "PROC02",
+              "title": "Useful Quilting & Modular Padding"
+            }
+          ]
+        },
+        {
+          "materialId": "MF110",
+          "role": "Body / quilted knit colour variation",
+          "reason": "Deep-green quilted knit offers a separate neutral-colour route for the same redesigned shirt jacket.",
+          "review": "Assess stability and weight; neither warmth nor padding performance is verified.",
+          "colourwayImage": "assets/material-library/MF110.webp",
+          "research": [
+            {
+              "id": "PROC02",
+              "title": "Useful Quilting & Modular Padding"
+            }
+          ]
+        }
+      ]
+    },
+    "AE-032": {
+      "brief": "A relaxed sherpa shirt jacket.",
+      "checks": "Check pile bulk, shedding, lining needs and stability at placket and pockets.",
+      "pairs": [
+        {
+          "materialId": "MF111",
+          "role": "Body / sherpa candidate",
+          "reason": "This actual sherpa reference supports a pile-surface development for the relaxed shirt-jacket outline.",
+          "review": "Check weight, pile height and seam bulk physically.",
+          "colourwayImage": "assets/material-library/MF111.webp",
+          "research": [
+            {
+              "id": "OW07",
+              "title": "Fleece & Sherpa Layers"
+            }
+          ]
+        },
+        {
+          "materialId": "MF113",
+          "role": "Body / sherpa alternative",
+          "reason": "A second identified sherpa cloth offers a distinct material reference for the same shape.",
+          "review": "Compare the real pile and backing; do not assume equal hand or warmth.",
+          "colourwayImage": "assets/material-library/MF113.webp",
+          "research": [
+            {
+              "id": "OW07",
+              "title": "Fleece & Sherpa Layers"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
