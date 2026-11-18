@@ -121,7 +121,7 @@
 .material-library-site .ml-dialog::backdrop{background:#16181380;backdrop-filter:blur(3px)}
 .material-library-site .ml-dialog-close{position:absolute;right:15px;top:15px;z-index:3;width:35px;height:35px;background:#ffffffea;border:1px solid var(--ml-line);display:flex;align-items:center;justify-content:center;font-size:23px;font-weight:300}
 .material-library-site .ml-detail-layout{display:grid;grid-template-columns:56% 44%;min-height:620px}
-.material-library-site .ml-detail-visual{background:var(--ml-paper);padding:24px;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.material-library-site .ml-detail-visual{background:var(--ml-paper);padding:24px;display:flex;flex-direction:column;justify-content:center;min-width:0;align-self:start}
 .material-library-site .ml-detail-mainimage{height:min(67vh,650px);width:100%;object-fit:contain;display:block}
 .material-library-site .ml-detail-zoom{border:0;background:none;cursor:zoom-in!important;padding:0;width:100%}
 .material-library-site .ml-detail-zoom.is-zoomed{overflow:auto;max-height:70vh;cursor:zoom-out!important}
@@ -149,6 +149,18 @@
 .material-library-site .ml-detail-choices button img{width:42px;height:42px;flex-shrink:0;object-fit:cover}
 .material-library-site .ml-detail-choices button span{overflow-wrap:anywhere}
 .material-library-site .ml-storage-warning{font-size:12px;line-height:1.7;padding:16px 20px;background:var(--ml-paper);border:1px solid var(--ml-line);margin:24px 0;color:var(--ml-ink)}
+.material-library-site .ml-material-link-error{font-size:12px;line-height:1.7;padding:16px 20px;border:1px solid var(--ml-line);margin:24px 0}
+.material-library-site .ml-material-link-error p{margin:0 0 8px}
+.material-library-site .ml-detail-next{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:18px;font-size:11px;line-height:1.6}
+.material-library-site .ml-detail-next a,.material-library-site .ml-related-title,.material-library-site .ml-related-styles{color:var(--ml-ink);text-decoration:none;border-bottom:1px solid var(--ml-ink)}
+.material-library-site .ml-detail-research{margin-top:25px;border-top:1px solid var(--ml-line);padding-top:20px;min-width:0}
+.material-library-site .ml-detail-research h3{font-size:15px;line-height:1.3;letter-spacing:-.02em;font-weight:500;margin:0 0 16px}
+.material-library-site .ml-related-report{border-bottom:1px solid var(--ml-line);padding:0 0 16px;margin:0 0 16px}
+.material-library-site .ml-related-title{display:inline;font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+.material-library-site .ml-related-report .ml-match-tier{display:table;margin-top:10px}
+.material-library-site .ml-related-terms{font-size:10px;line-height:1.7;margin:8px 0 0;color:var(--ml-muted)}
+.material-library-site .ml-related-reason,.material-library-site .ml-related-status,.material-library-site .ml-related-scope{font-size:11px;line-height:1.8;color:var(--ml-muted);margin:8px 0 0}
+.material-library-site .ml-related-styles{display:inline-block;font-size:10px;line-height:1.7;margin-top:10px}
 .material-library-site .ml-detail-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:auto;padding-top:10px}
 .material-library-site .ml-detail-scope{font-size:10px;line-height:1.65;color:var(--ml-muted);padding:15px 0 0;margin:0}
 .material-library-site .ml-detail-nav{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--ml-line);padding:13px 25px;font-size:10px;color:var(--ml-muted)}
@@ -175,7 +187,7 @@
 .material-library-site .ml-note-label{display:block;font-size:10px;color:var(--ml-muted);margin:14px 0 6px}
 .material-library-site .ml-board-card textarea,.material-library-site .ml-board-card input[type=text]{display:block;width:100%;border:1px solid var(--ml-line);background:white;padding:9px;font-size:11px;line-height:1.6;border-radius:0}
 .material-library-site .ml-board-card textarea{min-height:80px;resize:vertical}
-.material-library-site .ml-board-card-actions{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:10px}
+.material-library-site .ml-board-card-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-top:12px;gap:10px}
 .material-library-site .ml-board-card-actions button{border:0;padding:3px 0;background:none;font-size:10px;color:var(--ml-muted)}
 .material-library-site .ml-board-card-actions button:hover{color:var(--ml-ink);text-decoration:underline}
 .material-library-site .ml-board-info{color:var(--ml-muted);font-size:11px;line-height:1.8;margin:20px 0 0;max-width:720px}

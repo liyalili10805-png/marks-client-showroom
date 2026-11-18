@@ -30,7 +30,7 @@
   let matches = [], rendered = [], currentDetail = null;
   let dialog, dialogReturnFocus, toastTimer, searchTimer, groupFilter = '', sharedIds = [];
   let countedItems, counts, loading = false, lifecycleWired = false, sharedHeaderWired = false;
-  let trendConnections, trendRequest = 0;
+  let trendConnections, trendRequest = 0, detailRequest = 0;
   let trendSelection = {status: 'idle', report: null, term: null, ids: new Set()};
   const pageIsBoard = body.dataset.materialPage === 'board';
   if (!root) { wireSharedHeader(); return; }
@@ -150,7 +150,7 @@
   function readState() {
     const params = new URLSearchParams(location.search);
     const page = Number(params.get('page'));
-    const s = {type: ['fabric', 'pattern'].includes(params.get('type')) ? params.get('type') : 'all', q: params.get('q') || '', sort: ['curated', 'az'].includes(params.get('sort')) ? params.get('sort') : 'curated', page: Number.isSafeInteger(page) && page > 0 ? page : 1, trend: params.has('trend') ? params.get('trend') : null, direction: params.has('direction') ? params.get('direction') : null};
+    const s = {type: ['fabric', 'pattern'].includes(params.get('type')) ? params.get('type') : 'all', q: params.get('q') || '', sort: ['curated', 'az'].includes(params.get('sort')) ? params.get('sort') : 'curated', page: Number.isSafeInteger(page) && page > 0 ? page : 1, trend: params.has('trend') ? params.get('trend') : null, direction: params.has('direction') ? params.get('direction') : null, material: params.has('material') ? params.get('material') : null, colourway: params.get('colourway') || null};
     FILTERS.forEach(f => { s[f.key] = new Set(params.getAll(f.key).flatMap(v => v.split('|')).filter(Boolean)); });
     return s;
   }
@@ -160,6 +160,7 @@
       params.set('trend', state.trend);
       if (state.direction !== null) params.set('direction', state.direction);
     }
+    if (state.material !== null) { params.set('material', state.material); if (state.colourway) params.set('colourway', state.colourway); }
     if (state.type !== 'all') params.set('type', state.type);
     if (state.q) params.set('q', state.q);
     FILTERS.forEach(f => { [...state[f.key]].forEach(v => params.append(f.key, v)); });
@@ -227,20 +228,23 @@
     article.dataset.matchTier = match.tier; article.dataset.matchContext = signature;
     if (previous) previous.replaceWith(context); else article.append(context);
   }
+  function loadTrendConnections(retry) {
+    if (retry) trendConnections = null;
+    if (!trendConnections) trendConnections = fetch(TREND_URL).then(async response => {
+      if (!response.ok) throw new Error('Trend connections unavailable');
+      const data = await response.json();
+      if (!data || data.season !== 'A/W 27/28' || !data.reports || typeof data.reports !== 'object' || Array.isArray(data.reports)) throw new Error('Invalid trend connections');
+      return data;
+    }).catch(error => { trendConnections = null; throw error; });
+    return trendConnections;
+  }
   async function resolveTrendSelection(retry) {
     const request = ++trendRequest;
     trendSelection = {status: hasTrendSelection() ? 'loading' : 'idle', report: null, term: null, ids: new Set()};
     if (!hasTrendSelection()) return;
     const reportId = state.trend, direction = state.direction;
     try {
-      if (retry) trendConnections = null;
-      if (!trendConnections) trendConnections = fetch(TREND_URL).then(async response => {
-        if (!response.ok) throw new Error('Trend connections unavailable');
-        const data = await response.json();
-        if (!data || data.season !== 'A/W 27/28' || !data.reports || typeof data.reports !== 'object') throw new Error('Invalid trend connections');
-        return data;
-      }).catch(error => { trendConnections = null; throw error; });
-      const data = await trendConnections;
+      const data = await loadTrendConnections(retry);
       if (request !== trendRequest) return;
       const report = Object.prototype.hasOwnProperty.call(data.reports, reportId) ? data.reports[reportId] : null;
       if (!report) { trendSelection.status = 'unknown-report'; return; }
@@ -403,8 +407,8 @@
     chips.hidden = !chips.childElementCount;
   }
   function resetFilters() {
-    const {trend, direction} = state;
-    state = {type: 'all', q: '', sort: 'curated', page: 1, trend, direction}; FILTERS.forEach(f => { state[f.key] = new Set(); }); updateLibrary();
+    const {trend, direction, material, colourway} = state;
+    state = {type: 'all', q: '', sort: 'curated', page: 1, trend, direction, material, colourway}; FILTERS.forEach(f => { state[f.key] = new Set(); }); updateLibrary();
   }
   function pageCount() { return Math.max(1, Math.ceil(matches.length / PAGE_SIZE)); }
   function clampPage(page) {
@@ -554,7 +558,7 @@
     if (dialog) return dialog;
     dialog = node('dialog', 'ml-dialog'); dialog.setAttribute('aria-label', 'Material details'); document.body.append(dialog);
     dialog.addEventListener('click', e => { if (e.target === dialog) { const r = dialog.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) closeDialog(); } });
-    dialog.addEventListener('close', () => { body.style.overflow = ''; currentDetail = null; if (dialogReturnFocus && dialogReturnFocus.isConnected) dialogReturnFocus.focus({preventScroll: true}); });
+    dialog.addEventListener('close', () => { body.style.overflow = ''; const closing = currentDetail; currentDetail = null; detailRequest++; if (closing && state.material === closing) { state.material = null; state.colourway = null; writeState(true); } if (dialogReturnFocus && dialogReturnFocus.isConnected) dialogReturnFocus.focus({preventScroll: true}); });
     dialog.addEventListener('keydown', e => {
       if (e.key === 'Escape') { e.preventDefault(); closeDialog(); }
       if (e.key === 'Tab') {
@@ -581,12 +585,58 @@
     (item.images || []).forEach(v => { const src = safeImage(v); if (src && !gallery.some(x => x.src === src)) gallery.push({src, thumbnail: safeImage(typeof v === 'object' ? v.thumbnail : '') || item.colorways.find(c => c.image === src)?.thumbnail, caption: typeof v === 'object' ? v.caption || v.alt || '' : ''}); });
     return gallery;
   }
-  function openDetail(id) {
+  function relatedResearch(item, data) {
+    return Object.entries(data.reports).flatMap(([id, report]) => {
+      if (!report || report.id !== id || typeof report.title !== 'string' || !report.title.trim() || !Array.isArray(report.materialTerms)) return [];
+      const terms = report.materialTerms.filter(term => term && typeof term.key === 'string' && typeof term.label === 'string' && Array.isArray(term.ids) && term.ids.includes(item.id));
+      if (!terms.length) return [];
+      const styleDirections = Array.isArray(report.styleTerms) && report.styleTerms.some(term => term && typeof term.key === 'string' && typeof term.label === 'string' && Array.isArray(term.ids) && term.ids.some(id => typeof id === 'string' && id));
+      return [{id, title: report.title, terms, styleDirections, match: buildMaterialMatches(terms).get(item.id)}];
+    }).sort((a, b) => Number(b.id === state.trend) - Number(a.id === state.trend));
+  }
+  async function renderRelatedResearch(item, container, request, retry) {
+    container.replaceChildren(node('h3', null, 'Related research'), node('p', 'ml-related-status', 'Checking linked research…'));
+    try {
+      const data = await loadTrendConnections(retry);
+      if (request !== detailRequest || currentDetail !== item.id) return;
+      const related = relatedResearch(item, data);
+      container.replaceChildren(node('h3', null, 'Related research'));
+      if (!related.length) { container.append(node('p', 'ml-related-status', 'No verified research link is recorded for this material yet.'), link('Browse style library ↗', 'collection-series.html', 'ml-related-styles'), node('p', 'ml-related-scope', 'Save this material to your Material Board and record its intended use in your development notes. Suitability remains unconfirmed.')); return; }
+      const list = node('div', 'ml-related-list');
+      related.forEach(report => {
+        const row = node('article', 'ml-related-report'); row.dataset.reportId = report.id;
+        row.append(link(report.title, 'trend-story.html?report=' + encodeURIComponent(report.id), 'ml-related-title'));
+        if (report.match) row.append(node('span', 'ml-match-tier ml-match-tier--' + report.match.tier, MATCH_TIER[report.match.tier]));
+        row.append(node('p', 'ml-related-terms', [...new Set(report.terms.map(term => term.label))].join(' / ')));
+        if (report.match?.rationales.length) row.append(node('p', 'ml-related-reason', report.match.rationales[0]));
+        if (report.styleDirections) row.append(link('Related style directions ↗', 'collection-series.html?trend=' + encodeURIComponent(report.id), 'ml-related-styles'));
+        list.append(row);
+      });
+      container.append(list);
+      if (related.some(report => report.styleDirections)) container.append(node('p', 'ml-related-scope', 'Style references share the same research direction. Material-to-style pairings are not confirmed.'));
+    } catch (_) {
+      if (request !== detailRequest || currentDetail !== item.id) return;
+      container.replaceChildren(node('h3', null, 'Related research'), node('p', 'ml-related-status', 'Linked research is temporarily unavailable. The material images and your saved colourway remain available.'), button('Try linked research again', 'ml-text-button', () => renderRelatedResearch(item, container, request, true)), link('Browse style library ↗', 'collection-series.html', 'ml-related-styles'));
+    }
+  }
+  function syncMaterialDeepLink() {
+    root.querySelector('.ml-material-link-error')?.remove();
+    if (state.material === null) { if (currentDetail && dialog?.open) closeDialog(); return; }
+    if (byId.has(state.material)) return openDetail(state.material, {fromUrl: true});
+    if (currentDetail && dialog?.open) closeDialog();
+    const error = node('div', 'ml-material-link-error'); error.setAttribute('role', 'status');
+    error.append(node('p', null, 'This material is not in the current library. Your filters and saved board have not been changed.'), button('Clear material link', 'ml-text-button', () => { state.material = null; state.colourway = null; error.remove(); writeState(true); })); root.append(error);
+  }
+  function openDetail(id, options) {
     const item = byId.get(id); if (!item) return;
-    currentDetail = id;
+    const request = ++detailRequest; currentDetail = id;
     const d = ensureDialog(); d.replaceChildren(closeButton());
     const layout = node('div', 'ml-detail-layout'), visual = node('div', 'ml-detail-visual'), gallery = galleryFor(item);
-    const initialColourway = boardColourway(item, board.get(id));
+    const linkedColourway = options?.fromUrl && state.colourway ? item.colorways.find(c => c.image === state.colourway) : null;
+    const invalidLinkedColourway = !!(options?.fromUrl && state.colourway && !linkedColourway);
+    const initialColourway = linkedColourway || (invalidLinkedColourway ? null : boardColourway(item, board.get(id)));
+    const replaceUrl = !!options?.fromUrl || state.material === id;
+    state.material = id; state.colourway = initialColourway?.image || null; writeState(replaceUrl);
     let selectedColorway = initialColourway || null, choices;
     const zoom = button('', 'ml-detail-zoom'); zoom.setAttribute('aria-label', 'Enlarge material image');
     zoom.setAttribute('aria-pressed', 'false');
@@ -596,6 +646,7 @@
     const replaceImage = (src, text) => { zoom.classList.remove('is-zoomed'); zoom.setAttribute('aria-label', 'Enlarge material image'); zoom.setAttribute('aria-pressed', 'false'); zoom.replaceChildren(image(src, item.title, 'ml-detail-mainimage', true, 'high')); caption.textContent = text || ''; };
     const syncColourwayControls = () => {
       if (choices) choices.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.colourwayImage === selectedColorway?.image)));
+      state.colourway = selectedColorway?.image || null; writeState(true);
       save.dataset.choiceName = selectedColorway?.name || ''; save.dataset.choiceImage = selectedColorway?.image || ''; countUpdate();
     };
     if (gallery.length > 1) {
@@ -625,19 +676,18 @@
         b.append(image(previewFor(item, c), '', '', true), node('span', null, label)); choices.append(b);
       }); copy.append(choices);
       if (board.get(id)?.colorway && !initialColourway) copy.append(node('p', 'ml-detail-scope', 'Your earlier colourway name is ambiguous or no longer listed. Select the pictured colourway and save it again to retain the exact reference.'));
+      if (invalidLinkedColourway) copy.append(node('p', 'ml-detail-scope', 'The linked colourway is not listed for this material. The original base reference is shown; choose a listed colourway to review another view.'));
     }
     const actions = node('div', 'ml-detail-actions');
     const save = button('Save to Material Board', 'ml-button ml-button--dark', () => { const saved = saveItem(item, selectedColorway || ''); if (saved) toast('Saved to your Material Board in this browser'); if (pageIsBoard) renderBoard(); }); save.dataset.saveId = id; actions.append(save);
     actions.append(button(compared.has(id) ? 'Comparing ✓' : 'Compare +', 'ml-button ml-button--quiet', () => toggleCompare(item))); actions.lastChild.dataset.compareId = id;
-    copy.append(actions, link('Open Material Board ↗', BOARD_URL, 'ml-trend-links'));
+    const nextSteps = node('nav', 'ml-detail-next'); nextSteps.setAttribute('aria-label', 'Material selection actions'); nextSteps.append(link('Open Material Board ↗', BOARD_URL)); copy.append(actions, nextSteps);
     const scope = item.sourceType === 'studio' ? 'AI-assisted digital design. Colours, repeat and production translation require sample development.'
       : item.status === 'available' ? 'Physical sample availability has been recorded. Confirm the intended colour and development requirements when requesting a sample.'
       : item.status === 'sampling' ? 'Sample development is in progress. Final colour, surface and availability will be confirmed after review.'
       : 'Visual reference for development. Sample availability and material properties have not been confirmed.';
     copy.append(node('p', 'ml-detail-scope', scope));
-    if (item.trendIds.length) {
-      const trends = node('p', 'ml-trend-links', 'Related research'); item.trendIds.forEach(t => trends.append(link(t, 'trend-story.html?report=' + encodeURIComponent(t)))); copy.append(trends);
-    }
+    const research = node('section', 'ml-detail-research'); research.setAttribute('aria-label', 'Reviewed research connections'); copy.append(research);
     layout.append(visual, copy); d.append(layout);
     const pool = pageIsBoard ? items.filter(i => board.has(i.id)) : matches;
     const index = pool.findIndex(i => i.id === id), nav = node('div', 'ml-detail-nav');
@@ -645,9 +695,11 @@
     const next = button('Next →', '', () => openDetail(pool[index + 1].id)); next.disabled = index < 0 || index >= pool.length - 1;
     nav.append(prev, node('span', null, index >= 0 ? (index + 1) + ' / ' + pool.length : item.id), next); d.append(nav);
     showDialog(item.title); syncColourwayControls(); d.querySelector('.ml-dialog-close').focus({preventScroll: true});
+    return renderRelatedResearch(item, research, request);
   }
   function openCompare() {
     if (!compared.size) return;
+    detailRequest++; currentDetail = null; if (state.material !== null) { state.material = null; state.colourway = null; writeState(true); }
     const d = ensureDialog(); d.replaceChildren(closeButton()); const content = node('div', 'ml-compare');
     content.append(node('h2', null, 'Compare materials'), node('p', 'ml-compare-intro', 'Compare the identified visual and development details. Physical performance requires the actual material.'));
     const scroll = node('div', 'ml-compare-scroll'), table = node('table'), selected = [...compared].map(id => byId.get(id)).filter(Boolean);
@@ -753,10 +805,11 @@
       const seen = new Set(); items = raw.map(normalise).filter(i => { if (seen.has(i.id)) return false; seen.add(i.id); return true; }); byId = new Map(items.map(i => [i.id, i])); libraryCards.clear();
       if (pageIsBoard) { const params = new URLSearchParams(location.search); sharedIds = [...new Set((params.get('ids') || '').split(','))].filter(id => byId.has(id)); renderBoard(); }
       else { await resolveTrendSelection(); renderLibrary(); }
+      syncMaterialDeepLink();
       wireSharedHeader();
       if (!lifecycleWired) {
         lifecycleWired = true;
-        window.addEventListener('popstate', async () => { if (!pageIsBoard) { const previous = state.page; state = readState(); const pending = resolveTrendSelection(); updateLibrary(true, true); await pending; updateLibrary(true, true); if (state.page !== previous) requestAnimationFrame(scrollResults); } });
+        window.addEventListener('popstate', async () => { const previous = state.page; state = readState(); if (!pageIsBoard) { const pending = resolveTrendSelection(); updateLibrary(true, true); if (state.material === null && currentDetail && dialog?.open) closeDialog(); await pending; updateLibrary(true, true); if (state.page !== previous) requestAnimationFrame(scrollResults); } syncMaterialDeepLink(); });
         window.addEventListener('storage', e => { if (e.key === BOARD_KEY) { board = readBoard(); if (pageIsBoard) renderBoard(); else countUpdate(); } });
         document.addEventListener('click', e => { if (!e.target.closest('.ml-filter')) root.querySelectorAll('.ml-filter[open]').forEach(d => { d.open = false; }); });
       }

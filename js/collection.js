@@ -50,8 +50,8 @@
     section.setAttribute('aria-label','Why this style is linked');section.append(connectionReasons(terms,2));return section;
   }
 
-  async function loadTrendConnections() {
-    if (!new URLSearchParams(location.search).has('trend')) return;
+  async function loadTrendConnections(forDetail = false) {
+    if (!forDetail && !new URLSearchParams(location.search).has('trend')) return;
     if (!trendConnectionsPromise) {
       trendConnectionsPromise = fetch(TREND_CONNECTIONS_URL)
         .then(response => {
@@ -65,6 +65,36 @@
         .catch(() => { trendConnectionsFailed = true; });
     }
     await trendConnectionsPromise;
+  }
+
+  function relatedResearch(product) {
+    if (!trendConnections || !trendConnections.reports) return [];
+    return Object.entries(trendConnections.reports).filter(([,report])=>report && typeof report==='object' && Array.isArray(report.styleTerms)).map(([id,report])=>{
+      const terms=styleConnections(product,{terms:report.styleTerms});
+      return {id,title:report.title || id,terms};
+    }).filter(report=>report.terms.length).sort((a,b)=>CONNECTION_TIERS[termTier(a.terms[0])].rank-CONNECTION_TIERS[termTier(b.terms[0])].rank || a.title.localeCompare(b.title));
+  }
+
+  function renderRelatedResearch(product) {
+    const section=el('section','col-related-research');section.setAttribute('aria-label','Related research');
+    const heading=el('div','col-related-heading');heading.append(el('p','col-trend-eyebrow','Research / Style connections'),el('h2',null,'Related research'),el('p','col-related-intro','Research connections explain this style reference. Materials in the linked reports are separate research references; compatibility, construction and physical sample quality require review.'));section.append(heading);
+    const content=el('div','col-related-content');content.append(el('p','col-trend-message','Loading recorded research connections…'));section.append(content);
+    function paint(){
+      content.innerHTML='';
+      if(!trendConnections){content.append(el('p','col-trend-message','Research connections could not be loaded. You can still review this style and add development notes.'));return;}
+      const reports=relatedResearch(product);
+      if(!reports.length){content.append(el('p','col-trend-message','No local research connection is recorded for this style yet.'));return;}
+      reports.forEach(report=>{
+        const card=el('article','col-related-report');card.dataset.report=report.id;
+        const title=el('h3'),reportLink=el('a',null,report.title);reportLink.href='trend-story.html?report='+encodeURIComponent(report.id);title.append(reportLink);card.append(title,connectionReasons(report.terms,2));
+        const links=el('nav','col-related-links');links.setAttribute('aria-label',report.title+' research links');
+        const read=el('a',null,'Read report ↗');read.href=reportLink.href;
+        const materials=el('a',null,'Related material research ↗');materials.href='products.html?'+new URLSearchParams({trend:report.id});
+        links.append(read,materials);card.append(links);content.append(card);
+      });
+    }
+    if(trendConnections)paint();else loadTrendConnections(true).then(paint);
+    return section;
   }
 
   function trendSelection() {
@@ -791,6 +821,7 @@
     similarBlock.append(similarGrid);
     styleSection.append(styleCopy, similarBlock);
     root.append(styleSection);
+    root.append(renderRelatedResearch(product));
 
     const materialSection = el('section', 'materials-section');
     materialSection.id = 'materials';
