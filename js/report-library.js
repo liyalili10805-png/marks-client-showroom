@@ -10,7 +10,7 @@
   const dataUrl = body.dataset.researchData || 'data/research-library.json';
   const detailPage = body.dataset.reportPage || 'trend-story.html';
   const libraryPage = body.dataset.libraryPage || 'trend.html';
-  const connectionsUrl = body.dataset.trendConnections || 'data/trend-connections.json?v=20261118audit1';
+  const connectionsUrl = body.dataset.trendConnections || 'data/trend-connections.json?v=20261118audit2';
   const categories = ['All research', 'Outerwear', 'Shirts', 'Trousers', 'Materials', 'Print & Pattern', 'Construction & Finish'];
   const state = { category: 'All research', gender: 'all', query: '' };
   let data, reports, byId, featuredIds = [], activeObserver, connections = {};

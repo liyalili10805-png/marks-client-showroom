@@ -2,8 +2,8 @@
   'use strict';
 
   const scriptVersion = document.currentScript ? new URL(document.currentScript.src, location.href).searchParams.get('v') : '';
-  const DATA_URL = 'data/collections.json?v=' + encodeURIComponent(scriptVersion || '20261118audit1');
-  const TREND_CONNECTIONS_URL = 'data/trend-connections.json?v=' + encodeURIComponent(scriptVersion || '20261118audit1');
+  const DATA_URL = 'data/collections.json?v=' + encodeURIComponent(scriptVersion || '20261118audit2');
+  const TREND_CONNECTIONS_URL = 'data/trend-connections.json?v=' + encodeURIComponent(scriptVersion || '20261118audit2');
   const SELECT_KEY = 'soho-collection-selection';
   const view = document.body.dataset.view || 'landing';
   const SERIES_QUERY_KEYS = ['gender', 'type', 'material', 'colour', 'retail', 'occasion', 'season', 'q', 'page'];
@@ -130,7 +130,15 @@
     else {
       copy.append(el('p', 'col-trend-message', product ? 'The relationship to this style is identified below. Return to the trend selection to continue browsing.' : context.direction != null ? 'The relationship to this keyword is identified below. Refine the selection using the filters.' : 'References across the report’s related dimensions. Direct matches, development alternatives and studio concepts are identified separately.'));
       const terms=product?styleConnections(product,context):context.terms || [];
-      if(terms.length)copy.append(connectionReasons(terms,product?2:terms.length));
+      if(terms.length && (product || context.direction != null))copy.append(connectionReasons(terms,product?2:terms.length));
+      else if(terms.length){
+        const counts=Object.entries(CONNECTION_TIERS).map(([tier,info])=>{
+          const ids=new Set(terms.filter(term=>termTier(term)===tier).flatMap(term=>term.ids||[]));
+          return ids.size?`${ids.size} ${info.label.toLowerCase()}${ids.size===1?'':'s'}`:'';
+        }).filter(Boolean);
+        copy.append(el('p','col-trend-message',counts.join(' · ')));
+        copy.append(el('p','col-trend-dimensions',[...new Set(terms.map(term=>term.label||term.key))].join(' / ')));
+      }
     }
     const links = el('nav', 'col-trend-actions');
     links.setAttribute('aria-label', 'Trend selection navigation');
