@@ -19,6 +19,31 @@
   };
 
   const escape = value => String(value == null ? '' : value);
+  const CONNECTION_TIERS = {direct:{rank:0,label:'Direct match'},alternative:{rank:1,label:'Development alternative'},concept:{rank:2,label:'Studio concept'}};
+  function termTier(term) { return term && Object.prototype.hasOwnProperty.call(CONNECTION_TIERS,term.tier) ? term.tier : 'alternative'; }
+  function termRationale(term) { return typeof term.rationale === 'string' && term.rationale.trim() ? term.rationale.trim() : 'A development reference to review against the intended garment and material brief.'; }
+  function styleConnections(product, context = trendSelection()) {
+    return (context.terms || []).filter(term => Array.isArray(term.ids) && term.ids.includes(product.code)).slice().sort((a,b)=>CONNECTION_TIERS[termTier(a)].rank-CONNECTION_TIERS[termTier(b)].rank);
+  }
+  function sortTrendStyles(list, context) {
+    if (!context.active) return list;
+    const rank=product=>{const first=styleConnections(product,context)[0];return first?CONNECTION_TIERS[termTier(first)].rank:3;};
+    return list.sort((a,b)=>rank(a)-rank(b));
+  }
+  function connectionReasons(terms, max = terms.length) {
+    const list = el('ul','col-trend-reasons');
+    terms.slice(0,max).forEach(term=>{
+      const item=el('li'),tier=termTier(term);item.dataset.tier=tier;
+      item.append(el('span','col-connection-tier',CONNECTION_TIERS[tier].label),el('strong',null,term.label || term.key),el('span','col-connection-rationale',termRationale(term)));list.append(item);
+    });
+    return list;
+  }
+  function trendEvidence(product, context = trendSelection()) {
+    if (!context.active) return null;
+    const terms=styleConnections(product,context);if(!terms.length)return null;
+    const section=el('div','col-trend-evidence');section.dataset.tier=termTier(terms[0]);
+    section.setAttribute('aria-label','Why this style is linked');section.append(connectionReasons(terms,2));return section;
+  }
 
   async function loadTrendConnections() {
     if (!new URLSearchParams(location.search).has('trend')) return;
@@ -42,7 +67,7 @@
     if (!params.has('trend')) return {active: false};
     const id = params.get('trend');
     const direction = params.get('direction');
-    const result = {active: true, id, direction, ids: new Set(), title: 'Trend selection', label: 'All style directions'};
+    const result = {active: true, id, direction, ids: new Set(), terms: [], title: 'Trend selection', label: 'Related style directions'};
     if (!trendConnections) {
       result.error = trendConnectionsFailed ? 'This trend selection could not be loaded. Return to the report or clear the trend selection to browse the collection.' : 'Loading this trend selection…';
       return result;
@@ -54,13 +79,15 @@
     }
     result.title = report.title || report.id || id;
     result.season = trendConnections.season || '';
-    const terms = params.has('direction') ? report.styleTerms.filter(term => term && term.key === direction) : report.styleTerms;
+    const availableTerms = report.styleTerms.filter(term => term && typeof term === 'object');
+    const terms = params.has('direction') ? availableTerms.filter(term => term.key === direction) : availableTerms;
     if (params.has('direction') && !terms.length) {
       result.label = 'Keyword unavailable';
       result.error = 'This keyword is not available in the selected report. Return to the report to choose another direction.';
       return result;
     }
     if (params.has('direction')) result.label = terms[0].label || terms[0].key;
+    result.terms = terms;
     terms.forEach(term => {
       if (term && Array.isArray(term.ids)) term.ids.forEach(code => { if (typeof code === 'string' && code) result.ids.add(code); });
     });
@@ -88,14 +115,18 @@
     return 'collection-detail.html?' + params.toString() + hash;
   }
 
-  function trendContext(context) {
+  function trendContext(context, product) {
     const section = el('section', 'col-trend-context');
     section.setAttribute('aria-label', 'Trend selection');
     if (context.error) section.classList.add('has-error');
     const copy = el('div', 'col-trend-copy');
     copy.append(el('p', 'col-trend-eyebrow', ['From the Trend library', context.season].filter(Boolean).join(' · ')), el('h2', null, context.title), el('p', 'col-trend-keyword', context.label));
     if (context.error) copy.append(el('p', 'col-trend-message', context.error));
-    else copy.append(el('p', 'col-trend-message', view === 'detail' ? 'A style linked to this research direction. Return to the trend selection to continue browsing.' : 'Styles linked to this research direction. Refine the selection using the filters below.'));
+    else {
+      copy.append(el('p', 'col-trend-message', product ? 'The relationship to this style is identified below. Return to the trend selection to continue browsing.' : context.direction != null ? 'The relationship to this keyword is identified below. Refine the selection using the filters.' : 'References across the report’s related dimensions. Direct matches, development alternatives and studio concepts are identified separately.'));
+      const terms=product?styleConnections(product,context):context.terms || [];
+      if(terms.length)copy.append(connectionReasons(terms,product?2:terms.length));
+    }
     const links = el('nav', 'col-trend-actions');
     links.setAttribute('aria-label', 'Trend selection navigation');
     const report = el('a', null, 'Back to report ↗');
@@ -257,6 +288,8 @@
     }
 
     info.append(title, bottom);
+    const evidence = trendEvidence(product);
+    if(evidence)info.append(evidence);
     article.append(info);
     return article;
   }
@@ -506,7 +539,7 @@
     }
 
     function paint() {
-      const filtered = products.filter(product => (!trend.active || trend.ids.has(product.code)) && matchesStyleFilters(product, filters));
+      const filtered = sortTrendStyles(products.filter(product => (!trend.active || trend.ids.has(product.code)) && matchesStyleFilters(product, filters)), trend);
       const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
       if (page > pages) page = pages;
       // Link destinations must carry the current filters, including immediately after a change.
@@ -541,7 +574,7 @@
     root.append(crumb);
     if (trend.active) {
       if (!trend.error && (!requestedProduct || !trend.ids.has(product.code))) trend.error = 'This style is not linked to the selected research direction. Return to the trend selection to explore the linked styles.';
-      root.append(trendContext(trend));
+      root.append(trendContext(trend,product));
       if (trend.error) {
         root.append(el('p', 'empty-note', 'This style is unavailable in the current trend selection.'));
         saveSelection();

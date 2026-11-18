@@ -322,6 +322,15 @@ body[data-view="series"] .filter-clear{font:inherit;font-size:11px;min-height:41
 .col-trend-context h2{margin:0 0 9px;font-family:inherit;font-size:clamp(23px,2.2vw,32px);font-weight:600;line-height:1.15;letter-spacing:-.025em}
 .col-trend-keyword{margin:0 0 7px;font-size:13px;font-weight:600;line-height:1.5}
 .col-trend-message{margin:0;font-size:12px;line-height:1.7;color:#656863}
+.col-trend-reasons{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:13px;font-family:inherit}
+.col-trend-reasons li{display:grid;gap:4px;font-size:11px;line-height:1.65;color:#656863}
+.col-trend-reasons strong{font-size:12px;font-weight:500;color:#343a32}
+.col-connection-tier{font-size:9px;line-height:1.6;letter-spacing:.055em;text-transform:uppercase;color:#526047}
+.col-trend-reasons li[data-tier="alternative"] .col-connection-tier{color:#755c43}
+.col-trend-reasons li[data-tier="concept"] .col-connection-tier{color:#685b75}
+.col-trend-evidence{margin-top:14px;padding-top:12px;border-top:1px solid var(--line,#deded8);font:inherit}
+.col-trend-evidence .col-trend-reasons{margin:0;gap:12px}
+.col-trend-evidence .col-trend-reasons strong{font-size:11px}
 .col-trend-actions{display:flex;flex-direction:column;align-items:flex-start;gap:12px;flex:0 0 auto;font-size:11px;line-height:1.5}
 .col-trend-actions a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
 .col-trend-actions a:hover{color:var(--accent,#e85a1a)}

@@ -13,7 +13,9 @@
             "RF27-O01",
             "RF27-O02",
             "AE-014"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Button-front denim and canvas shirt-jackets and a cotton-twill overshirt provide layered workwear blocks."
         },
         {
           "key": "contrast-collar",
@@ -21,7 +23,9 @@
           "ids": [
             "RF27-O01",
             "RF27-O02"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A contrasting collar and body material make the collar detail visible on these shirt-jacket shapes."
         }
       ],
       "materialTerms": [
@@ -34,7 +38,9 @@
             "MF091",
             "MF088",
             "MF089"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Melton offers a compact raised woven-surface comparison; it is not the visible-twill-under-nap construction specified in the report."
         },
         {
           "key": "check",
@@ -44,8 +50,12 @@
             "MP091",
             "MP097",
             "MP102",
-            "MP111"
-          ]
+            "MP111",
+            "MP070",
+            "MP107"
+          ],
+          "tier": "alternative",
+          "rationale": "Neutral and heritage checks offer repeat and colour comparisons. MP070 is tonal navy/taupe; MP107 includes lighter crossing lines, so reduced contrast and yarn-dyed construction are not assumed throughout."
         },
         {
           "key": "jacquard",
@@ -53,7 +63,9 @@
           "ids": [
             "MP002",
             "MP129"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "These recorded jacquards supply construction-based pattern references; their relief height and restraint are not confirmed as the report's low-relief jacquard."
         }
       ]
     },
@@ -66,14 +78,18 @@
           "label": "Contrast-collar canvas",
           "ids": [
             "RF27-O02"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A contrasting collar and body material make the collar detail visible on these shirt-jacket shapes."
         },
         {
           "key": "twill-overshirt",
           "label": "Twill overshirt",
           "ids": [
             "AE-014"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Cotton twill, chest flap pockets and a relaxed button-front body match the overshirt construction."
         }
       ],
       "materialTerms": [
@@ -86,7 +102,9 @@
             "MF015",
             "MF012",
             "MF014"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The canvas grounds provide body and visible weave for development; a softened, washed or sueded finish is a separate choice."
         },
         {
           "key": "twill",
@@ -102,7 +120,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         },
         {
           "key": "corduroy",
@@ -114,7 +134,9 @@
             "MF018",
             "MF017",
             "MF021"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Recorded corduroy construction and visible ribs provide pile-and-wale references; shirt, trouser and collar suitability still depend on the selected quality."
         }
       ]
     },
@@ -127,14 +149,18 @@
           "label": "Hip-length blouson",
           "ids": [
             "RF27-O03"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A short padded bomber with a gathered hem provides a controlled blouson silhouette."
         },
         {
           "key": "funnel-neck",
           "label": "Funnel neck",
           "ids": [
             "RF27-O03"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The ribbed funnel neck concentrates coverage at the collar while the gathered hem controls body volume."
         }
       ],
       "materialTerms": [
@@ -152,7 +178,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         },
         {
           "key": "microcheck",
@@ -162,7 +190,9 @@
             "MP044",
             "MP045",
             "MP109"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Small check repeats in the cotton references match the micro-pattern scale; the pattern records do not establish outerwear weight or technical finishing."
         },
         {
           "key": "plain-weave",
@@ -174,7 +204,9 @@
             "MF035",
             "MF031",
             "MF030"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain woven grounds provide a quiet surface comparison; they do not establish a protective shell, membrane, coating or specific finish."
         }
       ]
     },
@@ -191,7 +223,9 @@
             "MP044",
             "MP045",
             "MP109"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Small check repeats in the cotton references match the micro-pattern scale; the pattern records do not establish outerwear weight or technical finishing."
         },
         {
           "key": "plain-weave",
@@ -203,7 +237,9 @@
             "MF035",
             "MF031",
             "MF030"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain woven grounds provide a quiet surface comparison; they do not establish a protective shell, membrane, coating or specific finish."
         },
         {
           "key": "twill",
@@ -219,7 +255,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         }
       ]
     },
@@ -232,14 +270,18 @@
           "label": "Padded body",
           "ids": [
             "RF27-O04"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "An enclosing high collar and padded upper body provide the short padded-volume reference."
         },
         {
           "key": "quilted-shirt-jacket",
           "label": "Quilted shirt-jacket",
           "ids": [
             "AE-026"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The quilted nylon body, snap front, corduroy collar and patch pockets identify a quilted shirt-jacket construction."
         }
       ],
       "materialTerms": [
@@ -253,7 +295,9 @@
             "MF035",
             "MF031",
             "MF030"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain woven grounds provide a quiet surface comparison; they do not establish a protective shell, membrane, coating or specific finish."
         },
         {
           "key": "ripstop",
@@ -265,7 +309,9 @@
             "MF099",
             "MF100",
             "MF102"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Ripstop offers a grid shell-ground comparison for a padded layer; it does not establish the report's baffle, floral print or botanical quilt construction."
         }
       ]
     },
@@ -284,7 +330,9 @@
             "MF099",
             "MF100",
             "MF102"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The recorded ripstop grounds show the grid construction discussed in the report; the grid does not establish weather protection or other tested performance."
         },
         {
           "key": "plain-weave",
@@ -296,7 +344,9 @@
             "MF035",
             "MF031",
             "MF030"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain woven grounds provide a quiet surface comparison; they do not establish a protective shell, membrane, coating or specific finish."
         }
       ]
     },
@@ -309,7 +359,9 @@
           "label": "Sherpa-lined shirt jacket",
           "ids": [
             "AE-032"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A cotton shirt-jacket with sherpa lining provides a woven-body and pile-inner-face combination."
         }
       ],
       "materialTerms": [
@@ -322,7 +374,9 @@
             "MF111",
             "MF113",
             "MF112"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The recorded sherpa constructions show looped or patterned pile, making pile height and local bulk useful comparison points."
         },
         {
           "key": "pile",
@@ -333,7 +387,9 @@
             "MF080",
             "MF082",
             "MF081"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The polar-fleece references provide a raised knitted-pile surface for comparing texture and construction."
         }
       ]
     },
@@ -346,14 +402,18 @@
           "label": "Shawl-collar wrap coat",
           "ids": [
             "RF27-O06"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A broad shawl collar, dropped shoulder and self belt organise the double-faced coat into an enveloping wrap shape."
         },
         {
           "key": "car-coat",
           "label": "Reversible car coat",
           "ids": [
             "RF27-O05"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A longer car-coat body combines reversible plain/check faces with a collar that can close higher at the neck."
         },
         {
           "key": "everyday-coat",
@@ -361,7 +421,9 @@
           "ids": [
             "AE-025",
             "AE-035"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "A long jacket and a wool-blend coat offer everyday coverage comparisons; their full proportions and cloth bodies differ from the report examples."
         }
       ],
       "materialTerms": [
@@ -374,7 +436,9 @@
             "MF091",
             "MF088",
             "MF089"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Melton provides a compact coating-family comparison; the intended coat hand, body and final weight remain quality-specific."
         },
         {
           "key": "textured-woven",
@@ -385,7 +449,9 @@
             "MF095",
             "MF093",
             "MF094"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The tweed references offer visible yarn and surface texture; they are alternatives to the report's controlled boucle route."
         },
         {
           "key": "check",
@@ -395,8 +461,12 @@
             "MP091",
             "MP097",
             "MP102",
-            "MP111"
-          ]
+            "MP111",
+            "MP070",
+            "MP107"
+          ],
+          "tier": "alternative",
+          "rationale": "Neutral and heritage checks offer repeat and colour comparisons. MP070 is tonal navy/taupe; MP107 includes lighter crossing lines, so reduced contrast and yarn-dyed construction are not assumed throughout."
         },
         {
           "key": "herringbone",
@@ -405,7 +475,9 @@
             "MP005",
             "MP006",
             "MP027"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The wool-cloth references carry a recorded woven herringbone pattern, providing a construction-based heritage alternative to print."
         }
       ]
     },
@@ -419,7 +491,9 @@
           "ids": [
             "AE-028",
             "AE-031"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Button-front flannel shirts provide local examples of checked surfaces, familiar collars and everyday shirt proportions."
         }
       ],
       "materialTerms": [
@@ -435,7 +509,9 @@
             "MF027",
             "MF023",
             "MF022"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The flannel-family records provide raised woven-surface references in several fibre blends; they are not all identified as cotton."
         },
         {
           "key": "flannel-check",
@@ -448,14 +524,18 @@
             "MP078",
             "MP079",
             "MP080"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Brushed-cotton and flannel check references combine a softened face with a visible check; an unrecorded pattern-making method is not assumed."
         },
         {
           "key": "dobby",
           "label": "Dobby shirting",
           "ids": [
             "MP023"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The fine-stripe shirting record identifies dobby construction, giving small woven relief rather than a printed texture."
         }
       ]
     },
@@ -468,7 +548,9 @@
           "label": "Relaxed Oxford shirt",
           "ids": [
             "RF27-S04"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The relaxed Oxford stripe shirt combines visible woven stripes with an easy button-front silhouette."
         }
       ],
       "materialTerms": [
@@ -481,14 +563,18 @@
             "MP072",
             "MP083",
             "MP092"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The seersucker references provide a recorded textured shirting structure across gingham, windowpane and stripe patterns."
         },
         {
           "key": "dobby",
           "label": "Dobby shirting",
           "ids": [
             "MP023"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The fine-stripe shirting record identifies dobby construction, giving small woven relief rather than a printed texture."
         }
       ]
     },
@@ -501,14 +587,18 @@
           "label": "Two-pocket utility shirt",
           "ids": [
             "RF27-S01"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Flap chest pockets, a roomy back pleat and a twill body supply the utility-shirt construction cues."
         },
         {
           "key": "washed-denim-shirt",
           "label": "Washed denim shirt",
           "ids": [
             "RF27-S02"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The softened blue denim surface and button-down collar provide a washed everyday shirt reference."
         }
       ],
       "materialTerms": [
@@ -526,7 +616,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         },
         {
           "key": "canvas",
@@ -537,7 +629,9 @@
             "MF015",
             "MF012",
             "MF014"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The canvas grounds provide body and visible weave for development; a softened, washed or sueded finish is a separate choice."
         }
       ]
     },
@@ -550,14 +644,18 @@
           "label": "Relaxed button-front",
           "ids": [
             "RF27-S04"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A relaxed striped Oxford body provides an easy button-front shirt proportion for comparison."
         },
         {
           "key": "defined-waist",
           "label": "Defined waist",
           "ids": [
             "RF27-S05"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Shaped seams and a fitted poplin body make the defined waist and deliberate cuff detail visible."
         }
       ],
       "materialTerms": [
@@ -570,7 +668,9 @@
             "MF036",
             "MF041",
             "MF038"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain poplin grounds offer a clean development base; opacity, fluidity and any added process need separate selection."
         },
         {
           "key": "plain-weave",
@@ -582,7 +682,9 @@
             "MF035",
             "MF031",
             "MF030"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain woven grounds provide a quiet surface comparison; they do not establish a protective shell, membrane, coating or specific finish."
         },
         {
           "key": "stripe",
@@ -594,7 +696,9 @@
             "MP021",
             "MP035",
             "MP126"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The shirting references carry visible narrow or variegated stripes on chambray, viscose and cotton grounds; technique remains specific to each record."
         }
       ]
     },
@@ -612,7 +716,9 @@
             "MF036",
             "MF041",
             "MF038"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain poplin grounds offer a clean development base; opacity, fluidity and any added process need separate selection."
         },
         {
           "key": "flannel-check",
@@ -625,7 +731,9 @@
             "MP078",
             "MP079",
             "MP080"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Brushed-cotton and flannel check references combine a softened face with a visible check; an unrecorded pattern-making method is not assumed."
         },
         {
           "key": "variegated-stripe",
@@ -633,7 +741,9 @@
           "ids": [
             "MP015",
             "MP016"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The viscose-ground references vary stripe spacing and width, connecting directly with the report's variegated-stripe option."
         }
       ]
     },
@@ -647,14 +757,18 @@
           "ids": [
             "RF27-T02",
             "RF27-T04"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Front pleats organise volume in the wide-leg and curved-leg trouser shapes while the waists remain defined."
         },
         {
           "key": "pull-on-tailoring",
           "label": "Clean pull-on waist",
           "ids": [
             "AE-021"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A flat front, elastic back waist and straight leg provide a clean pull-on trouser construction."
         }
       ],
       "materialTerms": [
@@ -672,7 +786,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         },
         {
           "key": "gabardine",
@@ -682,7 +798,9 @@
             "MF083",
             "MF086",
             "MF084"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The recorded gabardine construction supplies compact diagonal-weave references; it does not by itself confirm stretch recovery."
         },
         {
           "key": "herringbone",
@@ -691,7 +809,9 @@
             "MP005",
             "MP006",
             "MP027"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The wool-cloth references carry a recorded woven herringbone pattern, providing a construction-based heritage alternative to print."
         }
       ]
     },
@@ -714,7 +834,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         },
         {
           "key": "canvas",
@@ -725,7 +847,9 @@
             "MF015",
             "MF012",
             "MF014"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The canvas grounds provide body and visible weave for development; a softened, washed or sueded finish is a separate choice."
         },
         {
           "key": "ripstop",
@@ -737,7 +861,9 @@
             "MF099",
             "MF100",
             "MF102"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The recorded ripstop grounds show the grid construction discussed in the report; the grid does not establish weather protection or other tested performance."
         }
       ]
     },
@@ -750,7 +876,9 @@
           "label": "Pleated wide leg",
           "ids": [
             "RF27-T02"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The pleated wide-leg line is relevant, but its cotton-twill body does not establish the fluid drape of the report direction."
         }
       ],
       "materialTerms": [
@@ -768,7 +896,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         },
         {
           "key": "plain-weave",
@@ -780,7 +910,9 @@
             "MF035",
             "MF031",
             "MF030"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain woven grounds provide a quiet surface comparison; they do not establish a protective shell, membrane, coating or specific finish."
         },
         {
           "key": "herringbone",
@@ -789,7 +921,9 @@
             "MP005",
             "MP006",
             "MP027"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Woven wool herringbone supplies a tailoring-pattern alternative; the records do not establish the lightness or fluid drape required by this report."
         }
       ]
     },
@@ -803,7 +937,9 @@
           "ids": [
             "AE-028",
             "AE-031"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Button-front flannel shirts provide local examples of checked surfaces, familiar collars and everyday shirt proportions."
         }
       ],
       "materialTerms": [
@@ -819,7 +955,9 @@
             "MF027",
             "MF023",
             "MF022"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The flannel-family records provide raised woven-surface references in several fibre blends; they are not all identified as cotton."
         },
         {
           "key": "flannel-check",
@@ -832,7 +970,9 @@
             "MP078",
             "MP079",
             "MP080"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Brushed-cotton and flannel check references combine a softened face with a visible check; an unrecorded pattern-making method is not assumed."
         },
         {
           "key": "twill-ground",
@@ -848,7 +988,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "These twill grounds are bases for a brushing or finishing comparison, rather than already confirmed lightly brushed trouser qualities."
         }
       ]
     },
@@ -861,7 +1003,9 @@
           "label": "Corduroy shirt",
           "ids": [
             "RF27-S06"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Visible wide wales and an easy single-pocket shirt body connect corduroy texture with everyday layering."
         },
         {
           "key": "corduroy-trousers",
@@ -872,14 +1016,19 @@
             "RF27-T06",
             "AE-023",
             "AE-030"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Visible corduroy ribs run through straight, wide and barrel-leg trouser shapes, allowing pile direction and leg volume to be compared."
         },
         {
           "key": "corduroy-collar",
           "label": "Corduroy collar",
           "ids": [
-            "RF27-O02"
-          ]
+            "RF27-O02",
+            "AE-026"
+          ],
+          "tier": "direct",
+          "rationale": "The canvas and quilted shirt-jacket bodies both use a separate corduroy collar, making collar/body contrast explicit."
         }
       ],
       "materialTerms": [
@@ -893,7 +1042,9 @@
             "MF018",
             "MF017",
             "MF021"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Recorded corduroy construction and visible ribs provide pile-and-wale references; shirt, trouser and collar suitability still depend on the selected quality."
         }
       ]
     },
@@ -906,7 +1057,9 @@
           "label": "Canvas workwear layer",
           "ids": [
             "RF27-O02"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A cotton-canvas body, corduroy collar and buttoned chest pockets provide the canvas workwear-layer reference."
         },
         {
           "key": "twill-shirt",
@@ -914,14 +1067,20 @@
           "ids": [
             "RF27-S01",
             "RF27-S03"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The utility and draped shirt bodies use recorded twill grounds, offering structured and more fluid shirt-shape comparisons."
         },
         {
           "key": "twill-trouser",
-          "label": "Twill trouser shape",
+          "label": "Twill trouser shapes",
           "ids": [
-            "RF27-T02"
-          ]
+            "RF27-T02",
+            "RF27-T04",
+            "AE-021"
+          ],
+          "tier": "direct",
+          "rationale": "The recorded twill trouser references cover a pleated wide leg, curved barrel leg and pull-on straight leg."
         }
       ],
       "materialTerms": [
@@ -939,7 +1098,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         },
         {
           "key": "canvas",
@@ -950,7 +1111,9 @@
             "MF015",
             "MF012",
             "MF014"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The canvas grounds provide body and visible weave for development; a softened, washed or sueded finish is a separate choice."
         }
       ]
     },
@@ -963,7 +1126,9 @@
           "label": "Draped twill shirt",
           "ids": [
             "RF27-S03"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A soft viscose-blend twill, dropped shoulder and wide placket provide the visible draped-shirt construction."
         },
         {
           "key": "woven-trouser",
@@ -971,7 +1136,9 @@
           "ids": [
             "RF27-T02",
             "AE-021"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Cotton-twill and stretch-twill trouser shapes offer comparison bases; the report's drape and recovery still depend on the chosen cloth."
         }
       ],
       "materialTerms": [
@@ -989,7 +1156,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         },
         {
           "key": "plain-weave",
@@ -1001,7 +1170,9 @@
             "MF035",
             "MF031",
             "MF030"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain woven grounds provide a quiet surface comparison; they do not establish a protective shell, membrane, coating or specific finish."
         },
         {
           "key": "gabardine",
@@ -1011,7 +1182,9 @@
             "MF083",
             "MF086",
             "MF084"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Gabardine offers a compact woven-ground comparison; it does not establish the drape or recovery called for in this comfort-woven direction."
         }
       ]
     },
@@ -1023,15 +1196,20 @@
           "key": "padded-layer",
           "label": "Padded jacket",
           "ids": [
-            "RF27-O04"
-          ]
+            "RF27-O04",
+            "RF27-O03"
+          ],
+          "tier": "direct",
+          "rationale": "The high-collar padded jacket and padded funnel-neck bomber provide two existing padded-body and neckline constructions."
         },
         {
           "key": "quilted-layer",
           "label": "Quilted shirt-jacket",
           "ids": [
             "AE-026"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The quilted nylon shirt-jacket provides a stitched layered-body reference with a snap front and corduroy collar."
         }
       ],
       "materialTerms": [
@@ -1045,7 +1223,9 @@
             "MF035",
             "MF031",
             "MF030"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain woven grounds provide a quiet surface comparison; they do not establish a protective shell, membrane, coating or specific finish."
         },
         {
           "key": "ripstop",
@@ -1057,7 +1237,9 @@
             "MF099",
             "MF100",
             "MF102"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Ripstop is a possible woven shell ground for an assembly trial; fill, lining and a quilted or removable-layer system are not present in the cloth alone."
         }
       ]
     },
@@ -1076,7 +1258,9 @@
             "MF099",
             "MF100",
             "MF102"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The recorded ripstop grounds show the grid construction discussed in the report; the grid does not establish weather protection or other tested performance."
         },
         {
           "key": "plain-weave",
@@ -1088,7 +1272,9 @@
             "MF035",
             "MF031",
             "MF030"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain woven grounds provide a quiet surface comparison; they do not establish a protective shell, membrane, coating or specific finish."
         }
       ]
     },
@@ -1102,14 +1288,18 @@
           "ids": [
             "AE-028",
             "AE-031"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Button-front flannel shirts provide local examples of checked surfaces, familiar collars and everyday shirt proportions."
         },
         {
           "key": "checked-coat",
           "label": "Checked car coat",
           "ids": [
             "RF27-O05"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A reversible check/plain car coat shows how a heritage pattern can sit within an everyday longer outerwear shape."
         }
       ],
       "materialTerms": [
@@ -1124,7 +1314,9 @@
             "MP078",
             "MP079",
             "MP080"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Brushed-cotton and flannel check references combine a softened face with a visible check; an unrecorded pattern-making method is not assumed."
         },
         {
           "key": "yarn-dyed-gingham",
@@ -1132,7 +1324,9 @@
           "ids": [
             "MP001",
             "MP127"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The two gingham records explicitly identify yarn-dyed construction, distinguishing them from unspecified or printed check references."
         },
         {
           "key": "woven-check",
@@ -1140,7 +1334,9 @@
           "ids": [
             "MP018",
             "MP091"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The houndstooth and grey wool-check records identify woven pattern construction, supplying genuine construction-based check comparisons."
         },
         {
           "key": "check",
@@ -1150,8 +1346,21 @@
             "MP091",
             "MP097",
             "MP102",
-            "MP111"
-          ]
+            "MP111",
+            "MP070",
+            "MP107"
+          ],
+          "tier": "alternative",
+          "rationale": "Neutral and heritage checks offer repeat and colour comparisons. MP070 is tonal navy/taupe; MP107 includes lighter crossing lines, so reduced contrast and yarn-dyed construction are not assumed throughout."
+        },
+        {
+          "key": "windowpane-concept",
+          "label": "Moss Windowpane concept",
+          "ids": [
+            "MS003"
+          ],
+          "tier": "concept",
+          "rationale": "Moss Windowpane is digital check artwork with fine oat lines on moss; weaving or printing method, repeat scale and a physical cloth remain to be developed."
         }
       ]
     },
@@ -1164,7 +1373,9 @@
           "label": "Striped Oxford shirt",
           "ids": [
             "RF27-S04"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The garment-washed Oxford shirt carries a visible pale stripe within a relaxed button-front body."
         }
       ],
       "materialTerms": [
@@ -1175,7 +1386,9 @@
             "MP021",
             "MP035",
             "MP126"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The three cotton-shirting stripe records explicitly identify yarn-dyed construction."
         },
         {
           "key": "stripe",
@@ -1187,7 +1400,9 @@
             "MP021",
             "MP035",
             "MP126"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The shirting references carry visible narrow or variegated stripes on chambray, viscose and cotton grounds; technique remains specific to each record."
         },
         {
           "key": "tailoring-stripe",
@@ -1196,7 +1411,9 @@
             "MP020",
             "MP066",
             "MP082"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Gabardine and wool-cloth stripe references are recorded for tailored trousers, connecting pattern direction with a tailoring ground."
         },
         {
           "key": "herringbone",
@@ -1205,7 +1422,21 @@
             "MP005",
             "MP006",
             "MP027"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The wool-cloth references carry a recorded woven herringbone pattern, providing a construction-based heritage alternative to print."
+        },
+        {
+          "key": "microcheck",
+          "label": "Microcheck references",
+          "ids": [
+            "MP034",
+            "MP044",
+            "MP045",
+            "MP109"
+          ],
+          "tier": "direct",
+          "rationale": "Small check repeats in the cotton references match the micro-pattern scale; the pattern records do not establish outerwear weight or technical finishing."
         }
       ]
     },
@@ -1224,7 +1455,9 @@
             "MP036",
             "MP062",
             "MP086"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The recorded printed viscose grounds carry floral or leaf motifs, linking botanical spacing with a fluid-woven development route."
         },
         {
           "key": "cotton-botanical",
@@ -1253,7 +1486,9 @@
             "MP123",
             "MP124",
             "MP125"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The cotton, lawn and poplin references identify printed botanical patterns; spacing and ground coverage can be compared without assuming opacity."
         },
         {
           "key": "poplin",
@@ -1264,7 +1499,18 @@
             "MF036",
             "MF041",
             "MF038"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain poplin grounds offer a clean development base; opacity, fluidity and any added process need separate selection."
+        },
+        {
+          "key": "botanical-concept",
+          "label": "Quiet Botanical concept",
+          "ids": [
+            "MS001"
+          ],
+          "tier": "concept",
+          "rationale": "Quiet Botanical is digital leaf-and-seed-stem artwork in navy and sage on oat; repeat, print scale and a physical strike-off are undeveloped."
         }
       ]
     },
@@ -1275,11 +1521,21 @@
       "materialTerms": [
         {
           "key": "geometry",
-          "label": "Geometric pattern references",
+          "label": "Light-ground geometric alternative",
           "ids": [
-            "MP004",
+            "MP004"
+          ],
+          "tier": "alternative",
+          "rationale": "The physical wavy-checkerboard reference has a light ground, so it supplies a geometric-repeat alternative rather than the report's dark-ground expression."
+        },
+        {
+          "key": "geometry-concept",
+          "label": "Mineral Micro Geometry concept",
+          "ids": [
             "MS002"
-          ]
+          ],
+          "tier": "concept",
+          "rationale": "Mineral Micro Geometry is digital low-contrast slate artwork with small diamond-like marks; a printed cloth and production repeat have not been developed."
         },
         {
           "key": "poplin",
@@ -1290,14 +1546,18 @@
             "MF036",
             "MF041",
             "MF038"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain poplin grounds offer a clean development base; opacity, fluidity and any added process need separate selection."
         },
         {
           "key": "jacquard",
           "label": "Jacquard comparison",
           "ids": [
             "MP129"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The stitch-effect jacquard offers a woven-pattern comparison, rather than an existing dark-ground geometric print."
         }
       ]
     },
@@ -1310,21 +1570,27 @@
           "label": "Garment-dyed canvas",
           "ids": [
             "RF27-O02"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Garment-dyed cotton canvas gives the shirt-jacket tonal surface variation around its workwear construction."
         },
         {
           "key": "washed-denim-shirt",
           "label": "Washed denim shirt",
           "ids": [
             "RF27-S02"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The softened blue denim surface and button-down collar provide a washed everyday shirt reference."
         },
         {
           "key": "garment-dyed-twill",
           "label": "Garment-dyed twill shirt",
           "ids": [
             "RF27-S03"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The garment-dyed viscose-blend twill shirt combines a deep neutral shade with a softly draped surface."
         }
       ],
       "materialTerms": [
@@ -1342,7 +1608,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         },
         {
           "key": "canvas",
@@ -1353,7 +1621,9 @@
             "MF015",
             "MF012",
             "MF014"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The canvas grounds provide body and visible weave for development; a softened, washed or sueded finish is a separate choice."
         },
         {
           "key": "flannel-check",
@@ -1366,7 +1636,9 @@
             "MP078",
             "MP079",
             "MP080"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The brushed check references are patterned grounds for wash trials, not evidence of an already controlled wash, fade or patina process."
         }
       ]
     },
@@ -1379,14 +1651,19 @@
           "label": "Quilted shirt-jacket",
           "ids": [
             "AE-026"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The quilted nylon body, snap front, corduroy collar and patch pockets identify a quilted shirt-jacket construction."
         },
         {
           "key": "padded-jacket",
-          "label": "Padded jacket shape",
+          "label": "Padded jacket shapes",
           "ids": [
-            "RF27-O04"
-          ]
+            "RF27-O04",
+            "RF27-O03"
+          ],
+          "tier": "alternative",
+          "rationale": "The two padded jackets provide body-volume and collar comparisons; padding alone does not establish a particular quilt path or removable liner."
         }
       ],
       "materialTerms": [
@@ -1398,7 +1675,9 @@
             "MF108",
             "MF110",
             "MF107"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The quilted-knit records provide cloth-level relief; they remain distinct from a shell, fill and lining joined by a garment quilt path."
         },
         {
           "key": "plain-weave",
@@ -1410,7 +1689,9 @@
             "MF035",
             "MF031",
             "MF030"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain woven grounds provide a quiet surface comparison; they do not establish a protective shell, membrane, coating or specific finish."
         },
         {
           "key": "ripstop",
@@ -1422,7 +1703,9 @@
             "MF099",
             "MF100",
             "MF102"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Ripstop supplies a shell-ground candidate for a quilting trial; the grid is not a garment quilt path or a completed padded-layer assembly."
         }
       ]
     },
@@ -1434,8 +1717,11 @@
           "key": "corduroy-collar",
           "label": "Corduroy collar",
           "ids": [
-            "RF27-O02"
-          ]
+            "RF27-O02",
+            "AE-026"
+          ],
+          "tier": "direct",
+          "rationale": "The canvas and quilted shirt-jacket bodies both use a separate corduroy collar, making collar/body contrast explicit."
         },
         {
           "key": "corduroy-trousers",
@@ -1444,7 +1730,9 @@
             "RF27-T03",
             "RF27-T05",
             "RF27-T06"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Visible corduroy ribs run through straight, wide and barrel-leg trouser shapes, allowing pile direction and leg volume to be compared."
         }
       ],
       "materialTerms": [
@@ -1458,7 +1746,9 @@
             "MF018",
             "MF017",
             "MF021"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Recorded corduroy construction and visible ribs provide pile-and-wale references; shirt, trouser and collar suitability still depend on the selected quality."
         },
         {
           "key": "canvas",
@@ -1469,7 +1759,9 @@
             "MF015",
             "MF012",
             "MF014"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The canvas grounds provide body and visible weave for development; a softened, washed or sueded finish is a separate choice."
         },
         {
           "key": "twill",
@@ -1485,7 +1777,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         },
         {
           "key": "pile-trim",
@@ -1501,7 +1795,9 @@
             "MF080",
             "MF082",
             "MF081"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Sherpa and polar-fleece cloths offer pile-surface comparisons for a trim trial; a finished collar or its seam bulk is not established."
         }
       ]
     },
@@ -1514,21 +1810,27 @@
           "label": "Internal drawcord",
           "ids": [
             "RF27-T01"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "An internal drawcord sits within an elasticated trouser waist behind a clean pleated front."
         },
         {
           "key": "waist-tabs",
           "label": "Waist adjustment tabs",
           "ids": [
             "RF27-T05"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Buttoned waist tabs provide discreet adjustment within the curved corduroy trouser silhouette."
         },
         {
           "key": "shirt-pockets",
           "label": "Two-pocket shirt",
           "ids": [
             "RF27-S01"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Two flap chest pockets establish a clear pocket hierarchy on an otherwise simple button-front utility shirt."
         }
       ],
       "materialTerms": [
@@ -1546,7 +1848,9 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The recorded twill grounds provide diagonal-weave references; finish, drape and garment weight are not established by this grouping."
         },
         {
           "key": "canvas",
@@ -1557,7 +1861,9 @@
             "MF015",
             "MF012",
             "MF014"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The canvas grounds provide body and visible weave for development; a softened, washed or sueded finish is a separate choice."
         },
         {
           "key": "double-jersey",
@@ -1571,7 +1877,9 @@
             "MF045",
             "MF049",
             "MF046"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Recorded double-knit grounds allow waist and pocket construction trials; successful adjustment behaviour is a garment-level question."
         }
       ]
     },
@@ -1589,7 +1897,9 @@
             "MF036",
             "MF041",
             "MF038"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Plain poplin grounds offer a clean development base; opacity, fluidity and any added process need separate selection."
         },
         {
           "key": "stitch-ground",
@@ -1610,14 +1920,18 @@
             "MF007",
             "MF002",
             "MF008"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Twill and canvas provide woven grounds for local stitch or repair-effect trials; they are not already embroidered or reinforced articles."
         },
         {
           "key": "jacquard",
           "label": "Jacquard comparison",
           "ids": [
             "MP129"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The stitch-effect cotton jacquard supplies a woven-pattern comparison; the effect is not embroidery, applique or a repaired seam."
         }
       ]
     },
@@ -1630,7 +1944,9 @@
           "label": "Wide-leg jersey trousers",
           "ids": [
             "RF27-T01"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Brushed jersey, a wide tapered leg and an internal drawcord waist connect a knitted body with controlled everyday trouser volume."
         }
       ],
       "materialTerms": [
@@ -1641,7 +1957,9 @@
             "MF068",
             "MF069",
             "MF070"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The French Terry records identify the loopback construction family, providing an alternative to a raised inner face."
         },
         {
           "key": "double-jersey",
@@ -1655,7 +1973,9 @@
             "MF045",
             "MF049",
             "MF046"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The Double Knit family supplies recorded double-knit construction candidates; it does not establish interlock, four-way stretch or a particular recovery level."
         },
         {
           "key": "ponte",
@@ -1668,14 +1988,18 @@
             "MF051",
             "MF053",
             "MF054"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The Ponte family offers a structured double-knit comparison; the report does not confirm a particular commercial ponte quality or its recovery."
         },
         {
           "key": "structured-jersey",
           "label": "Textured knit candidate",
           "ids": [
             "MF106"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Waffle supplies cellular knit relief as a texture comparison, rather than the report's smooth double jersey or quiet rib."
         }
       ]
     },
@@ -1692,7 +2016,9 @@
             "MF074",
             "MF076",
             "MF071"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The Brushed-Back Fleece records identify a knitted ground with a raised inner face, matching the construction-and-finish route."
         },
         {
           "key": "loopback",
@@ -1701,7 +2027,9 @@
             "MF068",
             "MF069",
             "MF070"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The French Terry records identify the loopback construction family, providing an alternative to a raised inner face."
         },
         {
           "key": "double-jersey",
@@ -1715,7 +2043,9 @@
             "MF045",
             "MF049",
             "MF046"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The Double Knit family supplies recorded double-knit construction candidates; it does not establish interlock, four-way stretch or a particular recovery level."
         }
       ]
     },
@@ -1728,7 +2058,18 @@
           "label": "High-rise legging",
           "ids": [
             "AE-022"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A high-rise stretch-knit legging with a wide waistband supplies the fitted leg line and clean waist reference."
+        },
+        {
+          "key": "winter-legging",
+          "label": "Fleece-lined winter alternative",
+          "ids": [
+            "AE-029"
+          ],
+          "tier": "alternative",
+          "rationale": "A high-rise full-length legging with a brushed fleece inner face is a winter lifestyle alternative, rather than evidence of a studio-specific fabric or performance."
         }
       ],
       "materialTerms": [
@@ -1740,7 +2081,9 @@
             "MF061",
             "MF058",
             "MF059"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Recorded rib structure provides a knitted-surface candidate only; fineness, opacity in movement, stretch and recovery are not confirmed."
         },
         {
           "key": "smooth-jersey",
@@ -1751,7 +2094,9 @@
             "MF120",
             "MF116",
             "MF118"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The Tricot family offers a smooth warp-knit comparison; it is not evidence of the report's compact interlock or a verified leggings base."
         }
       ]
     },
@@ -1764,7 +2109,9 @@
           "label": "Brushed jersey trousers",
           "ids": [
             "RF27-T01"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The trouser has a brushed jersey surface; its description does not identify loopback construction or confirm that brushing is on the inner face."
         }
       ],
       "materialTerms": [
@@ -1775,7 +2122,9 @@
             "MF068",
             "MF069",
             "MF070"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The French Terry records identify the loopback construction family, providing an alternative to a raised inner face."
         },
         {
           "key": "brushed-back",
@@ -1785,7 +2134,9 @@
             "MF074",
             "MF076",
             "MF071"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The Brushed-Back Fleece records identify a knitted ground with a raised inner face, matching the construction-and-finish route."
         }
       ]
     },
@@ -1806,7 +2157,9 @@
             "MF045",
             "MF049",
             "MF046"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "The Double Knit family supplies recorded double-knit construction candidates; it does not establish interlock, four-way stretch or a particular recovery level."
         },
         {
           "key": "ponte",
@@ -1819,7 +2172,9 @@
             "MF051",
             "MF053",
             "MF054"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The Ponte family offers a structured double-knit comparison; the report does not confirm a particular commercial ponte quality or its recovery."
         }
       ]
     },
@@ -1832,7 +2187,18 @@
           "label": "High-rise legging shape",
           "ids": [
             "AE-022"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "A high-rise stretch-knit legging with a wide waistband supplies the fitted leg line and clean waist reference."
+        },
+        {
+          "key": "winter-legging",
+          "label": "Fleece-lined winter alternative",
+          "ids": [
+            "AE-029"
+          ],
+          "tier": "alternative",
+          "rationale": "A high-rise full-length legging with a brushed fleece inner face is a winter lifestyle alternative, rather than evidence of a studio-specific fabric or performance."
         }
       ],
       "materialTerms": [
@@ -1844,7 +2210,9 @@
             "MF061",
             "MF058",
             "MF059"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "Recorded rib structure provides a knitted-surface candidate only; fineness, opacity in movement, stretch and recovery are not confirmed."
         },
         {
           "key": "smooth-jersey",
@@ -1855,7 +2223,9 @@
             "MF120",
             "MF116",
             "MF118"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "The Tricot family offers a smooth warp-knit comparison; it is not evidence of the report's compact interlock or a verified leggings base."
         }
       ]
     },
@@ -1868,7 +2238,9 @@
           "label": "Internal drawcord waist",
           "ids": [
             "RF27-T01"
-          ]
+          ],
+          "tier": "direct",
+          "rationale": "An internal drawcord sits within an elasticated trouser waist behind a clean pleated front."
         }
       ],
       "materialTerms": [
@@ -1884,7 +2256,9 @@
             "MF045",
             "MF049",
             "MF046"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Double-knit grounds offer a base for waist and hem-channel trials; no convertible-hem construction is already present in the cloth."
         },
         {
           "key": "loopback",
@@ -1893,7 +2267,9 @@
             "MF068",
             "MF069",
             "MF070"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "French terry offers an unbrushed loopback ground for waist and hem-channel trials; the adjuster and finished assembly remain separate."
         },
         {
           "key": "brushed-back",
@@ -1903,7 +2279,9 @@
             "MF074",
             "MF076",
             "MF071"
-          ]
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed-back fleece offers a raised-inner-face ground for waist and hem trials; no completed adjustable-hem assembly is established."
         }
       ]
     }

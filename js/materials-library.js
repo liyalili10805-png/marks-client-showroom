@@ -12,6 +12,8 @@
   const PAGE_SIZE = 25;
   const SOURCE = {global: 'Global Edit', sales: 'Sourced Materials', studio: 'SOHO Design Studio'};
   const STATUS = {reference: 'Reference Only', concept: 'Design Concept', sampling: 'Sampling in Progress', available: 'Sample Available'};
+  const MATCH_TIER = {direct: 'Direct match', alternative: 'Development alternative', concept: 'Studio concept'};
+  const MATCH_RANK = {direct: 0, alternative: 1, concept: 2};
   const FILTERS = [
     {key: 'family', label: 'Material / pattern'},
     {key: 'color', label: 'Colour'},
@@ -164,6 +166,43 @@
     if (!hasTrendSelection()) return totals();
     const scoped = {fabric: 0, pattern: 0}; trendPool().forEach(item => { scoped[item.type]++; }); return scoped;
   }
+  function materialMatchTier(term, item) {
+    if (item.sourceType === 'studio') return 'concept';
+    return term.tier === 'direct' ? 'direct' : 'alternative';
+  }
+  function materialMatchRationale(term, item) {
+    if (typeof term.rationale === 'string' && term.rationale.trim() && (term.tier !== 'concept' || item.sourceType === 'studio')) return term.rationale.trim();
+    return item.sourceType === 'studio' ? 'Digital design concept; cloth construction and a physical sample remain to be developed.' : 'A development reference for this direction; the intended construction, finish and application need to be confirmed on a sample.';
+  }
+  function buildMaterialMatches(terms) {
+    const entries = new Map();
+    terms.forEach(term => term.ids.forEach(id => {
+      const item = byId.get(id); if (!item) return;
+      const entry = {tier: materialMatchTier(term, item), rationale: materialMatchRationale(term, item)};
+      if (!entries.has(id)) entries.set(id, []); entries.get(id).push(entry);
+    }));
+    const result = new Map();
+    entries.forEach((links, id) => {
+      links.sort((a, b) => MATCH_RANK[a.tier] - MATCH_RANK[b.tier]);
+      const tier = links[0].tier;
+      const rationales = [...new Set(links.filter(entry => entry.tier === tier).map(entry => entry.rationale))].slice(0, 2);
+      result.set(id, {tier, rationales});
+    });
+    return result;
+  }
+  function matchFor(item) { return hasTrendSelection() && trendSelection.status === 'ready' ? trendSelection.matchById?.get(item.id) : null; }
+  function syncCardMatch(article, item) {
+    if (article.classList.contains('ml-board-card')) return;
+    const previous = article.querySelector('.ml-match-context'), match = matchFor(item);
+    if (!match) { if (previous) previous.remove(); delete article.dataset.matchTier; delete article.dataset.matchContext; return; }
+    const signature = JSON.stringify([state.trend, state.direction, match.tier, match.rationales]);
+    if (previous && article.dataset.matchContext === signature) return;
+    const context = node('div', 'ml-match-context');
+    context.append(node('span', 'ml-match-tier ml-match-tier--' + match.tier, MATCH_TIER[match.tier]));
+    match.rationales.forEach(reason => context.append(node('p', 'ml-match-reason', reason)));
+    article.dataset.matchTier = match.tier; article.dataset.matchContext = signature;
+    if (previous) previous.replaceWith(context); else article.append(context);
+  }
   async function resolveTrendSelection(retry) {
     const request = ++trendRequest;
     trendSelection = {status: hasTrendSelection() ? 'loading' : 'idle', report: null, term: null, ids: new Set()};
@@ -186,8 +225,9 @@
       if (!report.materialTerms.every(term => term && typeof term.key === 'string' && typeof term.label === 'string' && Array.isArray(term.ids))) throw new Error('Invalid material connections');
       const term = direction === null ? null : report.materialTerms.find(entry => entry.key === direction);
       if (direction !== null && !term) { trendSelection.status = 'unknown-direction'; return; }
-      const ids = (term ? term.ids : report.materialTerms.flatMap(entry => entry.ids)).filter(id => typeof id === 'string' && byId.has(id));
-      trendSelection = {status: 'ready', report, term, ids: new Set(ids)};
+      const selectedTerms = term ? [term] : report.materialTerms;
+      const matchById = buildMaterialMatches(selectedTerms);
+      trendSelection = {status: 'ready', report, term, ids: new Set(matchById.keys()), matchById};
     } catch (_) {
       if (request === trendRequest) trendSelection = {...trendSelection, status: 'unavailable', ids: new Set()};
     }
@@ -195,6 +235,7 @@
   function clearTrendSelection() {
     state.trend = null; state.direction = null; trendRequest++;
     trendSelection = {status: 'idle', report: null, term: null, ids: new Set()};
+    libraryCards.forEach((article, id) => syncCardMatch(article, byId.get(id)));
     updateLibrary();
   }
   function trendBackLink() {
@@ -208,8 +249,21 @@
     const copy = node('div', 'ml-trend-copy');
     copy.append(node('p', 'ml-trend-eyebrow', 'From trend research / A/W 27/28'));
     const title = node('h2', null, trendSelection.report ? trendSelection.report.title : 'Trend selection'); title.id = 'ml-trend-title'; copy.append(title);
-    const label = trendSelection.status === 'loading' ? 'Loading the linked materials…' : trendSelection.status === 'unknown-direction' ? 'Material direction unavailable' : trendSelection.term ? trendSelection.term.label : trendSelection.status === 'ready' ? 'All linked materials' : 'The requested selection could not be loaded';
+    const label = trendSelection.status === 'loading' ? 'Loading the linked materials…' : trendSelection.status === 'unknown-direction' ? 'Material direction unavailable' : trendSelection.term ? trendSelection.term.label : trendSelection.status === 'ready' ? 'All linked references' : 'The requested selection could not be loaded';
     copy.append(node('p', 'ml-trend-direction', label));
+    if (trendSelection.status === 'ready') {
+      const tierCounts = {direct: 0, alternative: 0, concept: 0}; trendSelection.matchById.forEach(match => { tierCounts[match.tier]++; });
+      if (trendSelection.term) {
+        const activeTiers = Object.keys(tierCounts).filter(tier => tierCounts[tier]);
+        const tier = activeTiers.length === 1 ? activeTiers[0] : null;
+        copy.append(node('span', 'ml-trend-tier' + (tier ? ' ml-match-tier--' + tier : ''), tier ? MATCH_TIER[tier] : 'Linked development references'));
+        const firstItem = trendPool()[0];
+        if (firstItem) copy.append(node('p', 'ml-trend-rationale', materialMatchRationale(trendSelection.term, firstItem)));
+      } else {
+        copy.append(node('p', 'ml-trend-breakdown', Object.keys(tierCounts).filter(tier => tierCounts[tier]).map(tier => tierCounts[tier] + ' ' + (tier === 'direct' ? 'direct matches' : tier === 'alternative' ? 'development alternatives' : 'studio concepts')).join(' · ')));
+        copy.append(node('p', 'ml-trend-rationale', 'Direct matches, development alternatives and digital concepts retain their own labels and reasons below.'));
+      }
+    }
     const actions = node('div', 'ml-trend-actions');
     actions.append(link(trendBackLabel(), trendBackLink(), 'ml-trend-back'), button('Clear trend selection', 'ml-trend-clear', clearTrendSelection));
     context.append(copy, actions);
@@ -233,6 +287,7 @@
       && terms.every(t => searchText(item).includes(t))
       && FILTERS.every(f => !state[f.key].size || valuesFor(item, f.key).some(v => state[f.key].has(v))));
     if (state.sort === 'az') result.sort((a, b) => a.title.localeCompare(b.title));
+    else if (hasTrendSelection() && trendSelection.status === 'ready') result.sort((a, b) => MATCH_RANK[matchFor(a).tier] - MATCH_RANK[matchFor(b).tier] || a._order - b._order);
     return result;
   }
   function heading(title, intro, eyebrow) {
@@ -382,6 +437,7 @@
       if (hasTrendSelection() && (trendSelection.status !== 'ready' || !trendSelection.ids.size)) grid.replaceChildren(trendEmpty());
       else { const empty = node('div', 'ml-empty'); empty.append(node('h2', null, 'A different combination?'), node('p', null, hasTrendSelection() ? 'No materials match these filters within this trend selection. Try a broader colour, application or material family.' : 'No materials match these filters. Try a broader colour, application or material family.'), button('Clear filters', 'ml-button', resetFilters)); grid.replaceChildren(empty); }
     } else if (!unchanged) grid.replaceChildren(...rendered.map(cachedLibraryCard));
+    else rendered.forEach((item, index) => syncCardMatch(grid.children[index], item));
     renderPagination();
     syncPicked(); countUpdate();
   }
@@ -393,7 +449,8 @@
     img.width = 400; img.height = 400;
   }
   function cachedLibraryCard(item, position) {
-    const article = libraryCards.get(item.id) || card(item);
+    const cached = libraryCards.get(item.id), article = cached || card(item);
+    if (cached) syncCardMatch(article, item);
     libraryCards.delete(item.id); libraryCards.set(item.id, article); prioritiseCard(article, position);
     while (libraryCards.size > PAGE_SIZE * 3) libraryCards.delete(libraryCards.keys().next().value);
     return article;
@@ -438,6 +495,7 @@
       const actions = node('div', 'ml-board-card-actions'); actions.append(button('View details ↗', '', () => openDetail(item.id)), button('Remove', '', () => { board.delete(item.id); persist(); renderBoard(); }));
       article.append(groupLabel, group, noteLabel, note, actions);
     }
+    if (!boardMode) syncCardMatch(article, item);
     prioritiseCard(article, position); return article;
   }
   function syncPicked() {

@@ -8,9 +8,9 @@
   if (!app) return;
 
   const dataUrl = body.dataset.researchData || 'data/research-library.json';
-  const detailPage = body.dataset.reportPage || 'trend-report.html';
+  const detailPage = body.dataset.reportPage || 'trend-story.html';
   const libraryPage = body.dataset.libraryPage || 'trend.html';
-  const connectionsUrl = body.dataset.trendConnections || 'data/trend-connections.json?v=20261117journey1';
+  const connectionsUrl = body.dataset.trendConnections || 'data/trend-connections.json?v=20261117match2';
   const categories = ['All research', 'Outerwear', 'Shirts', 'Trousers', 'Materials', 'Print & Pattern', 'Construction & Finish'];
   const state = { category: 'All research', gender: 'all', query: '' };
   let data, reports, byId, featuredIds = [], activeObserver, connections = {};
@@ -57,14 +57,18 @@
     return `${kind === 'style' ? 'collection-series.html' : 'products.html'}?${params}`;
   }
   function connectionCount(terms) { return unique(terms.flatMap(term => strings(term.ids))).length; }
+  const connectionTiers = [['direct','Direct matches'],['alternative','Development alternatives'],['concept','Studio concepts']];
+  function connectionTier(term) { return connectionTiers.some(([key]) => term.tier === key) ? term.tier : 'alternative'; }
+  function connectionReason(term) { return text(term.rationale) || 'A development reference to review against the intended garment and material brief.'; }
   function connectionSummary(report) {
     const styleTerms = connectionTerms(report, 'style'), materialTerms = connectionTerms(report, 'material');
     if (!styleTerms.length && !materialTerms.length) return null;
     const nav = node('nav', 'rl-direction-summary'); nav.setAttribute('aria-label', 'Explore this direction');
     nav.append(node('span', 'rl-connection-kicker', 'Explore this direction'));
-    [['style', styleTerms, 'style references'], ['material', materialTerms, 'materials & patterns']].forEach(([kind, terms, label]) => {
+    [['style', styleTerms, 'local style references'], ['material', materialTerms, 'local materials & patterns']].forEach(([kind, terms, label]) => {
       if (terms.length) nav.append(link(connectionUrl(report, kind), 'rl-direction-all', `${connectionCount(terms)} ${label} ↗`));
     });
+    nav.append(node('span','rl-connection-note','Direct matches, alternatives and concepts are identified below.'));
     return nav;
   }
   function connectionBlock(report, kind) {
@@ -72,19 +76,25 @@
     const nav = node('nav', 'rl-direction-keywords');
     const heading = kind === 'style' ? 'Explore related styles' : 'Explore materials & patterns';
     nav.setAttribute('aria-label', heading); nav.append(node('p', 'rl-connection-kicker', heading));
-    const links = node('div', 'rl-connection-links');
-    terms.forEach(term => {
-      const anchor = link(connectionUrl(report, kind, term), 'rl-connection-term');
-      const count = unique(strings(term.ids)).length;
-      anchor.append(node('span', '', term.label), node('span', 'rl-connection-count', count));
-      anchor.setAttribute('aria-label', `${term.label}: ${count} local ${kind === 'style' ? 'style' : 'material'} ${count === 1 ? 'reference' : 'references'}`);
-      links.append(anchor);
+    connectionTiers.forEach(([tier,label]) => {
+      const selected=terms.filter(term=>connectionTier(term)===tier);if(!selected.length)return;
+      const group=node('section','rl-connection-group');group.dataset.tier=tier;
+      group.append(node('h4','rl-connection-tier',label));
+      const links=node('div','rl-connection-links');
+      selected.forEach(term=>{
+        const entry=node('div','rl-connection-entry'),anchor=link(connectionUrl(report,kind,term),'rl-connection-term'),count=unique(strings(term.ids)).length;
+        anchor.dataset.tier=tier;
+        anchor.append(node('span','',term.label),node('span','rl-connection-count',count));
+        anchor.setAttribute('aria-label',`${term.label}: ${count} local ${kind==='style'?'style':'material'} ${count===1?'reference':'references'} · ${label}`);
+        entry.append(anchor,node('p','rl-connection-rationale',connectionReason(term)));links.append(entry);
+      });
+      group.append(links);nav.append(group);
     });
-    nav.append(links); return nav;
+    return nav;
   }
   function appendConnectedText(container, value, report, kind) {
     const source = text(value), lower = source.toLowerCase();
-    const hits = connectionTerms(report, kind).flatMap(term => {
+    const hits = connectionTerms(report, kind).filter(term=>connectionTier(term)==='direct').flatMap(term => {
       const position = lower.indexOf(term.label.toLowerCase());
       return position < 0 ? [] : [{term, position, end: position + term.label.length}];
     }).sort((a, b) => a.position - b.position || b.end - a.end);
@@ -98,7 +108,7 @@
   }
   function materialTermFor(report, name) {
     const normalised = ` ${clean(name)} `;
-    return connectionTerms(report, 'material').filter(term => normalised.includes(` ${clean(term.key)} `) || normalised.includes(` ${clean(term.label)} `)).sort((a, b) => clean(b.key).length - clean(a.key).length)[0];
+    return connectionTerms(report, 'material').filter(term => connectionTier(term)==='direct' && (normalised.includes(` ${clean(term.key)} `) || normalised.includes(` ${clean(term.label)} `))).sort((a, b) => clean(b.key).length - clean(a.key).length)[0];
   }
   function titleCase(value) { return text(value).replace(/[_-]+/g, ' ').replace(/\b\w/g, char => char.toUpperCase()); }
   function categoryOf(report) {
