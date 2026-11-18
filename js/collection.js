@@ -2,11 +2,11 @@
   'use strict';
 
   const scriptVersion = document.currentScript ? new URL(document.currentScript.src, location.href).searchParams.get('v') : '';
-  const DATA_URL = 'data/collections.json?v=' + encodeURIComponent(scriptVersion || '20261117perf1');
-  const TREND_CONNECTIONS_URL = 'data/trend-connections.json?v=' + encodeURIComponent(scriptVersion || '20261117perf1');
+  const DATA_URL = 'data/collections.json?v=' + encodeURIComponent(scriptVersion || '20261118audit1');
+  const TREND_CONNECTIONS_URL = 'data/trend-connections.json?v=' + encodeURIComponent(scriptVersion || '20261118audit1');
   const SELECT_KEY = 'soho-collection-selection';
   const view = document.body.dataset.view || 'landing';
-  const SERIES_QUERY_KEYS = ['gender', 'type', 'material', 'colour', 'retail', 'occasion', 'season', 'page'];
+  const SERIES_QUERY_KEYS = ['gender', 'type', 'material', 'colour', 'retail', 'occasion', 'season', 'q', 'page'];
   let trendConnections = null;
   let trendConnectionsPromise;
   let trendConnectionsFailed = false;
@@ -19,11 +19,16 @@
   };
 
   const escape = value => String(value == null ? '' : value);
+  // Keep archived source records intact; only this development brief enters the active journey.
+  const inDevelopmentScope = product => product.type === 'outerwear' || product.type === 'top' && /\bshirt\b/i.test(product.name || '') || product.type === 'bottom' && !/\bjeans\b/i.test(product.name || '');
+  function readVotes() { try { const list=JSON.parse(localStorage.getItem('soho-votes') || '[]');return Array.isArray(list)?list:[]; } catch { return []; } }
+  function paintVotes() { document.querySelectorAll('[data-style-vote]').forEach(button=>{const active=readVotes().includes(button.dataset.styleVote);button.classList.toggle('is-voted',active);button.setAttribute('aria-pressed',String(active));const label=button.querySelector('span');if(label)label.textContent=active?'Voted locally':'Vote';else button.textContent=active?'Voted locally':'Vote';}); }
+  function toggleVote(product) { const votes=readVotes(),next=votes.includes(product.code)?votes.filter(code=>code!==product.code):votes.concat(product.code);try{localStorage.setItem('soho-votes',JSON.stringify(next));paintVotes();toast('Preference saved on this device only. Not sent.');}catch{toast('This device could not save your preference.');} }
   const CONNECTION_TIERS = {direct:{rank:0,label:'Direct match'},alternative:{rank:1,label:'Development alternative'},concept:{rank:2,label:'Studio concept'}};
   function termTier(term) { return term && Object.prototype.hasOwnProperty.call(CONNECTION_TIERS,term.tier) ? term.tier : 'alternative'; }
   function termRationale(term) { return typeof term.rationale === 'string' && term.rationale.trim() ? term.rationale.trim() : 'A development reference to review against the intended garment and material brief.'; }
   function styleConnections(product, context = trendSelection()) {
-    return (context.terms || []).filter(term => Array.isArray(term.ids) && term.ids.includes(product.code)).slice().sort((a,b)=>CONNECTION_TIERS[termTier(a)].rank-CONNECTION_TIERS[termTier(b)].rank);
+    return (context.terms || []).filter(term => Array.isArray(term.ids) && term.ids.includes(product.code)).map(term => product.imageKind === 'concept' ? {...term,tier:'concept',rationale:'Digital shape reference only, not an existing physical sample. Subject to physical development. '+termRationale(term)} : term).sort((a,b)=>CONNECTION_TIERS[termTier(a)].rank-CONNECTION_TIERS[termTier(b)].rank);
   }
   function sortTrendStyles(list, context) {
     if (!context.active) return list;
@@ -110,8 +115,8 @@
     if (current.has('trend')) {
       params.set('trend', current.get('trend'));
       if (current.has('direction')) params.set('direction', current.get('direction'));
-      SERIES_QUERY_KEYS.forEach(key => { if (current.has(key)) params.set(key, current.get(key)); });
     }
+    SERIES_QUERY_KEYS.forEach(key => { if (current.has(key)) params.set(key, current.get(key)); });
     return 'collection-detail.html?' + params.toString() + hash;
   }
 
@@ -185,11 +190,12 @@
       && (!filters.colour || (product.colours || []).some(colour => colour.name === filters.colour))
       && (!filters.retail || product.retail === filters.retail)
       && (!filters.occasion || (product.occasions || []).includes(filters.occasion))
-      && (!filters.season || (filters.season === 'unassigned' ? !developmentSeason(product) : developmentSeason(product) === filters.season));
+      && (!filters.season || (filters.season === 'unassigned' ? !developmentSeason(product) : developmentSeason(product) === filters.season))
+      && (!filters.q || filters.q.toLowerCase().trim().split(/\s+/).every(term=>[product.code,product.name,product.material,product.description,product.fit].filter(Boolean).join(' ').toLowerCase().includes(term)));
   }
 
   let selection = [];
-  try { selection = JSON.parse(localStorage.getItem(SELECT_KEY) || '[]'); } catch { selection = []; }
+  try { const saved=JSON.parse(localStorage.getItem(SELECT_KEY) || '[]');selection=Array.isArray(saved)?saved:[]; } catch { selection = []; }
 
   const countEl = document.getElementById('count');
   const toastEl = document.getElementById('toast');
@@ -203,10 +209,11 @@
   }
 
   function saveSelection() {
-    localStorage.setItem(SELECT_KEY, JSON.stringify(selection));
+    try {localStorage.setItem(SELECT_KEY, JSON.stringify(selection));}catch {toast('This device could not save your selection.');return false;}
     if (countEl) {
-      countEl.textContent = String(selection.length);
-      countEl.hidden = selection.length === 0;
+      const activeCount=selection.filter(code=>products && products.some(product=>product.code===code)).length;
+      countEl.textContent = String(activeCount);
+      countEl.hidden = activeCount === 0;
     }
     document.querySelectorAll('[data-save]').forEach(button => {
       const saved = selection.includes(button.dataset.save);
@@ -220,9 +227,12 @@
       button.textContent = saved ? 'Selected' : 'Select';
       button.classList.toggle('active', saved);
     });
+    if(window.dispatchEvent && typeof Event === 'function')window.dispatchEvent(new Event('soho:selection-change'));
+    return true;
   }
 
   function toggleSelection(product) {
+    const previous=selection;
     if (selection.includes(product.code)) {
       selection = selection.filter(code => code !== product.code);
       toast('Removed from My Selection');
@@ -230,7 +240,8 @@
       selection = [...selection, product.code];
       toast('Saved to My Selection');
     }
-    saveSelection();
+    if(!saveSelection()){selection=previous;return false;}
+    return true;
   }
 
   function swatches(product) {
@@ -256,6 +267,7 @@
     const info = el('div', 'col-card-info');
     const title = el('div');
     title.append(el('h3', null, product.name), el('p', 'col-code', product.code));
+    if(product.imageKind === 'concept')title.append(el('p','style-concept-label','Digital style concept'));
     const bottom = el('div', 'col-card-bottom');
     bottom.append(swatches(product));
 
@@ -273,7 +285,8 @@
       });
       const vote = el('button', 'link-action', 'Vote');
       vote.type = 'button';
-      vote.addEventListener('click', () => toast('Vote recorded (sample)'));
+      vote.dataset.styleVote=product.code;
+      vote.addEventListener('click', () => toggleVote(product));
       const comment = el('a', 'link-action', 'Comment');
       comment.href = detailUrl(product.code, '#feedback');
       actions.append(select, el('span', 'sep', '|'), vote, el('span', 'sep', '|'), comment);
@@ -298,8 +311,9 @@
     const panel = document.getElementById('selection-panel');
     if (!panel) return;
     panel.innerHTML = '';
-    panel.append(el('p', 'panel-title', `My selection (${selection.length})`));
-    if (!selection.length) {
+    const activeSelection=selection.filter(code=>products.some(product=>product.code===code));
+    panel.append(el('p', 'panel-title', `My selection (${activeSelection.length})`));
+    if (!activeSelection.length) {
       panel.append(el('p', 'panel-empty', 'Nothing selected yet.'));
       const review = el('a', 'btn-accent panel-review', 'Review selection →');
       review.href = 'my-selection.html';
@@ -307,7 +321,7 @@
       return;
     }
     const list = el('div', 'panel-list');
-    selection.forEach(code => {
+    activeSelection.forEach(code => {
       const product = products.find(p => p.code === code);
       if (!product) return;
       const row = el('div', 'panel-row');
@@ -356,18 +370,19 @@
 
     const weekly = el('section', 'col-section');
     const head = el('div', 'col-section-head');
-    head.append(el('h2', null, "This week's selections"));
+    head.append(el('h2', null, 'Development highlights'));
     const all = el('a', 'text-link', 'View all styles →');
     all.href = 'collection-series.html?occasion=everyday';
     head.append(all);
     weekly.append(head);
     const grid = el('div', 'weekly-grid');
-    (data.weekly || []).forEach(item => {
+    const highlights=['outerwear','top','bottom'].map(type=>products.find(product=>product.type===type));
+    highlights.filter(Boolean).forEach(item => {
       const card = el('article', 'weekly-card');
       const media = el('a', 'weekly-media');
       media.href = detailUrl(item.code);
       const productImage = products.find(product => normCode(product.code) === normCode(item.code)) || item;
-      const img = materialImage(item.thumbnail || listImage(productImage), item.name, {width: 480, height: 480, fallback: item.image, styleCode: item.code});
+      const img = materialImage(listImage(productImage), item.name, {width: 480, height: 480, fallback: item.image, styleCode: item.code});
       media.append(img);
 
       const info = el('div', 'weekly-info');
@@ -440,7 +455,8 @@
       colour: params.get('colour') || '',
       retail: params.get('retail') || '',
       occasion: occasion || '',
-      season: assignedSeasons.includes(requestedSeason) || requestedSeason === 'unassigned' ? requestedSeason : ''
+      season: assignedSeasons.includes(requestedSeason) || requestedSeason === 'unassigned' ? requestedSeason : '',
+      q: params.get('q') || ''
     };
 
     function uniqueValues(list) {
@@ -471,7 +487,7 @@
     const colourOptions = uniqueValues(products.flatMap(product => (product.colours || []).map(colour => colour.name)));
     toolbar.append(
       makeSelect('gender', 'Gender', [['', 'Gender'], ['women', 'Women'], ['men', 'Men']]),
-      makeSelect('type', 'Category', [['', 'Category'], ['outerwear', 'Outerwear'], ['top', 'Top'], ['bottom', 'Bottom']]),
+      makeSelect('type', 'Category', [['', 'Category'], ['outerwear', 'Outerwear'], ['top', 'Shirts'], ['bottom', 'Trousers']]),
       makeSelect('material', 'Material', [['', 'Material'], ...uniqueValues(products.map(product => product.material)).map(value => [value, value])]),
       makeSelect('colour', 'Colour', [['', 'Colour'], ...colourOptions.map(value => [value, value])]),
       makeSelect('retail', 'Target retail', [['', 'Target retail'], ['To be confirmed', 'To be confirmed']]),
@@ -552,6 +568,7 @@
       renderPager(pages);
       renderPanel();
       saveSelection();
+      paintVotes();
     }
 
     paint();
@@ -562,14 +579,15 @@
     const root = document.getElementById('collection-view');
     const params = new URLSearchParams(location.search);
     const trend = trendSelection();
-    const code = params.get('code') || products[0].code;
+    const code = params.get('code') || '';
     const requestedProduct = products.find(item => item.code === code);
-    const product = requestedProduct || products[0];
+    const product = requestedProduct;
     root.innerHTML = '';
+    if(!product){root.append(el('h1',null,'Style unavailable'),el('p','empty-note','This style is not part of the current development selection.'));const back=el('a','text-link','Browse the development selection →');back.href=seriesUrl();root.append(back);return;}
 
     const crumb = el('div', 'breadcrumb');
     const back = el('a', null, trend.active ? 'BACK TO TREND SELECTION' : 'COLLECTION');
-    back.href = trend.active ? seriesUrl() : 'collection-series.html';
+    back.href = seriesUrl();
     crumb.append(back, document.createTextNode(` / ${trend.active && !requestedProduct ? 'Style unavailable' : product.name}`));
     root.append(crumb);
     if (trend.active) {
@@ -612,6 +630,9 @@
     const side = el('div', 'detail-side');
     side.append(el('p', 'eyebrow', `STYLE ${product.code}`));
     side.append(el('h1', null, product.name));
+    if(product.imageKind === 'concept')side.append(el('p','style-concept-label','Digital style concept · subject to physical development. A shape reference, not an existing physical sample.'));
+    else if(/^AE-/.test(product.code))side.append(el('p','style-concept-label','Legacy reference — source and physical sample not verified.'));
+    side.append(el('p','material-note','Sample availability is unconfirmed. Material properties require physical-sample review.'));
     if (product.subtitle) side.append(el('p', 'detail-subtitle', product.subtitle));
 
     const factIcons = {
@@ -643,20 +664,20 @@
 
     side.append(el('p', 'detail-label', 'Material options'));
     const MATERIAL_KEY = 'soho-material-choice';
-    let chosenMaterial = 0;
+    let chosenMaterial = -1;
     try {
-      const storedChoice = JSON.parse(localStorage.getItem(MATERIAL_KEY) || 'null');
-      if (storedChoice && storedChoice.code === product.code) {
-        const found = product.materials.findIndex(material => material.name === storedChoice.material);
+      const storedChoice = JSON.parse(localStorage.getItem(MATERIAL_KEY) || 'null'), map=JSON.parse(localStorage.getItem('soho-material-choices') || '{}');
+      const savedName=map && map[product.code] || (storedChoice && storedChoice.code===product.code ? storedChoice.material : '');
+      if (savedName) {
+        const found = product.materials.findIndex(material => material.name === savedName);
         if (found >= 0) chosenMaterial = found;
       }
-    } catch (error) { chosenMaterial = 0; }
+    } catch (error) { chosenMaterial = -1; }
 
     function selectMaterial(index) {
-      chosenMaterial = index;
       const material = product.materials[index];
-      localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name }));
-      try { const map = JSON.parse(localStorage.getItem('soho-material-choices') || '{}'); map[product.code] = material.name; localStorage.setItem('soho-material-choices', JSON.stringify(map)); } catch (error) { /* ignore */ }
+      try { const map = JSON.parse(localStorage.getItem('soho-material-choices') || '{}'); map[product.code] = material.name; localStorage.setItem('soho-material-choices', JSON.stringify(map));localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name })); } catch (error) {toast('This device could not save the material choice.');return false;}
+      chosenMaterial = index;
       document.querySelectorAll('.material-row').forEach((row, rowIndex) => {
         row.classList.toggle('selected', rowIndex === index);
         const radio = row.querySelector('input[type="radio"]');
@@ -667,6 +688,7 @@
         button.classList.toggle('btn-outline', buttonIndex !== index);
         button.textContent = buttonIndex === index ? 'Selected material' : 'Choose material';
       });
+      return true;
     }
 
     const materialList = el('div', 'material-list');
@@ -694,18 +716,17 @@
     const add = el('button', 'btn-accent', selection.includes(product.code) ? 'In My Selection' : 'Add to selection →');
     add.type = 'button';
     add.addEventListener('click', () => {
-      toggleSelection(product);
+      if(!toggleSelection(product))return;
       const material = product.materials[chosenMaterial];
-      localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name }));
-      try { const map = JSON.parse(localStorage.getItem('soho-material-choices') || '{}'); map[product.code] = material.name; localStorage.setItem('soho-material-choices', JSON.stringify(map)); } catch (error) { /* ignore */ }
+      if(material)try {localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name }));const map = JSON.parse(localStorage.getItem('soho-material-choices') || '{}'); map[product.code] = material.name; localStorage.setItem('soho-material-choices', JSON.stringify(map)); } catch (error) {toast('Material choice could not be saved on this device.');}
       add.textContent = selection.includes(product.code) ? 'In My Selection' : 'Add to selection →';
       toast(selection.includes(product.code)
-        ? `${material.name} — ${product.code} added to My Selection`
+        ? `${product.code} added to My Selection${material ? ' · '+material.name : ' · material not selected'}`
         : `${product.code} removed from My Selection`);
     });
-    const sample = el('button', 'btn-outline', 'Request sample');
+    const sample = el('button', 'btn-outline', 'Discuss a sample');
     sample.type = 'button';
-    sample.addEventListener('click', () => toast('Sample request recorded (sample)'));
+    sample.addEventListener('click', () => {const box=document.getElementById('sample-interest');if(box)box.checked=true;const feedback=document.getElementById('feedback');if(feedback)feedback.scrollIntoView({behavior:'smooth',block:'start'});toast('Add your sample needs below. Availability requires confirmation.');});
     actions.append(add, sample);
     side.append(actions);
 
@@ -713,22 +734,8 @@
     const vote = el('button', 'link-action');
     vote.type = 'button';
     vote.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A3.9 3.9 0 0 1 12 8a3.9 3.9 0 0 1 7 2.7C19 15.6 12 20 12 20z"/></svg><span>Vote</span>';
-    const votesKey = 'soho-votes';
-    const readVotes = () => { try { return JSON.parse(localStorage.getItem(votesKey) || '[]'); } catch (e) { return []; } };
-    const isVoted = () => readVotes().includes(product.code);
-    function paintVote() {
-      const voted = isVoted();
-      vote.classList.toggle('is-voted', voted);
-      vote.querySelector('span').textContent = voted ? 'Voted' : 'Vote';
-    }
-    vote.addEventListener('click', () => {
-      const list = readVotes();
-      const next = list.includes(product.code) ? list.filter(code => code !== product.code) : list.concat(product.code);
-      localStorage.setItem(votesKey, JSON.stringify(next));
-      paintVote();
-      toast(isVoted() ? 'Vote added (sample)' : 'Vote removed (sample)');
-    });
-    paintVote();
+    vote.dataset.styleVote=product.code;
+    vote.addEventListener('click', () => toggleVote(product));
     const comment = el('a', 'link-action');
     comment.href = '#feedback';
     comment.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H9l-5 4z"/></svg><span>Comment</span>';
@@ -741,7 +748,7 @@
     root.append(layout);
 
     const tabs = el('div', 'detail-tabs');
-    ['Style details', 'Materials', 'Store feedback'].forEach((label, index) => {
+    ['Style details', 'Materials', 'Development feedback'].forEach((label, index) => {
       const anchor = el('a', index === 0 ? 'active' : '', label);
       anchor.href = index === 1 ? '#materials' : index === 2 ? '#feedback' : '#style';
       tabs.append(anchor);
@@ -780,6 +787,11 @@
     const materialSection = el('section', 'materials-section');
     materialSection.id = 'materials';
     materialSection.append(el('h2', null, `Materials for ${product.name}`));
+    if (trend.active && !trend.error && trendConnections?.reports?.[trend.id]?.materialTerms?.length) {
+      const localMaterials=el('a','material-library-link','Explore local material references for this direction ↗');
+      localMaterials.href='products.html?trend='+encodeURIComponent(trend.id);
+      materialSection.append(localMaterials,el('p','material-note','These references relate to the research direction. Review their construction and suitability separately from the proposed garment options below.'));
+    }
     const table = el('div', 'materials-table');
     table.style.setProperty('--material-count', product.materials.length);
     const header = el('div', 'materials-row materials-head');
@@ -799,15 +811,14 @@
       table.append(row);
     });
     if (product.code.startsWith('RF27-')) {
-      materialSection.append(el('p', 'material-note', 'One reference fabric and two development directions. Digital previews show colour and pattern intent; physical fabrics require sampling and approval.'));
+      materialSection.append(el('p', 'material-note', 'One recorded garment fabric and two development directions. Colour blocks indicate screen colour only; they are not fabric photographs or evidence of texture. Proposed fabrics require sourcing, physical sampling and approval.'));
       const concepts = el('div', 'fabric-concepts');
       product.materials.forEach((material, index) => {
         const concept = el('article', 'fabric-concept');
-        const preview = el('div', 'fabric-preview'); preview.dataset.pattern = material.pattern; preview.style.setProperty('--fabric-colour', material.previewColour || (product.colours[0] || {}).hex || '#777');
-        preview.setAttribute('role', 'img'); preview.setAttribute('aria-label', `${material.name} — schematic colour and pattern preview`);
+        const preview = el('div', 'fabric-colour-reference','Screen colour direction only');preview.style.backgroundColor=material.previewColour || (product.colours[0] || {}).hex || '#ddd';
         concept.append(preview, el('p', 'fabric-option', `OPTION ${String.fromCharCode(65 + index)} · ${material.status}`), el('h3', null, material.name));
         concept.append(el('p', 'fabric-trend', `${material.trendBasis.title} · Page ${material.trendBasis.page}`), el('p', 'fabric-reason', material.trendBasis.reason));
-        const choose = el('button', 'btn-outline', 'Choose this direction'); choose.type = 'button'; choose.addEventListener('click', () => { selectMaterial(index); toast(`${material.name} selected`); }); concept.append(choose); concepts.append(concept);
+        const choose = el('button', 'btn-outline', 'Choose this direction'); choose.type = 'button'; choose.addEventListener('click', () => { if(selectMaterial(index))toast(`${material.name} saved on this device only. Not sent.`); }); concept.append(choose); concepts.append(concept);
       }); materialSection.append(concepts);
     }
     const chooseRow = el('div', 'materials-row materials-choose');
@@ -816,8 +827,7 @@
       const button = el('button', index === chosenMaterial ? 'btn-accent' : 'btn-outline', index === chosenMaterial ? 'Selected material' : 'Choose material');
       button.type = 'button';
       button.addEventListener('click', () => {
-        selectMaterial(index);
-        toast(`${material.name} selected`);
+        if(selectMaterial(index))toast(`${material.name} saved on this device only. Not sent.`);
       });
       chooseRow.append(button);
     });
@@ -827,14 +837,16 @@
 
     const feedback = el('section', 'feedback-section');
     feedback.id = 'feedback';
-    feedback.append(el('h2', null, 'Store feedback'));
-    feedback.append(el('p', 'detail-why', 'Tell us what works for your store, what needs a price or material change, and whether you need a sample.'));
+    feedback.append(el('h2', null, 'Development feedback'));
+    feedback.append(el('p', 'detail-why', 'Save notes on this device, download a copy or open an email draft. Nothing is sent automatically. Samples and proposed fabrics require confirmation.'));
     const form = el('form', 'feedback-form');
     const checks = el('div', 'feedback-checks');
-    ['Good fit for our customers', 'Review the price', 'Prefer another material', 'Adjust fit or colour'].forEach(text => {
+    ['Good fit for our customers', 'Review the price', 'Prefer another material', 'Adjust fit or colour', 'Discuss a sample'].forEach(text => {
       const label = el('label');
       const input = document.createElement('input');
       input.type = 'checkbox';
+      input.value=text;
+      if(text==='Discuss a sample')input.id='sample-interest';
       label.append(input, document.createTextNode(text));
       checks.append(label);
     });
@@ -861,9 +873,14 @@
       });
     });
 
-    const submit = el('button', 'btn-accent', 'Submit feedback');
+    const submit = el('button', 'btn-accent', 'Save note on this device');
     submit.type = 'submit';
     form.append(fileLabel, fileList, range, commentBox, submit);
+    const feedbackText=()=>{const preferences=Array.from(checks.querySelectorAll('input')).filter(input=>input.checked).map(input=>input.value);return [`Style: ${product.code} · ${product.name}`,product.imageKind==='concept'?'Digital style concept · subject to physical development.':'Style reference',`Material: ${product.materials[chosenMaterial]?.name || 'Not selected'}`,`Development season: ${developmentSeason(product) || 'Not assigned'}`,`Interests: ${preferences.join('; ') || 'Not specified'}`,`Target retail: ${range.value || 'Not specified'}`,commentBox.value,`Reference: ${location.href}`,'Please confirm sample and material availability.'].join('\n\n');};
+    const email=el('button','btn-outline','Open email draft');email.type='button';
+    email.addEventListener('click',()=>{location.href='mailto:online@saintycorp.com?subject='+encodeURIComponent('Development feedback · '+product.code)+'&body='+encodeURIComponent(feedbackText());});
+    const download=el('button','btn-outline','Download feedback note');download.type='button';download.addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([feedbackText()],{type:'text/plain;charset=utf-8'})),link=el('a');link.href=url;link.download=product.code+'-development-feedback.txt';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Feedback note downloaded. Not sent.');});
+    form.append(download,email,el('p','material-note','Email opens in your mail app. Attach files there; the website does not send them. Local notes are not orders or submissions to our team.'));
     form.addEventListener('submit', async event => {
       event.preventDefault();
       const files = Array.from(fileInput.files || []);
@@ -882,13 +899,16 @@
         at: new Date().toISOString(),
         range: range.value,
         comment: commentBox.value,
+        preferences:Array.from(checks.querySelectorAll('input')).filter(input=>input.checked).map(input=>input.value),
+        material:product.materials[chosenMaterial]?.name || '',
+        trend:trend.active?{report:trend.id,direction:trend.direction}:null,
         attachments: stored
       };
       try {
         const list = JSON.parse(localStorage.getItem('soho-feedback-submissions') || '[]');
         list.push(record);
         localStorage.setItem('soho-feedback-submissions', JSON.stringify(list));
-      } catch (error) { /* storage may be unavailable */ }
+      } catch (error) {toast('This device could not save the note. Copy it or use the email draft.');return;}
       form.reset();
       fileList.innerHTML = '';
       if (stored.length) {
@@ -903,14 +923,15 @@
             receipt.append(link);
           }).catch(() => {});
         });
-        feedback.append(el('p', 'detail-label', 'Submitted attachments'), receipt);
+        feedback.append(el('p', 'detail-label', 'Attachments saved on this device'), receipt);
       }
-      toast(`Feedback saved${files.length ? ` with ${files.length} attachment(s)` : ''} (sample)`);
+      toast(stored.some(item=>!item.id)?'Note saved locally; some attachments could not be stored. Attach them in your email app.':'Note saved on this device only. Not sent.');
     });
     feedback.append(form);
     root.append(feedback);
 
     saveSelection();
+    paintVotes();
   }
 
   const normCode = code => String(code || '').replace(/^AE-0?/, 'AE-');
@@ -955,7 +976,7 @@
     .then(async payload => {
       data = payload;
       collection = payload.collection;
-      products = payload.products;
+      products = payload.products.filter(inDevelopmentScope);
       await loadTrendConnections();
       const preview = new URLSearchParams(location.search).has('preview');
       if (preview) await applyOverrides();

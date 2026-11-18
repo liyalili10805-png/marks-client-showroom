@@ -7,6 +7,8 @@ html{scrollbar-gutter:stable}
 .nav-group{height:var(--site-header-height)}
 .sub-nav{top:var(--site-header-height)}
 .site-header button,.site-header input{font-family:inherit}
+.materials-head h1,.selection-head h1{font-family:inherit;font-size:clamp(32px,3.5vw,54px);font-weight:600;line-height:1.05;letter-spacing:-.035em}
+.material-library-link{display:inline-block;margin:4px 0 8px;font-size:13px;line-height:1.6;text-underline-offset:4px}
 @media(max-width:900px){
   :root{--site-header-height:56px}
   .site-header{gap:14px}

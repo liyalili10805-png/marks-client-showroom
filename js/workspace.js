@@ -120,7 +120,7 @@
       row.append(el('td', null, new Date(submission.submittedAt).toLocaleString('en-CA')));
       row.append(el('td', null, String(items.length)));
       row.append(el('td', null, items.some(item => item.sampleKind && item.sampleKind !== 'not_yet') ? 'Requested' : '—'));
-      row.append(el('td', null, 'Submitted'));
+      row.append(el('td', null, 'Saved locally'));
       table.append(row);
     });
     return table;
@@ -161,7 +161,7 @@
     const summary = selectedSummary();
     const entry = selectedProductId ? summary.get(selectedProductId) : [...summary.values()][0];
     if (!entry) {
-      box.append(el('p', 'ws-empty', 'Select a style with submitted feedback.'));
+      box.append(el('p', 'ws-empty', 'Select a style with feedback saved in this browser.'));
       return;
     }
     const product = productOf(entry.productId);
@@ -237,7 +237,7 @@
   }
 
   function exportFeedback() {
-    const rows = [['Collection', 'Round', 'Store', 'Style', 'Code', 'Material', 'Reasons', 'Comment', 'Sample', 'Submitted', 'Receipt']];
+    const rows = [['Collection', 'Round', 'Store', 'Style', 'Code', 'Material', 'Reasons', 'Comment', 'Sample', 'Saved locally', 'Receipt']];
     latestSubmissions().forEach(submission => {
       itemsOf(submission).forEach(item => {
         const product = productOf(item.productId);
@@ -249,7 +249,7 @@
         ]);
       });
     });
-    downloadCsv('marks-feedback.csv', rows);
+    downloadCsv('soho-demo-feedback.csv', rows);
   }
 
   function exportBrief() {

@@ -260,4 +260,8 @@
 .research-library-site #intelligence{scroll-margin-top:var(--site-header-height,84px)}
 .research-library-site .rl-card-media{background:#f4f3f0}
 .research-library-site .rl-card-visual-note{font-size:9px;line-height:1.5}
+.research-library-site .rl-research-enquiry{border-top:1px solid var(--rl-line,#deded8);padding:32px 0;margin-top:40px;max-width:780px}
+.research-library-site .rl-research-enquiry h2{font-size:clamp(25px,3vw,34px);font-weight:400;line-height:1.2;margin:0 0 14px}
+.research-library-site .rl-research-enquiry p{font-size:14px;line-height:1.7;max-width:650px}
+.research-library-site .rl-research-enquiry .rl-enquiry-note{font-size:11px;color:#686b63;margin-top:10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

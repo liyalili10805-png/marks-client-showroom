@@ -11,11 +11,19 @@
           "label": "Hip-length shirt-jacket",
           "ids": [
             "RF27-O01",
-            "RF27-O02",
-            "AE-014"
+            "RF27-O02"
           ],
           "tier": "direct",
           "rationale": "Button-front denim and canvas shirt-jackets and a cotton-twill overshirt provide layered workwear blocks."
+        },
+        {
+          "key": "shacket-concept",
+          "label": "Hip-length shirt-jacket — digital concept",
+          "ids": [
+            "AE-014"
+          ],
+          "tier": "concept",
+          "rationale": "A digital garment illustration for silhouette discussion. The image does not verify a physical sample, fabric composition, performance or purchase availability."
         },
         {
           "key": "contrast-collar",
@@ -84,12 +92,12 @@
         },
         {
           "key": "twill-overshirt",
-          "label": "Twill overshirt",
+          "label": "Twill overshirt — digital concept",
           "ids": [
             "AE-014"
           ],
-          "tier": "direct",
-          "rationale": "Cotton twill, chest flap pockets and a relaxed button-front body match the overshirt construction."
+          "tier": "concept",
+          "rationale": "A digital garment illustration for silhouette discussion. The image does not verify a physical sample, fabric composition, performance or purchase availability."
         }
       ],
       "materialTerms": [
@@ -763,12 +771,12 @@
         },
         {
           "key": "pull-on-tailoring",
-          "label": "Clean pull-on waist",
+          "label": "Clean pull-on waist — digital concept",
           "ids": [
             "AE-021"
           ],
-          "tier": "direct",
-          "rationale": "A flat front, elastic back waist and straight leg provide a clean pull-on trouser construction."
+          "tier": "concept",
+          "rationale": "A digital garment illustration for silhouette discussion. The image does not verify a physical sample, fabric composition, performance or purchase availability."
         }
       ],
       "materialTerms": [
@@ -1014,11 +1022,19 @@
             "RF27-T03",
             "RF27-T05",
             "RF27-T06",
-            "AE-023",
             "AE-030"
           ],
           "tier": "direct",
           "rationale": "Visible corduroy ribs run through straight, wide and barrel-leg trouser shapes, allowing pile direction and leg volume to be compared."
+        },
+        {
+          "key": "corduroy-trousers-concept",
+          "label": "Corduroy trouser shapes — digital concept",
+          "ids": [
+            "AE-023"
+          ],
+          "tier": "concept",
+          "rationale": "A digital garment illustration for silhouette discussion. The image does not verify a physical sample, fabric composition, performance or purchase availability."
         },
         {
           "key": "corduroy-collar",
@@ -1076,11 +1092,19 @@
           "label": "Twill trouser shapes",
           "ids": [
             "RF27-T02",
-            "RF27-T04",
-            "AE-021"
+            "RF27-T04"
           ],
           "tier": "direct",
           "rationale": "The recorded twill trouser references cover a pleated wide leg, curved barrel leg and pull-on straight leg."
+        },
+        {
+          "key": "twill-trouser-concept",
+          "label": "Twill trouser shapes — digital concept",
+          "ids": [
+            "AE-021"
+          ],
+          "tier": "concept",
+          "rationale": "A digital garment illustration for silhouette discussion. The image does not verify a physical sample, fabric composition, performance or purchase availability."
         }
       ],
       "materialTerms": [
@@ -1134,11 +1158,19 @@
           "key": "woven-trouser",
           "label": "Woven trouser shapes",
           "ids": [
-            "RF27-T02",
-            "AE-021"
+            "RF27-T02"
           ],
           "tier": "alternative",
           "rationale": "Cotton-twill and stretch-twill trouser shapes offer comparison bases; the report's drape and recovery still depend on the chosen cloth."
+        },
+        {
+          "key": "woven-trouser-concept",
+          "label": "Woven trouser shapes — digital concept",
+          "ids": [
+            "AE-021"
+          ],
+          "tier": "concept",
+          "rationale": "A digital garment illustration for silhouette discussion. The image does not verify a physical sample, fabric composition, performance or purchase availability."
         }
       ],
       "materialTerms": [
@@ -2055,12 +2087,12 @@
       "styleTerms": [
         {
           "key": "high-rise-legging",
-          "label": "High-rise legging",
+          "label": "High-rise legging — digital concept",
           "ids": [
             "AE-022"
           ],
-          "tier": "direct",
-          "rationale": "A high-rise stretch-knit legging with a wide waistband supplies the fitted leg line and clean waist reference."
+          "tier": "concept",
+          "rationale": "A digital garment illustration for silhouette discussion. The image does not verify a physical sample, fabric composition, performance or purchase availability."
         },
         {
           "key": "winter-legging",
@@ -2184,12 +2216,12 @@
       "styleTerms": [
         {
           "key": "high-rise-legging",
-          "label": "High-rise legging shape",
+          "label": "High-rise legging shape — digital concept",
           "ids": [
             "AE-022"
           ],
-          "tier": "direct",
-          "rationale": "A high-rise stretch-knit legging with a wide waistband supplies the fitted leg line and clean waist reference."
+          "tier": "concept",
+          "rationale": "A digital garment illustration for silhouette discussion. The image does not verify a physical sample, fabric composition, performance or purchase availability."
         },
         {
           "key": "winter-legging",

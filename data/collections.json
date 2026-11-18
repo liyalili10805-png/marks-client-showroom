@@ -1583,7 +1583,7 @@
       "gender": "men",
       "type": "bottom",
       "fit": "Loose straight fit; low crotch; roomy seat and thigh; straight leg opening; five-pocket construction, back yoke, bartack reinforcement and zip fly.",
-      "texture": "Eight-wale cotton Coventry corduroy; described by the brand as midweight.",
+      "texture": "Eight-wale cotton corduroy; described by the brand as midweight.",
       "colours": [
         {
           "name": "Warm Brown",
@@ -1604,7 +1604,7 @@
         "weekend"
       ],
       "material": "Eight-Wale Cut-Pile Corduroy",
-      "description": "Loose straight corduroy trousers with a low crotch and roomy seat and thigh. Made from eight-wale cotton Coventry corduroy with five-pocket construction, a back yoke and bartack reinforcement.",
+      "description": "Loose straight corduroy trousers with a low crotch and roomy seat and thigh. Made from eight-wale cotton corduroy with five-pocket construction, a back yoke and bartack reinforcement.",
       "season": "AW2027/28 development",
       "name": "Relaxed Straight-Leg Corduroy Trousers",
       "viewLabels": [
@@ -1623,8 +1623,8 @@
         {
           "id": "RF27-T03-F1",
           "name": "Eight-Wale Cut-Pile Corduroy",
-          "hand": "Eight-wale cotton Coventry corduroy; described by the brand as midweight.",
-          "structure": "Eight-wale cotton Coventry corduroy; described by the brand as midweight.",
+          "hand": "Eight-wale cotton corduroy; described by the brand as midweight.",
+          "structure": "Eight-wale cotton corduroy; described by the brand as midweight.",
           "composition": "Upper material: 100% cotton. Pocket lining: 65% polyester, 35% cotton.",
           "care": "Hang to dry; iron up to 150°C; machine wash up to 40°C; tumble dry up to 60°C.",
           "status": "Reference fabric",
@@ -1915,8 +1915,8 @@
       "category": "Women",
       "gender": "women",
       "type": "bottom",
-      "fit": "Loose fit; regular waist; adapted from the men’s Simple Pant silhouette; front and back pockets, zip fly and Square Label.",
-      "texture": "Eight-wale cotton Coventry corduroy; described by the brand as midweight.",
+      "fit": "Loose fit; regular waist; relaxed workwear silhouette; front and back pockets, zip fly.",
+      "texture": "Eight-wale cotton corduroy; described by the brand as midweight.",
       "colours": [
         {
           "name": "Black",
@@ -1937,7 +1937,7 @@
         "weekend"
       ],
       "material": "Eight-Wale Everyday Corduroy",
-      "description": "Women’s loose-fit corduroy trousers with a regular waist, based on the men’s Simple Pant silhouette. Eight-wale cotton Coventry corduroy, practical pockets and a zip fly retain a workwear-inspired finish.",
+      "description": "Women’s loose-fit corduroy trousers with a regular waist, based on a relaxed workwear silhouette. Eight-wale cotton corduroy, practical pockets and a zip fly retain a workwear-inspired finish.",
       "season": "AW2027/28 development",
       "name": "Straight-Leg Corduroy Trousers",
       "viewLabels": [
@@ -1956,8 +1956,8 @@
         {
           "id": "RF27-T06-F1",
           "name": "Eight-Wale Everyday Corduroy",
-          "hand": "Eight-wale cotton Coventry corduroy; described by the brand as midweight.",
-          "structure": "Eight-wale cotton Coventry corduroy; described by the brand as midweight.",
+          "hand": "Eight-wale cotton corduroy; described by the brand as midweight.",
+          "structure": "Eight-wale cotton corduroy; described by the brand as midweight.",
           "composition": "Upper material: 100% cotton. Pocket lining: 65% polyester, 35% cotton.",
           "care": "Hang to dry; iron up to 200°C; machine wash up to 40°C; tumble dry up to 60°C.",
           "status": "Reference fabric",
@@ -2103,7 +2103,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "imageKind": "concept"
     },
     {
       "code": "AE-015",
@@ -2252,7 +2253,7 @@
     },
     {
       "code": "AE-021",
-      "name": "The Dream Pant",
+      "name": "Pull-On Straight-Leg Trousers",
       "category": "Women",
       "gender": "women",
       "type": "bottom",
@@ -2319,11 +2320,12 @@
         null,
         null,
         null
-      ]
+      ],
+      "imageKind": "concept"
     },
     {
       "code": "AE-022",
-      "name": "The Perform Legging",
+      "name": "High-Rise Yoga Leggings",
       "category": "Women",
       "gender": "women",
       "type": "bottom",
@@ -2390,11 +2392,12 @@
         null,
         null,
         null
-      ]
+      ],
+      "imageKind": "concept"
     },
     {
       "code": "AE-023",
-      "name": "318 Wide-Leg Corduroy Pants",
+      "name": "Wide-Leg Corduroy Trousers",
       "category": "Women",
       "gender": "women",
       "type": "bottom",
@@ -2461,7 +2464,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "imageKind": "concept"
     },
     {
       "code": "AE-024",
@@ -2607,7 +2611,7 @@
     },
     {
       "code": "AE-026",
-      "name": "Paxton Quilted Shirt Jac",
+      "name": "Quilted Shirt Jacket",
       "category": "Women",
       "gender": "women",
       "type": "outerwear",
@@ -2749,7 +2753,7 @@
     },
     {
       "code": "AE-028",
-      "name": "Nash Flannel Shirt",
+      "name": "Relaxed Flannel Shirt",
       "category": "Women",
       "gender": "women",
       "type": "top",
@@ -2887,7 +2891,7 @@
     },
     {
       "code": "AE-030",
-      "name": "505 Cord Pants",
+      "name": "Straight-Leg Corduroy Trousers",
       "category": "Men",
       "gender": "men",
       "type": "bottom",

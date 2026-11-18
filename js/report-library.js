@@ -10,7 +10,7 @@
   const dataUrl = body.dataset.researchData || 'data/research-library.json';
   const detailPage = body.dataset.reportPage || 'trend-story.html';
   const libraryPage = body.dataset.libraryPage || 'trend.html';
-  const connectionsUrl = body.dataset.trendConnections || 'data/trend-connections.json?v=20261117match2';
+  const connectionsUrl = body.dataset.trendConnections || 'data/trend-connections.json?v=20261118audit1';
   const categories = ['All research', 'Outerwear', 'Shirts', 'Trousers', 'Materials', 'Print & Pattern', 'Construction & Finish'];
   const state = { category: 'All research', gender: 'all', query: '' };
   let data, reports, byId, featuredIds = [], activeObserver, connections = {};
@@ -456,6 +456,12 @@
     });
     chapters.forEach(([key,title],index)=>{const row=node('li'),anchor=link(`#${key}`,'',null);anchor.append(node('span','',String(index+1).padStart(2,'0')),document.createTextNode(title));row.append(anchor);tocList.append(row);});
     layout.append(toc,content);shell.append(layout);
+    const enquiry=node('section','rl-research-enquiry');
+    enquiry.append(node('h2','','Take this direction into development'),node('p','','Share the silhouette, cloth, pattern or construction you would like to explore. Include your intended use and the details you want to change.'));
+    const enquiryUrl='mailto:online@saintycorp.com?subject='+encodeURIComponent(`${text(data.season)} — ${report.title}`)+'&body='+encodeURIComponent(`Research direction: ${report.title}\nReport: ${location.href}\n\nI would like to explore:\nSilhouette / material / pattern / construction:\nIntended use:\nDevelopment notes:\n`);
+    const enquiryLink=node('a','rl-button','Discuss this direction ↗');enquiryLink.href=enquiryUrl;
+    enquiry.append(enquiryLink,node('p','rl-enquiry-note','Opens an email draft for you to review and send.'));
+    shell.append(enquiry);
     const related=unique(strings(report.relatedIds)).filter(relatedId=>relatedId!==report.id&&byId.has(relatedId)).slice(0,3);
     if(related.length){const section=node('section','rl-related');section.append(node('h2','','Related research'));const grid=node('div','rl-feature-grid');related.forEach(relatedId=>grid.append(card(byId.get(relatedId))));section.append(grid);shell.append(section);}
     app.replaceChildren(shell);

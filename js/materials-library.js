@@ -25,6 +25,7 @@
   const picked = new Set();
   const compared = new Set();
   const searchIndex = new WeakMap(), valueIndex = new WeakMap(), libraryCards = new Map();
+  let boardPersistenceFailed = false;
   let items = [], byId = new Map(), board = readBoard(), state = readState();
   let matches = [], rendered = [], currentDetail = null;
   let dialog, dialogReturnFocus, toastTimer, searchTimer, groupFilter = '', sharedIds = [];
@@ -84,19 +85,26 @@
     return {...item, id: String(item.id || 'M-' + (index + 1)), title: item.title || 'Material study', type,
       family: item.family || (type === 'fabric' ? 'Other fabrics' : 'Other patterns'), colors: list(item.colors),
       uses: list(item.uses), tags: list(item.tags), image: safeImage(item.image), displayImage: safeImage(item.displayImage), displayThumbnail: safeImage(item.displayThumbnail), images: item.images || [],
-      sourceType, status: STATUS[item.status] ? item.status : sourceType === 'studio' ? 'concept' : 'reference', colorways,
+      sourceType, status: sourceType === 'studio' ? 'concept' : ['reference', 'sampling', 'available'].includes(item.status) ? item.status : 'reference', colorways,
       season: item.season || 'Current reference · season not specified', developmentSeasons: list(item.developmentSeasons), trendIds: list(item.trendIds), _order: index};
   }
   function readBoard() {
     try {
       const stored = JSON.parse(localStorage.getItem(BOARD_KEY) || '[]');
       const arr = Array.isArray(stored) ? stored : stored.items || [];
-      return new Map(arr.filter(x => x && typeof x.id === 'string').map(x => [x.id, {id: x.id, note: String(x.note || ''), group: String(x.group || ''), colorway: String(x.colorway || '')}]));
-    } catch (_) { return new Map(); }
+      return new Map(arr.filter(x => x && typeof x.id === 'string').map(x => [x.id, {id: x.id, note: String(x.note || ''), group: String(x.group || ''), colorway: String(x.colorway || ''), colorwayImage: safeImage(x.colorwayImage || '')}]));
+    } catch (_) { boardPersistenceFailed = true; return new Map(); }
   }
   function persist() {
-    try { localStorage.setItem(BOARD_KEY, JSON.stringify([...board.values()])); return true; }
-    catch (_) { toast('Your browser could not save this selection. Please export your board to keep a copy.'); return false; }
+    try { localStorage.setItem(BOARD_KEY, JSON.stringify([...board.values()])); boardPersistenceFailed = false; syncPersistenceNotice(); return true; }
+    catch (_) { boardPersistenceFailed = true; syncPersistenceNotice(); toast('Your browser could not save this selection. Please export your board to keep a copy.'); return false; }
+  }
+  function syncPersistenceNotice() {
+    if (!root) return;
+    let notice = root.querySelector('.ml-storage-warning');
+    if (!boardPersistenceFailed) { if (notice) notice.remove(); return; }
+    if (!notice) { notice = node('p', 'ml-storage-warning'); notice.setAttribute('role', 'status'); root.append(notice); }
+    notice.textContent = 'Browser storage is unavailable. Changes are kept in this open tab only. Export your board before closing this tab to keep your selections and notes.';
   }
   function toast(message) {
     let n = document.querySelector('.ml-toast');
@@ -110,17 +118,33 @@
       const saved = board.has(n.dataset.saveId); n.setAttribute('aria-pressed', String(saved));
       const item = byId.get(n.dataset.saveId);
       if (n.classList.contains('ml-save')) n.setAttribute('aria-label', (saved ? 'Remove ' : 'Save ') + (item ? item.title : 'material') + (saved ? ' from board' : ' to board'));
-      else n.textContent = saved ? 'Saved to Material Board ✓' : 'Save to Material Board';
+      else if (n.dataset.choiceName != null) {
+        const record = board.get(n.dataset.saveId), selected = saved && record.colorway === n.dataset.choiceName && (record.colorwayImage || '') === n.dataset.choiceImage;
+        n.setAttribute('aria-pressed', String(selected));
+        n.textContent = selected ? boardPersistenceFailed ? 'In this tab · export to keep' : 'Saved to Material Board ✓' : n.dataset.choiceName ? 'Save selected colourway' : 'Save to Material Board';
+      } else n.textContent = saved ? boardPersistenceFailed ? 'In this tab · export to keep' : 'Saved to Material Board ✓' : 'Save to Material Board';
     });
+    syncPersistenceNotice();
   }
   function saveItem(item, colorway, deferCommit) {
-    if (!board.has(item.id)) board.set(item.id, {id: item.id, note: '', group: '', colorway: colorway || ''});
-    else if (colorway != null) board.get(item.id).colorway = colorway;
-    if (!deferCommit) { persist(); countUpdate(); }
+    const choice = typeof colorway === 'object' && colorway ? colorway : null;
+    const name = choice ? choice.name : colorway;
+    const candidates = item.colorways.filter(c => c.name === name);
+    const selected = choice || (candidates.length === 1 ? candidates[0] : null);
+    if (!board.has(item.id)) board.set(item.id, {id: item.id, note: '', group: '', colorway: name || '', colorwayImage: selected?.image || ''});
+    else if (colorway != null) Object.assign(board.get(item.id), {colorway: name || '', colorwayImage: selected?.image || ''});
+    if (!deferCommit) { const saved = persist(); countUpdate(); return saved; }
+    return true;
+  }
+  function boardColourway(item, record) {
+    if (!record?.colorway) return null;
+    if (record.colorwayImage) return item.colorways.find(c => c.image === record.colorwayImage && c.name === record.colorway) || null;
+    const candidates = item.colorways.filter(c => c.name === record.colorway);
+    return candidates.length === 1 ? candidates[0] : null;
   }
   function toggleSave(item) {
-    if (board.has(item.id)) { board.delete(item.id); persist(); toast('Removed from your Material Board'); }
-    else { saveItem(item); toast('Saved to your Material Board'); }
+    if (board.has(item.id)) { board.delete(item.id); if (persist()) toast('Removed from your Material Board'); }
+    else if (saveItem(item)) toast('Saved to your Material Board in this browser');
     countUpdate();
   }
   function readState() {
@@ -353,7 +377,7 @@
     const bottomPager = node('nav', 'ml-pagination'); bottomPager.dataset.pagination = 'bottom'; bottomPager.setAttribute('aria-label', 'Material result pages, bottom');
     root.append(topPager, grid, bottomPager);
     const foot = node('div', 'ml-library-footnote');
-    foot.append(node('p', null, 'Reference materials, physical samples and digital concepts are identified separately. Save an item to your board to keep a shortlist and add development notes.'), link('How we develop materials ↗', STORIES_URL)); root.append(foot);
+    foot.append(node('p', null, 'Reference materials, physical samples and digital concepts are identified separately. Your board and development notes are saved only in this browser. Export a copy to keep or share your notes.'), link('How we develop materials ↗', STORIES_URL)); root.append(foot);
     updateLibrary(true, true);
   }
   function syncControls() {
@@ -458,7 +482,7 @@
   function card(item, boardMode, position) {
     const article = node('article', boardMode ? 'ml-board-card' : 'ml-card'); article.dataset.materialId = item.id; article.dataset.materialType = item.type;
     const media = node('div', 'ml-card-media'), open = button('', 'ml-open', () => openDetail(item.id));
-    const savedColourway = boardMode ? item.colorways.find(c => c.name === board.get(item.id)?.colorway) : null;
+    const savedColourway = boardMode ? boardColourway(item, board.get(item.id)) : null;
     open.setAttribute('aria-label', 'View ' + item.title);
     const preview = image(previewFor(item, savedColourway), item.title, 'ml-card-image');
     const presentation = savedColourway || item;
@@ -484,7 +508,7 @@
     else article.append(node('p', 'ml-card-status', STATUS[item.status]));
     if (boardMode) {
       const record = board.get(item.id) || {note: '', group: '', colorway: ''};
-      if (record.colorway) article.append(node('p', 'ml-ai-note', 'Selected colourway: ' + record.colorway));
+      if (record.colorway) article.append(node('p', 'ml-ai-note', 'Selected colourway: ' + record.colorway + (savedColourway ? '' : ' · Open details and reselect this colourway.')));
       const groupLabel = node('label', 'ml-note-label', 'Board group'); groupLabel.htmlFor = 'ml-group-' + item.id;
       const group = node('input'); group.type = 'text'; group.id = groupLabel.htmlFor; group.value = record.group; group.placeholder = 'e.g. Shirts / muted checks'; group.maxLength = 80;
       group.addEventListener('input', () => { const row = board.get(item.id); if (row) { row.group = group.value.trim(); persist(); } });
@@ -512,7 +536,7 @@
     bar.replaceChildren();
     if (picked.size) {
       bar.append(node('span', 'ml-bulk-count', picked.size + ' selected'), button('Save selected', 'ml-bulk-save', () => {
-        const n = picked.size; picked.forEach(id => { const i = byId.get(id); if (i) saveItem(i, undefined, true); }); persist(); countUpdate(); picked.clear(); syncPicked(); toast(n + ' materials saved to your board');
+        const n = picked.size; picked.forEach(id => { const i = byId.get(id); if (i) saveItem(i, undefined, true); }); const saved = persist(); countUpdate(); picked.clear(); syncPicked(); if (saved) toast(n + ' materials saved to your board in this browser');
       }));
     }
     if (compared.size) bar.append(button('Compare (' + compared.size + '/4)', '', openCompare));
@@ -562,17 +586,22 @@
     currentDetail = id;
     const d = ensureDialog(); d.replaceChildren(closeButton());
     const layout = node('div', 'ml-detail-layout'), visual = node('div', 'ml-detail-visual'), gallery = galleryFor(item);
-    let selectedColorway = board.get(id)?.colorway || '';
-    const initialColourway = item.colorways.find(c => c.name === selectedColorway);
+    const initialColourway = boardColourway(item, board.get(id));
+    let selectedColorway = initialColourway || null, choices;
     const zoom = button('', 'ml-detail-zoom'); zoom.setAttribute('aria-label', 'Enlarge material image');
-    zoom.addEventListener('click', () => { const active = zoom.classList.toggle('is-zoomed'); zoom.setAttribute('aria-label', active ? 'Reduce material image' : 'Enlarge material image'); });
+    zoom.setAttribute('aria-pressed', 'false');
+    zoom.addEventListener('click', () => { const active = zoom.classList.toggle('is-zoomed'); zoom.setAttribute('aria-label', active ? 'Reduce material image' : 'Enlarge material image'); zoom.setAttribute('aria-pressed', String(active)); });
     const mainImage = image(initialColourway?.image || item.image, item.title, 'ml-detail-mainimage', true, 'high'); zoom.append(mainImage);
     const caption = node('p', 'ml-detail-image-caption', initialColourway?.image ? initialColourway.name : gallery[0].caption); visual.append(zoom, caption);
-    const replaceImage = (src, text) => { zoom.classList.remove('is-zoomed'); zoom.replaceChildren(image(src, item.title, 'ml-detail-mainimage', true, 'high')); caption.textContent = text || ''; };
+    const replaceImage = (src, text) => { zoom.classList.remove('is-zoomed'); zoom.setAttribute('aria-label', 'Enlarge material image'); zoom.setAttribute('aria-pressed', 'false'); zoom.replaceChildren(image(src, item.title, 'ml-detail-mainimage', true, 'high')); caption.textContent = text || ''; };
+    const syncColourwayControls = () => {
+      if (choices) choices.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.colourwayImage === selectedColorway?.image)));
+      save.dataset.choiceName = selectedColorway?.name || ''; save.dataset.choiceImage = selectedColorway?.image || ''; countUpdate();
+    };
     if (gallery.length > 1) {
       const thumbs = node('div', 'ml-thumbnails'); thumbs.setAttribute('aria-label', 'Material image views');
       gallery.forEach((g, index) => {
-        const b = button('', '', () => { replaceImage(g.src, g.caption); thumbs.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true'); });
+        const b = button('', '', () => { replaceImage(g.src, g.caption); selectedColorway = item.colorways.find(c => c.image === g.src) || null; syncColourwayControls(); thumbs.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true'); });
         b.setAttribute('aria-label', 'View image ' + (index + 1)); b.setAttribute('aria-pressed', String(g.src === (initialColourway?.image || item.image))); b.append(image(g.thumbnail || g.src, '', '', true)); thumbs.append(b);
       }); visual.append(thumbs);
     }
@@ -581,22 +610,24 @@
     copy.append(node('p', 'ml-detail-desc', item.description || 'A material reference selected for further exploration in everyday apparel.'));
     copy.append(node('p', 'ml-status ml-status--' + item.status, STATUS[item.status]));
     const fields = node('dl', 'ml-detail-fields');
-    [['Family', item.family], ['Structure', item.structure || item.technique], ['Colour', item.colors.join(' / ')], ['Application', item.uses.join(' / ')], ['Collection', item.season], ['Library source', SOURCE[item.sourceType]]].forEach(([key, value]) => {
+    [['Family', item.family], ['Structure', item.structure || item.technique], ['Colour', item.colors.join(' / ')], ['Application', item.uses.join(' / ')], ['Development season', item.developmentSeasons.join(' / ')], ['Source season', item.season], ['Library source', SOURCE[item.sourceType]]].forEach(([key, value]) => {
       if (!value) return;
       const row = node('div'); row.append(node('dt', null, key), node('dd', null, value)); fields.append(row);
     }); copy.append(fields);
     if (item.colorways.length) {
       copy.append(node('p', 'ml-note-label', 'Colourways'));
-      const choices = node('div', 'ml-detail-choices');
-      item.colorways.forEach(c => {
-        const b = button(c.name, '', () => {
-          selectedColorway = c.name; if (c.image) replaceImage(c.image, c.name);
-          choices.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true');
-        }); b.setAttribute('aria-pressed', String(selectedColorway === c.name)); choices.append(b);
+      choices = node('div', 'ml-detail-choices');
+      item.colorways.forEach((c, index) => {
+        const sameName = item.colorways.filter(other => other.name === c.name).length > 1;
+        const label = c.name + (sameName ? ' · ' + (index + 1) : '');
+        const b = button('', '', () => { selectedColorway = c; if (c.image) replaceImage(c.image, label); syncColourwayControls(); });
+        b.dataset.colourwayImage = c.image; b.setAttribute('aria-label', label); b.setAttribute('aria-pressed', String(selectedColorway?.image === c.image));
+        b.append(image(previewFor(item, c), '', '', true), node('span', null, label)); choices.append(b);
       }); copy.append(choices);
+      if (board.get(id)?.colorway && !initialColourway) copy.append(node('p', 'ml-detail-scope', 'Your earlier colourway name is ambiguous or no longer listed. Select the pictured colourway and save it again to retain the exact reference.'));
     }
     const actions = node('div', 'ml-detail-actions');
-    const save = button(board.has(id) ? 'Saved to Material Board ✓' : 'Save to Material Board', 'ml-button ml-button--dark', () => { saveItem(item, selectedColorway); toast('Saved to your Material Board'); if (pageIsBoard) renderBoard(); }); save.dataset.saveId = id; save.setAttribute('aria-pressed', String(board.has(id))); actions.append(save);
+    const save = button('Save to Material Board', 'ml-button ml-button--dark', () => { const saved = saveItem(item, selectedColorway || ''); if (saved) toast('Saved to your Material Board in this browser'); if (pageIsBoard) renderBoard(); }); save.dataset.saveId = id; actions.append(save);
     actions.append(button(compared.has(id) ? 'Comparing ✓' : 'Compare +', 'ml-button ml-button--quiet', () => toggleCompare(item))); actions.lastChild.dataset.compareId = id;
     copy.append(actions, link('Open Material Board ↗', BOARD_URL, 'ml-trend-links'));
     const scope = item.sourceType === 'studio' ? 'AI-assisted digital design. Colours, repeat and production translation require sample development.'
@@ -613,7 +644,7 @@
     const prev = button('← Previous', '', () => openDetail(pool[index - 1].id)); prev.disabled = index <= 0;
     const next = button('Next →', '', () => openDetail(pool[index + 1].id)); next.disabled = index < 0 || index >= pool.length - 1;
     nav.append(prev, node('span', null, index >= 0 ? (index + 1) + ' / ' + pool.length : item.id), next); d.append(nav);
-    showDialog(item.title); countUpdate(); d.querySelector('.ml-dialog-close').focus({preventScroll: true});
+    showDialog(item.title); syncColourwayControls(); d.querySelector('.ml-dialog-close').focus({preventScroll: true});
   }
   function openCompare() {
     if (!compared.size) return;
@@ -623,18 +654,18 @@
     const head = node('thead'), tr = node('tr'); tr.append(node('th', null, 'Material'));
     selected.forEach(i => { const th = node('th'); th.append(image(previewFor(i), i.title, '', true), node('p', 'ml-compare-name', i.title), node('p', 'ml-compare-id', i.id)); tr.append(th); }); head.append(tr); table.append(head);
     const tbody = node('tbody');
-    [['Type', i => i.type === 'fabric' ? 'Fabric' : 'Pattern'], ['Family', i => i.family], ['Structure', i => i.structure || i.technique || 'Not specified'], ['Colour', i => i.colors.join(' / ') || 'See reference'], ['Application', i => i.uses.join(' / ') || 'To be developed'], ['Source', i => SOURCE[i.sourceType]], ['Status', i => STATUS[i.status]], ['Collection', i => i.season]].forEach(([label, getter]) => {
+    [['Type', i => i.type === 'fabric' ? 'Fabric' : 'Pattern'], ['Family', i => i.family], ['Structure', i => i.structure || i.technique || 'Not specified'], ['Colour', i => i.colors.join(' / ') || 'See reference'], ['Application', i => i.uses.join(' / ') || 'To be developed'], ['Source', i => SOURCE[i.sourceType]], ['Status', i => STATUS[i.status]], ['Development season', i => i.developmentSeasons.join(' / ') || 'Not assigned'], ['Source season', i => i.season]].forEach(([label, getter]) => {
       const row = node('tr'); const th = node('th', null, label); th.scope = 'row'; row.append(th); selected.forEach(i => row.append(node('td', null, getter(i)))); tbody.append(row);
     });
     const action = node('tr'); action.append(node('th', null, 'Board'));
-    selected.forEach(i => { const td = node('td'); const b = button(board.has(i.id) ? 'Saved ✓' : 'Save material', 'ml-button ml-button--small', () => { saveItem(i); b.textContent = 'Saved ✓'; toast('Saved to your Material Board'); }); td.append(b); action.append(td); }); tbody.append(action); table.append(tbody); scroll.append(table); content.append(scroll); d.append(content); showDialog('Compare materials'); d.querySelector('.ml-dialog-close').focus({preventScroll: true});
+    selected.forEach(i => { const td = node('td'); const b = button(board.has(i.id) ? 'Saved ✓' : 'Save material', 'ml-button ml-button--small', () => { if (saveItem(i)) { b.textContent = 'Saved ✓'; toast('Saved to your Material Board in this browser'); } }); td.append(b); action.append(td); }); tbody.append(action); table.append(tbody); scroll.append(table); content.append(scroll); d.append(content); showDialog('Compare materials'); d.querySelector('.ml-dialog-close').focus({preventScroll: true});
   }
 
   function renderBoard() {
     root.replaceChildren(heading('Material Board', 'Your saved fabrics, patterns and development notes.', 'SOHO Fashion / Your Selection'));
     if (sharedIds.length) {
       const shared = node('div', 'ml-board-shared'); shared.append(node('span', null, sharedIds.length + ' materials have been shared with you. Add them to your board to keep and annotate them.'), button('Add shared materials', 'ml-button ml-button--small', () => {
-        sharedIds.forEach(id => { if (byId.has(id)) saveItem(byId.get(id), undefined, true); }); persist(); const n = sharedIds.length; sharedIds = []; history.replaceState({}, '', location.pathname); renderBoard(); toast(n + ' shared materials added');
+        sharedIds.forEach(id => { if (byId.has(id)) saveItem(byId.get(id), undefined, true); }); const saved = persist(); const n = sharedIds.length; sharedIds = []; history.replaceState({}, '', location.pathname); renderBoard(); if (saved) toast(n + ' shared materials added to this browser');
       })); root.append(shared);
     }
     const actions = node('div', 'ml-board-actions');
@@ -668,8 +699,8 @@
   function boardRows() {
     return [...board.values()].map(r => {
       const i = byId.get(r.id);
-      const selected = i?.colorways.find(c => c.name === r.colorway);
-      return {id: r.id, title: i?.title || 'Reference no longer in library', type: i?.type || '', family: i?.family || '', colourway: r.colorway, colours: (selected?.colors || i?.colors || []).join(' / '), application: i?.uses.join(' / ') || '', status: i ? STATUS[i.status] : '', source: i ? SOURCE[i.sourceType] : '', group: r.group, note: r.note};
+      const selected = i ? boardColourway(i, r) : null;
+      return {id: r.id, title: i?.title || 'Reference no longer in library', type: i?.type || '', family: i?.family || '', colourway: r.colorway, colourwayImage: selected?.image || r.colorwayImage || '', colours: (r.colorway && !selected ? [] : selected?.colors || i?.colors || []).join(' / '), application: i?.uses.join(' / ') || '', developmentSeason: i?.developmentSeasons.join(' / ') || '', status: i ? STATUS[i.status] : '', source: i ? SOURCE[i.sourceType] : '', group: r.group, note: r.note};
     });
   }
   function download(content, type, filename) {
@@ -680,10 +711,10 @@
     const rows = boardRows(), stamp = new Date().toISOString().slice(0, 10);
     if (format === 'json') download(JSON.stringify({title: 'SOHO Material Board', exportedAt: new Date().toISOString(), materials: rows}, null, 2), 'application/json', 'SOHO-Material-Board-' + stamp + '.json');
     else {
-      const headers = ['Material ID', 'Title', 'Type', 'Family', 'Selected colourway', 'Colours', 'Application', 'Sample status', 'Library source', 'Board group', 'Development note'];
-      const keys = ['id', 'title', 'type', 'family', 'colourway', 'colours', 'application', 'status', 'source', 'group', 'note'];
+      const headers = ['Material ID', 'Title', 'Type', 'Family', 'Selected colourway', 'Colourway reference image', 'Colours', 'Application', 'Development season', 'Sample status', 'Library source', 'Board group', 'Development note'];
+      const keys = ['id', 'title', 'type', 'family', 'colourway', 'colourwayImage', 'colours', 'application', 'developmentSeason', 'status', 'source', 'group', 'note'];
       const escape = v => '"' + String(v ?? '').replace(/"/g, '""') + '"';
-      const formulaSafe = v => /^[=+\-@\t\r]/.test(String(v)) ? "'" + v : v;
+      const formulaSafe = v => /^(?:[\s\u0000-\u001f]*[=+\-@]|[\t\r\n])/.test(String(v)) ? "'" + v : v;
       const csv = [headers.map(escape).join(','), ...rows.map(r => keys.map(k => escape(formulaSafe(r[k]))).join(','))].join('\r\n');
       download('\uFEFF' + csv, 'text/csv;charset=utf-8', 'SOHO-Material-Selection-' + stamp + '.csv');
     }

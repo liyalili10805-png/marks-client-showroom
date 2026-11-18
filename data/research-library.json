@@ -1,6 +1,6 @@
 {
   "season": "A/W 27/28",
-  "edition": "16 November 2026",
+  "edition": "18 November 2026",
   "reports": [
     {
       "id": "OW01",
@@ -64,6 +64,11 @@
           "sourceId": "W02",
           "section": "Need to know",
           "role": "Use familiar core products with a useful fabric/component upgrade."
+        },
+        {
+          "sourceId": "MSH",
+          "section": "Product Details / Features",
+          "role": "Published wool-like shacket with a point collar, chest flaps and side pockets; a local baseline, not an A/W 27/28 launch."
         }
       ],
       "metricIds": [],
@@ -144,6 +149,11 @@
           "sourceId": "W03",
           "section": "Fashion silhouette: the utility/safari jacket",
           "role": "An alternative boxy/waist-shaped utility route and seasonal material change."
+        },
+        {
+          "sourceId": "WBA",
+          "section": "Product Details / Features",
+          "role": "Existing cotton-canvas barn jacket combines corduroy collar trim, quilted lining and two-way-entry lower patch pockets."
         }
       ],
       "metricIds": [
@@ -226,6 +236,11 @@
           "sourceId": "W02",
           "section": "Fashion silhouette: the #SumptuousComfort aviator",
           "role": "A comforting lining or collar is an adjacent option for a warmer version."
+        },
+        {
+          "sourceId": "CTC26",
+          "section": "Better everyday / new store format",
+          "role": "The 4 November 2026 statement connects casualwear expansion with workwear strength; it is brand context, not a bomber forecast."
         }
       ],
       "metricIds": [],
@@ -384,6 +399,11 @@
           "sourceId": "W02",
           "section": "Fashion silhouette: the crafted puffer",
           "role": "Saturation makes differentiated limited tests more defensible than broad decorative expansion."
+        },
+        {
+          "sourceId": "WBA",
+          "section": "Product Details / Features",
+          "role": "An existing barn layer uses an insulated quilted lining; detachable liners remain a separate development option."
         }
       ],
       "metricIds": [],
@@ -524,7 +544,8 @@
         "W03",
         "MO",
         "WO",
-        "V46"
+        "V46",
+        "G03"
       ],
       "sourceJoins": [
         {
@@ -541,6 +562,11 @@
           "sourceId": "W03",
           "section": "Fashion silhouette: the maximalist textured coat",
           "role": "Low-pile texture is a visual reference only."
+        },
+        {
+          "sourceId": "G03",
+          "section": "FEEL YOUR SERENITY",
+          "role": "The original exhibition direction includes cosy fleece; this is material context rather than a standalone fleece-jacket growth forecast."
         }
       ],
       "metricIds": [],
@@ -708,7 +734,7 @@
         {
           "sourceId": "W15",
           "section": "Grounded Plaids",
-          "role": "Trade-show material corroboration"
+          "role": "WGSN exhibition reporting of this material direction; not independent confirmation from a second publisher."
         },
         {
           "sourceId": "W05",
@@ -719,6 +745,11 @@
           "sourceId": "W08",
           "section": "Grounded Plaids",
           "role": "Direct women’s textile support: lighter overshirts/layering, flannels and yarn-dyed checks, scale changes, and brushed/washed finishes."
+        },
+        {
+          "sourceId": "MFL",
+          "section": "Product Details / Features",
+          "role": "A published WindRiver plaid shirt provides a brushed-stretch-flannel baseline; the current clearance page is not future-season evidence."
         }
       ],
       "metricIds": [],
@@ -1098,6 +1129,11 @@
           "sourceId": "W07",
           "section": "Core updates: the casual straight- and wide-leg",
           "role": "Women’s separately identified counterpart"
+        },
+        {
+          "sourceId": "WPT",
+          "section": "Product Details / Features",
+          "role": "Existing pleated wide-leg trousers combine a back-elasticated waist and belt loops; proposed straight and tapered blocks are separate adaptations."
         }
       ],
       "metricIds": [
@@ -1267,6 +1303,11 @@
           "sourceId": "W07",
           "section": "Need to know",
           "role": "Counter-signal: rebalance toward straight"
+        },
+        {
+          "sourceId": "WPT",
+          "section": "Product Details / Features",
+          "role": "An existing pleated wide-leg trouser and partly elasticated waist give a direct local baseline; new drape still requires a cloth trial."
         }
       ],
       "metricIds": [
@@ -1355,6 +1396,11 @@
           "sourceId": "G02",
           "section": "CLASSIC IS PUNK!",
           "role": "Independent AW27/28 flannel and classic-cloth context"
+        },
+        {
+          "sourceId": "MFL",
+          "section": "Product Details / Features",
+          "role": "Existing brushed-stretch-flannel shirting supports the local end use; it does not establish double-cloth construction."
         }
       ],
       "metricIds": [],
@@ -1438,6 +1484,11 @@
           "sourceId": "G03",
           "section": "LIVE YOUR EMOTIONS",
           "role": "Original event material direction; also upstream of WGSN W15"
+        },
+        {
+          "sourceId": "WCR",
+          "section": "Product Details / Features",
+          "role": "Existing wide-leg stretch-cord trousers establish a Canadian assortment use; rib scale and pile changes remain sample comparisons."
         }
       ],
       "metricIds": [],
@@ -1495,7 +1546,8 @@
         "W15",
         "G02",
         "MP",
-        "WP"
+        "WP",
+        "WBA"
       ],
       "sourceJoins": [
         {
@@ -1516,7 +1568,12 @@
         {
           "sourceId": "G02",
           "section": "CLASSIC IS PUNK!",
-          "role": "Independent AW27/28 utility/cotton textile context"
+          "role": "Cotton drill provides an independent cloth comparison; softness and washing remain development choices."
+        },
+        {
+          "sourceId": "WBA",
+          "section": "Product Details / Features",
+          "role": "The current barn jacket establishes a cotton-canvas outerwear use; the proposed softer handle requires a separate cloth comparison."
         }
       ],
       "metricIds": [],
@@ -1576,7 +1633,8 @@
         "W15",
         "MP",
         "WP",
-        "V43"
+        "V43",
+        "WPT"
       ],
       "sourceJoins": [
         {
@@ -1598,6 +1656,11 @@
           "sourceId": "W15",
           "section": "Supplier highlight: Unifi",
           "role": "alternative yarn route"
+        },
+        {
+          "sourceId": "WPT",
+          "section": "Product Details / Features",
+          "role": "Pleated wide-leg trousers with a partly elasticated waist establish a local comfort-tailoring use, not a fabric-recovery test."
         }
       ],
       "metricIds": [],
@@ -1657,7 +1720,8 @@
         "W15",
         "MO",
         "WO",
-        "V45"
+        "V45",
+        "WBA"
       ],
       "sourceJoins": [
         {
@@ -1674,6 +1738,11 @@
           "sourceId": "W15",
           "section": "Editors’ pick: Soothing Comfort",
           "role": "testing rationale"
+        },
+        {
+          "sourceId": "WBA",
+          "section": "Product Details / Features",
+          "role": "Existing canvas-shell and insulated-quilted-lining assembly gives a local reference; padding weight and modularity remain open."
         }
       ],
       "metricIds": [],
@@ -1751,7 +1820,7 @@
         {
           "sourceId": "G02",
           "section": "FREESTYLE IS PUNK!",
-          "role": "Independent AW27/28 ripstop and washed-material context"
+          "role": "Ripstop and technical grounds appear in the fair selection; tested protection is not established."
         }
       ],
       "metricIds": [],
@@ -1832,7 +1901,12 @@
         {
           "sourceId": "G02",
           "section": "FREESTYLE IS PUNK!",
-          "role": "Independent micro-check flannel context"
+          "role": "Micro-check flannel is a separate fair observation; the muted colour edit is ours."
+        },
+        {
+          "sourceId": "MFL",
+          "section": "Product Details / Features",
+          "role": "Existing WindRiver plaid flannel gives a local pattern use case; the softened palette and repeat edit are our proposals."
         }
       ],
       "metricIds": [],
@@ -1891,7 +1965,8 @@
         "W08",
         "MP",
         "WP",
-        "V49"
+        "V49",
+        "G02"
       ],
       "sourceJoins": [
         {
@@ -1908,6 +1983,11 @@
           "sourceId": "W08",
           "section": "Structured Simplicity",
           "role": "women tailored pattern"
+        },
+        {
+          "sourceId": "G02",
+          "section": "CLASSIC IS PUNK!",
+          "role": "Pinstripes, herringbones and checks provide an independent fabric comparison; our low-contrast scale edit is selective."
         }
       ],
       "metricIds": [],
@@ -1986,7 +2066,7 @@
         {
           "sourceId": "G01",
           "section": "Floral coding",
-          "role": "Independent AW27/28 floral-material interpretation"
+          "role": "The independent floral study favours enlargement and abstraction; our open, shirt-scale botanical edit is a separate choice."
         }
       ],
       "metricIds": [],
@@ -2134,7 +2214,7 @@
         {
           "sourceId": "W15",
           "section": "Love Worn",
-          "role": "trade-show corroboration"
+          "role": "WGSN exhibition reporting of this material direction; not independent confirmation from a second publisher."
         },
         {
           "sourceId": "G01",
@@ -2201,7 +2281,8 @@
         "WS",
         "MP",
         "WP",
-        "V45"
+        "V45",
+        "WBA"
       ],
       "sourceJoins": [
         {
@@ -2218,6 +2299,11 @@
           "sourceId": "W15",
           "section": "Tactile Softness",
           "role": "material/finish execution"
+        },
+        {
+          "sourceId": "WBA",
+          "section": "Product Details / Features",
+          "role": "Existing insulated diamond-quilted lining provides a real assembly reference; removable padding remains a development choice."
         }
       ],
       "metricIds": [],
@@ -2297,6 +2383,11 @@
           "sourceId": "G03",
           "section": "LIVE YOUR EMOTIONS",
           "role": "Corduroy material context, not a collar engineering specification"
+        },
+        {
+          "sourceId": "WBA",
+          "section": "Product Details / Features",
+          "role": "The official barn-jacket description confirms corduroy collar trim; pile height, edge treatment and new combinations still require sampling."
         }
       ],
       "metricIds": [],
@@ -2355,7 +2446,8 @@
         "WS",
         "MP",
         "WP",
-        "V41"
+        "V41",
+        "WPT"
       ],
       "sourceJoins": [
         {
@@ -2372,6 +2464,11 @@
           "sourceId": "W05",
           "section": "Fashion silhouette: the #FunnelNeck top-layer shirt",
           "role": "women closure execution"
+        },
+        {
+          "sourceId": "WPT",
+          "section": "Product Details / Features",
+          "role": "A back-elasticated waist, belt loops and side-front pockets provide a local trouser detail reference alongside the outerwear sources."
         }
       ],
       "metricIds": [],
@@ -2432,7 +2529,8 @@
         "MS",
         "WS",
         "MP",
-        "WP"
+        "WP",
+        "G02"
       ],
       "sourceJoins": [
         {
@@ -2454,6 +2552,11 @@
           "sourceId": "W04",
           "section": "The crafted patchwork shirt",
           "role": "men garment craft"
+        },
+        {
+          "sourceId": "G02",
+          "section": "CLASSIC IS PUNK!",
+          "role": "The fair highlights embroidery and piping for shirting; our tonal local placement deliberately narrows that decoration."
         }
       ],
       "metricIds": [],
@@ -2513,7 +2616,8 @@
         "W20",
         "MACT",
         "MCOMF",
-        "V46"
+        "V46",
+        "MFLST"
       ],
       "sourceJoins": [
         {
@@ -2535,6 +2639,11 @@
           "sourceId": "MCOMF",
           "section": "Official product reference",
           "role": "Existing Mark’s comfort straight-leg baseline; newness must be more specific than comfort alone."
+        },
+        {
+          "sourceId": "MFLST",
+          "section": "Product Details / Features",
+          "role": "A specific Shambhala fleece straight pant has a drawcord waist; the listing establishes an existing end use, not new knit performance."
         }
       ],
       "metricIds": [],
@@ -2562,7 +2671,7 @@
       "gender": "Women & Men",
       "priority": "Core development",
       "summary": "The winter jogger combines a soft inner face with a cleaner outer line. Relaxed volume through the seat and thigh is brought into focus by a gathered hem, while a flat drawcord and controlled waistband keep details quiet. Loopback and brushed-back jersey provide different readings of tactile comfort.",
-      "whyMarks": "Fleece joggers and comfort bottoms are familiar Mark’s items. A more resolved inner handle, leg proportion and hem treatment give this winter development a distinct focus.",
+      "whyMarks": "Shambhala fleece joggers already use elastic drawcord waists and rib cuffs. A more resolved inner handle, leg proportion and choice of fixed or adjustable hem give the development a specific focus.",
       "whatChanges": "Compare a fixed gathered hem with a concealed adjustable opening. Balance relaxed thigh ease against ankle volume, then resolve waistband channels, pocket bulk and the brushed interior together on the finished garment.",
       "elements": [
         "Relaxed seat and thigh, tapering into a purposeful gathered hem.",
@@ -2598,7 +2707,8 @@
         "W19",
         "W20",
         "MACT",
-        "V46"
+        "V46",
+        "MFLJG"
       ],
       "sourceJoins": [
         {
@@ -2620,6 +2730,11 @@
           "sourceId": "MACT",
           "section": "Official category listing",
           "role": "Current Mark’s fleece/jogger baseline; presence does not establish performance or AW27/28 allocation."
+        },
+        {
+          "sourceId": "MFLJG",
+          "section": "Product Details / Features",
+          "role": "Existing fleece joggers use an elastic drawcord waist and fixed rib-knit cuffs; an adjustable hem remains a separate prototype option."
         }
       ],
       "metricIds": [],
@@ -2726,7 +2841,7 @@
       "gender": "Women & Men",
       "priority": "Material direction",
       "summary": "Loopback and brushed-back jersey offer two distinct inner handles for everyday knit pants. A clean outer face keeps the leg line composed, while the inside can remain looped or take on a softly raised surface. Cloth body and local thickness are developed around the intended straight or gathered silhouette.",
-      "whyMarks": "Comfort pants and joggers already belong to Mark’s offer. Distinct face-and-back combinations give the material programme a clear relationship to fit and seasonal handle.",
+      "whyMarks": "Shambhala's midweight fleece straight pant gives this study a concrete local end use. Loopback and brushed-back comparisons remain our material-development routes.",
       "whatChanges": "Compare loopback and lightly raised inner faces on identified base qualities. Review drape, knee recovery, waist bulk and pocket construction in the intended garment.",
       "elements": [
         "Loopback refers to interior loops. Single/double jersey describes knitted structure. Brushed fleece combines a knitted ground with a raised surface."
@@ -2751,7 +2866,9 @@
         "W18",
         "W19",
         "W20",
-        "V50"
+        "V50",
+        "MFLST",
+        "G02"
       ],
       "sourceJoins": [
         {
@@ -2768,6 +2885,16 @@
           "sourceId": "W20",
           "section": "Lazycore",
           "role": "Women’s material counterpart"
+        },
+        {
+          "sourceId": "MFLST",
+          "section": "Product Details / Features",
+          "role": "Existing midweight fleece straight pants establish the local use case; the product page does not specify loopback or a brushed reverse."
+        },
+        {
+          "sourceId": "G02",
+          "section": "FREESTYLE IS PUNK!",
+          "role": "Jerseys and sweatshirt fabrics with terry-like surfaces provide independent material context; reverse construction remains unspecified."
         }
       ],
       "metricIds": [],
@@ -2791,7 +2918,7 @@
       "gender": "Women & Men",
       "priority": "Material direction",
       "summary": "Double jersey brings a more defined body to everyday knitted trousers. Smooth faces and low-relief tonal structures offer different surface readings, with the cloth selected to support a clean straight or measured wide leg. The direction connects a composed appearance with the movement of a knitted construction.",
-      "whyMarks": "Mark’s comfort-bottoms wardrobe gives structured jersey a clear use. A more deliberate cloth body can refine how an everyday knitted trouser falls and holds its line.",
+      "whyMarks": "Mark's already sells utility trousers in Ponte de Roma knit. A cleaner straight or wide-leg block and its double-jersey selection are separate development choices.",
       "whatChanges": "Compare a smooth double jersey with a subtly structured alternative in the same trouser block. Resolve pocket shape, waist gathering and hem depth around each quality’s drape and recovery.",
       "elements": [
         "Double jersey is a construction family, not proof of a particular commercial ponte/scuba quality or four-way stretch."
@@ -2815,7 +2942,9 @@
       "sourceIds": [
         "W20",
         "W19",
-        "W18"
+        "W18",
+        "MPDR",
+        "G02"
       ],
       "sourceJoins": [
         {
@@ -2837,6 +2966,16 @@
           "sourceId": "W18",
           "section": "The sweatpant",
           "role": "Gender-inclusive full-length item anchor"
+        },
+        {
+          "sourceId": "MPDR",
+          "section": "Product Details / Features",
+          "role": "Mark's lists utility work pants in Ponte de Roma knit; this confirms an existing knit-pant use, not the specification of our cleaner trouser proposal."
+        },
+        {
+          "sourceId": "G02",
+          "section": "CLASSIC IS PUNK!",
+          "role": "Dimensional double knits provide independent material context; the clean trouser application remains our adaptation."
         }
       ],
       "metricIds": [],
@@ -2920,7 +3059,7 @@
       "gender": "Women & Men",
       "priority": "Construction study",
       "summary": "Discreet waist and hem construction gives knit pants more control over shape. A flat drawcord and considered elastic channels keep the waist composed, while an optional concealed hem cincher allows the leg to move between open and gathered. The detail is developed around comfort, adjustment and the uncinched silhouette.",
-      "whyMarks": "Comfort pants and joggers are familiar Mark’s items. A well-resolved waist and optional hem adjustment give a useful construction focus within those established shapes.",
+      "whyMarks": "Shambhala's fleece jogger already combines an elastic drawcord waist with fixed rib cuffs. The development opportunity is a cleaner waist and a separately engineered adjustable-hem option.",
       "whatChanges": "Develop a permanent open hem and an adjustable version separately. Resolve channel bulk, drawcord security and adjuster position, then review the leg with the hem both open and gathered.",
       "elements": [
         "Adjustment security and ease of use",
@@ -2935,7 +3074,8 @@
       ],
       "sourceIds": [
         "W18",
-        "W19"
+        "W19",
+        "MFLJG"
       ],
       "sourceJoins": [
         {
@@ -2947,6 +3087,11 @@
           "sourceId": "W19",
           "section": "Lazycore",
           "role": "Jersey/raised-surface bulk context"
+        },
+        {
+          "sourceId": "MFLJG",
+          "section": "Product Details / Features",
+          "role": "The existing jogger combines an elastic drawcord waist with fixed rib-knit cuffs; the convertible hem is our development option."
         }
       ],
       "metricIds": [],
@@ -3310,6 +3455,27 @@
       "publisher": "SWATCHON · QL-025945",
       "url": "https://www.swatchon.com/fabric/QL-025945",
       "season": "Current fabric reference · collection season not stated",
+      "publishedAt": null
+    },
+    "MFLST": {
+      "title": "Shambhala Women's Mid-Weight Fleece Straight Pant",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/pdp/shambhala-women-s-mid-weight-fleece-straight-pant-84385704f.html",
+      "season": "Current public product; season unspecified",
+      "publishedAt": null
+    },
+    "MFLJG": {
+      "title": "Shambhala Women's Fleece Jogger Pants",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/pdp/shambhala-women-s-fleece-jogger-pants-81313378f.html",
+      "season": "Current public product; season unspecified",
+      "publishedAt": null
+    },
+    "MPDR": {
+      "title": "Carhartt Women's Force Stretch Utility Knit Work Pants",
+      "publisher": "Mark's",
+      "url": "https://www.marks.com/en/pdp/carhartt-women-s-force-stretch-utility-knit-work-pants-75964448f.html",
+      "season": "Current public product; season unspecified",
       "publishedAt": null
     }
   },
@@ -3974,5 +4140,5 @@
     "AK_Q01",
     "AK_Q02"
   ],
-  "editorialScope": "An independent SOHO Fashion interpretation for Mark’s. Forecast research, observed fashion and supplier evidence retain their original dates and scope."
+  "editorialScope": "SOHO Fashion development judgments for Mark's Canada, A/W 27/28, informed by WGSN forecasts, original textile sources and Canadian assortment references. Source dates, geographic scope and original image seasons are retained."
 }

@@ -2,7 +2,7 @@
   'use strict';
 
   const scriptVersion = document.currentScript ? new URL(document.currentScript.src, location.href).searchParams.get('v') : '';
-  const DATA_URL = 'data/collections.json?v=' + encodeURIComponent(scriptVersion || '20261117perf1');
+  const DATA_URL = 'data/collections.json?v=' + encodeURIComponent(scriptVersion || '20261118audit1');
   const SELECTION_KEY = 'soho-collection-selection';
   const MATERIAL_KEY = 'soho-material-choice';
   const LABELS = [
@@ -11,15 +11,14 @@
     ['Composition', 'composition'],
     ['Weight', 'weight'],
     ['Care', 'care'],
-    ['Indicative cost', 'cost'],
     ['Target retail', 'retail'],
     ['Sample status', 'status']
   ];
-  const POSITIONS = ['0% 0%', '100% 0%', '0% 100%', '100% 100%'];
+  const inDevelopmentScope = item => item.type === 'outerwear' || item.type === 'top' && /\bshirt\b/i.test(item.name || '') || item.type === 'bottom' && !/\bjeans\b/i.test(item.name || '');
 
   let data = null;
   let product = null;
-  let selected = 0;
+  let selected = -1;
   let toastTimer = null;
 
   function el(tag, className, text) {
@@ -30,13 +29,13 @@
   }
 
   function selection() {
-    try { return JSON.parse(localStorage.getItem(SELECTION_KEY) || '[]'); } catch (e) { return []; }
+    try { const value=JSON.parse(localStorage.getItem(SELECTION_KEY) || '[]');return Array.isArray(value)?value:[]; } catch (e) { return []; }
   }
 
   function updateCount() {
     const count = document.getElementById('count');
     if (!count) return;
-    const total = selection().length;
+    const total = selection().filter(code=>data && data.products.some(item=>item.code===code)).length;
     count.textContent = total;
     count.hidden = total === 0;
   }
@@ -46,6 +45,7 @@
     if (!list.includes(code)) list.push(code);
     localStorage.setItem(SELECTION_KEY, JSON.stringify(list));
     updateCount();
+    if(window.dispatchEvent && typeof Event === 'function')window.dispatchEvent(new Event('soho:selection-change'));
   }
 
   function toast(message) {
@@ -54,30 +54,21 @@
     box.textContent = message;
     box.classList.add('show');
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => box.classList.remove('is-on'), 2600);
-  }
-
-  function swatchSource() {
-    const views = product.views || [];
-    return views.find(view => view.indexOf('05-detail') !== -1) ||
-      views[views.length - 1] || product.image;
+    toastTimer = setTimeout(() => box.classList.remove('show'), 2600);
   }
 
   function choose(index) {
-    selected = index;
     const material = product.materials[index];
-    localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name }));
-    try { const map = JSON.parse(localStorage.getItem('soho-material-choices') || '{}'); map[product.code] = material.name; localStorage.setItem('soho-material-choices', JSON.stringify(map)); } catch (error) { /* ignore */ }
-    addToSelection(product.code);
+    try { const map = JSON.parse(localStorage.getItem('soho-material-choices') || '{}'); map[product.code] = material.name; localStorage.setItem('soho-material-choices', JSON.stringify(map));localStorage.setItem(MATERIAL_KEY, JSON.stringify({ code: product.code, material: material.name }));addToSelection(product.code); } catch (error) {toast('This device could not save the material choice.');return;}
+    selected = index;
     const table = document.querySelector('.material-table');
     if (table) renderTable(table);
-    toast(`${material.name} selected — ${product.code} added to My Selection`);
+    toast(`${material.name} saved on this device only. Not sent.`);
   }
 
   function renderTable(table) {
     table.innerHTML = '';
     const materials = product.materials || [];
-    const source = swatchSource();
 
     const thead = document.createElement('thead');
     const headRow = document.createElement('tr');
@@ -85,9 +76,7 @@
     materials.forEach((material, index) => {
       const th = document.createElement('th');
       th.className = 'mat-head' + (index === selected ? ' selected' : '');
-      const swatch = el('div', 'mat-swatch');
-      swatch.style.backgroundImage = `url("${source}")`;
-      swatch.style.backgroundPosition = POSITIONS[index % POSITIONS.length];
+      const swatch = el('p', 'mat-evidence', material.status === 'Reference fabric' && product.imageKind !== 'concept' ? 'Recorded garment fabric' : 'Development direction · sampling required');
       th.append(
         swatch,
         el('div', 'mat-option', `Option ${String.fromCharCode(65 + index)}`),
@@ -126,20 +115,16 @@
 
   function render() {
     const code = new URLSearchParams(location.search).get('code');
-    product = data.products.find(item => item.code === code) || data.products[0];
+    product = code ? data.products.find(item => item.code === code) : data.products[0];
+    const root = document.getElementById('materials-view');root.innerHTML='';
+    if(!product){root.append(el('h1',null,'Style unavailable'),el('p',null,'Choose a style from the current development selection.'));const browse=el('a','text-link','Browse styles →');browse.href='collection-series.html';root.append(browse);return;}
     const materials = product.materials || [];
 
     let stored = null;
     try { stored = JSON.parse(localStorage.getItem(MATERIAL_KEY) || 'null'); } catch (e) { stored = null; }
-    if (stored && stored.code === product.code) {
-      const found = materials.findIndex(material => material.name === stored.material);
-      selected = found >= 0 ? found : 0;
-    } else {
-      selected = materials.length > 1 ? 1 : 0;
-    }
-
-    const root = document.getElementById('materials-view');
-    root.innerHTML = '';
+    let map={};try{map=JSON.parse(localStorage.getItem('soho-material-choices') || '{}');}catch{}
+    const chosen=map[product.code] || (stored && stored.code===product.code ? stored.material : '');
+    selected=materials.findIndex(material=>material.name===chosen);
 
     const head = el('div', 'materials-head');
     head.append(el('h1', null, 'Materials for this collection'));
@@ -159,7 +144,7 @@
     compare.append(el('strong', null, product.name), document.createTextNode(` / ${product.code} `));
     const productSelect = document.createElement('select');
     productSelect.setAttribute('aria-label', 'Choose style');
-    data.products.forEach(item => {
+    (new URLSearchParams(location.search).has('trend')?[product]:data.products).forEach(item => {
       const option = document.createElement('option');
       option.value = item.code;
       option.textContent = `${item.name} / ${item.code}`;
@@ -187,8 +172,11 @@
     if (source !== original) image.addEventListener('error', () => { image.src = original; }, {once: true});
     image.src = source;
     aside.append(image, el('p', 'm-code', product.code), el('p', 'm-name', product.name));
+    if(product.imageKind==='concept')aside.append(el('p','style-concept-label','Digital style concept · subject to physical development. Not an existing sample.'));
+    else if(/^AE-/.test(product.code))aside.append(el('p','style-concept-label','Legacy reference — source and physical sample not verified.'));
     const detailLink = el('a', null, 'View style details →');
-    detailLink.href = `collection-detail.html?code=${encodeURIComponent(product.code)}#materials`;
+    const detailParams=new URLSearchParams(location.search);detailParams.set('code',product.code);
+    detailLink.href = 'collection-detail.html?'+detailParams+'#materials';
     aside.append(detailLink);
     layout.append(aside);
 
@@ -196,7 +184,7 @@
     table.className = 'material-table';
     layout.append(table);
     root.append(layout);
-    root.append(el('p', 'materials-note', 'Fabric specifications and prices require confirmation.'));
+    root.append(el('p', 'materials-note', 'The style image does not show every alternative fabric. Proposed materials require sourcing, physical sampling and approval. Material properties require physical-sample review; sample availability is unconfirmed. Your choice is saved on this device only.'));
 
     renderTable(table);
   }
@@ -204,7 +192,7 @@
   fetch(DATA_URL)
     .then(response => response.json())
     .then(payload => {
-      data = payload;
+      data = {...payload,products:(payload.products || []).filter(inDevelopmentScope)};
       render();
       updateCount();
     })

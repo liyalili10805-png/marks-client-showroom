@@ -33,7 +33,7 @@
 
   function renderStatus() {
     const status = state.contentStatus || 'published';
-    statusEl.textContent = `${status === 'published' ? 'Published' : 'Draft'} · revision ${state.siteContent.revision || 1} · demo data`;
+    statusEl.textContent = `${status === 'published' ? 'Applied in this browser' : 'Draft'} · revision ${state.siteContent.revision || 1} · demo data`;
   }
 
   async function fillHero() {
@@ -88,7 +88,7 @@
         await DemoStore.save(state);
         const url = await objectUrl(id);
         if (url) img.src = url;
-        message(`Replaced image for ${product.code}. Save draft or publish.`);
+        message(`Replaced image for ${product.code}. Save a local draft or apply in this browser.`);
       } catch (error) {
         message(error.message);
       }
@@ -122,7 +122,7 @@
       await DemoStore.save(state);
       const url = await objectUrl(id);
       if (url) document.getElementById('hero-preview').src = url;
-      message('Hero image stored. Save draft or publish.');
+      message('Hero image stored. Save a local draft or apply in this browser.');
     } catch (error) {
       message(error.message);
     }
@@ -133,7 +133,7 @@
     state.contentStatus = 'draft';
     await DemoStore.save(state);
     renderStatus();
-    message('Draft saved. The storefront still shows the published version.');
+    message('Draft saved in this browser. No public website deployment occurred.');
   });
 
   document.getElementById('publish').addEventListener('click', async () => {
@@ -144,14 +144,14 @@
     state.siteContent.revision = (state.siteContent.revision || 1) + 1;
     await DemoStore.save(state);
     renderStatus();
-    message('Published. Open Preview or Collection to see the new version.');
+    message('Changes applied in this browser only. The public website has not been deployed.');
   });
 
   document.getElementById('withdraw').addEventListener('click', async () => {
     state.contentStatus = 'draft';
     await DemoStore.save(state);
     renderStatus();
-    message('Withdrawn. The storefront will show the previous published version.');
+    message('Local changes withdrawn. No public website deployment occurred.');
   });
 
   document.getElementById('restore').addEventListener('click', async () => {

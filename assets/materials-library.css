@@ -145,6 +145,10 @@
 .material-library-site .ml-detail-choices{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
 .material-library-site .ml-detail-choices button{border:1px solid var(--ml-line);background:none;padding:7px 10px;font-size:10px}
 .material-library-site .ml-detail-choices button[aria-pressed=true]{border-color:var(--ml-ink)}
+.material-library-site .ml-detail-choices button{display:flex;align-items:center;gap:8px;text-align:left;max-width:100%}
+.material-library-site .ml-detail-choices button img{width:42px;height:42px;flex-shrink:0;object-fit:cover}
+.material-library-site .ml-detail-choices button span{overflow-wrap:anywhere}
+.material-library-site .ml-storage-warning{font-size:12px;line-height:1.7;padding:16px 20px;background:var(--ml-paper);border:1px solid var(--ml-line);margin:24px 0;color:var(--ml-ink)}
 .material-library-site .ml-detail-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:auto;padding-top:10px}
 .material-library-site .ml-detail-scope{font-size:10px;line-height:1.65;color:var(--ml-muted);padding:15px 0 0;margin:0}
 .material-library-site .ml-detail-nav{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--ml-line);padding:13px 25px;font-size:10px;color:var(--ml-muted)}
