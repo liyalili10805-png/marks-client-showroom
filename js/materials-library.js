@@ -66,15 +66,39 @@
   }
   function image(src, alt, className, eager, priority) {
     const img = node('img', className);
+    const exactSource = safeImage(src);
     img.alt = alt || ''; img.loading = eager ? 'eager' : 'lazy'; img.decoding = 'async';
     img.fetchPriority = priority || 'auto';
     img.width = 600; img.height = 600;
-    if (src) img.src = safeImage(src);
+    if (exactSource) img.src = exactSource;
     img.addEventListener('error', () => {
       const missing = node('div', 'ml-image-unavailable'); missing.innerHTML = icons.missing;
       missing.append(node('span', null, 'Image temporarily unavailable'));
+      missing.setAttribute('role', 'status');
+      let control = img.parentNode;
+      while (control && control.tagName !== 'BUTTON' && control.tagName !== 'A') control = control.parentNode;
+      const previousLabel = control?.getAttribute('aria-label');
+      const retry = event => {
+        event?.preventDefault(); event?.stopImmediatePropagation();
+        if (control) {
+          control.removeEventListener('click', retry, true);
+          if (previousLabel == null) control.removeAttribute('aria-label'); else control.setAttribute('aria-label', previousLabel);
+        }
+        missing.replaceWith(img);
+        img.loading = 'eager'; img.fetchPriority = 'high';
+        // Retry the same verified source and srcset, without changing cloth or colourway.
+        img.src = exactSource;
+      };
+      if (exactSource) {
+        if (control) {
+          missing.append(node('span', null, 'Click to retry image'));
+          control.setAttribute('aria-label', 'Retry image: ' + (alt || 'material reference'));
+          // Reuse the existing image button/link, so no interactive control is nested inside it.
+          control.addEventListener('click', retry, {capture: true, once: true});
+        } else missing.append(button('Retry image', 'ml-text-button', retry));
+      }
       img.replaceWith(missing);
-    }, {once: true});
+    });
     if (!src) requestAnimationFrame(() => img.dispatchEvent(new Event('error')));
     return img;
   }
@@ -119,7 +143,8 @@
       const item = byId.get(n.dataset.saveId);
       if (n.classList.contains('ml-save')) n.setAttribute('aria-label', (saved ? 'Remove ' : 'Save ') + (item ? item.title : 'material') + (saved ? ' from board' : ' to board'));
       else if (n.dataset.choiceName != null) {
-        const record = board.get(n.dataset.saveId), selected = saved && record.colorway === n.dataset.choiceName && (record.colorwayImage || '') === n.dataset.choiceImage;
+        const record = board.get(n.dataset.saveId), recordedImage = record && (record.colorwayImage || (!record.colorway ? item?.image || '' : ''));
+        const selected = saved && record.colorway === n.dataset.choiceName && recordedImage === n.dataset.choiceImage;
         n.setAttribute('aria-pressed', String(selected));
         n.textContent = selected ? boardPersistenceFailed ? 'In this tab · export to keep' : 'Saved to Material Board ✓' : n.dataset.choiceName ? 'Save selected colourway' : 'Save to Material Board';
       } else n.textContent = saved ? boardPersistenceFailed ? 'In this tab · export to keep' : 'Saved to Material Board ✓' : 'Save to Material Board';
@@ -131,8 +156,9 @@
     const name = choice ? choice.name : colorway;
     const candidates = item.colorways.filter(c => c.name === name);
     const selected = choice || (candidates.length === 1 ? candidates[0] : null);
-    if (!board.has(item.id)) board.set(item.id, {id: item.id, note: '', group: '', colorway: name || '', colorwayImage: selected?.image || ''});
-    else if (colorway != null) Object.assign(board.get(item.id), {colorway: name || '', colorwayImage: selected?.image || ''});
+    const colorwayImage = selected?.image || (!name ? item.image : '');
+    if (!board.has(item.id)) board.set(item.id, {id: item.id, note: '', group: '', colorway: name || '', colorwayImage});
+    else if (colorway != null) Object.assign(board.get(item.id), {colorway: name || '', colorwayImage});
     if (!deferCommit) { const saved = persist(); countUpdate(); return saved; }
     return true;
   }
@@ -358,14 +384,6 @@
       const detail = node('details', 'ml-filter'); detail.dataset.filterKey = f.key;
       const summary = node('summary'); summary.append(node('span', null, f.label), node('span', 'ml-filter-count')); detail.append(summary);
       const pop = node('div', 'ml-filter-pop');
-      const counts = new Map();
-      items.forEach(i => valuesFor(i, f.key).forEach(v => { if (v) counts.set(v, (counts.get(v) || 0) + 1); }));
-      if (f.key === 'source') Object.keys(SOURCE).forEach(k => { if (!counts.has(k)) counts.set(k, 0); });
-      [...counts.keys()].sort((a, b) => labelFor(f.key, a).localeCompare(labelFor(f.key, b))).forEach(value => {
-        const label = node('label'), check = node('input'); check.type = 'checkbox'; check.value = value; check.dataset.filter = f.key;
-        check.addEventListener('change', () => { if (check.checked) state[f.key].add(value); else state[f.key].delete(value); updateLibrary(); });
-        label.append(check, node('span', null, labelFor(f.key, value)), node('span', 'ml-option-count', counts.get(value))); pop.append(label);
-      });
       detail.append(pop); detail.addEventListener('toggle', () => { if (detail.open) filters.querySelectorAll('details').forEach(d => { if (d !== detail) d.open = false; }); }); filters.append(detail);
     });
     filters.append(node('span', 'ml-filter-note', 'A considered library for everyday development')); root.append(filters);
@@ -394,9 +412,28 @@
     root.querySelectorAll('[data-filter]').forEach(check => { check.checked = state[check.dataset.filter].has(check.value); });
     root.querySelectorAll('[data-filter-key]').forEach(d => { const n = state[d.dataset.filterKey].size, b = d.querySelector('.ml-filter-count'); b.textContent = n; b.hidden = !n; });
   }
+  function syncFilterOptions() {
+    const pool = trendPool().filter(item => state.type === 'all' || item.type === state.type);
+    FILTERS.forEach(f => {
+      const pop = root.querySelector('[data-filter-key="' + f.key + '"] .ml-filter-pop'); if (!pop) return;
+      const optionCounts = new Map();
+      pool.forEach(item => valuesFor(item, f.key).forEach(value => { if (value) optionCounts.set(value, (optionCounts.get(value) || 0) + 1); }));
+      if (f.key === 'source' && !hasTrendSelection()) Object.keys(SOURCE).forEach(key => { if (!optionCounts.has(key)) optionCounts.set(key, 0); });
+      // A selected out-of-scope URL filter stays visible and removable with a truthful zero count.
+      state[f.key].forEach(value => { if (!optionCounts.has(value)) optionCounts.set(value, 0); });
+      const options = [...optionCounts].sort(([a], [b]) => labelFor(f.key, a).localeCompare(labelFor(f.key, b)));
+      const signature = JSON.stringify(options); if (pop.dataset.optionsSignature === signature) return;
+      pop.dataset.optionsSignature = signature; pop.replaceChildren();
+      options.forEach(([value, count]) => {
+        const label = node('label'), check = node('input'); check.type = 'checkbox'; check.value = value; check.dataset.filter = f.key;
+        check.addEventListener('change', () => { if (check.checked) state[f.key].add(value); else state[f.key].delete(value); updateLibrary(); });
+        label.append(check, node('span', null, labelFor(f.key, value)), node('span', 'ml-option-count', count)); pop.append(label);
+      });
+    });
+  }
   function updateLibrary(replace, initial) {
     if (!initial) state.page = 1;
-    matches = filtered(); state.page = clampPage(state.page); syncControls(); renderTrendContext(); renderChips(); renderGrid();
+    matches = filtered(); state.page = clampPage(state.page); syncFilterOptions(); syncControls(); renderTrendContext(); renderChips(); renderGrid();
     writeState(replace || initial);
   }
   function renderChips() {
@@ -474,7 +511,7 @@
   function previewFor(item, colourway) { return colourway ? colourway.displayThumbnail || colourway.displayImage || colourway.thumbnail || colourway.image || item.displayThumbnail || item.displayImage || item.thumbnail || item.image : item.displayThumbnail || item.displayImage || item.thumbnail || item.image; }
   function prioritiseCard(article, position) {
     const img = article.querySelector('img'); if (!img) return;
-    const width = window.innerWidth || 1440, row = width < 700 ? 2 : width < 1000 ? 3 : width >= 1700 ? 5 : 4;
+    const width = window.innerWidth || 1440, row = width < 700 ? 2 : article.classList.contains('ml-board-card') ? (width < 1000 ? 3 : 4) : width >= 1700 ? 4 : 3;
     img.loading = position < row ? 'eager' : 'lazy'; img.fetchPriority = position === 0 ? 'high' : position < row ? 'auto' : 'low';
     img.width = 400; img.height = 400;
   }
@@ -584,7 +621,10 @@
     const b = button('×', 'ml-dialog-close', closeDialog); b.setAttribute('aria-label', 'Close dialog'); return b;
   }
   function galleryFor(item) {
-    const gallery = [{src: item.image, thumbnail: item.thumbnail, caption: item.imageCaption || (item.sourceType === 'studio' ? 'AI-assisted design concept' : 'Published material reference')}];
+    const detail = safeImage(item.detailImage);
+    const caption = item.imageCaption || (item.sourceType === 'studio' ? 'AI-assisted design concept' : 'Published material reference');
+    const gallery = [{src: detail || item.image, thumbnail: detail ? safeImage(item.detailThumbnail) || item.thumbnail : item.thumbnail, caption: detail ? item.detailCaption || caption : caption}];
+    if (detail && detail !== item.image) gallery.push({src: item.image, thumbnail: item.thumbnail, caption});
     (item.images || []).forEach(v => { const src = safeImage(v); if (src && !gallery.some(x => x.src === src)) gallery.push({src, thumbnail: safeImage(typeof v === 'object' ? v.thumbnail : '') || item.colorways.find(c => c.image === src)?.thumbnail, caption: typeof v === 'object' ? v.caption || v.alt || '' : ''}); });
     return gallery;
   }
@@ -636,27 +676,30 @@
     const d = ensureDialog(); d.replaceChildren(closeButton());
     const layout = node('div', 'ml-detail-layout'), visual = node('div', 'ml-detail-visual'), gallery = galleryFor(item);
     const linkedColourway = options?.fromUrl && state.colourway ? item.colorways.find(c => c.image === state.colourway) : null;
+    const linkedBaseView = !!(options?.fromUrl && state.colourway === item.image);
     const invalidLinkedColourway = !!(options?.fromUrl && state.colourway && state.colourway !== item.image && !linkedColourway);
-    const initialColourway = linkedColourway || (invalidLinkedColourway ? null : boardColourway(item, board.get(id)));
+    const initialColourway = linkedColourway || (linkedBaseView || invalidLinkedColourway ? null : boardColourway(item, board.get(id)));
     const replaceUrl = !!options?.fromUrl || state.material === id;
-    state.material = id; state.colourway = initialColourway?.image || null; writeState(replaceUrl);
-    let selectedColorway = initialColourway || null, choices;
+    state.material = id; state.colourway = initialColourway?.image || (linkedBaseView ? item.image : null); writeState(replaceUrl);
+    let selectedColorway = initialColourway || null, explicitBaseView = linkedBaseView, choices;
     const zoom = button('', 'ml-detail-zoom'); zoom.setAttribute('aria-label', 'Enlarge material image');
     zoom.setAttribute('aria-pressed', 'false');
     zoom.addEventListener('click', () => { const active = zoom.classList.toggle('is-zoomed'); zoom.setAttribute('aria-label', active ? 'Reduce material image' : 'Enlarge material image'); zoom.setAttribute('aria-pressed', String(active)); });
-    const mainImage = image(initialColourway?.image || item.image, item.title, 'ml-detail-mainimage', true, 'high'); zoom.append(mainImage);
-    const caption = node('p', 'ml-detail-image-caption', initialColourway?.image ? initialColourway.name : gallery[0].caption); visual.append(zoom, caption);
+    const initialImage = initialColourway?.image || (linkedBaseView || invalidLinkedColourway ? item.image : gallery[0].src);
+    const initialCaption = initialColourway?.image ? initialColourway.name : gallery.find(g => g.src === initialImage)?.caption || '';
+    const mainImage = image(initialImage, item.title, 'ml-detail-mainimage', true, 'high'); zoom.append(mainImage);
+    const caption = node('p', 'ml-detail-image-caption', initialCaption); visual.append(zoom, caption);
     const replaceImage = (src, text) => { zoom.classList.remove('is-zoomed'); zoom.setAttribute('aria-label', 'Enlarge material image'); zoom.setAttribute('aria-pressed', 'false'); zoom.replaceChildren(image(src, item.title, 'ml-detail-mainimage', true, 'high')); caption.textContent = text || ''; };
     const syncColourwayControls = () => {
       if (choices) choices.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.colourwayImage === selectedColorway?.image)));
-      state.colourway = selectedColorway?.image || null; writeState(true);
-      save.dataset.choiceName = selectedColorway?.name || ''; save.dataset.choiceImage = selectedColorway?.image || ''; countUpdate();
+      state.colourway = selectedColorway?.image || (explicitBaseView ? item.image : null); writeState(true);
+      save.dataset.choiceName = selectedColorway?.name || ''; save.dataset.choiceImage = selectedColorway?.image || item.image; countUpdate();
     };
     if (gallery.length > 1) {
       const thumbs = node('div', 'ml-thumbnails'); thumbs.setAttribute('aria-label', 'Material image views');
       gallery.forEach((g, index) => {
-        const b = button('', '', () => { replaceImage(g.src, g.caption); selectedColorway = item.colorways.find(c => c.image === g.src) || null; syncColourwayControls(); thumbs.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true'); });
-        b.setAttribute('aria-label', 'View image ' + (index + 1)); b.setAttribute('aria-pressed', String(g.src === (initialColourway?.image || item.image))); b.append(image(g.thumbnail || g.src, '', '', true)); thumbs.append(b);
+        const b = button('', '', () => { replaceImage(g.src, g.caption); selectedColorway = item.colorways.find(c => c.image === g.src) || null; explicitBaseView = g.src === item.image; syncColourwayControls(); thumbs.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true'); });
+        b.setAttribute('aria-label', 'View image ' + (index + 1)); b.setAttribute('aria-pressed', String(g.src === initialImage)); b.append(image(g.thumbnail || g.src, '', '', true)); thumbs.append(b);
       }); visual.append(thumbs);
     }
     const copy = node('div', 'ml-detail-copy');
@@ -664,7 +707,7 @@
     copy.append(node('p', 'ml-detail-desc', item.description || 'A material reference selected for further exploration in everyday apparel.'));
     copy.append(node('p', 'ml-status ml-status--' + item.status, STATUS[item.status]));
     const fields = node('dl', 'ml-detail-fields');
-    [['Family', item.family], ['Structure', item.structure || item.technique], ['Composition', item.composition], ['Listed weight', item.weight], ['Listed width', item.width], ['Handle reference', item.handle], ['Colour', item.colors.join(' / ')], ['Application', item.uses.join(' / ')], ['Development season', item.developmentSeasons.join(' / ')], ['Source season', item.season], ['Library source', SOURCE[item.sourceType]]].forEach(([key, value]) => {
+    [['Family', item.family], ['Structure', item.structure || item.technique], ['Composition', item.composition], ['Listed weight', item.weight], ['Listed width', item.width], ['Listed thickness', item.thickness], ['Listed finish', item.finish], ['Handle reference', item.handle], ['Colour', item.colors.join(' / ')], ['Application', item.uses.join(' / ')], ['Development season', item.developmentSeasons.join(' / ')], ['Source season', item.season], ['Library source', SOURCE[item.sourceType]]].forEach(([key, value]) => {
       if (!value) return;
       const row = node('div'); row.append(node('dt', null, key), node('dd', null, value)); fields.append(row);
     }); copy.append(fields);
@@ -724,7 +767,7 @@
     const head = node('thead'), tr = node('tr'); tr.append(node('th', null, 'Material'));
     selected.forEach(i => { const th = node('th'); th.append(image(previewFor(i), i.title, '', true), node('p', 'ml-compare-name', i.title), node('p', 'ml-compare-id', i.id)); tr.append(th); }); head.append(tr); table.append(head);
     const tbody = node('tbody');
-    [['Type', i => i.type === 'fabric' ? 'Fabric' : 'Pattern'], ['Family', i => i.family], ['Structure', i => i.structure || i.technique || 'Not specified'], ['Colour', i => i.colors.join(' / ') || 'See reference'], ['Application', i => i.uses.join(' / ') || 'To be developed'], ['Source', i => SOURCE[i.sourceType]], ['Status', i => STATUS[i.status]], ['Development season', i => i.developmentSeasons.join(' / ') || 'Not assigned'], ['Source season', i => i.season]].forEach(([label, getter]) => {
+    [['Type', i => i.type === 'fabric' ? 'Fabric' : 'Pattern'], ['Family', i => i.family], ['Structure', i => i.structure || i.technique || 'Not specified'], ['Listed composition', i => i.composition || 'Not listed'], ['Listed weight', i => i.weight || 'Not listed'], ['Listed width', i => i.width || 'Not listed'], ['Listed thickness', i => i.thickness || 'Not listed'], ['Colour', i => i.colors.join(' / ') || 'See reference'], ['Application', i => i.uses.join(' / ') || 'To be developed'], ['Source', i => SOURCE[i.sourceType]], ['Status', i => STATUS[i.status]], ['Development season', i => i.developmentSeasons.join(' / ') || 'Not assigned'], ['Source season', i => i.season]].forEach(([label, getter]) => {
       const row = node('tr'); const th = node('th', null, label); th.scope = 'row'; row.append(th); selected.forEach(i => row.append(node('td', null, getter(i)))); tbody.append(row);
     });
     const action = node('tr'); action.append(node('th', null, 'Board'));
@@ -770,7 +813,7 @@
     return [...board.values()].map(r => {
       const i = byId.get(r.id);
       const selected = i ? boardColourway(i, r) : null;
-      return {id: r.id, title: i?.title || 'Reference no longer in library', type: i?.type || '', family: i?.family || '', colourway: r.colorway, colourwayImage: selected?.image || r.colorwayImage || '', colours: (r.colorway && !selected ? [] : selected?.colors || i?.colors || []).join(' / '), application: i?.uses.join(' / ') || '', developmentSeason: i?.developmentSeasons.join(' / ') || '', status: i ? STATUS[i.status] : '', source: i ? SOURCE[i.sourceType] : '', group: r.group, note: r.note};
+      return {id: r.id, title: i?.title || 'Reference no longer in library', type: i?.type || '', family: i?.family || '', colourway: r.colorway, colourwayImage: selected?.image || r.colorwayImage || (!r.colorway ? i?.image || '' : ''), colours: (r.colorway && !selected ? [] : selected?.colors || i?.colors || []).join(' / '), application: i?.uses.join(' / ') || '', developmentSeason: i?.developmentSeasons.join(' / ') || '', status: i ? STATUS[i.status] : '', source: i ? SOURCE[i.sourceType] : '', group: r.group, note: r.note, composition: i?.composition || '', weight: i?.weight || '', width: i?.width || '', thickness: i?.thickness || ''};
     });
   }
   function download(content, type, filename) {
@@ -781,8 +824,8 @@
     const rows = boardRows(), stamp = new Date().toISOString().slice(0, 10);
     if (format === 'json') download(JSON.stringify({title: 'SOHO Material Board', exportedAt: new Date().toISOString(), materials: rows}, null, 2), 'application/json', 'SOHO-Material-Board-' + stamp + '.json');
     else {
-      const headers = ['Material ID', 'Title', 'Type', 'Family', 'Selected colourway', 'Colourway reference image', 'Colours', 'Application', 'Development season', 'Sample status', 'Library source', 'Board group', 'Development note'];
-      const keys = ['id', 'title', 'type', 'family', 'colourway', 'colourwayImage', 'colours', 'application', 'developmentSeason', 'status', 'source', 'group', 'note'];
+      const headers = ['Material ID', 'Title', 'Type', 'Family', 'Selected colourway', 'Colourway reference image', 'Colours', 'Application', 'Development season', 'Sample status', 'Library source', 'Board group', 'Development note', 'Listed composition', 'Listed weight', 'Listed width', 'Listed thickness'];
+      const keys = ['id', 'title', 'type', 'family', 'colourway', 'colourwayImage', 'colours', 'application', 'developmentSeason', 'status', 'source', 'group', 'note', 'composition', 'weight', 'width', 'thickness'];
       const escape = v => '"' + String(v ?? '').replace(/"/g, '""') + '"';
       const formulaSafe = v => /^(?:[\s\u0000-\u001f]*[=+\-@]|[\t\r\n])/.test(String(v)) ? "'" + v : v;
       const csv = [headers.map(escape).join(','), ...rows.map(r => keys.map(k => escape(formulaSafe(r[k]))).join(','))].join('\r\n');

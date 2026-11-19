@@ -11,7 +11,7 @@
           "materialId": "MF086",
           "role": "Main cloth / clean tailoring",
           "reason": "The photographed fine diagonal and neutral beige ground provide a restrained woven alternative for the front pleats and curved leg. This changes the original brown colour.",
-          "review": "Check drape and pleat retention; fibre percentages and finished weight are not supplied.",
+          "review": "Check drape and pleat retention on a sample; confirm the listed fibre composition and finished weight before approving the trouser.",
           "colourwayImage": "assets/material-library/MF086.webp",
           "research": [
             {
@@ -137,7 +137,7 @@
           "materialId": "MF086",
           "role": "Main cloth / tailoring alternative",
           "reason": "Beige gabardine offers a finer diagonal and neutral alternative for the pressed-crease wide-leg silhouette.",
-          "review": "Review drape and re-pressing performance; composition percentages are unconfirmed.",
+          "review": "Review drape and re-pressing performance; confirm the listed composition on the current sample.",
           "colourwayImage": "assets/material-library/MF086.webp",
           "research": [
             {
@@ -219,7 +219,7 @@
           "materialId": "MF020",
           "role": "Main cloth / neutral corduroy",
           "reason": "Beige corduroy gives a distinct neutral ribbed alternative while retaining the tactile trouser direction.",
-          "review": "Check wear resistance, stretch if needed and bulk at pockets; blend percentages are not supplied.",
+          "review": "Check wear resistance, stretch if needed and bulk at pockets; confirm the listed blend percentages on the current sample.",
           "colourwayImage": "assets/material-library/MF020.webp",
           "research": [
             {
@@ -267,7 +267,7 @@
           "materialId": "MF020",
           "role": "Main cloth / neutral corduroy",
           "reason": "Beige corduroy gives a distinct neutral ribbed alternative while retaining the tactile trouser direction.",
-          "review": "Check wear resistance, stretch if needed and bulk at pockets; blend percentages are not supplied.",
+          "review": "Check wear resistance, stretch if needed and bulk at pockets; confirm the listed blend percentages on the current sample.",
           "colourwayImage": "assets/material-library/MF020.webp",
           "research": [
             {
@@ -328,7 +328,7 @@
           "materialId": "MF020",
           "role": "Main cloth / neutral corduroy",
           "reason": "Beige corduroy gives a distinct neutral ribbed alternative while retaining the tactile trouser direction.",
-          "review": "Check wear resistance, stretch if needed and bulk at pockets; blend percentages are not supplied.",
+          "review": "Check wear resistance, stretch if needed and bulk at pockets; confirm the listed blend percentages on the current sample.",
           "colourwayImage": "assets/material-library/MF020.webp",
           "research": [
             {
@@ -969,7 +969,7 @@
           "materialId": "MF020",
           "role": "Main cloth / neutral corduroy",
           "reason": "Beige corduroy gives a distinct neutral ribbed alternative while retaining the tactile trouser direction.",
-          "review": "Check wear resistance, stretch if needed and bulk at pockets; blend percentages are not supplied.",
+          "review": "Check wear resistance, stretch if needed and bulk at pockets; confirm the listed blend percentages on the current sample.",
           "colourwayImage": "assets/material-library/MF020.webp",
           "research": [
             {
@@ -1127,7 +1127,7 @@
           "materialId": "MF020",
           "role": "Main cloth / neutral corduroy",
           "reason": "Beige corduroy gives a distinct neutral ribbed alternative while retaining the tactile trouser direction.",
-          "review": "Check wear resistance, stretch if needed and bulk at pockets; blend percentages are not supplied.",
+          "review": "Check wear resistance, stretch if needed and bulk at pockets; confirm the listed blend percentages on the current sample.",
           "colourwayImage": "assets/material-library/MF020.webp",
           "research": [
             {
@@ -1264,7 +1264,7 @@
           "materialId": "MF117",
           "role": "Main cloth / tricot candidate",
           "reason": "Brown striated tricot provides a real knit reference for developing the high-rise legging concept.",
-          "review": "The photograph does not establish stretch or opacity. Test before cutting a close-fitting sample.",
+          "review": "The photograph does not establish stretch or opacity. Test before cutting a close-fitting sample. Available source stretch fields conflict; directional stretch and recovery must be established on the actual cloth.",
           "colourwayImage": "assets/material-library/MF117.webp",
           "research": [
             {
@@ -1281,7 +1281,7 @@
           "materialId": "MF119",
           "role": "Main cloth / tricot alternative",
           "reason": "Ivory nylon-blend tricot offers a different colour and fibre direction for the same knit concept.",
-          "review": "Opacity, stretch and recovery are critical and unverified.",
+          "review": "Opacity, stretch and recovery are critical and unverified. Available source stretch fields conflict; directional stretch and recovery must be established on the actual cloth.",
           "colourwayImage": "assets/material-library/MF119.webp",
           "research": [
             {
@@ -1321,7 +1321,7 @@
           "materialId": "MF117",
           "role": "Main cloth / tricot candidate",
           "reason": "Brown striated tricot provides a real knit reference for developing the legging shell.",
-          "review": "The photograph does not establish stretch or opacity. Test before cutting a close-fitting sample.",
+          "review": "The photograph does not establish stretch or opacity. Test before cutting a close-fitting sample. Available source stretch fields conflict; directional stretch and recovery must be established on the actual cloth.",
           "colourwayImage": "assets/material-library/MF117.webp",
           "research": [
             {
@@ -1338,7 +1338,7 @@
           "materialId": "MF119",
           "role": "Main cloth / tricot alternative",
           "reason": "Ivory nylon-blend tricot offers a different colour and fibre direction for the legging shell.",
-          "review": "Opacity, stretch and recovery are critical and unverified.",
+          "review": "Opacity, stretch and recovery are critical and unverified. Available source stretch fields conflict; directional stretch and recovery must be established on the actual cloth.",
           "colourwayImage": "assets/material-library/MF119.webp",
           "research": [
             {
@@ -1431,5 +1431,5 @@
       ]
     }
   },
-  "release": "20261119photo2"
+  "release": "20261119full1"
 }

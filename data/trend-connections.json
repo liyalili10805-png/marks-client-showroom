@@ -2137,14 +2137,14 @@
       "materialTerms": [
         {
           "key": "loopback",
-          "label": "French terry / loopback",
+          "label": "Brushed-back French terry",
           "ids": [
             "MF068",
             "MF069",
             "MF070"
           ],
           "tier": "direct",
-          "rationale": "The French Terry records identify the loopback construction family, providing an alternative to a raised inner face."
+          "rationale": "These cotton French terry qualities have a source-listed brushed reverse. They illustrate a softened-back sweatshirt-knit route, rather than an unbrushed loopback reverse. Review actual reverse, bulk, shrinkage and trouser hang on a sample."
         },
         {
           "key": "double-jersey",
@@ -2207,14 +2207,14 @@
         },
         {
           "key": "loopback",
-          "label": "French terry / loopback",
+          "label": "Brushed-back French terry",
           "ids": [
             "MF068",
             "MF069",
             "MF070"
           ],
           "tier": "direct",
-          "rationale": "The French Terry records identify the loopback construction family, providing an alternative to a raised inner face."
+          "rationale": "These cotton French terry qualities have a source-listed brushed reverse. They illustrate a softened-back sweatshirt-knit route, rather than an unbrushed loopback reverse. Review actual reverse, bulk, shrinkage and trouser hang on a sample."
         },
         {
           "key": "double-jersey",
@@ -2276,8 +2276,8 @@
             "MF058",
             "MF059"
           ],
-          "tier": "direct",
-          "rationale": "Recorded rib structure provides a knitted-surface candidate only; fineness, opacity in movement, stretch and recovery are not confirmed."
+          "tier": "alternative",
+          "rationale": "These references identify a rib-knit surface only. Fine gauge, extension opacity, recovery and waist stability are not established; they are development alternatives for studio bottoms pending physical trials."
         },
         {
           "key": "smooth-jersey",
@@ -2311,14 +2311,14 @@
       "materialTerms": [
         {
           "key": "loopback",
-          "label": "French terry / loopback",
+          "label": "Brushed-back French terry",
           "ids": [
             "MF068",
             "MF069",
             "MF070"
           ],
           "tier": "direct",
-          "rationale": "The French Terry records identify the loopback construction family, providing an alternative to a raised inner face."
+          "rationale": "These cotton French terry qualities have a source-listed brushed reverse. They illustrate a softened-back sweatshirt-knit route, rather than an unbrushed loopback reverse. Review actual reverse, bulk, shrinkage and trouser hang on a sample."
         },
         {
           "key": "brushed-back",
@@ -2414,8 +2414,8 @@
             "MF058",
             "MF059"
           ],
-          "tier": "direct",
-          "rationale": "Recorded rib structure provides a knitted-surface candidate only; fineness, opacity in movement, stretch and recovery are not confirmed."
+          "tier": "alternative",
+          "rationale": "These references identify a rib-knit surface only. Fine gauge, extension opacity, recovery and waist stability are not established; they are development alternatives for studio bottoms pending physical trials."
         },
         {
           "key": "smooth-jersey",
@@ -2465,14 +2465,14 @@
         },
         {
           "key": "loopback",
-          "label": "French terry / loopback",
+          "label": "Brushed-back French terry",
           "ids": [
             "MF068",
             "MF069",
             "MF070"
           ],
           "tier": "alternative",
-          "rationale": "French terry offers an unbrushed loopback ground for waist and hem-channel trials; the adjuster and finished assembly remain separate."
+          "rationale": "These cotton French terry qualities have a source-listed brushed reverse. They illustrate a softened-back sweatshirt-knit route, rather than an unbrushed loopback reverse. Review actual reverse, bulk, shrinkage and trouser hang on a sample."
         },
         {
           "key": "brushed-back",
@@ -2489,5 +2489,5 @@
       ]
     }
   },
-  "release": "20261119photo2"
+  "release": "20261119full1"
 }
