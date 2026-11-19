@@ -64,15 +64,26 @@
     if (/^(?:javascript|data|blob):/i.test(src)) return '';
     return src;
   }
-  function image(src, alt, className, eager, priority) {
+  function previewBackground(value) {
+    const src = safeImage(value); if (!src) return '';
+    try {
+      const url = new URL(src, location.href); if (!['https:', 'http:'].includes(url.protocol)) return '';
+      return 'url("' + url.href.replace(/["\\\n\r\f]/g, character => '\\' + character.charCodeAt(0).toString(16) + ' ') + '")';
+    } catch (_) { return ''; }
+  }
+  function image(src, alt, className, eager, priority, matchingThumbnail) {
     const img = node('img', className);
     const exactSource = safeImage(src);
+    const pendingPreview = previewBackground(matchingThumbnail);
+    const showPreview = () => { img.style.backgroundImage = pendingPreview; };
     img.alt = alt || ''; img.loading = eager ? 'eager' : 'lazy'; img.decoding = 'async';
     img.fetchPriority = priority || 'auto';
     img.width = 600; img.height = 600;
-    if (exactSource) img.src = exactSource;
+    showPreview();
+    img.addEventListener('load', () => { img.style.backgroundImage = ''; });
     img.addEventListener('error', () => {
       const missing = node('div', 'ml-image-unavailable'); missing.innerHTML = icons.missing;
+      if (pendingPreview) { missing.classList.add('ml-detail-image-unavailable'); missing.style.backgroundImage = pendingPreview; }
       missing.append(node('span', null, 'Image temporarily unavailable'));
       missing.setAttribute('role', 'status');
       let control = img.parentNode;
@@ -84,7 +95,7 @@
           control.removeEventListener('click', retry, true);
           if (previousLabel == null) control.removeAttribute('aria-label'); else control.setAttribute('aria-label', previousLabel);
         }
-        missing.replaceWith(img);
+        showPreview(); missing.replaceWith(img);
         img.loading = 'eager'; img.fetchPriority = 'high';
         // Retry the same verified source and srcset, without changing cloth or colourway.
         img.src = exactSource;
@@ -99,6 +110,7 @@
       }
       img.replaceWith(missing);
     });
+    if (exactSource) img.src = exactSource;
     if (!src) requestAnimationFrame(() => img.dispatchEvent(new Event('error')));
     return img;
   }
@@ -623,7 +635,7 @@
   function galleryFor(item) {
     const detail = safeImage(item.detailImage);
     const caption = item.imageCaption || (item.sourceType === 'studio' ? 'AI-assisted design concept' : 'Published material reference');
-    const gallery = [{src: detail || item.image, thumbnail: detail ? safeImage(item.detailThumbnail) || item.thumbnail : item.thumbnail, caption: detail ? item.detailCaption || caption : caption}];
+    const gallery = [{src: detail || item.image, thumbnail: detail ? safeImage(item.detailThumbnail) : item.thumbnail, caption: detail ? item.detailCaption || caption : caption}];
     if (detail && detail !== item.image) gallery.push({src: item.image, thumbnail: item.thumbnail, caption});
     (item.images || []).forEach(v => { const src = safeImage(v); if (src && !gallery.some(x => x.src === src)) gallery.push({src, thumbnail: safeImage(typeof v === 'object' ? v.thumbnail : '') || item.colorways.find(c => c.image === src)?.thumbnail, caption: typeof v === 'object' ? v.caption || v.alt || '' : ''}); });
     return gallery;
@@ -687,9 +699,10 @@
     zoom.addEventListener('click', () => { const active = zoom.classList.toggle('is-zoomed'); zoom.setAttribute('aria-label', active ? 'Reduce material image' : 'Enlarge material image'); zoom.setAttribute('aria-pressed', String(active)); });
     const initialImage = initialColourway?.image || (linkedBaseView || invalidLinkedColourway ? item.image : gallery[0].src);
     const initialCaption = initialColourway?.image ? initialColourway.name : gallery.find(g => g.src === initialImage)?.caption || '';
-    const mainImage = image(initialImage, item.title, 'ml-detail-mainimage', true, 'high'); zoom.append(mainImage);
+    const initialThumbnail = initialColourway ? initialColourway.thumbnail : gallery.find(g => g.src === initialImage)?.thumbnail;
+    const mainImage = image(initialImage, item.title, 'ml-detail-mainimage', true, 'high', initialThumbnail); zoom.append(mainImage);
     const caption = node('p', 'ml-detail-image-caption', initialCaption); visual.append(zoom, caption);
-    const replaceImage = (src, text) => { zoom.classList.remove('is-zoomed'); zoom.setAttribute('aria-label', 'Enlarge material image'); zoom.setAttribute('aria-pressed', 'false'); zoom.replaceChildren(image(src, item.title, 'ml-detail-mainimage', true, 'high')); caption.textContent = text || ''; };
+    const replaceImage = (src, text, thumbnail) => { zoom.classList.remove('is-zoomed'); zoom.setAttribute('aria-label', 'Enlarge material image'); zoom.setAttribute('aria-pressed', 'false'); zoom.replaceChildren(image(src, item.title, 'ml-detail-mainimage', true, 'high', thumbnail)); caption.textContent = text || ''; };
     const syncColourwayControls = () => {
       if (choices) choices.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.colourwayImage === selectedColorway?.image)));
       state.colourway = selectedColorway?.image || (explicitBaseView ? item.image : null); writeState(true);
@@ -698,7 +711,7 @@
     if (gallery.length > 1) {
       const thumbs = node('div', 'ml-thumbnails'); thumbs.setAttribute('aria-label', 'Material image views');
       gallery.forEach((g, index) => {
-        const b = button('', '', () => { replaceImage(g.src, g.caption); selectedColorway = item.colorways.find(c => c.image === g.src) || null; explicitBaseView = g.src === item.image; syncColourwayControls(); thumbs.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true'); });
+        const b = button('', '', () => { replaceImage(g.src, g.caption, g.thumbnail); selectedColorway = item.colorways.find(c => c.image === g.src) || null; explicitBaseView = g.src === item.image; syncColourwayControls(); thumbs.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true'); });
         b.setAttribute('aria-label', 'View image ' + (index + 1)); b.setAttribute('aria-pressed', String(g.src === initialImage)); b.append(image(g.thumbnail || g.src, '', '', true)); thumbs.append(b);
       }); visual.append(thumbs);
     }
@@ -722,7 +735,7 @@
       item.colorways.forEach((c, index) => {
         const sameName = item.colorways.filter(other => other.name === c.name).length > 1;
         const label = c.name + (sameName ? ' · ' + (index + 1) : '');
-        const b = button('', '', () => { selectedColorway = c; if (c.image) replaceImage(c.image, label); syncColourwayControls(); });
+        const b = button('', '', () => { selectedColorway = c; if (c.image) replaceImage(c.image, label, c.thumbnail); syncColourwayControls(); });
         b.dataset.colourwayImage = c.image; b.setAttribute('aria-label', label); b.setAttribute('aria-pressed', String(selectedColorway?.image === c.image));
         b.append(image(previewFor(item, c), '', '', true), node('span', null, label)); choices.append(b);
       }); copy.append(choices);

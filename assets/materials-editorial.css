@@ -26,6 +26,10 @@
 .material-library-site .ml-cloth-review{padding:18px 0;border-bottom:1px solid var(--ml-line)}
 .material-library-site .ml-cloth-review h3{font-size:12px;font-weight:600;margin:0 0 8px}
 .material-library-site .ml-cloth-review p{font-size:12px;line-height:1.7;color:var(--ml-muted);margin:0}
+/* Same-frame thumbnail remains visible only while its exact original is loading. */
+.material-library-site .ml-detail-mainimage,.material-library-site .ml-detail-image-unavailable{background-position:center;background-size:contain;background-repeat:no-repeat}
+.material-library-site .ml-detail-image-unavailable{height:min(67vh,650px);text-shadow:0 0 4px white,0 0 8px white}
+@media(max-width:699px){.material-library-site .ml-detail-image-unavailable{height:43vh}}
 @media(min-width:1700px){.material-library-site .ml-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:699px){.material-library-site .ml-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 12px}.material-library-site .ml-grid .ml-card-title{font-size:16px}.material-library-site .ml-grid .ml-surface-label{font-size:11px;line-height:1.5}.material-library-site .ml-detail-fields>div{font-size:12px}}
 /* Visual development stories. Images lead each chapter; copy stays close to it. */
