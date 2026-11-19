@@ -487,13 +487,14 @@
   }
   function card(item, boardMode, position) {
     const article = node('article', boardMode ? 'ml-board-card' : 'ml-card'); article.dataset.materialId = item.id; article.dataset.materialType = item.type;
+    if (item.photography === 'same-cloth') article.dataset.photography = 'same-cloth';
     const media = node('div', 'ml-card-media'), open = button('', 'ml-open', () => openDetail(item.id));
     const savedColourway = boardMode ? boardColourway(item, board.get(item.id)) : null;
     open.setAttribute('aria-label', 'View ' + item.title);
     const preview = image(previewFor(item, savedColourway), item.title, 'ml-card-image');
     const presentation = savedColourway || item;
     if (presentation.displayThumbnail && presentation.displayImage && Number(presentation.displayWidth) > Number(presentation.displayThumbnailWidth)) {
-      preview.sizes = '(max-width: 699px) calc((100vw - 36px) / 2), (max-width: 999px) 31vw, (min-width: 1700px) 310px, 24vw';
+      preview.sizes = '(max-width: 699px) calc((100vw - 36px) / 2), (min-width: 1700px) 430px, calc((100vw - 116px) / 3)';
       preview.srcset = safeImage(presentation.displayThumbnail) + ' ' + Number(presentation.displayThumbnailWidth) + 'w, ' + safeImage(presentation.displayImage) + ' ' + Number(presentation.displayWidth) + 'w';
     }
     open.append(preview); media.append(open);
@@ -635,7 +636,7 @@
     const d = ensureDialog(); d.replaceChildren(closeButton());
     const layout = node('div', 'ml-detail-layout'), visual = node('div', 'ml-detail-visual'), gallery = galleryFor(item);
     const linkedColourway = options?.fromUrl && state.colourway ? item.colorways.find(c => c.image === state.colourway) : null;
-    const invalidLinkedColourway = !!(options?.fromUrl && state.colourway && !linkedColourway);
+    const invalidLinkedColourway = !!(options?.fromUrl && state.colourway && state.colourway !== item.image && !linkedColourway);
     const initialColourway = linkedColourway || (invalidLinkedColourway ? null : boardColourway(item, board.get(id)));
     const replaceUrl = !!options?.fromUrl || state.material === id;
     state.material = id; state.colourway = initialColourway?.image || null; writeState(replaceUrl);
@@ -663,10 +664,15 @@
     copy.append(node('p', 'ml-detail-desc', item.description || 'A material reference selected for further exploration in everyday apparel.'));
     copy.append(node('p', 'ml-status ml-status--' + item.status, STATUS[item.status]));
     const fields = node('dl', 'ml-detail-fields');
-    [['Family', item.family], ['Structure', item.structure || item.technique], ['Colour', item.colors.join(' / ')], ['Application', item.uses.join(' / ')], ['Development season', item.developmentSeasons.join(' / ')], ['Source season', item.season], ['Library source', SOURCE[item.sourceType]]].forEach(([key, value]) => {
+    [['Family', item.family], ['Structure', item.structure || item.technique], ['Composition', item.composition], ['Listed weight', item.weight], ['Listed width', item.width], ['Handle reference', item.handle], ['Colour', item.colors.join(' / ')], ['Application', item.uses.join(' / ')], ['Development season', item.developmentSeasons.join(' / ')], ['Source season', item.season], ['Library source', SOURCE[item.sourceType]]].forEach(([key, value]) => {
       if (!value) return;
       const row = node('div'); row.append(node('dt', null, key), node('dd', null, value)); fields.append(row);
     }); copy.append(fields);
+    if (item.specificationNote) copy.append(node('p', 'ml-detail-scope', item.specificationNote));
+    if (item.developmentNotes) {
+      const review = node('section', 'ml-cloth-review');
+      review.append(node('h3', null, 'Development review'), node('p', null, item.developmentNotes)); copy.append(review);
+    }
     if (item.colorways.length) {
       copy.append(node('p', 'ml-note-label', 'Colourways'));
       choices = node('div', 'ml-detail-choices');

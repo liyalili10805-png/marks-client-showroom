@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": "20261119photo1",
   "season": "A/W 27/28",
   "basis": "Explicit style-to-library design review. Applications are proposed, not physically approved.",
   "styles": {
@@ -39,6 +39,14 @@
           "reason": "A grey-brown wool check with a visible herringbone ground offers a specific patterned tailoring route for this barrel block, with a clear woven pattern.",
           "review": "Review cloth weight and bulk; match checks across the front pleats and pockets. This is a different construction from the original.",
           "colourwayImage": "assets/material-library/MP091.webp",
+          "research": []
+        },
+        {
+          "materialId": "MF121",
+          "role": "Main cloth / softened barrel shape",
+          "reason": "The 310 gsm twill provides softly structured volume for the barrel leg and front pleats, in cream rather than the original brown.",
+          "review": "Review pleat bulk, crease retention, opacity under tension and the curved side seam; rebalance the block.",
+          "colourwayImage": "assets/material-photography/MF121-1.jpg",
           "research": []
         }
       ]
@@ -149,6 +157,40 @@
           "review": "Check bulk at pleats and pattern matching at side seams and welt pockets.",
           "colourwayImage": "assets/material-library/MP091.webp",
           "research": []
+        },
+        {
+          "materialId": "MP139",
+          "role": "Main cloth / brushed pinstripe tailoring",
+          "reason": "The 221 gsm soft wool-blend pinstripe suiting offers a fluid, patterned alternative to the recorded cotton twill for the pleated wide leg.",
+          "review": "Review stripe alignment through front pleats and pockets, seam slippage, pressing and recovery; trial the changed drape.",
+          "colourwayImage": "assets/material-photography/MP139-1.jpg",
+          "research": [
+            {
+              "id": "T01",
+              "title": "Relaxed Everyday Tailoring"
+            },
+            {
+              "id": "T03",
+              "title": "Draped Wide-Leg Tailoring"
+            }
+          ]
+        },
+        {
+          "materialId": "MF125",
+          "role": "Main cloth / washed cotton twill",
+          "reason": "The olive 293–306 gsm washed cotton twill retains a softly structured cotton route for the wide-leg trouser and front pleats.",
+          "review": "Review pleat bulk and retention, shrinkage, finished hem hang and pocket support on the actual cloth.",
+          "colourwayImage": "assets/material-photography/MF125-1.jpg",
+          "research": [
+            {
+              "id": "T01",
+              "title": "Relaxed Everyday Tailoring"
+            },
+            {
+              "id": "MAT03",
+              "title": "Supple Twill & Canvas"
+            }
+          ]
         }
       ]
     },
@@ -245,6 +287,19 @@
           "review": "Recheck ease and leg volume in a toile; this does not reproduce corduroy.",
           "colourwayImage": "assets/material-library/MF084.webp",
           "research": []
+        },
+        {
+          "materialId": "MF123",
+          "role": "Main cloth / 8-wale corduroy",
+          "reason": "The deep olive 325 gsm stretch corduroy gives the barrel trouser a defined wale and directional pile with crosswise give.",
+          "review": "Keep nap consistent and review stretch recovery, pleat bulk, knee movement and waistband stability.",
+          "colourwayImage": "assets/material-photography/MF123-1.jpg",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            }
+          ]
         }
       ]
     },
@@ -619,6 +674,19 @@
               "title": "Controlled Wash, Fade & Patina"
             }
           ]
+        },
+        {
+          "materialId": "MF121",
+          "role": "Main cloth / brushed twill alternative",
+          "reason": "The cream, 310 gsm brushed cotton twill offers a softer surface for the boxy patch-pocket shacket. It changes both the original colour and canvas face.",
+          "review": "Check nap alignment, collar contrast, washing shrinkage and bulk at pocket corners.",
+          "colourwayImage": "assets/material-photography/MF121-1.jpg",
+          "research": [
+            {
+              "id": "OW01",
+              "title": "The Textured Shacket"
+            }
+          ]
         }
       ]
     },
@@ -707,6 +775,14 @@
               "title": "Useful Quilting & Modular Padding"
             }
           ]
+        },
+        {
+          "materialId": "MF127",
+          "role": "Outer face / lightweight nylon trial",
+          "reason": "The olive 130 gsm nylon plain is a candidate outer face for a high-collar padded layer. It supplies the face cloth only, not the insulation or a complete jacket fabric system.",
+          "review": "Confirm the washed surface and batch, quilting stability, seam strength, lining and fill migration. Protective performance is untested and the photographed colourway needs sourcing.",
+          "colourwayImage": "assets/material-photography/MF127-1.jpg",
+          "research": []
         }
       ]
     },
@@ -830,6 +906,14 @@
           "reason": "A narrow woven workwear stripe gives the pocketed shirt a specific pattern route.",
           "review": "Check stripe alignment at pockets and placket; confirm actual stripe scale.",
           "colourwayImage": "assets/material-library/MP035.webp",
+          "research": []
+        },
+        {
+          "materialId": "MF125",
+          "role": "Main cloth / washed utility twill",
+          "reason": "The olive washed cotton twill provides a concrete woven route for the utility overshirt and its patch pockets.",
+          "review": "Check jacket weight, collar roll, pocket bulk and washing shrinkage. Confirm that 293–306 gsm suits the intended layering use.",
+          "colourwayImage": "assets/material-photography/MF125-1.jpg",
           "research": []
         }
       ]
@@ -998,6 +1082,27 @@
           "review": "Confirm repeat scale and brushing; review collar and cuff bulk.",
           "colourwayImage": "assets/material-library/MP025.webp",
           "research": []
+        },
+        {
+          "materialId": "MP138",
+          "role": "Main cloth / yarn-dyed flannel check",
+          "reason": "The 185 gsm cotton flannel is a shirt-weight, brushed-both-sides route for this relaxed button-front shirt, in an olive and ivory check.",
+          "review": "Confirm shrinkage, collar and cuff bulk, and pattern placement at the front placket and chest pocket.",
+          "colourwayImage": "assets/material-photography/MP138-1.jpg",
+          "research": [
+            {
+              "id": "S01",
+              "title": "The Refined Flannel Shirt"
+            },
+            {
+              "id": "MAT01",
+              "title": "Brushed Flannel & Refined Double Cloth"
+            },
+            {
+              "id": "PAT01",
+              "title": "Softened Yarn-Dyed Checks"
+            }
+          ]
         }
       ]
     },
@@ -1135,6 +1240,19 @@
               "title": "The Everyday Coat"
             }
           ]
+        },
+        {
+          "materialId": "MF124",
+          "role": "Main cloth / solid wool coating",
+          "reason": "The navy 400 gsm wool coating offers a compact, felt-like solid route for the coat, with its own photographed drape. It is not assumed to match the original blend.",
+          "review": "Check thickness, pressing, lining and lapel or collar support before adapting the coat pattern. Confirm sourcing of this limited-run cloth.",
+          "colourwayImage": "assets/material-photography/MF124-1.jpg",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
         }
       ]
     },
@@ -1165,6 +1283,23 @@
           "reason": "Ivory nylon-blend tricot offers a different colour and fibre direction for the same knit concept.",
           "review": "Opacity, stretch and recovery are critical and unverified.",
           "colourwayImage": "assets/material-library/MF119.webp",
+          "research": [
+            {
+              "id": "T08",
+              "title": "Studio Leggings"
+            },
+            {
+              "id": "AKMAT03",
+              "title": "Fine Rib & Smooth Jersey for Studio Leggings"
+            }
+          ]
+        },
+        {
+          "materialId": "MF122",
+          "role": "Knit trial / fine-rib surface",
+          "reason": "Charcoal cotton-rich rib offers a specific textured development route for the high-rise legging concept. It is a lounge-knit reference, not an approved performance material.",
+          "review": "Do not approve the fitted block before testing opacity at extension, stretch recovery, waist growth and seam strength.",
+          "colourwayImage": "assets/material-photography/MF122-1.jpg",
           "research": [
             {
               "id": "T08",
@@ -1273,6 +1408,19 @@
           "reason": "A second identified sherpa cloth offers a distinct material reference for the same shape.",
           "review": "Compare the real pile and backing; do not assume equal hand or warmth.",
           "colourwayImage": "assets/material-library/MF113.webp",
+          "research": [
+            {
+              "id": "OW07",
+              "title": "Fleece & Sherpa Layers"
+            }
+          ]
+        },
+        {
+          "materialId": "MF126",
+          "role": "Main cloth / teddy pile alternative",
+          "reason": "The 480 gsm plum-brown teddy fleece offers a high-pile alternative for the shirt-jacket silhouette, with a fleece reverse visible in the same-cloth photos.",
+          "review": "Review pile bulk at button stands, collar and pocket edges, shedding and lining. Photographed colourway currently needs sourcing.",
+          "colourwayImage": "assets/material-photography/MF126-1.jpg",
           "research": [
             {
               "id": "OW07",

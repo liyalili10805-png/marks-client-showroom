@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": "20261119photo1",
   "season": "A/W 27/28",
   "reports": {
     "OW01": {
@@ -37,6 +37,15 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "brushed-twill",
+          "label": "Brushed cotton twill",
+          "ids": [
+            "MF121"
+          ],
+          "tier": "direct",
+          "rationale": "This 310 gsm cotton twill has a brushed face with the weave still visible: a specific woven route for the textured shacket. Confirm nap, bulk and jacket handle on a sample."
+        },
         {
           "key": "raised-solid",
           "label": "Raised woven solids",
@@ -101,6 +110,15 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "eight-wale-cord",
+          "label": "8-wale stretch corduroy",
+          "ids": [
+            "MF123"
+          ],
+          "tier": "alternative",
+          "rationale": "A substantial corduroy alternative to canvas for a barn or chore jacket. Rework pocket, collar and seam bulk for the directional pile."
+        },
         {
           "key": "canvas",
           "label": "Canvas grounds",
@@ -329,6 +347,15 @@
       "styleTerms": [],
       "materialTerms": [
         {
+          "key": "nylon-taslan",
+          "label": "Lightweight nylon plains",
+          "ids": [
+            "MF127"
+          ],
+          "tier": "alternative",
+          "rationale": "A listed 130 gsm nylon plain offers a quiet lightweight shell route, not ripstop. Confirm washed crinkle, seam performance and any protective finish on the actual batch."
+        },
+        {
           "key": "ripstop",
           "label": "Ripstop",
           "ids": [
@@ -373,6 +400,15 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "teddy-fleece",
+          "label": "High-pile teddy fleece",
+          "ids": [
+            "MF126"
+          ],
+          "tier": "direct",
+          "rationale": "The listed teddy fleece has a high-pile face and a fleece reverse, directly illustrating this layering surface. Pile bulk is visible; warmth, shedding and garment suitability remain untested."
+        },
         {
           "key": "sherpa",
           "label": "Sherpa pile references",
@@ -435,6 +471,15 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "felted-wool-coating",
+          "label": "Felt-like wool coating",
+          "ids": [
+            "MF124"
+          ],
+          "tier": "alternative",
+          "rationale": "A listed 400 gsm, 100% wool coating supports a compact everyday coat route. The draped photo shows this cloth, but coat structure and seam behaviour must be assessed through a sample."
+        },
         {
           "key": "compact-woven",
           "label": "Compact coating references",
@@ -505,6 +550,15 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "yarn-dyed-shirt-check",
+          "label": "Yarn-dyed shirt-weight check",
+          "ids": [
+            "MP138"
+          ],
+          "tier": "direct",
+          "rationale": "The listed 185 gsm cotton flannel is yarn-dyed and brushed on both faces. It directly illustrates the softened checked-shirt route; pocket matching and shrinkage require sampling."
+        },
         {
           "key": "flannel",
           "label": "Flannel references",
@@ -781,6 +835,24 @@
       ],
       "materialTerms": [
         {
+          "key": "washed-cotton-twill",
+          "label": "Washed cotton twill",
+          "ids": [
+            "MF125"
+          ],
+          "tier": "alternative",
+          "rationale": "A cotton utility interpretation of relaxed tailoring, rather than fluid dress suiting. Check pleat bulk and hang before using a tailoring block."
+        },
+        {
+          "key": "brushed-pinstripe",
+          "label": "Brushed pinstripe suiting",
+          "ids": [
+            "MP139"
+          ],
+          "tier": "alternative",
+          "rationale": "A listed 221 gsm wool-blend suiting with a soft brushed face offers a concrete patterned alternative for everyday pleated tailoring. Test pleat retention and recovery."
+        },
+        {
           "key": "twill",
           "label": "Twill grounds",
           "ids": [
@@ -828,6 +900,15 @@
       "title": "The Everyday Utility Trouser",
       "styleTerms": [],
       "materialTerms": [
+        {
+          "key": "washed-cotton-twill",
+          "label": "Washed cotton twill",
+          "ids": [
+            "MF125"
+          ],
+          "tier": "alternative",
+          "rationale": "The listed 293–306 gsm cotton twill is a utility-trouser candidate with a softened finish. Review pocket load, knee movement and shrinkage on a sample."
+        },
         {
           "key": "twill",
           "label": "Twill grounds",
@@ -891,6 +972,15 @@
       ],
       "materialTerms": [
         {
+          "key": "brushed-pinstripe",
+          "label": "Brushed pinstripe suiting",
+          "ids": [
+            "MP139"
+          ],
+          "tier": "alternative",
+          "rationale": "The soft suiting and photographed folds make a wide-leg development alternative. Check hang, crease behaviour and the stripe line on the actual trouser block."
+        },
+        {
           "key": "twill",
           "label": "Twill grounds",
           "ids": [
@@ -951,6 +1041,24 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "yarn-dyed-shirt-check",
+          "label": "Yarn-dyed shirt-weight check",
+          "ids": [
+            "MP138"
+          ],
+          "tier": "direct",
+          "rationale": "A documented cotton flannel with a brushed face and a relaxed shirt-weight handle. Neither double-cloth construction nor thermal performance is implied."
+        },
+        {
+          "key": "brushed-twill",
+          "label": "Brushed cotton twill",
+          "ids": [
+            "MF121"
+          ],
+          "tier": "alternative",
+          "rationale": "A brushed twill comparison for the softened-surface direction. This is a single woven cotton cloth, not flannel or double cloth."
+        },
         {
           "key": "flannel",
           "label": "Flannel references",
@@ -1049,6 +1157,15 @@
       ],
       "materialTerms": [
         {
+          "key": "eight-wale-cord",
+          "label": "8-wale stretch corduroy",
+          "ids": [
+            "MF123"
+          ],
+          "tier": "direct",
+          "rationale": "The documented 8-wale, 325 gsm cotton-rich corduroy shows the rib-and-pile direction in a substantial quality. Trouser drape, pile marking and stretch recovery still need review."
+        },
+        {
           "key": "corduroy",
           "label": "Corduroy",
           "ids": [
@@ -1108,6 +1225,15 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "washed-cotton-twill",
+          "label": "Washed cotton twill",
+          "ids": [
+            "MF125"
+          ],
+          "tier": "direct",
+          "rationale": "This cotton twill has a documented washed finish and softly structured handle, giving a specific reference for supple utility cloth. Confirm the actual batch and post-wash behaviour."
+        },
         {
           "key": "twill",
           "label": "Twill grounds",
@@ -1281,6 +1407,15 @@
       "styleTerms": [],
       "materialTerms": [
         {
+          "key": "nylon-taslan",
+          "label": "Lightweight nylon plains",
+          "ids": [
+            "MF127"
+          ],
+          "tier": "alternative",
+          "rationale": "The tightly woven nylon and papery surface illustrate a technical plain. The photographed crinkle may require washing; neither ripstop construction nor tested weather protection is implied."
+        },
+        {
           "key": "ripstop",
           "label": "Ripstop",
           "ids": [
@@ -1335,6 +1470,15 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "yarn-dyed-shirt-check",
+          "label": "Yarn-dyed shirt-weight check",
+          "ids": [
+            "MP138"
+          ],
+          "tier": "direct",
+          "rationale": "The pattern is formed with coloured yarns in cotton flannel. Olive and ivory soften the palette, while dark lines retain a visible contrast."
+        },
         {
           "key": "flannel-check",
           "label": "Brushed check references",
@@ -1411,6 +1555,15 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "brushed-pinstripe",
+          "label": "Brushed pinstripe suiting",
+          "ids": [
+            "MP139"
+          ],
+          "tier": "direct",
+          "rationale": "Fine lengthwise pinstripes on a documented suiting ground directly illustrate a quiet tailoring pattern. The brushed face softens the visual line without inventing a print process."
+        },
         {
           "key": "yarn-dyed-stripe",
           "label": "Yarn-dyed shirting stripes",
@@ -2106,6 +2259,15 @@
       ],
       "materialTerms": [
         {
+          "key": "cotton-rib-trial",
+          "label": "Cotton stretch rib trials",
+          "ids": [
+            "MF122"
+          ],
+          "tier": "alternative",
+          "rationale": "The fine rib surface is relevant, but this 220 gsm cotton-rich knit is a development candidate, not an approved legging quality. Verify extension opacity, recovery and waist stability before cutting."
+        },
+        {
           "key": "fine-rib",
           "label": "Rib jersey references",
           "ids": [
@@ -2234,6 +2396,15 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "cotton-rib-trial",
+          "label": "Cotton stretch rib trials",
+          "ids": [
+            "MF122"
+          ],
+          "tier": "alternative",
+          "rationale": "Fine ribs and listed four-way stretch provide a surface-development reference. Cotton-rich lounge-knit behaviour is not proof of studio-legging performance; physical testing remains essential."
+        },
         {
           "key": "fine-rib",
           "label": "Rib jersey references",

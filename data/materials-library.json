@@ -1,8 +1,411 @@
 {
-  "version": 1,
+  "version": "20261119photo1",
   "edition": "16 November 2026",
   "title": "Materials & Patterns",
   "items": [
+    {
+      "id": "MF121",
+      "title": "Cream Brushed Cotton Twill",
+      "family": "Twill",
+      "structure": "Brushed woven twill",
+      "colors": [
+        "Cream"
+      ],
+      "uses": [
+        "Shackets",
+        "Utility trousers"
+      ],
+      "composition": "100% cotton",
+      "weight": "310 gsm",
+      "width": "150 cm",
+      "handle": "Softly structured; brushed face",
+      "displayLabel": "Soft nap · visible diagonal",
+      "description": "A softly brushed cotton twill with visible diagonal grain and gently rounded folds. Explore it for a textured shacket or a shaped, everyday trouser.",
+      "developmentNotes": "Review nap direction, washing shrinkage, pocket bulk and pleat retention on the actual cloth.",
+      "type": "fabric",
+      "tags": [
+        "Twill",
+        "Brushed woven twill"
+      ],
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "trendIds": [
+        "OW01",
+        "MAT01"
+      ],
+      "image": "assets/material-photography/MF121-1.jpg",
+      "thumbnail": "assets/material-photography/MF121-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/material-photography/MF121-1.jpg",
+          "thumbnail": "assets/material-photography/MF121-1-thumb.webp",
+          "caption": "Same cloth and colourway · natural folds"
+        },
+        {
+          "src": "assets/material-photography/MF121-2.jpg",
+          "thumbnail": "assets/material-photography/MF121-2-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        }
+      ],
+      "imageCaption": "Photographed cloth · Soft nap · visible diagonal",
+      "displayImage": "assets/material-photography/MF121-display.webp",
+      "displayThumbnail": "assets/material-photography/MF121-preview.webp",
+      "displayWidth": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Listed material information; physical properties and application remain subject to sample review.",
+      "displayHeight": 960
+    },
+    {
+      "id": "MF122",
+      "title": "Charcoal Cotton Stretch Rib",
+      "family": "Rib",
+      "structure": "Fine rib knit",
+      "colors": [
+        "Grey"
+      ],
+      "uses": [
+        "Yoga leggings"
+      ],
+      "composition": "96.5% cotton / 3.5% spandex",
+      "weight": "220 gsm",
+      "width": "135 cm",
+      "handle": "Soft four-way stretch rib; recovery untested",
+      "displayLabel": "Fine ribs · fluid knit folds",
+      "description": "A fine cotton-rich stretch rib, photographed in charcoal. Its vertical surface offers a tactile direction for a studio capsule; the listed cloth is a light knit reference.",
+      "developmentNotes": "Development candidate only. Test coverage at extension, recovery after repeated stretch, waist growth, seam strength and abrasion before using it for fitted leggings. It is not a verified performance or compression fabric.",
+      "type": "fabric",
+      "tags": [
+        "Rib",
+        "Fine rib knit"
+      ],
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "trendIds": [
+        "T08",
+        "AKMAT03"
+      ],
+      "image": "assets/material-photography/MF122-1.jpg",
+      "thumbnail": "assets/material-photography/MF122-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/material-photography/MF122-1.jpg",
+          "thumbnail": "assets/material-photography/MF122-1-thumb.webp",
+          "caption": "Same cloth and colourway · natural folds"
+        },
+        {
+          "src": "assets/material-photography/MF122-2.jpg",
+          "thumbnail": "assets/material-photography/MF122-2-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        }
+      ],
+      "imageCaption": "Photographed cloth · Fine ribs · fluid knit folds",
+      "displayImage": "assets/material-photography/MF122-display.webp",
+      "displayThumbnail": "assets/material-photography/MF122-preview.webp",
+      "displayWidth": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Listed material information; physical properties and application remain subject to sample review.",
+      "displayHeight": 960
+    },
+    {
+      "id": "MF123",
+      "title": "Deep Olive Stretch Corduroy",
+      "family": "Corduroy",
+      "structure": "8-wale stretch corduroy",
+      "colors": [
+        "Green"
+      ],
+      "uses": [
+        "Shackets",
+        "Tailored trousers",
+        "Utility trousers"
+      ],
+      "composition": "98% cotton / 2% spandex",
+      "weight": "325 gsm",
+      "width": "142 cm",
+      "handle": "Structured with crosswise give",
+      "displayLabel": "Rounded wales · directional pile",
+      "description": "Deep olive eight-wale corduroy, with pronounced ribs that catch the light across natural folds. A substantial reference for cropped jackets and relaxed trouser shapes.",
+      "developmentNotes": "Keep the nap direction consistent across panels. Check pile marking, stretch recovery, waistband stability and bulk at pleats.",
+      "type": "fabric",
+      "tags": [
+        "Corduroy",
+        "8-wale stretch corduroy"
+      ],
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "trendIds": [
+        "MAT02",
+        "OW02"
+      ],
+      "image": "assets/material-photography/MF123-1.jpg",
+      "thumbnail": "assets/material-photography/MF123-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/material-photography/MF123-1.jpg",
+          "thumbnail": "assets/material-photography/MF123-1-thumb.webp",
+          "caption": "Same cloth and colourway · natural folds"
+        },
+        {
+          "src": "assets/material-photography/MF123-2.jpg",
+          "thumbnail": "assets/material-photography/MF123-2-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        }
+      ],
+      "imageCaption": "Photographed cloth · Rounded wales · directional pile",
+      "displayImage": "assets/material-photography/MF123-display.webp",
+      "displayThumbnail": "assets/material-photography/MF123-preview.webp",
+      "displayWidth": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Listed material information; physical properties and application remain subject to sample review.",
+      "displayHeight": 960
+    },
+    {
+      "id": "MF124",
+      "title": "Navy Wool Coating",
+      "family": "Wool coating",
+      "structure": "Felt-like wool coating",
+      "colors": [
+        "Navy"
+      ],
+      "uses": [
+        "Coats"
+      ],
+      "composition": "100% wool",
+      "weight": "400 gsm",
+      "width": "160 cm",
+      "handle": "Dense felt-like surface; substantial drape",
+      "displayLabel": "Sculptural drape · felted surface",
+      "description": "A deep navy wool coating, photographed hanging in broad, sculptural folds. The felt-like face gives a quiet, compact surface for an everyday winter coat.",
+      "developmentNotes": "Check actual thickness, seam bulk, lining requirements and pressing. This reference does not establish double-face construction or a specific melton weave. Limited-run cloth; future repeat supply is unconfirmed.",
+      "type": "fabric",
+      "tags": [
+        "Wool coating",
+        "Felt-like wool coating"
+      ],
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "trendIds": [
+        "OW08"
+      ],
+      "image": "assets/material-photography/MF124-1.jpg",
+      "thumbnail": "assets/material-photography/MF124-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/material-photography/MF124-1.jpg",
+          "thumbnail": "assets/material-photography/MF124-1-thumb.webp",
+          "caption": "Same cloth and colourway · natural folds"
+        },
+        {
+          "src": "assets/material-photography/MF124-2.jpg",
+          "thumbnail": "assets/material-photography/MF124-2-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        }
+      ],
+      "imageCaption": "Photographed cloth · Sculptural drape · felted surface",
+      "displayImage": "assets/material-photography/MF124-display.webp",
+      "displayThumbnail": "assets/material-photography/MF124-preview.webp",
+      "displayWidth": 640,
+      "displayThumbnailWidth": 320,
+      "photography": "same-cloth",
+      "specificationNote": "Listed material information; physical properties and application remain subject to sample review.",
+      "displayHeight": 960
+    },
+    {
+      "id": "MF125",
+      "title": "Olive Washed Cotton Twill",
+      "family": "Twill",
+      "structure": "Washed woven twill",
+      "colors": [
+        "Green"
+      ],
+      "uses": [
+        "Shackets",
+        "Tailored trousers",
+        "Utility trousers"
+      ],
+      "composition": "100% cotton",
+      "weight": "293–306 gsm",
+      "width": "149 cm",
+      "handle": "Softly structured; washed finish",
+      "displayLabel": "Washed handle · defined twill",
+      "description": "A medium olive cotton twill with a washed finish. Rounded folds and a visible diagonal make this an approachable utility reference for relaxed trousers and overshirts.",
+      "developmentNotes": "Review washed handle, dimensional stability and pocket bulk. The finish is documented, but garment fit and repeated-wash performance are untested.",
+      "type": "fabric",
+      "tags": [
+        "Twill",
+        "Washed woven twill"
+      ],
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "trendIds": [
+        "MAT03",
+        "T02",
+        "T01"
+      ],
+      "image": "assets/material-photography/MF125-1.jpg",
+      "thumbnail": "assets/material-photography/MF125-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/material-photography/MF125-1.jpg",
+          "thumbnail": "assets/material-photography/MF125-1-thumb.webp",
+          "caption": "Same cloth and colourway · natural folds"
+        },
+        {
+          "src": "assets/material-photography/MF125-2.jpg",
+          "thumbnail": "assets/material-photography/MF125-2-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        },
+        {
+          "src": "assets/material-photography/MF125-3.jpg",
+          "thumbnail": "assets/material-photography/MF125-3-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        }
+      ],
+      "imageCaption": "Photographed cloth · Washed handle · defined twill",
+      "displayImage": "assets/material-photography/MF125-display.webp",
+      "displayThumbnail": "assets/material-photography/MF125-preview.webp",
+      "displayWidth": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Listed material information; physical properties and application remain subject to sample review.",
+      "displayHeight": 960
+    },
+    {
+      "id": "MF126",
+      "title": "Plum-Brown Teddy Fleece",
+      "family": "Sherpa",
+      "structure": "High-pile teddy fleece with fleece back",
+      "colors": [
+        "Brown",
+        "Purple"
+      ],
+      "uses": [
+        "Shackets",
+        "Jackets"
+      ],
+      "composition": "100% polyester",
+      "weight": "480 gsm",
+      "width": "162 cm",
+      "handle": "High pile with moderate drape",
+      "displayLabel": "Plush face · soft fleece reverse",
+      "description": "A deep plum-brown teddy fleece with a high-pile face and a smooth fleece reverse. The photographed folds reveal both surfaces and the pile volume.",
+      "developmentNotes": "Review seam bulk, shedding, pile compression, pocket finishing and lining needs. Reference only: the photographed colourway was unavailable when checked; sample sourcing is required.",
+      "type": "fabric",
+      "tags": [
+        "Sherpa",
+        "High-pile teddy fleece with fleece back"
+      ],
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "trendIds": [
+        "OW07"
+      ],
+      "image": "assets/material-photography/MF126-1.jpg",
+      "thumbnail": "assets/material-photography/MF126-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/material-photography/MF126-1.jpg",
+          "thumbnail": "assets/material-photography/MF126-1-thumb.webp",
+          "caption": "Same cloth and colourway · natural folds"
+        },
+        {
+          "src": "assets/material-photography/MF126-2.jpg",
+          "thumbnail": "assets/material-photography/MF126-2-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        }
+      ],
+      "imageCaption": "Photographed cloth · Plush face · soft fleece reverse",
+      "displayImage": "assets/material-photography/MF126-display.webp",
+      "displayThumbnail": "assets/material-photography/MF126-preview.webp",
+      "displayWidth": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Listed material information; physical properties and application remain subject to sample review.",
+      "displayHeight": 960
+    },
+    {
+      "id": "MF127",
+      "title": "Olive Nylon Taslan",
+      "family": "Technical plain",
+      "structure": "Tightly woven nylon plain",
+      "colors": [
+        "Green"
+      ],
+      "uses": [
+        "Jackets"
+      ],
+      "composition": "100% nylon",
+      "weight": "130 gsm",
+      "width": "150 cm",
+      "handle": "Crisp, papery lightweight cloth",
+      "displayLabel": "Papery surface · subtle crinkle",
+      "description": "A deep olive lightweight nylon plain, photographed with a subtle crinkled finish. A quiet technical surface to explore for adaptable outer layers.",
+      "developmentNotes": "This is a plain, not ripstop. The listed current batch is flatter before washing than the photographed finish. Confirm the washed surface, seam strength and lining needs on a sample. Water and wind performance have not been independently tested. The photographed colourway was unavailable when checked.",
+      "type": "fabric",
+      "tags": [
+        "Technical plain",
+        "Tightly woven nylon plain"
+      ],
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "trendIds": [
+        "OW06",
+        "MAT06"
+      ],
+      "image": "assets/material-photography/MF127-1.jpg",
+      "thumbnail": "assets/material-photography/MF127-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/material-photography/MF127-1.jpg",
+          "thumbnail": "assets/material-photography/MF127-1-thumb.webp",
+          "caption": "Same cloth and colourway · natural folds"
+        },
+        {
+          "src": "assets/material-photography/MF127-2.jpg",
+          "thumbnail": "assets/material-photography/MF127-2-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        }
+      ],
+      "imageCaption": "Photographed cloth · Papery surface · subtle crinkle",
+      "displayImage": "assets/material-photography/MF127-display.webp",
+      "displayThumbnail": "assets/material-photography/MF127-preview.webp",
+      "displayWidth": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Listed material information; physical properties and application remain subject to sample review.",
+      "displayHeight": 960
+    },
     {
       "id": "MF106",
       "title": "White Cotton Waffle",
@@ -4358,6 +4761,131 @@
       "displayHeight": 385,
       "displayThumbnailWidth": 385,
       "displayLabel": "Fine knit structure"
+    },
+    {
+      "id": "MP138",
+      "title": "Olive & Ivory Flannel Check",
+      "family": "Checks",
+      "structure": "Yarn-dyed cotton flannel",
+      "colors": [
+        "Green",
+        "Cream"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% cotton",
+      "weight": "185 gsm",
+      "width": "145 cm",
+      "handle": "Soft, relaxed drape; brushed on both faces",
+      "displayLabel": "Yarn-dyed check · brushed cotton",
+      "description": "A soft shirt-weight flannel, with olive, dark and ivory yarns forming a clearly visible check. Natural folds reveal its light, relaxed handle.",
+      "developmentNotes": "Check repeat scale at the pocket and placket, colourfastness and dimensional stability. This is a shirt-weight cloth, not a heavy outerwear coating.",
+      "type": "pattern",
+      "tags": [
+        "Checks",
+        "Yarn-dyed cotton flannel"
+      ],
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "trendIds": [
+        "S01",
+        "PAT01",
+        "MAT01"
+      ],
+      "image": "assets/material-photography/MP138-1.jpg",
+      "thumbnail": "assets/material-photography/MP138-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/material-photography/MP138-1.jpg",
+          "thumbnail": "assets/material-photography/MP138-1-thumb.webp",
+          "caption": "Same cloth and colourway · natural folds"
+        },
+        {
+          "src": "assets/material-photography/MP138-2.jpg",
+          "thumbnail": "assets/material-photography/MP138-2-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        },
+        {
+          "src": "assets/material-photography/MP138-3.jpg",
+          "thumbnail": "assets/material-photography/MP138-3-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        }
+      ],
+      "imageCaption": "Photographed cloth · Yarn-dyed check · brushed cotton",
+      "displayImage": "assets/material-photography/MP138-display.webp",
+      "displayThumbnail": "assets/material-photography/MP138-preview.webp",
+      "displayWidth": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Listed material information; physical properties and application remain subject to sample review.",
+      "displayHeight": 960
+    },
+    {
+      "id": "MP139",
+      "title": "Ash Brushed Pinstripe Suiting",
+      "family": "Stripes",
+      "structure": "Brushed wool-blend suiting",
+      "colors": [
+        "Grey"
+      ],
+      "uses": [
+        "Tailored trousers"
+      ],
+      "composition": "40% wool / 28% viscose / 29% polyester / 3% spandex",
+      "weight": "221 gsm",
+      "width": "147 cm",
+      "handle": "Soft brushed face; fluid folds",
+      "displayLabel": "Fine pinstripes · softened tailoring",
+      "description": "A cool ash-grey suiting with a brushed surface and fine lengthwise stripes. Its soft folds offer a quieter patterned route for pleated and wide-leg tailoring.",
+      "developmentNotes": "Confirm stripe alignment through pleats and pockets, pressing response, seam slippage and recovery. Limited-run reference; repeat production is unconfirmed.",
+      "type": "pattern",
+      "tags": [
+        "Stripes",
+        "Brushed wool-blend suiting"
+      ],
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "trendIds": [
+        "T01",
+        "T03",
+        "PAT02"
+      ],
+      "image": "assets/material-photography/MP139-1.jpg",
+      "thumbnail": "assets/material-photography/MP139-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/material-photography/MP139-1.jpg",
+          "thumbnail": "assets/material-photography/MP139-1-thumb.webp",
+          "caption": "Same cloth and colourway · natural folds"
+        },
+        {
+          "src": "assets/material-photography/MP139-2.jpg",
+          "thumbnail": "assets/material-photography/MP139-2-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        },
+        {
+          "src": "assets/material-photography/MP139-3.jpg",
+          "thumbnail": "assets/material-photography/MP139-3-thumb.webp",
+          "caption": "Same cloth and colourway · additional photographic view"
+        }
+      ],
+      "imageCaption": "Photographed cloth · Fine pinstripes · softened tailoring",
+      "displayImage": "assets/material-photography/MP139-display.webp",
+      "displayThumbnail": "assets/material-photography/MP139-preview.webp",
+      "displayWidth": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Listed material information; physical properties and application remain subject to sample review.",
+      "displayHeight": 960
     },
     {
       "id": "MP001",
