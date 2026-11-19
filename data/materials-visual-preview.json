@@ -1,199 +1,302 @@
 {
-  "version": "20261118visual2",
+  "version": "20261118drape1",
+  "mode": "digital-visual-study",
   "items": [
     {
-      "id": "MF106",
-      "title": "White Cotton Waffle",
-      "shortTitle": "Cotton waffle",
-      "family": "Waffle",
-      "surface": "Cellular texture",
+      "id": "DS002",
+      "title": "Brushed rib",
+      "shortTitle": "Brushed rib",
+      "family": "Rib",
       "colour": "White",
+      "surface": "Raised ribs, soft folds",
+      "uses": [
+        "Layering tops",
+        "Knit trousers"
+      ],
       "seasons": [
         "A/W 27/28"
       ],
-      "uses": [
-        "Knit pants",
-        "Layering tops"
-      ],
-      "photograph": "assets/material-visual-preview/MF106-portrait.webp",
-      "thumbnail": "assets/material-visual-preview/MF106-portrait-small.webp",
-      "texture": "assets/material-display/MF106-display.webp",
-      "textureWidth": 600,
-      "original": "assets/material-library/MF106.webp",
-      "recordUrl": "products.html?material=MF106"
+      "composition": "Polyester 65%, Spandex 5%, Viscose rayon 30%",
+      "sourceYear": "2024",
+      "developmentContext": "A/W 27/28 visual development study",
+      "kind": "digital-render-reference",
+      "materialId": null,
+      "thumbnail": "assets/material-drape-study/DS002-preview.webp",
+      "original": "assets/material-drape-study/DS002-drape.webp",
+      "images": [
+        {
+          "label": "Drape",
+          "image": "assets/material-drape-study/DS002-drape.webp",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "label": "Wide view",
+          "image": "assets/material-drape-study/DS002-wide.webp",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "label": "Form",
+          "image": "assets/material-drape-study/DS002-form.webp",
+          "width": 1200,
+          "height": 717
+        }
+      ]
     },
     {
-      "id": "MF090",
-      "title": "Beige Wool-blend Melton",
-      "shortTitle": "Wool-blend melton",
+      "id": "DS001",
+      "title": "Wool & cashmere melton",
+      "shortTitle": "Wool & cashmere melton",
       "family": "Melton",
-      "surface": "Textured surface",
-      "colour": "Beige",
-      "seasons": [
-        "A/W 27/28"
-      ],
+      "colour": "Brown",
+      "surface": "Brushed surface, rounded folds",
       "uses": [
         "Coats",
         "Shackets"
       ],
-      "photograph": "assets/material-visual-preview/MF090-portrait.webp",
-      "thumbnail": "assets/material-visual-preview/MF090-portrait-small.webp",
-      "texture": "assets/material-display/MF090-display.webp",
-      "textureWidth": 600,
-      "original": "assets/material-library/MF090.webp",
-      "recordUrl": "products.html?material=MF090"
-    },
-    {
-      "id": "MF003",
-      "title": "Green Cotton Twill",
-      "shortTitle": "Cotton twill",
-      "family": "Twill",
-      "surface": "Diagonal weave",
-      "colour": "Green",
       "seasons": [
         "A/W 27/28"
       ],
+      "composition": "Wool 80%, Cashmere 20%",
+      "sourceYear": "2024",
+      "developmentContext": "A/W 27/28 visual development study",
+      "kind": "digital-render-reference",
+      "materialId": null,
+      "thumbnail": "assets/material-drape-study/DS001-preview.webp",
+      "original": "assets/material-drape-study/DS001-drape.webp",
+      "images": [
+        {
+          "label": "Drape",
+          "image": "assets/material-drape-study/DS001-drape.webp",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "label": "Wide view",
+          "image": "assets/material-drape-study/DS001-wide.webp",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "label": "Form",
+          "image": "assets/material-drape-study/DS001-form.webp",
+          "width": 1200,
+          "height": 717
+        }
+      ]
+    },
+    {
+      "id": "DS008",
+      "title": "Cotton dobby",
+      "shortTitle": "Cotton dobby",
+      "family": "Dobby",
+      "colour": "Blue",
+      "surface": "Woven pattern, directional light",
       "uses": [
+        "Shirts",
+        "Shackets"
+      ],
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "composition": "Cotton 100%",
+      "sourceYear": "2024",
+      "developmentContext": "A/W 27/28 visual development study",
+      "kind": "digital-render-reference",
+      "materialId": null,
+      "thumbnail": "assets/material-drape-study/DS008-preview.webp",
+      "original": "assets/material-drape-study/DS008-drape.webp",
+      "images": [
+        {
+          "label": "Drape",
+          "image": "assets/material-drape-study/DS008-drape.webp",
+          "width": 720,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "id": "DS003",
+      "title": "Cotton-blend corduroy",
+      "shortTitle": "Cotton-blend corduroy",
+      "family": "Corduroy",
+      "colour": "Red",
+      "surface": "Fine wales, gathered volume",
+      "uses": [
+        "Shirts",
         "Shackets",
-        "Tailored trousers",
         "Utility trousers"
       ],
-      "photograph": "assets/material-visual-preview/MF003-portrait.webp",
-      "thumbnail": "assets/material-visual-preview/MF003-portrait-small.webp",
-      "texture": "assets/material-display/MF003-display.webp",
-      "textureWidth": 600,
-      "original": "assets/material-library/MF003.webp",
-      "recordUrl": "products.html?material=MF003"
-    },
-    {
-      "id": "MF096",
-      "title": "Ivory Polyester Tweed",
-      "shortTitle": "Textured tweed",
-      "family": "Tweed",
-      "surface": "Textured yarns",
-      "colour": "Ivory",
       "seasons": [
         "A/W 27/28"
       ],
+      "composition": "Cotton 98%, Spandex 2%",
+      "sourceYear": "2024",
+      "developmentContext": "A/W 27/28 visual development study",
+      "kind": "digital-render-reference",
+      "materialId": null,
+      "thumbnail": "assets/material-drape-study/DS003-preview.webp",
+      "original": "assets/material-drape-study/DS003-drape.webp",
+      "images": [
+        {
+          "label": "Drape",
+          "image": "assets/material-drape-study/DS003-drape.webp",
+          "width": 720,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "id": "DS005",
+      "title": "Wool-blend double weave",
+      "shortTitle": "Wool-blend double weave",
+      "family": "Double Weave",
+      "colour": "Grey",
+      "surface": "Marl surface, sculpted folds",
       "uses": [
         "Coats",
         "Shackets",
-        "Jackets"
-      ],
-      "photograph": "assets/material-visual-preview/MF096-portrait.webp",
-      "thumbnail": "assets/material-visual-preview/MF096-portrait-small.webp",
-      "texture": "assets/material-display/MF096-display.webp",
-      "textureWidth": 600,
-      "original": "assets/material-library/MF096.webp",
-      "recordUrl": "products.html?material=MF096"
-    },
-    {
-      "id": "MF016",
-      "title": "Navy Cotton Corduroy",
-      "shortTitle": "Cotton corduroy",
-      "family": "Corduroy",
-      "surface": "Raised wales",
-      "colour": "Navy",
-      "seasons": [
-        "A/W 27/28"
-      ],
-      "uses": [
-        "Shackets",
-        "Jackets",
-        "Shirts"
-      ],
-      "photograph": "assets/material-visual-preview/MF016-portrait.webp",
-      "thumbnail": "assets/material-visual-preview/MF016-portrait-small.webp",
-      "texture": "assets/material-display/MF016-display.webp",
-      "textureWidth": 600,
-      "original": "assets/material-library/MF016.webp",
-      "recordUrl": "products.html?material=MF016"
-    },
-    {
-      "id": "MF044",
-      "title": "Charcoal Polyester-blend Double Knit",
-      "shortTitle": "Double knit",
-      "family": "Double Knit",
-      "surface": "Fine knitted surface",
-      "colour": "Charcoal",
-      "seasons": [
-        "A/W 27/28"
-      ],
-      "uses": [
-        "Knit pants",
         "Tailored trousers"
       ],
-      "photograph": "assets/material-visual-preview/MF044-portrait.webp",
-      "thumbnail": "assets/material-visual-preview/MF044-portrait-small.webp",
-      "texture": "assets/material-display/MF044-display.webp",
-      "textureWidth": 600,
-      "original": "assets/material-library/MF044.webp",
-      "recordUrl": "products.html?material=MF044"
-    },
-    {
-      "id": "MF020",
-      "title": "Beige Polyester-blend Corduroy",
-      "shortTitle": "Textured corduroy",
-      "family": "Corduroy",
-      "surface": "Raised wales",
-      "colour": "Beige",
       "seasons": [
         "A/W 27/28"
       ],
-      "uses": [
-        "Shackets",
-        "Jackets",
-        "Shirts"
-      ],
-      "photograph": "assets/material-visual-preview/MF020-portrait.webp",
-      "thumbnail": "assets/material-visual-preview/MF020-portrait-small.webp",
-      "texture": "assets/material-display/MF020-display.webp",
-      "textureWidth": 600,
-      "original": "assets/material-library/MF020.webp",
-      "recordUrl": "products.html?material=MF020"
+      "composition": "Wool 35%, Polyester 45%, Acrylic 15%, Nylon 5%",
+      "sourceYear": "2024",
+      "developmentContext": "A/W 27/28 visual development study",
+      "kind": "digital-render-reference",
+      "materialId": null,
+      "thumbnail": "assets/material-drape-study/DS005-preview.webp",
+      "original": "assets/material-drape-study/DS005-drape.webp",
+      "images": [
+        {
+          "label": "Drape",
+          "image": "assets/material-drape-study/DS005-drape.webp",
+          "width": 720,
+          "height": 960
+        }
+      ]
     },
     {
-      "id": "MF117",
-      "title": "Brown Striated Polyester-Blend Tricot",
-      "shortTitle": "Striated tricot",
-      "family": "Tricot",
-      "surface": "Striped knit surface",
-      "colour": "Brown",
+      "id": "DS004",
+      "title": "Cotton-blend double knit",
+      "shortTitle": "Cotton-blend double knit",
+      "family": "Double Knit",
+      "colour": "Pink",
+      "surface": "Smooth face, soft contours",
+      "uses": [
+        "Knit trousers",
+        "Layering tops"
+      ],
       "seasons": [
         "A/W 27/28"
       ],
-      "uses": [
-        "Yoga leggings",
-        "Knit pants"
-      ],
-      "photograph": "assets/material-visual-preview/MF117-portrait.webp",
-      "thumbnail": "assets/material-visual-preview/MF117-portrait-small.webp",
-      "texture": "assets/material-display/MF117-display.webp",
-      "textureWidth": 580,
-      "original": "assets/material-library/MF117.webp",
-      "recordUrl": "products.html?material=MF117"
+      "composition": "Cotton 70%, Nylon 10%, Polyester 20%",
+      "sourceYear": "2024",
+      "developmentContext": "A/W 27/28 visual development study",
+      "kind": "digital-render-reference",
+      "materialId": null,
+      "thumbnail": "assets/material-drape-study/DS004-preview.webp",
+      "original": "assets/material-drape-study/DS004-drape.webp",
+      "images": [
+        {
+          "label": "Drape",
+          "image": "assets/material-drape-study/DS004-drape.webp",
+          "width": 720,
+          "height": 960
+        }
+      ]
     },
     {
-      "id": "MF001",
-      "title": "Pale Blue Polyester-blend Twill",
-      "shortTitle": "Fine twill",
-      "family": "Twill",
-      "surface": "Diagonal weave",
-      "colour": "Pale Blue",
+      "id": "DS007",
+      "title": "Cotton fleece",
+      "shortTitle": "Cotton fleece",
+      "family": "Fleece",
+      "colour": "Red",
+      "surface": "Dense surface, rounded volume",
+      "uses": [
+        "Knit trousers",
+        "Layering tops"
+      ],
       "seasons": [
         "A/W 27/28"
       ],
+      "composition": "Cotton 100%",
+      "sourceYear": "2024",
+      "developmentContext": "A/W 27/28 visual development study",
+      "kind": "digital-render-reference",
+      "materialId": null,
+      "thumbnail": "assets/material-drape-study/DS007-preview.webp",
+      "original": "assets/material-drape-study/DS007-drape.webp",
+      "images": [
+        {
+          "label": "Drape",
+          "image": "assets/material-drape-study/DS007-drape.webp",
+          "width": 720,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "id": "DS006",
+      "title": "Wool-blend tweed",
+      "shortTitle": "Wool-blend tweed",
+      "family": "Tweed",
+      "colour": "Red",
+      "surface": "Textured yarns, subtle highlights",
       "uses": [
-        "Shackets",
-        "Tailored trousers",
-        "Utility trousers"
+        "Coats",
+        "Shackets"
       ],
-      "photograph": "assets/material-visual-preview/MF001-portrait.webp",
-      "thumbnail": "assets/material-visual-preview/MF001-portrait-small.webp",
-      "texture": "assets/material-display/MF001-display.webp",
-      "textureWidth": 600,
-      "original": "assets/material-library/MF001.webp",
-      "recordUrl": "products.html?material=MF001"
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "composition": "Wool 55%, Polyester 12%, Acrylic 25%, Nylon 5%, Metallic 3%",
+      "sourceYear": "2024",
+      "developmentContext": "A/W 27/28 visual development study",
+      "kind": "digital-render-reference",
+      "materialId": null,
+      "thumbnail": "assets/material-drape-study/DS006-preview.webp",
+      "original": "assets/material-drape-study/DS006-drape.webp",
+      "images": [
+        {
+          "label": "Drape",
+          "image": "assets/material-drape-study/DS006-drape.webp",
+          "width": 720,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "id": "DS009",
+      "title": "Crinkled double knit",
+      "shortTitle": "Crinkled double knit",
+      "family": "Double Knit",
+      "colour": "Yellow",
+      "surface": "Rippling texture, light and shade",
+      "uses": [
+        "Layering tops",
+        "Knit trousers"
+      ],
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "composition": "Polyester 95%, Spandex 5%",
+      "sourceYear": "2024",
+      "developmentContext": "A/W 27/28 visual development study",
+      "kind": "digital-render-reference",
+      "materialId": null,
+      "thumbnail": "assets/material-drape-study/DS009-preview.webp",
+      "original": "assets/material-drape-study/DS009-drape.webp",
+      "images": [
+        {
+          "label": "Drape",
+          "image": "assets/material-drape-study/DS009-drape.webp",
+          "width": 720,
+          "height": 960
+        }
+      ]
     }
   ]
 }

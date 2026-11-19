@@ -21,7 +21,7 @@
 .mv-view-switch button[aria-pressed=true]{border-color:#181916;color:#181916}
 .mv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:46px 28px}
 .mv-card{min-width:0}
-.mv-media{position:relative;background:#ecece7;aspect-ratio:4/5;overflow:hidden}
+.mv-media{position:relative;background:#ecece7;aspect-ratio:3/4;overflow:hidden}
 .mv-open{width:100%;height:100%;border:0;background:none;padding:0;cursor:zoom-in;display:block}
 .mv-photo{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
 .mv-open:hover .mv-photo{transform:scale(1.025)}
@@ -36,6 +36,10 @@
 .mv-card-note{font-size:12px;line-height:1.65;color:var(--mv-muted);margin:0}
 .mv-card-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:11px;line-height:1.6;color:var(--mv-muted);margin-top:12px}
 .mv-card-footer a{color:#181916;text-decoration:none;border-bottom:1px solid #b4b7ad;padding-bottom:2px}
+.mv-study-link{font:inherit;color:#181916;border:0;border-bottom:1px solid #b4b7ad;background:none;padding:0 0 2px;cursor:pointer}
+.mv-drape-review .mv-photo{object-fit:contain}
+.mv-drape-review .mv-open:hover .mv-photo{transform:none}
+.mv-drape-review .mv-study-note{font-size:11px;line-height:1.7;color:var(--mv-muted);margin:0 0 22px}
 .mv-caption{border-top:1px solid var(--mv-line);margin-top:45px;padding-top:24px;display:flex;justify-content:space-between;gap:40px;font-size:11px;line-height:1.8;color:var(--mv-muted)}
 .mv-caption p{max-width:740px;margin:0}
 .mv-empty{grid-column:1/-1;padding:70px 0;text-align:center;font-size:14px;color:var(--mv-muted)}
