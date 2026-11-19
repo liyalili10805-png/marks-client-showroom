@@ -1,5 +1,5 @@
 {
-  "version": "20261119photo1",
+  "version": 1,
   "season": "A/W 27/28",
   "reports": {
     "OW01": {
@@ -2488,5 +2488,6 @@
         }
       ]
     }
-  }
+  },
+  "release": "20261119photo2"
 }

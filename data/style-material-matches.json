@@ -1,5 +1,5 @@
 {
-  "version": "20261119photo1",
+  "version": 1,
   "season": "A/W 27/28",
   "basis": "Explicit style-to-library design review. Applications are proposed, not physically approved.",
   "styles": {
@@ -1430,5 +1430,6 @@
         }
       ]
     }
-  }
+  },
+  "release": "20261119photo2"
 }

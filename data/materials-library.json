@@ -1,5 +1,5 @@
 {
-  "version": "20261119photo1",
+  "version": 1,
   "edition": "16 November 2026",
   "title": "Materials & Patterns",
   "items": [
@@ -14102,5 +14102,6 @@
       "displayThumbnailWidth": 400,
       "displayLabel": "Digital pattern concept"
     }
-  ]
+  ],
+  "release": "20261119photo2"
 }
