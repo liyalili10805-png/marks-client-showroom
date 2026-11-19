@@ -1,5 +1,5 @@
 {
-  "version": "20261118visual1",
+  "version": "20261118visual2",
   "items": [
     {
       "id": "MF106",
@@ -112,7 +112,7 @@
     {
       "id": "MF044",
       "title": "Charcoal Polyester-blend Double Knit",
-      "shortTitle": "Compact double knit",
+      "shortTitle": "Double knit",
       "family": "Double Knit",
       "surface": "Fine knitted surface",
       "colour": "Charcoal",
@@ -133,7 +133,7 @@
     {
       "id": "MF020",
       "title": "Beige Polyester-blend Corduroy",
-      "shortTitle": "Soft corduroy",
+      "shortTitle": "Textured corduroy",
       "family": "Corduroy",
       "surface": "Raised wales",
       "colour": "Beige",
@@ -176,7 +176,7 @@
     {
       "id": "MF001",
       "title": "Pale Blue Polyester-blend Twill",
-      "shortTitle": "Fluid twill",
+      "shortTitle": "Fine twill",
       "family": "Twill",
       "surface": "Diagonal weave",
       "colour": "Pale Blue",
