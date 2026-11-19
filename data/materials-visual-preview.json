@@ -1,0 +1,199 @@
+{
+  "version": "20261118visual1",
+  "items": [
+    {
+      "id": "MF106",
+      "title": "White Cotton Waffle",
+      "shortTitle": "Cotton waffle",
+      "family": "Waffle",
+      "surface": "Cellular texture",
+      "colour": "White",
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "uses": [
+        "Knit pants",
+        "Layering tops"
+      ],
+      "photograph": "assets/material-visual-preview/MF106-portrait.webp",
+      "thumbnail": "assets/material-visual-preview/MF106-portrait-small.webp",
+      "texture": "assets/material-display/MF106-display.webp",
+      "textureWidth": 600,
+      "original": "assets/material-library/MF106.webp",
+      "recordUrl": "products.html?material=MF106"
+    },
+    {
+      "id": "MF090",
+      "title": "Beige Wool-blend Melton",
+      "shortTitle": "Wool-blend melton",
+      "family": "Melton",
+      "surface": "Textured surface",
+      "colour": "Beige",
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "uses": [
+        "Coats",
+        "Shackets"
+      ],
+      "photograph": "assets/material-visual-preview/MF090-portrait.webp",
+      "thumbnail": "assets/material-visual-preview/MF090-portrait-small.webp",
+      "texture": "assets/material-display/MF090-display.webp",
+      "textureWidth": 600,
+      "original": "assets/material-library/MF090.webp",
+      "recordUrl": "products.html?material=MF090"
+    },
+    {
+      "id": "MF003",
+      "title": "Green Cotton Twill",
+      "shortTitle": "Cotton twill",
+      "family": "Twill",
+      "surface": "Diagonal weave",
+      "colour": "Green",
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "uses": [
+        "Shackets",
+        "Tailored trousers",
+        "Utility trousers"
+      ],
+      "photograph": "assets/material-visual-preview/MF003-portrait.webp",
+      "thumbnail": "assets/material-visual-preview/MF003-portrait-small.webp",
+      "texture": "assets/material-display/MF003-display.webp",
+      "textureWidth": 600,
+      "original": "assets/material-library/MF003.webp",
+      "recordUrl": "products.html?material=MF003"
+    },
+    {
+      "id": "MF096",
+      "title": "Ivory Polyester Tweed",
+      "shortTitle": "Textured tweed",
+      "family": "Tweed",
+      "surface": "Textured yarns",
+      "colour": "Ivory",
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "uses": [
+        "Coats",
+        "Shackets",
+        "Jackets"
+      ],
+      "photograph": "assets/material-visual-preview/MF096-portrait.webp",
+      "thumbnail": "assets/material-visual-preview/MF096-portrait-small.webp",
+      "texture": "assets/material-display/MF096-display.webp",
+      "textureWidth": 600,
+      "original": "assets/material-library/MF096.webp",
+      "recordUrl": "products.html?material=MF096"
+    },
+    {
+      "id": "MF016",
+      "title": "Navy Cotton Corduroy",
+      "shortTitle": "Cotton corduroy",
+      "family": "Corduroy",
+      "surface": "Raised wales",
+      "colour": "Navy",
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "uses": [
+        "Shackets",
+        "Jackets",
+        "Shirts"
+      ],
+      "photograph": "assets/material-visual-preview/MF016-portrait.webp",
+      "thumbnail": "assets/material-visual-preview/MF016-portrait-small.webp",
+      "texture": "assets/material-display/MF016-display.webp",
+      "textureWidth": 600,
+      "original": "assets/material-library/MF016.webp",
+      "recordUrl": "products.html?material=MF016"
+    },
+    {
+      "id": "MF044",
+      "title": "Charcoal Polyester-blend Double Knit",
+      "shortTitle": "Compact double knit",
+      "family": "Double Knit",
+      "surface": "Fine knitted surface",
+      "colour": "Charcoal",
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "uses": [
+        "Knit pants",
+        "Tailored trousers"
+      ],
+      "photograph": "assets/material-visual-preview/MF044-portrait.webp",
+      "thumbnail": "assets/material-visual-preview/MF044-portrait-small.webp",
+      "texture": "assets/material-display/MF044-display.webp",
+      "textureWidth": 600,
+      "original": "assets/material-library/MF044.webp",
+      "recordUrl": "products.html?material=MF044"
+    },
+    {
+      "id": "MF020",
+      "title": "Beige Polyester-blend Corduroy",
+      "shortTitle": "Soft corduroy",
+      "family": "Corduroy",
+      "surface": "Raised wales",
+      "colour": "Beige",
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "uses": [
+        "Shackets",
+        "Jackets",
+        "Shirts"
+      ],
+      "photograph": "assets/material-visual-preview/MF020-portrait.webp",
+      "thumbnail": "assets/material-visual-preview/MF020-portrait-small.webp",
+      "texture": "assets/material-display/MF020-display.webp",
+      "textureWidth": 600,
+      "original": "assets/material-library/MF020.webp",
+      "recordUrl": "products.html?material=MF020"
+    },
+    {
+      "id": "MF117",
+      "title": "Brown Striated Polyester-Blend Tricot",
+      "shortTitle": "Striated tricot",
+      "family": "Tricot",
+      "surface": "Striped knit surface",
+      "colour": "Brown",
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "uses": [
+        "Yoga leggings",
+        "Knit pants"
+      ],
+      "photograph": "assets/material-visual-preview/MF117-portrait.webp",
+      "thumbnail": "assets/material-visual-preview/MF117-portrait-small.webp",
+      "texture": "assets/material-display/MF117-display.webp",
+      "textureWidth": 580,
+      "original": "assets/material-library/MF117.webp",
+      "recordUrl": "products.html?material=MF117"
+    },
+    {
+      "id": "MF001",
+      "title": "Pale Blue Polyester-blend Twill",
+      "shortTitle": "Fluid twill",
+      "family": "Twill",
+      "surface": "Diagonal weave",
+      "colour": "Pale Blue",
+      "seasons": [
+        "A/W 27/28"
+      ],
+      "uses": [
+        "Shackets",
+        "Tailored trousers",
+        "Utility trousers"
+      ],
+      "photograph": "assets/material-visual-preview/MF001-portrait.webp",
+      "thumbnail": "assets/material-visual-preview/MF001-portrait-small.webp",
+      "texture": "assets/material-display/MF001-display.webp",
+      "textureWidth": 600,
+      "original": "assets/material-library/MF001.webp",
+      "recordUrl": "products.html?material=MF001"
+    }
+  ]
+}
