@@ -224,7 +224,8 @@
   function hasTrendSelection() { return !pageIsBoard && state.trend !== null; }
   function trendPool() {
     if (!hasTrendSelection()) return items;
-    return trendSelection.status === 'ready' ? items.filter(item => trendSelection.ids.has(item.id)) : [];
+    // A retained research citation must still resolve to its original cloth.
+    return trendSelection.status === 'ready' ? [...byId.values()].filter(item => trendSelection.ids.has(item.id)) : [];
   }
   function scopeTotals() {
     if (!hasTrendSelection()) return totals();
@@ -719,8 +720,9 @@
     copy.append(node('p', 'ml-detail-code', (item.type === 'fabric' ? 'Fabric' : 'Pattern') + ' / ' + item.id), node('h2', null, item.title));
     copy.append(node('p', 'ml-detail-desc', item.description || 'A material reference selected for further exploration in everyday apparel.'));
     copy.append(node('p', 'ml-status ml-status--' + item.status, STATUS[item.status]));
+    if (item.archived) copy.append(node('p', 'ml-detail-scope', 'Earlier library reference · retained for your saved selections and exact links.'));
     const fields = node('dl', 'ml-detail-fields');
-    [['Family', item.family], ['Structure', item.structure || item.technique], ['Composition', item.composition], ['Listed weight', item.weight], ['Listed width', item.width], ['Listed thickness', item.thickness], ['Listed finish', item.finish], ['Handle reference', item.handle], ['Colour', item.colors.join(' / ')], ['Application', item.uses.join(' / ')], ['Development season', item.developmentSeasons.join(' / ')], ['Source season', item.season], ['Library source', SOURCE[item.sourceType]]].forEach(([key, value]) => {
+    [['Family', item.family], ['Structure', item.structure || item.technique], ['Composition', item.composition], ['Listed weight', item.weight], ['Listed width', item.width], ['Listed thickness', item.thickness], ['Listed finish', item.finish], ['Listed stretch', item.listedStretch], ['Listed opacity', item.listedOpacity], ['Handle reference', item.handle], ['Colour', item.colors.join(' / ')], ['Application', item.uses.join(' / ')], ['Development season', item.developmentSeasons.join(' / ')], ['Source season', item.season], ['Library source', SOURCE[item.sourceType]]].forEach(([key, value]) => {
       if (!value) return;
       const row = node('div'); row.append(node('dt', null, key), node('dd', null, value)); fields.append(row);
     }); copy.append(fields);
@@ -877,7 +879,10 @@
       const response = await fetch(DATA_URL); if (!response.ok) throw new Error('Library response ' + response.status);
       const data = await response.json(), raw = Array.isArray(data) ? data : data.items;
       if (!Array.isArray(raw)) throw new Error('No library items');
-      const seen = new Set(); items = raw.map(normalise).filter(i => { if (seen.has(i.id)) return false; seen.add(i.id); return true; }); byId = new Map(items.map(i => [i.id, i])); libraryCards.clear();
+      const seen = new Set();
+      const references = raw.map(normalise).filter(i => { if (seen.has(i.id)) return false; seen.add(i.id); return true; });
+      items = references.filter(i => !i.archived);
+      byId = new Map(references.map(i => [i.id, i])); libraryCards.clear();
       const styleId=new URLSearchParams(location.search).get('style');
       if(window.StyleMaterials&&/^(?:RF27-[OST]\d\d|AE-\d{3})$/.test(styleId||'')){const candidate={code:styleId,materials:[]};await window.StyleMaterials.load([candidate]);if(candidate.materials.length)originStyle=candidate;}
       if (pageIsBoard) { const params = new URLSearchParams(location.search); sharedIds = [...new Set((params.get('ids') || '').split(','))].filter(id => byId.has(id)); renderBoard(); }

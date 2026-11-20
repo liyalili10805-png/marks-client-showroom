@@ -38,6 +38,34 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-doublecheck",
+          "label": "Brushed double-faced stretch-blend coating",
+          "ids": [
+            "MP157"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed double-faced stretch-blend coating; source-listed weights 360 gsm. Proposed application: shackets, jackets. Review both faces, nap and check placement, seam bulk and button-band support. The listed 360 gsm cloth is for light jackets, not assumed interchangeable with a heavy coat."
+        },
+        {
+          "key": "cloth-widecord",
+          "label": "Wide-wale cotton corduroy",
+          "ids": [
+            "MF138"
+          ],
+          "tier": "alternative",
+          "rationale": "Wide-wale cotton corduroy; source-listed weights 280 gsm. Proposed application: shirts, shackets, tailored trousers. Review directional pile, wale scale, shirt placket bulk and collar support. For trousers, test seat abrasion and growth; this quality has no listed spandex."
+        },
+        {
+          "key": "cloth-brush",
+          "label": "Brushed cotton twill",
+          "ids": [
+            "MF128",
+            "MF129"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed cotton twill; source-listed weights 310 gsm. Proposed application: shackets, tailored trousers. Review nap alignment, washing shrinkage, pleat bulk and pocket support. The brushed face changes the surface of the original garment."
+        },
+        {
           "key": "brushed-twill",
           "label": "Brushed cotton twill",
           "ids": [
@@ -110,6 +138,69 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "cloth-duocheck",
+          "label": "Double-sided yarn-dyed cotton twill",
+          "ids": [
+            "MP161"
+          ],
+          "tier": "alternative",
+          "rationale": "Double-sided yarn-dyed cotton twill; source-listed weights 286 gsm. Proposed application: shackets, tailored trousers. The listing describes a gingham face and striped reverse, with checks about 1 x 1.3 cm. Review face/reverse finishing, grain skew, washing shrinkage and pleat bulk."
+        },
+        {
+          "key": "cloth-wideutilitystripe",
+          "label": "Yarn-dyed bottomweight cotton twill",
+          "ids": [
+            "MP160"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed bottomweight cotton twill; source-listed weights 286 gsm. Proposed application: shackets, tailored trousers. The listing gives 20 mm stripes parallel to the selvedge. Review stripe alignment, grain skew, shrinkage and bulk at pockets and pleats."
+        },
+        {
+          "key": "cloth-canvas",
+          "label": "Washed cotton canvas",
+          "ids": [
+            "MF149"
+          ],
+          "tier": "alternative",
+          "rationale": "Washed cotton canvas; source-listed weights 285 gsm. Proposed application: shackets, utility trousers. Review pocket reinforcement, abrasion, washing shrinkage and knee movement. The recorded 285 gsm cloth does not establish workwear certification."
+        },
+        {
+          "key": "cloth-hempcanvas",
+          "label": "Hemp/organic-cotton canvas",
+          "ids": [
+            "MF148"
+          ],
+          "tier": "alternative",
+          "rationale": "Hemp/organic-cotton canvas; source-listed weights 280 gsm. Proposed application: shackets, utility trousers. Review stiffness, washing shrinkage, pocket bulk and seam support. Fibre content alone does not verify strength or a sustainability certification."
+        },
+        {
+          "key": "cloth-washedtwill",
+          "label": "Washed cotton twill",
+          "ids": [
+            "MF146"
+          ],
+          "tier": "alternative",
+          "rationale": "Washed cotton twill; source-listed weights 293-306 gsm. Proposed application: shackets, utility trousers. Review pocket reinforcement, washing shrinkage, crease behaviour and knee movement. The listed 293–306 gsm range does not establish workwear certification."
+        },
+        {
+          "key": "cloth-drywax",
+          "label": "Dry-waxed cotton/nylon poplin",
+          "ids": [
+            "MF141"
+          ],
+          "tier": "alternative",
+          "rationale": "Dry-waxed cotton/nylon poplin; source-listed weights 170 gsm. Proposed application: jackets, shackets. Exact fibre percentages are not supplied. At 170 gsm this is a lightweight jacket route. Review pressing, needle marks, washing instructions and finish durability; do not claim tested weather protection."
+        },
+        {
+          "key": "cloth-finecord",
+          "label": "Fine-wale cotton corduroy",
+          "ids": [
+            "MF139"
+          ],
+          "tier": "alternative",
+          "rationale": "Fine-wale cotton corduroy; source-listed weights 300 gsm. Proposed application: shackets, tailored trousers. Keep the pile direction consistent. Check pocket and pleat bulk, pile marking and seat abrasion; no stretch content is listed."
+        },
         {
           "key": "eight-wale-cord",
           "label": "8-wale stretch corduroy",
@@ -242,6 +333,24 @@
       "styleTerms": [],
       "materialTerms": [
         {
+          "key": "cloth-drywax",
+          "label": "Dry-waxed cotton/nylon poplin",
+          "ids": [
+            "MF141"
+          ],
+          "tier": "alternative",
+          "rationale": "Dry-waxed cotton/nylon poplin; source-listed weights 170 gsm. Proposed application: jackets, shackets. Exact fibre percentages are not supplied. At 170 gsm this is a lightweight jacket route. Review pressing, needle marks, washing instructions and finish durability; do not claim tested weather protection."
+        },
+        {
+          "key": "cloth-taslan",
+          "label": "Lightweight nylon plain",
+          "ids": [
+            "MF137"
+          ],
+          "tier": "alternative",
+          "rationale": "Lightweight nylon plain; source-listed weights 132 gsm. Proposed application: jackets. This colourway is listed with a lighter, more relaxed hand than others in the range. Check actual crinkle, seam stability and lining; it is not ripstop. Protective properties remain untested."
+        },
+        {
           "key": "microcheck",
           "label": "Microcheck references",
           "ids": [
@@ -312,6 +421,34 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-ripstop",
+          "label": "Lightweight nylon ripstop",
+          "ids": [
+            "MF135",
+            "MF136"
+          ],
+          "tier": "alternative",
+          "rationale": "Lightweight nylon ripstop; source-listed weights 135 gsm. Proposed application: jackets, utility trousers. This is a lightweight face cloth, not a complete insulated system. Confirm grid scale, seam strength, lining and any protective finish. Water resistance is a source claim without independent test evidence."
+        },
+        {
+          "key": "cloth-wavequilt",
+          "label": "Wave-quilted nylon with polyester batting",
+          "ids": [
+            "MF134"
+          ],
+          "tier": "alternative",
+          "rationale": "Wave-quilted nylon with polyester batting; source-listed weights 275 gsm. Proposed application: jackets, shackets. Review stitch-channel placement, loft at cuffs and collar, batting migration, seam binding and lining. Thermal performance is untested."
+        },
+        {
+          "key": "cloth-daisyquilt",
+          "label": "Floral-quilted nylon with polyester batting",
+          "ids": [
+            "MF133"
+          ],
+          "tier": "alternative",
+          "rationale": "Floral-quilted nylon with polyester batting; source-listed weights 275 gsm. Proposed application: jackets, shackets. The listed weight is for the quilted material, not just the nylon face. Review loft compression, pattern placement, seam binding, lining and needle damage; insulation performance is untested."
+        },
+        {
           "key": "plain-weave",
           "label": "Plain woven grounds",
           "ids": [
@@ -346,6 +483,25 @@
       "title": "The Adaptable Shell & Parka",
       "styleTerms": [],
       "materialTerms": [
+        {
+          "key": "cloth-taslan",
+          "label": "Lightweight nylon plain",
+          "ids": [
+            "MF137"
+          ],
+          "tier": "alternative",
+          "rationale": "Lightweight nylon plain; source-listed weights 132 gsm. Proposed application: jackets. This colourway is listed with a lighter, more relaxed hand than others in the range. Check actual crinkle, seam stability and lining; it is not ripstop. Protective properties remain untested."
+        },
+        {
+          "key": "cloth-ripstop",
+          "label": "Lightweight nylon ripstop",
+          "ids": [
+            "MF135",
+            "MF136"
+          ],
+          "tier": "alternative",
+          "rationale": "Lightweight nylon ripstop; source-listed weights 135 gsm. Proposed application: jackets, utility trousers. This is a lightweight face cloth, not a complete insulated system. Confirm grid scale, seam strength, lining and any protective finish. Water resistance is a source claim without independent test evidence."
+        },
         {
           "key": "nylon-taslan",
           "label": "Lightweight nylon plains",
@@ -400,6 +556,25 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "cloth-teddy",
+          "label": "High-pile teddy fleece with fleece reverse",
+          "ids": [
+            "MF147"
+          ],
+          "tier": "alternative",
+          "rationale": "High-pile teddy fleece with fleece reverse; source-listed weights 480 gsm. Proposed application: shackets, jackets. Review pile compression, shedding, seam bulk and button-band finishing. Sample the actual cloth before approving the shirt-jacket block."
+        },
+        {
+          "key": "cloth-polar",
+          "label": "Brushed polyester polar fleece",
+          "ids": [
+            "MF132",
+            "MF153"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed polyester polar fleece; source-listed weights 280 gsm. Proposed application: jackets, shackets, knit trousers. Review pilling, repeated-wash appearance, seam bulk and stretch recovery. A trouser trial needs seat and knee-bagging tests; warmth has not been independently measured."
+        },
         {
           "key": "teddy-fleece",
           "label": "High-pile teddy fleece",
@@ -471,6 +646,51 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "cloth-heavysolid",
+          "label": "Heavyweight double-faced wool/nylon coating",
+          "ids": [
+            "MF150"
+          ],
+          "tier": "alternative",
+          "rationale": "Heavyweight double-faced wool/nylon coating; source-listed weights 607 gsm. Proposed application: coats. At 607 gsm this is a substantial structured coating. Review shoulder support, collar roll, seam thickness, split-layer finishing and total garment weight."
+        },
+        {
+          "key": "cloth-doublewool",
+          "label": "Splittable double-faced wool coating",
+          "ids": [
+            "MF131"
+          ],
+          "tier": "alternative",
+          "rationale": "Splittable double-faced wool coating; source-listed weights 509 gsm. Proposed application: coats. The listing describes two splittable layers. Trial hand finishing, seam splitting and pressing in the intended coat block; reversible construction still needs development."
+        },
+        {
+          "key": "cloth-wooltwill",
+          "label": "Wool-blend twill coating",
+          "ids": [
+            "MF130"
+          ],
+          "tier": "alternative",
+          "rationale": "Wool-blend twill coating; source-listed weights 490 gsm. Proposed application: coats. Review the different faces, nap direction, collar roll, pressing and seam thickness."
+        },
+        {
+          "key": "cloth-heavycoat",
+          "label": "Double-faced wool-blend coating",
+          "ids": [
+            "MP141"
+          ],
+          "tier": "alternative",
+          "rationale": "Double-faced wool-blend coating; source-listed weights 682 gsm. Proposed application: coats. At 682 gsm this is a substantial coat cloth. Review shoulder support, weight, nap and split-layer finishing; do not assume it suits a light shacket."
+        },
+        {
+          "key": "cloth-coatcheck",
+          "label": "Yarn-dyed wool-blend coating",
+          "ids": [
+            "MP140"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed wool-blend coating; source-listed weights 448 gsm. Proposed application: coats, jackets. Review check placement, nap, seam bulk, lining and pressing in the intended coat block."
+        },
         {
           "key": "felted-wool-coating",
           "label": "Felt-like wool coating",
@@ -551,6 +771,45 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-brushstripe",
+          "label": "Brushed cotton shirting",
+          "ids": [
+            "MP154"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed cotton shirting; source-listed weights 145 gsm. Proposed application: shirts. Check the listed brushed face, stripe placement and collar/cuff bulk. The source describes a crisp drape; do not assume a fluid blouse handle."
+        },
+        {
+          "key": "cloth-rayonflannel",
+          "label": "Yarn-dyed rayon flannel",
+          "ids": [
+            "MP146"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed rayon flannel; source-listed weights 180 gsm. Proposed application: shirts. This rayon flannel changes the hand from cotton. Review seam slippage, wet handling, shrinkage and pocket stability before approving the shirt."
+        },
+        {
+          "key": "cloth-flannel",
+          "label": "Yarn-dyed cotton flannel",
+          "ids": [
+            "MP143",
+            "MP144",
+            "MP145",
+            "MP147"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed cotton flannel; source-listed weights 160 gsm, 170 gsm, 180 gsm. Proposed application: shirts. Review check matching at placket, pocket and cuffs, brushing direction, shrinkage and colourfastness. This is shirt-weight cloth, not a heavy coating."
+        },
+        {
+          "key": "cloth-heavyflannel",
+          "label": "Yarn-dyed midweight cotton flannel",
+          "ids": [
+            "MP142"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed midweight cotton flannel; source-listed weights 250 gsm. Proposed application: shirts, shackets. Review check placement, washing shrinkage and collar/placket bulk. At 250 gsm this is heavier than a conventional light shirt."
+        },
+        {
           "key": "yarn-dyed-shirt-check",
           "label": "Yarn-dyed shirt-weight check",
           "ids": [
@@ -617,6 +876,83 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-classicstripe",
+          "label": "Yarn-dyed cotton shirting",
+          "ids": [
+            "MP162"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed cotton shirting; source-listed weights 148 gsm. Proposed application: shirts. Review stripe matching at the front and pocket, collar support, shrinkage and seam puckering. Keep the actual stripe scale visible."
+        },
+        {
+          "key": "cloth-jacquard",
+          "label": "Reversible cotton-blend jacquard",
+          "ids": [
+            "MP156",
+            "MP158"
+          ],
+          "tier": "alternative",
+          "rationale": "Reversible cotton-blend jacquard; source-listed weights 210 gsm. Proposed application: shirts, shackets. Review the actual reversible faces, motif scale, snagging, seam slippage and button-band support. At 210 gsm this is an overshirt route, not a heavy coating."
+        },
+        {
+          "key": "cloth-brushstripe",
+          "label": "Brushed cotton shirting",
+          "ids": [
+            "MP154"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed cotton shirting; source-listed weights 145 gsm. Proposed application: shirts. Check the listed brushed face, stripe placement and collar/cuff bulk. The source describes a crisp drape; do not assume a fluid blouse handle."
+        },
+        {
+          "key": "cloth-poplin",
+          "label": "Crisp woven cotton poplin",
+          "ids": [
+            "MF142"
+          ],
+          "tier": "alternative",
+          "rationale": "Crisp woven cotton poplin; source-listed weights 110 gsm. Proposed application: shirts. Review coverage in the actual colourway, collar and cuff support, seam puckering and washing shrinkage. Lighter colours may be less opaque."
+        },
+        {
+          "key": "cloth-shirtstripe",
+          "label": "Yarn-dyed washed cotton shirting",
+          "ids": [
+            "MP152",
+            "MP153"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed washed cotton shirting; source-listed weights 129 gsm. Proposed application: shirts. Review stripe direction and matching, collar support, washing shrinkage and seam puckering. Preserve the relaxed shirt block rather than transferring trouser weight assumptions."
+        },
+        {
+          "key": "cloth-widecord",
+          "label": "Wide-wale cotton corduroy",
+          "ids": [
+            "MF138"
+          ],
+          "tier": "alternative",
+          "rationale": "Wide-wale cotton corduroy; source-listed weights 280 gsm. Proposed application: shirts, shackets, tailored trousers. Review directional pile, wale scale, shirt placket bulk and collar support. For trousers, test seat abrasion and growth; this quality has no listed spandex."
+        },
+        {
+          "key": "cloth-shirtcheck",
+          "label": "Yarn-dyed cotton shirting",
+          "ids": [
+            "MP149",
+            "MP150",
+            "MP151",
+            "MP163"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed cotton shirting; source-listed weights 109 gsm, 114 gsm, 120 gsm, 125 gsm. Proposed application: shirts. Keep the small check readable at collar, pocket and placket. Review opacity, seam puckering, shrinkage and pattern alignment."
+        },
+        {
+          "key": "cloth-clip",
+          "label": "Cotton clip jacquard",
+          "ids": [
+            "MP148"
+          ],
+          "tier": "alternative",
+          "rationale": "Cotton clip jacquard; source-listed weights 103 gsm. Proposed application: shirts. The 103 gsm cloth is semi-opaque and softly voluminous. Check clip-yarn snagging, seam stability and coverage; consider lining or deliberate layering. Limited-run reference; repeat supply is unconfirmed."
+        },
+        {
           "key": "seersucker",
           "label": "Seersucker shirting",
           "ids": [
@@ -664,6 +1000,24 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "cloth-washedpoplin",
+          "label": "Washed cotton poplin",
+          "ids": [
+            "MF152"
+          ],
+          "tier": "alternative",
+          "rationale": "Washed cotton poplin; source-listed weights 110 gsm. Proposed application: shirts. Review washed hand, collar support, buttonhole stability, opacity and shrinkage in the actual blue colourway."
+        },
+        {
+          "key": "cloth-paperpoplin",
+          "label": "Paper-touch cotton poplin",
+          "ids": [
+            "MF143"
+          ],
+          "tier": "alternative",
+          "rationale": "Paper-touch cotton poplin; source-listed weights 140 gsm. Proposed application: shirts. Review crisp volume, collar support, buttonhole stability and shrinkage. The paper-like hand is a listed handle reference, not a tested finishing process."
+        },
         {
           "key": "twill",
           "label": "Twill grounds",
@@ -721,6 +1075,82 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "cloth-washedpoplin",
+          "label": "Washed cotton poplin",
+          "ids": [
+            "MF152"
+          ],
+          "tier": "alternative",
+          "rationale": "Washed cotton poplin; source-listed weights 110 gsm. Proposed application: shirts. Review washed hand, collar support, buttonhole stability, opacity and shrinkage in the actual blue colourway."
+        },
+        {
+          "key": "cloth-classicstripe",
+          "label": "Yarn-dyed cotton shirting",
+          "ids": [
+            "MP162"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed cotton shirting; source-listed weights 148 gsm. Proposed application: shirts. Review stripe matching at the front and pocket, collar support, shrinkage and seam puckering. Keep the actual stripe scale visible."
+        },
+        {
+          "key": "cloth-flower",
+          "label": "Printed cotton twill shirting",
+          "ids": [
+            "MP159"
+          ],
+          "tier": "alternative",
+          "rationale": "Printed cotton twill shirting; source-listed weights 115 gsm. Proposed application: shirts. Review complete motif placement at centre front, collar and pocket, print fastness, opacity and shrinkage. A botanical direction reference does not verify future-season demand."
+        },
+        {
+          "key": "cloth-paperpoplin",
+          "label": "Paper-touch cotton poplin",
+          "ids": [
+            "MF143"
+          ],
+          "tier": "alternative",
+          "rationale": "Paper-touch cotton poplin; source-listed weights 140 gsm. Proposed application: shirts. Review crisp volume, collar support, buttonhole stability and shrinkage. The paper-like hand is a listed handle reference, not a tested finishing process."
+        },
+        {
+          "key": "cloth-poplin",
+          "label": "Crisp woven cotton poplin",
+          "ids": [
+            "MF142"
+          ],
+          "tier": "alternative",
+          "rationale": "Crisp woven cotton poplin; source-listed weights 110 gsm. Proposed application: shirts. Review coverage in the actual colourway, collar and cuff support, seam puckering and washing shrinkage. Lighter colours may be less opaque."
+        },
+        {
+          "key": "cloth-shirtstripe",
+          "label": "Yarn-dyed washed cotton shirting",
+          "ids": [
+            "MP152",
+            "MP153"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed washed cotton shirting; source-listed weights 129 gsm. Proposed application: shirts. Review stripe direction and matching, collar support, washing shrinkage and seam puckering. Preserve the relaxed shirt block rather than transferring trouser weight assumptions."
+        },
+        {
+          "key": "cloth-shirtcheck",
+          "label": "Yarn-dyed cotton shirting",
+          "ids": [
+            "MP149",
+            "MP150",
+            "MP151",
+            "MP163"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed cotton shirting; source-listed weights 109 gsm, 114 gsm, 120 gsm, 125 gsm. Proposed application: shirts. Keep the small check readable at collar, pocket and placket. Review opacity, seam puckering, shrinkage and pattern alignment."
+        },
+        {
+          "key": "cloth-rayonflannel",
+          "label": "Yarn-dyed rayon flannel",
+          "ids": [
+            "MP146"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed rayon flannel; source-listed weights 180 gsm. Proposed application: shirts. This rayon flannel changes the hand from cotton. Review seam slippage, wet handling, shrinkage and pocket stability before approving the shirt."
+        },
         {
           "key": "poplin",
           "label": "Plain poplin grounds",
@@ -835,6 +1265,62 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-duocheck",
+          "label": "Double-sided yarn-dyed cotton twill",
+          "ids": [
+            "MP161"
+          ],
+          "tier": "alternative",
+          "rationale": "Double-sided yarn-dyed cotton twill; source-listed weights 286 gsm. Proposed application: shackets, tailored trousers. The listing describes a gingham face and striped reverse, with checks about 1 x 1.3 cm. Review face/reverse finishing, grain skew, washing shrinkage and pleat bulk."
+        },
+        {
+          "key": "cloth-wideutilitystripe",
+          "label": "Yarn-dyed bottomweight cotton twill",
+          "ids": [
+            "MP160"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed bottomweight cotton twill; source-listed weights 286 gsm. Proposed application: shackets, tailored trousers. The listing gives 20 mm stripes parallel to the selvedge. Review stripe alignment, grain skew, shrinkage and bulk at pockets and pleats."
+        },
+        {
+          "key": "cloth-lyotwill",
+          "label": "Cotton/lyocell woven twill",
+          "ids": [
+            "MF144",
+            "MF145"
+          ],
+          "tier": "alternative",
+          "rationale": "Cotton/lyocell woven twill; source-listed weights 280 gsm. Proposed application: tailored trousers, shackets. Review pleat retention, bias hang, seam slippage and dimensional stability. Cotton/lyocell changes the hand from pure cotton; mechanical recovery has not been tested."
+        },
+        {
+          "key": "cloth-glen",
+          "label": "Brushed stretch-blend glen-plaid suiting",
+          "ids": [
+            "MP155"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed stretch-blend glen-plaid suiting; source-listed weights 225 gsm. Proposed application: tailored trousers. Review check placement through pleats, pressing, seam slippage and crosswise recovery. This is a listed suiting quality, not evidence of tested comfort performance."
+        },
+        {
+          "key": "cloth-stretchcord",
+          "label": "8-wale stretch cotton corduroy",
+          "ids": [
+            "MF140"
+          ],
+          "tier": "alternative",
+          "rationale": "8-wale stretch cotton corduroy; source-listed weights 325 gsm. Proposed application: tailored trousers, utility trousers. Review crosswise stretch recovery, waistband stability, pile marking and bulk through front pleats. Keep the nap direction consistent."
+        },
+        {
+          "key": "cloth-brush",
+          "label": "Brushed cotton twill",
+          "ids": [
+            "MF128",
+            "MF129"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed cotton twill; source-listed weights 310 gsm. Proposed application: shackets, tailored trousers. Review nap alignment, washing shrinkage, pleat bulk and pocket support. The brushed face changes the surface of the original garment."
+        },
+        {
           "key": "washed-cotton-twill",
           "label": "Washed cotton twill",
           "ids": [
@@ -900,6 +1386,42 @@
       "title": "The Everyday Utility Trouser",
       "styleTerms": [],
       "materialTerms": [
+        {
+          "key": "cloth-canvas",
+          "label": "Washed cotton canvas",
+          "ids": [
+            "MF149"
+          ],
+          "tier": "alternative",
+          "rationale": "Washed cotton canvas; source-listed weights 285 gsm. Proposed application: shackets, utility trousers. Review pocket reinforcement, abrasion, washing shrinkage and knee movement. The recorded 285 gsm cloth does not establish workwear certification."
+        },
+        {
+          "key": "cloth-hempcanvas",
+          "label": "Hemp/organic-cotton canvas",
+          "ids": [
+            "MF148"
+          ],
+          "tier": "alternative",
+          "rationale": "Hemp/organic-cotton canvas; source-listed weights 280 gsm. Proposed application: shackets, utility trousers. Review stiffness, washing shrinkage, pocket bulk and seam support. Fibre content alone does not verify strength or a sustainability certification."
+        },
+        {
+          "key": "cloth-washedtwill",
+          "label": "Washed cotton twill",
+          "ids": [
+            "MF146"
+          ],
+          "tier": "alternative",
+          "rationale": "Washed cotton twill; source-listed weights 293-306 gsm. Proposed application: shackets, utility trousers. Review pocket reinforcement, washing shrinkage, crease behaviour and knee movement. The listed 293–306 gsm range does not establish workwear certification."
+        },
+        {
+          "key": "cloth-stretchcord",
+          "label": "8-wale stretch cotton corduroy",
+          "ids": [
+            "MF140"
+          ],
+          "tier": "alternative",
+          "rationale": "8-wale stretch cotton corduroy; source-listed weights 325 gsm. Proposed application: tailored trousers, utility trousers. Review crosswise stretch recovery, waistband stability, pile marking and bulk through front pleats. Keep the nap direction consistent."
+        },
         {
           "key": "washed-cotton-twill",
           "label": "Washed cotton twill",
@@ -972,6 +1494,25 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-lyotwill",
+          "label": "Cotton/lyocell woven twill",
+          "ids": [
+            "MF144",
+            "MF145"
+          ],
+          "tier": "alternative",
+          "rationale": "Cotton/lyocell woven twill; source-listed weights 280 gsm. Proposed application: tailored trousers, shackets. Review pleat retention, bias hang, seam slippage and dimensional stability. Cotton/lyocell changes the hand from pure cotton; mechanical recovery has not been tested."
+        },
+        {
+          "key": "cloth-glen",
+          "label": "Brushed stretch-blend glen-plaid suiting",
+          "ids": [
+            "MP155"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed stretch-blend glen-plaid suiting; source-listed weights 225 gsm. Proposed application: tailored trousers. Review check placement through pleats, pressing, seam slippage and crosswise recovery. This is a listed suiting quality, not evidence of tested comfort performance."
+        },
+        {
           "key": "brushed-pinstripe",
           "label": "Brushed pinstripe suiting",
           "ids": [
@@ -1041,6 +1582,36 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "cloth-doublecheck",
+          "label": "Brushed double-faced stretch-blend coating",
+          "ids": [
+            "MP157"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed double-faced stretch-blend coating; source-listed weights 360 gsm. Proposed application: shackets, jackets. Review both faces, nap and check placement, seam bulk and button-band support. The listed 360 gsm cloth is for light jackets, not assumed interchangeable with a heavy coat."
+        },
+        {
+          "key": "cloth-flannel",
+          "label": "Yarn-dyed cotton flannel",
+          "ids": [
+            "MP143",
+            "MP144",
+            "MP145",
+            "MP147"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed cotton flannel; source-listed weights 160 gsm, 170 gsm, 180 gsm. Proposed application: shirts. Review check matching at placket, pocket and cuffs, brushing direction, shrinkage and colourfastness. This is shirt-weight cloth, not a heavy coating."
+        },
+        {
+          "key": "cloth-heavyflannel",
+          "label": "Yarn-dyed midweight cotton flannel",
+          "ids": [
+            "MP142"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed midweight cotton flannel; source-listed weights 250 gsm. Proposed application: shirts, shackets. Review check placement, washing shrinkage and collar/placket bulk. At 250 gsm this is heavier than a conventional light shirt."
+        },
         {
           "key": "yarn-dyed-shirt-check",
           "label": "Yarn-dyed shirt-weight check",
@@ -1157,6 +1728,33 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-stretchcord",
+          "label": "8-wale stretch cotton corduroy",
+          "ids": [
+            "MF140"
+          ],
+          "tier": "alternative",
+          "rationale": "8-wale stretch cotton corduroy; source-listed weights 325 gsm. Proposed application: tailored trousers, utility trousers. Review crosswise stretch recovery, waistband stability, pile marking and bulk through front pleats. Keep the nap direction consistent."
+        },
+        {
+          "key": "cloth-finecord",
+          "label": "Fine-wale cotton corduroy",
+          "ids": [
+            "MF139"
+          ],
+          "tier": "alternative",
+          "rationale": "Fine-wale cotton corduroy; source-listed weights 300 gsm. Proposed application: shackets, tailored trousers. Keep the pile direction consistent. Check pocket and pleat bulk, pile marking and seat abrasion; no stretch content is listed."
+        },
+        {
+          "key": "cloth-widecord",
+          "label": "Wide-wale cotton corduroy",
+          "ids": [
+            "MF138"
+          ],
+          "tier": "alternative",
+          "rationale": "Wide-wale cotton corduroy; source-listed weights 280 gsm. Proposed application: shirts, shackets, tailored trousers. Review directional pile, wale scale, shirt placket bulk and collar support. For trousers, test seat abrasion and growth; this quality has no listed spandex."
+        },
+        {
           "key": "eight-wale-cord",
           "label": "8-wale stretch corduroy",
           "ids": [
@@ -1225,6 +1823,61 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "cloth-duocheck",
+          "label": "Double-sided yarn-dyed cotton twill",
+          "ids": [
+            "MP161"
+          ],
+          "tier": "alternative",
+          "rationale": "Double-sided yarn-dyed cotton twill; source-listed weights 286 gsm. Proposed application: shackets, tailored trousers. The listing describes a gingham face and striped reverse, with checks about 1 x 1.3 cm. Review face/reverse finishing, grain skew, washing shrinkage and pleat bulk."
+        },
+        {
+          "key": "cloth-wideutilitystripe",
+          "label": "Yarn-dyed bottomweight cotton twill",
+          "ids": [
+            "MP160"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed bottomweight cotton twill; source-listed weights 286 gsm. Proposed application: shackets, tailored trousers. The listing gives 20 mm stripes parallel to the selvedge. Review stripe alignment, grain skew, shrinkage and bulk at pockets and pleats."
+        },
+        {
+          "key": "cloth-canvas",
+          "label": "Washed cotton canvas",
+          "ids": [
+            "MF149"
+          ],
+          "tier": "alternative",
+          "rationale": "Washed cotton canvas; source-listed weights 285 gsm. Proposed application: shackets, utility trousers. Review pocket reinforcement, abrasion, washing shrinkage and knee movement. The recorded 285 gsm cloth does not establish workwear certification."
+        },
+        {
+          "key": "cloth-hempcanvas",
+          "label": "Hemp/organic-cotton canvas",
+          "ids": [
+            "MF148"
+          ],
+          "tier": "alternative",
+          "rationale": "Hemp/organic-cotton canvas; source-listed weights 280 gsm. Proposed application: shackets, utility trousers. Review stiffness, washing shrinkage, pocket bulk and seam support. Fibre content alone does not verify strength or a sustainability certification."
+        },
+        {
+          "key": "cloth-washedtwill",
+          "label": "Washed cotton twill",
+          "ids": [
+            "MF146"
+          ],
+          "tier": "alternative",
+          "rationale": "Washed cotton twill; source-listed weights 293-306 gsm. Proposed application: shackets, utility trousers. Review pocket reinforcement, washing shrinkage, crease behaviour and knee movement. The listed 293–306 gsm range does not establish workwear certification."
+        },
+        {
+          "key": "cloth-brush",
+          "label": "Brushed cotton twill",
+          "ids": [
+            "MF128",
+            "MF129"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed cotton twill; source-listed weights 310 gsm. Proposed application: shackets, tailored trousers. Review nap alignment, washing shrinkage, pleat bulk and pocket support. The brushed face changes the surface of the original garment."
+        },
         {
           "key": "washed-cotton-twill",
           "label": "Washed cotton twill",
@@ -1301,6 +1954,25 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-lyotwill",
+          "label": "Cotton/lyocell woven twill",
+          "ids": [
+            "MF144",
+            "MF145"
+          ],
+          "tier": "alternative",
+          "rationale": "Cotton/lyocell woven twill; source-listed weights 280 gsm. Proposed application: tailored trousers, shackets. Review pleat retention, bias hang, seam slippage and dimensional stability. Cotton/lyocell changes the hand from pure cotton; mechanical recovery has not been tested."
+        },
+        {
+          "key": "cloth-glen",
+          "label": "Brushed stretch-blend glen-plaid suiting",
+          "ids": [
+            "MP155"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed stretch-blend glen-plaid suiting; source-listed weights 225 gsm. Proposed application: tailored trousers. Review check placement through pleats, pressing, seam slippage and crosswise recovery. This is a listed suiting quality, not evidence of tested comfort performance."
+        },
+        {
           "key": "twill",
           "label": "Twill grounds",
           "ids": [
@@ -1372,6 +2044,24 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-wavequilt",
+          "label": "Wave-quilted nylon with polyester batting",
+          "ids": [
+            "MF134"
+          ],
+          "tier": "alternative",
+          "rationale": "Wave-quilted nylon with polyester batting; source-listed weights 275 gsm. Proposed application: jackets, shackets. Review stitch-channel placement, loft at cuffs and collar, batting migration, seam binding and lining. Thermal performance is untested."
+        },
+        {
+          "key": "cloth-daisyquilt",
+          "label": "Floral-quilted nylon with polyester batting",
+          "ids": [
+            "MF133"
+          ],
+          "tier": "alternative",
+          "rationale": "Floral-quilted nylon with polyester batting; source-listed weights 275 gsm. Proposed application: jackets, shackets. The listed weight is for the quilted material, not just the nylon face. Review loft compression, pattern placement, seam binding, lining and needle damage; insulation performance is untested."
+        },
+        {
           "key": "plain-weave",
           "label": "Plain woven grounds",
           "ids": [
@@ -1406,6 +2096,34 @@
       "title": "Quiet Technical Plains & Ripstop",
       "styleTerms": [],
       "materialTerms": [
+        {
+          "key": "cloth-drywax",
+          "label": "Dry-waxed cotton/nylon poplin",
+          "ids": [
+            "MF141"
+          ],
+          "tier": "alternative",
+          "rationale": "Dry-waxed cotton/nylon poplin; source-listed weights 170 gsm. Proposed application: jackets, shackets. Exact fibre percentages are not supplied. At 170 gsm this is a lightweight jacket route. Review pressing, needle marks, washing instructions and finish durability; do not claim tested weather protection."
+        },
+        {
+          "key": "cloth-taslan",
+          "label": "Lightweight nylon plain",
+          "ids": [
+            "MF137"
+          ],
+          "tier": "alternative",
+          "rationale": "Lightweight nylon plain; source-listed weights 132 gsm. Proposed application: jackets. This colourway is listed with a lighter, more relaxed hand than others in the range. Check actual crinkle, seam stability and lining; it is not ripstop. Protective properties remain untested."
+        },
+        {
+          "key": "cloth-ripstop",
+          "label": "Lightweight nylon ripstop",
+          "ids": [
+            "MF135",
+            "MF136"
+          ],
+          "tier": "alternative",
+          "rationale": "Lightweight nylon ripstop; source-listed weights 135 gsm. Proposed application: jackets, utility trousers. This is a lightweight face cloth, not a complete insulated system. Confirm grid scale, seam strength, lining and any protective finish. Water resistance is a source claim without independent test evidence."
+        },
         {
           "key": "nylon-taslan",
           "label": "Lightweight nylon plains",
@@ -1470,6 +2188,93 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "cloth-duocheck",
+          "label": "Double-sided yarn-dyed cotton twill",
+          "ids": [
+            "MP161"
+          ],
+          "tier": "alternative",
+          "rationale": "Double-sided yarn-dyed cotton twill; source-listed weights 286 gsm. Proposed application: shackets, tailored trousers. The listing describes a gingham face and striped reverse, with checks about 1 x 1.3 cm. Review face/reverse finishing, grain skew, washing shrinkage and pleat bulk."
+        },
+        {
+          "key": "cloth-doublecheck",
+          "label": "Brushed double-faced stretch-blend coating",
+          "ids": [
+            "MP157"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed double-faced stretch-blend coating; source-listed weights 360 gsm. Proposed application: shackets, jackets. Review both faces, nap and check placement, seam bulk and button-band support. The listed 360 gsm cloth is for light jackets, not assumed interchangeable with a heavy coat."
+        },
+        {
+          "key": "cloth-shirtcheck",
+          "label": "Yarn-dyed cotton shirting",
+          "ids": [
+            "MP149",
+            "MP150",
+            "MP151",
+            "MP163"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed cotton shirting; source-listed weights 109 gsm, 114 gsm, 120 gsm, 125 gsm. Proposed application: shirts. Keep the small check readable at collar, pocket and placket. Review opacity, seam puckering, shrinkage and pattern alignment."
+        },
+        {
+          "key": "cloth-clip",
+          "label": "Cotton clip jacquard",
+          "ids": [
+            "MP148"
+          ],
+          "tier": "alternative",
+          "rationale": "Cotton clip jacquard; source-listed weights 103 gsm. Proposed application: shirts. The 103 gsm cloth is semi-opaque and softly voluminous. Check clip-yarn snagging, seam stability and coverage; consider lining or deliberate layering. Limited-run reference; repeat supply is unconfirmed."
+        },
+        {
+          "key": "cloth-rayonflannel",
+          "label": "Yarn-dyed rayon flannel",
+          "ids": [
+            "MP146"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed rayon flannel; source-listed weights 180 gsm. Proposed application: shirts. This rayon flannel changes the hand from cotton. Review seam slippage, wet handling, shrinkage and pocket stability before approving the shirt."
+        },
+        {
+          "key": "cloth-flannel",
+          "label": "Yarn-dyed cotton flannel",
+          "ids": [
+            "MP143",
+            "MP144",
+            "MP145",
+            "MP147"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed cotton flannel; source-listed weights 160 gsm, 170 gsm, 180 gsm. Proposed application: shirts. Review check matching at placket, pocket and cuffs, brushing direction, shrinkage and colourfastness. This is shirt-weight cloth, not a heavy coating."
+        },
+        {
+          "key": "cloth-heavyflannel",
+          "label": "Yarn-dyed midweight cotton flannel",
+          "ids": [
+            "MP142"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed midweight cotton flannel; source-listed weights 250 gsm. Proposed application: shirts, shackets. Review check placement, washing shrinkage and collar/placket bulk. At 250 gsm this is heavier than a conventional light shirt."
+        },
+        {
+          "key": "cloth-heavycoat",
+          "label": "Double-faced wool-blend coating",
+          "ids": [
+            "MP141"
+          ],
+          "tier": "alternative",
+          "rationale": "Double-faced wool-blend coating; source-listed weights 682 gsm. Proposed application: coats. At 682 gsm this is a substantial coat cloth. Review shoulder support, weight, nap and split-layer finishing; do not assume it suits a light shacket."
+        },
+        {
+          "key": "cloth-coatcheck",
+          "label": "Yarn-dyed wool-blend coating",
+          "ids": [
+            "MP140"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed wool-blend coating; source-listed weights 448 gsm. Proposed application: coats, jackets. Review check placement, nap, seam bulk, lining and pressing in the intended coat block."
+        },
         {
           "key": "yarn-dyed-shirt-check",
           "label": "Yarn-dyed shirt-weight check",
@@ -1556,6 +2361,52 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-classicstripe",
+          "label": "Yarn-dyed cotton shirting",
+          "ids": [
+            "MP162"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed cotton shirting; source-listed weights 148 gsm. Proposed application: shirts. Review stripe matching at the front and pocket, collar support, shrinkage and seam puckering. Keep the actual stripe scale visible."
+        },
+        {
+          "key": "cloth-wideutilitystripe",
+          "label": "Yarn-dyed bottomweight cotton twill",
+          "ids": [
+            "MP160"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed bottomweight cotton twill; source-listed weights 286 gsm. Proposed application: shackets, tailored trousers. The listing gives 20 mm stripes parallel to the selvedge. Review stripe alignment, grain skew, shrinkage and bulk at pockets and pleats."
+        },
+        {
+          "key": "cloth-glen",
+          "label": "Brushed stretch-blend glen-plaid suiting",
+          "ids": [
+            "MP155"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed stretch-blend glen-plaid suiting; source-listed weights 225 gsm. Proposed application: tailored trousers. Review check placement through pleats, pressing, seam slippage and crosswise recovery. This is a listed suiting quality, not evidence of tested comfort performance."
+        },
+        {
+          "key": "cloth-brushstripe",
+          "label": "Brushed cotton shirting",
+          "ids": [
+            "MP154"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed cotton shirting; source-listed weights 145 gsm. Proposed application: shirts. Check the listed brushed face, stripe placement and collar/cuff bulk. The source describes a crisp drape; do not assume a fluid blouse handle."
+        },
+        {
+          "key": "cloth-shirtstripe",
+          "label": "Yarn-dyed washed cotton shirting",
+          "ids": [
+            "MP152",
+            "MP153"
+          ],
+          "tier": "alternative",
+          "rationale": "Yarn-dyed washed cotton shirting; source-listed weights 129 gsm. Proposed application: shirts. Review stripe direction and matching, collar support, washing shrinkage and seam puckering. Preserve the relaxed shirt block rather than transferring trouser weight assumptions."
+        },
+        {
           "key": "brushed-pinstripe",
           "label": "Brushed pinstripe suiting",
           "ids": [
@@ -1631,6 +2482,15 @@
       "styleTerms": [],
       "materialTerms": [
         {
+          "key": "cloth-flower",
+          "label": "Printed cotton twill shirting",
+          "ids": [
+            "MP159"
+          ],
+          "tier": "alternative",
+          "rationale": "Printed cotton twill shirting; source-listed weights 115 gsm. Proposed application: shirts. Review complete motif placement at centre front, collar and pocket, print fastness, opacity and shrinkage. A botanical direction reference does not verify future-season demand."
+        },
+        {
           "key": "viscose-botanical",
           "label": "Viscose floral references",
           "ids": [
@@ -1704,6 +2564,16 @@
       "title": "Dark-Ground Printed Geometry",
       "styleTerms": [],
       "materialTerms": [
+        {
+          "key": "cloth-jacquard",
+          "label": "Reversible cotton-blend jacquard",
+          "ids": [
+            "MP156",
+            "MP158"
+          ],
+          "tier": "alternative",
+          "rationale": "Reversible cotton-blend jacquard; source-listed weights 210 gsm. Proposed application: shirts, shackets. Review the actual reversible faces, motif scale, snagging, seam slippage and button-band support. At 210 gsm this is an overshirt route, not a heavy coating."
+        },
         {
           "key": "geometry",
           "label": "Light-ground geometric alternative",
@@ -1852,6 +2722,24 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "cloth-wavequilt",
+          "label": "Wave-quilted nylon with polyester batting",
+          "ids": [
+            "MF134"
+          ],
+          "tier": "alternative",
+          "rationale": "Wave-quilted nylon with polyester batting; source-listed weights 275 gsm. Proposed application: jackets, shackets. Review stitch-channel placement, loft at cuffs and collar, batting migration, seam binding and lining. Thermal performance is untested."
+        },
+        {
+          "key": "cloth-daisyquilt",
+          "label": "Floral-quilted nylon with polyester batting",
+          "ids": [
+            "MF133"
+          ],
+          "tier": "alternative",
+          "rationale": "Floral-quilted nylon with polyester batting; source-listed weights 275 gsm. Proposed application: jackets, shackets. The listed weight is for the quilted material, not just the nylon face. Review loft compression, pattern placement, seam binding, lining and needle damage; insulation performance is untested."
+        },
         {
           "key": "quilt-effect",
           "label": "Quilt-effect knitted cloth",
@@ -2136,6 +3024,15 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-bamboorib",
+          "label": "Rayon-from-bamboo stretch rib knit",
+          "ids": [
+            "MF151"
+          ],
+          "tier": "alternative",
+          "rationale": "Rayon-from-bamboo stretch rib knit; source-listed weights 332 gsm. Proposed application: knit trousers, yoga leggings. The 332 gsm rib is a development trial, not an approved performance legging fabric. Test opacity at extension, recovery, waist growth, pilling and seams on the actual high-rise block."
+        },
+        {
           "key": "loopback",
           "label": "Brushed-back French terry",
           "ids": [
@@ -2193,6 +3090,16 @@
       "title": "The Brushed Warm-Up Jogger",
       "styleTerms": [],
       "materialTerms": [
+        {
+          "key": "cloth-polar",
+          "label": "Brushed polyester polar fleece",
+          "ids": [
+            "MF132",
+            "MF153"
+          ],
+          "tier": "alternative",
+          "rationale": "Brushed polyester polar fleece; source-listed weights 280 gsm. Proposed application: jackets, shackets, knit trousers. Review pilling, repeated-wash appearance, seam bulk and stretch recovery. A trouser trial needs seat and knee-bagging tests; warmth has not been independently measured."
+        },
         {
           "key": "brushed-back",
           "label": "Brushed-back fleece",
@@ -2258,6 +3165,15 @@
         }
       ],
       "materialTerms": [
+        {
+          "key": "cloth-bamboorib",
+          "label": "Rayon-from-bamboo stretch rib knit",
+          "ids": [
+            "MF151"
+          ],
+          "tier": "alternative",
+          "rationale": "Rayon-from-bamboo stretch rib knit; source-listed weights 332 gsm. Proposed application: knit trousers, yoga leggings. The 332 gsm rib is a development trial, not an approved performance legging fabric. Test opacity at extension, recovery, waist growth, pilling and seams on the actual high-rise block."
+        },
         {
           "key": "cotton-rib-trial",
           "label": "Cotton stretch rib trials",
@@ -2397,6 +3313,15 @@
       ],
       "materialTerms": [
         {
+          "key": "cloth-bamboorib",
+          "label": "Rayon-from-bamboo stretch rib knit",
+          "ids": [
+            "MF151"
+          ],
+          "tier": "alternative",
+          "rationale": "Rayon-from-bamboo stretch rib knit; source-listed weights 332 gsm. Proposed application: knit trousers, yoga leggings. The 332 gsm rib is a development trial, not an approved performance legging fabric. Test opacity at extension, recovery, waist growth, pilling and seams on the actual high-rise block."
+        },
+        {
           "key": "cotton-rib-trial",
           "label": "Cotton stretch rib trials",
           "ids": [
@@ -2489,5 +3414,5 @@
       ]
     }
   },
-  "release": "20261119full2"
+  "release": "20261120cloth50"
 }

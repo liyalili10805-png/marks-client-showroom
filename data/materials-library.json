@@ -4,6 +4,3000 @@
   "title": "Materials & Patterns",
   "items": [
     {
+      "id": "MF131",
+      "title": "Heather Birch Double-Faced Wool",
+      "type": "fabric",
+      "family": "Wool coating",
+      "structure": "Splittable double-faced wool coating",
+      "colors": [
+        "Beige"
+      ],
+      "uses": [
+        "Coats"
+      ],
+      "composition": "100% Wool",
+      "weight": "509 gsm",
+      "width": "150 cm",
+      "handle": "Listed drape: structured",
+      "displayLabel": "Splittable double-faced wool coating",
+      "description": "Heather Birch Double-Faced Wool, photographed as a real piece of cloth with a separate folded-surface view. A 509 gsm splittable double-faced wool coating reference for coats.",
+      "developmentNotes": "The listing describes two splittable layers. Trial hand finishing, seam splitting and pressing in the intended coat block; reversible construction still needs development.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Wool coating",
+        "Splittable double-faced wool coating",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW08"
+      ],
+      "image": "assets/cloth-edit/MF131-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF131-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF131-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF131-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF131-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF131-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF131-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF131-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP141",
+      "title": "Molasses Double-Faced Check Coating",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Double-faced wool-blend coating",
+      "colors": [
+        "Brown"
+      ],
+      "uses": [
+        "Coats"
+      ],
+      "composition": "50% Wool / 50% Polyester",
+      "weight": "682 gsm",
+      "width": "150 cm",
+      "handle": "Listed drape: structured",
+      "displayLabel": "Double-faced wool-blend coating",
+      "description": "Molasses Double-Faced Check Coating, photographed as a real piece of cloth with a separate folded-surface view. A 682 gsm double-faced wool-blend coating reference for coats.",
+      "developmentNotes": "At 682 gsm this is a substantial coat cloth. Review shoulder support, weight, nap and split-layer finishing; do not assume it suits a light shacket.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Double-faced wool-blend coating",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW08",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP141-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP141-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP141-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP141-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP141-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP141-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP141-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP141-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF138",
+      "title": "Spruce Wide-Wale Cotton Corduroy",
+      "type": "fabric",
+      "family": "Corduroy",
+      "structure": "Wide-wale cotton corduroy",
+      "colors": [
+        "Green"
+      ],
+      "uses": [
+        "Shirts",
+        "Shackets",
+        "Tailored trousers"
+      ],
+      "composition": "100% Cotton",
+      "weight": "280 gsm",
+      "width": "142 cm",
+      "handle": "Listed drape: soft",
+      "displayLabel": "Wide-wale cotton corduroy",
+      "description": "Spruce Wide-Wale Cotton Corduroy, photographed as a real piece of cloth with a separate folded-surface view. A 280 gsm wide-wale cotton corduroy reference for shirts, shackets, tailored trousers.",
+      "developmentNotes": "Review directional pile, wale scale, shirt placket bulk and collar support. For trousers, test seat abrasion and growth; this quality has no listed spandex.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Corduroy",
+        "Wide-wale cotton corduroy",
+        "Woven"
+      ],
+      "trendIds": [
+        "MAT02",
+        "OW01",
+        "S02"
+      ],
+      "image": "assets/cloth-edit/MF138-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF138-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF138-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF138-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF138-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF138-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF138-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF138-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF133",
+      "title": "Sage Floral-Quilted Nylon",
+      "type": "fabric",
+      "family": "Quilted",
+      "structure": "Floral-quilted nylon with polyester batting",
+      "colors": [
+        "Green"
+      ],
+      "uses": [
+        "Jackets",
+        "Shackets"
+      ],
+      "composition": "100% Nylon / Batting: 100% Polyester",
+      "weight": "275 gsm",
+      "width": "147 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Floral-quilted nylon with polyester batting",
+      "description": "Sage Floral-Quilted Nylon, photographed as a real piece of cloth with a separate folded-surface view. A 275 gsm floral-quilted nylon with polyester batting reference for jackets, shackets.",
+      "developmentNotes": "The listed weight is for the quilted material, not just the nylon face. Review loft compression, pattern placement, seam binding, lining and needle damage; insulation performance is untested.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Quilted",
+        "Floral-quilted nylon with polyester batting",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW05",
+        "MAT05",
+        "PROC02"
+      ],
+      "image": "assets/cloth-edit/MF133-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF133-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF133-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF133-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF133-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF133-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF133-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF133-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP155",
+      "title": "Espresso Brushed Glen-Plaid Suiting",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Brushed stretch-blend glen-plaid suiting",
+      "colors": [
+        "Brown",
+        "Cream"
+      ],
+      "uses": [
+        "Tailored trousers"
+      ],
+      "composition": "65% Polyester / 33% Rayon / 2% Spandex",
+      "weight": "225 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: soft",
+      "displayLabel": "Brushed stretch-blend glen-plaid suiting",
+      "description": "Espresso Brushed Glen-Plaid Suiting, photographed as a real piece of cloth with a separate folded-surface view. A 225 gsm brushed stretch-blend glen-plaid suiting reference for tailored trousers.",
+      "developmentNotes": "Review check placement through pleats, pressing, seam slippage and crosswise recovery. This is a listed suiting quality, not evidence of tested comfort performance.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Brushed stretch-blend glen-plaid suiting",
+        "Woven"
+      ],
+      "trendIds": [
+        "T01",
+        "T03",
+        "PAT02",
+        "MAT04"
+      ],
+      "image": "assets/cloth-edit/MP155-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP155-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP155-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP155-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP155-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP155-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP155-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP155-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF130",
+      "title": "Juniper Wool-Blend Twill Coating",
+      "type": "fabric",
+      "family": "Wool coating",
+      "structure": "Wool-blend twill coating",
+      "colors": [
+        "Green"
+      ],
+      "uses": [
+        "Coats"
+      ],
+      "composition": "50% Wool / 50% Polyester",
+      "weight": "490 gsm",
+      "width": "150 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Wool-blend twill coating",
+      "description": "Juniper Wool-Blend Twill Coating, photographed as a real piece of cloth with a separate folded-surface view. A 490 gsm wool-blend twill coating reference for coats.",
+      "developmentNotes": "Review the different faces, nap direction, collar roll, pressing and seam thickness.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Wool coating",
+        "Wool-blend twill coating",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW08"
+      ],
+      "image": "assets/cloth-edit/MF130-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF130-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF130-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF130-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF130-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF130-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF130-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF130-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF128",
+      "title": "Cranberry Brushed Cotton Twill",
+      "type": "fabric",
+      "family": "Twill",
+      "structure": "Brushed cotton twill",
+      "colors": [
+        "Red"
+      ],
+      "uses": [
+        "Shackets",
+        "Tailored trousers"
+      ],
+      "composition": "100% Cotton",
+      "weight": "310 gsm",
+      "width": "150 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Brushed cotton twill",
+      "description": "Cranberry Brushed Cotton Twill, photographed as a real piece of cloth with a separate folded-surface view. A 310 gsm brushed cotton twill reference for shackets, tailored trousers.",
+      "developmentNotes": "Review nap alignment, washing shrinkage, pleat bulk and pocket support. The brushed face changes the surface of the original garment.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Twill",
+        "Brushed cotton twill",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW01",
+        "MAT03",
+        "T01"
+      ],
+      "image": "assets/cloth-edit/MF128-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF128-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF128-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF128-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF128-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF128-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF128-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF128-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP140",
+      "title": "Chalk & Black Wool-Blend Check",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Yarn-dyed wool-blend coating",
+      "colors": [
+        "Cream",
+        "Black"
+      ],
+      "uses": [
+        "Coats",
+        "Jackets"
+      ],
+      "composition": "60% Wool / 40% Polyester",
+      "weight": "448 gsm",
+      "width": "150 cm",
+      "handle": "Listed drape: structured",
+      "displayLabel": "Yarn-dyed wool-blend coating",
+      "description": "Chalk & Black Wool-Blend Check, photographed as a real piece of cloth with a separate folded-surface view. A 448 gsm yarn-dyed wool-blend coating reference for coats, jackets.",
+      "developmentNotes": "Review check placement, nap, seam bulk, lining and pressing in the intended coat block.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Yarn-dyed wool-blend coating",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW08",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP140-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP140-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP140-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP140-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP140-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP140-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP140-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP140-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF151",
+      "title": "Black Bamboo-Viscose Stretch Rib",
+      "type": "fabric",
+      "family": "Rib",
+      "structure": "Rayon-from-bamboo stretch rib knit",
+      "colors": [
+        "Black"
+      ],
+      "uses": [
+        "Knit trousers",
+        "Yoga leggings"
+      ],
+      "composition": "89.5% Rayon from Bamboo / 10.5% Spandex",
+      "weight": "332 gsm",
+      "width": "125 cm",
+      "handle": "Listed drape: fluid",
+      "displayLabel": "Rayon-from-bamboo stretch rib knit",
+      "description": "Black Bamboo-Viscose Stretch Rib, photographed as a real piece of cloth with a separate folded-surface view. A 332 gsm rayon-from-bamboo stretch rib knit reference for knit trousers, yoga leggings.",
+      "developmentNotes": "The 332 gsm rib is a development trial, not an approved performance legging fabric. Test opacity at extension, recovery, waist growth, pilling and seams on the actual high-rise block.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Rib",
+        "Rayon-from-bamboo stretch rib knit",
+        "Knit"
+      ],
+      "trendIds": [
+        "T08",
+        "AKMAT03",
+        "T06"
+      ],
+      "image": "assets/cloth-edit/MF151-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF151-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF151-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF151-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF151-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF151-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF151-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF151-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedStretch": "4-way stretch, 70% cross-grain / 70% along grain-line",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF147",
+      "title": "Indigo Teddy Fleece",
+      "type": "fabric",
+      "family": "Sherpa",
+      "structure": "High-pile teddy fleece with fleece reverse",
+      "colors": [
+        "Blue"
+      ],
+      "uses": [
+        "Shackets",
+        "Jackets"
+      ],
+      "composition": "100% Polyester",
+      "weight": "480 gsm",
+      "width": "162 cm",
+      "handle": "Listed drape: moderate",
+      "displayLabel": "High-pile teddy fleece with fleece reverse",
+      "description": "Indigo Teddy Fleece, photographed as a real piece of cloth with a separate folded-surface view. A 480 gsm high-pile teddy fleece with fleece reverse reference for shackets, jackets.",
+      "developmentNotes": "Review pile compression, shedding, seam bulk and button-band finishing. Sample the actual cloth before approving the shirt-jacket block.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Sherpa",
+        "High-pile teddy fleece with fleece reverse",
+        "Knit"
+      ],
+      "trendIds": [
+        "OW07"
+      ],
+      "image": "assets/cloth-edit/MF147-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF147-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF147-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF147-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF147-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF147-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF147-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF147-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedStretch": "25% cross-grain / 5% along grain-line",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP145",
+      "title": "Tobacco Windowpane Cotton Flannel",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Yarn-dyed cotton flannel",
+      "colors": [
+        "Brown",
+        "Cream"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "170 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: soft",
+      "displayLabel": "Yarn-dyed cotton flannel",
+      "description": "Tobacco Windowpane Cotton Flannel, photographed as a real piece of cloth with a separate folded-surface view. A 170 gsm yarn-dyed cotton flannel reference for shirts.",
+      "developmentNotes": "Review check matching at placket, pocket and cuffs, brushing direction, shrinkage and colourfastness. This is shirt-weight cloth, not a heavy coating.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Yarn-dyed cotton flannel",
+        "Woven"
+      ],
+      "trendIds": [
+        "S01",
+        "MAT01",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP145-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP145-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP145-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP145-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP145-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP145-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP145-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP145-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF144",
+      "title": "Smoked Plum Cotton-Lyocell Twill",
+      "type": "fabric",
+      "family": "Twill",
+      "structure": "Cotton/lyocell woven twill",
+      "colors": [
+        "Purple"
+      ],
+      "uses": [
+        "Tailored trousers",
+        "Shackets"
+      ],
+      "composition": "54% Cotton / 46% Lyocell",
+      "weight": "280 gsm",
+      "width": "142 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Cotton/lyocell woven twill",
+      "description": "Smoked Plum Cotton-Lyocell Twill, photographed as a real piece of cloth with a separate folded-surface view. A 280 gsm cotton/lyocell woven twill reference for tailored trousers, shackets.",
+      "developmentNotes": "Review pleat retention, bias hang, seam slippage and dimensional stability. Cotton/lyocell changes the hand from pure cotton; mechanical recovery has not been tested.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Twill",
+        "Cotton/lyocell woven twill",
+        "Woven"
+      ],
+      "trendIds": [
+        "T01",
+        "T03",
+        "MAT04"
+      ],
+      "image": "assets/cloth-edit/MF144-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF144-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF144-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF144-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF144-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF144-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF144-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF144-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF129",
+      "title": "Charcoal Brushed Cotton Twill",
+      "type": "fabric",
+      "family": "Twill",
+      "structure": "Brushed cotton twill",
+      "colors": [
+        "Grey"
+      ],
+      "uses": [
+        "Shackets",
+        "Tailored trousers"
+      ],
+      "composition": "100% Cotton",
+      "weight": "310 gsm",
+      "width": "150 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Brushed cotton twill",
+      "description": "Charcoal Brushed Cotton Twill, photographed as a real piece of cloth with a separate folded-surface view. A 310 gsm brushed cotton twill reference for shackets, tailored trousers.",
+      "developmentNotes": "Review nap alignment, washing shrinkage, pleat bulk and pocket support. The brushed face changes the surface of the original garment.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Twill",
+        "Brushed cotton twill",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW01",
+        "MAT03",
+        "T01"
+      ],
+      "image": "assets/cloth-edit/MF129-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF129-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF129-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF129-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF129-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF129-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF129-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF129-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF132",
+      "title": "Espresso Polar Fleece",
+      "type": "fabric",
+      "family": "Fleece",
+      "structure": "Brushed polyester polar fleece",
+      "colors": [
+        "Brown"
+      ],
+      "uses": [
+        "Jackets",
+        "Shackets",
+        "Knit trousers"
+      ],
+      "composition": "100% Polyester",
+      "weight": "280 gsm",
+      "width": "148 cm",
+      "handle": "Listed drape: moderate",
+      "displayLabel": "Brushed polyester polar fleece",
+      "description": "Espresso Polar Fleece, photographed as a real piece of cloth with a separate folded-surface view. A 280 gsm brushed polyester polar fleece reference for jackets, shackets, knit trousers.",
+      "developmentNotes": "Review pilling, repeated-wash appearance, seam bulk and stretch recovery. A trouser trial needs seat and knee-bagging tests; warmth has not been independently measured.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Fleece",
+        "Brushed polyester polar fleece",
+        "Knit"
+      ],
+      "trendIds": [
+        "OW07",
+        "T07"
+      ],
+      "image": "assets/cloth-edit/MF132-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF132-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF132-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF132-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF132-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF132-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF132-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF132-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedStretch": "4-way stretch, 30% cross-grain / 15% along grain-line",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP142",
+      "title": "Cabin Check Cotton Flannel",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Yarn-dyed midweight cotton flannel",
+      "colors": [
+        "Red",
+        "Beige",
+        "Black"
+      ],
+      "uses": [
+        "Shirts",
+        "Shackets"
+      ],
+      "composition": "100% Cotton",
+      "weight": "250 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Yarn-dyed midweight cotton flannel",
+      "description": "Cabin Check Cotton Flannel, photographed as a real piece of cloth with a separate folded-surface view. A 250 gsm yarn-dyed midweight cotton flannel reference for shirts, shackets.",
+      "developmentNotes": "Review check placement, washing shrinkage and collar/placket bulk. At 250 gsm this is heavier than a conventional light shirt.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Yarn-dyed midweight cotton flannel",
+        "Woven"
+      ],
+      "trendIds": [
+        "S01",
+        "MAT01",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP142-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP142-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP142-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP142-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP142-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP142-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP142-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP142-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP143",
+      "title": "Ink & Cream Cotton Flannel",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Yarn-dyed cotton flannel",
+      "colors": [
+        "Navy",
+        "Cream"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "160 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: soft",
+      "displayLabel": "Yarn-dyed cotton flannel",
+      "description": "Ink & Cream Cotton Flannel, photographed as a real piece of cloth with a separate folded-surface view. A 160 gsm yarn-dyed cotton flannel reference for shirts.",
+      "developmentNotes": "Review check matching at placket, pocket and cuffs, brushing direction, shrinkage and colourfastness. This is shirt-weight cloth, not a heavy coating.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Yarn-dyed cotton flannel",
+        "Woven"
+      ],
+      "trendIds": [
+        "S01",
+        "MAT01",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP143-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP143-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP143-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP143-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP143-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP143-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP143-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP143-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP144",
+      "title": "Maroon & Cork Cotton Flannel",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Yarn-dyed cotton flannel",
+      "colors": [
+        "Brown",
+        "Red",
+        "Cream"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "160 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: soft",
+      "displayLabel": "Yarn-dyed cotton flannel",
+      "description": "Maroon & Cork Cotton Flannel, photographed as a real piece of cloth with a separate folded-surface view. A 160 gsm yarn-dyed cotton flannel reference for shirts.",
+      "developmentNotes": "Review check matching at placket, pocket and cuffs, brushing direction, shrinkage and colourfastness. This is shirt-weight cloth, not a heavy coating.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Yarn-dyed cotton flannel",
+        "Woven"
+      ],
+      "trendIds": [
+        "S01",
+        "MAT01",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP144-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP144-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP144-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP144-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP144-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP144-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP144-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP144-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP146",
+      "title": "Ivory & Blue Rayon Flannel Check",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Yarn-dyed rayon flannel",
+      "colors": [
+        "Cream",
+        "Blue"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Rayon",
+      "weight": "180 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: soft",
+      "displayLabel": "Yarn-dyed rayon flannel",
+      "description": "Ivory & Blue Rayon Flannel Check, photographed as a real piece of cloth with a separate folded-surface view. A 180 gsm yarn-dyed rayon flannel reference for shirts.",
+      "developmentNotes": "This rayon flannel changes the hand from cotton. Review seam slippage, wet handling, shrinkage and pocket stability before approving the shirt.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Yarn-dyed rayon flannel",
+        "Woven"
+      ],
+      "trendIds": [
+        "S01",
+        "S04",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP146-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP146-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP146-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP146-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP146-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP146-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP146-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP146-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP147",
+      "title": "Charcoal Tonal Cotton Flannel",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Yarn-dyed cotton flannel",
+      "colors": [
+        "Grey",
+        "Black"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "180 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: soft",
+      "displayLabel": "Yarn-dyed cotton flannel",
+      "description": "Charcoal Tonal Cotton Flannel, photographed as a real piece of cloth with a separate folded-surface view. A 180 gsm yarn-dyed cotton flannel reference for shirts.",
+      "developmentNotes": "Review check matching at placket, pocket and cuffs, brushing direction, shrinkage and colourfastness. This is shirt-weight cloth, not a heavy coating.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Yarn-dyed cotton flannel",
+        "Woven"
+      ],
+      "trendIds": [
+        "S01",
+        "MAT01",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP147-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP147-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP147-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP147-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP147-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP147-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP147-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP147-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP148",
+      "title": "Navy Clip-Jacquard Cotton Check",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Cotton clip jacquard",
+      "colors": [
+        "Navy",
+        "Cream"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "103 gsm",
+      "width": "143 cm",
+      "handle": "Listed drape: soft",
+      "displayLabel": "Cotton clip jacquard",
+      "description": "Navy Clip-Jacquard Cotton Check, photographed as a real piece of cloth with a separate folded-surface view. A 103 gsm cotton clip jacquard reference for shirts.",
+      "developmentNotes": "The 103 gsm cloth is semi-opaque and softly voluminous. Check clip-yarn snagging, seam stability and coverage; consider lining or deliberate layering. Limited-run reference; repeat supply is unconfirmed.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Cotton clip jacquard",
+        "Woven"
+      ],
+      "trendIds": [
+        "S02",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP148-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP148-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP148-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP148-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP148-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP148-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP148-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP148-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Semi-Opaque"
+    },
+    {
+      "id": "MF134",
+      "title": "Truffle Wave-Quilted Nylon",
+      "type": "fabric",
+      "family": "Quilted",
+      "structure": "Wave-quilted nylon with polyester batting",
+      "colors": [
+        "Brown"
+      ],
+      "uses": [
+        "Jackets",
+        "Shackets"
+      ],
+      "composition": "100% Nylon / Batting: 100% Polyester",
+      "weight": "275 gsm",
+      "width": "147 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Wave-quilted nylon with polyester batting",
+      "description": "Truffle Wave-Quilted Nylon, photographed as a real piece of cloth with a separate folded-surface view. A 275 gsm wave-quilted nylon with polyester batting reference for jackets, shackets.",
+      "developmentNotes": "Review stitch-channel placement, loft at cuffs and collar, batting migration, seam binding and lining. Thermal performance is untested.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Quilted",
+        "Wave-quilted nylon with polyester batting",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW05",
+        "MAT05",
+        "PROC02"
+      ],
+      "image": "assets/cloth-edit/MF134-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF134-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF134-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF134-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF134-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF134-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF134-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF134-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF135",
+      "title": "Pale Lilac Nylon Ripstop",
+      "type": "fabric",
+      "family": "Ripstop",
+      "structure": "Lightweight nylon ripstop",
+      "colors": [
+        "Purple"
+      ],
+      "uses": [
+        "Jackets",
+        "Utility trousers"
+      ],
+      "composition": "100% Nylon",
+      "weight": "135 gsm",
+      "width": "148 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Lightweight nylon ripstop",
+      "description": "Pale Lilac Nylon Ripstop, photographed as a real piece of cloth with a separate folded-surface view. A 135 gsm lightweight nylon ripstop reference for jackets, utility trousers.",
+      "developmentNotes": "This is a lightweight face cloth, not a complete insulated system. Confirm grid scale, seam strength, lining and any protective finish. Water resistance is a source claim without independent test evidence.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Ripstop",
+        "Lightweight nylon ripstop",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW06",
+        "MAT06",
+        "OW05"
+      ],
+      "image": "assets/cloth-edit/MF135-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF135-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF135-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF135-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF135-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF135-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF135-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF135-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque *Lighter colours may be less opaque"
+    },
+    {
+      "id": "MF136",
+      "title": "Juniper Nylon Ripstop",
+      "type": "fabric",
+      "family": "Ripstop",
+      "structure": "Lightweight nylon ripstop",
+      "colors": [
+        "Green"
+      ],
+      "uses": [
+        "Jackets",
+        "Utility trousers"
+      ],
+      "composition": "100% Nylon",
+      "weight": "135 gsm",
+      "width": "148 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Lightweight nylon ripstop",
+      "description": "Juniper Nylon Ripstop, photographed as a real piece of cloth with a separate folded-surface view. A 135 gsm lightweight nylon ripstop reference for jackets, utility trousers.",
+      "developmentNotes": "This is a lightweight face cloth, not a complete insulated system. Confirm grid scale, seam strength, lining and any protective finish. Water resistance is a source claim without independent test evidence.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Ripstop",
+        "Lightweight nylon ripstop",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW06",
+        "MAT06",
+        "OW05"
+      ],
+      "image": "assets/cloth-edit/MF136-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF136-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF136-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF136-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF136-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF136-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF136-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF136-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque *Lighter colours may be less opaque"
+    },
+    {
+      "id": "MF137",
+      "title": "Agave Lightweight Nylon Plain",
+      "type": "fabric",
+      "family": "Technical plain",
+      "structure": "Lightweight nylon plain",
+      "colors": [
+        "Green"
+      ],
+      "uses": [
+        "Jackets"
+      ],
+      "composition": "100% Nylon",
+      "weight": "132 gsm",
+      "width": "150 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Lightweight nylon plain",
+      "description": "Agave Lightweight Nylon Plain, photographed as a real piece of cloth with a separate folded-surface view. A 132 gsm lightweight nylon plain reference for jackets.",
+      "developmentNotes": "This colourway is listed with a lighter, more relaxed hand than others in the range. Check actual crinkle, seam stability and lining; it is not ripstop. Protective properties remain untested.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Technical plain",
+        "Lightweight nylon plain",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW06",
+        "MAT06",
+        "OW04"
+      ],
+      "image": "assets/cloth-edit/MF137-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF137-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF137-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF137-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF137-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF137-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF137-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF137-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP149",
+      "title": "Russet & Blue Fine Cotton Check",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Yarn-dyed cotton shirting",
+      "colors": [
+        "Brown",
+        "Blue"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "109 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Yarn-dyed cotton shirting",
+      "description": "Russet & Blue Fine Cotton Check, photographed as a real piece of cloth with a separate folded-surface view. A 109 gsm yarn-dyed cotton shirting reference for shirts.",
+      "developmentNotes": "Keep the small check readable at collar, pocket and placket. Review opacity, seam puckering, shrinkage and pattern alignment.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Yarn-dyed cotton shirting",
+        "Woven"
+      ],
+      "trendIds": [
+        "S02",
+        "S04",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP149-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP149-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP149-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP149-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP149-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP149-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP149-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP149-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP150",
+      "title": "Ink & Grey Fine Cotton Check",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Yarn-dyed cotton shirting",
+      "colors": [
+        "Navy",
+        "Grey"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "120 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Yarn-dyed cotton shirting",
+      "description": "Ink & Grey Fine Cotton Check, photographed as a real piece of cloth with a separate folded-surface view. A 120 gsm yarn-dyed cotton shirting reference for shirts.",
+      "developmentNotes": "Keep the small check readable at collar, pocket and placket. Review opacity, seam puckering, shrinkage and pattern alignment.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Yarn-dyed cotton shirting",
+        "Woven"
+      ],
+      "trendIds": [
+        "S02",
+        "S04",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP150-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP150-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP150-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP150-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP150-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP150-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP150-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP150-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP151",
+      "title": "Cream & Umber Cotton Check",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Yarn-dyed cotton shirting",
+      "colors": [
+        "Cream",
+        "Brown"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "114 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Yarn-dyed cotton shirting",
+      "description": "Cream & Umber Cotton Check, photographed as a real piece of cloth with a separate folded-surface view. A 114 gsm yarn-dyed cotton shirting reference for shirts.",
+      "developmentNotes": "Keep the small check readable at collar, pocket and placket. Review opacity, seam puckering, shrinkage and pattern alignment.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Yarn-dyed cotton shirting",
+        "Woven"
+      ],
+      "trendIds": [
+        "S02",
+        "S04",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP151-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP151-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP151-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP151-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP151-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP151-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP151-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP151-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF139",
+      "title": "Rooibos Fine-Wale Cotton Corduroy",
+      "type": "fabric",
+      "family": "Corduroy",
+      "structure": "Fine-wale cotton corduroy",
+      "colors": [
+        "Red"
+      ],
+      "uses": [
+        "Shackets",
+        "Tailored trousers"
+      ],
+      "composition": "100% Cotton",
+      "weight": "300 gsm",
+      "width": "150 cm",
+      "handle": "Listed drape: structured",
+      "displayLabel": "Fine-wale cotton corduroy",
+      "description": "Rooibos Fine-Wale Cotton Corduroy, photographed as a real piece of cloth with a separate folded-surface view. A 300 gsm fine-wale cotton corduroy reference for shackets, tailored trousers.",
+      "developmentNotes": "Keep the pile direction consistent. Check pocket and pleat bulk, pile marking and seat abrasion; no stretch content is listed.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Corduroy",
+        "Fine-wale cotton corduroy",
+        "Woven"
+      ],
+      "trendIds": [
+        "MAT02",
+        "OW02"
+      ],
+      "image": "assets/cloth-edit/MF139-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF139-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF139-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF139-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF139-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF139-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF139-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF139-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF140",
+      "title": "Cabernet Stretch Cotton Corduroy",
+      "type": "fabric",
+      "family": "Corduroy",
+      "structure": "8-wale stretch cotton corduroy",
+      "colors": [
+        "Red"
+      ],
+      "uses": [
+        "Tailored trousers",
+        "Utility trousers"
+      ],
+      "composition": "98% Cotton / 2% Spandex",
+      "weight": "325 gsm",
+      "width": "142 cm",
+      "handle": "Listed drape: structured",
+      "displayLabel": "8-wale stretch cotton corduroy",
+      "description": "Cabernet Stretch Cotton Corduroy, photographed as a real piece of cloth with a separate folded-surface view. A 325 gsm 8-wale stretch cotton corduroy reference for tailored trousers, utility trousers.",
+      "developmentNotes": "Review crosswise stretch recovery, waistband stability, pile marking and bulk through front pleats. Keep the nap direction consistent.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Corduroy",
+        "8-wale stretch cotton corduroy",
+        "Woven"
+      ],
+      "trendIds": [
+        "MAT02",
+        "T01",
+        "T02"
+      ],
+      "image": "assets/cloth-edit/MF140-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF140-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF140-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF140-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF140-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF140-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF140-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF140-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedStretch": "15% cross-grain",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF141",
+      "title": "Ochre Dry-Waxed Poplin",
+      "type": "fabric",
+      "family": "Technical plain",
+      "structure": "Dry-waxed cotton/nylon poplin",
+      "colors": [
+        "Yellow",
+        "Brown"
+      ],
+      "uses": [
+        "Jackets",
+        "Shackets"
+      ],
+      "composition": "Cotton / nylon blend; exact percentages unspecified",
+      "weight": "170 gsm",
+      "width": "144 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Dry-waxed cotton/nylon poplin",
+      "description": "Ochre Dry-Waxed Poplin, photographed as a real piece of cloth with a separate folded-surface view. A 170 gsm dry-waxed cotton/nylon poplin reference for jackets, shackets.",
+      "developmentNotes": "Exact fibre percentages are not supplied. At 170 gsm this is a lightweight jacket route. Review pressing, needle marks, washing instructions and finish durability; do not claim tested weather protection.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Technical plain",
+        "Dry-waxed cotton/nylon poplin",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW02",
+        "OW04",
+        "MAT06"
+      ],
+      "image": "assets/cloth-edit/MF141-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF141-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF141-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF141-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF141-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF141-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF141-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF141-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP152",
+      "title": "Navy & White Washed Cotton Stripe",
+      "type": "pattern",
+      "family": "Stripes",
+      "structure": "Yarn-dyed washed cotton shirting",
+      "colors": [
+        "Navy",
+        "White"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "129 gsm",
+      "width": "140 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Yarn-dyed washed cotton shirting",
+      "description": "Navy & White Washed Cotton Stripe, photographed as a real piece of cloth with a separate folded-surface view. A 129 gsm yarn-dyed washed cotton shirting reference for shirts.",
+      "developmentNotes": "Review stripe direction and matching, collar support, washing shrinkage and seam puckering. Preserve the relaxed shirt block rather than transferring trouser weight assumptions.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Stripes",
+        "Yarn-dyed washed cotton shirting",
+        "Woven"
+      ],
+      "trendIds": [
+        "S02",
+        "S04",
+        "PAT02"
+      ],
+      "image": "assets/cloth-edit/MP152-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP152-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP152-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP152-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP152-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP152-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP152-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP152-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque *Please note lighter colours may be less opaque"
+    },
+    {
+      "id": "MP153",
+      "title": "Parchment Fine-Stripe Cotton Shirting",
+      "type": "pattern",
+      "family": "Stripes",
+      "structure": "Yarn-dyed washed cotton shirting",
+      "colors": [
+        "Cream",
+        "Navy"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "129 gsm",
+      "width": "140 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Yarn-dyed washed cotton shirting",
+      "description": "Parchment Fine-Stripe Cotton Shirting, photographed as a real piece of cloth with a separate folded-surface view. A 129 gsm yarn-dyed washed cotton shirting reference for shirts.",
+      "developmentNotes": "Review stripe direction and matching, collar support, washing shrinkage and seam puckering. Preserve the relaxed shirt block rather than transferring trouser weight assumptions.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Stripes",
+        "Yarn-dyed washed cotton shirting",
+        "Woven"
+      ],
+      "trendIds": [
+        "S02",
+        "S04",
+        "PAT02"
+      ],
+      "image": "assets/cloth-edit/MP153-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP153-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP153-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP153-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP153-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP153-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP153-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP153-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque *Please note lighter colours may be less opaque"
+    },
+    {
+      "id": "MF142",
+      "title": "Cream Crisp Cotton Poplin",
+      "type": "fabric",
+      "family": "Poplin",
+      "structure": "Crisp woven cotton poplin",
+      "colors": [
+        "Cream"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "110 gsm",
+      "width": "155 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Crisp woven cotton poplin",
+      "description": "Cream Crisp Cotton Poplin, photographed as a real piece of cloth with a separate folded-surface view. A 110 gsm crisp woven cotton poplin reference for shirts.",
+      "developmentNotes": "Review coverage in the actual colourway, collar and cuff support, seam puckering and washing shrinkage. Lighter colours may be less opaque.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Poplin",
+        "Crisp woven cotton poplin",
+        "Woven"
+      ],
+      "trendIds": [
+        "S04",
+        "S02"
+      ],
+      "image": "assets/cloth-edit/MF142-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF142-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF142-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF142-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF142-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF142-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF142-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF142-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque *Please note lighter colours may be less opaque"
+    },
+    {
+      "id": "MF143",
+      "title": "Berry Paper-Touch Cotton Poplin",
+      "type": "fabric",
+      "family": "Poplin",
+      "structure": "Paper-touch cotton poplin",
+      "colors": [
+        "Purple"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "140 gsm",
+      "width": "147 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Paper-touch cotton poplin",
+      "description": "Berry Paper-Touch Cotton Poplin, photographed as a real piece of cloth with a separate folded-surface view. A 140 gsm paper-touch cotton poplin reference for shirts.",
+      "developmentNotes": "Review crisp volume, collar support, buttonhole stability and shrinkage. The paper-like hand is a listed handle reference, not a tested finishing process.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Poplin",
+        "Paper-touch cotton poplin",
+        "Woven"
+      ],
+      "trendIds": [
+        "S04",
+        "S03"
+      ],
+      "image": "assets/cloth-edit/MF143-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF143-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF143-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF143-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF143-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF143-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF143-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF143-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque *Please note lighter colours may be less opaque"
+    },
+    {
+      "id": "MP154",
+      "title": "Nutshell Brushed Cotton Stripe",
+      "type": "pattern",
+      "family": "Stripes",
+      "structure": "Brushed cotton shirting",
+      "colors": [
+        "Brown",
+        "Cream"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "145 gsm",
+      "width": "144 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Brushed cotton shirting",
+      "description": "Nutshell Brushed Cotton Stripe, photographed as a real piece of cloth with a separate folded-surface view. A 145 gsm brushed cotton shirting reference for shirts.",
+      "developmentNotes": "Check the listed brushed face, stripe placement and collar/cuff bulk. The source describes a crisp drape; do not assume a fluid blouse handle.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Stripes",
+        "Brushed cotton shirting",
+        "Woven"
+      ],
+      "trendIds": [
+        "S02",
+        "S01",
+        "PAT02"
+      ],
+      "image": "assets/cloth-edit/MP154-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP154-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP154-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP154-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP154-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP154-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP154-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP154-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP156",
+      "title": "Boysenberry Tonal Cotton-Blend Jacquard",
+      "type": "pattern",
+      "family": "Jacquard",
+      "structure": "Reversible cotton-blend jacquard",
+      "colors": [
+        "Purple"
+      ],
+      "uses": [
+        "Shirts",
+        "Shackets"
+      ],
+      "composition": "70% Cotton / 16% Rayon / 14% Linen",
+      "weight": "210 gsm",
+      "width": "127 cm",
+      "handle": "Listed drape: soft",
+      "displayLabel": "Reversible cotton-blend jacquard",
+      "description": "Boysenberry Tonal Cotton-Blend Jacquard, photographed as a real piece of cloth with a separate folded-surface view. A 210 gsm reversible cotton-blend jacquard reference for shirts, shackets.",
+      "developmentNotes": "Review the actual reversible faces, motif scale, snagging, seam slippage and button-band support. At 210 gsm this is an overshirt route, not a heavy coating.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Jacquard",
+        "Reversible cotton-blend jacquard",
+        "Woven"
+      ],
+      "trendIds": [
+        "S02",
+        "PAT04"
+      ],
+      "image": "assets/cloth-edit/MP156-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP156-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP156-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP156-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP156-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP156-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP156-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP156-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF145",
+      "title": "Pinecone Cotton-Lyocell Twill",
+      "type": "fabric",
+      "family": "Twill",
+      "structure": "Cotton/lyocell woven twill",
+      "colors": [
+        "Brown"
+      ],
+      "uses": [
+        "Tailored trousers",
+        "Shackets"
+      ],
+      "composition": "54% Cotton / 46% Lyocell",
+      "weight": "280 gsm",
+      "width": "142 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Cotton/lyocell woven twill",
+      "description": "Pinecone Cotton-Lyocell Twill, photographed as a real piece of cloth with a separate folded-surface view. A 280 gsm cotton/lyocell woven twill reference for tailored trousers, shackets.",
+      "developmentNotes": "Review pleat retention, bias hang, seam slippage and dimensional stability. Cotton/lyocell changes the hand from pure cotton; mechanical recovery has not been tested.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Twill",
+        "Cotton/lyocell woven twill",
+        "Woven"
+      ],
+      "trendIds": [
+        "T01",
+        "T03",
+        "MAT04"
+      ],
+      "image": "assets/cloth-edit/MF145-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF145-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF145-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF145-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF145-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF145-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF145-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF145-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP157",
+      "title": "Midnight Double-Faced Brushed Check",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Brushed double-faced stretch-blend coating",
+      "colors": [
+        "Navy",
+        "Brown",
+        "Blue"
+      ],
+      "uses": [
+        "Shackets",
+        "Jackets"
+      ],
+      "composition": "64% Polyester / 34% Viscose / 2% Spandex",
+      "weight": "360 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Brushed double-faced stretch-blend coating",
+      "description": "Midnight Double-Faced Brushed Check, photographed as a real piece of cloth with a separate folded-surface view. A 360 gsm brushed double-faced stretch-blend coating reference for shackets, jackets.",
+      "developmentNotes": "Review both faces, nap and check placement, seam bulk and button-band support. The listed 360 gsm cloth is for light jackets, not assumed interchangeable with a heavy coat.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Brushed double-faced stretch-blend coating",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW01",
+        "MAT01",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP157-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP157-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP157-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP157-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP157-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP157-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP157-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP157-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedStretch": "2-way stretch, 10% cross-grain",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF146",
+      "title": "Teak Washed Cotton Twill",
+      "type": "fabric",
+      "family": "Twill",
+      "structure": "Washed cotton twill",
+      "colors": [
+        "Brown"
+      ],
+      "uses": [
+        "Shackets",
+        "Utility trousers"
+      ],
+      "composition": "100% Cotton",
+      "weight": "293-306 gsm",
+      "width": "149 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Washed cotton twill",
+      "description": "Teak Washed Cotton Twill, photographed as a real piece of cloth with a separate folded-surface view. A 293-306 gsm washed cotton twill reference for shackets, utility trousers.",
+      "developmentNotes": "Review pocket reinforcement, washing shrinkage, crease behaviour and knee movement. The listed 293–306 gsm range does not establish workwear certification.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Twill",
+        "Washed cotton twill",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW02",
+        "MAT03",
+        "T02"
+      ],
+      "image": "assets/cloth-edit/MF146-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF146-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF146-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF146-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF146-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF146-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF146-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF146-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF148",
+      "title": "Navy Hemp-Cotton Canvas",
+      "type": "fabric",
+      "family": "Canvas",
+      "structure": "Hemp/organic-cotton canvas",
+      "colors": [
+        "Navy"
+      ],
+      "uses": [
+        "Shackets",
+        "Utility trousers"
+      ],
+      "composition": "55% Hemp / 45% Organic Cotton",
+      "weight": "280 gsm",
+      "width": "146 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Hemp/organic-cotton canvas",
+      "description": "Navy Hemp-Cotton Canvas, photographed as a real piece of cloth with a separate folded-surface view. A 280 gsm hemp/organic-cotton canvas reference for shackets, utility trousers.",
+      "developmentNotes": "Review stiffness, washing shrinkage, pocket bulk and seam support. Fibre content alone does not verify strength or a sustainability certification.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Canvas",
+        "Hemp/organic-cotton canvas",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW02",
+        "MAT03",
+        "T02"
+      ],
+      "image": "assets/cloth-edit/MF148-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF148-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF148-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF148-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF148-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF148-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF148-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF148-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF149",
+      "title": "Ocean Washed Cotton Canvas",
+      "type": "fabric",
+      "family": "Canvas",
+      "structure": "Washed cotton canvas",
+      "colors": [
+        "Blue"
+      ],
+      "uses": [
+        "Shackets",
+        "Utility trousers"
+      ],
+      "composition": "100% Cotton",
+      "weight": "285 gsm",
+      "width": "155 cm",
+      "handle": "Listed drape: structured",
+      "displayLabel": "Washed cotton canvas",
+      "description": "Ocean Washed Cotton Canvas, photographed as a real piece of cloth with a separate folded-surface view. A 285 gsm washed cotton canvas reference for shackets, utility trousers.",
+      "developmentNotes": "Review pocket reinforcement, abrasion, washing shrinkage and knee movement. The recorded 285 gsm cloth does not establish workwear certification.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Canvas",
+        "Washed cotton canvas",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW02",
+        "MAT03",
+        "T02"
+      ],
+      "image": "assets/cloth-edit/MF149-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF149-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF149-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF149-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF149-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF149-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF149-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF149-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF150",
+      "title": "Twilight Double-Faced Wool-Blend Coating",
+      "type": "fabric",
+      "family": "Wool coating",
+      "structure": "Heavyweight double-faced wool/nylon coating",
+      "colors": [
+        "Navy",
+        "Blue"
+      ],
+      "uses": [
+        "Coats"
+      ],
+      "composition": "80% Wool / 20% Nylon",
+      "weight": "607 gsm",
+      "width": "152 cm",
+      "handle": "Listed drape: structured",
+      "displayLabel": "Heavyweight double-faced wool/nylon coating",
+      "description": "Twilight Double-Faced Wool-Blend Coating, photographed as a real piece of cloth with a separate folded-surface view. A 607 gsm heavyweight double-faced wool/nylon coating reference for coats.",
+      "developmentNotes": "At 607 gsm this is a substantial structured coating. Review shoulder support, collar roll, seam thickness, split-layer finishing and total garment weight.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Wool coating",
+        "Heavyweight double-faced wool/nylon coating",
+        "Woven"
+      ],
+      "trendIds": [
+        "OW08"
+      ],
+      "image": "assets/cloth-edit/MF150-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF150-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF150-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF150-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF150-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF150-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF150-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF150-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP158",
+      "title": "Oatmeal Tonal Cotton-Blend Jacquard",
+      "type": "pattern",
+      "family": "Jacquard",
+      "structure": "Reversible cotton-blend jacquard",
+      "colors": [
+        "Cream"
+      ],
+      "uses": [
+        "Shirts",
+        "Shackets"
+      ],
+      "composition": "70% Cotton / 16% Rayon / 14% Linen",
+      "weight": "210 gsm",
+      "width": "127 cm",
+      "handle": "Listed drape: moderate",
+      "displayLabel": "Reversible cotton-blend jacquard",
+      "description": "Oatmeal Tonal Cotton-Blend Jacquard, photographed as a real piece of cloth with a separate folded-surface view. A 210 gsm reversible cotton-blend jacquard reference for shirts, shackets.",
+      "developmentNotes": "Review the actual reversible faces, motif scale, snagging, seam slippage and button-band support. At 210 gsm this is an overshirt route, not a heavy coating.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Jacquard",
+        "Reversible cotton-blend jacquard",
+        "Woven"
+      ],
+      "trendIds": [
+        "S02",
+        "PAT04"
+      ],
+      "image": "assets/cloth-edit/MP158-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP158-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP158-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP158-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP158-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP158-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP158-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP158-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP159",
+      "title": "Olive & Ivory Open-Floral Shirting",
+      "type": "pattern",
+      "family": "Florals",
+      "structure": "Printed cotton twill shirting",
+      "colors": [
+        "Green",
+        "Cream"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "115 gsm",
+      "width": "149 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Printed cotton twill shirting",
+      "description": "Olive & Ivory Open-Floral Shirting, photographed as a real piece of cloth with a separate folded-surface view. A 115 gsm printed cotton twill shirting reference for shirts.",
+      "developmentNotes": "Review complete motif placement at centre front, collar and pocket, print fastness, opacity and shrinkage. A botanical direction reference does not verify future-season demand.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Florals",
+        "Printed cotton twill shirting",
+        "Woven"
+      ],
+      "trendIds": [
+        "PAT03",
+        "S04"
+      ],
+      "image": "assets/cloth-edit/MP159-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP159-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP159-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP159-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP159-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP159-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP159-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP159-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque *Please note lighter colours may be less opaque"
+    },
+    {
+      "id": "MP160",
+      "title": "Clove & Black Broad-Stripe Twill",
+      "type": "pattern",
+      "family": "Stripes",
+      "structure": "Yarn-dyed bottomweight cotton twill",
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "uses": [
+        "Shackets",
+        "Tailored trousers"
+      ],
+      "composition": "100% Cotton",
+      "weight": "286 gsm",
+      "width": "142 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Yarn-dyed bottomweight cotton twill",
+      "description": "Clove & Black Broad-Stripe Twill, photographed as a real piece of cloth with a separate folded-surface view. A 286 gsm yarn-dyed bottomweight cotton twill reference for shackets, tailored trousers.",
+      "developmentNotes": "The listing gives 20 mm stripes parallel to the selvedge. Review stripe alignment, grain skew, shrinkage and bulk at pockets and pleats.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Stripes",
+        "Yarn-dyed bottomweight cotton twill",
+        "Woven"
+      ],
+      "trendIds": [
+        "PAT02",
+        "MAT03",
+        "OW02",
+        "T01"
+      ],
+      "image": "assets/cloth-edit/MP160-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP160-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP160-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP160-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP160-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP160-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP160-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP160-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP161",
+      "title": "Sage Reversible Check Cotton Twill",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Double-sided yarn-dyed cotton twill",
+      "colors": [
+        "Green",
+        "Black"
+      ],
+      "uses": [
+        "Shackets",
+        "Tailored trousers"
+      ],
+      "composition": "100% Cotton",
+      "weight": "286 gsm",
+      "width": "142 cm",
+      "handle": "Listed drape: softly structured",
+      "displayLabel": "Double-sided yarn-dyed cotton twill",
+      "description": "Sage Reversible Check Cotton Twill, photographed as a real piece of cloth with a separate folded-surface view. A 286 gsm double-sided yarn-dyed cotton twill reference for shackets, tailored trousers.",
+      "developmentNotes": "The listing describes a gingham face and striped reverse, with checks about 1 x 1.3 cm. Review face/reverse finishing, grain skew, washing shrinkage and pleat bulk.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Double-sided yarn-dyed cotton twill",
+        "Woven"
+      ],
+      "trendIds": [
+        "PAT01",
+        "MAT03",
+        "OW02",
+        "T01"
+      ],
+      "image": "assets/cloth-edit/MP161-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP161-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP161-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP161-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP161-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP161-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP161-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP161-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP162",
+      "title": "Blue Fine-Stripe Cotton Shirting",
+      "type": "pattern",
+      "family": "Stripes",
+      "structure": "Yarn-dyed cotton shirting",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "148 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Yarn-dyed cotton shirting",
+      "description": "Blue Fine-Stripe Cotton Shirting, photographed as a real piece of cloth with a separate folded-surface view. A 148 gsm yarn-dyed cotton shirting reference for shirts.",
+      "developmentNotes": "Review stripe matching at the front and pocket, collar support, shrinkage and seam puckering. Keep the actual stripe scale visible.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Stripes",
+        "Yarn-dyed cotton shirting",
+        "Woven"
+      ],
+      "trendIds": [
+        "S04",
+        "S02",
+        "PAT02"
+      ],
+      "image": "assets/cloth-edit/MP162-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP162-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP162-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP162-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP162-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP162-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP162-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP162-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MP163",
+      "title": "Brownie Mini-Check Cotton Shirting",
+      "type": "pattern",
+      "family": "Checks",
+      "structure": "Yarn-dyed cotton shirting",
+      "colors": [
+        "Brown",
+        "Cream"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "125 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Yarn-dyed cotton shirting",
+      "description": "Brownie Mini-Check Cotton Shirting, photographed as a real piece of cloth with a separate folded-surface view. A 125 gsm yarn-dyed cotton shirting reference for shirts.",
+      "developmentNotes": "Keep the small check readable at collar, pocket and placket. Review opacity, seam puckering, shrinkage and pattern alignment.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Checks",
+        "Yarn-dyed cotton shirting",
+        "Woven"
+      ],
+      "trendIds": [
+        "S02",
+        "S04",
+        "PAT01"
+      ],
+      "image": "assets/cloth-edit/MP163-1.jpg",
+      "thumbnail": "assets/cloth-edit/MP163-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MP163-1.jpg",
+          "thumbnail": "assets/cloth-edit/MP163-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MP163-2.jpg",
+          "thumbnail": "assets/cloth-edit/MP163-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MP163-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MP163-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF152",
+      "title": "Ocean Washed Cotton Poplin",
+      "type": "fabric",
+      "family": "Poplin",
+      "structure": "Washed cotton poplin",
+      "colors": [
+        "Blue"
+      ],
+      "uses": [
+        "Shirts"
+      ],
+      "composition": "100% Cotton",
+      "weight": "110 gsm",
+      "width": "145 cm",
+      "handle": "Listed drape: crisp",
+      "displayLabel": "Washed cotton poplin",
+      "description": "Ocean Washed Cotton Poplin, photographed as a real piece of cloth with a separate folded-surface view. A 110 gsm washed cotton poplin reference for shirts.",
+      "developmentNotes": "Review washed hand, collar support, buttonhole stability, opacity and shrinkage in the actual blue colourway.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Poplin",
+        "Washed cotton poplin",
+        "Woven"
+      ],
+      "trendIds": [
+        "S03",
+        "S04"
+      ],
+      "image": "assets/cloth-edit/MF152-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF152-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF152-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF152-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF152-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF152-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF152-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF152-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedOpacity": "Opaque"
+    },
+    {
+      "id": "MF153",
+      "title": "Currant Polar Fleece",
+      "type": "fabric",
+      "family": "Fleece",
+      "structure": "Brushed polyester polar fleece",
+      "colors": [
+        "Purple"
+      ],
+      "uses": [
+        "Jackets",
+        "Shackets",
+        "Knit trousers"
+      ],
+      "composition": "100% Polyester",
+      "weight": "280 gsm",
+      "width": "148 cm",
+      "handle": "Listed drape: moderate",
+      "displayLabel": "Brushed polyester polar fleece",
+      "description": "Currant Polar Fleece, photographed as a real piece of cloth with a separate folded-surface view. A 280 gsm brushed polyester polar fleece reference for jackets, shackets, knit trousers.",
+      "developmentNotes": "Review pilling, repeated-wash appearance, seam bulk and stretch recovery. A trouser trial needs seat and knee-bagging tests; warmth has not been independently measured.",
+      "sourceType": "global",
+      "status": "reference",
+      "season": "Current market reference · source season unspecified",
+      "developmentSeasons": [
+        "A/W 27/28"
+      ],
+      "tags": [
+        "Fleece",
+        "Brushed polyester polar fleece",
+        "Knit"
+      ],
+      "trendIds": [
+        "OW07",
+        "T07"
+      ],
+      "image": "assets/cloth-edit/MF153-1.jpg",
+      "thumbnail": "assets/cloth-edit/MF153-1-thumb.webp",
+      "images": [
+        {
+          "src": "assets/cloth-edit/MF153-1.jpg",
+          "thumbnail": "assets/cloth-edit/MF153-1-thumb.webp",
+          "caption": "Actual cloth and colourway · fuller cloth view"
+        },
+        {
+          "src": "assets/cloth-edit/MF153-2.jpg",
+          "thumbnail": "assets/cloth-edit/MF153-2-thumb.webp",
+          "caption": "Actual cloth and colourway · folds and surface detail"
+        }
+      ],
+      "imageCaption": "Actual cloth and colourway · fuller cloth view",
+      "displayImage": "assets/cloth-edit/MF153-display.webp",
+      "displayThumbnail": "assets/cloth-edit/MF153-preview.webp",
+      "displayWidth": 960,
+      "displayHeight": 960,
+      "displayThumbnailWidth": 480,
+      "photography": "same-cloth",
+      "specificationNote": "Source-listed specifications; physical suitability and sample availability require confirmation. This is a market reference selected for A/W 27/28 development, not a future-season fabric forecast.",
+      "listedStretch": "4-way stretch, 30% cross-grain / 15% along grain-line",
+      "listedOpacity": "Opaque"
+    },
+    {
       "id": "MF121",
       "title": "Cream Brushed Cotton Twill",
       "family": "Twill",
@@ -460,7 +3454,8 @@
       "detailImage": "assets/material-quality/MF106-original.jpg",
       "detailThumbnail": "assets/material-quality/MF106-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF115",
@@ -515,7 +3510,8 @@
       "detailImage": "assets/material-quality/MF115-original.jpg",
       "detailThumbnail": "assets/material-quality/MF115-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF019",
@@ -573,7 +3569,8 @@
       "detailImage": "assets/material-quality/MF019-original.jpg",
       "detailThumbnail": "assets/material-quality/MF019-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF096",
@@ -630,7 +3627,8 @@
       "detailImage": "assets/material-quality/MF096-original.jpg",
       "detailThumbnail": "assets/material-quality/MF096-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF020",
@@ -977,7 +3975,8 @@
       "detailImage": "assets/material-quality/MF028-original.jpg",
       "detailThumbnail": "assets/material-quality/MF028-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF042",
@@ -1033,7 +4032,8 @@
       "detailImage": "assets/material-quality/MF042-original.jpg",
       "detailThumbnail": "assets/material-quality/MF042-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF033",
@@ -1090,7 +4090,8 @@
       "detailImage": "assets/material-quality/MF033-original.jpg",
       "detailThumbnail": "assets/material-quality/MF033-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF092",
@@ -1147,7 +4148,8 @@
       "detailImage": "assets/material-quality/MF092-original.jpg",
       "detailThumbnail": "assets/material-quality/MF092-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF087",
@@ -1204,7 +4206,8 @@
       "detailImage": "assets/material-quality/MF087-original.jpg",
       "detailThumbnail": "assets/material-quality/MF087-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF090",
@@ -1318,7 +4321,8 @@
       "detailImage": "assets/material-quality/MF091-original.jpg",
       "detailThumbnail": "assets/material-quality/MF091-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF001",
@@ -1376,7 +4380,8 @@
       "detailImage": "assets/material-quality/MF001-original.jpg",
       "detailThumbnail": "assets/material-quality/MF001-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF005",
@@ -1491,7 +4496,8 @@
       "detailImage": "assets/material-quality/MF034-original.jpg",
       "detailThumbnail": "assets/material-quality/MF034-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF029",
@@ -1549,7 +4555,8 @@
       "detailImage": "assets/material-quality/MF029-original.jpg",
       "detailThumbnail": "assets/material-quality/MF029-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF050",
@@ -1605,7 +4612,8 @@
       "detailImage": "assets/material-quality/MF050-original.jpg",
       "detailThumbnail": "assets/material-quality/MF050-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF060",
@@ -1661,7 +4669,8 @@
       "detailImage": "assets/material-quality/MF060-original.jpg",
       "detailThumbnail": "assets/material-quality/MF060-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF073",
@@ -1720,7 +4729,8 @@
       "detailImage": "assets/material-quality/MF073-original.jpg",
       "detailThumbnail": "assets/material-quality/MF073-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF119",
@@ -1831,7 +4841,8 @@
       "detailImage": "assets/material-quality/MF114-original.jpg",
       "detailThumbnail": "assets/material-quality/MF114-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF074",
@@ -1890,7 +4901,8 @@
       "detailImage": "assets/material-quality/MF074-original.jpg",
       "detailThumbnail": "assets/material-quality/MF074-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF076",
@@ -1949,7 +4961,8 @@
       "detailImage": "assets/material-quality/MF076-original.jpg",
       "detailThumbnail": "assets/material-quality/MF076-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF071",
@@ -2008,7 +5021,8 @@
       "detailImage": "assets/material-quality/MF071-original.jpg",
       "detailThumbnail": "assets/material-quality/MF071-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF013",
@@ -2067,7 +5081,8 @@
       "detailImage": "assets/material-quality/MF013-original.jpg",
       "detailThumbnail": "assets/material-quality/MF013-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF015",
@@ -2125,7 +5140,8 @@
       "detailImage": "assets/material-quality/MF015-original.jpg",
       "detailThumbnail": "assets/material-quality/MF015-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF012",
@@ -2183,7 +5199,8 @@
       "detailImage": "assets/material-quality/MF012-original.jpg",
       "detailThumbnail": "assets/material-quality/MF012-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF014",
@@ -2241,7 +5258,8 @@
       "detailImage": "assets/material-quality/MF014-original.jpg",
       "detailThumbnail": "assets/material-quality/MF014-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF018",
@@ -2298,7 +5316,8 @@
       "detailImage": "assets/material-quality/MF018-original.jpg",
       "detailThumbnail": "assets/material-quality/MF018-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF017",
@@ -2413,7 +5432,8 @@
       "detailImage": "assets/material-quality/MF021-original.jpg",
       "detailThumbnail": "assets/material-quality/MF021-original-thumb.webp",
       "detailCaption": "High-resolution photograph of the same sample and colourway",
-      "photography": "flat-sample"
+      "photography": "flat-sample",
+      "archived": true
     },
     {
       "id": "MF044",
@@ -6781,7 +9801,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP024",
@@ -6838,7 +9859,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Brushed check"
+      "displayLabel": "Brushed check",
+      "archived": true
     },
     {
       "id": "MP025",
@@ -6952,7 +9974,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Brushed check"
+      "displayLabel": "Brushed check",
+      "archived": true
     },
     {
       "id": "MP031",
@@ -7046,7 +10069,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Brushed check"
+      "displayLabel": "Brushed check",
+      "archived": true
     },
     {
       "id": "MP033",
@@ -7166,7 +10190,8 @@
       "displayWidth": 300,
       "displayHeight": 400,
       "displayThumbnailWidth": 300,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP044",
@@ -7261,7 +10286,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP045",
@@ -7361,7 +10387,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP046",
@@ -7460,7 +10487,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP052",
@@ -7519,7 +10547,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Brushed check"
+      "displayLabel": "Brushed check",
+      "archived": true
     },
     {
       "id": "MP053",
@@ -7574,7 +10603,8 @@
       "displayWidth": 420,
       "displayHeight": 420,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Brushed check"
+      "displayLabel": "Brushed check",
+      "archived": true
     },
     {
       "id": "MP054",
@@ -7634,7 +10664,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP055",
@@ -7694,7 +10725,8 @@
       "displayWidth": 440,
       "displayHeight": 440,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP056",
@@ -7750,7 +10782,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP057",
@@ -7808,7 +10841,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP068",
@@ -7864,7 +10898,8 @@
       "displayWidth": 300,
       "displayHeight": 400,
       "displayThumbnailWidth": 300,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP070",
@@ -7924,7 +10959,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP071",
@@ -7998,7 +11034,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Textured check"
+      "displayLabel": "Textured check",
+      "archived": true
     },
     {
       "id": "MP073",
@@ -8053,7 +11090,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP074",
@@ -8122,7 +11160,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP078",
@@ -8177,7 +11216,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Brushed check"
+      "displayLabel": "Brushed check",
+      "archived": true
     },
     {
       "id": "MP079",
@@ -8232,7 +11272,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Brushed check"
+      "displayLabel": "Brushed check",
+      "archived": true
     },
     {
       "id": "MP080",
@@ -8287,7 +11328,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Brushed check"
+      "displayLabel": "Brushed check",
+      "archived": true
     },
     {
       "id": "MP091",
@@ -8405,7 +11447,8 @@
       "displayWidth": 400,
       "displayHeight": 400,
       "displayThumbnailWidth": 400,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP095",
@@ -8465,7 +11508,8 @@
       "displayWidth": 300,
       "displayHeight": 400,
       "displayThumbnailWidth": 300,
-      "displayLabel": "Check pattern"
+      "displayLabel": "Check pattern",
+      "archived": true
     },
     {
       "id": "MP096",
@@ -15848,5 +18892,5 @@
       "displayLabel": "Digital pattern concept"
     }
   ],
-  "release": "20261119full2"
+  "release": "20261120cloth50"
 }

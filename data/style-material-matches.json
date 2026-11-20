@@ -48,6 +48,36 @@
           "review": "Review pleat bulk, crease retention, opacity under tension and the curved side seam; rebalance the block.",
           "colourwayImage": "assets/material-photography/MF121-1.jpg",
           "research": []
+        },
+        {
+          "materialId": "MF128",
+          "role": "Development alternative / brushed cotton twill",
+          "reason": "Cranberry Brushed Cotton Twill (310 gsm) is a brushed cotton twill development alternative for RF27-T04. Woven alternatives for a front-pleated barrel leg. Keep the curved side seam and controlled hem.",
+          "review": "Review nap alignment, washing shrinkage, pleat bulk and pocket support. The brushed face changes the surface of the original garment.",
+          "colourwayImage": "assets/cloth-edit/MF128-1.jpg",
+          "research": [
+            {
+              "id": "T01",
+              "title": "Relaxed Everyday Tailoring"
+            },
+            {
+              "id": "MAT03",
+              "title": "Supple Twill & Canvas"
+            }
+          ]
+        },
+        {
+          "materialId": "MF145",
+          "role": "Development alternative / cotton/lyocell woven twill",
+          "reason": "Pinecone Cotton-Lyocell Twill (280 gsm) is a cotton/lyocell woven twill development alternative for RF27-T04. Woven alternatives for a front-pleated barrel leg. Keep the curved side seam and controlled hem.",
+          "review": "Review pleat retention, bias hang, seam slippage and dimensional stability. Cotton/lyocell changes the hand from pure cotton; mechanical recovery has not been tested.",
+          "colourwayImage": "assets/cloth-edit/MF145-1.jpg",
+          "research": [
+            {
+              "id": "T01",
+              "title": "Relaxed Everyday Tailoring"
+            }
+          ]
         }
       ]
     },
@@ -191,6 +221,65 @@
               "title": "Supple Twill & Canvas"
             }
           ]
+        },
+        {
+          "materialId": "MP155",
+          "role": "Development alternative / brushed stretch-blend glen-plaid suiting",
+          "reason": "Espresso Brushed Glen-Plaid Suiting (225 gsm) is a brushed stretch-blend glen-plaid suiting development alternative for RF27-T02. Woven cloth for a full-length wide leg with front pleats and pressed creases.",
+          "review": "Review check placement through pleats, pressing, seam slippage and crosswise recovery. This is a listed suiting quality, not evidence of tested comfort performance.",
+          "colourwayImage": "assets/cloth-edit/MP155-1.jpg",
+          "research": [
+            {
+              "id": "T01",
+              "title": "Relaxed Everyday Tailoring"
+            },
+            {
+              "id": "T03",
+              "title": "Draped Wide-Leg Tailoring"
+            },
+            {
+              "id": "MAT04",
+              "title": "Comfort Wovens: Drape & Recovery"
+            }
+          ]
+        },
+        {
+          "materialId": "MF144",
+          "role": "Development alternative / cotton/lyocell woven twill",
+          "reason": "Smoked Plum Cotton-Lyocell Twill (280 gsm) is a cotton/lyocell woven twill development alternative for RF27-T02. Woven cloth for a full-length wide leg with front pleats and pressed creases.",
+          "review": "Review pleat retention, bias hang, seam slippage and dimensional stability. Cotton/lyocell changes the hand from pure cotton; mechanical recovery has not been tested.",
+          "colourwayImage": "assets/cloth-edit/MF144-1.jpg",
+          "research": [
+            {
+              "id": "T01",
+              "title": "Relaxed Everyday Tailoring"
+            },
+            {
+              "id": "T03",
+              "title": "Draped Wide-Leg Tailoring"
+            },
+            {
+              "id": "MAT04",
+              "title": "Comfort Wovens: Drape & Recovery"
+            }
+          ]
+        },
+        {
+          "materialId": "MP160",
+          "role": "Development alternative / yarn-dyed bottomweight cotton twill",
+          "reason": "Clove & Black Broad-Stripe Twill (286 gsm) is a yarn-dyed bottomweight cotton twill development alternative for RF27-T02. Woven cloth for a full-length wide leg with front pleats and pressed creases.",
+          "review": "The listing gives 20 mm stripes parallel to the selvedge. Review stripe alignment, grain skew, shrinkage and bulk at pockets and pleats.",
+          "colourwayImage": "assets/cloth-edit/MP160-1.jpg",
+          "research": [
+            {
+              "id": "T01",
+              "title": "Relaxed Everyday Tailoring"
+            },
+            {
+              "id": "MAT03",
+              "title": "Supple Twill & Canvas"
+            }
+          ]
         }
       ]
     },
@@ -238,6 +327,14 @@
           "reason": "Black cotton gabardine offers an explicit non-pile alternative for the same leg concept. This changes the surface and may change the silhouette.",
           "review": "Recheck ease and leg volume in a toile; this does not reproduce corduroy.",
           "colourwayImage": "assets/material-library/MF084.webp",
+          "research": []
+        },
+        {
+          "materialId": "MF146",
+          "role": "Development alternative / washed cotton twill",
+          "reason": "Teak Washed Cotton Twill (293-306 gsm) is a washed cotton twill development alternative for RF27-T03. A roomy seat and straight leg with reinforced pocket construction.",
+          "review": "Review pocket reinforcement, washing shrinkage, crease behaviour and knee movement. The listed 293–306 gsm range does not establish workwear certification.",
+          "colourwayImage": "assets/cloth-edit/MF146-1.jpg",
           "research": []
         }
       ]
@@ -300,6 +397,19 @@
               "title": "Corduroy: Rib, Pile & Drape"
             }
           ]
+        },
+        {
+          "materialId": "MF140",
+          "role": "Development alternative / 8-wale stretch cotton corduroy",
+          "reason": "Cabernet Stretch Cotton Corduroy (325 gsm) is a 8-wale stretch cotton corduroy development alternative for RF27-T05. A barrel leg with ankle-length proportions and waist tabs.",
+          "review": "Review crosswise stretch recovery, waistband stability, pile marking and bulk through front pleats. Keep the nap direction consistent.",
+          "colourwayImage": "assets/cloth-edit/MF140-1.jpg",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            }
+          ]
         }
       ]
     },
@@ -348,6 +458,14 @@
           "review": "Recheck ease and leg volume in a toile; this does not reproduce corduroy.",
           "colourwayImage": "assets/material-library/MF084.webp",
           "research": []
+        },
+        {
+          "materialId": "MF149",
+          "role": "Development alternative / washed cotton canvas",
+          "reason": "Ocean Washed Cotton Canvas (285 gsm) is a washed cotton canvas development alternative for RF27-T06. A relaxed straight workwear leg with front and back pockets.",
+          "review": "Review pocket reinforcement, abrasion, washing shrinkage and knee movement. The recorded 285 gsm cloth does not establish workwear certification.",
+          "colourwayImage": "assets/cloth-edit/MF149-1.jpg",
+          "research": []
         }
       ]
     },
@@ -391,6 +509,19 @@
           "review": "Check stripe alignment at pockets and placket; confirm actual stripe scale.",
           "colourwayImage": "assets/material-library/MP035.webp",
           "research": []
+        },
+        {
+          "materialId": "MF152",
+          "role": "Development alternative / washed cotton poplin",
+          "reason": "Ocean Washed Cotton Poplin (110 gsm) is a washed cotton poplin development alternative for RF27-S01. A loose two-pocket utility shirt with a defined collar and button front.",
+          "review": "Review washed hand, collar support, buttonhole stability, opacity and shrinkage in the actual blue colourway.",
+          "colourwayImage": "assets/cloth-edit/MF152-1.jpg",
+          "research": [
+            {
+              "id": "S03",
+              "title": "The Softened Utility Shirt"
+            }
+          ]
         }
       ]
     },
@@ -444,6 +575,103 @@
               "title": "The Women’s Everyday Button-Front"
             }
           ]
+        },
+        {
+          "materialId": "MP149",
+          "role": "Development alternative / yarn-dyed cotton shirting",
+          "reason": "Russet & Blue Fine Cotton Check (109 gsm) is a yarn-dyed cotton shirting development alternative for RF27-S04. A loose, slightly boxy striped shirt. Keep a readable stripe and relaxed volume.",
+          "review": "Keep the small check readable at collar, pocket and placket. Review opacity, seam puckering, shrinkage and pattern alignment.",
+          "colourwayImage": "assets/cloth-edit/MP149-1.jpg",
+          "research": [
+            {
+              "id": "S02",
+              "title": "The Textured Everyday Button-Up"
+            },
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            }
+          ]
+        },
+        {
+          "materialId": "MP151",
+          "role": "Development alternative / yarn-dyed cotton shirting",
+          "reason": "Cream & Umber Cotton Check (114 gsm) is a yarn-dyed cotton shirting development alternative for RF27-S04. A loose, slightly boxy striped shirt. Keep a readable stripe and relaxed volume.",
+          "review": "Keep the small check readable at collar, pocket and placket. Review opacity, seam puckering, shrinkage and pattern alignment.",
+          "colourwayImage": "assets/cloth-edit/MP151-1.jpg",
+          "research": [
+            {
+              "id": "S02",
+              "title": "The Textured Everyday Button-Up"
+            },
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            }
+          ]
+        },
+        {
+          "materialId": "MP152",
+          "role": "Development alternative / yarn-dyed washed cotton shirting",
+          "reason": "Navy & White Washed Cotton Stripe (129 gsm) is a yarn-dyed washed cotton shirting development alternative for RF27-S04. A loose, slightly boxy striped shirt. Keep a readable stripe and relaxed volume.",
+          "review": "Review stripe direction and matching, collar support, washing shrinkage and seam puckering. Preserve the relaxed shirt block rather than transferring trouser weight assumptions.",
+          "colourwayImage": "assets/cloth-edit/MP152-1.jpg",
+          "research": [
+            {
+              "id": "S02",
+              "title": "The Textured Everyday Button-Up"
+            },
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            },
+            {
+              "id": "PAT02",
+              "title": "Quiet Stripes & Tailoring Micro-Patterns"
+            }
+          ]
+        },
+        {
+          "materialId": "MP153",
+          "role": "Development alternative / yarn-dyed washed cotton shirting",
+          "reason": "Parchment Fine-Stripe Cotton Shirting (129 gsm) is a yarn-dyed washed cotton shirting development alternative for RF27-S04. A loose, slightly boxy striped shirt. Keep a readable stripe and relaxed volume.",
+          "review": "Review stripe direction and matching, collar support, washing shrinkage and seam puckering. Preserve the relaxed shirt block rather than transferring trouser weight assumptions.",
+          "colourwayImage": "assets/cloth-edit/MP153-1.jpg",
+          "research": [
+            {
+              "id": "S02",
+              "title": "The Textured Everyday Button-Up"
+            },
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            },
+            {
+              "id": "PAT02",
+              "title": "Quiet Stripes & Tailoring Micro-Patterns"
+            }
+          ]
+        },
+        {
+          "materialId": "MP162",
+          "role": "Development alternative / yarn-dyed cotton shirting",
+          "reason": "Blue Fine-Stripe Cotton Shirting (148 gsm) is a yarn-dyed cotton shirting development alternative for RF27-S04. A loose, slightly boxy striped shirt. Keep a readable stripe and relaxed volume.",
+          "review": "Review stripe matching at the front and pocket, collar support, shrinkage and seam puckering. Keep the actual stripe scale visible.",
+          "colourwayImage": "assets/cloth-edit/MP162-1.jpg",
+          "research": [
+            {
+              "id": "S02",
+              "title": "The Textured Everyday Button-Up"
+            },
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            },
+            {
+              "id": "PAT02",
+              "title": "Quiet Stripes & Tailoring Micro-Patterns"
+            }
+          ]
         }
       ]
     },
@@ -484,6 +712,32 @@
           "review": "Confirm motif scale and placement at darts, cuffs and button placket; this is not a border print.",
           "colourwayImage": "assets/material-library/MF040.webp",
           "research": []
+        },
+        {
+          "materialId": "MF142",
+          "role": "Development alternative / crisp woven cotton poplin",
+          "reason": "Cream Crisp Cotton Poplin (110 gsm) is a crisp woven cotton poplin development alternative for RF27-S05. A fitted button-front shirt with a smooth, clean surface.",
+          "review": "Review coverage in the actual colourway, collar and cuff support, seam puckering and washing shrinkage. Lighter colours may be less opaque.",
+          "colourwayImage": "assets/cloth-edit/MF142-1.jpg",
+          "research": [
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            }
+          ]
+        },
+        {
+          "materialId": "MF143",
+          "role": "Development alternative / paper-touch cotton poplin",
+          "reason": "Berry Paper-Touch Cotton Poplin (140 gsm) is a paper-touch cotton poplin development alternative for RF27-S05. A fitted button-front shirt with a smooth, clean surface.",
+          "review": "Review crisp volume, collar support, buttonhole stability and shrinkage. The paper-like hand is a listed handle reference, not a tested finishing process.",
+          "colourwayImage": "assets/cloth-edit/MF143-1.jpg",
+          "research": [
+            {
+              "id": "S04",
+              "title": "The Women’s Everyday Button-Front"
+            }
+          ]
         }
       ]
     },
@@ -528,6 +782,30 @@
               "title": "Controlled Wash, Fade & Patina"
             }
           ]
+        },
+        {
+          "materialId": "MP144",
+          "role": "Development alternative / yarn-dyed cotton flannel",
+          "reason": "Maroon & Cork Cotton Flannel (160 gsm) is a yarn-dyed cotton flannel development alternative for RF27-S02. A loose button-down shirt; alternative cloth must work through collar, cuffs and button placket.",
+          "review": "Review check matching at placket, pocket and cuffs, brushing direction, shrinkage and colourfastness. This is shirt-weight cloth, not a heavy coating.",
+          "colourwayImage": "assets/cloth-edit/MP144-1.jpg",
+          "research": []
+        },
+        {
+          "materialId": "MP150",
+          "role": "Development alternative / yarn-dyed cotton shirting",
+          "reason": "Ink & Grey Fine Cotton Check (120 gsm) is a yarn-dyed cotton shirting development alternative for RF27-S02. A loose button-down shirt; alternative cloth must work through collar, cuffs and button placket.",
+          "review": "Keep the small check readable at collar, pocket and placket. Review opacity, seam puckering, shrinkage and pattern alignment.",
+          "colourwayImage": "assets/cloth-edit/MP150-1.jpg",
+          "research": []
+        },
+        {
+          "materialId": "MP163",
+          "role": "Development alternative / yarn-dyed cotton shirting",
+          "reason": "Brownie Mini-Check Cotton Shirting (125 gsm) is a yarn-dyed cotton shirting development alternative for RF27-S02. A loose button-down shirt; alternative cloth must work through collar, cuffs and button placket.",
+          "review": "Keep the small check readable at collar, pocket and placket. Review opacity, seam puckering, shrinkage and pattern alignment.",
+          "colourwayImage": "assets/cloth-edit/MP163-1.jpg",
+          "research": []
         }
       ]
     },
@@ -568,6 +846,19 @@
           "review": "Reassess weight and shrinkage; this is not a printed corduroy.",
           "colourwayImage": "assets/material-library/MP033.webp",
           "research": []
+        },
+        {
+          "materialId": "MF138",
+          "role": "Development alternative / wide-wale cotton corduroy",
+          "reason": "Spruce Wide-Wale Cotton Corduroy (280 gsm) is a wide-wale cotton corduroy development alternative for RF27-S06. A loose corduroy shirt with a tactile surface and button-front details.",
+          "review": "Review directional pile, wale scale, shirt placket bulk and collar support. For trousers, test seat abrasion and growth; this quality has no listed spandex.",
+          "colourwayImage": "assets/cloth-edit/MF138-1.jpg",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            }
+          ]
         }
       ]
     },
@@ -602,6 +893,46 @@
           "reason": "The leaf-patterned viscose reference offers a specific printed direction for the relaxed shirt.",
           "review": "Verify fibre details, drape, seam slippage and print scale before applying it to the block.",
           "colourwayImage": "assets/material-library/MP062.webp",
+          "research": []
+        },
+        {
+          "materialId": "MP146",
+          "role": "Development alternative / yarn-dyed rayon flannel",
+          "reason": "Ivory & Blue Rayon Flannel Check (180 gsm) is a yarn-dyed rayon flannel development alternative for RF27-S03. A softly draped shirt with slightly dropped shoulders.",
+          "review": "This rayon flannel changes the hand from cotton. Review seam slippage, wet handling, shrinkage and pocket stability before approving the shirt.",
+          "colourwayImage": "assets/cloth-edit/MP146-1.jpg",
+          "research": []
+        },
+        {
+          "materialId": "MP148",
+          "role": "Development alternative / cotton clip jacquard",
+          "reason": "Navy Clip-Jacquard Cotton Check (103 gsm) is a cotton clip jacquard development alternative for RF27-S03. A softly draped shirt with slightly dropped shoulders.",
+          "review": "The 103 gsm cloth is semi-opaque and softly voluminous. Check clip-yarn snagging, seam stability and coverage; consider lining or deliberate layering. Limited-run reference; repeat supply is unconfirmed.",
+          "colourwayImage": "assets/cloth-edit/MP148-1.jpg",
+          "research": []
+        },
+        {
+          "materialId": "MP154",
+          "role": "Development alternative / brushed cotton shirting",
+          "reason": "Nutshell Brushed Cotton Stripe (145 gsm) is a brushed cotton shirting development alternative for RF27-S03. A softly draped shirt with slightly dropped shoulders.",
+          "review": "Check the listed brushed face, stripe placement and collar/cuff bulk. The source describes a crisp drape; do not assume a fluid blouse handle.",
+          "colourwayImage": "assets/cloth-edit/MP154-1.jpg",
+          "research": []
+        },
+        {
+          "materialId": "MP156",
+          "role": "Development alternative / reversible cotton-blend jacquard",
+          "reason": "Boysenberry Tonal Cotton-Blend Jacquard (210 gsm) is a reversible cotton-blend jacquard development alternative for RF27-S03. A softly draped shirt with slightly dropped shoulders.",
+          "review": "Review the actual reversible faces, motif scale, snagging, seam slippage and button-band support. At 210 gsm this is an overshirt route, not a heavy coating.",
+          "colourwayImage": "assets/cloth-edit/MP156-1.jpg",
+          "research": []
+        },
+        {
+          "materialId": "MP159",
+          "role": "Development alternative / printed cotton twill shirting",
+          "reason": "Olive & Ivory Open-Floral Shirting (115 gsm) is a printed cotton twill shirting development alternative for RF27-S03. A softly draped shirt with slightly dropped shoulders.",
+          "review": "Review complete motif placement at centre front, collar and pocket, print fastness, opacity and shrinkage. A botanical direction reference does not verify future-season demand.",
+          "colourwayImage": "assets/cloth-edit/MP159-1.jpg",
           "research": []
         }
       ]
@@ -687,6 +1018,70 @@
               "title": "The Textured Shacket"
             }
           ]
+        },
+        {
+          "materialId": "MF129",
+          "role": "Development alternative / brushed cotton twill",
+          "reason": "Charcoal Brushed Cotton Twill (310 gsm) is a brushed cotton twill development alternative for RF27-O02. An unlined canvas shacket with a contrast corduroy collar.",
+          "review": "Review nap alignment, washing shrinkage, pleat bulk and pocket support. The brushed face changes the surface of the original garment.",
+          "colourwayImage": "assets/cloth-edit/MF129-1.jpg",
+          "research": [
+            {
+              "id": "OW01",
+              "title": "The Textured Shacket"
+            },
+            {
+              "id": "MAT03",
+              "title": "Supple Twill & Canvas"
+            }
+          ]
+        },
+        {
+          "materialId": "MF141",
+          "role": "Development alternative / dry-waxed cotton/nylon poplin",
+          "reason": "Ochre Dry-Waxed Poplin (170 gsm) is a dry-waxed cotton/nylon poplin development alternative for RF27-O02. An unlined canvas shacket with a contrast corduroy collar.",
+          "review": "Exact fibre percentages are not supplied. At 170 gsm this is a lightweight jacket route. Review pressing, needle marks, washing instructions and finish durability; do not claim tested weather protection.",
+          "colourwayImage": "assets/cloth-edit/MF141-1.jpg",
+          "research": [
+            {
+              "id": "OW02",
+              "title": "The Barn & Chore Jacket"
+            }
+          ]
+        },
+        {
+          "materialId": "MF148",
+          "role": "Development alternative / hemp/organic-cotton canvas",
+          "reason": "Navy Hemp-Cotton Canvas (280 gsm) is a hemp/organic-cotton canvas development alternative for RF27-O02. An unlined canvas shacket with a contrast corduroy collar.",
+          "review": "Review stiffness, washing shrinkage, pocket bulk and seam support. Fibre content alone does not verify strength or a sustainability certification.",
+          "colourwayImage": "assets/cloth-edit/MF148-1.jpg",
+          "research": [
+            {
+              "id": "OW02",
+              "title": "The Barn & Chore Jacket"
+            },
+            {
+              "id": "MAT03",
+              "title": "Supple Twill & Canvas"
+            }
+          ]
+        },
+        {
+          "materialId": "MP161",
+          "role": "Development alternative / double-sided yarn-dyed cotton twill",
+          "reason": "Sage Reversible Check Cotton Twill (286 gsm) is a double-sided yarn-dyed cotton twill development alternative for RF27-O02. An unlined canvas shacket with a contrast corduroy collar.",
+          "review": "The listing describes a gingham face and striped reverse, with checks about 1 x 1.3 cm. Review face/reverse finishing, grain skew, washing shrinkage and pleat bulk.",
+          "colourwayImage": "assets/cloth-edit/MP161-1.jpg",
+          "research": [
+            {
+              "id": "OW02",
+              "title": "The Barn & Chore Jacket"
+            },
+            {
+              "id": "MAT03",
+              "title": "Supple Twill & Canvas"
+            }
+          ]
         }
       ]
     },
@@ -727,6 +1122,14 @@
               "title": "Useful Quilting & Modular Padding"
             }
           ]
+        },
+        {
+          "materialId": "MF137",
+          "role": "Development alternative / lightweight nylon plain",
+          "reason": "Agave Lightweight Nylon Plain (132 gsm) is a lightweight nylon plain development alternative for RF27-O03. A relaxed padded bomber with a ribbed funnel neck.",
+          "review": "This colourway is listed with a lighter, more relaxed hand than others in the range. Check actual crinkle, seam stability and lining; it is not ripstop. Protective properties remain untested.",
+          "colourwayImage": "assets/cloth-edit/MF137-1.jpg",
+          "research": []
         }
       ]
     },
@@ -783,6 +1186,53 @@
           "review": "Confirm the washed surface and batch, quilting stability, seam strength, lining and fill migration. Protective performance is untested and the photographed colourway needs sourcing.",
           "colourwayImage": "assets/material-photography/MF127-1.jpg",
           "research": []
+        },
+        {
+          "materialId": "MF134",
+          "role": "Development alternative / wave-quilted nylon with polyester batting",
+          "reason": "Truffle Wave-Quilted Nylon (275 gsm) is a wave-quilted nylon with polyester batting development alternative for RF27-O04. A high-collar padded jacket; shell construction and fill containment must be assessed together.",
+          "review": "Review stitch-channel placement, loft at cuffs and collar, batting migration, seam binding and lining. Thermal performance is untested.",
+          "colourwayImage": "assets/cloth-edit/MF134-1.jpg",
+          "research": [
+            {
+              "id": "OW05",
+              "title": "The Practical Quilted Layer"
+            },
+            {
+              "id": "MAT05",
+              "title": "Light Padded Layer Systems"
+            },
+            {
+              "id": "PROC02",
+              "title": "Useful Quilting & Modular Padding"
+            }
+          ]
+        },
+        {
+          "materialId": "MF135",
+          "role": "Development alternative / lightweight nylon ripstop",
+          "reason": "Pale Lilac Nylon Ripstop (135 gsm) is a lightweight nylon ripstop development alternative for RF27-O04. A high-collar padded jacket; shell construction and fill containment must be assessed together. Supplies the outer face only; any fill and lining must be specified separately.",
+          "review": "This is a lightweight face cloth, not a complete insulated system. Confirm grid scale, seam strength, lining and any protective finish. Water resistance is a source claim without independent test evidence.",
+          "colourwayImage": "assets/cloth-edit/MF135-1.jpg",
+          "research": [
+            {
+              "id": "OW05",
+              "title": "The Practical Quilted Layer"
+            }
+          ]
+        },
+        {
+          "materialId": "MF136",
+          "role": "Development alternative / lightweight nylon ripstop",
+          "reason": "Juniper Nylon Ripstop (135 gsm) is a lightweight nylon ripstop development alternative for RF27-O04. A high-collar padded jacket; shell construction and fill containment must be assessed together. Supplies the outer face only; any fill and lining must be specified separately.",
+          "review": "This is a lightweight face cloth, not a complete insulated system. Confirm grid scale, seam strength, lining and any protective finish. Water resistance is a source claim without independent test evidence.",
+          "colourwayImage": "assets/cloth-edit/MF136-1.jpg",
+          "research": [
+            {
+              "id": "OW05",
+              "title": "The Practical Quilted Layer"
+            }
+          ]
         }
       ]
     },
@@ -821,6 +1271,19 @@
           "reason": "A heritage herringbone wool reference provides an alternative surface route for a single-faced car coat.",
           "review": "This changes the original reversible concept; review weight and lining construction.",
           "colourwayImage": "assets/material-library/MP006.webp",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        },
+        {
+          "materialId": "MF131",
+          "role": "Development alternative / splittable double-faced wool coating",
+          "reason": "Heather Birch Double-Faced Wool (509 gsm) is a splittable double-faced wool coating development alternative for RF27-O05. Single-cloth alternatives for the car-coat silhouette. The original reversible construction needs a separately sourced and approved cloth.",
+          "review": "The listing describes two splittable layers. Trial hand finishing, seam splitting and pressing in the intended coat block; reversible construction still needs development.",
+          "colourwayImage": "assets/cloth-edit/MF131-1.jpg",
           "research": [
             {
               "id": "OW08",
@@ -872,6 +1335,32 @@
               "title": "The Everyday Coat"
             }
           ]
+        },
+        {
+          "materialId": "MP141",
+          "role": "Development alternative / double-faced wool-blend coating",
+          "reason": "Molasses Double-Faced Check Coating (682 gsm) is a double-faced wool-blend coating development alternative for RF27-O06. An oversized shawl-collar coat with a sculptural outline.",
+          "review": "At 682 gsm this is a substantial coat cloth. Review shoulder support, weight, nap and split-layer finishing; do not assume it suits a light shacket.",
+          "colourwayImage": "assets/cloth-edit/MP141-1.jpg",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        },
+        {
+          "materialId": "MF150",
+          "role": "Development alternative / heavyweight double-faced wool/nylon coating",
+          "reason": "Twilight Double-Faced Wool-Blend Coating (607 gsm) is a heavyweight double-faced wool/nylon coating development alternative for RF27-O06. An oversized shawl-collar coat with a sculptural outline.",
+          "review": "At 607 gsm this is a substantial structured coating. Review shoulder support, collar roll, seam thickness, split-layer finishing and total garment weight.",
+          "colourwayImage": "assets/cloth-edit/MF150-1.jpg",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
         }
       ]
     },
@@ -915,6 +1404,14 @@
           "review": "Check jacket weight, collar roll, pocket bulk and washing shrinkage. Confirm that 293–306 gsm suits the intended layering use.",
           "colourwayImage": "assets/material-photography/MF125-1.jpg",
           "research": []
+        },
+        {
+          "materialId": "MP158",
+          "role": "Development alternative / reversible cotton-blend jacquard",
+          "reason": "Oatmeal Tonal Cotton-Blend Jacquard (210 gsm) is a reversible cotton-blend jacquard development alternative for AE-014. An olive overshirt shape reference; cloth choices are for physical redevelopment.",
+          "review": "Review the actual reversible faces, motif scale, snagging, seam slippage and button-band support. At 210 gsm this is an overshirt route, not a heavy coating.",
+          "colourwayImage": "assets/cloth-edit/MP158-1.jpg",
+          "research": []
         }
       ]
     },
@@ -944,6 +1441,14 @@
           "reason": "Grey ponte provides a different compact-knit route for a cleaner trouser expression with the same relaxed leg idea.",
           "review": "Test stretch and recovery and revise ease before using the pull-on block.",
           "colourwayImage": "assets/material-library/MF055.webp",
+          "research": []
+        },
+        {
+          "materialId": "MF153",
+          "role": "Development alternative / brushed polyester polar fleece",
+          "reason": "Currant Polar Fleece (280 gsm) is a brushed polyester polar fleece development alternative for AE-021. A pull-on straight-leg concept; test all cloth options in a new pull-on block. Changes the concept to a relaxed fleece pull-on; rebalance ease, pocket support and waistband.",
+          "review": "Review pilling, repeated-wash appearance, seam bulk and stretch recovery. A trouser trial needs seat and knee-bagging tests; warmth has not been independently measured.",
+          "colourwayImage": "assets/cloth-edit/MF153-1.jpg",
           "research": []
         }
       ]
@@ -1030,6 +1535,14 @@
               "title": "The Everyday Coat"
             }
           ]
+        },
+        {
+          "materialId": "MP157",
+          "role": "Development alternative / brushed double-faced stretch-blend coating",
+          "reason": "Midnight Double-Faced Brushed Check (360 gsm) is a brushed double-faced stretch-blend coating development alternative for AE-025. A long-jacket reference; select weight and construction for a jacket rather than assuming coat suitability.",
+          "review": "Review both faces, nap and check placement, seam bulk and button-band support. The listed 360 gsm cloth is for light jackets, not assumed interchangeable with a heavy coat.",
+          "colourwayImage": "assets/cloth-edit/MP157-1.jpg",
+          "research": []
         }
       ]
     },
@@ -1103,6 +1616,48 @@
               "title": "Softened Yarn-Dyed Checks"
             }
           ]
+        },
+        {
+          "materialId": "MP143",
+          "role": "Development alternative / yarn-dyed cotton flannel",
+          "reason": "Ink & Cream Cotton Flannel (160 gsm) is a yarn-dyed cotton flannel development alternative for AE-028. A relaxed flannel shirt; preserve loose volume and check pocket/placket placement.",
+          "review": "Review check matching at placket, pocket and cuffs, brushing direction, shrinkage and colourfastness. This is shirt-weight cloth, not a heavy coating.",
+          "colourwayImage": "assets/cloth-edit/MP143-1.jpg",
+          "research": [
+            {
+              "id": "S01",
+              "title": "The Refined Flannel Shirt"
+            },
+            {
+              "id": "MAT01",
+              "title": "Brushed Flannel & Refined Double Cloth"
+            },
+            {
+              "id": "PAT01",
+              "title": "Softened Yarn-Dyed Checks"
+            }
+          ]
+        },
+        {
+          "materialId": "MP145",
+          "role": "Development alternative / yarn-dyed cotton flannel",
+          "reason": "Tobacco Windowpane Cotton Flannel (170 gsm) is a yarn-dyed cotton flannel development alternative for AE-028. A relaxed flannel shirt; preserve loose volume and check pocket/placket placement.",
+          "review": "Review check matching at placket, pocket and cuffs, brushing direction, shrinkage and colourfastness. This is shirt-weight cloth, not a heavy coating.",
+          "colourwayImage": "assets/cloth-edit/MP145-1.jpg",
+          "research": [
+            {
+              "id": "S01",
+              "title": "The Refined Flannel Shirt"
+            },
+            {
+              "id": "MAT01",
+              "title": "Brushed Flannel & Refined Double Cloth"
+            },
+            {
+              "id": "PAT01",
+              "title": "Softened Yarn-Dyed Checks"
+            }
+          ]
         }
       ]
     },
@@ -1143,6 +1698,19 @@
           "review": "Recheck ease and leg volume in a toile; this does not reproduce corduroy.",
           "colourwayImage": "assets/material-library/MF084.webp",
           "research": []
+        },
+        {
+          "materialId": "MF139",
+          "role": "Development alternative / fine-wale cotton corduroy",
+          "reason": "Rooibos Fine-Wale Cotton Corduroy (300 gsm) is a fine-wale cotton corduroy development alternative for AE-030. A straight corduroy trouser reference; review wale scale and pocket bulk.",
+          "review": "Keep the pile direction consistent. Check pocket and pleat bulk, pile marking and seat abrasion; no stretch content is listed.",
+          "colourwayImage": "assets/cloth-edit/MF139-1.jpg",
+          "research": [
+            {
+              "id": "MAT02",
+              "title": "Corduroy: Rib, Pile & Drape"
+            }
+          ]
         }
       ]
     },
@@ -1195,6 +1763,48 @@
           "review": "Confirm repeat scale and brushing; review collar and cuff bulk.",
           "colourwayImage": "assets/material-library/MP025.webp",
           "research": []
+        },
+        {
+          "materialId": "MP142",
+          "role": "Development alternative / yarn-dyed midweight cotton flannel",
+          "reason": "Cabin Check Cotton Flannel (250 gsm) is a yarn-dyed midweight cotton flannel development alternative for AE-031. A worker flannel shirt; review shirt weight and reinforced pocket details.",
+          "review": "Review check placement, washing shrinkage and collar/placket bulk. At 250 gsm this is heavier than a conventional light shirt.",
+          "colourwayImage": "assets/cloth-edit/MP142-1.jpg",
+          "research": [
+            {
+              "id": "S01",
+              "title": "The Refined Flannel Shirt"
+            },
+            {
+              "id": "MAT01",
+              "title": "Brushed Flannel & Refined Double Cloth"
+            },
+            {
+              "id": "PAT01",
+              "title": "Softened Yarn-Dyed Checks"
+            }
+          ]
+        },
+        {
+          "materialId": "MP147",
+          "role": "Development alternative / yarn-dyed cotton flannel",
+          "reason": "Charcoal Tonal Cotton Flannel (180 gsm) is a yarn-dyed cotton flannel development alternative for AE-031. A worker flannel shirt; review shirt weight and reinforced pocket details.",
+          "review": "Review check matching at placket, pocket and cuffs, brushing direction, shrinkage and colourfastness. This is shirt-weight cloth, not a heavy coating.",
+          "colourwayImage": "assets/cloth-edit/MP147-1.jpg",
+          "research": [
+            {
+              "id": "S01",
+              "title": "The Refined Flannel Shirt"
+            },
+            {
+              "id": "MAT01",
+              "title": "Brushed Flannel & Refined Double Cloth"
+            },
+            {
+              "id": "PAT01",
+              "title": "Softened Yarn-Dyed Checks"
+            }
+          ]
         }
       ]
     },
@@ -1253,6 +1863,32 @@
               "title": "The Everyday Coat"
             }
           ]
+        },
+        {
+          "materialId": "MP140",
+          "role": "Development alternative / yarn-dyed wool-blend coating",
+          "reason": "Chalk & Black Wool-Blend Check (448 gsm) is a yarn-dyed wool-blend coating development alternative for AE-035. A regular wool-blend coat; assess each cloth for its narrower coat block.",
+          "review": "Review check placement, nap, seam bulk, lining and pressing in the intended coat block.",
+          "colourwayImage": "assets/cloth-edit/MP140-1.jpg",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
+        },
+        {
+          "materialId": "MF130",
+          "role": "Development alternative / wool-blend twill coating",
+          "reason": "Juniper Wool-Blend Twill Coating (490 gsm) is a wool-blend twill coating development alternative for AE-035. A regular wool-blend coat; assess each cloth for its narrower coat block.",
+          "review": "Review the different faces, nap direction, collar roll, pressing and seam thickness.",
+          "colourwayImage": "assets/cloth-edit/MF130-1.jpg",
+          "research": [
+            {
+              "id": "OW08",
+              "title": "The Everyday Coat"
+            }
+          ]
         }
       ]
     },
@@ -1300,6 +1936,23 @@
           "reason": "Charcoal cotton-rich rib offers a specific textured development route for the high-rise legging concept. It is a lounge-knit reference, not an approved performance material.",
           "review": "Do not approve the fitted block before testing opacity at extension, stretch recovery, waist growth and seam strength.",
           "colourwayImage": "assets/material-photography/MF122-1.jpg",
+          "research": [
+            {
+              "id": "T08",
+              "title": "Studio Leggings"
+            },
+            {
+              "id": "AKMAT03",
+              "title": "Fine Rib & Smooth Jersey for Studio Leggings"
+            }
+          ]
+        },
+        {
+          "materialId": "MF151",
+          "role": "Development alternative / rayon-from-bamboo stretch rib knit",
+          "reason": "Black Bamboo-Viscose Stretch Rib (332 gsm) is a rayon-from-bamboo stretch rib knit development alternative for AE-022. A high-rise yoga-legging shape concept. The rib and listed four-way stretch make this a trial option; legging suitability is unconfirmed.",
+          "review": "The 332 gsm rib is a development trial, not an approved performance legging fabric. Test opacity at extension, recovery, waist growth, pilling and seams on the actual high-rise block.",
+          "colourwayImage": "assets/cloth-edit/MF151-1.jpg",
           "research": [
             {
               "id": "T08",
@@ -1382,6 +2035,27 @@
               "title": "Useful Quilting & Modular Padding"
             }
           ]
+        },
+        {
+          "materialId": "MF133",
+          "role": "Development alternative / floral-quilted nylon with polyester batting",
+          "reason": "Sage Floral-Quilted Nylon (275 gsm) is a floral-quilted nylon with polyester batting development alternative for AE-026. A quilted shirt-jacket reference; knitted alternatives change the original woven-shell construction.",
+          "review": "The listed weight is for the quilted material, not just the nylon face. Review loft compression, pattern placement, seam binding, lining and needle damage; insulation performance is untested.",
+          "colourwayImage": "assets/cloth-edit/MF133-1.jpg",
+          "research": [
+            {
+              "id": "OW05",
+              "title": "The Practical Quilted Layer"
+            },
+            {
+              "id": "MAT05",
+              "title": "Light Padded Layer Systems"
+            },
+            {
+              "id": "PROC02",
+              "title": "Useful Quilting & Modular Padding"
+            }
+          ]
         }
       ]
     },
@@ -1427,9 +2101,35 @@
               "title": "Fleece & Sherpa Layers"
             }
           ]
+        },
+        {
+          "materialId": "MF132",
+          "role": "Development alternative / brushed polyester polar fleece",
+          "reason": "Espresso Polar Fleece (280 gsm) is a brushed polyester polar fleece development alternative for AE-032. A relaxed sherpa shirt jacket.",
+          "review": "Review pilling, repeated-wash appearance, seam bulk and stretch recovery. A trouser trial needs seat and knee-bagging tests; warmth has not been independently measured.",
+          "colourwayImage": "assets/cloth-edit/MF132-1.jpg",
+          "research": [
+            {
+              "id": "OW07",
+              "title": "Fleece & Sherpa Layers"
+            }
+          ]
+        },
+        {
+          "materialId": "MF147",
+          "role": "Development alternative / high-pile teddy fleece with fleece reverse",
+          "reason": "Indigo Teddy Fleece (480 gsm) is a high-pile teddy fleece with fleece reverse development alternative for AE-032. A relaxed sherpa shirt jacket.",
+          "review": "Review pile compression, shedding, seam bulk and button-band finishing. Sample the actual cloth before approving the shirt-jacket block.",
+          "colourwayImage": "assets/cloth-edit/MF147-1.jpg",
+          "research": [
+            {
+              "id": "OW07",
+              "title": "Fleece & Sherpa Layers"
+            }
+          ]
         }
       ]
     }
   },
-  "release": "20261119full2"
+  "release": "20261120cloth50"
 }
